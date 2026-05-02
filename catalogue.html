@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catalogue NatureSurvi — 20 produits d'autosuffisance, survie et jardinage. Filtres par catégorie, tri par prix et avis.">
+  <meta name="keywords" content="catalogue, survie, autosuffisance, jardinage, outils, énergie solaire">
+
+  <meta property="og:title" content="Catalogue — NatureSurvi">
+  <meta property="og:description" content="Découvrez notre sélection de 20 produits pour l'autonomie et la survie.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://placehold.co/1200x630/2d5016/a8d672?text=Catalogue+NatureSurvi">
+
+  <title>Catalogue — NatureSurvi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Catalogue NatureSurvi",
+    "description": "Tous nos produits d'autosuffisance, survie et jardinage",
+    "url": "https://naturesurvi.fr/catalogue.html"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Urgency Bar -->
+  <div class="urgency-bar" role="banner" aria-label="Offre promotionnelle">
+    <span>⚡ Offre flash -15% sur tout le site | Se termine dans <span id="countdown-timer">03:45:22</span></span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="NatureSurvi — Accueil">
+        <span class="logo-emoji">🌿</span>
+        <span>NatureSurvi</span>
+      </a>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html" class="active">Catalogue</a>
+        <a href="about.html">À propos</a>
+        <a href="panier.html">Panier</a>
+      </nav>
+      <div class="nav-right">
+        <button class="cart-btn" onclick="Cart.toggleDrawer()" aria-label="Ouvrir le panier">
+          🛒 <span class="cart-total-nav">0,00 €</span>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <button class="burger-menu" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><span class="trust-item-emoji">🚚</span> Livraison gratuite dès 50€</div>
+      <div class="trust-item"><span class="trust-item-emoji">🔄</span> Satisfait ou remboursé 30 jours</div>
+      <div class="trust-item"><span class="trust-item-emoji">🔒</span> Paiement 100% sécurisé</div>
+      <div class="trust-item"><span class="trust-item-emoji">📞</span> Service client réactif</div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Fil d'Ariane">
+      <ol>
+        <li><a href="index.html">Accueil</a></li>
+        <li>Catalogue</li>
+      </ol>
+    </nav>
+
+    <section class="products-section" aria-label="Catalogue">
+      <div class="container">
+        <h1 class="section-title">🏕️ Notre catalogue</h1>
+        <p class="section-subtitle">20 produits sélectionnés pour votre autonomie</p>
+      </div>
+
+      <!-- Controls -->
+      <div class="catalogue-controls">
+        <div class="filter-buttons" id="filter-buttons" role="group" aria-label="Filtrer par catégorie">
+          <!-- Rendered by JS -->
+        </div>
+        <select class="sort-select" id="sort-select" aria-label="Trier les produits" onchange="applyFilters()">
+          <option value="default">Tri : Popularité</option>
+          <option value="price-asc">Prix croissant</option>
+          <option value="price-desc">Prix décroissant</option>
+          <option value="rating">Meilleures notes</option>
+          <option value="reviews">Plus d'avis</option>
+          <option value="name">Nom A-Z</option>
+        </select>
+      </div>
+
+      <p class="product-count" id="product-count">20 produits</p>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section" aria-label="Newsletter">
+      <div class="container">
+        <h2>📬 Rejoignez la communauté</h2>
+        <p>Conseils d'autonomie, guides pratiques et offres exclusives.</p>
+        <div class="newsletter-incentive">🎁 -10% sur votre 1ère commande avec le code NATURE10</div>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)" aria-label="Inscription newsletter">
+          <input type="email" placeholder="Votre adresse e-mail" required aria-label="Adresse e-mail">
+          <button type="submit" class="btn btn-primary">S'inscrire 🎉</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🌿 NatureSurvi</h4>
+        <p>Votre partenaire d'autosuffisance depuis 2020. Équipements testés et approuvés pour l'autonomie au quotidien.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <a href="catalogue.html">Catalogue complet</a>
+        <a href="catalogue.html?cat=Survie">Survie</a>
+        <a href="catalogue.html?cat=Jardinage">Jardinage</a>
+        <a href="catalogue.html?cat=Énergie">Énergie</a>
+        <a href="catalogue.html?cat=Conservation">Conservation</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <a href="about.html">À propos</a>
+        <a href="#">Livraison & retours</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">CGV</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📧 naturesurvi@gmail.com</p>
+        <p>📞 01 23 45 67 89</p>
+        <p>📍 Lyon, France</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 NatureSurvi — Tous droits réservés | Fait avec 🌿 en France</p>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div id="drawer-overlay" class="drawer-overlay" onclick="Cart.toggleDrawer()"></div>
+  <aside id="cart-drawer" class="cart-drawer" role="complementary" aria-label="Panier">
+    <div class="drawer-header">
+      <h3>🛒 Votre panier</h3>
+      <button class="drawer-close" onclick="Cart.toggleDrawer()" aria-label="Fermer le panier">&times;</button>
+    </div>
+    <div class="drawer-items" id="drawer-items"></div>
+    <div id="drawer-empty" class="drawer-empty" style="display:none;">
+      <span class="empty-icon">🛒</span>
+      <p>Votre panier est vide</p>
+      <a href="catalogue.html" class="btn btn-primary" style="margin-top:1rem;">Découvrir nos produits</a>
+    </div>
+    <div id="drawer-footer" class="drawer-footer" style="display:none;">
+      <div class="drawer-subtotal">
+        <span>Sous-total</span>
+        <span id="drawer-subtotal">0,00 €</span>
+      </div>
+      <a href="panier.html" class="btn btn-primary">Voir le panier complet</a>
+    </div>
+  </aside>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="product-modal"></div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    let currentCategory = 'all';
+    let currentSort = 'default';
+
+    // Parse URL params
+    function getUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      return { cat: params.get('cat') || 'all', q: params.get('q') || '' };
+    }
+
+    // Render filter buttons
+    function renderFilters() {
+      const { cat } = getUrlParams();
+      currentCategory = cat;
+
+      document.getElementById('filter-buttons').innerHTML = CATEGORIES.map(c => `
+        <button class="filter-btn ${c.id === currentCategory ? 'active' : ''}" 
+          onclick="setCategory('${c.id}')" aria-pressed="${c.id === currentCategory}">
+          ${c.emoji} ${c.name}
+        </button>
+      `).join('');
+    }
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      // Update URL without reload
+      const url = new URL(window.location);
+      if (cat === 'all') { url.searchParams.delete('cat'); }
+      else { url.searchParams.set('cat', cat); }
+      history.replaceState(null, '', url);
+
+      renderFilters();
+      applyFilters();
+    }
+
+    function applyFilters() {
+      currentSort = document.getElementById('sort-select').value;
+
+      let products = currentCategory === 'all' ? [...PRODUCTS] : getProductsByCategory(currentCategory);
+
+      // Search
+      const { q } = getUrlParams();
+      if (q) {
+        products = searchProducts(q).filter(p => currentCategory === 'all' || p.category === currentCategory);
+      }
+
+      products = sortProducts(products, currentSort);
+
+      document.getElementById('product-count').textContent = `${products.length} produit${products.length > 1 ? 's' : ''}`;
+      document.getElementById('products-grid').innerHTML = products.length > 0
+        ? products.map(p => renderProductCard(p)).join('')
+        : '<div class="cart-empty"><span class="empty-icon">🔍</span><h2>Aucun produit trouvé</h2><p>Essayez une autre catégorie ou un autre tri.</p></div>';
+    }
+
+    // Init
+    renderFilters();
+    applyFilters();
+
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+  </script>
+  <script src="js/analytics.js"></script>
+</body>
+</html>
