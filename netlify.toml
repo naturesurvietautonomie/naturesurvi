@@ -1,3 +1,18 @@
 [build]
   publish = "."
   command = ""
+
+[[plugins]]
+  package = "netlify-plugin-html-validate"
+  [plugins.inputs]
+    enabled = false
+
+[[plugins]]
+  package = "netlify-plugin-inline-critical-css"
+  [plugins.inputs]
+    enabled = false
+
+[[plugins]]
+  package = "@sentry/netlify-build-plugin"
+  [plugins.inputs]
+    enabled = false

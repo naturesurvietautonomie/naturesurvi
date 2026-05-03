@@ -442,3 +442,36 @@ function renderSupplier(product) {
     🏭 <span>${product.supplier}</span>
   </div>`;
 }
+
+function renderProductCard(product) {
+  const discount = product.originalPrice
+    ? Math.round((1 - product.price / product.originalPrice) * 100)
+    : 0;
+  return `
+    <div class="product-card" onclick="window.location='produit.html?id=${product.id}'" style="cursor:pointer">
+      <div class="product-card-img-wrap">
+        <img src="${product.image}" alt="${product.name}" loading="lazy">
+        <div class="product-card-badges">${renderBadges(product.badges)}</div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-category">${product.category}</div>
+        <h3 class="product-card-name">${product.name}</h3>
+        <div class="product-card-rating">
+          <span style="color:#f59e0b">${renderStars(product.rating)}</span>
+          <span style="font-size:0.8rem;color:#888">(${product.reviews})</span>
+        </div>
+        <div class="product-card-price-row">
+          <span class="product-card-price">${formatPrice(product.price)}</span>
+          ${product.originalPrice ? `<span class="product-card-original">${formatPrice(product.originalPrice)}</span>` : ''}
+          ${discount > 0 ? `<span class="product-card-discount">-${discount}%</span>` : ''}
+        </div>
+        ${renderSupplier(product)}
+        <div class="product-card-shipping">${product.shipping}</div>
+        <div class="product-card-actions">
+          <a href="produit.html?id=${product.id}" class="btn-voir">Voir le produit</a>
+          <button onclick="event.stopPropagation();Cart.add(${product.id})" class="btn-cart" type="button">🛒</button>
+        </div>
+      </div>
+    </div>
+  `;
+}

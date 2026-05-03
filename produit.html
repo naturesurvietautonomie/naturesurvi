@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Produit — Nature Survi & Autonomie</title>
+  <meta name="description" id="page-desc" content="Découvrez nos produits d'autosuffisance, survie et jardinage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://js.stripe.com/v3/"></script>
+  <style>
+    /* ---- PAGE PRODUIT ---- */
+    .product-page {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 5%;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--texte-clair, #888);
+      margin-bottom: 30px;
+    }
+
+    .breadcrumb a {
+      color: var(--vert-moyen, #4a7c2d);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    .product-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .product-main { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    .product-image-wrap {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #f5f0e8;
+    }
+
+    .product-image-wrap img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-badges-top {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .product-info { display: flex; flex-direction: column; gap: 16px; }
+
+    .product-category {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--vert-moyen, #4a7c2d);
+    }
+
+    .product-title {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--vert-fonce, #2d5016);
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .product-rating-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+
+    .stars { color: #f59e0b; font-size: 1rem; }
+    .rating-count { color: #888; }
+
+    .product-price-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0;
+    }
+
+    .price-current {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--vert-fonce, #2d5016);
+    }
+
+    .price-original {
+      font-size: 1.1rem;
+      color: #aaa;
+      text-decoration: line-through;
+    }
+
+    .price-discount {
+      background: #e8622a;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .product-description {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .product-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px;
+      background: #f9f5ee;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      color: #555;
+    }
+
+    .product-meta-item { display: flex; gap: 8px; }
+    .product-meta-item strong { color: var(--vert-fonce, #2d5016); min-width: 80px; }
+
+    .qty-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0;
+    }
+
+    .qty-label { font-weight: 700; font-size: 0.9rem; color: #333; }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      background: #f5f0e8;
+      border: none;
+      padding: 8px 14px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--vert-fonce, #2d5016);
+      transition: background 0.2s;
+    }
+
+    .qty-btn:hover { background: #e8dfc8; }
+
+    .qty-input {
+      border: none;
+      width: 50px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 8px 0;
+      background: white;
+    }
+
+    .btn-buy {
+      background: #e8622a;
+      color: white;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s, transform 0.1s;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .btn-buy:hover { background: #c94e1e; transform: translateY(-1px); }
+    .btn-buy:active { transform: translateY(0); }
+
+    .btn-cart-add {
+      background: var(--vert-fonce, #2d5016);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .btn-cart-add:hover { background: #1e3a0e; }
+
+    .trust-mini {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    .trust-mini span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Stripe modal */
+    .stripe-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stripe-modal.open { display: flex; }
+
+    .stripe-modal-inner {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      width: 100%;
+      max-width: 480px;
+      position: relative;
+    }
+
+    .stripe-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #888;
+    }
+
+    .stripe-modal h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--vert-fonce, #2d5016);
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .stripe-modal .order-summary {
+      background: #f9f5ee;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .stripe-modal .order-summary strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--vert-fonce, #2d5016);
+      margin-bottom: 4px;
+    }
+
+    #card-element {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 16px;
+      background: white;
+    }
+
+    #card-errors {
+      color: #e8622a;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      min-height: 20px;
+    }
+
+    .btn-pay {
+      background: #e8622a;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Nunito', sans-serif;
+      transition: background 0.2s;
+    }
+
+    .btn-pay:hover { background: #c94e1e; }
+    .btn-pay:disabled { background: #aaa; cursor: not-allowed; }
+
+    .stripe-secure {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 12px;
+    }
+
+    /* Articles en relation */
+    .related-section {
+      margin: 60px 0 40px;
+    }
+
+    .related-section h2 {
+      font-family: 'Merriweather', serif;
+      color: var(--vert-fonce, #2d5016);
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .related-section p {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .related-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .related-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .related-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .related-card-body { padding: 14px; }
+
+    .related-card-body h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--vert-fonce, #2d5016);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .related-card-price {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #e8622a;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-emoji">🌿</span>
+      <span>Nature Survi & Autonomie</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="about.html">À propos</a>
+      <a href="panier.html">Panier</a>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" onclick="Cart.toggleDrawer()" type="button">
+        🛒 <span class="cart-total-nav">0,00 €</span>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Page produit -->
+<div class="product-page">
+
+  <!-- Fil d'Ariane -->
+  <div class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span>›</span>
+    <a href="catalogue.html">Catalogue</a>
+    <span>›</span>
+    <span id="breadcrumb-name">Produit</span>
+  </div>
+
+  <!-- Produit principal -->
+  <div class="product-main">
+    <!-- Image -->
+    <div class="product-image-wrap">
+      <img id="product-img" src="" alt="Produit">
+      <div class="product-badges-top" id="product-badges"></div>
+    </div>
+
+    <!-- Infos -->
+    <div class="product-info">
+      <div class="product-category" id="product-category"></div>
+      <h1 class="product-title" id="product-name"></h1>
+
+      <div class="product-rating-row">
+        <span class="stars" id="product-stars"></span>
+        <span id="product-rating"></span>
+        <span class="rating-count" id="product-reviews"></span>
+      </div>
+
+      <div class="product-price-row">
+        <span class="price-current" id="product-price"></span>
+        <span class="price-original" id="product-original"></span>
+        <span class="price-discount" id="product-discount"></span>
+      </div>
+
+      <p class="product-description" id="product-desc"></p>
+
+      <div class="product-meta" id="product-meta"></div>
+
+      <!-- Quantité -->
+      <div class="qty-row">
+        <span class="qty-label">Quantité :</span>
+        <div class="qty-controls">
+          <button class="qty-btn" onclick="changeQty(-1)" type="button">−</button>
+          <input class="qty-input" type="number" id="qty" value="1" min="1" max="99">
+          <button class="qty-btn" onclick="changeQty(1)" type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Boutons -->
+      <button class="btn-buy" onclick="openStripe()" type="button">
+        💳 Acheter maintenant
+      </button>
+      <button class="btn-cart-add" onclick="addToCartFromPage()" type="button">
+        🛒 Ajouter au panier
+      </button>
+
+      <!-- Garanties mini -->
+      <div class="trust-mini">
+        <span>🚚 Livraison gratuite dès 50€</span>
+        <span>🔄 Retour 14 jours</span>
+        <span>🔒 Paiement sécurisé</span>
+        <span>📧 naturesurvie@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles en relation -->
+  <div class="related-section">
+    <h2>🌿 Vous aimerez aussi</h2>
+    <p>Produits de la même catégorie</p>
+    <div class="related-grid" id="related-grid"></div>
+  </div>
+
+</div>
+
+<!-- Modal Stripe -->
+<div class="stripe-modal" id="stripe-modal">
+  <div class="stripe-modal-inner">
+    <button class="stripe-modal-close" onclick="closeStripe()" type="button">✕</button>
+    <h3>💳 Paiement sécurisé</h3>
+    <div class="order-summary" id="order-summary"></div>
+    <div id="card-element"></div>
+    <div id="card-errors"></div>
+    <button class="btn-pay" id="btn-pay" onclick="processPayment()" type="button">
+      Payer maintenant
+    </button>
+    <div class="stripe-secure">🔒 Paiement sécurisé par Stripe — Vos données sont protégées</div>
+  </div>
+</div>
+
+<!-- Cart Drawer -->
+<div id="drawer-overlay" class="drawer-overlay" onclick="Cart.toggleDrawer()"></div>
+<aside id="cart-drawer" class="cart-drawer">
+  <div class="drawer-header">
+    <h3>🛒 Votre panier</h3>
+    <button class="drawer-close" onclick="Cart.toggleDrawer()" type="button">&times;</button>
+  </div>
+  <div class="drawer-items" id="drawer-items"></div>
+  <div id="drawer-empty" class="drawer-empty" style="display:none;">
+    <span>🛒</span>
+    <p>Votre panier est vide</p>
+    <a href="catalogue.html" class="btn btn-primary">Découvrir nos produits</a>
+  </div>
+  <div id="drawer-footer" class="drawer-footer" style="display:none;">
+    <div class="drawer-subtotal">
+      <span>Sous-total</span>
+      <span id="drawer-subtotal">0,00 €</span>
+    </div>
+    <a href="panier.html" class="btn btn-primary">Voir le panier</a>
+  </div>
+</aside>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script>
+  // Stripe init
+  const stripe = Stripe('pk_live_51TSlk7Rgv1SFjLjz9pgWESQRRkhovA0Rgwg0qX8T1ob2RtqeyVFZLP6sZP8okWsM66Q9rI1ut2tRA8ytmqi7I1oE00Tv6Eu3ip');
+  const elements = stripe.elements();
+  const cardElement = elements.create('card', {
+    style: {
+      base: {
+        fontFamily: 'Nunito, sans-serif',
+        fontSize: '16px',
+        color: '#333',
+        '::placeholder': { color: '#aaa' }
+      }
+    }
+  });
+
+  let currentProduct = null;
+
+  // Charger le produit depuis l'URL
+  function loadProduct() {
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get('id'));
+    const product = PRODUCTS.find(p => p.id === id);
+
+    if (!product) {
+      document.querySelector('.product-page').innerHTML = '<p style="text-align:center;padding:60px">Produit introuvable. <a href="catalogue.html">Retour au catalogue</a></p>';
+      return;
+    }
+
+    currentProduct = product;
+
+    // Meta
+    document.getElementById('page-title').textContent = product.name + ' — Nature Survi & Autonomie';
+    document.getElementById('page-desc').content = product.description;
+    document.getElementById('breadcrumb-name').textContent = product.name;
+
+    // Image
+    document.getElementById('product-img').src = product.image;
+    document.getElementById('product-img').alt = product.name;
+
+    // Badges
+    const BADGE_COLORS = {
+      'Bestseller': { bg: '#e8622a', color: 'white', emoji: '🔥' },
+      'Bio': { bg: '#2d5016', color: 'white', emoji: '🌿' },
+      'Nouveau': { bg: '#4a7c2d', color: 'white', emoji: '✨' },
+      'Promo': { bg: '#f59e0b', color: 'white', emoji: '💥' },
+      'Essentiel': { bg: '#6b4c2a', color: 'white', emoji: '⭐' }
+    };
+    document.getElementById('product-badges').innerHTML = product.badges.map(b => {
+      const c = BADGE_COLORS[b] || { bg: '#888', color: 'white', emoji: '' };
+      return `<span class="badge" style="background:${c.bg};color:${c.color};padding:4px 10px;border-radius:20px;font-size:0.75rem;font-weight:700">${c.emoji} ${b}</span>`;
+    }).join('');
+
+    // Infos
+    document.getElementById('product-category').textContent = '📦 ' + product.category;
+    document.getElementById('product-name').textContent = product.name;
+
+    // Rating
+    const stars = '★'.repeat(Math.floor(product.rating)) + (product.rating % 1 >= 0.5 ? '½' : '');
+    document.getElementById('product-stars').textContent = stars;
+    document.getElementById('product-rating').textContent = product.rating + '/5';
+    document.getElementById('product-reviews').textContent = '(' + product.reviews + ' avis)';
+
+    // Prix
+    document.getElementById('product-price').textContent = product.price.toFixed(2).replace('.', ',') + ' €';
+    if (product.originalPrice) {
+      document.getElementById('product-original').textContent = product.originalPrice.toFixed(2).replace('.', ',') + ' €';
+      const discount = Math.round((1 - product.price / product.originalPrice) * 100);
+      document.getElementById('product-discount').textContent = '-' + discount + '%';
+    }
+
+    // Description
+    document.getElementById('product-desc').textContent = product.description;
+
+    // Meta
+    const metaItems = [
+      { label: '⚖️ Poids', value: product.weight },
+      { label: '🚚 Livraison', value: product.shipping },
+      { label: '🏭 Fournisseur', value: product.supplier || 'Europe' },
+    ];
+    document.getElementById('product-meta').innerHTML = metaItems.map(m =>
+      `<div class="product-meta-item"><strong>${m.label}</strong><span>${m.value}</span></div>`
+    ).join('');
+
+    // Articles en relation
+    loadRelated(product);
+  }
+
+  function loadRelated(product) {
+    const related = PRODUCTS
+      .filter(p => p.id !== product.id && p.category === product.category)
+      .slice(0, 4);
+
+    // Si pas assez dans la même catégorie, compléter avec d'autres
+    if (related.length < 4) {
+      const others = PRODUCTS
+        .filter(p => p.id !== product.id && p.category !== product.category)
+        .slice(0, 4 - related.length);
+      related.push(...others);
+    }
+
+    document.getElementById('related-grid').innerHTML = related.map(p => `
+      <a class="related-card" href="produit.html?id=${p.id}">
+        <img src="${p.image}" alt="${p.name}">
+        <div class="related-card-body">
+          <h4>${p.name}</h4>
+          <div class="related-card-price">${p.price.toFixed(2).replace('.', ',')} €</div>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  function changeQty(delta) {
+    const input = document.getElementById('qty');
+    const val = Math.max(1, Math.min(99, parseInt(input.value) + delta));
+    input.value = val;
+  }
+
+  function addToCartFromPage() {
+    if (!currentProduct) return;
+    const qty = parseInt(document.getElementById('qty').value);
+    for (let i = 0; i < qty; i++) {
+      Cart.add(currentProduct.id);
+    }
+    Cart.toggleDrawer();
+  }
+
+  // Stripe
+  let cardMounted = false;
+
+  function openStripe() {
+    if (!currentProduct) return;
+    const qty = parseInt(document.getElementById('qty').value);
+    const total = (currentProduct.price * qty).toFixed(2).replace('.', ',');
+
+    document.getElementById('order-summary').innerHTML = `
+      <strong>${currentProduct.name}</strong>
+      Quantité : ${qty} × ${currentProduct.price.toFixed(2).replace('.', ',')} € = <strong>${total} €</strong>
+    `;
+
+    document.getElementById('stripe-modal').classList.add('open');
+
+    if (!cardMounted) {
+      cardElement.mount('#card-element');
+      cardElement.on('change', function(e) {
+        document.getElementById('card-errors').textContent = e.error ? e.error.message : '';
+      });
+      cardMounted = true;
+    }
+  }
+
+  function closeStripe() {
+    document.getElementById('stripe-modal').classList.remove('open');
+  }
+
+  async function processPayment() {
+    const btn = document.getElementById('btn-pay');
+    btn.disabled = true;
+    btn.textContent = 'Traitement en cours...';
+
+    const { paymentMethod, error } = await stripe.createPaymentMethod({
+      type: 'card',
+      card: cardElement,
+    });
+
+    if (error) {
+      document.getElementById('card-errors').textContent = error.message;
+      btn.disabled = false;
+      btn.textContent = 'Payer maintenant';
+      return;
+    }
+
+    // Ici : envoyer paymentMethod.id à ton backend pour finaliser le paiement
+    // Pour l'instant on affiche un message de succès (démo)
+    document.getElementById('stripe-modal').innerHTML = `
+      <div style="text-align:center;padding:40px">
+        <div style="font-size:3rem">🎉</div>
+        <h3 style="color:#2d5016;margin:16px 0 8px">Commande confirmée !</h3>
+        <p style="color:#555">Merci pour votre achat. Vous recevrez une confirmation à naturesurvie@gmail.com</p>
+        <a href="catalogue.html" style="display:inline-block;margin-top:20px;background:#2d5016;color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:700">Continuer mes achats</a>
+      </div>
+    `;
+  }
+
+  // Init
+  loadProduct();
+</script>
+</body>
+</html>
