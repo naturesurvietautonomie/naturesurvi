@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -529,20 +529,6 @@
 <script src="js/products.js"></script>
 <script src="js/cart.js"></script>
 <script>
-  // Stripe init
-  const stripe = Stripe('pk_live_51TSlk7Rgv1SFjLjz9pgWESQRRkhovA0Rgwg0qX8T1ob2RtqeyVFZLP6sZP8okWsM66Q9rI1ut2tRA8ytmqi7I1oE00Tv6Eu3ip');
-  const elements = stripe.elements();
-  const cardElement = elements.create('card', {
-    style: {
-      base: {
-        fontFamily: 'Nunito, sans-serif',
-        fontSize: '16px',
-        color: '#333',
-        '::placeholder': { color: '#aaa' }
-      }
-    }
-  });
-
   let currentProduct = null;
 
   // Charger le produit depuis l'URL
@@ -654,27 +640,25 @@
     Cart.toggleDrawer();
   }
 
-  // Stripe
-  let cardMounted = false;
+  // Stripe Payment Links par produit
+  const STRIPE_LINKS = {
+    // Ajoute ici tes liens apres creation sur dashboard.stripe.com/payment-links
+    // 1: 'https://buy.stripe.com/xxxx',
+    default: null
+  };
 
   function openStripe() {
     if (!currentProduct) return;
     const qty = parseInt(document.getElementById('qty').value);
-    const total = (currentProduct.price * qty).toFixed(2).replace('.', ',');
-
-    document.getElementById('order-summary').innerHTML = `
-      <strong>${currentProduct.name}</strong>
-      Quantité : ${qty} × ${currentProduct.price.toFixed(2).replace('.', ',')} € = <strong>${total} €</strong>
-    `;
-
-    document.getElementById('stripe-modal').classList.add('open');
-
-    if (!cardMounted) {
-      cardElement.mount('#card-element');
-      cardElement.on('change', function(e) {
-        document.getElementById('card-errors').textContent = e.error ? e.error.message : '';
-      });
-      cardMounted = true;
+    const link = STRIPE_LINKS[currentProduct.id] || STRIPE_LINKS.default;
+    if (link) {
+      window.location.href = link;
+    } else {
+      document.getElementById('stripe-modal').classList.add('open');
+      const total = (currentProduct.price * qty).toFixed(2).replace('.', ',');
+      document.getElementById('order-summary').innerHTML =
+        '<strong>' + currentProduct.name + '</strong><br>' +
+        'Quantit\u00e9 : ' + qty + ' \u00d7 ' + currentProduct.price.toFixed(2).replace('.', ',') + ' \u20ac = <strong>' + total + ' \u20ac</strong>';
     }
   }
 
@@ -682,36 +666,15 @@
     document.getElementById('stripe-modal').classList.remove('open');
   }
 
-  async function processPayment() {
-    const btn = document.getElementById('btn-pay');
-    btn.disabled = true;
-    btn.textContent = 'Traitement en cours...';
-
-    const { paymentMethod, error } = await stripe.createPaymentMethod({
-      type: 'card',
-      card: cardElement,
-    });
-
-    if (error) {
-      document.getElementById('card-errors').textContent = error.message;
-      btn.disabled = false;
-      btn.textContent = 'Payer maintenant';
-      return;
-    }
-
-    // Ici : envoyer paymentMethod.id à ton backend pour finaliser le paiement
-    // Pour l'instant on affiche un message de succès (démo)
-    document.getElementById('stripe-modal').innerHTML = `
-      <div style="text-align:center;padding:40px">
-        <div style="font-size:3rem">🎉</div>
-        <h3 style="color:#2d5016;margin:16px 0 8px">Commande confirmée !</h3>
-        <p style="color:#555">Merci pour votre achat. Vous recevrez une confirmation à naturesurvi@gmail.com</p>
-        <a href="catalogue.html" style="display:inline-block;margin-top:20px;background:#2d5016;color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:700">Continuer mes achats</a>
-      </div>
-    `;
+  function processPayment() {
+    if (!currentProduct) return;
+    const qty = document.getElementById('qty').value;
+    const subject = encodeURIComponent('Commande : ' + currentProduct.name);
+    const body = encodeURIComponent('Bonjour,\n\nJe souhaite commander :\nProduit : ' + currentProduct.name + '\nQuantite : ' + qty + '\nPrix unitaire : ' + currentProduct.price.toFixed(2) + ' EUR\nTotal : ' + (currentProduct.price * qty).toFixed(2) + ' EUR\n\nMes coordonnees :\nNom :\nAdresse de livraison :\nTelephone :\n\nCordialement');
+    window.location.href = 'mailto:naturesurvi@gmail.com?subject=' + subject + '&body=' + body;
   }
 
-  // Init
+    // Init
   loadProduct();
 </script>
 </body>
