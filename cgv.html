@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGV & Mentions Légales — Nature Survi & Autonomie</title>
+  <meta name="description" content="Conditions Générales de Vente et Mentions Légales de Nature Survi & Autonomie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-hero {
+      background: var(--gradient-hero);
+      padding: 60px 5%;
+      text-align: center;
+    }
+    .legal-hero h1 { color: var(--blanc); font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 10px; }
+    .legal-hero p { color: rgba(255,255,255,0.75); font-size: 1rem; }
+
+    .legal-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+
+    .legal-section {
+      margin-bottom: 50px;
+    }
+
+    .legal-section h2 {
+      font-size: 1.4rem;
+      color: var(--vert-fonce);
+      border-left: 5px solid var(--vert-clair);
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .legal-section h3 {
+      font-size: 1.05rem;
+      color: var(--brun);
+      margin: 20px 0 10px;
+    }
+
+    .legal-section p, .legal-section li {
+      color: var(--texte-clair);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .legal-section ul {
+      padding-left: 20px;
+    }
+
+    .legal-section ul li {
+      margin-bottom: 6px;
+    }
+
+    .legal-box {
+      background: var(--creme-fonce);
+      border-radius: var(--radius);
+      padding: 20px 25px;
+      margin: 20px 0;
+      border-left: 4px solid var(--vert-moyen);
+    }
+
+    .legal-box p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--texte);
+    }
+
+    .legal-toc {
+      background: var(--blanc);
+      border: 2px solid var(--creme-fonce);
+      border-radius: var(--radius-lg);
+      padding: 25px 30px;
+      margin-bottom: 50px;
+    }
+
+    .legal-toc h3 {
+      color: var(--vert-fonce);
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .legal-toc ol {
+      padding-left: 20px;
+    }
+
+    .legal-toc li {
+      margin-bottom: 8px;
+    }
+
+    .legal-toc a {
+      color: var(--vert-moyen);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .legal-toc a:hover {
+      color: var(--vert-fonce);
+      text-decoration: underline;
+    }
+
+    .update-date {
+      text-align: right;
+      font-size: 0.82rem;
+      color: var(--texte-clair);
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .legal-container { padding: 40px 4%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <span class="logo-icon">🌿</span>
+    <span>
+      <span class="logo-text">Nature Survi & Autonomie</span>
+      <span class="logo-sub">Autosuffisance · Survie · Jardinage</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="catalogue.html">Catalogue</a></li>
+    <li><a href="about.html">Notre Mission</a></li>
+    <li><a href="cgv.html" class="active">CGV</a></li>
+  </ul>
+  <div class="navbar-actions">
+    <button class="cart-btn" onclick="openCart()">
+      🛒 Panier <span class="cart-count" style="display:none">0</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="legal-hero">
+  <h1>📄 CGV & Mentions Légales</h1>
+  <p>Conditions Générales de Vente — Nature Survi & Autonomie</p>
+</div>
+
+<div class="legal-container">
+
+  <p class="update-date">Dernière mise à jour : mai 2026</p>
+
+  <!-- Table des matières -->
+  <div class="legal-toc">
+    <h3>📋 Sommaire</h3>
+    <ol>
+      <li><a href="#mentions">Mentions légales</a></li>
+      <li><a href="#objet">Objet</a></li>
+      <li><a href="#produits">Produits & disponibilité</a></li>
+      <li><a href="#prix">Prix</a></li>
+      <li><a href="#commande">Commande</a></li>
+      <li><a href="#paiement">Paiement</a></li>
+      <li><a href="#livraison">Livraison</a></li>
+      <li><a href="#retours">Droit de rétractation & retours</a></li>
+      <li><a href="#garanties">Garanties légales</a></li>
+      <li><a href="#donnees">Données personnelles</a></li>
+      <li><a href="#litiges">Litiges</a></li>
+    </ol>
+  </div>
+
+  <!-- MENTIONS LÉGALES -->
+  <div class="legal-section" id="mentions">
+    <h2>1. Mentions Légales</h2>
+    <div class="legal-box">
+      <p><strong>Responsable de la publication :</strong> Nature Survi & Autonomie</p>
+      <p><strong>Statut :</strong> Particulier</p>
+      <p><strong>Adresse :</strong> Bègles, 33130, France</p>
+      <p><strong>Email :</strong> <a href="mailto:naturesurvie@gmail.com">naturesurvie@gmail.com</a></p>
+      <p><strong>Site web :</strong> Nature Survi & Autonomie</p>
+    </div>
+    <p>Ce site est exploité par un particulier dans le cadre d'une activité de vente en ligne de produits d'autosuffisance, survie et jardinage.</p>
+  </div>
+
+  <!-- OBJET -->
+  <div class="legal-section" id="objet">
+    <h2>2. Objet</h2>
+    <p>Les présentes Conditions Générales de Vente (CGV) régissent l'ensemble des transactions effectuées sur la boutique en ligne <strong>Nature Survi & Autonomie</strong>.</p>
+    <p>Toute commande passée implique l'acceptation pleine et entière des présentes CGV. Le client déclare en avoir pris connaissance avant de valider sa commande.</p>
+  </div>
+
+  <!-- PRODUITS -->
+  <div class="legal-section" id="produits">
+    <h2>3. Produits & Disponibilité</h2>
+    <p>Les produits proposés à la vente sont ceux décrits sur la boutique au moment de la consultation par le client.</p>
+    <p>Chaque produit est présenté avec :</p>
+    <ul>
+      <li>Une description détaillée</li>
+      <li>Son prix TTC</li>
+      <li>Les informations de livraison applicables</li>
+    </ul>
+    <p>En cas d'indisponibilité d'un produit après validation de la commande, le client en sera informé par email dans les 48 heures et pourra choisir entre un produit de remplacement ou un remboursement intégral.</p>
+  </div>
+
+  <!-- PRIX -->
+  <div class="legal-section" id="prix">
+    <h2>4. Prix</h2>
+    <p>Les prix indiqués sur la boutique sont en <strong>euros TTC</strong> (toutes taxes comprises).</p>
+    <p>Les prix peuvent être modifiés à tout moment. Seul le prix affiché au moment de la validation de la commande est applicable.</p>
+    <p>Les frais de livraison sont indiqués séparément lors du passage de commande. La livraison est <strong>offerte à partir de 50€</strong> d'achat pour la France métropolitaine.</p>
+  </div>
+
+  <!-- COMMANDE -->
+  <div class="legal-section" id="commande">
+    <h2>5. Commande</h2>
+    <p>Pour passer commande, le client :</p>
+    <ul>
+      <li>Sélectionne les produits souhaités et les ajoute au panier</li>
+      <li>Valide son panier et renseigne ses coordonnées de livraison</li>
+      <li>Choisit son mode de paiement et confirme la commande</li>
+    </ul>
+    <p>Un email de confirmation est envoyé dès réception du paiement. La vente est considérée comme définitive à réception de cet email.</p>
+    <p>Nature Survi & Autonomie se réserve le droit d'annuler toute commande suspecte ou frauduleuse.</p>
+  </div>
+
+  <!-- PAIEMENT -->
+  <div class="legal-section" id="paiement">
+    <h2>6. Paiement</h2>
+    <p>Les modes de paiement acceptés sont :</p>
+    <ul>
+      <li>💳 <strong>Carte bancaire</strong> (Visa, Mastercard, CB)</li>
+      <li>🅿️ <strong>PayPal</strong></li>
+      <li>🏦 <strong>Virement bancaire</strong></li>
+    </ul>
+    <p>Le paiement est sécurisé. Les coordonnées bancaires du client ne sont jamais stockées sur le site.</p>
+    <p>La commande est traitée uniquement après confirmation du paiement.</p>
+  </div>
+
+  <!-- LIVRAISON -->
+  <div class="legal-section" id="livraison">
+    <h2>7. Livraison</h2>
+    <p>Les livraisons sont effectuées en <strong>France métropolitaine</strong> uniquement (sauf mention contraire).</p>
+
+    <h3>Délais</h3>
+    <ul>
+      <li>Expédition sous <strong>24 à 48h</strong> ouvrées après confirmation du paiement</li>
+      <li>Livraison estimée sous <strong>3 à 7 jours ouvrés</strong> selon le transporteur</li>
+    </ul>
+
+    <h3>Frais de livraison</h3>
+    <ul>
+      <li>Offerts à partir de <strong>50€</strong> d'achat</li>
+      <li>Frais variables selon le poids et la destination en dessous de ce seuil</li>
+    </ul>
+
+    <h3>Suivi</h3>
+    <p>Un numéro de suivi est communiqué par email dès l'expédition du colis.</p>
+
+    <div class="legal-box">
+      <p>⚠️ En cas de retard de livraison imputable au transporteur, Nature Survi & Autonomie ne saurait être tenu responsable. Le client est invité à contacter directement le transporteur avec son numéro de suivi.</p>
+    </div>
+  </div>
+
+  <!-- RETOURS -->
+  <div class="legal-section" id="retours">
+    <h2>8. Droit de Rétractation & Retours</h2>
+    <p>Conformément à l'article L221-18 du Code de la consommation, le client dispose d'un délai de <strong>14 jours calendaires</strong> à compter de la réception de sa commande pour exercer son droit de rétractation, sans avoir à justifier de motif.</p>
+
+    <h3>Procédure de retour</h3>
+    <ul>
+      <li>Envoyer un email à <a href="mailto:naturesurvie@gmail.com">naturesurvie@gmail.com</a> avec la référence de commande</li>
+      <li>Renvoyer le produit dans son emballage d'origine, en parfait état</li>
+      <li>Les frais de retour sont à la charge du client</li>
+    </ul>
+
+    <h3>Remboursement</h3>
+    <p>Le remboursement sera effectué dans un délai de <strong>14 jours</strong> après réception du retour, via le même moyen de paiement utilisé lors de l'achat.</p>
+
+    <div class="legal-box">
+      <p>⚠️ Le droit de rétractation ne s'applique pas aux produits personnalisés, aux denrées périssables, ou aux produits descellés par le client pour des raisons d'hygiène.</p>
+    </div>
+  </div>
+
+  <!-- GARANTIES -->
+  <div class="legal-section" id="garanties">
+    <h2>9. Garanties Légales</h2>
+    <p>Tous les produits vendus bénéficient des garanties légales suivantes :</p>
+    <ul>
+      <li><strong>Garantie de conformité</strong> (article L217-4 du Code de la consommation) — 2 ans à compter de la livraison</li>
+      <li><strong>Garantie contre les vices cachés</strong> (article 1641 du Code civil)</li>
+    </ul>
+    <p>En cas de défaut constaté, contactez-nous à <a href="mailto:naturesurvie@gmail.com">naturesurvie@gmail.com</a> avec photos à l'appui.</p>
+  </div>
+
+  <!-- DONNÉES PERSONNELLES -->
+  <div class="legal-section" id="donnees">
+    <h2>10. Données Personnelles</h2>
+    <p>Les données personnelles collectées (nom, adresse, email) sont utilisées uniquement pour le traitement des commandes et la communication relative à celles-ci.</p>
+    <p>Conformément au RGPD, le client dispose d'un droit d'accès, de rectification et de suppression de ses données. Pour exercer ce droit : <a href="mailto:naturesurvie@gmail.com">naturesurvie@gmail.com</a></p>
+    <p>Aucune donnée personnelle n'est cédée à des tiers à des fins commerciales.</p>
+  </div>
+
+  <!-- LITIGES -->
+  <div class="legal-section" id="litiges">
+    <h2>11. Litiges</h2>
+    <p>En cas de litige, le client est invité à contacter en priorité Nature Survi & Autonomie à l'adresse <a href="mailto:naturesurvie@gmail.com">naturesurvie@gmail.com</a> afin de trouver une solution amiable.</p>
+    <p>À défaut d'accord amiable, le client peut recourir à une médiation de la consommation. En France, la plateforme européenne de règlement en ligne des litiges est accessible à l'adresse : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a></p>
+    <p>Les présentes CGV sont soumises au droit français. Tout litige relève de la compétence des tribunaux français.</p>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">🌿 Nature Survi & Autonomie</div>
+      <p>La boutique des personnes qui choisissent l'autonomie. Produits bio, survie, jardinage — expédiés depuis la France.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Boutique</h4>
+      <ul>
+        <li><a href="catalogue.html">Tous les produits</a></li>
+        <li><a href="index.html">Accueil</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="cgv.html">CGV & Mentions légales</a></li>
+        <li><a href="cgv.html#donnees">Données personnelles</a></li>
+        <li><a href="cgv.html#retours">Retours</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:naturesurvie@gmail.com">📧 naturesurvie@gmail.com</a></li>
+        <li><a href="about.html#contact">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Nature Survi & Autonomie — Tous droits réservés</span>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
