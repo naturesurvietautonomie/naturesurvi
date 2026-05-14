@@ -843,7 +843,8 @@ const BADGE_COLORS = {
   "Promo": { bg: "#fff3e0", color: "#e65100", emoji: "🔥" },
   "Bestseller": { bg: "#fce4ec", color: "#c62828", emoji: "⭐" },
   "Nouveau": { bg: "#e3f2fd", color: "#1565c0", emoji: "✨" },
-  "Essentiel": { bg: "#f3e5f5", color: "#6a1b9a", emoji: "💎" }
+  "Essentiel": { bg: "#f3e5f5", color: "#6a1b9a", emoji: "💎" },
+  "Survie": { bg: "#e8f5e9", color: "#1b5e20", emoji: "🏕️" }
 };
 
 // Fonctions utilitaires produits
