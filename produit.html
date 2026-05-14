@@ -448,6 +448,14 @@
         <span class="price-discount" id="product-discount"></span>
       </div>
 
+      <!-- Sélecteur de variantes -->
+      <div id="variant-selector" style="display:none; margin:20px 0; padding:16px; background:#f9f6ef; border-radius:12px; border:1px solid #e0d9c5;">
+        <label style="font-weight:700; color:#2d5016; margin-bottom:10px; display:block; font-size:0.95rem;">
+          🎯 Choisir le modèle :
+        </label>
+        <div id="variant-buttons" style="display:flex; flex-wrap:wrap; gap:8px;"></div>
+      </div>
+
       <p class="product-description" id="product-desc"></p>
 
       <div class="product-meta" id="product-meta"></div>
@@ -597,8 +605,75 @@
       `<div class="product-meta-item"><strong>${m.label}</strong><span>${m.value}</span></div>`
     ).join('');
 
+    // Variantes (si disponibles)
+    renderVariants(product);
+
     // Articles en relation
     loadRelated(product);
+  }
+
+  // Affichage du sélecteur de variantes
+  function renderVariants(product) {
+    if (!product.variants || product.variants.length === 0) return;
+
+    const selector = document.getElementById('variant-selector');
+    const btns = document.getElementById('variant-buttons');
+    selector.style.display = 'block';
+    btns.innerHTML = '';
+
+    product.variants.forEach((v, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = v.label;
+      btn.className = 'variant-btn';
+      btn.dataset.idx = i;
+      btn.style.cssText = `
+        padding:10px 18px;
+        border:2px solid #4a7c2d;
+        border-radius:8px;
+        cursor:pointer;
+        font-size:0.9rem;
+        font-weight:600;
+        font-family:'Nunito',sans-serif;
+        background:${i === 0 ? '#4a7c2d' : 'white'};
+        color:${i === 0 ? 'white' : '#4a7c2d'};
+        transition:all 0.2s;
+      `;
+      btn.onclick = () => selectVariant(product, i);
+      btns.appendChild(btn);
+    });
+
+    // Activer la première variante par défaut
+    window.selectedVariant = product.variants[0];
+  }
+
+  function selectVariant(product, idx) {
+    const v = product.variants[idx];
+    window.selectedVariant = v;
+
+    // Mise à jour du prix
+    document.getElementById('product-price').textContent = v.price.toFixed(2).replace('.', ',') + ' €';
+    if (v.originalPrice) {
+      document.getElementById('product-original').textContent = v.originalPrice.toFixed(2).replace('.', ',') + ' €';
+      const discount = Math.round((1 - v.price / v.originalPrice) * 100);
+      document.getElementById('product-discount').textContent = '-' + discount + '%';
+    }
+
+    // Mise à jour de l'image
+    if (v.image) {
+      document.getElementById('product-img').src = v.image;
+    }
+
+    // Mise à jour des boutons actifs
+    document.querySelectorAll('.variant-btn').forEach((b, i) => {
+      b.style.background = i === idx ? '#4a7c2d' : 'white';
+      b.style.color = i === idx ? 'white' : '#4a7c2d';
+    });
+
+    // Mettre à jour le produit courant pour le panier/paiement
+    currentProduct.price = v.price;
+    currentProduct.image = v.image || currentProduct.image;
+    currentProduct.supplierSku = v.supplierSku;
   }
 
   function loadRelated(product) {

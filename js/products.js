@@ -5,33 +5,14 @@
 const PRODUCTS = [
   {
     id: 1,
-    name: "Lampe frontale LED rechargeable Velamp 400lm",
-    price: 34.90,
-    originalPrice: 42.90,
-    category: "Éclairage",
-    description: "Lampe frontale LED rechargeable et réglable 6W, 400 lumens. Idéale pour la randonnée, le camping et les situations d'urgence. Légère et robuste.",
-    badges: ["Bestseller", "Essentiel"],
-    rating: 4.8,
-    reviews: 312,
-    image: "img/prod1.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "180 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "velamp-6w-400lm",
-    supplierPrice: 15.82,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
-    id: 2,
-    name: "Lampe frontale LED rechargeable Velamp 350lm",
+    name: "Lampe frontale LED rechargeable Velamp",
     price: 27.90,
     originalPrice: 34.90,
     category: "Éclairage",
-    description: "Lampe frontale LED rechargeable 5W, 350 lumens. Légère et polyvalente pour randonnée, bivouac et urgences. Bandeau réglable confortable.",
-    badges: ["Promo"],
-    rating: 4.6,
-    reviews: 198,
+    description: "Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d'urgence. Légère, robuste, bandeau réglable confortable.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.8,
+    reviews: 312,
     image: "img/prod2.jpg",
     shipping: "Livraison 2-3 jours",
     weight: "160 g",
@@ -39,7 +20,11 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierSku: "velamp-5w-350lm",
     supplierPrice: 12.29,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "350 lm — 5W", price: 27.90, originalPrice: 34.90, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
+      { label: "400 lm — 6W", price: 34.90, originalPrice: 42.90, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
+    ]
   },
   {
     id: 3,
@@ -81,11 +66,11 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    name: "Couteau Opinel N°8 acier inoxydable",
+    name: "Couteau Opinel acier inoxydable",
     price: 19.90,
     originalPrice: 24.90,
     category: "Outils",
-    description: "Le classique Opinel N°8, lame inox de 8,5 cm. Manche en bois de hêtre, virole tournante de sécurité. Fabriqué en France. Indispensable en randonnée et bushcraft.",
+    description: "L'iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.",
     badges: ["Bestseller"],
     rating: 4.8,
     reviews: 445,
@@ -96,53 +81,21 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierSku: "opinel-n8-inox",
     supplierPrice: 8.74,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
-    id: 6,
-    name: "Couteau Opinel N°10 acier inoxydable",
-    price: 26.90,
-    originalPrice: 33.90,
-    category: "Outils",
-    description: "Opinel N°10, lame inox 10 cm. Le grand format pour le bushcraft, la cuisine en plein air et les travaux de camp. Manche hêtre naturel, virole sécurité.",
-    badges: ["Essentiel"],
-    rating: 4.7,
-    reviews: 267,
-    image: "img/prod6.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "110 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "opinel-n10-inox",
-    supplierPrice: 12.15,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
-    id: 7,
-    name: "Couteau Opinel N°12 acier inoxydable",
-    price: 32.90,
-    originalPrice: 39.90,
-    category: "Outils",
-    description: "Opinel N°12, grande lame inox 12 cm. Format bushcraft et survie. Tranchant exceptionnel, manche hêtre massif. La référence française pour l'outdoor.",
-    badges: ["Nouveau"],
-    rating: 4.7,
-    reviews: 134,
-    image: "img/prod7.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "125 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "opinel-n12-inox",
-    supplierPrice: 14.80,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "N°8 — 8,5 cm inox", price: 19.90, originalPrice: 24.90, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
+      { label: "N°9 — 9 cm carbone", price: 22.90, originalPrice: 28.90, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
+      { label: "N°10 — 10 cm inox", price: 26.90, originalPrice: 33.90, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" },
+      { label: "N°12 — 12 cm inox", price: 32.90, originalPrice: 39.90, supplierPrice: 14.80, supplierSku: "opinel-n12-inox", image: "img/prod7.jpg" }
+    ]
   },
   {
     id: 8,
-    name: "Pelle pliable tactique noire",
+    name: "Pelle pliable de camping",
     price: 24.90,
     originalPrice: 31.90,
     category: "Outils",
-    description: "Pelle pliable en métal noir. Compacte et robuste pour le camping, la survie et le jardinage. Se plie facilement pour le transport. Indispensable en bivouac.",
+    description: "Pelle pliable compacte et robuste pour le camping, la survie et le jardinage. Se range facilement dans un sac à dos. Indispensable en bivouac. Disponible en 2 modèles.",
     badges: ["Essentiel"],
     rating: 4.5,
     reviews: 178,
@@ -153,15 +106,19 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierSku: "pelle-pliable-noire",
     supplierPrice: 11.33,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "Pelle noire métal", price: 24.90, originalPrice: 31.90, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
+      { label: "Cellfast Ideal Pro", price: 24.90, originalPrice: 30.90, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
+    ]
   },
   {
     id: 9,
-    name: "Tente de camping Bestway 2 personnes",
+    name: "Tente de camping Bestway",
     price: 48.90,
     originalPrice: 59.90,
     category: "Survie",
-    description: "Tente Bestway 2 personnes, polyester fibre de verre, 205x145x100 cm. Facile à monter, imperméable. Idéale pour le camping estival et les festivals.",
+    description: "Tente de camping Bestway en polyester fibre de verre. Facile à monter, imperméable, résistante. Idéale pour le camping estival et les festivals. Disponible en 2, 3 ou 4 personnes.",
     badges: ["Promo"],
     rating: 4.4,
     reviews: 112,
@@ -172,45 +129,12 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierSku: "bestway-68084",
     supplierPrice: 22.04,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
-    id: 10,
-    name: "Tente de camping Bestway 3 personnes",
-    price: 65.90,
-    originalPrice: 79.90,
-    category: "Survie",
-    description: "Tente Bestway 3 personnes, 210x210x130 cm, polyester fibre de verre. Espace généreux, montage rapide. Résistante à la pluie pour vos aventures en plein air.",
-    badges: ["Bestseller"],
-    rating: 4.5,
-    reviews: 89,
-    image: "img/prod10.jpg",
-    shipping: "Livraison 3-5 jours",
-    weight: "4.5 kg",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "bestway-68085",
-    supplierPrice: 29.99,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
-    id: 11,
-    name: "Tente de camping Bestway 4 personnes",
-    price: 78.90,
-    originalPrice: 99.90,
-    category: "Survie",
-    description: "Tente Bestway 4 personnes, 240x200x135 cm. Grande capacité familiale, structure fibre de verre résistante. Poche intérieure de rangement, ventilation optimisée.",
-    badges: ["Promo", "Nouveau"],
-    rating: 4.4,
-    reviews: 67,
-    image: "img/prod11.jpg",
-    shipping: "Livraison 3-5 jours",
-    weight: "5.8 kg",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "bestway-68143",
-    supplierPrice: 35.90,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "2 personnes — 205×145 cm", price: 48.90, originalPrice: 59.90, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" },
+      { label: "3 personnes — 210×210 cm", price: 65.90, originalPrice: 79.90, supplierPrice: 29.99, supplierSku: "bestway-68085", image: "img/prod10.jpg" },
+      { label: "4 personnes — 240×200 cm", price: 78.90, originalPrice: 99.90, supplierPrice: 35.90, supplierSku: "bestway-68143", image: "img/prod11.jpg" }
+    ]
   },
   {
     id: 12,
@@ -307,25 +231,7 @@ const PRODUCTS = [
     supplierPrice: 21.85,
     supplierUrl: "https://www.bigbuy.eu/fr"
   },
-  {
-    id: 17,
-    name: "Couteau Opinel N°9 acier carbone",
-    price: 22.90,
-    originalPrice: 28.90,
-    category: "Outils",
-    description: "Opinel N°9 acier carbone, lame 9 cm. L'acier carbone se patine avec le temps et se ré-affûte facilement. Manche hêtre, virole sécurité. Pour les puristes du bushcraft.",
-    badges: ["Nouveau"],
-    rating: 4.6,
-    reviews: 98,
-    image: "img/prod17.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "100 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "opinel-n9-carbone",
-    supplierPrice: 10.23,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
+
   {
     id: 18,
     name: "Glacière isotherme Marbueno 28x20cm",
@@ -364,33 +270,14 @@ const PRODUCTS = [
     supplierPrice: 33.84,
     supplierUrl: "https://www.bigbuy.eu/fr"
   },
-  {
-    id: 20,
-    name: "Pelle pliable Cellfast Ideal Pro",
-    price: 24.90,
-    originalPrice: 30.90,
-    category: "Outils",
-    description: "Pelle pliable professionnelle Cellfast Ideal Pro. Acier traité haute résistance, manche ergonomique. Compacte pour le sac à dos, indispensable en camping et survie.",
-    badges: ["Essentiel"],
-    rating: 4.5,
-    reviews: 123,
-    image: "img/prod20.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "620 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "cellfast-ideal-pro",
-    supplierPrice: 11.08,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  }
 ];
 
 // Catégories disponibles
 const CATEGORIES = [
-  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 20 },
-  { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 7 },
-  { id: "Outils", name: "Outils", emoji: "🔪", count: 5 },
-  { id: "Survie", name: "Survie", emoji: "🏕️", count: 8 }
+  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 13 },
+  { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 4 },
+  { id: "Outils", name: "Outils", emoji: "🔪", count: 2 },
+  { id: "Survie", name: "Survie", emoji: "🏕️", count: 7 }
 ];
 
 // Couleurs des badges
