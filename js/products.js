@@ -387,17 +387,79 @@ const PRODUCTS = [
     supplierSku: "duracell-aaa-12",
     supplierPrice: 7.30,
     supplierUrl: "https://www.bigbuy.eu/fr"
+  },
+  {
+    id: 28,
+    name: "Localisateur de poissons Deeper Start",
+    price: 219.90,
+    originalPrice: 269.90,
+    category: "Pêche",
+    description: "Sonar connecté Deeper Start pour la pêche. Se lance à la ligne, scanne les fonds jusqu'à 5m. Compatible smartphone iOS/Android. Idéal pour les pêcheurs qui veulent trouver les poissons rapidement.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.7,
+    reviews: 89,
+    image: "img/prod28.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "46 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "deeper-start",
+    supplierPrice: 99.04,
+    supplierUrl: "https://www.bigbuy.eu/fr"
+  },
+  {
+    id: 29,
+    name: "Canne à pêche Kali Kunnan",
+    price: 33.90,
+    originalPrice: 42.90,
+    category: "Pêche",
+    description: "Canne à pêche télescopique Kali Kunnan. Légère et robuste pour la pêche en rivière, lac ou mer. Se range facilement pour le transport. Disponible en 2 longueurs.",
+    badges: ["Promo"],
+    rating: 4.4,
+    reviews: 134,
+    image: "img/prod29.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "280 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "kali-moana-300",
+    supplierPrice: 15.41,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "240 cm — légère", price: 25.90, originalPrice: 32.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
+      { label: "300 cm — polyvalente", price: 33.90, originalPrice: 42.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+    ]
+  },
+  {
+    id: 31,
+    name: "Boîte de rangement pêche Kali Kunnan",
+    price: 17.90,
+    originalPrice: 22.90,
+    category: "Pêche",
+    description: "Boîte de rangement pour accessoires de pêche Kali Kunnan. Compartiments modulables pour hameçons, leurres et plombs. Pratique et résistante pour emporter partout.",
+    badges: ["Essentiel"],
+    rating: 4.3,
+    reviews: 76,
+    image: "img/prod31.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "320 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "kali-boite-rangement",
+    supplierPrice: 8.01,
+    supplierUrl: "https://www.bigbuy.eu/fr"
   }
 ];
 
 // Catégories disponibles
 const CATEGORIES = [
-  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 19 },
+  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 22 },
   { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 4 },
   { id: "Outils", name: "Outils", emoji: "🔪", count: 2 },
   { id: "Survie", name: "Survie", emoji: "🏕️", count: 7 },
   { id: "Sacs à dos", name: "Sacs à dos", emoji: "🎒", count: 3 },
-  { id: "Énergie", name: "Énergie", emoji: "⚡", count: 3 }
+  { id: "Énergie", name: "Énergie", emoji: "⚡", count: 3 },
+  { id: "Pêche", name: "Pêche", emoji: "🎣", count: 3 }
 ];
 
 // Couleurs des badges
