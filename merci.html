@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commande confirmée — Nature Survi & Autonomie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .merci-page {
+      max-width: 680px;
+      margin: 80px auto;
+      padding: 0 5%;
+      text-align: center;
+    }
+    .merci-icon {
+      font-size: 5rem;
+      margin-bottom: 20px;
+      animation: pop 0.5s ease;
+    }
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      80% { transform: scale(1.15); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .merci-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      color: var(--vert-fonce, #2d5a1b);
+      margin-bottom: 16px;
+    }
+    .merci-subtitle {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    .merci-card {
+      background: #f9fdf6;
+      border: 2px solid #c8e6c9;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .merci-card h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--vert-fonce, #2d5a1b);
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+    .merci-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .merci-card ul li {
+      padding: 6px 0;
+      border-bottom: 1px solid #e8f5e9;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .merci-card ul li:last-child { border-bottom: none; }
+    .merci-card ul li span { margin-right: 8px; }
+    .merci-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-merci-primary {
+      background: var(--vert-moyen, #4a7c2d);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-merci-primary:hover { background: #2d5a1b; }
+    .btn-merci-secondary {
+      background: white;
+      color: var(--vert-moyen, #4a7c2d);
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 2px solid var(--vert-moyen, #4a7c2d);
+      transition: all 0.2s;
+    }
+    .btn-merci-secondary:hover { background: #f0f7ec; }
+    .merci-contact {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .merci-contact a { color: var(--vert-moyen, #4a7c2d); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">🌿 Nature Survi & Autonomie</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="merci-page">
+    <div class="merci-icon">✅</div>
+    <h1 class="merci-title">Commande confirmée !</h1>
+    <p class="merci-subtitle">
+      Merci pour votre achat. Vous allez recevoir un email de confirmation de la part de Stripe.<br>
+      Votre commande sera expédiée sous <strong>2 à 5 jours ouvrés</strong>.
+    </p>
+
+    <div class="merci-card">
+      <h3>📦 Que se passe-t-il maintenant ?</h3>
+      <ul>
+        <li><span>1️⃣</span> Email de confirmation Stripe envoyé à votre adresse</li>
+        <li><span>2️⃣</span> Préparation de votre commande sous 24–48h</li>
+        <li><span>3️⃣</span> Expédition avec numéro de suivi par email</li>
+        <li><span>4️⃣</span> Livraison estimée sous 2–5 jours ouvrés</li>
+      </ul>
+    </div>
+
+    <div class="merci-btns">
+      <a href="catalogue.html" class="btn-merci-primary">🛍️ Continuer mes achats</a>
+      <a href="index.html" class="btn-merci-secondary">🏠 Retour à l'accueil</a>
+    </div>
+
+    <p class="merci-contact">
+      Une question ? Contactez-nous à <a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a>
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 Nature Survi & Autonomie — Bègles, France</p>
+      <p><a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

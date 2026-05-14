@@ -759,21 +759,46 @@
     50: "https://buy.stripe.com/bJe5kv62L98deDN6rQcfK0D",
     51: "https://buy.stripe.com/4gMbIT1MvbgleDNdUicfK0E",
     52: "https://buy.stripe.com/eVq8wH9eX0BH7bl8zYcfK0F",
+    // Variantes (clé = "idProduit_indexVariante")
+    "1_1":  "https://buy.stripe.com/cNiaEPfDl4RXcvF8zYcfK0G",  // Velamp 400lm
+    "5_1":  "https://buy.stripe.com/14AfZ9cr91FL8fpdUicfK0H",  // Opinel N9
+    "5_2":  "https://buy.stripe.com/9B6bITezh2JPfHR17wcfK0I",  // Opinel N10
+    "5_3":  "https://buy.stripe.com/00w5kv0Ir2JPanxaI6cfK0J",  // Opinel N12
+    "8_1":  "https://buy.stripe.com/7sY3cn1Mvckp1R16rQcfK0K",  // Pelle Cellfast
+    "9_1":  "https://buy.stripe.com/dRmfZ9gHp5W1brB8zYcfK0L",  // Tente 3p
+    "9_2":  "https://buy.stripe.com/4gMdR13UDfwBcvF4jIcfK0M",  // Tente 4p
+    "21_1": "https://buy.stripe.com/00wcMXaj1ach3Z99E2cfK0N",  // Mammut 90L
+    "29_1": "https://buy.stripe.com/8x228jcr9bglfHR9E2cfK0O",  // Canne 240cm
+    "35_1": "https://buy.stripe.com/dRm6oz3UD0BHfHRbMacfK0P",  // Veste Turch
+    "51_1": "https://buy.stripe.com/aFabIT0Ir1FL7bl7vUcfK0Q",  // Picture 600ml
     default: null
   };
 
   function openStripe() {
     if (!currentProduct) return;
     const qty = parseInt(document.getElementById('qty').value);
-    const link = STRIPE_LINKS[currentProduct.id] || STRIPE_LINKS.default;
+
+    // Chercher le lien variante si une variante est sélectionnée
+    let link = null;
+    if (window.selectedVariant && currentProduct.variants && currentProduct.variants.length > 0) {
+      const variantIdx = currentProduct.variants.indexOf(window.selectedVariant);
+      if (variantIdx > 0) {
+        link = STRIPE_LINKS[currentProduct.id + '_' + variantIdx];
+      }
+    }
+    // Fallback sur le lien produit principal
+    if (!link) link = STRIPE_LINKS[currentProduct.id];
+    if (!link) link = STRIPE_LINKS.default;
+
     if (link) {
       window.location.href = link;
     } else {
       document.getElementById('stripe-modal').classList.add('open');
-      const total = (currentProduct.price * qty).toFixed(2).replace('.', ',');
+      const price = window.selectedVariant ? window.selectedVariant.price : currentProduct.price;
+      const total = (price * qty).toFixed(2).replace('.', ',');
       document.getElementById('order-summary').innerHTML =
         '<strong>' + currentProduct.name + '</strong><br>' +
-        'Quantit\u00e9 : ' + qty + ' \u00d7 ' + currentProduct.price.toFixed(2).replace('.', ',') + ' \u20ac = <strong>' + total + ' \u20ac</strong>';
+        'Quantit\u00e9 : ' + qty + ' \u00d7 ' + price.toFixed(2).replace('.', ',') + ' \u20ac = <strong>' + total + ' \u20ac</strong>';
     }
   }
 
