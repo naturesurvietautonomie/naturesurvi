@@ -79,16 +79,16 @@ Voir sur : https://dashboard.stripe.com/payments/${paymentId}
 
     console.log(emailBody);
 
-    // Envoi email via Gmail API (OAuth2) si configuré
-    if (process.env.GMAIL_REFRESH_TOKEN) {
+    // Envoi email via Resend
+    if (process.env.RESEND_API_KEY) {
       try {
-        await sendGmailEmail({
+        await sendResendEmail({
           subject: `🛒 Commande ${amount}€ — NatureSurvi`,
           body: emailBody
         });
-        console.log('Email envoyé via Gmail');
+        console.log('Email envoyé via Resend');
       } catch (e) {
-        console.error('Erreur envoi email:', e.message);
+        console.error('Erreur Resend:', e.message);
       }
     }
     // Fallback SendGrid
@@ -112,6 +112,36 @@ Voir sur : https://dashboard.stripe.com/payments/${paymentId}
 
   return { statusCode: 200, body: JSON.stringify({ received: true }) };
 };
+
+// Envoi email via Resend
+function sendResendEmail({ subject, body }) {
+  return new Promise((resolve, reject) => {
+    const data = JSON.stringify({
+      from: 'NatureSurvi <onboarding@resend.dev>',
+      to: ['naturesurvi@gmail.com'],
+      subject,
+      text: body
+    });
+    const options = {
+      hostname: 'api.resend.com',
+      path: '/emails',
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(data)
+      }
+    };
+    let resp = '';
+    const req = https.request(options, res => {
+      res.on('data', d => resp += d);
+      res.on('end', () => { console.log('Resend response:', resp); resolve(resp); });
+    });
+    req.on('error', reject);
+    req.write(data);
+    req.end();
+  });
+}
 
 // Envoi email via Gmail API OAuth2
 async function sendGmailEmail({ subject, body }) {
