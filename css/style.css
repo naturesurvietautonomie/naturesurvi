@@ -871,6 +871,35 @@ ul { list-style: none; }
 
 .footer-bottom a { color: var(--green-light); }
 
+/* ---- SOCIAL ICONS ---- */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+.footer-social a:hover {
+  background: var(--green-medium);
+  transform: translateY(-3px);
+}
+.footer-social a svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
 /* ---- TOAST NOTIFICATION ---- */
 .toast-notification {
   position: fixed;
