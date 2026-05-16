@@ -6,8 +6,8 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Lampe frontale LED rechargeable Velamp",
-    price: 27.90,
-    originalPrice: 34.90,
+    price: 29.90,
+    originalPrice: 36.90,
     category: "Éclairage",
     description: "Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d'urgence. Légère, robuste, bandeau réglable confortable.",
     badges: ["Bestseller", "Essentiel"],
@@ -22,15 +22,15 @@ const PRODUCTS = [
     supplierPrice: 12.29,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "350 lm — 5W", price: 27.90, originalPrice: 34.90, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
-      { label: "400 lm — 6W", price: 34.90, originalPrice: 42.90, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
+      { label: "350 lm — 5W", price: 29.90, originalPrice: 36.90, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
+      { label: "400 lm — 6W", price: 35.90, originalPrice: 43.90, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
     ]
   },
   {
     id: 3,
     name: "Lanterne frontale MIL-TEC tactique olive",
-    price: 23.90,
-    originalPrice: 29.90,
+    price: 26.90,
+    originalPrice: 33.90,
     category: "Éclairage",
     description: "Lanterne LED frontale MIL-TEC, coloris olive militaire. Robuste et fiable pour le camping, la chasse et les activités outdoor. Légère et pratique.",
     badges: ["Essentiel"],
@@ -48,8 +48,8 @@ const PRODUCTS = [
   {
     id: 4,
     name: "Lanterne frontale Nebo Einstein 250lm",
-    price: 26.90,
-    originalPrice: 33.90,
+    price: 29.90,
+    originalPrice: 36.90,
     category: "Éclairage",
     description: "Lanterne LED frontale Nebo Einstein 250 lumens. Compacte et puissante pour la randonnée et le camping. Plusieurs modes d'éclairage.",
     badges: ["Nouveau"],
@@ -67,8 +67,8 @@ const PRODUCTS = [
   {
     id: 5,
     name: "Couteau Opinel acier inoxydable",
-    price: 19.90,
-    originalPrice: 24.90,
+    price: 23.90,
+    originalPrice: 29.90,
     category: "Outils",
     description: "L'iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.",
     badges: ["Bestseller"],
@@ -83,17 +83,17 @@ const PRODUCTS = [
     supplierPrice: 8.74,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "N°8 — 8,5 cm inox", price: 19.90, originalPrice: 24.90, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
-      { label: "N°9 — 9 cm carbone", price: 22.90, originalPrice: 28.90, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
-      { label: "N°10 — 10 cm inox", price: 26.90, originalPrice: 33.90, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" },
-      { label: "N°12 — 12 cm inox", price: 32.90, originalPrice: 39.90, supplierPrice: 14.80, supplierSku: "opinel-n12-inox", image: "img/prod7.jpg" }
+      { label: "N°8 — 8,5 cm inox", price: 23.90, originalPrice: 29.90, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
+      { label: "N°9 — 9 cm carbone", price: 26.90, originalPrice: 33.90, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
+      { label: "N°10 — 10 cm inox", price: 29.90, originalPrice: 36.90, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" },
+      { label: "N°12 — 12 cm inox", price: 34.90, originalPrice: 42.90, supplierPrice: 14.80, supplierSku: "opinel-n12-inox", image: "img/prod7.jpg" }
     ]
   },
   {
     id: 8,
     name: "Pelle pliable de camping",
-    price: 24.90,
-    originalPrice: 31.90,
+    price: 28.90,
+    originalPrice: 35.90,
     category: "Outils",
     description: "Pelle pliable compacte et robuste pour le camping, la survie et le jardinage. Se range facilement dans un sac à dos. Indispensable en bivouac. Disponible en 2 modèles.",
     badges: ["Essentiel"],
@@ -108,8 +108,8 @@ const PRODUCTS = [
     supplierPrice: 11.33,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Pelle noire métal", price: 24.90, originalPrice: 31.90, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
-      { label: "Cellfast Ideal Pro", price: 24.90, originalPrice: 30.90, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
+      { label: "Pelle noire métal", price: 28.90, originalPrice: 35.90, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
+      { label: "Cellfast Ideal Pro", price: 27.90, originalPrice: 34.90, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
     ]
   },
   {
@@ -139,8 +139,8 @@ const PRODUCTS = [
   {
     id: 12,
     name: "Couverture de survie Fun&Go",
-    price: 28.90,
-    originalPrice: 35.90,
+    price: 31.90,
+    originalPrice: 39.90,
     category: "Survie",
     description: "Couverture de protection thermique de survie Fun&Go. Réfléchit 90% de la chaleur corporelle. Légère, compacte, imperméable. Indispensable dans tout kit de survie.",
     badges: ["Essentiel"],
@@ -353,8 +353,8 @@ const PRODUCTS = [
   {
     id: 25,
     name: "Pack piles rechargeables Varta AA + AAA",
-    price: 14.90,
-    originalPrice: 19.90,
+    price: 17.90,
+    originalPrice: 22.90,
     category: "Énergie",
     description: "Pack piles rechargeables Varta 1,2V AA et AAA. Économiques et écologiques, rechargeables jusqu'à 1000 fois. Idéal pour lampes torches, télécommandes et appareils outdoor.",
     badges: ["Bestseller"],
@@ -372,8 +372,8 @@ const PRODUCTS = [
   {
     id: 26,
     name: "Piles Duracell Plus Power Boost AAA (12 unités)",
-    price: 14.90,
-    originalPrice: 19.90,
+    price: 21.90,
+    originalPrice: 26.90,
     category: "Énergie",
     description: "Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.",
     badges: ["Essentiel"],
@@ -426,15 +426,15 @@ const PRODUCTS = [
     supplierPrice: 15.41,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "240 cm — légère", price: 25.90, originalPrice: 32.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
-      { label: "300 cm — polyvalente", price: 33.90, originalPrice: 42.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+      { label: "240 cm — légère", price: 29.90, originalPrice: 36.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
+      { label: "300 cm — polyvalente", price: 35.90, originalPrice: 43.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
     ]
   },
   {
     id: 31,
     name: "Boîte de rangement pêche Kali Kunnan",
-    price: 17.90,
-    originalPrice: 22.90,
+    price: 22.90,
+    originalPrice: 27.90,
     category: "Pêche",
     description: "Boîte de rangement pour accessoires de pêche Kali Kunnan. Compartiments modulables pour hameçons, leurres et plombs. Pratique et résistante pour emporter partout.",
     badges: ["Essentiel"],
@@ -509,8 +509,8 @@ const PRODUCTS = [
   {
     id: 35,
     name: "Veste outdoor Alphaventure homme",
-    price: 25.90,
-    originalPrice: 32.90,
+    price: 28.90,
+    originalPrice: 35.90,
     category: "Vêtements outdoor",
     description: "Veste légère Alphaventure Bidinamarca pour homme, coloris kaki militaire. Coupe-vent, idéale pour la chasse, la randonnée et les activités outdoor. Poches zippées.",
     badges: ["Promo"],
@@ -525,7 +525,7 @@ const PRODUCTS = [
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Légère — kaki", price: 25.90, originalPrice: 32.90, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" },
+      { label: "Légère — kaki", price: 28.90, originalPrice: 35.90, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" },
       { label: "Épaisse — Turch kaki", price: 63.90, originalPrice: 79.90, supplierPrice: 29.02, supplierSku: "alphaventure-turch-kaki", image: "img/prod36.jpg" }
     ]
   },
@@ -589,8 +589,8 @@ const PRODUCTS = [
   {
     id: 40,
     name: "Pain croustillant randonnée Trek'n Eat",
-    price: 13.90,
-    originalPrice: 17.90,
+    price: 20.90,
+    originalPrice: 25.90,
     category: "Alimentation outdoor",
     description: "Pain croustillant déshydraté Trek'n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.",
     badges: ["Essentiel", "Survie"],
@@ -608,8 +608,8 @@ const PRODUCTS = [
   {
     id: 41,
     name: "Céréales lyophilisées Trek'n Eat",
-    price: 12.90,
-    originalPrice: 15.90,
+    price: 19.90,
+    originalPrice: 24.90,
     category: "Alimentation outdoor",
     description: "Céréales lyophilisées Trek'n Eat 150g. Petit-déjeuner de bivouac complet — nutritif et ultra-léger. Prêt en 5 minutes, idéal pour toutes les aventures outdoor.",
     badges: ["Bestseller"],
@@ -627,8 +627,8 @@ const PRODUCTS = [
   {
     id: 42,
     name: "Barre énergétique Naak Ultra Energy caramel",
-    price: 6.90,
-    originalPrice: 8.90,
+    price: 14.90,
+    originalPrice: 18.90,
     category: "Alimentation outdoor",
     description: "Barre énergétique Naak Ultra Energy 50g, saveur caramel café. Riche en protéines et glucides complexes. Idéale avant et pendant l'effort outdoor : randonnée, course, cyclisme.",
     badges: ["Nouveau"],
@@ -646,8 +646,8 @@ const PRODUCTS = [
   {
     id: 43,
     name: "Sac d'hydratation Joluvi 2,5L",
-    price: 15.90,
-    originalPrice: 19.90,
+    price: 20.90,
+    originalPrice: 25.90,
     category: "Cyclisme & Trail",
     description: "Sac d'hydratation Joluvi 2,5L léger et ergonomique. Poche à eau intégrée, tube buveur, sangles réglables. Idéal pour le trail, le VTT et la randonnée rapide.",
     badges: ["Essentiel", "Promo"],
@@ -741,8 +741,8 @@ const PRODUCTS = [
   {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
-    price: 18.90,
-    originalPrice: 23.90,
+    price: 23.90,
+    originalPrice: 28.90,
     category: "Alimentation outdoor",
     description: "Plat lyophilisé Trek'n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l'eau chaude. Goût savoureux, haute valeur nutritive.",
     badges: ["Bestseller"],
@@ -760,8 +760,8 @@ const PRODUCTS = [
   {
     id: 49,
     name: "Dessert lyophilisé Trek'n Eat chocolat",
-    price: 14.90,
-    originalPrice: 18.90,
+    price: 20.90,
+    originalPrice: 25.90,
     category: "Alimentation outdoor",
     description: "Dessert lyophilisé Trek'n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l'eau chaude.",
     badges: ["Nouveau"],
@@ -779,8 +779,8 @@ const PRODUCTS = [
   {
     id: 50,
     name: "Légumes lyophilisés Trek'n Eat",
-    price: 17.90,
-    originalPrice: 21.90,
+    price: 22.90,
+    originalPrice: 27.90,
     category: "Alimentation outdoor",
     description: "Légumes lyophilisés Trek'n Eat. Garniture légère et nutritive pour le camp. À ajouter à vos repas en bivouac. Conservation 5 ans, poids minimal.",
     badges: ["Essentiel"],
@@ -798,8 +798,8 @@ const PRODUCTS = [
   {
     id: 51,
     name: "Gourde randonnée outdoor",
-    price: 17.90,
-    originalPrice: 21.90,
+    price: 22.90,
+    originalPrice: 27.90,
     category: "Cyclisme & Trail",
     description: "Gourde Regatta 1L légère et résistante. Bouchon à vis étanche, graduation intérieure. Indispensable pour la randonnée, le camping et le sport en plein air.",
     badges: ["Essentiel", "Promo"],
@@ -814,7 +814,7 @@ const PRODUCTS = [
     supplierPrice: 7.88,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Regatta noire", price: 17.90, originalPrice: 21.90, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" },
+      { label: "1L — Regatta noire", price: 22.90, originalPrice: 27.90, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" },
       { label: "600ml — Picture blanche", price: 41.90, originalPrice: 51.90, supplierPrice: 18.98, supplierSku: "picture-campei-blanc", image: "img/prod52.jpg" }
     ]
   }
