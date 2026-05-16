@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jardinage & Autosuffisance — Outils, serres, composteurs et matériel de potager pour cultiver votre autonomie. Livraison France.">
+  <meta name="keywords" content="jardinage, potager, serre, composteur, outils jardin, autosuffisance, autonomie, graines">
+  <title>Jardinage & Autosuffisance — Nature Survie & Autonomie</title>
+
+  <!-- Facebook Pixel Code -->
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
+  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .jardinage-hero {
+      background: linear-gradient(135deg, #1a4a0a 0%, #2d7a1b 50%, #4a9e2d 100%);
+      color: white;
+      padding: 80px 5% 60px;
+      text-align: center;
+    }
+    .jardinage-hero h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    .jardinage-hero p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .jardinage-categories {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 32px 5% 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .cat-btn {
+      background: #f0f7ec;
+      color: #2d5a1b;
+      border: 2px solid #c8e6c9;
+      padding: 8px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .cat-btn:hover, .cat-btn.active {
+      background: #2d5a1b;
+      color: white;
+      border-color: #2d5a1b;
+    }
+    .jardinage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 32px auto;
+      padding: 0 5% 60px;
+    }
+    .jard-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .jard-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.14);
+    }
+    .jard-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: #f0f7ec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .jard-card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .jard-cat-badge {
+      background: #e8f5e9;
+      color: #2d5a1b;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .jard-card-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1rem;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .jard-card-desc {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 12px;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .jard-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+    .jard-price {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #2d5a1b;
+    }
+    .jard-btn {
+      background: #2d5a1b;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .jard-btn:hover { background: #1a4a0a; }
+    .section-title {
+      text-align: center;
+      font-family: 'Merriweather', serif;
+      font-size: 1.6rem;
+      color: #2d5a1b;
+      padding: 40px 5% 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .autonomie-banner {
+      background: #f9fdf6;
+      border: 2px solid #c8e6c9;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+    .autonomie-banner h2 {
+      font-family: 'Merriweather', serif;
+      color: #2d5a1b;
+      margin-bottom: 12px;
+    }
+    .autonomie-banner p {
+      color: #555;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">🌿 Nature Survie & Autonomie</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Survie</a></li>
+        <li><a href="jardinage.html" class="active">Jardinage</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="jardinage-hero">
+    <div style="font-size:3rem;margin-bottom:16px">🌱</div>
+    <h1>Jardinage & Autosuffisance</h1>
+    <p>Cultivez votre indépendance alimentaire. Outils, serres, composteurs et équipements pour votre potager.</p>
+  </div>
+
+  <!-- FILTRES CATÉGORIES -->
+  <div class="jardinage-categories">
+    <button class="cat-btn active" onclick="filterCat('all')">Tout voir</button>
+    <button class="cat-btn" onclick="filterCat('outils')">🔨 Outils</button>
+    <button class="cat-btn" onclick="filterCat('serre')">🏠 Serres</button>
+    <button class="cat-btn" onclick="filterCat('compost')">♻️ Compost</button>
+    <button class="cat-btn" onclick="filterCat('arrosage')">💧 Arrosage</button>
+    <button class="cat-btn" onclick="filterCat('potager')">🌿 Potager urbain</button>
+    <button class="cat-btn" onclick="filterCat('protection')">🛡️ Protection</button>
+  </div>
+
+  <h2 class="section-title">Nos meilleurs produits jardinage</h2>
+
+  <!-- GRILLE PRODUITS -->
+  <div class="jardinage-grid" id="jardinage-grid">
+
+    <!-- OUTILS -->
+    <div class="jard-card" data-cat="outils">
+      <div class="jard-card-img">🔨</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Outils</span>
+        <h3 class="jard-card-title">Set d'outils de jardinage 3 pièces</h3>
+        <p class="jard-card-desc">Truelle, transplantoir et cultivateur. Manches ergonomiques antidérapants. Acier inoxydable.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">19,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_outils_set')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="outils">
+      <div class="jard-card-img">⛏️</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Outils</span>
+        <h3 class="jard-card-title">Bêche de jardin professionnelle</h3>
+        <p class="jard-card-desc">Lame acier trempé, manche en bois de frêne 120cm. Idéale pour retourner la terre et creuser.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">29,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_beche')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="outils">
+      <div class="jard-card-img">✂️</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Outils</span>
+        <h3 class="jard-card-title">Sécateur professionnel à lame franche</h3>
+        <p class="jard-card-desc">Lame en acier SK5 trempé, poignée ergonomique. Coupe nette jusqu'à 25mm de diamètre.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">16,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_secateur')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERRES -->
+    <div class="jard-card" data-cat="serre">
+      <div class="jard-card-img">🏠</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Serres</span>
+        <h3 class="jard-card-title">Serre de balcon 4 étagères</h3>
+        <p class="jard-card-desc">Structure acier + housse PE transparente. 143x73x61cm. Parfaite pour balcon ou terrasse.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">34,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_serre_balcon')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="serre">
+      <div class="jard-card-img">🌿</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Serres</span>
+        <h3 class="jard-card-title">Mini serre tunnel de jardin 6m²</h3>
+        <p class="jard-card-desc">Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">59,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_serre_tunnel')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPOST -->
+    <div class="jard-card" data-cat="compost">
+      <div class="jard-card-img">♻️</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Compost</span>
+        <h3 class="jard-card-title">Composteur de jardin 300L</h3>
+        <p class="jard-card-desc">Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">44,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_composteur')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="compost">
+      <div class="jard-card-img">🪱</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Compost</span>
+        <h3 class="jard-card-title">Lombricomposteur 3 niveaux</h3>
+        <p class="jard-card-desc">Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">39,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_lombri')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARROSAGE -->
+    <div class="jard-card" data-cat="arrosage">
+      <div class="jard-card-img">💧</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Arrosage</span>
+        <h3 class="jard-card-title">Arrosoir 10L bec long en zinc</h3>
+        <p class="jard-card-desc">Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">22,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_arrosoir')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="arrosage">
+      <div class="jard-card-img">🚿</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Arrosage</span>
+        <h3 class="jard-card-title">Kit goutte-à-goutte 50 plantes</h3>
+        <p class="jard-card-desc">Système d'irrigation automatique. 15m de tuyau, 50 goutteurs réglables. Économise 70% d'eau.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">27,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_goutte')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POTAGER URBAIN -->
+    <div class="jard-card" data-cat="potager">
+      <div class="jard-card-img">🌱</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Potager urbain</span>
+        <h3 class="jard-card-title">Carré potager surélevé en bois 120x60cm</h3>
+        <p class="jard-card-desc">Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">49,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_carre_potager')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="potager">
+      <div class="jard-card-img">🪴</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Potager urbain</span>
+        <h3 class="jard-card-title">Tour à fraises & plantes aromatiques</h3>
+        <p class="jard-card-desc">5 poches de plantation empilables. Culture verticale, gain de place. Parfait pour balcon.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">18,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_tour_fraises')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROTECTION -->
+    <div class="jard-card" data-cat="protection">
+      <div class="jard-card-img">🛡️</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Protection</span>
+        <h3 class="jard-card-title">Filet anti-insectes 2x5m</h3>
+        <p class="jard-card-desc">Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">14,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_filet')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jard-card" data-cat="protection">
+      <div class="jard-card-img">🌡️</div>
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">Protection</span>
+        <h3 class="jard-card-title">Voile d'hivernage 30g/m² — 10x2m</h3>
+        <p class="jard-card-desc">Protège vos cultures jusqu'à -6°C. Perméable à l'eau et à la lumière. Réutilisable plusieurs saisons.</p>
+        <div class="jard-card-footer">
+          <span class="jard-price">12,99€</span>
+          <a href="#" class="jard-btn" onclick="openStripe('jard_voile')">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BANNIÈRE AUTONOMIE -->
+  <div style="padding: 0 5% 60px; max-width:1200px; margin:0 auto;">
+    <div class="autonomie-banner">
+      <h2>🌿 Cultivez votre autonomie alimentaire</h2>
+      <p>
+        Avoir un potager, c'est réduire sa dépendance aux supermarchés et manger sain toute l'année.
+        Nos outils et équipements sont sélectionnés pour leur durabilité et leur rapport qualité/prix.
+        <br><br>
+        Des questions sur le jardinage en autonomie ? Écrivez-nous à <a href="mailto:naturesurvi@gmail.com" style="color:#2d5a1b;font-weight:700">naturesurvi@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+      <p>© 2026 Nature Survie & Autonomie — Bègles, France</p>
+      <p><a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Filtre par catégorie
+    function filterCat(cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('.jard-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Stripe — à connecter avec les vrais liens
+    const STRIPE_JARD = {
+      'jard_outils_set': 'https://buy.stripe.com/XXXX',
+      'jard_beche': 'https://buy.stripe.com/XXXX',
+      'jard_secateur': 'https://buy.stripe.com/XXXX',
+      'jard_serre_balcon': 'https://buy.stripe.com/XXXX',
+      'jard_serre_tunnel': 'https://buy.stripe.com/XXXX',
+      'jard_composteur': 'https://buy.stripe.com/XXXX',
+      'jard_lombri': 'https://buy.stripe.com/XXXX',
+      'jard_arrosoir': 'https://buy.stripe.com/XXXX',
+      'jard_goutte': 'https://buy.stripe.com/XXXX',
+      'jard_carre_potager': 'https://buy.stripe.com/XXXX',
+      'jard_tour_fraises': 'https://buy.stripe.com/XXXX',
+      'jard_filet': 'https://buy.stripe.com/XXXX',
+      'jard_voile': 'https://buy.stripe.com/XXXX',
+    };
+
+    function openStripe(key) {
+      var url = STRIPE_JARD[key];
+      if (url && url !== 'https://buy.stripe.com/XXXX') {
+        window.open(url, '_blank');
+      } else {
+        alert('Paiement bientôt disponible ! Contactez-nous : naturesurvi@gmail.com');
+      }
+    }
+  </script>
+
+</body>
+</html>
