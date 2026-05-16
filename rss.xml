@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Nature Survie &amp; Autonomie</title>
+    <link>https://naturesurvie.net</link>
+    <description>Équipements de survie, bushcraft et autonomie — naturesurvie.net</description>
+    <language>fr</language>
+    <copyright>© 2026 Nature Survie &amp; Autonomie</copyright>
+
+    <item>
+      <title>Lampe frontale rechargeable LED — 27,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=1</link>
+      <description>🔦 Lampe frontale rechargeable LED idéale pour la randonnée, le camping et la survie. Autonomie longue durée, bandeau ajustable. 27,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_lampe.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_lampe.jpg"/>
+    </item>
+
+    <item>
+      <title>Couverture de survie isotherme — 11,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=3</link>
+      <description>🆘 Couverture de survie isotherme — conserve 90% de la chaleur corporelle. Indispensable dans tout sac d'urgence 72h. 11,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_couverture.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_couverture.jpg"/>
+    </item>
+
+    <item>
+      <title>Kit premiers secours complet — 18,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=4</link>
+      <description>🩺 Kit premiers secours complet — pansements, bandes, ciseaux, gants. Compact et léger pour la randonnée. 18,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_secours.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_secours.jpg"/>
+    </item>
+
+    <item>
+      <title>Couteau pliant robuste — 14,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=5</link>
+      <description>🔪 Couteau pliant robuste — lame inoxydable, manche en bois ergonomique. Essentiel pour le bushcraft. 14,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_couteau.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_couteau.jpg"/>
+    </item>
+
+    <item>
+      <title>Gourde filtrante purification eau — 24,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=8</link>
+      <description>💧 Gourde filtrante — eau purifiée partout. Filtre 99,9% des bactéries. 24,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_gourde.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_gourde.jpg"/>
+    </item>
+
+    <item>
+      <title>Sifflet de survie SOS — 4,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=9</link>
+      <description>📣 Sifflet de survie SOS — portée jusqu'à 1km, fonctionne même mouillé. 4,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_sifflet.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_sifflet.jpg"/>
+    </item>
+
+    <item>
+      <title>Briquet tempête coupe-vent — 8,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=12</link>
+      <description>🔥 Briquet tempête coupe-vent — s'allume par -40°C, résiste à la pluie et au vent. 8,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_briquet.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_briquet.jpg"/>
+    </item>
+
+    <item>
+      <title>Boussole militaire de précision — 12,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=13</link>
+      <description>🧭 Boussole militaire de précision — fonctionne sans batterie, navigation fiable en forêt. 12,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_boussole.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_boussole.jpg"/>
+    </item>
+
+    <item>
+      <title>Panneau solaire portable 21W — 39,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=14</link>
+      <description>☀️ Panneau solaire portable 21W — rechargez vos appareils partout, même hors réseau. 39,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_solaire.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_solaire.jpg"/>
+    </item>
+
+    <item>
+      <title>Sac à dos tactique 45L — 49,99€</title>
+      <link>https://naturesurvie.net/produit.html?id=15</link>
+      <description>🎒 Sac à dos tactique 45L — compartiments multiples, sangles renforcées. Kit survie 72h complet. 49,99€</description>
+      <media:content url="https://naturesurvie.net/images/pinterest/pin_sac.jpg" medium="image"/>
+      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_sac.jpg"/>
+    </item>
+
+  </channel>
+</rss>
