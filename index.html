@@ -157,28 +157,36 @@
       </div>
     </section>
 
-    <!-- Categories -->
-    <section class="categories-section" aria-label="Catégories">
+    <!-- Best-sellers SURVIE -->
+    <section class="products-section" aria-label="Best-sellers survie" style="padding-top:60px;">
       <div class="container">
-        <h2 class="section-title">🏷️ Nos catégories</h2>
-        <p class="section-subtitle">Trouvez l'équipement adapté à vos besoins</p>
+        <div style="display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:6px;">
+          <span style="background:#2d5a1b;color:white;padding:5px 16px;border-radius:20px;font-size:0.85rem;font-weight:700;">🎒 SURVIE & OUTDOOR</span>
+        </div>
+        <h2 class="section-title">⭐ Best-sellers Survie</h2>
+        <p class="section-subtitle">Les indispensables pour être prêt en toutes circonstances</p>
       </div>
-      <div class="categories-grid" id="categories-grid">
-        <!-- Rendered by JS -->
+      <div class="products-grid" id="featured-survie"><!-- JS --></div>
+      <div class="text-center" style="margin-top:1.5rem;">
+        <a href="catalogue.html" class="btn btn-secondary btn-lg">Voir tous les produits survie →</a>
       </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="products-section" aria-label="Produits vedettes">
+    <!-- Séparateur -->
+    <div style="max-width:900px;margin:48px auto;border-top:2px dashed #c8e6c9;"></div>
+
+    <!-- Best-sellers JARDINAGE -->
+    <section class="products-section" aria-label="Best-sellers jardinage" style="padding-top:0;padding-bottom:60px;">
       <div class="container">
-        <h2 class="section-title">⭐ Nos best-sellers</h2>
-        <p class="section-subtitle">Les produits préférés de notre communauté</p>
+        <div style="display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:6px;">
+          <span style="background:#2d7a3a;color:white;padding:5px 16px;border-radius:20px;font-size:0.85rem;font-weight:700;">🌱 JARDINAGE & AUTOSUFFISANCE</span>
+        </div>
+        <h2 class="section-title">⭐ Best-sellers Jardinage</h2>
+        <p class="section-subtitle">Les produits préférés pour cultiver votre autonomie</p>
       </div>
-      <div class="products-grid" id="featured-products">
-        <!-- Rendered by JS -->
-      </div>
-      <div class="text-center" style="margin-top: 2rem;">
-        <a href="catalogue.html" class="btn btn-secondary btn-lg">Voir tous les produits →</a>
+      <div class="products-grid" id="featured-jardinage"><!-- JS --></div>
+      <div class="text-center" style="margin-top:1.5rem;">
+        <a href="jardinage.html" class="btn btn-secondary btn-lg">Voir tous les produits jardinage →</a>
       </div>
     </section>
 
@@ -322,17 +330,38 @@
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
-    // Render categories
-    document.getElementById('categories-grid').innerHTML = CATEGORIES.filter(c => c.id !== 'all').map(cat => `
-      <a href="catalogue.html?cat=${encodeURIComponent(cat.id)}" class="category-card" aria-label="Catégorie ${cat.name}">
-        <span class="category-emoji">${cat.emoji}</span>
-        <h3>${cat.name}</h3>
-        <span class="count">${cat.count} produits</span>
-      </a>
-    `).join('');
+    // Best-sellers Survie — IDs des meilleurs produits survie
+    const SURVIE_IDS = [3, 1, 8, 12]; // Lampe frontale, couteau, kit secours, couverture
+    const survieProduits = SURVIE_IDS.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
+    if (survieProduits.length === 0) {
+      // fallback : 4 premiers
+      document.getElementById('featured-survie').innerHTML = PRODUCTS.slice(0, 4).map(p => renderProductCard(p)).join('');
+    } else {
+      document.getElementById('featured-survie').innerHTML = survieProduits.map(p => renderProductCard(p)).join('');
+    }
 
-    // Render featured products
-    document.getElementById('featured-products').innerHTML = getFeaturedProducts().map(p => renderProductCard(p)).join('');
+    // Best-sellers Jardinage — cartes statiques avec images IA
+    const jardinageBestSellers = [
+      { key:'jard_outils_set', img:'images/jardinage/outils_set.jpg', name:"Set d'outils jardinage 3 pièces", price:'19,99€', url:'jardinage.html' },
+      { key:'jard_serre_balcon', img:'images/jardinage/serre_balcon.jpg', name:'Serre de balcon 4 étagères', price:'34,99€', url:'jardinage.html' },
+      { key:'jard_composteur', img:'images/jardinage/composteur.jpg', name:'Composteur de jardin 300L', price:'44,99€', url:'jardinage.html' },
+      { key:'jard_carre_potager', img:'images/jardinage/carre_potager.jpg', name:'Carré potager surélevé 120x60cm', price:'49,99€', url:'jardinage.html' },
+    ];
+    document.getElementById('featured-jardinage').innerHTML = jardinageBestSellers.map(p => `
+      <div class="product-card">
+        <a href="${p.url}" class="product-card-img-link">
+          <img src="${p.img}" alt="${p.name}" class="product-card-img" style="width:100%;height:220px;object-fit:cover;">
+        </a>
+        <div class="product-card-body">
+          <span class="product-badge" style="background:#2d7a3a;color:white;font-size:0.75rem;padding:3px 10px;border-radius:10px;margin-bottom:8px;display:inline-block;">🌱 Jardinage</span>
+          <h3 class="product-card-title">${p.name}</h3>
+          <div class="product-card-footer" style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;">
+            <span class="product-price">${p.price}</span>
+            <a href="${p.url}" class="btn btn-primary btn-sm">Voir →</a>
+          </div>
+        </div>
+      </div>
+    `).join('');
 
     // Navbar scroll effect
     window.addEventListener('scroll', () => {
