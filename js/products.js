@@ -410,8 +410,8 @@ const PRODUCTS = [
   {
     id: 29,
     name: "Canne à pêche Kali Kunnan",
-    price: 33.90,
-    originalPrice: 42.90,
+    price: 36.90,
+    originalPrice: 44.90,
     category: "Pêche",
     description: "Canne à pêche télescopique Kali Kunnan. Légère et robuste pour la pêche en rivière, lac ou mer. Se range facilement pour le transport. Disponible en 2 longueurs.",
     badges: ["Promo"],
@@ -426,8 +426,8 @@ const PRODUCTS = [
     supplierPrice: 15.41,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "240 cm — légère", price: 29.90, originalPrice: 36.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
-      { label: "300 cm — polyvalente", price: 35.90, originalPrice: 43.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+      { label: "240 cm — légère", price: 32.90, originalPrice: 39.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
+      { label: "300 cm — polyvalente", price: 36.90, originalPrice: 44.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
     ]
   },
   {
