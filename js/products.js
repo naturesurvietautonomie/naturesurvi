@@ -137,25 +137,6 @@ const PRODUCTS = [
     ]
   },
   {
-    id: 12,
-    name: "Couverture de survie Fun&Go",
-    price: 31.90,
-    originalPrice: 39.90,
-    category: "Survie",
-    description: "Couverture de protection thermique de survie Fun&Go. Réfléchit 90% de la chaleur corporelle. Légère, compacte, imperméable. Indispensable dans tout kit de survie.",
-    badges: ["Essentiel"],
-    rating: 4.7,
-    reviews: 234,
-    image: "img/prod12.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "80 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "funge-couverture-super",
-    supplierPrice: 13.07,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
     id: 13,
     name: "Malette de secours portable Cony",
     price: 43.90,
@@ -386,25 +367,6 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierSku: "duracell-aaa-12",
     supplierPrice: 7.30,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
-    id: 28,
-    name: "Localisateur de poissons Deeper Start",
-    price: 219.90,
-    originalPrice: 269.90,
-    category: "Pêche",
-    description: "Sonar connecté Deeper Start pour la pêche. Se lance à la ligne, scanne les fonds jusqu'à 5m. Compatible smartphone iOS/Android. Idéal pour les pêcheurs qui veulent trouver les poissons rapidement.",
-    badges: ["Nouveau", "Essentiel"],
-    rating: 4.7,
-    reviews: 89,
-    image: "img/prod28.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "46 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "deeper-start",
-    supplierPrice: 99.04,
     supplierUrl: "https://www.bigbuy.eu/fr"
   },
   {
@@ -720,25 +682,6 @@ const PRODUCTS = [
     supplierUrl: "https://www.bigbuy.eu/fr"
   },
   {
-    id: 47,
-    name: "Montre Casio classique multi-usage",
-    price: 92.90,
-    originalPrice: 114.90,
-    category: "Montres outdoor",
-    description: "Montre Casio A158WEA argentée 33mm. Rétroéclairage, alarme, chronomètre. Fiable et légère pour le quotidien et les sorties outdoor. La montre de survivaliste par excellence.",
-    badges: ["Nouveau"],
-    rating: 4.5,
-    reviews: 234,
-    image: "img/prod47.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "21 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "casio-a158wea",
-    supplierPrice: 42.09,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
-  {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
     price: 23.90,
@@ -822,13 +765,13 @@ const PRODUCTS = [
 
 // Catégories disponibles
 const CATEGORIES = [
-  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 43 },
-  { id: "Survie", name: "Survie", emoji: "🏕️", count: 7 },
+  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 40 },
+  { id: "Survie", name: "Survie", emoji: "🏕️", count: 6 },
   { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 4 },
   { id: "Alimentation outdoor", name: "Alimentation outdoor", emoji: "🥾", count: 6 },
-  { id: "Montres outdoor", name: "Montres outdoor", emoji: "⌚", count: 3 },
+  { id: "Montres outdoor", name: "Montres outdoor", emoji: "⌚", count: 2 },
   { id: "Sacs à dos", name: "Sacs à dos", emoji: "🎒", count: 3 },
-  { id: "Pêche", name: "Pêche", emoji: "🎣", count: 3 },
+  { id: "Pêche", name: "Pêche", emoji: "🎣", count: 2 },
   { id: "Énergie", name: "Énergie", emoji: "⚡", count: 3 },
   { id: "Électronique outdoor", name: "Électronique outdoor", emoji: "📡", count: 3 },
   { id: "Escalade", name: "Escalade", emoji: "🧗", count: 3 },
