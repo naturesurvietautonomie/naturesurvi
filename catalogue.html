@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Catalogue Nature Survie &amp; Autonomie — 20 produits d'autosuffisance, survie et jardinage. Filtres par catégorie, tri par prix et avis.">
   <meta name="keywords" content="catalogue, survie, autosuffisance, jardinage, outils, énergie solaire">
 
@@ -12,14 +12,17 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://placehold.co/1200x630/2d5016/a8d672?text=Catalogue+Nature Survie &amp; Autonomie">
 
-    <!-- Facebook Pixel Code -->
+  <!-- Facebook Pixel Code -->
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
   <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code --><title>Catalogue — Nature Survie &amp; Autonomie</title>
+  <!-- End Facebook Pixel Code -->
+
+  <title>Catalogue — Nature Survie &amp; Autonomie</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
   <script type="application/ld+json">
@@ -36,8 +39,8 @@
   <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
   <!-- Urgency Bar -->
-  <div class="urgency-bar" role="banner" aria-label="Offre promotionnelle">
-    <span>⚡ Offre flash -15% sur tout le site | Se termine dans <span id="countdown-timer">03:45:22</span></span>
+  <div class="urgency-bar">
+    🌿 Livraison offerte dès 69€ | Expédition <span>48h</span> | Retours <span>30 jours</span>
   </div>
 
   <!-- Navbar -->
@@ -72,6 +75,18 @@
       <div class="trust-item"><span class="trust-item-emoji">🔄</span> Satisfait ou remboursé 30 jours</div>
       <div class="trust-item"><span class="trust-item-emoji">🔒</span> Paiement 100% sécurisé</div>
       <div class="trust-item"><span class="trust-item-emoji">📞</span> Service client réactif</div>
+      <div class="trust-item"><span class="trust-item-emoji">🚚</span> Livraison gratuite dès 50€</div>
+      <div class="trust-item"><span class="trust-item-emoji">🔄</span> Satisfait ou remboursé 30 jours</div>
+      <div class="trust-item"><span class="trust-item-emoji">🔒</span> Paiement 100% sécurisé</div>
+      <div class="trust-item"><span class="trust-item-emoji">📞</span> Service client réactif</div>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="section-inner">
+      <h1>Boutique Survie &amp; Préparation</h1>
+      <p>40 produits sélectionnés pour votre autonomie — éclairage, outils, tentes, alimentation</p>
     </div>
   </div>
 
@@ -84,33 +99,43 @@
       </ol>
     </nav>
 
-    <section class="products-section" aria-label="Catalogue">
-      <div class="container">
-        <h1 class="section-title">🏕️ Notre catalogue</h1>
-        <p class="section-subtitle">20 produits sélectionnés pour votre autonomie</p>
-      </div>
+    <div style="background: var(--vert-bg); padding-bottom: 60px;">
+      <div class="catalogue-layout">
+        <aside class="sidebar">
+          <h3><i class="fas fa-filter" style="color:var(--vert-mousse);margin-right:8px;"></i>Filtrer</h3>
+          <div class="filter-group">
+            <h4>Catégories</h4>
+            <div id="filter-buttons" role="group" aria-label="Filtrer par catégorie">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+          <div class="filter-group">
+            <h4>Prix maximum</h4>
+            <div class="price-range">
+              <input type="range" id="priceRange" min="5" max="250" value="250" step="5" oninput="document.getElementById('priceMax').textContent=this.value+' €'">
+              <div class="price-labels"><span>5 €</span><span id="priceMax">250 €</span></div>
+            </div>
+          </div>
+        </aside>
+        <div class="catalogue-main">
+          <div class="catalogue-toolbar">
+            <div class="results-count" id="product-count">Chargement...</div>
+            <select class="sort-select" id="sort-select" aria-label="Trier les produits" onchange="applyFilters()">
+              <option value="default">Tri : Popularité</option>
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix décroissant</option>
+              <option value="rating">Meilleures notes</option>
+              <option value="reviews">Plus d'avis</option>
+              <option value="name">Nom A-Z</option>
+            </select>
+          </div>
 
-      <!-- Controls -->
-      <div class="catalogue-controls">
-        <div class="filter-buttons" id="filter-buttons" role="group" aria-label="Filtrer par catégorie">
-          <!-- Rendered by JS -->
+          <div class="catalogue-grid" id="products-grid">
+            <!-- Rendered by JS -->
+          </div>
         </div>
-        <select class="sort-select" id="sort-select" aria-label="Trier les produits" onchange="applyFilters()">
-          <option value="default">Tri : Popularité</option>
-          <option value="price-asc">Prix croissant</option>
-          <option value="price-desc">Prix décroissant</option>
-          <option value="rating">Meilleures notes</option>
-          <option value="reviews">Plus d'avis</option>
-          <option value="name">Nom A-Z</option>
-        </select>
       </div>
-
-      <p class="product-count" id="product-count">20 produits</p>
-
-      <div class="products-grid" id="products-grid">
-        <!-- Rendered by JS -->
-      </div>
-    </section>
+    </div>
 
     <!-- Newsletter -->
     <section class="newsletter-section" aria-label="Newsletter">
@@ -172,7 +197,8 @@
       <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
       </a>
-    </div>    <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
       <p>© 2026 Nature Survie &amp; Autonomie — Tous droits réservés | Fait avec 🌿 en France</p>
     </div>
   </footer>
@@ -273,7 +299,3 @@
   <script src="js/analytics.js"></script>
 </body>
 </html>
-
-
-
-
