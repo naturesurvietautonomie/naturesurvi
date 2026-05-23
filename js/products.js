@@ -6,7 +6,7 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Lampe frontale LED rechargeable Velamp",
-    price: 14.9,
+    price: 14.24,
     originalPrice: 18.9,
     category: "Éclairage",
     description: "Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d'urgence. Légère, robuste, bandeau réglable confortable.",
@@ -67,7 +67,7 @@ const PRODUCTS = [
   {
     id: 5,
     name: "Couteau Opinel acier inoxydable",
-    price: 10.9,
+    price: 9.97,
     originalPrice: 13.9,
     category: "Outils",
     description: "L'iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.",
@@ -92,7 +92,7 @@ const PRODUCTS = [
   {
     id: 8,
     name: "Pelle pliable de camping",
-    price: 13.9,
+    price: 16.95,
     originalPrice: 17.9,
     category: "Outils",
     description: "Pelle pliable compacte et robuste pour le camping, la survie et le jardinage. Se range facilement dans un sac à dos. Indispensable en bivouac. Disponible en 2 modèles.",
@@ -115,7 +115,7 @@ const PRODUCTS = [
   {
     id: 9,
     name: "Tente de camping Bestway",
-    price: 68.9,
+    price: 72,
     originalPrice: 33.9,
     category: "Survie",
     description: "Tente de camping Bestway en polyester fibre de verre. Facile à monter, imperméable, résistante. Idéale pour le camping estival et les festivals. Disponible en 2, 3 ou 4 personnes.",
@@ -140,7 +140,7 @@ const PRODUCTS = [
   {
     id: 14,
     name: "Réchaud à gaz Open Norte camping",
-    price: 28.9,
+    price: 25,
     originalPrice: 35.9,
     category: "Survie",
     description: "Réchaud à gaz Open Norte compact et puissant. Idéal pour le camping et la randonnée. Allumage piézo intégré, régulateur de flamme précis. Robuste et fiable.",
@@ -159,7 +159,7 @@ const PRODUCTS = [
   {
     id: 15,
     name: "Lampe frontale Black Diamond Spot 400",
-    price: 32.9,
+    price: 35,
     originalPrice: 39.9,
     category: "Éclairage",
     description: "Lampe frontale Black Diamond Spot 400 lumens, rechargeable. Étanche IPX8, autonomie jusqu'à 200h. La référence des alpinistes et randonneurs exigeants.",
@@ -178,7 +178,7 @@ const PRODUCTS = [
   {
     id: 16,
     name: "Lanterne LED Brennenstuhl frontale 200lm",
-    price: 26.9,
+    price: 25,
     originalPrice: 32.9,
     category: "Éclairage",
     description: "Lanterne frontale LED Brennenstuhl 1178780, 200 lumens. Marque allemande reconnue pour sa fiabilité. Légère, réglable, idéale pour le bricolage et l'outdoor.",
@@ -198,7 +198,7 @@ const PRODUCTS = [
   {
     id: 18,
     name: "Glacière isotherme Marbueno 28x20cm",
-    price: 10.9,
+    price: 11,
     originalPrice: 13.9,
     category: "Survie",
     description: "Glacière isotherme Marbueno SUMMER, 28x20x10 cm, polyester. Maintient le froid plusieurs heures. Légère et pliable, idéale pour pique-nique et randonnée.",
@@ -217,7 +217,7 @@ const PRODUCTS = [
   {
     id: 19,
     name: "Lampe frontale Stak LED 10W 1200lm",
-    price: 40.9,
+    price: 35,
     originalPrice: 49.9,
     category: "Éclairage",
     description: "Lampe frontale Stak 10W ultra-puissante 1200 lumens. Rechargeable USB-C, autonomie longue durée. Pour les sorties nocturnes exigeantes et la spéléologie.",
@@ -236,7 +236,7 @@ const PRODUCTS = [
   {
     id: 21,
     name: "Sac à dos randonnée Mammut Cargon",
-    price: 87.9,
+    price: 91,
     originalPrice: 99.9,
     category: "Sacs à dos",
     description: "Sac à dos Mammut Cargon, qualité suisse premium. Grande capacité pour les longues randonnées et expéditions. Tissu robuste, dos ventilé, bretelles ergonomiques. Disponible en 2 tailles.",
@@ -259,7 +259,7 @@ const PRODUCTS = [
   {
     id: 22,
     name: "Sac à dos Mammut Alto 24L",
-    price: 75.9,
+    price: 79,
     originalPrice: 89.9,
     category: "Sacs à dos",
     description: "Sac à dos Mammut Alto 24L, parfait pour les randonnées à la journée. Format compact mais bien équipé. Marque suisse de référence pour l'outdoor.",
@@ -278,7 +278,7 @@ const PRODUCTS = [
   {
     id: 23,
     name: "Sac à dos Reebok Noah polyvalent",
-    price: 22.9,
+    price: 24,
     originalPrice: 27.9,
     category: "Sacs à dos",
     description: "Sac à dos casual Reebok Noah. Polyvalent pour le sport, l'école ou les sorties en plein air. Compartiments multiples, robuste et confortable.",
@@ -297,7 +297,7 @@ const PRODUCTS = [
   {
     id: 24,
     name: "Chargeur universel Varta piles rechargeables",
-    price: 23.9,
+    price: 22,
     originalPrice: 29.9,
     category: "Énergie",
     description: "Chargeur de batterie Varta universel. Compatible AA, AAA, C, D et 9V. Indispensable pour économiser et être autonome en piles. Marque allemande de référence.",
@@ -316,7 +316,7 @@ const PRODUCTS = [
   {
     id: 25,
     name: "Pack piles rechargeables Varta AA + AAA",
-    price: 5.9,
+    price: 6.01,
     originalPrice: 7.9,
     category: "Énergie",
     description: "Pack piles rechargeables Varta 1,2V AA et AAA. Économiques et écologiques, rechargeables jusqu'à 1000 fois. Idéal pour lampes torches, télécommandes et appareils outdoor.",
@@ -335,7 +335,7 @@ const PRODUCTS = [
   {
     id: 26,
     name: "Piles Duracell Plus Power Boost AAA (12 unités)",
-    price: 8.9,
+    price: 8.3,
     originalPrice: 10.9,
     category: "Énergie",
     description: "Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.",
@@ -354,7 +354,7 @@ const PRODUCTS = [
   {
     id: 29,
     name: "Canne à pêche Kali Kunnan",
-    price: 18.9,
+    price: 19,
     originalPrice: 22.9,
     category: "Pêche",
     description: "Canne à pêche télescopique Kali Kunnan. Légère et robuste pour la pêche en rivière, lac ou mer. Se range facilement pour le transport. Disponible en 2 longueurs.",
@@ -396,7 +396,7 @@ const PRODUCTS = [
   {
     id: 32,
     name: "Caméra de sport 4K Sunstech Adventure",
-    price: 38.9,
+    price: 39,
     originalPrice: 46.9,
     category: "Électronique outdoor",
     description: "Caméra de sport 4K Sunstech Adventure. Filmez vos aventures en haute définition. Résistante aux chocs, idéale pour le vélo, la randonnée, le kayak. Légère et compacte.",
@@ -434,7 +434,7 @@ const PRODUCTS = [
   {
     id: 34,
     name: "Bracelet connecté Xiaomi Band outdoor",
-    price: 60.9,
+    price: 55,
     originalPrice: 74.9,
     category: "Électronique outdoor",
     description: "Bracelet d'activités Xiaomi 1,56\" pour le suivi sportif outdoor. GPS, cardiofréquencemètre, compteur de pas, altimètre. Étanche, autonomie 14 jours. Parfait pour la randonnée.",
@@ -453,7 +453,7 @@ const PRODUCTS = [
   {
     id: 35,
     name: "Veste outdoor Alphaventure homme",
-    price: 13.9,
+    price: 17,
     originalPrice: 16.9,
     category: "Vêtements outdoor",
     description: "Veste légère Alphaventure Bidinamarca pour homme, coloris kaki militaire. Coupe-vent, idéale pour la chasse, la randonnée et les activités outdoor. Poches zippées.",
@@ -476,7 +476,7 @@ const PRODUCTS = [
   {
     id: 37,
     name: "Casque d'escalade Black Diamond",
-    price: 44.9,
+    price: 47,
     originalPrice: 54.9,
     category: "Escalade",
     description: "Casque d'escalade Black Diamond léger et résistant. Protection optimale pour l'escalade en falaise et en salle. Ventilation efficace, réglage rapide. Norme CE EN12492.",
@@ -495,7 +495,7 @@ const PRODUCTS = [
   {
     id: 38,
     name: "Harnais d'escalade Kong Sierra Duo",
-    price: 20.9,
+    price: 24,
     originalPrice: 25.9,
     category: "Escalade",
     description: "Harnais d'escalade Kong Sierra Duo pour débutants. Confortable et sécurisé, adapté à la salle et à la falaise. Réglages rapides, ceinture ventrale renforcée.",
@@ -514,7 +514,7 @@ const PRODUCTS = [
   {
     id: 39,
     name: "Slackline Schildkröt 15m jaune",
-    price: 73.9,
+    price: 70,
     originalPrice: 89.9,
     category: "Escalade",
     description: "Slackline Schildkröt 15 mètres, couleur jaune vif. Kit complet avec sangle, tendeur et protège-arbre. Idéal pour la pratique en forêt, parc ou jardin. Pour tous niveaux.",
@@ -533,7 +533,7 @@ const PRODUCTS = [
   {
     id: 40,
     name: "Pain croustillant randonnée Trek'n Eat",
-    price: 7.9,
+    price: 7.61,
     originalPrice: 9.9,
     category: "Alimentation outdoor",
     description: "Pain croustillant déshydraté Trek'n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.",
@@ -552,7 +552,7 @@ const PRODUCTS = [
   {
     id: 41,
     name: "Céréales lyophilisées Trek'n Eat",
-    price: 7.1,
+    price: 7,
     originalPrice: 8.9,
     category: "Alimentation outdoor",
     description: "Céréales lyophilisées Trek'n Eat 150g. Petit-déjeuner de bivouac complet — nutritif et ultra-léger. Prêt en 5 minutes, idéal pour toutes les aventures outdoor.",
@@ -571,7 +571,7 @@ const PRODUCTS = [
   {
     id: 42,
     name: "Barre énergétique Naak Ultra Energy caramel",
-    price: 3.7,
+    price: 4.15,
     originalPrice: 4.9,
     category: "Alimentation outdoor",
     description: "Barre énergétique Naak Ultra Energy 50g, saveur caramel café. Riche en protéines et glucides complexes. Idéale avant et pendant l'effort outdoor : randonnée, course, cyclisme.",
@@ -590,7 +590,7 @@ const PRODUCTS = [
   {
     id: 43,
     name: "Sac d'hydratation Joluvi 2,5L",
-    price: 8.9,
+    price: 9,
     originalPrice: 10.9,
     category: "Cyclisme & Trail",
     description: "Sac d'hydratation Joluvi 2,5L léger et ergonomique. Poche à eau intégrée, tube buveur, sangles réglables. Idéal pour le trail, le VTT et la randonnée rapide.",
@@ -609,7 +609,7 @@ const PRODUCTS = [
   {
     id: 44,
     name: "Sacoche de vélo PRO Performance 5,5L",
-    price: 30.9,
+    price: 31,
     originalPrice: 37.9,
     category: "Cyclisme & Trail",
     description: "Sacoche de vélo PRO Performance 5,5L. Fixation rapide sur guidon ou selle. Imperméable, idéale pour les sorties longue distance. Compatible avec tous types de vélos.",
@@ -629,7 +629,7 @@ const PRODUCTS = [
   {
     id: 46,
     name: "Montre Casio Diver 100M",
-    price: 49.9,
+    price: 45,
     originalPrice: 61.9,
     category: "Montres outdoor",
     description: "Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu'à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.",
@@ -648,7 +648,7 @@ const PRODUCTS = [
   {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
-    price: 10.9,
+    price: 9.55,
     originalPrice: 13.9,
     category: "Alimentation outdoor",
     description: "Plat lyophilisé Trek'n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l'eau chaude. Goût savoureux, haute valeur nutritive.",
@@ -667,7 +667,7 @@ const PRODUCTS = [
   {
     id: 49,
     name: "Dessert lyophilisé Trek'n Eat chocolat",
-    price: 7.9,
+    price: 7.53,
     originalPrice: 9.9,
     category: "Alimentation outdoor",
     description: "Dessert lyophilisé Trek'n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l'eau chaude.",
@@ -705,7 +705,7 @@ const PRODUCTS = [
   {
     id: 51,
     name: "Gourde randonnée outdoor",
-    price: 9.9,
+    price: 8.88,
     originalPrice: 11.9,
     category: "Cyclisme & Trail",
     description: "Gourde Regatta 1L légère et résistante. Bouchon à vis étanche, graduation intérieure. Indispensable pour la randonnée, le camping et le sport en plein air.",
