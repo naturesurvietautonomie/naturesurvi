@@ -37,8 +37,13 @@
         <a href="catalogue.html">Survie</a>
         <a href="jardinage.html" class="active">🌱 Jardinage</a>
         <a href="about.html">À propos</a>
+        <a href="panier.html">Panier</a>
       </nav>
       <div class="nav-right">
+        <button class="cart-btn" onclick="Cart.toggleDrawer()" aria-label="Ouvrir le panier">
+          🛒 <span class="cart-total-nav">0,00 €</span>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
         <button class="burger-menu" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
