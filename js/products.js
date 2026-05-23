@@ -136,25 +136,7 @@ const PRODUCTS = [
       { label: "4 personnes — 240×200 cm", price: 52.90, originalPrice: 66.90, supplierPrice: 35.90, supplierSku: "bestway-68143", image: "img/prod11.jpg" }
     ]
   },
-  {
-    id: 13,
-    name: "Malette de secours portable Cony",
-    price: 23.9,
-    originalPrice: 29.9,
-    category: "Survie",
-    description: "Malette de premiers secours portable Cony, coloris bleu marine. Complète et organisée pour le camping, la randonnée et les urgences familiales. Contenu complet inclus.",
-    badges: ["Essentiel", "Nouveau"],
-    rating: 4.6,
-    reviews: 156,
-    image: "img/prod13.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "480 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "cony-malette-secours",
-    supplierPrice: 19.79,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
+
   {
     id: 14,
     name: "Réchaud à gaz Open Norte camping",
@@ -643,25 +625,7 @@ const PRODUCTS = [
     supplierPrice: 25.02,
     supplierUrl: "https://www.bigbuy.eu/fr"
   },
-  {
-    id: 45,
-    name: "Montre Casio G-Shock outdoor",
-    price: 126.9,
-    originalPrice: 159.9,
-    category: "Montres outdoor",
-    description: "Montre Casio G-Shock GA-2100CM 45,5mm robuste et résistante. Idéale pour la randonnée, la survie et les sports extrêmes. Résistance aux chocs et à l'eau 200m.",
-    badges: ["Essentiel", "Bestseller"],
-    rating: 4.8,
-    reviews: 312,
-    image: "img/prod45.jpg",
-    shipping: "Livraison 2-3 jours",
-    weight: "51 g",
-    inStock: true,
-    supplier: "BigBuy",
-    supplierSku: "casio-gshock-ga2100cm",
-    supplierPrice: 107.47,
-    supplierUrl: "https://www.bigbuy.eu/fr"
-  },
+
   {
     id: 46,
     name: "Montre Casio Diver 100M",
