@@ -106,34 +106,44 @@
           <h3><i class="fas fa-filter" style="color:var(--vert-mousse);margin-right:8px;"></i>Filtrer</h3>
           <div class="filter-group">
             <h4>Catégories</h4>
-            <div id="filter-buttons" role="group" aria-label="Filtrer par catégorie">
-              <!-- Rendered by JS -->
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button class="cat-btn active" onclick="filterCat('all', event)">Tout voir</button>
+              <button class="cat-btn" onclick="filterCat('Éclairage', event)">💡 Éclairage</button>
+              <button class="cat-btn" onclick="filterCat('Outils', event)">🔧 Outils</button>
+              <button class="cat-btn" onclick="filterCat('Tentes', event)">⛺ Tentes</button>
+              <button class="cat-btn" onclick="filterCat('Sacs', event)">🎒 Sacs à dos</button>
+              <button class="cat-btn" onclick="filterCat('Énergie', event)">⚡ Énergie</button>
+              <button class="cat-btn" onclick="filterCat('Alimentation', event)">🥫 Alimentation</button>
+              <button class="cat-btn" onclick="filterCat('Eau', event)">💧 Eau</button>
+              <button class="cat-btn" onclick="filterCat('Secours', event)">🚑 Secours</button>
+              <button class="cat-btn" onclick="filterCat('Montres', event)">⌚ Montres</button>
+              <button class="cat-btn" onclick="filterCat('Sport', event)">🏃 Sport</button>
+              <button class="cat-btn" onclick="filterCat('Pêche', event)">🎣 Pêche</button>
+              <button class="cat-btn" onclick="filterCat('Vidéo', event)">📷 Vidéo</button>
             </div>
           </div>
-          <div class="filter-group">
+          <div class="filter-group" style="margin-top:20px;">
             <h4>Prix maximum</h4>
             <div class="price-range">
-              <input type="range" id="priceRange" min="5" max="250" value="250" step="5" oninput="document.getElementById('priceMax').textContent=this.value+' €'">
+              <input type="range" id="priceRange" min="5" max="250" value="250" step="5">
               <div class="price-labels"><span>5 €</span><span id="priceMax">250 €</span></div>
             </div>
           </div>
         </aside>
         <div class="catalogue-main">
           <div class="catalogue-toolbar">
-            <div class="results-count" id="product-count">Chargement...</div>
-            <select class="sort-select" id="sort-select" aria-label="Trier les produits" onchange="applyFilters()">
+            <div class="results-count" id="product-count">40 produits</div>
+            <select class="sort-select" id="sort-select" aria-label="Trier les produits">
               <option value="default">Tri : Popularité</option>
               <option value="price-asc">Prix croissant</option>
               <option value="price-desc">Prix décroissant</option>
               <option value="rating">Meilleures notes</option>
-              <option value="reviews">Plus d'avis</option>
-              <option value="name">Nom A-Z</option>
             </select>
           </div>
 
           <div class="search-bar-container" style="margin-bottom:20px;">
             <i class="fas fa-search"></i>
-            <input type="text" id="searchInput" placeholder="Rechercher un produit..." oninput="filterSearch(this.value)">
+            <input type="text" id="searchInput" placeholder="Rechercher un produit...">
             <button class="clear-search" id="clearSearch" onclick="clearSearchInput()">✕</button>
           </div>
 
@@ -241,133 +251,94 @@
   <!-- Bouton scroll top -->
   <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-  <script>
-  function filterSearch(val) {
-    const q = val.toLowerCase().trim();
-    document.getElementById('clearSearch').classList.toggle('visible', q.length > 0);
-    const cards = document.querySelectorAll('#products-grid .product-card');
-    let visible = 0;
-    cards.forEach(card => {
-      const text = card.textContent.toLowerCase();
-      const show = q === '' || text.includes(q);
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    const countEl = document.getElementById('results-count');
-    if (countEl) countEl.textContent = visible + ' produit' + (visible > 1 ? 's' : '');
-  }
-  function clearSearchInput() {
-    document.getElementById('searchInput').value = '';
-    filterSearch('');
-  }
-
-  // Filtre prix
-  const priceRange = document.getElementById('priceRange');
-  if (priceRange) {
-    priceRange.addEventListener('input', function() {
-      const max = parseFloat(this.value);
-      document.getElementById('priceMax').textContent = max + ' €';
-      const cards = document.querySelectorAll('#products-grid .product-card');
-      let visible = 0;
-      cards.forEach(card => {
-        const priceEl = card.querySelector('.product-price, .price');
-        if (!priceEl) { card.style.display = ''; visible++; return; }
-        const price = parseFloat(priceEl.textContent.replace(/[^0-9.,]/g,'').replace(',','.'));
-        const show = isNaN(price) || price <= max;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      });
-      const countEl = document.getElementById('results-count');
-      if (countEl) countEl.textContent = visible + ' produit' + (visible > 1 ? 's' : '');
-    });
-  }
-
-  // Tri produits
-  function sortProducts(val) {
-    const grid = document.getElementById('products-grid');
-    if (!grid) return;
-    const cards = Array.from(grid.querySelectorAll('.product-card'));
-    cards.sort((a, b) => {
-      const priceA = parseFloat((a.querySelector('.product-price, .price') || {}).textContent?.replace(/[^0-9.,]/g,'').replace(',','.') || 0);
-      const priceB = parseFloat((b.querySelector('.product-price, .price') || {}).textContent?.replace(/[^0-9.,]/g,'').replace(',','.') || 0);
-      if (val === 'price-asc') return priceA - priceB;
-      if (val === 'price-desc') return priceB - priceA;
-      return 0;
-    });
-    cards.forEach(c => grid.appendChild(c));
-  }
-
-  // Scroll to top
-  const scrollTopBtn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-  }, { passive: true });
-  </script>
-
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
-    let currentCategory = 'all';
+    let currentCat = 'all';
+    let currentSearch = '';
+    let currentPriceMax = 250;
     let currentSort = 'default';
 
-    // Parse URL params
-    function getUrlParams() {
-      const params = new URLSearchParams(window.location.search);
-      return { cat: params.get('cat') || 'all', q: params.get('q') || '' };
-    }
+    // Rendu initial
+    function renderGrid() {
+      let products = [...PRODUCTS];
 
-    // Render filter buttons
-    function renderFilters() {
-      const { cat } = getUrlParams();
-      currentCategory = cat;
-
-      document.getElementById('filter-buttons').innerHTML = CATEGORIES.map(c => `
-        <button class="filter-btn ${c.id === currentCategory ? 'active' : ''}" 
-          onclick="setCategory('${c.id}')" aria-pressed="${c.id === currentCategory}">
-          ${c.emoji} ${c.name}
-        </button>
-      `).join('');
-    }
-
-    function setCategory(cat) {
-      currentCategory = cat;
-      // Update URL without reload
-      const url = new URL(window.location);
-      if (cat === 'all') { url.searchParams.delete('cat'); }
-      else { url.searchParams.set('cat', cat); }
-      history.replaceState(null, '', url);
-
-      renderFilters();
-      applyFilters();
-    }
-
-    function applyFilters() {
-      currentSort = document.getElementById('sort-select').value;
-
-      let products = currentCategory === 'all' ? [...PRODUCTS] : getProductsByCategory(currentCategory);
-
-      // Search
-      const { q } = getUrlParams();
-      if (q) {
-        products = searchProducts(q).filter(p => currentCategory === 'all' || p.category === currentCategory);
+      // Filtre catégorie
+      if (currentCat !== 'all') {
+        products = products.filter(p => p.category === currentCat);
       }
 
-      products = sortProducts(products, currentSort);
+      // Filtre recherche
+      if (currentSearch) {
+        const q = currentSearch.toLowerCase();
+        products = products.filter(p =>
+          p.name.toLowerCase().includes(q) ||
+          (p.description && p.description.toLowerCase().includes(q)) ||
+          (p.category && p.category.toLowerCase().includes(q))
+        );
+      }
 
-      document.getElementById('product-count').textContent = `${products.length} produit${products.length > 1 ? 's' : ''}`;
-      document.getElementById('products-grid').innerHTML = products.length > 0
+      // Filtre prix
+      products = products.filter(p => p.price <= currentPriceMax);
+
+      // Tri
+      if (currentSort === 'price-asc') products.sort((a,b) => a.price - b.price);
+      else if (currentSort === 'price-desc') products.sort((a,b) => b.price - a.price);
+      else if (currentSort === 'rating') products.sort((a,b) => (b.rating||0) - (a.rating||0));
+      else products.sort((a,b) => (b.reviews||0) - (a.reviews||0));
+
+      const grid = document.getElementById('products-grid');
+      const count = document.getElementById('product-count');
+      grid.innerHTML = products.length > 0
         ? products.map(p => renderProductCard(p)).join('')
-        : '<div class="cart-empty"><span class="empty-icon">🔍</span><h2>Aucun produit trouvé</h2><p>Essayez une autre catégorie ou un autre tri.</p></div>';
+        : '<div style="text-align:center;padding:60px;color:#888;grid-column:1/-1;"><div style="font-size:3rem;">🔍</div><p>Aucun produit trouvé</p></div>';
+      if (count) count.textContent = products.length + ' produit' + (products.length > 1 ? 's' : '');
     }
 
-    // Init
-    renderFilters();
-    applyFilters();
+    // Filtre catégorie — identique jardinage
+    function filterCat(cat, e) {
+      currentCat = cat;
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      if (e && e.target) e.target.classList.add('active');
+      renderGrid();
+    }
 
-    // Navbar scroll
+    // Recherche
+    function filterSearch(val) {
+      currentSearch = val.trim();
+      document.getElementById('clearSearch').classList.toggle('visible', currentSearch.length > 0);
+      renderGrid();
+    }
+    function clearSearchInput() {
+      document.getElementById('searchInput').value = '';
+      filterSearch('');
+    }
+
+    // Filtre prix
+    document.getElementById('priceRange').addEventListener('input', function() {
+      currentPriceMax = parseFloat(this.value);
+      document.getElementById('priceMax').textContent = currentPriceMax + ' €';
+      renderGrid();
+    });
+    document.getElementById('searchInput').addEventListener('input', function() {
+      filterSearch(this.value);
+    });
+
+    // Tri
+    document.getElementById('sort-select').addEventListener('change', function() {
+      currentSort = this.value;
+      renderGrid();
+    });
+
+    // Scroll to top
+    const scrollTopBtn = document.getElementById('scrollTop');
     window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
       document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
     }, { passive: true });
+
+    // Init
+    renderGrid();
   </script>
   <script src="js/analytics.js"></script>
 </body>
