@@ -449,6 +449,25 @@
   <!-- Back to top -->
   <button id="back-to-top" aria-label="Retour en haut">↑</button>
 
+  <!-- Bouton scroll top -->
+  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+  // Scroll to top
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.product-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
+  revealEls.forEach(el => el.classList.add('reveal'));
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revealObserver.observe(el));
+  </script>
+
   <!-- Scripts -->
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
@@ -463,7 +482,7 @@
     document.getElementById('featured-survie').innerHTML = survieBestSellers.map(p => `
       <div class="product-card">
         <a href="${p.url}" class="product-card-img-link">
-          <img src="${p.img}" alt="${p.name}" class="product-card-img" style="width:100%;height:220px;object-fit:cover;">
+          <img src="${p.img}" alt="${p.name}" class="product-card-img" loading="lazy" style="width:100%;height:220px;object-fit:cover;">
         </a>
         <div class="product-card-body">
           <span class="product-badge" style="background:#2d5016;color:white;font-size:0.75rem;padding:3px 10px;border-radius:10px;margin-bottom:8px;display:inline-block;">🎒 Survie</span>
@@ -486,7 +505,7 @@
     document.getElementById('featured-jardinage').innerHTML = jardinageBestSellers.map(p => `
       <div class="product-card">
         <a href="${p.url}" class="product-card-img-link">
-          <img src="${p.img}" alt="${p.name}" class="product-card-img" style="width:100%;height:220px;object-fit:cover;">
+          <img src="${p.img}" alt="${p.name}" class="product-card-img" loading="lazy" style="width:100%;height:220px;object-fit:cover;">
         </a>
         <div class="product-card-body">
           <span class="product-badge" style="background:#2d7a3a;color:white;font-size:0.75rem;padding:3px 10px;border-radius:10px;margin-bottom:8px;display:inline-block;">🌱 Jardinage</span>

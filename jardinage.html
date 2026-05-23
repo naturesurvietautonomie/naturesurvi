@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -79,12 +79,18 @@
           <div class="results-count" id="jardinage-count">23 produits</div>
         </div>
 
+        <div class="search-bar-container" style="margin-bottom:20px;">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Rechercher un produit..." oninput="filterSearch(this.value)">
+          <button class="clear-search" id="clearSearch" onclick="clearSearchInput()">✕</button>
+        </div>
+
         <!-- GRILLE PRODUITS -->
         <div class="catalogue-grid" id="jardinage-grid">
 
           <!-- OUTILS -->
           <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" src="images/jardinage/outils_set.jpg" alt="Set outils jardinage" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/outils_set.jpg" alt="Set outils jardinage" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Outils</span>
               <h3 class="jard-card-title">Set d'outils de jardinage 3 pièces</h3>
@@ -97,7 +103,7 @@
           </div>
 
           <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" src="images/jardinage/beche.jpg" alt="Bêche jardinage" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/beche.jpg" alt="Bêche jardinage" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Outils</span>
               <h3 class="jard-card-title">Bêche de jardin professionnelle</h3>
@@ -110,7 +116,7 @@
           </div>
 
           <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" src="images/jardinage/secateur.jpg" alt="Sécateur" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/secateur.jpg" alt="Sécateur" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Outils</span>
               <h3 class="jard-card-title">Sécateur professionnel à lame franche</h3>
@@ -124,7 +130,7 @@
 
           <!-- SERRES -->
           <div class="jard-card" data-cat="serre">
-            <img class="jard-card-img" src="images/jardinage/serre_balcon.jpg" alt="Serre balcon" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/serre_balcon.jpg" alt="Serre balcon" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Serres</span>
               <h3 class="jard-card-title">Serre de balcon 4 étagères</h3>
@@ -137,7 +143,7 @@
           </div>
 
           <div class="jard-card" data-cat="serre">
-            <img class="jard-card-img" src="images/jardinage/serre_tunnel.jpg" alt="Serre tunnel" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/serre_tunnel.jpg" alt="Serre tunnel" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Serres</span>
               <h3 class="jard-card-title">Mini serre tunnel de jardin 6m²</h3>
@@ -151,7 +157,7 @@
 
           <!-- COMPOST -->
           <div class="jard-card" data-cat="compost">
-            <img class="jard-card-img" src="images/jardinage/composteur.jpg" alt="Composteur" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/composteur.jpg" alt="Composteur" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Compost</span>
               <h3 class="jard-card-title">Composteur de jardin 300L</h3>
@@ -164,7 +170,7 @@
           </div>
 
           <div class="jard-card" data-cat="compost">
-            <img class="jard-card-img" src="images/jardinage/lombri.jpg" alt="Lombricomposteur" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/lombri.jpg" alt="Lombricomposteur" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Compost</span>
               <h3 class="jard-card-title">Lombricomposteur 3 niveaux</h3>
@@ -178,7 +184,7 @@
 
           <!-- ARROSAGE -->
           <div class="jard-card" data-cat="arrosage">
-            <img class="jard-card-img" src="images/jardinage/arrosoir.jpg" alt="Arrosoir" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/arrosoir.jpg" alt="Arrosoir" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Arrosage</span>
               <h3 class="jard-card-title">Arrosoir 10L bec long en zinc</h3>
@@ -191,7 +197,7 @@
           </div>
 
           <div class="jard-card" data-cat="arrosage">
-            <img class="jard-card-img" src="images/jardinage/goutte.jpg" alt="Kit goutte-à-goutte" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/goutte.jpg" alt="Kit goutte-à-goutte" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Arrosage</span>
               <h3 class="jard-card-title">Kit goutte-à-goutte 50 plantes</h3>
@@ -205,7 +211,7 @@
 
           <!-- POTAGER URBAIN -->
           <div class="jard-card" data-cat="potager">
-            <img class="jard-card-img" src="images/jardinage/carre_potager.jpg" alt="Carré potager" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/carre_potager.jpg" alt="Carré potager" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Potager urbain</span>
               <h3 class="jard-card-title">Carré potager surélevé en bois 120x60cm</h3>
@@ -218,7 +224,7 @@
           </div>
 
           <div class="jard-card" data-cat="potager">
-            <img class="jard-card-img" src="images/jardinage/tour_fraises.jpg" alt="Tour fraises" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/tour_fraises.jpg" alt="Tour fraises" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Potager urbain</span>
               <h3 class="jard-card-title">Tour à fraises & plantes aromatiques</h3>
@@ -232,7 +238,7 @@
 
           <!-- PROTECTION -->
           <div class="jard-card" data-cat="protection">
-            <img class="jard-card-img" src="images/jardinage/filet.jpg" alt="Filet anti-insectes" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/filet.jpg" alt="Filet anti-insectes" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Protection</span>
               <h3 class="jard-card-title">Filet anti-insectes 2x5m</h3>
@@ -245,7 +251,7 @@
           </div>
 
           <div class="jard-card" data-cat="protection">
-            <img class="jard-card-img" src="images/jardinage/voile.jpg" alt="Voile hivernage" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage/voile.jpg" alt="Voile hivernage" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Protection</span>
               <h3 class="jard-card-title">Voile d'hivernage 30g/m² — 10x2m</h3>
@@ -259,7 +265,7 @@
 
           <!-- OUTILS MOTORISÉS -->
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/debroussailleuse_filaire.jpg" alt="Débroussailleuse filaire 600W" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/debroussailleuse_filaire.jpg" alt="Débroussailleuse filaire 600W" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Débroussailleuse électrique filaire 600W</h3>
@@ -272,7 +278,7 @@
           </div>
 
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/debroussailleuse_batterie.jpg" alt="Débroussailleuse batterie 20V" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/debroussailleuse_batterie.jpg" alt="Débroussailleuse batterie 20V" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Débroussailleuse sans fil batterie 20V</h3>
@@ -285,7 +291,7 @@
           </div>
 
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/taillehaie.jpg" alt="Taille-haie électrique 450W" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/taillehaie.jpg" alt="Taille-haie électrique 450W" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Taille-haie électrique 450W 45cm</h3>
@@ -298,7 +304,7 @@
           </div>
 
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/souffleur.jpg" alt="Souffleur aspirateur feuilles" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/souffleur.jpg" alt="Souffleur aspirateur feuilles" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Souffleur-aspirateur de feuilles 3-en-1 2800W</h3>
@@ -311,7 +317,7 @@
           </div>
 
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/tondeuse.jpg" alt="Tondeuse électrique 1400W" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/tondeuse.jpg" alt="Tondeuse électrique 1400W" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Tondeuse à gazon électrique 1400W 32cm</h3>
@@ -324,7 +330,7 @@
           </div>
 
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/scarificateur.jpg" alt="Scarificateur 2-en-1" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/scarificateur.jpg" alt="Scarificateur 2-en-1" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Scarificateur aérateur 2-en-1 1300W 32cm</h3>
@@ -337,7 +343,7 @@
           </div>
 
           <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" src="images/jardinage2/coupebordures.jpg" alt="Coupe-bordures 350W" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/coupebordures.jpg" alt="Coupe-bordures 350W" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Motorisés</span>
               <h3 class="jard-card-title">Coupe-bordures électrique 350W</h3>
@@ -350,7 +356,7 @@
           </div>
 
           <div class="jard-card" data-cat="arrosage">
-            <img class="jard-card-img" src="images/jardinage2/pulverisateur.jpg" alt="Pulvérisateur 16L" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/pulverisateur.jpg" alt="Pulvérisateur 16L" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Arrosage</span>
               <h3 class="jard-card-title">Pulvérisateur à pression 16L sur roues</h3>
@@ -363,7 +369,7 @@
           </div>
 
           <div class="jard-card" data-cat="protection">
-            <img class="jard-card-img" src="images/jardinage2/bache.jpg" alt="Bâche de jardin 4x6m" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/bache.jpg" alt="Bâche de jardin 4x6m" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Protection</span>
               <h3 class="jard-card-title">Bâche de jardin imperméable 4×6m</h3>
@@ -376,7 +382,7 @@
           </div>
 
           <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" src="images/jardinage2/brouette.jpg" alt="Brouette pliante 100L" style="object-fit:cover;height:200px;width:100%">
+            <img class="jard-card-img" loading="lazy" src="images/jardinage2/brouette.jpg" alt="Brouette pliante 100L" style="object-fit:cover;height:200px;width:100%">
             <div class="jard-card-body">
               <span class="jard-cat-badge">Outils</span>
               <h3 class="jard-card-title">Brouette pliante en acier galvanisé 100L</h3>
@@ -427,6 +433,44 @@
       <p><a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a></p>
     </div>
   </footer>
+
+  <!-- Bouton scroll top -->
+  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+  function filterSearch(val) {
+    const q = val.toLowerCase().trim();
+    document.getElementById('clearSearch').classList.toggle('visible', q.length > 0);
+    const cards = document.querySelectorAll('#jardinage-grid .jard-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const show = q === '' || text.includes(q);
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    const countEl = document.getElementById('jardinage-count');
+    if (countEl) countEl.textContent = visible + ' produit' + (visible > 1 ? 's' : '');
+  }
+  function clearSearchInput() {
+    document.getElementById('searchInput').value = '';
+    filterSearch('');
+  }
+
+  // Scroll to top
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.jard-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
+  revealEls.forEach(el => el.classList.add('reveal'));
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revealObserver.observe(el));
+  </script>
 
   <script>
     // Filtre par catégorie

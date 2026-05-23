@@ -130,6 +130,12 @@
             </select>
           </div>
 
+          <div class="search-bar-container" style="margin-bottom:20px;">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Rechercher un produit..." oninput="filterSearch(this.value)">
+            <button class="clear-search" id="clearSearch" onclick="clearSearchInput()">✕</button>
+          </div>
+
           <div class="catalogue-grid" id="products-grid">
             <!-- Rendered by JS -->
           </div>
@@ -230,6 +236,80 @@
 
   <!-- Back to top -->
   <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+  <!-- Bouton scroll top -->
+  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+  function filterSearch(val) {
+    const q = val.toLowerCase().trim();
+    document.getElementById('clearSearch').classList.toggle('visible', q.length > 0);
+    const cards = document.querySelectorAll('#products-grid .product-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const show = q === '' || text.includes(q);
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    const countEl = document.getElementById('results-count');
+    if (countEl) countEl.textContent = visible + ' produit' + (visible > 1 ? 's' : '');
+  }
+  function clearSearchInput() {
+    document.getElementById('searchInput').value = '';
+    filterSearch('');
+  }
+
+  // Filtre prix
+  const priceRange = document.getElementById('priceRange');
+  if (priceRange) {
+    priceRange.addEventListener('input', function() {
+      const max = parseFloat(this.value);
+      document.getElementById('priceMax').textContent = max + ' €';
+      const cards = document.querySelectorAll('#products-grid .product-card');
+      let visible = 0;
+      cards.forEach(card => {
+        const priceEl = card.querySelector('.product-price, .price');
+        if (!priceEl) { card.style.display = ''; visible++; return; }
+        const price = parseFloat(priceEl.textContent.replace(/[^0-9.,]/g,'').replace(',','.'));
+        const show = isNaN(price) || price <= max;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      const countEl = document.getElementById('results-count');
+      if (countEl) countEl.textContent = visible + ' produit' + (visible > 1 ? 's' : '');
+    });
+  }
+
+  // Tri produits
+  function sortProducts(val) {
+    const grid = document.getElementById('products-grid');
+    if (!grid) return;
+    const cards = Array.from(grid.querySelectorAll('.product-card'));
+    cards.sort((a, b) => {
+      const priceA = parseFloat((a.querySelector('.product-price, .price') || {}).textContent?.replace(/[^0-9.,]/g,'').replace(',','.') || 0);
+      const priceB = parseFloat((b.querySelector('.product-price, .price') || {}).textContent?.replace(/[^0-9.,]/g,'').replace(',','.') || 0);
+      if (val === 'price-asc') return priceA - priceB;
+      if (val === 'price-desc') return priceB - priceA;
+      return 0;
+    });
+    cards.forEach(c => grid.appendChild(c));
+  }
+
+  // Scroll to top
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.product-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
+  revealEls.forEach(el => el.classList.add('reveal'));
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revealObserver.observe(el));
+  </script>
 
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
