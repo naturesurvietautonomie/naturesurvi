@@ -22,8 +22,8 @@ const PRODUCTS = [
     supplierPrice: 12.29,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "350 lm — 5W", price: 21.90, originalPrice: 27.90, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
-      { label: "400 lm — 6W", price: 25.90, originalPrice: 32.90, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
+      { label: "350 lm — 5W", price: 22, originalPrice: 27.90, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
+      { label: "400 lm — 6W", price: 26, originalPrice: 32.90, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
     ]
   },
   {
@@ -83,10 +83,10 @@ const PRODUCTS = [
     supplierPrice: 8.74,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "N°8 — 8,5 cm inox", price: 16.90, originalPrice: 21.90, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
-      { label: "N°9 — 9 cm carbone", price: 18.90, originalPrice: 23.90, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
-      { label: "N°10 — 10 cm inox", price: 20.90, originalPrice: 26.90, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" },
-      { label: "N°12 — 12 cm inox", price: 24.90, originalPrice: 31.90, supplierPrice: 14.80, supplierSku: "opinel-n12-inox", image: "img/prod7.jpg" }
+      { label: "N°8 — 8,5 cm inox", price: 17, originalPrice: 21.90, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
+      { label: "N°9 — 9 cm carbone", price: 19, originalPrice: 23.90, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
+      { label: "N°10 — 10 cm inox", price: 21, originalPrice: 26.90, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" },
+      { label: "N°12 — 12 cm inox", price: 25, originalPrice: 31.90, supplierPrice: 14.80, supplierSku: "opinel-n12-inox", image: "img/prod7.jpg" }
     ]
   },
   {
@@ -108,8 +108,8 @@ const PRODUCTS = [
     supplierPrice: 11.33,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Pelle noire métal", price: 19.90, originalPrice: 24.90, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
-      { label: "Cellfast Ideal Pro", price: 19.90, originalPrice: 24.90, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
+      { label: "Pelle noire métal", price: 20, originalPrice: 24.90, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
+      { label: "Cellfast Ideal Pro", price: 20, originalPrice: 24.90, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
     ]
   },
   {
@@ -131,9 +131,9 @@ const PRODUCTS = [
     supplierPrice: 22.04,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "2 personnes — 205×145 cm", price: 34.90, originalPrice: 43.90, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" },
-      { label: "3 personnes — 210×210 cm", price: 44.90, originalPrice: 56.90, supplierPrice: 29.99, supplierSku: "bestway-68085", image: "img/prod10.jpg" },
-      { label: "4 personnes — 240×200 cm", price: 52.90, originalPrice: 66.90, supplierPrice: 35.90, supplierSku: "bestway-68143", image: "img/prod11.jpg" }
+      { label: "2 personnes — 205×145 cm", price: 35, originalPrice: 43.90, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" },
+      { label: "3 personnes — 210×210 cm", price: 45, originalPrice: 56.90, supplierPrice: 29.99, supplierSku: "bestway-68085", image: "img/prod10.jpg" },
+      { label: "4 personnes — 240×200 cm", price: 53, originalPrice: 66.90, supplierPrice: 35.90, supplierSku: "bestway-68143", image: "img/prod11.jpg" }
     ]
   },
 
@@ -252,8 +252,8 @@ const PRODUCTS = [
     supplierPrice: 66.68,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "40 L — randonnée", price: 100.90, originalPrice: 125.90, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" },
-      { label: "90 L — expédition", price: 104.90, originalPrice: 131.90, supplierPrice: 76.94, supplierSku: "mammut-cargon-90l", image: "img/prod21.jpg" }
+      { label: "40 L — randonnée", price: 101, originalPrice: 125.90, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" },
+      { label: "90 L — expédition", price: 105, originalPrice: 131.90, supplierPrice: 76.94, supplierSku: "mammut-cargon-90l", image: "img/prod21.jpg" }
     ]
   },
   {
@@ -370,8 +370,8 @@ const PRODUCTS = [
     supplierPrice: 15.41,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "240 cm — légère", price: 21.90, originalPrice: 27.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
-      { label: "300 cm — polyvalente", price: 25.90, originalPrice: 32.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+      { label: "240 cm — légère", price: 22, originalPrice: 27.90, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
+      { label: "300 cm — polyvalente", price: 26, originalPrice: 32.90, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
     ]
   },
   {
@@ -469,8 +469,8 @@ const PRODUCTS = [
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Légère — kaki", price: 20.90, originalPrice: 26.90, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" },
-      { label: "Épaisse — Turch kaki", price: 43.90, originalPrice: 54.90, supplierPrice: 29.02, supplierSku: "alphaventure-turch-kaki", image: "img/prod36.jpg" }
+      { label: "Légère — kaki", price: 21, originalPrice: 26.90, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" },
+      { label: "Épaisse — Turch kaki", price: 44, originalPrice: 54.90, supplierPrice: 29.02, supplierSku: "alphaventure-turch-kaki", image: "img/prod36.jpg" }
     ]
   },
   {
@@ -721,8 +721,8 @@ const PRODUCTS = [
     supplierPrice: 7.88,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Regatta noire", price: 15.90, originalPrice: 19.90, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" },
-      { label: "600ml — Picture blanche", price: 29.90, originalPrice: 37.90, supplierPrice: 18.98, supplierSku: "picture-campei-blanc", image: "img/prod52.jpg" }
+      { label: "1L — Regatta noire", price: 16, originalPrice: 19.90, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" },
+      { label: "600ml — Picture blanche", price: 30, originalPrice: 37.90, supplierPrice: 18.98, supplierSku: "picture-campei-blanc", image: "img/prod52.jpg" }
     ]
   }
 ];
