@@ -452,6 +452,10 @@
   <!-- Bouton scroll top -->
   <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+
   <script>
   // Scroll to top
   const scrollTopBtn = document.getElementById('scrollTop');
@@ -459,18 +463,16 @@
     scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
   }, { passive: true });
 
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.product-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
-  revealEls.forEach(el => el.classList.add('reveal'));
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  revealEls.forEach(el => revealObserver.observe(el));
+  // Scroll reveal — après chargement produits
+  window.addEventListener('load', () => {
+    document.documentElement.classList.add('js-reveal-ready');
+    const revealEls = document.querySelectorAll('.product-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObserver.observe(el));
+  });
   </script>
-
-  <!-- Scripts -->
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
   <script>
     // Best-sellers Survie — cartes statiques style identique jardinage
     const survieBestSellers = [

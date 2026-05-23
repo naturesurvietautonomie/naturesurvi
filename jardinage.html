@@ -463,13 +463,15 @@
     scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
   }, { passive: true });
 
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.jard-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
-  revealEls.forEach(el => el.classList.add('reveal'));
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  revealEls.forEach(el => revealObserver.observe(el));
+  // Scroll reveal — après chargement
+  window.addEventListener('load', () => {
+    document.documentElement.classList.add('js-reveal-ready');
+    const revealEls = document.querySelectorAll('.jard-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObserver.observe(el));
+  });
   </script>
 
   <script>

@@ -301,14 +301,6 @@
   window.addEventListener('scroll', () => {
     scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
   }, { passive: true });
-
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.product-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
-  revealEls.forEach(el => el.classList.add('reveal'));
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  revealEls.forEach(el => revealObserver.observe(el));
   </script>
 
   <script src="js/products.js"></script>
