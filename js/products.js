@@ -6,7 +6,7 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Lampe frontale LED rechargeable Velamp",
-    price: 14.46,
+    price: 15,
     originalPrice: 18.9,
     category: "Éclairage",
     description: "Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d'urgence. Légère, robuste, bandeau réglable confortable.",
@@ -29,7 +29,7 @@ const PRODUCTS = [
   {
     id: 3,
     name: "Lanterne frontale MIL-TEC tactique olive",
-    price: 12.9,
+    price: 13,
     originalPrice: 16.9,
     category: "Éclairage",
     description: "Lanterne LED frontale MIL-TEC, coloris olive militaire. Robuste et fiable pour le camping, la chasse et les activités outdoor. Légère et pratique.",
@@ -48,7 +48,7 @@ const PRODUCTS = [
   {
     id: 4,
     name: "Lanterne frontale Nebo Einstein 250lm",
-    price: 14.9,
+    price: 15,
     originalPrice: 18.9,
     category: "Éclairage",
     description: "Lanterne LED frontale Nebo Einstein 250 lumens. Compacte et puissante pour la randonnée et le camping. Plusieurs modes d'éclairage.",
@@ -67,7 +67,7 @@ const PRODUCTS = [
   {
     id: 5,
     name: "Couteau Opinel acier inoxydable",
-    price: 10.29,
+    price: 11,
     originalPrice: 13.9,
     category: "Outils",
     description: "L'iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.",
@@ -92,7 +92,7 @@ const PRODUCTS = [
   {
     id: 8,
     name: "Pelle pliable de camping",
-    price: 16.95,
+    price: 17,
     originalPrice: 17.9,
     category: "Outils",
     description: "Pelle pliable compacte et robuste pour le camping, la survie et le jardinage. Se range facilement dans un sac à dos. Indispensable en bivouac. Disponible en 2 modèles.",
@@ -140,7 +140,7 @@ const PRODUCTS = [
   {
     id: 14,
     name: "Réchaud à gaz Open Norte camping",
-    price: 28.13,
+    price: 29,
     originalPrice: 35.9,
     category: "Survie",
     description: "Réchaud à gaz Open Norte compact et puissant. Idéal pour le camping et la randonnée. Allumage piézo intégré, régulateur de flamme précis. Robuste et fiable.",
@@ -178,7 +178,7 @@ const PRODUCTS = [
   {
     id: 16,
     name: "Lanterne LED Brennenstuhl frontale 200lm",
-    price: 25.71,
+    price: 26,
     originalPrice: 32.9,
     category: "Éclairage",
     description: "Lanterne frontale LED Brennenstuhl 1178780, 200 lumens. Marque allemande reconnue pour sa fiabilité. Légère, réglable, idéale pour le bricolage et l'outdoor.",
@@ -217,7 +217,7 @@ const PRODUCTS = [
   {
     id: 19,
     name: "Lampe frontale Stak LED 10W 1200lm",
-    price: 39.82,
+    price: 40,
     originalPrice: 49.9,
     category: "Éclairage",
     description: "Lampe frontale Stak 10W ultra-puissante 1200 lumens. Rechargeable USB-C, autonomie longue durée. Pour les sorties nocturnes exigeantes et la spéléologie.",
@@ -297,7 +297,7 @@ const PRODUCTS = [
   {
     id: 24,
     name: "Chargeur universel Varta piles rechargeables",
-    price: 23.31,
+    price: 24,
     originalPrice: 29.9,
     category: "Énergie",
     description: "Chargeur de batterie Varta universel. Compatible AA, AAA, C, D et 9V. Indispensable pour économiser et être autonome en piles. Marque allemande de référence.",
@@ -316,7 +316,7 @@ const PRODUCTS = [
   {
     id: 25,
     name: "Pack piles rechargeables Varta AA + AAA",
-    price: 6.01,
+    price: 7,
     originalPrice: 7.9,
     category: "Énergie",
     description: "Pack piles rechargeables Varta 1,2V AA et AAA. Économiques et écologiques, rechargeables jusqu'à 1000 fois. Idéal pour lampes torches, télécommandes et appareils outdoor.",
@@ -335,7 +335,7 @@ const PRODUCTS = [
   {
     id: 26,
     name: "Piles Duracell Plus Power Boost AAA (12 unités)",
-    price: 8.59,
+    price: 9,
     originalPrice: 10.9,
     category: "Énergie",
     description: "Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.",
@@ -377,7 +377,7 @@ const PRODUCTS = [
   {
     id: 31,
     name: "Boîte de rangement pêche Kali Kunnan",
-    price: 9.9,
+    price: 10,
     originalPrice: 11.9,
     category: "Pêche",
     description: "Boîte de rangement pour accessoires de pêche Kali Kunnan. Compartiments modulables pour hameçons, leurres et plombs. Pratique et résistante pour emporter partout.",
@@ -415,7 +415,7 @@ const PRODUCTS = [
   {
     id: 33,
     name: "Caméra de sport SK8 Elite outdoor",
-    price: 54.9,
+    price: 55,
     originalPrice: 66.9,
     category: "Électronique outdoor",
     description: "Caméra de sport SK8 Elite pour l'outdoor extrême. Résistante à l'eau et aux chocs. Parfaite pour VTT, ski, escalade et plongée. Accessoires de fixation inclus.",
@@ -434,7 +434,7 @@ const PRODUCTS = [
   {
     id: 34,
     name: "Bracelet connecté Xiaomi Band outdoor",
-    price: 58.64,
+    price: 59,
     originalPrice: 74.9,
     category: "Électronique outdoor",
     description: "Bracelet d'activités Xiaomi 1,56\" pour le suivi sportif outdoor. GPS, cardiofréquencemètre, compteur de pas, altimètre. Étanche, autonomie 14 jours. Parfait pour la randonnée.",
@@ -533,7 +533,7 @@ const PRODUCTS = [
   {
     id: 40,
     name: "Pain croustillant randonnée Trek'n Eat",
-    price: 7.78,
+    price: 8,
     originalPrice: 9.9,
     category: "Alimentation outdoor",
     description: "Pain croustillant déshydraté Trek'n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.",
@@ -552,7 +552,7 @@ const PRODUCTS = [
   {
     id: 41,
     name: "Céréales lyophilisées Trek'n Eat",
-    price: 7.06,
+    price: 8,
     originalPrice: 8.9,
     category: "Alimentation outdoor",
     description: "Céréales lyophilisées Trek'n Eat 150g. Petit-déjeuner de bivouac complet — nutritif et ultra-léger. Prêt en 5 minutes, idéal pour toutes les aventures outdoor.",
@@ -571,7 +571,7 @@ const PRODUCTS = [
   {
     id: 42,
     name: "Barre énergétique Naak Ultra Energy caramel",
-    price: 4.15,
+    price: 5,
     originalPrice: 4.9,
     category: "Alimentation outdoor",
     description: "Barre énergétique Naak Ultra Energy 50g, saveur caramel café. Riche en protéines et glucides complexes. Idéale avant et pendant l'effort outdoor : randonnée, course, cyclisme.",
@@ -629,7 +629,7 @@ const PRODUCTS = [
   {
     id: 46,
     name: "Montre Casio Diver 100M",
-    price: 47.88,
+    price: 48,
     originalPrice: 61.9,
     category: "Montres outdoor",
     description: "Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu'à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.",
@@ -648,7 +648,7 @@ const PRODUCTS = [
   {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
-    price: 10.06,
+    price: 11,
     originalPrice: 13.9,
     category: "Alimentation outdoor",
     description: "Plat lyophilisé Trek'n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l'eau chaude. Goût savoureux, haute valeur nutritive.",
@@ -667,7 +667,7 @@ const PRODUCTS = [
   {
     id: 49,
     name: "Dessert lyophilisé Trek'n Eat chocolat",
-    price: 7.69,
+    price: 8,
     originalPrice: 9.9,
     category: "Alimentation outdoor",
     description: "Dessert lyophilisé Trek'n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l'eau chaude.",
@@ -686,7 +686,7 @@ const PRODUCTS = [
   {
     id: 50,
     name: "Légumes lyophilisés Trek'n Eat",
-    price: 9.9,
+    price: 10,
     originalPrice: 11.9,
     category: "Alimentation outdoor",
     description: "Légumes lyophilisés Trek'n Eat. Garniture légère et nutritive pour le camp. À ajouter à vos repas en bivouac. Conservation 5 ans, poids minimal.",
@@ -705,7 +705,7 @@ const PRODUCTS = [
   {
     id: 51,
     name: "Gourde randonnée outdoor",
-    price: 9.28,
+    price: 10,
     originalPrice: 11.9,
     category: "Cyclisme & Trail",
     description: "Gourde Regatta 1L légère et résistante. Bouchon à vis étanche, graduation intérieure. Indispensable pour la randonnée, le camping et le sport en plein air.",
