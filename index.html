@@ -420,15 +420,28 @@
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
-    // Best-sellers Survie — IDs des meilleurs produits survie
-    const SURVIE_IDS = [3, 1, 8, 12]; // Lampe frontale, couteau, kit secours, couverture
-    const survieProduits = SURVIE_IDS.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
-    if (survieProduits.length === 0) {
-      // fallback : 4 premiers
-      document.getElementById('featured-survie').innerHTML = PRODUCTS.slice(0, 4).map(p => renderProductCard(p)).join('');
-    } else {
-      document.getElementById('featured-survie').innerHTML = survieProduits.map(p => renderProductCard(p)).join('');
-    }
+    // Best-sellers Survie — cartes statiques style identique jardinage
+    const survieBestSellers = [
+      { img:'img/prod2.jpg',  name:'Lampe frontale LED rechargeable Velamp', price:'21,90€', url:'produit.html?id=1' },
+      { img:'img/prod5.jpg',  name:'Couteau Opinel acier inoxydable',         price:'16,90€', url:'produit.html?id=5' },
+      { img:'img/prod9.jpg',  name:'Tente de camping 2 personnes Bestway',    price:'34,90€', url:'produit.html?id=9' },
+      { img:'img/prod22.jpg', name:'Sac à dos randonnée Mammut Cargon 40L',   price:'100,90€', url:'produit.html?id=21' },
+    ];
+    document.getElementById('featured-survie').innerHTML = survieBestSellers.map(p => `
+      <div class="product-card">
+        <a href="${p.url}" class="product-card-img-link">
+          <img src="${p.img}" alt="${p.name}" class="product-card-img" style="width:100%;height:220px;object-fit:cover;">
+        </a>
+        <div class="product-card-body">
+          <span class="product-badge" style="background:#2d5016;color:white;font-size:0.75rem;padding:3px 10px;border-radius:10px;margin-bottom:8px;display:inline-block;">🎒 Survie</span>
+          <h3 class="product-card-title">${p.name}</h3>
+          <div class="product-card-footer" style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;">
+            <span class="product-price">${p.price}</span>
+            <a href="${p.url}" class="btn btn-primary btn-sm">Voir →</a>
+          </div>
+        </div>
+      </div>
+    `).join('');
 
     // Best-sellers Jardinage — cartes statiques avec images IA
     const jardinageBestSellers = [
