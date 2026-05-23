@@ -729,62 +729,53 @@
 
   // Stripe Payment Links par produit (MODE LIVE)
   const STRIPE_LINKS = {
-    // Prix ajustés ~40% marge — mise à jour 2026-05-17
-    1:  "https://buy.stripe.com/9B67sD76P0BH0MX4jIcfK1I",
-    3:  "https://buy.stripe.com/5kQ28jfDl5W1brB7vUcfK1K",
-    4:  "https://buy.stripe.com/aFa4grdvdgAFgLVcQecfK1L",
-    5:  "https://buy.stripe.com/9B65kv8aTckp1R103scfK1M",
-    8:  "https://buy.stripe.com/6oUfZ90Ir98ddzJ5nMcfK1Q",
-    9:  "https://buy.stripe.com/9B69ALcr9esxdzJ17wcfK05",
-    12: "https://buy.stripe.com/14AeV58aTbgldzJ3fEcfK1S",
-    13: "https://buy.stripe.com/fZu8wHfDlgAFbrB7vUcfK07",
-    14: "https://buy.stripe.com/5kQ3cncr9fwBbrBdUicfK08",
-    15: "https://buy.stripe.com/00w3cn8aTdot9jteYmcfK09",
-    16: "https://buy.stripe.com/3cIcMX9eX1FLeDNeYmcfK0a",
-    18: "https://buy.stripe.com/4gM00b8aT7058fp17wcfK0b",
-    19: "https://buy.stripe.com/fZu3cn0IrbglcvFcQecfK0c",
-    21: "https://buy.stripe.com/fZu28jdvdesx2V58zYcfK0d",
-    22: "https://buy.stripe.com/14A5kvgHpbgl1R19E2cfK0e",
-    23: "https://buy.stripe.com/dRm8wHcr9esx53d4jIcfK0f",
-    24: "https://buy.stripe.com/dRm4grfDlgAF8fp2bAcfK0g",
-    25: "https://buy.stripe.com/cNi9ALezhgAF9jt7vUcfK1T",
-    26: "https://buy.stripe.com/3cI6oz4YH0BH53deYmcfK1U",
-    28: "https://buy.stripe.com/bJe00b9eX2JP2V57vUcfK0j",
-    29: "https://buy.stripe.com/6oU28j9eXfwB0MX8zYcfK29",
-    31: "https://buy.stripe.com/00waEP2Qz4RXeDN2bAcfK1X",
-    32: "https://buy.stripe.com/28E28j1Mv5W11R1aI6cfK0m",
-    33: "https://buy.stripe.com/14A6oz4YHesx0MX8zYcfK0n",
-    34: "https://buy.stripe.com/9B68wH9eXesx0MX17wcfK0o",
-    35: "https://buy.stripe.com/28E28j0Iresx9jtaI6cfK1Y",
-    37: "https://buy.stripe.com/3cI28j62Lesx67h7vUcfK0q",
-    38: "https://buy.stripe.com/7sYeV562LbgldzJ17wcfK0r",
-    39: "https://buy.stripe.com/5kQ4graj1esx53daI6cfK0s",
-    40: "https://buy.stripe.com/4gM28jdvd3NTbrB2bAcfK1Z",
-    41: "https://buy.stripe.com/28EdR1fDl0BH7bldUicfK20",
-    42: "https://buy.stripe.com/3cI28j8aTfwB0MX8zYcfK21",
-    43: "https://buy.stripe.com/cNiaEP8aTdotbrBg2qcfK22",
-    44: "https://buy.stripe.com/cNicMX62L1FLeDN03scfK0x",
-    45: "https://buy.stripe.com/bJe8wH76P0BH7bl8zYcfK0y",
-    46: "https://buy.stripe.com/cNi28jaj15W18fp7vUcfK0z",
-    47: "https://buy.stripe.com/4gMeV5aj12JPcvF7vUcfK0A",
-    48: "https://buy.stripe.com/5kQbIT76PgAF3Z99E2cfK23",
-    49: "https://buy.stripe.com/aFa14f4YH98dbrB5nMcfK24",
-    50: "https://buy.stripe.com/cNieV50Ir98dcvFaI6cfK25",
-    51: "https://buy.stripe.com/9B69AL9eX4RX67h03scfK26",
-    52: "https://buy.stripe.com/eVq8wH9eX0BH7bl8zYcfK0F",
-    // Variantes (clé = "idProduit_indexVariante")
-    "1_1":  "https://buy.stripe.com/3cI28j2Qzckp67h8zYcfK1J",  // Velamp 400lm
-    "5_1":  "https://buy.stripe.com/4gM3cnbn5gAF53d17wcfK1N",  // Opinel N9
-    "5_2":  "https://buy.stripe.com/28E3cngHp4RXanx8zYcfK1O",  // Opinel N10
-    "5_3":  "https://buy.stripe.com/aFadR162Lesx53d5nMcfK1P",  // Opinel N12
-    "8_1":  "https://buy.stripe.com/4gM6oz4YH98d8fp9E2cfK1R",  // Pelle Cellfast
-    "9_1":  "https://buy.stripe.com/dRmfZ9gHp5W1brB8zYcfK0L",  // Tente 3p
-    "9_2":  "https://buy.stripe.com/4gMdR13UDfwBcvF4jIcfK0M",  // Tente 4p
-    "21_1": "https://buy.stripe.com/00wcMXaj1ach3Z99E2cfK0N",  // Mammut 90L
-    "29_1": "https://buy.stripe.com/8x200b9eXesx9jt17wcfK2a",  // Canne 240cm
-    "35_1": "https://buy.stripe.com/dRm6oz3UD0BHfHRbMacfK0P",  // Veste Turch
-    "51_1": "https://buy.stripe.com/aFabIT0Ir1FL7bl7vUcfK0Q",  // Picture 600ml
-    default: null
+    1:  "https://buy.stripe.com/bJe28jezh2JP7bleYmcfK2y",
+    3:  "https://buy.stripe.com/fZubITgHp7058fpaI6cfK2k",
+    4:  "https://buy.stripe.com/4gMbIT1MvgAFbrBeYmcfK2l",
+    5:  "https://buy.stripe.com/6oU6oz0Irdot67hbMacfK2A",
+    8:  "https://buy.stripe.com/aFaeV53UDesx1R1eYmcfK2E",
+    9:  "https://buy.stripe.com/fZu8wHbn5ckp0MXbMacfK2G",
+    14:  "https://buy.stripe.com/6oUbITbn54RXeDN6rQcfK34",
+    15:  "https://buy.stripe.com/8x214fgHp7053Z93fEcfK2m",
+    16:  "https://buy.stripe.com/cNi9ALdvdbgl1R17vUcfK2n",
+    18:  "https://buy.stripe.com/cNicMX8aTgAFanx9E2cfK33",
+    19:  "https://buy.stripe.com/3cI6oz3UD2JPgLV6rQcfK2o",
+    21:  "https://buy.stripe.com/7sYdR1ezh1FL2V503scfK2J",
+    22:  "https://buy.stripe.com/cNi9AL1Mv5W1cvFg2qcfK2X",
+    23:  "https://buy.stripe.com/9B68wHgHp0BHcvFaI6cfK2W",
+    24:  "https://buy.stripe.com/9B600b2Qz0BH67h5nMcfK2p",
+    25:  "https://buy.stripe.com/eVqcMX8aT5W13Z93fEcfK2q",
+    26:  "https://buy.stripe.com/fZueV5bn51FLanx03scfK2r",
+    29:  "https://buy.stripe.com/6oUaEP4YHgAF8fp6rQcfK2L",
+    31:  "https://buy.stripe.com/bJefZ9cr9gAF0MX7vUcfK2Q",
+    32:  "https://buy.stripe.com/3cI4gr3UDgAFgLVcQecfK2R",
+    33:  "https://buy.stripe.com/fZufZ9fDlbglgLV4jIcfK2S",
+    34:  "https://buy.stripe.com/eVqeV5fDl5W17bleYmcfK2O",
+    35:  "https://buy.stripe.com/aFaeV5cr90BH8fp17wcfK2P",
+    37:  "https://buy.stripe.com/bJefZ9aj1fwB67h9E2cfK2s",
+    38:  "https://buy.stripe.com/8x200b76P705brB9E2cfK2t",
+    39:  "https://buy.stripe.com/7sY9AL4YHdotfHRdUicfK2T",
+    40:  "https://buy.stripe.com/eVq8wHezhesxanx6rQcfK2u",
+    41:  "https://buy.stripe.com/aFa9ALbn5bgl9jt6rQcfK2Y",
+    42:  "https://buy.stripe.com/eVqfZ90Ir0BH67h9E2cfK2v",
+    43:  "https://buy.stripe.com/9B64gr2QzckpcvF2bAcfK2w",
+    44:  "https://buy.stripe.com/9B65kvcr90BH53d17wcfK2Z",
+    46:  "https://buy.stripe.com/dRm5kvfDl3NTanx3fEcfK2x",
+    48:  "https://buy.stripe.com/9B6bITaj1849anxeYmcfK31",
+    49:  "https://buy.stripe.com/cNi14ffDl1FL2V5bMacfK30",
+    50:  "https://buy.stripe.com/28E8wHcr9849brB17wcfK2U",
+    51:  "https://buy.stripe.com/fZu7sD8aT0BH67h3fEcfK2V",
+    "1_1":  "https://buy.stripe.com/8x24grgHp8498fpbMacfK2z",
+    "5_1":  "https://buy.stripe.com/28E7sDdvd98d3Z95nMcfK2B",
+    "5_2":  "https://buy.stripe.com/eVqbITbn50BH2V54jIcfK2C",
+    "5_3":  "https://buy.stripe.com/bJe6oz62L3NT8fp4jIcfK2D",
+    "8_1":  "https://buy.stripe.com/00wbIT2Qzckp1R103scfK2F",
+    "9_1":  "https://buy.stripe.com/00w28j3UD98dfHRaI6cfK2H",
+    "9_2":  "https://buy.stripe.com/eVq4grezh2JP3Z99E2cfK2I",
+    "21_1":  "https://buy.stripe.com/9B65kv1MvfwB53d3fEcfK2K",
+    "29_1":  "https://buy.stripe.com/7sYbITgHp2JP2V52bAcfK2M",
+    "51_1":  "https://buy.stripe.com/5kQ14f2QzdotfHRg2qcfK2N",
+    "35_1":  "https://buy.stripe.com/eVqbIT2QzckpbrB6rQcfK32"
   };
 
   function openStripe() {
