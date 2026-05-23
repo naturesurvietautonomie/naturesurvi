@@ -1,8 +1,64 @@
-// Netlify Function — Stripe Webhook + BigBuy Auto-Order
-// Reçoit les paiements Stripe, vérifie la signature, passe la commande BigBuy, envoie un email
+// Netlify Function — Stripe Webhook + BigBuy Auto-Order + TikTok Events API
+// Reçoit les paiements Stripe, vérifie la signature, passe la commande BigBuy, envoie un email, track TikTok
 
 const https = require('https');
 const crypto = require('crypto');
+
+// ─── TikTok Events API (server-side) ─────────────────────────────────────────
+async function sendTikTokPurchaseEvent({ email, amount, currency, orderId, ip, userAgent }) {
+  const PIXEL_ID = 'D88TMA3C77UFPET8DG4G';
+  const ACCESS_TOKEN = process.env.TIKTOK_ACCESS_TOKEN || 'afebe1d85ac0cf79ceb8e9cd97a7236b7b8c284d';
+
+  // Hasher l'email en SHA256 (requis par TikTok)
+  const emailHash = crypto.createHash('sha256').update((email || '').trim().toLowerCase()).digest('hex');
+
+  const payload = {
+    pixel_code: PIXEL_ID,
+    event: 'CompletePayment',
+    event_time: Math.floor(Date.now() / 1000),
+    user: {
+      email: [emailHash],
+      ip:   ip || '',
+      user_agent: userAgent || ''
+    },
+    properties: {
+      value:    parseFloat(amount) || 0,
+      currency: (currency || 'EUR').toUpperCase()
+    },
+    page: {
+      url: 'https://naturesurvie.net/merci.html'
+    },
+    event_id: orderId || `ns-${Date.now()}`
+  };
+
+  return new Promise((resolve, reject) => {
+    const body = JSON.stringify({ data: [payload] });
+    const options = {
+      hostname: 'business-api.tiktok.com',
+      path:     `/open_api/v1.3/pixel/track/`,
+      method:   'POST',
+      headers: {
+        'Access-Token':  ACCESS_TOKEN,
+        'Content-Type':  'application/json',
+        'Content-Length': Buffer.byteLength(body)
+      }
+    };
+    let data = '';
+    const req = https.request(options, res => {
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        console.log('TikTok Events API response:', data);
+        resolve(data);
+      });
+    });
+    req.on('error', e => {
+      console.error('TikTok Events API error:', e.message);
+      resolve(null); // non-bloquant
+    });
+    req.write(body);
+    req.end();
+  });
+}
 
 // ─── Mapping SKU BigBuy par produit NatureSurvi ───────────────────────────────
 // Clé = id produit (ou "id_varianteIdx"), valeur = SKU BigBuy
@@ -190,6 +246,23 @@ Dashboard : https://dashboard.stripe.com/payments/${paymentId}
     } catch (e) {
       console.error('Erreur Resend:', e.message);
     }
+  }
+
+  // ── TikTok Events API — tracking conversion côté serveur ──
+  try {
+    const clientIp = event.headers['x-forwarded-for'] || event.headers['client-ip'] || '';
+    const clientUA = event.headers['user-agent'] || '';
+    await sendTikTokPurchaseEvent({
+      email:     customerEmail,
+      amount,
+      currency:  session.currency || 'eur',
+      orderId:   paymentId,
+      ip:        clientIp.split(',')[0].trim(),
+      userAgent: clientUA
+    });
+    console.log('TikTok CompletePayment envoyé — montant:', amount);
+  } catch (e) {
+    console.error('Erreur TikTok Events API:', e.message);
   }
 
   return {
