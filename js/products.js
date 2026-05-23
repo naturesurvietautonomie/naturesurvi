@@ -6,7 +6,7 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Lampe frontale LED rechargeable Velamp",
-    price: 14.24,
+    price: 14.46,
     originalPrice: 18.9,
     category: "Éclairage",
     description: "Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d'urgence. Légère, robuste, bandeau réglable confortable.",
@@ -67,7 +67,7 @@ const PRODUCTS = [
   {
     id: 5,
     name: "Couteau Opinel acier inoxydable",
-    price: 9.97,
+    price: 10.29,
     originalPrice: 13.9,
     category: "Outils",
     description: "L'iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.",
@@ -140,7 +140,7 @@ const PRODUCTS = [
   {
     id: 14,
     name: "Réchaud à gaz Open Norte camping",
-    price: 25,
+    price: 28.13,
     originalPrice: 35.9,
     category: "Survie",
     description: "Réchaud à gaz Open Norte compact et puissant. Idéal pour le camping et la randonnée. Allumage piézo intégré, régulateur de flamme précis. Robuste et fiable.",
@@ -178,7 +178,7 @@ const PRODUCTS = [
   {
     id: 16,
     name: "Lanterne LED Brennenstuhl frontale 200lm",
-    price: 25,
+    price: 25.71,
     originalPrice: 32.9,
     category: "Éclairage",
     description: "Lanterne frontale LED Brennenstuhl 1178780, 200 lumens. Marque allemande reconnue pour sa fiabilité. Légère, réglable, idéale pour le bricolage et l'outdoor.",
@@ -217,7 +217,7 @@ const PRODUCTS = [
   {
     id: 19,
     name: "Lampe frontale Stak LED 10W 1200lm",
-    price: 35,
+    price: 39.82,
     originalPrice: 49.9,
     category: "Éclairage",
     description: "Lampe frontale Stak 10W ultra-puissante 1200 lumens. Rechargeable USB-C, autonomie longue durée. Pour les sorties nocturnes exigeantes et la spéléologie.",
@@ -297,7 +297,7 @@ const PRODUCTS = [
   {
     id: 24,
     name: "Chargeur universel Varta piles rechargeables",
-    price: 22,
+    price: 23.31,
     originalPrice: 29.9,
     category: "Énergie",
     description: "Chargeur de batterie Varta universel. Compatible AA, AAA, C, D et 9V. Indispensable pour économiser et être autonome en piles. Marque allemande de référence.",
@@ -335,7 +335,7 @@ const PRODUCTS = [
   {
     id: 26,
     name: "Piles Duracell Plus Power Boost AAA (12 unités)",
-    price: 8.3,
+    price: 8.59,
     originalPrice: 10.9,
     category: "Énergie",
     description: "Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.",
@@ -434,7 +434,7 @@ const PRODUCTS = [
   {
     id: 34,
     name: "Bracelet connecté Xiaomi Band outdoor",
-    price: 55,
+    price: 58.64,
     originalPrice: 74.9,
     category: "Électronique outdoor",
     description: "Bracelet d'activités Xiaomi 1,56\" pour le suivi sportif outdoor. GPS, cardiofréquencemètre, compteur de pas, altimètre. Étanche, autonomie 14 jours. Parfait pour la randonnée.",
@@ -514,7 +514,7 @@ const PRODUCTS = [
   {
     id: 39,
     name: "Slackline Schildkröt 15m jaune",
-    price: 70,
+    price: 72,
     originalPrice: 89.9,
     category: "Escalade",
     description: "Slackline Schildkröt 15 mètres, couleur jaune vif. Kit complet avec sangle, tendeur et protège-arbre. Idéal pour la pratique en forêt, parc ou jardin. Pour tous niveaux.",
@@ -533,7 +533,7 @@ const PRODUCTS = [
   {
     id: 40,
     name: "Pain croustillant randonnée Trek'n Eat",
-    price: 7.61,
+    price: 7.78,
     originalPrice: 9.9,
     category: "Alimentation outdoor",
     description: "Pain croustillant déshydraté Trek'n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.",
@@ -552,7 +552,7 @@ const PRODUCTS = [
   {
     id: 41,
     name: "Céréales lyophilisées Trek'n Eat",
-    price: 7,
+    price: 7.06,
     originalPrice: 8.9,
     category: "Alimentation outdoor",
     description: "Céréales lyophilisées Trek'n Eat 150g. Petit-déjeuner de bivouac complet — nutritif et ultra-léger. Prêt en 5 minutes, idéal pour toutes les aventures outdoor.",
@@ -629,7 +629,7 @@ const PRODUCTS = [
   {
     id: 46,
     name: "Montre Casio Diver 100M",
-    price: 45,
+    price: 47.88,
     originalPrice: 61.9,
     category: "Montres outdoor",
     description: "Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu'à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.",
@@ -648,7 +648,7 @@ const PRODUCTS = [
   {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
-    price: 9.55,
+    price: 10.06,
     originalPrice: 13.9,
     category: "Alimentation outdoor",
     description: "Plat lyophilisé Trek'n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l'eau chaude. Goût savoureux, haute valeur nutritive.",
@@ -667,7 +667,7 @@ const PRODUCTS = [
   {
     id: 49,
     name: "Dessert lyophilisé Trek'n Eat chocolat",
-    price: 7.53,
+    price: 7.69,
     originalPrice: 9.9,
     category: "Alimentation outdoor",
     description: "Dessert lyophilisé Trek'n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l'eau chaude.",
@@ -705,7 +705,7 @@ const PRODUCTS = [
   {
     id: 51,
     name: "Gourde randonnée outdoor",
-    price: 8.88,
+    price: 9.28,
     originalPrice: 11.9,
     category: "Cyclisme & Trail",
     description: "Gourde Regatta 1L légère et résistante. Bouchon à vis étanche, graduation intérieure. Indispensable pour la randonnée, le camping et le sport en plein air.",
