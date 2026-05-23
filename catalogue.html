@@ -97,7 +97,7 @@
   <div class="page-hero">
     <div class="section-inner">
       <h1>Boutique Survie &amp; Préparation</h1>
-      <p>40 produits sélectionnés pour votre autonomie — éclairage, outils, tentes, alimentation</p>
+      <p>36 produits sélectionnés pour votre autonomie — éclairage, outils, tentes, alimentation</p>
     </div>
   </div>
 
@@ -117,19 +117,19 @@
           <div class="filter-group">
             <h4>Catégories</h4>
             <div style="display:flex;flex-direction:column;gap:8px;">
-              <button class="cat-btn active" onclick="filterCat('all', event)">Tout voir</button>
-              <button class="cat-btn" onclick="filterCat('Éclairage', event)">💡 Éclairage</button>
-              <button class="cat-btn" onclick="filterCat('Outils', event)">🔧 Outils</button>
-              <button class="cat-btn" onclick="filterCat('Tentes', event)">⛺ Tentes</button>
-              <button class="cat-btn" onclick="filterCat('Sacs', event)">🎒 Sacs à dos</button>
-              <button class="cat-btn" onclick="filterCat('Énergie', event)">⚡ Énergie</button>
-              <button class="cat-btn" onclick="filterCat('Alimentation', event)">🥫 Alimentation</button>
-              <button class="cat-btn" onclick="filterCat('Eau', event)">💧 Eau</button>
-              <button class="cat-btn" onclick="filterCat('Secours', event)">🚑 Secours</button>
-              <button class="cat-btn" onclick="filterCat('Montres', event)">⌚ Montres</button>
-              <button class="cat-btn" onclick="filterCat('Sport', event)">🏃 Sport</button>
-              <button class="cat-btn" onclick="filterCat('Pêche', event)">🎣 Pêche</button>
-              <button class="cat-btn" onclick="filterCat('Vidéo', event)">📷 Vidéo</button>
+              <button class="cat-btn active" onclick="filterCat('all', event)">🏷️ Tout voir (36)</button>
+              <button class="cat-btn" onclick="filterCat('Survie', event)">🏕️ Survie (6)</button>
+              <button class="cat-btn" onclick="filterCat('Éclairage', event)">🔦 Éclairage (4)</button>
+              <button class="cat-btn" onclick="filterCat('Outils', event)">🔪 Outils (2)</button>
+              <button class="cat-btn" onclick="filterCat('Sacs à dos', event)">🎒 Sacs à dos (3)</button>
+              <button class="cat-btn" onclick="filterCat('Énergie', event)">⚡ Énergie (3)</button>
+              <button class="cat-btn" onclick="filterCat('Alimentation outdoor', event)">🍱 Alimentation (6)</button>
+              <button class="cat-btn" onclick="filterCat('Pêche', event)">🎣 Pêche (2)</button>
+              <button class="cat-btn" onclick="filterCat('Électronique outdoor', event)">📡 Électronique (3)</button>
+              <button class="cat-btn" onclick="filterCat('Escalade', event)">🧗 Escalade (3)</button>
+              <button class="cat-btn" onclick="filterCat('Cyclisme & Trail', event)">🚵 Cyclisme (3)</button>
+              <button class="cat-btn" onclick="filterCat('Montres outdoor', event)">⌚ Montres (2)</button>
+              <button class="cat-btn" onclick="filterCat('Vêtements outdoor', event)">🧥 Vêtements (1)</button>
             </div>
           </div>
           <div class="filter-group" style="margin-top:20px;">
@@ -142,7 +142,7 @@
         </aside>
         <div class="catalogue-main">
           <div class="catalogue-toolbar">
-            <div class="results-count" id="product-count">40 produits</div>
+            <div class="results-count" id="product-count">36 produits</div>
             <select class="sort-select" id="sort-select" aria-label="Trier les produits">
               <option value="default">Tri : Popularité</option>
               <option value="price-asc">Prix croissant</option>
@@ -347,7 +347,24 @@
       document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
     }, { passive: true });
 
-    // Init
+    // Init — lire paramètre ?cat= depuis URL
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const catParam = params.get('cat');
+      if (catParam) {
+        // Correspondance flexible : chercher la catégorie exacte dans PRODUCTS
+        const allCats = [...new Set(PRODUCTS.map(p => p.category))];
+        const match = allCats.find(c => c.toLowerCase().includes(catParam.toLowerCase()) || catParam.toLowerCase().includes(c.toLowerCase().split(' ')[0]));
+        if (match) {
+          currentCat = match;
+          // Activer le bon bouton
+          document.querySelectorAll('.cat-btn').forEach(b => {
+            b.classList.remove('active');
+            if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(match)) b.classList.add('active');
+          });
+        }
+      }
+    })();
     renderGrid();
   </script>
   <script src="js/analytics.js"></script>
