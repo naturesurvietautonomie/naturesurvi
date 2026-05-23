@@ -1,48 +1,296 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez l'histoire de Nature Survie &amp; Autonomie — notre mission, nos valeurs et notre engagement pour l'autonomie et la survie.">
-
-  <meta property="og:title" content="À propos — Nature Survie &amp; Autonomie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez l'histoire de Nature Survie & Autonomie — notre mission, nos valeurs et notre engagement pour l'autonomie.">
+  <meta property="og:title" content="À propos — Nature Survie & Autonomie">
   <meta property="og:description" content="Notre mission : rendre l'autonomie accessible à tous.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://placehold.co/1200x630/2d5016/a8d672?text=NatureSurvi+%26+Autonomie+Notre+Histoire">
-
-    <!-- Facebook Pixel Code -->
+  <meta property="og:url" content="https://naturesurvie.net/about.html">
+  <meta property="og:image" content="https://placehold.co/1200x630/2d5016/a8d672?text=Nature+Survie+%26+Autonomie">
+  <!-- Facebook Pixel -->
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
   <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code --><title>À propos — Nature Survie &amp; Autonomie</title>
-
+  <title>À propos — Nature Survie & Autonomie</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ===== PAGE À PROPOS ===== */
+    .about-hero {
+      background: linear-gradient(135deg, #1a3a0a 0%, #2d5016 50%, #4a7c2f 100%);
+      padding: 80px 24px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: '🌿';
+      position: absolute;
+      font-size: 18rem;
+      opacity: 0.05;
+      right: -40px;
+      top: -40px;
+      pointer-events: none;
+    }
+    .about-hero .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #c8e6a0;
+      padding: 8px 18px;
+      border-radius: 24px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .about-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .about-hero h1 em { color: #d4a55a; font-style: normal; }
+    .about-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "À propos de Nature Survie &amp; Autonomie",
-    "description": "Notre mission : rendre l'autonomie accessible à tous",
-    "url": "https://naturesurvie.net/about.html"
-  }
-  </script>
+    .about-story-section {
+      background: #fff;
+      padding: 80px 24px;
+    }
+    .about-story-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-story-inner .section-eyebrow {
+      display: inline-block;
+      background: #f0f5e8;
+      color: #4a7c2f;
+      padding: 6px 16px;
+      border-radius: 24px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .about-story-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #2d5016;
+      margin-bottom: 32px;
+    }
+    .about-story-inner p {
+      font-size: 1.05rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .about-story-inner p strong { color: #2d5016; }
+
+    .about-values-section {
+      background: #f0f5e8;
+      padding: 80px 24px;
+    }
+    .about-values-grid {
+      max-width: 1100px;
+      margin: 40px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .about-value-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(45,80,22,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid #4a7c2f;
+    }
+    .about-value-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 32px rgba(45,80,22,0.18);
+    }
+    .about-value-icon { font-size: 2.8rem; margin-bottom: 16px; display: block; }
+    .about-value-title {
+      font-family: 'Playfair Display', serif;
+      color: #2d5016;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .about-value-desc { font-size: 0.88rem; color: #666; line-height: 1.6; }
+
+    .about-stats-section {
+      background: #2d5016;
+      padding: 60px 24px;
+    }
+    .about-stats-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .about-stat { color: #fff; }
+    .about-stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #d4a55a;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .about-stat-label { font-size: 0.88rem; color: rgba(255,255,255,0.75); }
+
+    .about-why-section {
+      background: #fff;
+      padding: 80px 24px;
+    }
+    .about-why-grid {
+      max-width: 1100px;
+      margin: 40px auto 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .about-why-card {
+      background: #f0f5e8;
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: transform 0.3s ease;
+    }
+    .about-why-card:hover { transform: translateY(-4px); }
+    .about-why-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(45,80,22,0.12);
+    }
+    .about-why-content h3 {
+      font-family: 'Playfair Display', serif;
+      color: #2d5016;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+    .about-why-content p { font-size: 0.9rem; color: #555; line-height: 1.6; }
+
+    .about-team-section {
+      background: #f0f5e8;
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .about-team-card {
+      max-width: 520px;
+      margin: 40px auto 0;
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 24px rgba(45,80,22,0.1);
+    }
+    .about-team-avatar {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #2d5016, #4a7c2f);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #fff;
+      margin: 0 auto 20px;
+    }
+    .about-team-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #2d5016;
+      margin-bottom: 6px;
+    }
+    .about-team-role { color: #4a7c2f; font-weight: 700; font-size: 0.9rem; margin-bottom: 16px; }
+    .about-team-bio { color: #555; font-size: 0.95rem; line-height: 1.7; }
+
+    .about-contact-section {
+      background: linear-gradient(135deg, #2d5016, #4a7c2f);
+      padding: 80px 24px;
+      text-align: center;
+      color: #fff;
+    }
+    .about-contact-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    .about-contact-section p { color: rgba(255,255,255,0.82); margin-bottom: 32px; font-size: 1.05rem; }
+    .about-contact-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .contact-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 24px 32px;
+      min-width: 200px;
+    }
+    .contact-card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+    .contact-card-label { color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+    .contact-card-value { color: #fff; font-weight: 700; font-size: 0.95rem; }
+    .about-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 768px) {
+      .about-hero h1 { font-size: 2.2rem; }
+      .about-values-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-why-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .about-values-grid { grid-template-columns: 1fr; }
+      .about-stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
   <!-- Urgency Bar -->
-  <div class="urgency-bar" role="banner" aria-label="Offre promotionnelle">
-    <span>⚡ Offre flash -15% sur tout le site | Se termine dans <span id="countdown-timer">03:45:22</span></span>
+  <div class="urgency-bar">
+    🌿 Livraison offerte dès 69€ | Expédition <span>48h</span> | Retours <span>30 jours</span>
   </div>
 
   <!-- Navbar -->
   <header class="navbar" role="banner">
     <div class="navbar-inner">
-      <a href="index.html" class="logo" aria-label="Nature Survie &amp; Autonomie — Accueil">
+      <a href="index.html" class="logo" aria-label="Nature Survie & Autonomie — Accueil">
         <span class="logo-emoji">🌿</span>
         <span>Nature Survie &amp; Autonomie</span>
       </a>
@@ -65,132 +313,173 @@
     </div>
   </header>
 
-  <!-- Trust Bar -->
-  <div class="trust-bar">
-    <div class="trust-bar-inner">
-      <div class="trust-item"><span class="trust-item-emoji">🚚</span> Livraison gratuite dès 50€</div>
-      <div class="trust-item"><span class="trust-item-emoji">🔄</span> Satisfait ou remboursé 30 jours</div>
-      <div class="trust-item"><span class="trust-item-emoji">🔒</span> Paiement 100% sécurisé</div>
-      <div class="trust-item"><span class="trust-item-emoji">📞</span> Service client réactif</div>
-    </div>
-  </div>
-
   <main id="main-content">
-    <!-- Breadcrumbs -->
-    <nav class="breadcrumbs" aria-label="Fil d'Ariane">
-      <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li>À propos</li>
-      </ol>
-    </nav>
 
-    <!-- About Hero -->
+    <!-- Hero -->
     <section class="about-hero">
-      <h1>🌿 Notre histoire</h1>
-      <p>Née en 2025 d'une vraie passion pour l'outdoor et l'autonomie, Nature Survie &amp; Autonomie propose une sélection soigneuse d'équipements fiables — pour ceux qui préfèrent être prêts plutôt que surpris.</p>
+      <div class="hero-badge">🌿 Notre histoire depuis 2025</div>
+      <h1>L'autonomie,<br><em>c'est notre passion.</em></h1>
+      <p>Née à Bègles, Nature Survie & Autonomie propose une sélection rigoureuse d'équipements pour ceux qui préfèrent être prêts plutôt que surpris.</p>
     </section>
 
-    <!-- Values -->
-    <section class="about-section" aria-label="Nos valeurs">
-      <div class="container">
-        <h2 class="section-title">💡 Nos valeurs</h2>
-        <p class="section-subtitle">Ce qui nous guide au quotidien</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <span class="about-card-icon">🌱</span>
-          <h3>Respect de la nature</h3>
-          <p>Nous privilégions les produits durables, écologiques et respectueux de l'environnement. Chaque article est sélectionné pour minimiser son impact tout en maximisant votre autonomie.</p>
-        </div>
-        <div class="about-card">
-          <span class="about-card-icon">🔧</span>
-          <h3>Qualité testée</h3>
-          <p>Chaque produit est testé en conditions réelles par notre équipe avant d'être proposé. Pas de gadgets inutiles : que du matériel fiable et éprouvé sur le terrain.</p>
-        </div>
-        <div class="about-card">
-          <span class="about-card-icon">🤝</span>
-          <h3>Communauté</h3>
-          <p>Plus qu'une boutique, Nature Survie &amp; Autonomie c'est une communauté de passionnés d'autonomie. Nous partageons guides, tutoriels et conseils pour progresser ensemble.</p>
-        </div>
-        <div class="about-card">
-          <span class="about-card-icon">📚</span>
-          <h3>Transmission</h3>
-          <p>Nous croyons que les savoirs d'autonomie doivent être accessibles à tous. C'est pourquoi chaque produit vient avec des guides pratiques et des conseils d'utilisation.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Story -->
-    <section class="about-section" style="background: var(--white); padding: 4rem 0;" aria-label="Notre histoire">
-      <div class="about-story">
-        <h2>📖 Comment tout a commencé</h2>
-        <p>Tout part d'une conviction simple : en France, de plus en plus de gens veulent reprendre le contrôle — préparer l'imprévu, partir en pleine nature avec le bon matériel, vivre avec moins de dépendances. Et pourtant, trouver des équipements fiables à prix juste reste un parcours du combattant.</p>
-        <p>En 2025, depuis Bègles, on a décidé de construire la boutique qu'on aurait voulu trouver : une sélection resserrée, des produits testés et validés, des prix transparents. Pas de catalogue de 10 000 références où tout se noie — juste ce qui vaut vraiment le coup.</p>
-        <p>Depuis le lancement, la communauté grandit. Des randonneurs, des survivalistes, des familles qui veulent être prêtes, des aventuriers du week-end — tous ont en commun cette envie d'autonomie. C'est ça qui nous motive chaque jour à améliorer la sélection.</p>
+    <!-- Notre histoire -->
+    <section class="about-story-section">
+      <div class="about-story-inner">
+        <span class="section-eyebrow">Notre histoire</span>
+        <h2>Comment tout a commencé</h2>
+        <p>Tout part d'une conviction simple : en France, de plus en plus de personnes veulent reprendre le contrôle — préparer l'imprévu, partir en pleine nature avec le bon matériel, vivre avec moins de dépendances. Et pourtant, trouver des équipements fiables à prix juste reste un parcours du combattant.</p>
+        <p>En 2025, depuis Bègles, on a décidé de construire la boutique qu'on aurait voulu trouver : une sélection resserrée, des produits testés et validés, des prix transparents. Pas de catalogue de 10 000 références où tout se noie — <strong>juste ce qui vaut vraiment le coup.</strong></p>
+        <p>Depuis le lancement, la communauté grandit. Des randonneurs, des survivalistes, des familles qui veulent être prêtes, des aventuriers du week-end — tous ont en commun cette envie d'autonomie. C'est ça qui nous motive chaque jour.</p>
         <p><strong>Notre promesse :</strong> du matériel sérieux, un service humain, et une boutique qui évolue avec vous.</p>
       </div>
+    </section>
 
-      <!-- Stats -->
-      <div class="about-stats">
-        <div class="stat-item">
-          <span class="stat-number">43</span>
-          <span class="stat-label">Produits sélectionnés</span>
+    <!-- Valeurs -->
+    <section class="about-values-section">
+      <div style="max-width:1100px;margin:0 auto;text-align:center;">
+        <span class="section-eyebrow">Nos valeurs</span>
+        <h2 class="section-title">Ce qui nous guide</h2>
+        <p class="section-subtitle">Quatre principes fondamentaux qui définissent notre approche</p>
+      </div>
+      <div class="about-values-grid">
+        <div class="about-value-card">
+          <span class="about-value-icon">🌱</span>
+          <h3 class="about-value-title">Respect de la nature</h3>
+          <p class="about-value-desc">Nous privilégions les produits durables et respectueux de l'environnement. Chaque article est sélectionné pour minimiser son impact tout en maximisant votre autonomie.</p>
         </div>
-        <div class="stat-item">
-          <span class="stat-number">13</span>
-          <span class="stat-label">Catégories outdoor</span>
+        <div class="about-value-card">
+          <span class="about-value-icon">🔧</span>
+          <h3 class="about-value-title">Qualité testée</h3>
+          <p class="about-value-desc">Chaque produit est évalué avant d'être proposé. Pas de gadgets inutiles : que du matériel fiable, robuste et éprouvé sur le terrain.</p>
         </div>
-        <div class="stat-item">
-          <span class="stat-number">2025</span>
-          <span class="stat-label">Année de création</span>
+        <div class="about-value-card">
+          <span class="about-value-icon">🤝</span>
+          <h3 class="about-value-title">Communauté</h3>
+          <p class="about-value-desc">Plus qu'une boutique, c'est une communauté de passionnés d'autonomie. Nous partageons guides, tutoriels et conseils pour progresser ensemble.</p>
         </div>
-        <div class="stat-item">
-          <span class="stat-number">Bègles</span>
-          <span class="stat-label">Basé en France</span>
+        <div class="about-value-card">
+          <span class="about-value-icon">📚</span>
+          <h3 class="about-value-title">Transmission</h3>
+          <p class="about-value-desc">Nous croyons que les savoirs d'autonomie doivent être accessibles à tous. Chaque produit vient avec des conseils d'utilisation concrets.</p>
         </div>
       </div>
     </section>
 
-    <!-- Why us -->
-    <section class="about-section" aria-label="Pourquoi nous choisir">
-      <div class="container">
-        <h2 class="section-title">🏆 Pourquoi Nature Survie &amp; Autonomie ?</h2>
-        <p class="section-subtitle">Ce qui nous distingue des autres boutiques</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <span class="about-card-icon">✅</span>
-          <h3>Sélection rigoureuse</h3>
-          <p>Sur 100 produits évalués, seuls 20 passent nos critères de qualité, durabilité et utilité réelle. Pas de catalogue gonflé artificiellement.</p>
+    <!-- Stats -->
+    <section class="about-stats-section">
+      <div class="about-stats-grid">
+        <div class="about-stat">
+          <span class="about-stat-number">63</span>
+          <span class="about-stat-label">Produits sélectionnés</span>
         </div>
-        <div class="about-card">
-          <span class="about-card-icon">🚚</span>
-          <h3>Livraison rapide</h3>
-          <p>Expédition sous 24-48h depuis les entrepôts fournisseurs. Livraison gratuite dès 50€ d'achat. Suivi colis inclus.</p>
+        <div class="about-stat">
+          <span class="about-stat-number">⭐ 4,8</span>
+          <span class="about-stat-label">Note moyenne clients</span>
         </div>
-        <div class="about-card">
-          <span class="about-card-icon">🔄</span>
-          <h3>Satisfait ou remboursé</h3>
-          <p>30 jours pour changer d'avis, pas de questions posées. On vous fait même un retour gratuit si le produit ne vous convient pas.</p>
+        <div class="about-stat">
+          <span class="about-stat-number">48h</span>
+          <span class="about-stat-label">Délai d'expédition</span>
         </div>
-        <div class="about-card">
-          <span class="about-card-icon">💬</span>
-          <h3>Support réel</h3>
-          <p>Une vraie personne qui répond à vos questions par email. Pas de chatbot, pas de formulaire kafkaïen — juste un échange direct à naturesurvi@gmail.com.</p>
+        <div class="about-stat">
+          <span class="about-stat-number">2025</span>
+          <span class="about-stat-label">Année de création</span>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="newsletter-section" aria-label="Appel à l'action">
-      <div class="container">
-        <h2>🌿 Prêt à devenir plus autonome ?</h2>
-        <p>Découvrez notre sélection de produits testés et approuvés pour l'autosuffisance.</p>
-        <div style="margin-top: 1.5rem;">
-          <a href="catalogue.html" class="btn btn-primary btn-lg">🛒 Découvrir le catalogue</a>
+    <!-- Pourquoi nous -->
+    <section class="about-why-section">
+      <div style="max-width:1100px;margin:0 auto;text-align:center;">
+        <span class="section-eyebrow">Pourquoi nous</span>
+        <h2 class="section-title">Ce qui nous distingue</h2>
+        <p class="section-subtitle">Des engagements concrets, pas des promesses vides</p>
+      </div>
+      <div class="about-why-grid">
+        <div class="about-why-card">
+          <div class="about-why-icon">✅</div>
+          <div class="about-why-content">
+            <h3>Sélection rigoureuse</h3>
+            <p>Sur 100 produits évalués, seuls une poignée passent nos critères de qualité, durabilité et utilité réelle. Pas de catalogue gonflé artificiellement.</p>
+          </div>
+        </div>
+        <div class="about-why-card">
+          <div class="about-why-icon">🚚</div>
+          <div class="about-why-content">
+            <h3>Livraison rapide</h3>
+            <p>Expédition sous 48h. Livraison gratuite dès 69€ d'achat. Numéro de suivi inclus sur chaque commande.</p>
+          </div>
+        </div>
+        <div class="about-why-card">
+          <div class="about-why-icon">🔄</div>
+          <div class="about-why-content">
+            <h3>Retours 30 jours</h3>
+            <p>30 jours pour changer d'avis, sans justification. Si le produit ne vous convient pas, on s'en occupe simplement.</p>
+          </div>
+        </div>
+        <div class="about-why-card">
+          <div class="about-why-icon">💬</div>
+          <div class="about-why-content">
+            <h3>Support humain</h3>
+            <p>Une vraie personne répond à vos questions par email. Pas de chatbot — juste un échange direct à <strong>naturesurvi@gmail.com</strong>.</p>
+          </div>
+        </div>
+        <div class="about-why-card">
+          <div class="about-why-icon">🔒</div>
+          <div class="about-why-content">
+            <h3>Paiement sécurisé</h3>
+            <p>Transactions chiffrées et sécurisées via Stripe. Vos données bancaires ne transitent jamais par nos serveurs.</p>
+          </div>
+        </div>
+        <div class="about-why-card">
+          <div class="about-why-icon">📍</div>
+          <div class="about-why-content">
+            <h3>Ancré en France</h3>
+            <p>Basés à Bègles (Gironde), nous comprenons les besoins des passionnés de nature et d'autonomie en France.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- L'équipe -->
+    <section class="about-team-section">
+      <span class="section-eyebrow">L'équipe</span>
+      <h2 class="section-title">Derrière la boutique</h2>
+      <p class="section-subtitle">Une personne passionnée, une vision claire</p>
+      <div class="about-team-card">
+        <div class="about-team-avatar">🌿</div>
+        <div class="about-team-name">Nature Survie & Autonomie</div>
+        <div class="about-team-role">Fondateur · Bègles, France</div>
+        <p class="about-team-bio">Passionné d'outdoor, de randonnée et d'autonomie depuis toujours. J'ai créé cette boutique pour rassembler en un seul endroit tout ce dont on a besoin pour vivre plus librement — que ce soit pour un week-end en forêt ou pour un projet d'autonomie alimentaire à la maison.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="about-contact-section">
+      <h2>Contactez-nous</h2>
+      <p>Une question sur un produit, une commande ou simplement envie d'échanger ? On répond sous 24h.</p>
+      <div class="about-contact-cards">
+        <div class="contact-card">
+          <span class="contact-card-icon">📧</span>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-value">naturesurvi@gmail.com</div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card-icon">📍</span>
+          <div class="contact-card-label">Localisation</div>
+          <div class="contact-card-value">Bègles, France</div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card-icon">⏱️</span>
+          <div class="contact-card-label">Réponse</div>
+          <div class="contact-card-value">Sous 24h ouvrées</div>
+        </div>
+      </div>
+      <div class="about-cta-btns">
+        <a href="catalogue.html" class="btn btn-primary btn-lg">🎒 Boutique Survie</a>
+        <a href="jardinage.html" class="btn btn-outline btn-lg">🌱 Boutique Jardinage</a>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->
@@ -198,49 +487,44 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>🌿 Nature Survie &amp; Autonomie</h4>
-        <p>Votre partenaire d'autosuffisance depuis 2026. Équipements testés et approuvés pour l'autonomie au quotidien.</p>
+        <p>Votre partenaire d'autosuffisance depuis 2025. Équipements testés et approuvés pour l'autonomie au quotidien.</p>
       </div>
       <div class="footer-col">
         <h4>Boutique</h4>
-        <a href="catalogue.html">Catalogue complet</a>
-        <a href="catalogue.html?cat=Survie">Survie</a>
-        <a href="jardinage.html">Jardinage</a>
-        <a href="catalogue.html?cat=Énergie">Énergie</a>
+        <a href="catalogue.html">Survie & Préparation</a>
+        <a href="jardinage.html">Jardinage & Potager</a>
+        <a href="catalogue.html?cat=Énergie">Énergie solaire</a>
         <a href="catalogue.html?cat=Conservation">Conservation</a>
       </div>
       <div class="footer-col">
         <h4>Informations</h4>
         <a href="about.html">À propos</a>
-        <a href="#">Livraison & retours</a>
-        <a href="cgv.html">Mentions légales</a>
         <a href="cgv.html">CGV & Mentions légales</a>
-        <a href="#">Contact</a>
+        <a href="about.html#contact">Contact</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <p>📧 naturesurvi@gmail.com</p>
         <p>📍 Bègles, France</p>
+        <p>⏱️ Réponse sous 24h</p>
       </div>
     </div>
     <div class="footer-social">
-      <!-- TikTok -->
       <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
       </a>
-      <!-- Facebook -->
       <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       </a>
-      <!-- Pinterest -->
       <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener" aria-label="Pinterest">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
       </a>
-      <!-- Instagram -->
       <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
       </a>
-    </div>    <div class="footer-bottom">
-      <p>© 2026 Nature Survie &amp; Autonomie — Tous droits réservés | Fait avec 🌿 en France</p>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Nature Survie &amp; Autonomie — Tous droits réservés | Bègles, France</p>
     </div>
   </footer>
 
@@ -266,23 +550,20 @@
     </div>
   </aside>
 
-  <!-- Product Modal -->
-  <div id="product-modal" class="product-modal"></div>
-
-  <!-- Back to top -->
-  <button id="back-to-top" aria-label="Retour en haut">↑</button>
+  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script>
+    const scrollTopBtn = document.getElementById('scrollTop');
     window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
       document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
     }, { passive: true });
+
+    function toggleMobileMenu() {
+      document.getElementById('main-nav').classList.toggle('open');
+    }
   </script>
-  <script src="js/analytics.js"></script>
 </body>
 </html>
-
-
-
-
