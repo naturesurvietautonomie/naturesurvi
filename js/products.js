@@ -115,7 +115,7 @@ const PRODUCTS = [
   {
     id: 9,
     name: "Tente de camping Bestway",
-    price: 26.9,
+    price: 68.9,
     originalPrice: 33.9,
     category: "Survie",
     description: "Tente de camping Bestway en polyester fibre de verre. Facile à monter, imperméable, résistante. Idéale pour le camping estival et les festivals. Disponible en 2, 3 ou 4 personnes.",
@@ -254,7 +254,7 @@ const PRODUCTS = [
   {
     id: 21,
     name: "Sac à dos randonnée Mammut Cargon",
-    price: 80.9,
+    price: 87.9,
     originalPrice: 99.9,
     category: "Sacs à dos",
     description: "Sac à dos Mammut Cargon, qualité suisse premium. Grande capacité pour les longues randonnées et expéditions. Tissu robuste, dos ventilé, bretelles ergonomiques. Disponible en 2 tailles.",
@@ -277,7 +277,7 @@ const PRODUCTS = [
   {
     id: 22,
     name: "Sac à dos Mammut Alto 24L",
-    price: 72.9,
+    price: 75.9,
     originalPrice: 89.9,
     category: "Sacs à dos",
     description: "Sac à dos Mammut Alto 24L, parfait pour les randonnées à la journée. Format compact mais bien équipé. Marque suisse de référence pour l'outdoor.",
@@ -646,7 +646,7 @@ const PRODUCTS = [
   {
     id: 45,
     name: "Montre Casio G-Shock outdoor",
-    price: 129.9,
+    price: 126.9,
     originalPrice: 159.9,
     category: "Montres outdoor",
     description: "Montre Casio G-Shock GA-2100CM 45,5mm robuste et résistante. Idéale pour la randonnée, la survie et les sports extrêmes. Résistance aux chocs et à l'eau 200m.",
