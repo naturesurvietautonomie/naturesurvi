@@ -872,29 +872,22 @@ function renderProductCard(product) {
   const discount = product.originalPrice
     ? Math.round((1 - product.price / product.originalPrice) * 100)
     : 0;
+  const badge = (product.badges && product.badges[0]) ? product.badges[0] : product.category;
   return `
-    <div class="product-card" onclick="window.location='produit.html?id=${product.id}'" style="cursor:pointer">
-      <div class="product-card-img-wrap">
-        <img src="${product.image}" alt="${product.name}" loading="lazy">
-        <div class="product-card-badges">${renderBadges(product.badges)}</div>
-      </div>
-      <div class="product-card-body">
-        <div class="product-card-category">${product.category}</div>
-        <h3 class="product-card-name">${product.name}</h3>
-        <div class="product-card-rating">
-          <span style="color:#f59e0b">${renderStars(product.rating)}</span>
-          <span style="font-size:0.8rem;color:#888">(${product.reviews})</span>
-        </div>
-        <div class="product-card-price-row">
-          <span class="product-card-price">${formatPrice(product.price)}</span>
-          ${product.originalPrice ? `<span class="product-card-original">${formatPrice(product.originalPrice)}</span>` : ''}
-          ${discount > 0 ? `<span class="product-card-discount">-${discount}%</span>` : ''}
-        </div>
-        ${renderSupplier(product)}
-        <div class="product-card-shipping">${product.shipping}</div>
-        <div class="product-card-actions">
-          <a href="produit.html?id=${product.id}" class="btn-voir">Voir le produit</a>
-          <button onclick="event.stopPropagation();Cart.add(${product.id})" class="btn-cart" type="button">🛒</button>
+    <div class="jard-card" onclick="window.location='produit.html?id=${product.id}'" style="cursor:pointer">
+      <img class="jard-card-img" src="${product.image}" alt="${product.name}" loading="lazy">
+      <div class="jard-card-body">
+        <span class="jard-cat-badge">🎒 ${badge}</span>
+        <h3 class="jard-card-title">${product.name}</h3>
+        <p class="jard-card-desc">${product.description ? product.description.substring(0, 90) + (product.description.length > 90 ? '…' : '') : ''}</p>
+        <div style="color:#f59e0b;font-size:0.82rem;margin-bottom:8px;">${renderStars(product.rating)} <span style="color:#888;font-size:0.78rem;">(${product.reviews})</span></div>
+        <div class="jard-card-footer">
+          <div>
+            <span class="jard-price">${formatPrice(product.price)}</span>
+            ${product.originalPrice ? `<span style="font-size:0.8rem;color:#999;text-decoration:line-through;margin-left:6px;">${formatPrice(product.originalPrice)}</span>` : ''}
+            ${discount > 0 ? `<span style="background:#c0392b;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px;">-${discount}%</span>` : ''}
+          </div>
+          <button onclick="event.stopPropagation();Cart.add(${product.id})" class="jard-btn" type="button">🛒 Ajouter au panier</button>
         </div>
       </div>
     </div>
