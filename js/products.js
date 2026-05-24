@@ -766,7 +766,7 @@ const PRODUCTS = [
     supplierPrice: 2.80,
     variants: [
       { label: "Standard 10cm", description: "Firestarter 10 cm — version standard, idéal pour débuter. Produit jusqu'à 3 000°C d'étincelles. Compact et léger pour le sac à dos.", price: 5, originalPrice: 6, supplierPrice: 2.80, image: "img/prod_firestarter.jpg" },
-      { label: "Large 12cm — durée x3", description: "Firestarter 12 cm large — durée de vie 3× supérieure. Pour les sorties longues ou les kits 72h. Grattoir acier inclus.", price: 5, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
+      { label: "Large 12cm — durée x3", description: "Firestarter 12 cm large — durée de vie 3× supérieure. Pour les sorties longues ou les kits 72h. Grattoir acier inclus.", price: 7, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
       { label: "XL 15cm + cordage", description: "Firestarter XL 15 cm avec cordage paracord 1m intégré — le plus endurant. Idéal pour les expéditions et l'enseignement de la survie.", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
     ]
   },
@@ -831,8 +831,8 @@ const PRODUCTS = [
     supplierPrice: 7.50,
     variants: [
       { label: "Lame 15cm — noir", description: "Couteau survie lame fixe 15 cm inox noire — format idéal pour le bushcraft, la cuisine en bivouac et les activités outdoor. Étui Cordura inclus.", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_couteau_survie.jpg" },
-      { label: "Lame 20cm + hachette", description: "Couteau 20 cm + mini-hachette intégrée — deux outils en un pour couper du bois, débiter de la viande et construire un abri en forêt.", price: 20, originalPrice: 22, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg" },
-      { label: "Machette 35cm", description: "Machette 35 cm — pour défricher, couper des branches épaisses et ouvrir un chemin en jungle ou sous-bois dense. Lame inox traitée.", price: 20, originalPrice: 30, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg" }
+      { label: "Lame 20cm + hachette", description: "Couteau 20 cm + mini-hachette intégrée — deux outils en un pour couper du bois, débiter de la viande et construire un abri en forêt.", price: 22, originalPrice: 22, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg" },
+      { label: "Machette 35cm", description: "Machette 35 cm — pour défricher, couper des branches épaisses et ouvrir un chemin en jungle ou sous-bois dense. Lame inox traitée.", price: 25, originalPrice: 30, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg" }
     ]
   },
   {
@@ -853,8 +853,8 @@ const PRODUCTS = [
     supplierPrice: 11.50,
     variants: [
       { label: "Kit individuel — 12 pièces", description: "Kit survie 12 pièces individuel : couverture, firestarter, sifflet, paracord 5m, filtre eau, boussole, couteau pliant, rations, lampe, bâton lumineux, gants, trousse.", price: 30, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_kit72h.jpg" },
-      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 30, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h.jpg" },
-      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 35, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h.jpg" }
+      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 35, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h.jpg" },
+      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 40, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h.jpg" }
     ]
   },
   {
@@ -875,8 +875,8 @@ const PRODUCTS = [
     supplierPrice: 7.20,
     variants: [
       { label: "Filtre paille individuel", description: "Filtre paille individuel — buvez directement dans n'importe quelle source. Élimine 99,9999% bactéries, 0 produits chimiques. 57g, tient dans une poche.", price: 20, originalPrice: 14, supplierPrice: 7.20, image: "img/prod_filtre_eau.jpg" },
-      { label: "Filtre bouteille 0.5L", description: "Filtre bouteille 500 mL — filtration intégrée dans la bouteille. Buvez partout sans traitement chimique préalable. Capacité 100 000 litres.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg" },
-      { label: "Kit complet paille+bouteille+pastilles", description: "Kit complet survie eau : filtre paille + bouteille filtrante + 20 pastilles purification. Triple protection pour toutes les situations d'urgence.", price: 20, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg" }
+      { label: "Filtre bouteille 0.5L", description: "Filtre bouteille 500 mL — filtration intégrée dans la bouteille. Buvez partout sans traitement chimique préalable. Capacité 100 000 litres.", price: 22, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg" },
+      { label: "Kit complet paille+bouteille+pastilles", description: "Kit complet survie eau : filtre paille + bouteille filtrante + 20 pastilles purification. Triple protection pour toutes les situations d'urgence.", price: 25, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg" }
     ]
   },
   {
@@ -897,8 +897,8 @@ const PRODUCTS = [
     supplierPrice: 14.50,
     variants: [
       { label: "Paire 5km — noir", description: "Paire talkies-walkies 5 km noirs — portée optimale en forêt ou montagne. 16 canaux, IPX4, VOX, lampe LED. Batteries incluses.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/prod_talkie.jpg" },
-      { label: "Paire 8km — orange", description: "Paire talkies-walkies 8 km orange — haute visibilité et portée maximale pour les grandes distances. Idéal ski, randonnée montagne, sauvetage.", price: 40, originalPrice: 34, supplierPrice: 18.50, image: "img/prod_talkie.jpg" },
-      { label: "Pack ×4 — famille", description: "Pack 4 talkies-walkies — communicez entre tous les membres de la famille ou du groupe. Parfait pour le camping, les randonnées et les situations d'urgence.", price: 40, originalPrice: 50, supplierPrice: 27.00, image: "img/prod_talkie.jpg" }
+      { label: "Paire 8km — orange", description: "Paire talkies-walkies 8 km orange — haute visibilité et portée maximale pour les grandes distances. Idéal ski, randonnée montagne, sauvetage.", price: 42, originalPrice: 34, supplierPrice: 18.50, image: "img/prod_talkie.jpg" },
+      { label: "Pack ×4 — famille", description: "Pack 4 talkies-walkies — communicez entre tous les membres de la famille ou du groupe. Parfait pour le camping, les randonnées et les situations d'urgence.", price: 48, originalPrice: 50, supplierPrice: 27.00, image: "img/prod_talkie.jpg" }
     ]
   },
   {
@@ -943,8 +943,8 @@ const PRODUCTS = [
     supplierPrice: 5.50,
     variants: [
       { label: "Boussole simple", description: "Boussole militaire simple — lecture précise, boîtier métal, cadran phosphorescent. Parfaite pour la randonnée et l'orientation en forêt.", price: 15, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_boussole.jpg" },
-      { label: "Boussole + miroir de visée", description: "Boussole avec miroir de visée — prendre un relèvement précis sur un sommet lointain. Usage professionnel, armée et secours en montagne.", price: 15, originalPrice: 16, supplierPrice: 8.50, image: "img/prod_boussole.jpg" },
-      { label: "Kit navigation : boussole+carte+sifflet", description: "Kit navigation complet : boussole militaire + porte-carte étanche + sifflet 120 dB. Tout pour se repérer et alerter dans la nature.", price: 15, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_boussole.jpg" }
+      { label: "Boussole + miroir de visée", description: "Boussole avec miroir de visée — prendre un relèvement précis sur un sommet lointain. Usage professionnel, armée et secours en montagne.", price: 17, originalPrice: 16, supplierPrice: 8.50, image: "img/prod_boussole.jpg" },
+      { label: "Kit navigation : boussole+carte+sifflet", description: "Kit navigation complet : boussole militaire + porte-carte étanche + sifflet 120 dB. Tout pour se repérer et alerter dans la nature.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_boussole.jpg" }
     ]
   },
   {
@@ -965,9 +965,9 @@ const PRODUCTS = [
     supplierPrice: 6.50,
     variants: [
       { label: "1000 lm — Noire", description: "Lampe torche 1000 lm noire — puissante pour randonner de nuit. 5 modes, zoom, résistante IPX6. Parfaite pour le camping et la survie quotidienne.", price: 20, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Noire", description: "Lampe torche 2000 lm noire — pour les environnements difficiles et sombres. Portée jusqu'à 300m. Mode stroboscope SOS intégré.", price: 20, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 20, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 20, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche.jpg" }
+      { label: "2000 lm — Noire", description: "Lampe torche 2000 lm noire — pour les environnements difficiles et sombres. Portée jusqu'à 300m. Mode stroboscope SOS intégré.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
+      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
+      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 27, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche.jpg" }
     ]
   },
   {
@@ -990,7 +990,7 @@ const PRODUCTS = [
       { label: "40L — Noir", description: "Bug Out Bag 40L noir — discret en milieu urbain, robuste en forêt. Structure MOLLE, résistant à l'eau, bretelles renforcées.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
       { label: "40L — Vert militaire", description: "Bug Out Bag 40L vert militaire — se fond dans la nature. Multi-poches organisées, accès rapide aux essentiels. Idéal survivalistes.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
       { label: "40L — Camouflage", description: "Bug Out Bag 40L camouflage — pour les amateurs de tactique et chasse. Tissu dense résistant, frame interne rigidifié.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 45, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
+      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 55, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
     ]
   },
 
@@ -1040,8 +1040,8 @@ const PRODUCTS = [
     supplierPrice: 9.00,
     variants: [
       { label: "5L — Vert", description: "Arrosoir 5L vert — format compact pour balcon, terrasse ou serre. Idéal pour les semis et les plantes en pot. Léger et maniable.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" },
-      { label: "8L — Vert", description: "Arrosoir 8L vert — bon compromis entre capacité et maniabilité. Pour potager moyen et massifs de fleurs. Pomme fine amovible.", price: 23, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
-      { label: "10L — Vert", description: "Arrosoir 10L vert — grande contenance pour arroser tout un jardin en un trajet. Moins de déplacements, plus d'efficacité.", price: 23, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
+      { label: "8L — Vert", description: "Arrosoir 8L vert — bon compromis entre capacité et maniabilité. Pour potager moyen et massifs de fleurs. Pomme fine amovible.", price: 25, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
+      { label: "10L — Vert", description: "Arrosoir 10L vert — grande contenance pour arroser tout un jardin en un trajet. Moins de déplacements, plus d'efficacité.", price: 27, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
       { label: "5L — Rouge", description: "Arrosoir 5L rouge — même praticité que le vert, coloris vif pour le retrouver facilement. Bec long pour arroser sans éclabousser.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" }
     ]
   },
@@ -1063,8 +1063,8 @@ const PRODUCTS = [
     supplierPrice: 16.00,
     variants: [
       { label: "Petite — 100×50×80 cm", description: "Serre petite 100×50×80 cm — pour balcon ou terrasse. Protège 3-4 plants du gel et des insectes. Montage rapide, encombrement minimal.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
-      { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 45, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
-      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 45, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre.jpg" },
+      { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 48, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
+      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 55, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre.jpg" },
       { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 53, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre.jpg" }
     ]
   },
@@ -1132,8 +1132,8 @@ const PRODUCTS = [
     supplierPrice: 5.50,
     variants: [
       { label: "Kit 10 légumes essentiels", description: "10 sachets de semences — les indispensables du potager débutant : tomates, courgettes, carottes, salades, radis. Non traitées, bio.", price: 13, originalPrice: 8, supplierPrice: 4.00, image: "img/jard_semences.jpg" },
-      { label: "Kit 20 légumes complet", description: "20 sachets de semences bio — pour un potager diversifié toute la saison. Printemps à automne, légumes fruits et feuilles inclus.", price: 13, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
-      { label: "Kit 30 légumes + herbes", description: "30 sachets semences + herbes aromatiques — basilic, persil, ciboulette, thym inclus. Le kit complet pour l'autosuffisance alimentaire.", price: 13, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
+      { label: "Kit 20 légumes complet", description: "20 sachets de semences bio — pour un potager diversifié toute la saison. Printemps à automne, légumes fruits et feuilles inclus.", price: 14, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
+      { label: "Kit 30 légumes + herbes", description: "30 sachets semences + herbes aromatiques — basilic, persil, ciboulette, thym inclus. Le kit complet pour l'autosuffisance alimentaire.", price: 16, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
       { label: "Kit 50 variétés premium", description: "50 variétés semences premium — dont variétés anciennes rares. Pour les passionnés voulant un potager exceptionnel et des saveurs oubliées.", price: 16, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
     ]
   },
@@ -1155,8 +1155,8 @@ const PRODUCTS = [
     supplierPrice: 14.50,
     variants: [
       { label: "300L — Noir", description: "Composteur 300L noir — capacité idéale pour une famille de 4. Déchets cuisine + jardin transformés en engrais en 3 mois. Trappe récupération incluse.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/jard_composteur.jpg" },
-      { label: "400L — Noir", description: "Composteur 400L noir — pour les gros producteurs de déchets verts. Plus de capacité, même robustesse. Couvercle vissé anti-nuisibles.", price: 40, originalPrice: 34, supplierPrice: 18.50, image: "img/jard_composteur.jpg" },
-      { label: "600L — Noir", description: "Composteur 600L noir — le plus grand format, pour les grands jardins et familles nombreuses. Production de compost en continu toute l'année.", price: 40, originalPrice: 45, supplierPrice: 24.50, image: "img/jard_composteur.jpg" }
+      { label: "400L — Noir", description: "Composteur 400L noir — pour les gros producteurs de déchets verts. Plus de capacité, même robustesse. Couvercle vissé anti-nuisibles.", price: 43, originalPrice: 34, supplierPrice: 18.50, image: "img/jard_composteur.jpg" },
+      { label: "600L — Noir", description: "Composteur 600L noir — le plus grand format, pour les grands jardins et familles nombreuses. Production de compost en continu toute l'année.", price: 50, originalPrice: 45, supplierPrice: 24.50, image: "img/jard_composteur.jpg" }
     ]
   },
   {
@@ -1177,8 +1177,8 @@ const PRODUCTS = [
     supplierPrice: 7.50,
     variants: [
       { label: "Kit 15 plantes", description: "Kit goutte-à-goutte 15 plantes — pour débuter et tester l'arrosage automatique. Idéal balcon ou petite terrasse. Économise 70% d'eau.", price: 20, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 30 plantes", description: "Kit goutte-à-goutte 30 plantes — pour un carré potager complet. Tuyaux PE flexibles, goutteurs réglables 0-8L/h, connexions étanches.", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 50 plantes + timer", description: "Kit goutte-à-goutte 50 plantes + programmateur — arrosage 100% autonome. Programmez et oubliez, même pendant les vacances.", price: 20, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 30 plantes", description: "Kit goutte-à-goutte 30 plantes — pour un carré potager complet. Tuyaux PE flexibles, goutteurs réglables 0-8L/h, connexions étanches.", price: 22, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 50 plantes + timer", description: "Kit goutte-à-goutte 50 plantes + programmateur — arrosage 100% autonome. Programmez et oubliez, même pendant les vacances.", price: 25, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
       { label: "Kit 100 plantes pro", description: "Kit goutte-à-goutte 100 plantes pro — pour les grands potagers, serres et terrasses. Débit maîtrisé, tuyaux renforcés, raccords universels.", price: 27, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
     ]
   },
@@ -1200,11 +1200,11 @@ const PRODUCTS = [
     supplierPrice: 4.50,
     variants: [
       { label: "×5 — 10L Noir", description: "5 pots géotextiles 10L noirs — idéal fraises, herbes aromatiques, petites tomates. Air-pruning naturel, drainage parfait. Pliables hors saison.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 20L Noir", description: "5 pots géotextiles 20L noirs — pour tomates, poivrons, aubergines. Grande contenance, racines saines, rendements supérieurs à la terre.", price: 11, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 30L Noir", description: "5 pots géotextiles 30L noirs — pour arbustes fruitiers, grands légumes et cultures intensives. Résistants UV, réutilisables 5+ saisons.", price: 11, originalPrice: 15, supplierPrice: 7.80, image: "img/jard_pots.jpg" },
+      { label: "×5 — 20L Noir", description: "5 pots géotextiles 20L noirs — pour tomates, poivrons, aubergines. Grande contenance, racines saines, rendements supérieurs à la terre.", price: 13, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 30L Noir", description: "5 pots géotextiles 30L noirs — pour arbustes fruitiers, grands légumes et cultures intensives. Résistants UV, réutilisables 5+ saisons.", price: 14, originalPrice: 15, supplierPrice: 7.80, image: "img/jard_pots.jpg" },
       { label: "×5 — 10L Vert", description: "5 pots géotextiles 10L verts — même performance que le noir, coloris naturel discret pour balcon ou terrasse visible.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 20L Vert", description: "5 pots géotextiles 20L verts — capacité idéale tomates, beau coloris pour intégrer au jardin. Texture respirante anti-pourriture.", price: 11, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
-      { label: "×10 — 10L Noir — lot", description: "Lot de 10 pots géotextiles 10L noirs — format économique pour équiper tout un potager. Parfait pour les semis en extérieur et fraisiers.", price: 11, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_pots.jpg" }
+      { label: "×5 — 20L Vert", description: "5 pots géotextiles 20L verts — capacité idéale tomates, beau coloris pour intégrer au jardin. Texture respirante anti-pourriture.", price: 13, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
+      { label: "×10 — 10L Noir — lot", description: "Lot de 10 pots géotextiles 10L noirs — format économique pour équiper tout un potager. Parfait pour les semis en extérieur et fraisiers.", price: 14, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_pots.jpg" }
     ]
   },
   {
