@@ -85,8 +85,7 @@ const PRODUCTS = [
     variants: [
       { label: "N°8 — 8,5 cm inox", price: 11, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
       { label: "N°9 — 9 cm carbone", price: 13, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
-      { label: "N°10 — 10 cm inox", price: 15, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" },
-      { label: "N°12 — 12 cm inox", price: 25, originalPrice: 31.90, supplierPrice: 14.80, supplierSku: "opinel-n12-inox", image: "img/prod7.jpg" }
+      { label: "N°10 — 10 cm inox", price: 15, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" }
     ]
   },
   {
@@ -131,9 +130,7 @@ const PRODUCTS = [
     supplierPrice: 22.04,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "2 personnes — 205×145 cm", price: 26, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" },
-      { label: "3 personnes — 210×210 cm", price: 45, originalPrice: 56.90, supplierPrice: 29.99, supplierSku: "bestway-68085", image: "img/prod10.jpg" },
-      { label: "4 personnes — 240×200 cm", price: 53, originalPrice: 66.90, supplierPrice: 35.90, supplierSku: "bestway-68143", image: "img/prod11.jpg" }
+      { label: "2 personnes — 205×145 cm", price: 26, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" }
     ]
   },
 
@@ -252,8 +249,7 @@ const PRODUCTS = [
     supplierPrice: 66.68,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "40 L — randonnée", price: 80, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" },
-      { label: "90 L — expédition", price: 105, originalPrice: 131.90, supplierPrice: 76.94, supplierSku: "mammut-cargon-90l", image: "img/prod21.jpg" }
+      { label: "40 L — randonnée", price: 80, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" }
     ]
   },
   {
@@ -469,8 +465,7 @@ const PRODUCTS = [
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Légère — kaki", price: 14, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" },
-      { label: "Épaisse — Turch kaki", price: 44, originalPrice: 54.90, supplierPrice: 29.02, supplierSku: "alphaventure-turch-kaki", image: "img/prod36.jpg" }
+      { label: "Légère — kaki", price: 14, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" }
     ]
   },
   {
@@ -721,8 +716,7 @@ const PRODUCTS = [
     supplierPrice: 7.88,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Regatta noire", price: 10, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" },
-      { label: "600ml — Picture blanche", price: 30, originalPrice: 37.90, supplierPrice: 18.98, supplierSku: "picture-campei-blanc", image: "img/prod52.jpg" }
+      { label: "1L — Regatta noire", price: 10, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" }
     ]
   },
 
@@ -794,8 +788,7 @@ const PRODUCTS = [
     supplierPrice: 1.80,
     variants: [
       { label: "×1 — Individuelle", price: 3, originalPrice: 4, supplierPrice: 1.80, image: "img/prod_couverture.jpg" },
-      { label: "×4 — Pack famille", price: 8, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" },
-      { label: "×10 — Pack urgence", price: 35, originalPrice: 54.9, supplierPrice: 15.00, image: "img/prod_couverture.jpg" }
+      { label: "×4 — Pack famille", price: 8, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" }
     ]
   },
   {
