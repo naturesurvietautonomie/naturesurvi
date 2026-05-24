@@ -727,21 +727,535 @@ const PRODUCTS = [
   }
 ];
 
+  // ============================================================
+  // NOUVEAUX PRODUITS SURVIE — id 60-71 (ajoutés 2026-05-24)
+  // ============================================================
+
+  {
+    id: 60,
+    name: "Bracelet paracord survie 7 en 1",
+    price: 9,
+    originalPrice: 14.9,
+    category: "Outils",
+    description: "Bracelet de survie paracord 7 en 1 : corde 3m, firestarter, sifflet, boussole, couteau, grattoir, lampe LED. Indispensable en randonnée et survie. Réglable.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.6,
+    reviews: 412,
+    image: "img/prod_paracord.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "45 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 3.20,
+    variants: [
+      { label: "Noir", price: 9, originalPrice: 14.9, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Vert militaire", price: 9, originalPrice: 14.9, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Kaki", price: 9, originalPrice: 14.9, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Orange fluo", price: 9, originalPrice: 14.9, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Camouflage", price: 9, originalPrice: 14.9, supplierPrice: 3.20, image: "img/prod_paracord.jpg" }
+    ]
+  },
+  {
+    id: 61,
+    name: "Briquet de survie ferrocérium",
+    price: 8,
+    originalPrice: 12.9,
+    category: "Outils",
+    description: "Allume-feu en ferrocérium avec grattoir en acier inoxydable. Produit jusqu'à 3000°C d'étincelles. Fonctionne par tous les temps, même mouillé. Indispensable pour survivre en forêt.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.7,
+    reviews: 528,
+    image: "img/prod_firestarter.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "60 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 2.80,
+    variants: [
+      { label: "Standard 10cm", price: 8, originalPrice: 12.9, supplierPrice: 2.80, image: "img/prod_firestarter.jpg" },
+      { label: "Large 12cm — durée x3", price: 11, originalPrice: 17.9, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
+      { label: "XL 15cm + cordage", price: 14, originalPrice: 21.9, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
+    ]
+  },
+  {
+    id: 62,
+    name: "Couverture de survie isotherme",
+    price: 5,
+    originalPrice: 8.9,
+    category: "Survie",
+    description: "Couverture de survie isotherme dorée/argentée. Réfléchit 90% de la chaleur corporelle. Légère (55g), compacte, imperméable. Essentielle en kit 72h et premiers secours.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.7,
+    reviews: 654,
+    image: "img/prod_couverture.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "55 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 1.80,
+    variants: [
+      { label: "×1 — Individuelle", price: 5, originalPrice: 8.9, supplierPrice: 1.80, image: "img/prod_couverture.jpg" },
+      { label: "×4 — Pack famille", price: 16, originalPrice: 24.9, supplierPrice: 6.50, image: "img/prod_couverture.jpg" },
+      { label: "×10 — Pack urgence", price: 35, originalPrice: 54.9, supplierPrice: 15.00, image: "img/prod_couverture.jpg" }
+    ]
+  },
+  {
+    id: 63,
+    name: "Sifflet de survie 120 dB",
+    price: 5,
+    originalPrice: 7.9,
+    category: "Outils",
+    description: "Sifflet de survie ultra-puissant 120 dB, audible à 1 km. Sans bille (fonctionne mouillé), clip de ceinture inclus. Indispensable en randonnée, escalade et urgences.",
+    badges: ["Essentiel"],
+    rating: 4.6,
+    reviews: 298,
+    image: "img/prod_sifflet.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "15 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 1.50,
+    variants: [
+      { label: "Orange — 120 dB", price: 5, originalPrice: 7.9, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
+      { label: "Noir — 120 dB", price: 5, originalPrice: 7.9, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
+      { label: "3-en-1 boussole+sifflet+thermomètre", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/prod_sifflet.jpg" }
+    ]
+  },
+  {
+    id: 64,
+    name: "Couteau de survie multifonction",
+    price: 19,
+    originalPrice: 27.9,
+    category: "Outils",
+    description: "Couteau de survie lame fixe en acier inox 440, manche ergonomique. Inclus : pierre à affûter, allume-feu, sifflet, étui cordura. Polyvalent pour la chasse, le bushcraft et l'outdoor.",
+    badges: ["Bestseller"],
+    rating: 4.5,
+    reviews: 187,
+    image: "img/prod_couteau_survie.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "280 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 7.50,
+    variants: [
+      { label: "Lame 15cm — noir", price: 19, originalPrice: 27.9, supplierPrice: 7.50, image: "img/prod_couteau_survie.jpg" },
+      { label: "Lame 20cm + hachette", price: 29, originalPrice: 43.9, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg" },
+      { label: "Machette 35cm", price: 39, originalPrice: 59.9, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg" }
+    ]
+  },
+  {
+    id: 65,
+    name: "Kit de survie 72h complet",
+    price: 29,
+    originalPrice: 44.9,
+    category: "Survie",
+    description: "Kit de survie 72h tout-en-un : couverture isotherme, allume-feu, sifflet, corde paracord 5m, filtre eau, boussole, couteau pliant, rations énergie. Idéal famille ou individuel.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.7,
+    reviews: 389,
+    image: "img/prod_kit72h.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "850 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 11.50,
+    variants: [
+      { label: "Kit individuel — 12 pièces", price: 29, originalPrice: 44.9, supplierPrice: 11.50, image: "img/prod_kit72h.jpg" },
+      { label: "Kit famille 4 — 24 pièces", price: 49, originalPrice: 74.9, supplierPrice: 20.00, image: "img/prod_kit72h.jpg" },
+      { label: "Kit pro — 32 pièces premium", price: 69, originalPrice: 99.9, supplierPrice: 29.00, image: "img/prod_kit72h.jpg" }
+    ]
+  },
+  {
+    id: 66,
+    name: "Filtre à eau portable survie",
+    price: 19,
+    originalPrice: 29.9,
+    category: "Survie",
+    description: "Filtre à eau portable de survie — élimine 99,9999% des bactéries et parasites. Débit 1L/min, filtre jusqu'à 100 000 litres. Léger 57g, compatible toutes gourdes. Certifié survie.",
+    badges: ["Essentiel", "Bestseller"],
+    rating: 4.8,
+    reviews: 456,
+    image: "img/prod_filtre_eau.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "57 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 7.20,
+    variants: [
+      { label: "Filtre paille individuel", price: 19, originalPrice: 29.9, supplierPrice: 7.20, image: "img/prod_filtre_eau.jpg" },
+      { label: "Filtre bouteille 0.5L", price: 29, originalPrice: 44.9, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg" },
+      { label: "Kit complet paille+bouteille+pastilles", price: 39, originalPrice: 59.9, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg" }
+    ]
+  },
+  {
+    id: 67,
+    name: "Talkies-walkies longue portée",
+    price: 35,
+    originalPrice: 49.9,
+    category: "Électronique outdoor",
+    description: "Talkies-walkies longue portée 5 km (terrain dégagé). 16 canaux, résistant à l'eau IPX4, VOX, lampe LED intégrée. Idéal camping, randonnée et situations d'urgence. Vendu par paire.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.4,
+    reviews: 213,
+    image: "img/prod_talkie.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "420 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 14.50,
+    variants: [
+      { label: "Paire 5km — noir", price: 35, originalPrice: 49.9, supplierPrice: 14.50, image: "img/prod_talkie.jpg" },
+      { label: "Paire 8km — orange", price: 45, originalPrice: 64.9, supplierPrice: 18.50, image: "img/prod_talkie.jpg" },
+      { label: "Pack ×4 — famille", price: 65, originalPrice: 94.9, supplierPrice: 27.00, image: "img/prod_talkie.jpg" }
+    ]
+  },
+  {
+    id: 68,
+    name: "Corde paracord 550 militaire",
+    price: 9,
+    originalPrice: 13.9,
+    category: "Outils",
+    description: "Corde paracord 550 de type III militaire. 7 fils intérieurs, résistance 249 kg. Polyvalente : abri, filet, attaches, bracelet, lasso. Indispensable en survival et bushcraft.",
+    badges: ["Bestseller"],
+    rating: 4.7,
+    reviews: 312,
+    image: "img/prod_paracord_corde.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "130 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 2.90,
+    variants: [
+      { label: "10m — Noir", price: 9, originalPrice: 13.9, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
+      { label: "10m — Vert militaire", price: 9, originalPrice: 13.9, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
+      { label: "10m — Camouflage", price: 9, originalPrice: 13.9, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
+      { label: "30m — Noir", price: 19, originalPrice: 27.9, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg" },
+      { label: "50m — Noir", price: 29, originalPrice: 43.9, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg" }
+    ]
+  },
+  {
+    id: 69,
+    name: "Boussole militaire de précision",
+    price: 15,
+    originalPrice: 22.9,
+    category: "Outils",
+    description: "Boussole militaire de précision lensatique avec miroir de visée. Degrés et mils, phosphorescent, boîtier métal résistant. Idéale pour la randonnée, la chasse et la navigation en forêt.",
+    badges: ["Essentiel"],
+    rating: 4.6,
+    reviews: 178,
+    image: "img/prod_boussole.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "95 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 5.50,
+    variants: [
+      { label: "Boussole simple", price: 15, originalPrice: 22.9, supplierPrice: 5.50, image: "img/prod_boussole.jpg" },
+      { label: "Boussole + miroir de visée", price: 22, originalPrice: 33.9, supplierPrice: 8.50, image: "img/prod_boussole.jpg" },
+      { label: "Kit navigation : boussole+carte+sifflet", price: 29, originalPrice: 44.9, supplierPrice: 11.50, image: "img/prod_boussole.jpg" }
+    ]
+  },
+  {
+    id: 70,
+    name: "Lampe torche tactique LED",
+    price: 19,
+    originalPrice: 27.9,
+    category: "Éclairage",
+    description: "Lampe torche tactique LED ultra-puissante rechargeable USB-C. 5 modes : max/mi/bas/stroboscope/SOS. Résistante IPX6, zoom ajustable, aluminium militaire. Parfaite pour la survie.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.7,
+    reviews: 534,
+    image: "img/prod_torche.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "180 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 6.50,
+    variants: [
+      { label: "1000 lm — Noire", price: 19, originalPrice: 27.9, supplierPrice: 6.50, image: "img/prod_torche.jpg" },
+      { label: "2000 lm — Noire", price: 26, originalPrice: 39.9, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
+      { label: "2000 lm — Camouflage", price: 26, originalPrice: 39.9, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
+      { label: "5000 lm — Pro", price: 39, originalPrice: 59.9, supplierPrice: 15.50, image: "img/prod_torche.jpg" }
+    ]
+  },
+  {
+    id: 71,
+    name: "Sac de survie Bug Out Bag",
+    price: 39,
+    originalPrice: 55.9,
+    category: "Sacs à dos",
+    description: "Sac de survie Bug Out Bag 40L militaire. Structure MOLLE, résistant à l'eau, multi-compartiments. Idéal pour un kit 72h complet. Disponible en 3 coloris tactiques.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.5,
+    reviews: 167,
+    image: "img/prod_bugout.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "1.1 kg",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 16.00,
+    variants: [
+      { label: "40L — Noir", price: 39, originalPrice: 55.9, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
+      { label: "40L — Vert militaire", price: 39, originalPrice: 55.9, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
+      { label: "40L — Camouflage", price: 39, originalPrice: 55.9, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
+      { label: "60L — Noir expédition", price: 55, originalPrice: 79.9, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
+    ]
+  }
+];
+
+// ============================================================
+// PRODUITS JARDINAGE — id 80-89 (ajoutés 2026-05-24)
+// ============================================================
+const PRODUCTS_JARDINAGE = [
+  {
+    id: 80,
+    name: "Gants de jardinage résistants aux épines",
+    price: 9,
+    originalPrice: 13.9,
+    category: "Outils de jardin",
+    description: "Gants de jardinage résistants aux épines et coupures. Cuir de vachette sur la paume, manchette longue anti-égratignures. Parfaits pour rosiers, ronces, travaux intensifs.",
+    badges: ["Bestseller"],
+    rating: 4.6,
+    reviews: 312,
+    image: "img/jard_gants.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "180 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 3.20,
+    variants: [
+      { label: "S — Kaki", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "M — Kaki", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "L — Kaki", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "XL — Kaki", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "M — Rose", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "L — Rose", price: 9, originalPrice: 13.9, supplierPrice: 3.20, image: "img/jard_gants.jpg" }
+    ]
+  },
+  {
+    id: 81,
+    name: "Arrosoir en acier galvanisé",
+    price: 22,
+    originalPrice: 31.9,
+    category: "Outils de jardin",
+    description: "Arrosoir classique en acier galvanisé, pomme amovible pour arrosage fin. Résistant à la rouille, équilibré et ergonomique. Idéal pour potager, fleurs et plantes en pot.",
+    badges: ["Nouveau"],
+    rating: 4.5,
+    reviews: 145,
+    image: "img/jard_arrosoir.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "780 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierPrice: 9.00,
+    variants: [
+      { label: "5L — Vert", price: 22, originalPrice: 31.9, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" },
+      { label: "8L — Vert", price: 28, originalPrice: 41.9, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
+      { label: "10L — Vert", price: 33, originalPrice: 49.9, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
+      { label: "5L — Rouge", price: 22, originalPrice: 31.9, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" }
+    ]
+  },
+  {
+    id: 82,
+    name: "Serre de jardin tunnel modulable",
+    price: 39,
+    originalPrice: 56.9,
+    category: "Serres & Abris",
+    description: "Serre tunnel de jardin en polyéthylène renforcé, armature acier galvanisé. Protège les plantes du gel et des intempéries. Montage facile sans outils. Ventilation zippée.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.5,
+    reviews: 234,
+    image: "img/jard_serre.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "2.8 kg",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierPrice: 16.00,
+    variants: [
+      { label: "Petite — 100×50×80 cm", price: 39, originalPrice: 56.9, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
+      { label: "Moyenne — 180×60×90 cm", price: 55, originalPrice: 79.9, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
+      { label: "Grande — 240×120×200 cm", price: 79, originalPrice: 114.9, supplierPrice: 32.00, image: "img/jard_serre.jpg" },
+      { label: "XL — 300×150×200 cm", price: 109, originalPrice: 159.9, supplierPrice: 44.50, image: "img/jard_serre.jpg" }
+    ]
+  },
+  {
+    id: 83,
+    name: "Tuteurs pour plantes et tomates",
+    price: 9,
+    originalPrice: 12.9,
+    category: "Outils de jardin",
+    description: "Tuteurs en bambou ou métal pour tomates, haricots et plantes grimpantes. Résistants aux intempéries, réutilisables saison après saison. Pack de 10 ou 20 pièces.",
+    badges: ["Essentiel"],
+    rating: 4.4,
+    reviews: 198,
+    image: "img/jard_tuteurs.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "350 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierPrice: 3.50,
+    variants: [
+      { label: "×10 bambou 90cm", price: 9, originalPrice: 12.9, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg" },
+      { label: "×20 bambou 90cm", price: 15, originalPrice: 21.9, supplierPrice: 6.00, image: "img/jard_tuteurs.jpg" },
+      { label: "×10 métal 120cm", price: 14, originalPrice: 20.9, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg" },
+      { label: "×20 métal 120cm", price: 22, originalPrice: 31.9, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg" },
+      { label: "×5 spirale tomates 150cm", price: 17, originalPrice: 24.9, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg" }
+    ]
+  },
+  {
+    id: 84,
+    name: "Terreau universel potager bio",
+    price: 12,
+    originalPrice: 17.9,
+    category: "Terre & Amendements",
+    description: "Terreau universel enrichi en compost bio pour potager, semis et rempotage. Texture aérée favorisant le développement racinaire. Sans tourbe. Enrichi en éléments nutritifs naturels.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.6,
+    reviews: 312,
+    image: "img/jard_terreau.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "5 kg",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierPrice: 5.00,
+    variants: [
+      { label: "5L — semis et boutures", price: 12, originalPrice: 17.9, supplierPrice: 5.00, image: "img/jard_terreau.jpg" },
+      { label: "20L — potager", price: 19, originalPrice: 27.9, supplierPrice: 8.00, image: "img/jard_terreau.jpg" },
+      { label: "50L — grand jardin", price: 39, originalPrice: 56.9, supplierPrice: 16.00, image: "img/jard_terreau.jpg" }
+    ]
+  },
+  {
+    id: 85,
+    name: "Kit semences potager 20 légumes",
+    price: 15,
+    originalPrice: 22.9,
+    category: "Semences & Graines",
+    description: "Kit de 20 sachets de semences de légumes bio — tomates, courgettes, haricots, carottes, salades, radis, poivrons. Non traitées, reproductibles. Idéal pour démarrer un potager complet.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.7,
+    reviews: 456,
+    image: "img/jard_semences.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "200 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 5.50,
+    variants: [
+      { label: "Kit 10 légumes essentiels", price: 10, originalPrice: 14.9, supplierPrice: 4.00, image: "img/jard_semences.jpg" },
+      { label: "Kit 20 légumes complet", price: 15, originalPrice: 22.9, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
+      { label: "Kit 30 légumes + herbes", price: 22, originalPrice: 31.9, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
+      { label: "Kit 50 variétés premium", price: 35, originalPrice: 51.9, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
+    ]
+  },
+  {
+    id: 86,
+    name: "Composteur de jardin 300L",
+    price: 35,
+    originalPrice: 51.9,
+    category: "Composteurs",
+    description: "Composteur de jardin en plastique recyclé 300L. Trappe de récupération en bas, couvercle anti-pluie, aérations latérales. Transformez vos déchets en engrais naturel en 3 mois.",
+    badges: ["Bestseller"],
+    rating: 4.5,
+    reviews: 198,
+    image: "img/jard_composteur.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "4.2 kg",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierPrice: 14.50,
+    variants: [
+      { label: "300L — Noir", price: 35, originalPrice: 51.9, supplierPrice: 14.50, image: "img/jard_composteur.jpg" },
+      { label: "400L — Noir", price: 45, originalPrice: 66.9, supplierPrice: 18.50, image: "img/jard_composteur.jpg" },
+      { label: "600L — Noir", price: 59, originalPrice: 86.9, supplierPrice: 24.50, image: "img/jard_composteur.jpg" }
+    ]
+  },
+  {
+    id: 87,
+    name: "Kit irrigation goutte à goutte 30 plantes",
+    price: 19,
+    originalPrice: 27.9,
+    category: "Irrigation",
+    description: "Kit d'irrigation goutte à goutte automatique pour 30 plantes. Tuyaux PE flexible, goutteurs réglables, connecteurs étanches. Compatible timer. Économise 70% d'eau par rapport à l'arrosoir.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.6,
+    reviews: 234,
+    image: "img/jard_irrigation.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "480 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 7.50,
+    variants: [
+      { label: "Kit 15 plantes", price: 12, originalPrice: 17.9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 30 plantes", price: 19, originalPrice: 27.9, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 50 plantes + timer", price: 32, originalPrice: 47.9, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 100 plantes pro", price: 55, originalPrice: 79.9, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
+    ]
+  },
+  {
+    id: 88,
+    name: "Pots géotextiles pour potager",
+    price: 12,
+    originalPrice: 17.9,
+    category: "Bacs & Pots",
+    description: "Pots géotextiles respirants pour potager hors-sol et balcon. Favorisent l'air-pruning des racines et un drainage parfait. Pliables, réutilisables, résistants aux UV. Idéals pour tomates et fraises.",
+    badges: ["Nouveau"],
+    rating: 4.5,
+    reviews: 189,
+    image: "img/jard_pots.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "350 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 4.50,
+    variants: [
+      { label: "×5 — 10L Noir", price: 12, originalPrice: 17.9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 20L Noir", price: 16, originalPrice: 23.9, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 30L Noir", price: 19, originalPrice: 27.9, supplierPrice: 7.80, image: "img/jard_pots.jpg" },
+      { label: "×5 — 10L Vert", price: 12, originalPrice: 17.9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 20L Vert", price: 16, originalPrice: 23.9, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
+      { label: "×10 — 10L Noir — lot", price: 19, originalPrice: 27.9, supplierPrice: 8.00, image: "img/jard_pots.jpg" }
+    ]
+  },
+  {
+    id: 89,
+    name: "Programmateur d'arrosage automatique",
+    price: 22,
+    originalPrice: 32.9,
+    category: "Irrigation",
+    description: "Programmateur d'arrosage automatique digital. Jusqu'à 6 programmes par jour, durée 1 min à 24h. Résistant IPX5, raccord universel 3/4\". Économise eau et temps au jardin.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.5,
+    reviews: 267,
+    image: "img/jard_timer.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "195 g",
+    inStock: true,
+    supplier: "CJdropshipping",
+    supplierPrice: 8.50,
+    variants: [
+      { label: "Timer simple — 1 zone", price: 22, originalPrice: 32.9, supplierPrice: 8.50, image: "img/jard_timer.jpg" },
+      { label: "Timer double — 2 zones", price: 35, originalPrice: 51.9, supplierPrice: 13.50, image: "img/jard_timer.jpg" },
+      { label: "Timer WiFi — app smartphone", price: 49, originalPrice: 72.9, supplierPrice: 19.00, image: "img/jard_timer.jpg" }
+    ]
+  }
+];
+
 // Catégories disponibles
 const CATEGORIES = [
-  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 40 },
-  { id: "Survie", name: "Survie", emoji: "🏕️", count: 6 },
-  { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 4 },
+  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 48 },
+  { id: "Survie", name: "Survie", emoji: "🏕️", count: 9 },
+  { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 6 },
   { id: "Alimentation outdoor", name: "Alimentation outdoor", emoji: "🥾", count: 6 },
   { id: "Montres outdoor", name: "Montres outdoor", emoji: "⌚", count: 2 },
-  { id: "Sacs à dos", name: "Sacs à dos", emoji: "🎒", count: 3 },
+  { id: "Sacs à dos", name: "Sacs à dos", emoji: "🎒", count: 4 },
   { id: "Pêche", name: "Pêche", emoji: "🎣", count: 2 },
   { id: "Énergie", name: "Énergie", emoji: "⚡", count: 3 },
-  { id: "Électronique outdoor", name: "Électronique outdoor", emoji: "📡", count: 3 },
+  { id: "Électronique outdoor", name: "Électronique outdoor", emoji: "📡", count: 4 },
   { id: "Escalade", name: "Escalade", emoji: "🧗", count: 3 },
   { id: "Cyclisme & Trail", name: "Cyclisme & Trail", emoji: "🚵", count: 3 },
   { id: "Vêtements outdoor", name: "Vêtements outdoor", emoji: "🧥", count: 1 },
-  { id: "Outils", name: "Outils", emoji: "🔪", count: 2 }
+  { id: "Outils", name: "Outils", emoji: "🔪", count: 8 }
 ];
 
 // Couleurs des badges
