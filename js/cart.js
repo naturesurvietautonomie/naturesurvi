@@ -291,9 +291,32 @@ function initCountdown() {
 }
 
 // ---- PRODUCT CARD RENDERER ----
+function renderVariantSelect(product) {
+  if (!product.variants || product.variants.length === 0) return '';
+  const opts = product.variants.map((v, i) =>
+    `<option value="${i}">${v.label} — ${v.price}€</option>`
+  ).join('');
+  return `<select class="variant-select" id="variant-select-${product.id}" onchange="onVariantChange(${product.id}, this.value)" style="width:100%;margin:6px 0 4px;padding:6px 8px;border:1px solid #c5b99a;border-radius:6px;font-size:0.85rem;background:#faf7f0;cursor:pointer;">
+    ${opts}
+  </select>`;
+}
+
+function onVariantChange(productId, idx) {
+  const product = getProductById(productId);
+  if (!product || !product.variants) return;
+  const v = product.variants[parseInt(idx)];
+  // Mettre à jour prix affiché sur la carte
+  const card = document.querySelector(`[data-id="${productId}"]`);
+  if (card) {
+    const priceEl = card.querySelector('.product-price');
+    if (priceEl) priceEl.textContent = v.price + ' €';
+  }
+}
+
 function renderProductCard(product) {
   const discount = getDiscountPercent(product.price, product.originalPrice);
   const isWished = Wishlist.isInWishlist(product.id);
+  const hasVariants = product.variants && product.variants.length > 0;
 
   return `
     <article class="product-card" data-id="${product.id}" data-category="${product.category}">
@@ -315,6 +338,7 @@ function renderProductCard(product) {
           <span class="rating-count">(${product.reviews} avis)</span>
         </div>
         <p class="product-desc-short">${product.description.substring(0, 80)}…</p>
+        ${hasVariants ? renderVariantSelect(product) : ''}
         <div class="product-pricing">
           <span class="product-price">${formatPrice(product.price)}</span>
           <span class="product-original-price">${formatPrice(product.originalPrice)}</span>
@@ -391,6 +415,13 @@ function openProductModal(productId) {
             <span class="product-original-price">${formatPrice(product.originalPrice)}</span>
             <span class="discount-label">Économisez ${formatPrice(product.originalPrice - product.price)}</span>
           </div>
+          ${product.variants && product.variants.length > 0 ? `
+          <div class="modal-variants" style="margin:12px 0;">
+            <label style="font-size:0.85rem;font-weight:700;color:#2d5016;display:block;margin-bottom:4px;">Choisir une variante :</label>
+            <select id="modal-variant-select-${product.id}" style="width:100%;padding:8px 10px;border:2px solid #2d5016;border-radius:8px;font-size:0.9rem;background:#faf7f0;cursor:pointer;">
+              ${product.variants.map((v,i) => `<option value="${i}">${v.label} — ${v.price}€</option>`).join('')}
+            </select>
+          </div>` : ''}
           <div class="modal-details">
             <p>📦 ${product.shipping}</p>
             <p>⚖️ Poids : ${product.weight}</p>

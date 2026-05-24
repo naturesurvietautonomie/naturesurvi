@@ -271,7 +271,8 @@
 
     // Rendu initial
     function renderGrid() {
-      let products = [...PRODUCTS];
+      // Exclure les produits jardinage (id 80-89) de la boutique survie
+      let products = PRODUCTS.filter(p => p.id < 80);
 
       // Filtre catégorie
       if (currentCat !== 'all') {
@@ -353,7 +354,7 @@
       const catParam = params.get('cat');
       if (catParam) {
         // Correspondance flexible : chercher la catégorie exacte dans PRODUCTS
-        const allCats = [...new Set(PRODUCTS.map(p => p.category))];
+        const allCats = [...new Set(PRODUCTS.filter(p => p.id < 80).map(p => p.category))];
         const match = allCats.find(c => c.toLowerCase().includes(catParam.toLowerCase()) || catParam.toLowerCase().includes(c.toLowerCase().split(' ')[0]));
         if (match) {
           currentCat = match;
