@@ -724,8 +724,7 @@ const PRODUCTS = [
       { label: "1L — Regatta noire", price: 16, originalPrice: 19.90, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" },
       { label: "600ml — Picture blanche", price: 30, originalPrice: 37.90, supplierPrice: 18.98, supplierSku: "picture-campei-blanc", image: "img/prod52.jpg" }
     ]
-  }
-];
+  },
 
   // ============================================================
   // NOUVEAUX PRODUITS SURVIE — id 60-71 (ajoutés 2026-05-24)
@@ -1000,13 +999,11 @@ const PRODUCTS = [
       { label: "40L — Camouflage", price: 39, originalPrice: 55.9, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
       { label: "60L — Noir expédition", price: 55, originalPrice: 79.9, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
     ]
-  }
-];
+  },
 
-// ============================================================
-// PRODUITS JARDINAGE — id 80-89 (ajoutés 2026-05-24)
-// ============================================================
-const PRODUCTS_JARDINAGE = [
+  // ============================================================
+  // PRODUITS JARDINAGE — id 80-89 (ajoutés 2026-05-24)
+  // ============================================================
   {
     id: 80,
     name: "Gants de jardinage résistants aux épines",
