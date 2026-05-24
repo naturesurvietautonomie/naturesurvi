@@ -22,8 +22,8 @@ const PRODUCTS = [
     supplierPrice: 12.29,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "350 lm — 5W", price: 15, originalPrice: 23, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
-      { label: "400 lm — 6W", price: 19, originalPrice: 29, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
+      { label: "350 lm — 5W", description: "Version compacte 5W/350 lm. Idéale pour la randonnée légère et les sorties nocturnes courtes. Légère, autonomie standard.", price: 15, originalPrice: 23, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
+      { label: "400 lm — 6W", description: "Version puissante 6W/400 lm. Pour les longues nuits en bivouac ou les sentiers techniques. Faisceau plus large et plus lumineux.", price: 19, originalPrice: 29, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
     ]
   },
   {
@@ -83,9 +83,9 @@ const PRODUCTS = [
     supplierPrice: 8.74,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "N°8 — 8,5 cm inox", price: 11, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
-      { label: "N°9 — 9 cm carbone", price: 13, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
-      { label: "N°10 — 10 cm inox", price: 15, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" }
+      { label: "N°8 — 8,5 cm inox", description: "Le classique Opinel N°8, lame inox 8,5 cm — la taille la plus polyvalente pour la cuisine en bivouac et les usages quotidiens. Made in France.", price: 11, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
+      { label: "N°9 — 9 cm carbone", description: "Opinel N°9 lame carbone 9 cm — tranchant supérieur pour les pratiquants du bushcraft. Prend un fil rasoir, s'affûte facilement sur pierre.", price: 13, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
+      { label: "N°10 — 10 cm inox", description: "Opinel N°10 lame inox 10 cm — pour les travaux plus lourds : taille, découpe de bois, préparation culinaire en forêt.", price: 15, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" }
     ]
   },
   {
@@ -107,8 +107,8 @@ const PRODUCTS = [
     supplierPrice: 11.33,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Pelle noire métal", price: 14, originalPrice: 21, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
-      { label: "Cellfast Ideal Pro", price: 14, originalPrice: 21, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
+      { label: "Pelle noire métal", description: "Pelle pliable métal noire — robuste et compacte. Idéale pour creuser un abri, un trou de feu ou déblayer un sentier. Poignée antidérapante.", price: 14, originalPrice: 21, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
+      { label: "Cellfast Ideal Pro", description: "Pelle Cellfast Ideal Pro — version haut de gamme avec lame renforcée et manche ergonomique caoutchouté. Meilleure prise en main pour les sols durs.", price: 14, originalPrice: 21, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
     ]
   },
   {
@@ -130,7 +130,7 @@ const PRODUCTS = [
     supplierPrice: 22.04,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "2 personnes — 205×145 cm", price: 26, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" }
+      { label: "2 personnes — 205×145 cm", description: "Tente 2 places 205×145 cm — légère et rapide à monter. Parfaite pour un couple ou solo avec du matériel. Double toit imperméable.", price: 26, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" }
     ]
   },
 
@@ -249,7 +249,7 @@ const PRODUCTS = [
     supplierPrice: 66.68,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "40 L — randonnée", price: 80, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" }
+      { label: "40 L — randonnée", description: "Mammut Cargon 40L — le compagnon idéal pour les randonnées de 2-4 jours. Dos ventilé, ceinture ergonomique, tissu Cordura résistant.", price: 80, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" }
     ]
   },
   {
@@ -366,8 +366,8 @@ const PRODUCTS = [
     supplierPrice: 15.41,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "240 cm — légère", price: 14, originalPrice: 22, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
-      { label: "300 cm — polyvalente", price: 19, originalPrice: 29, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+      { label: "240 cm — légère", description: "Canne télescopique 240 cm — légère et maniable pour la pêche en rivière étroite, lac calme ou mare. Idéale pour débuter.", price: 14, originalPrice: 22, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
+      { label: "300 cm — polyvalente", description: "Canne télescopique 300 cm — portée plus longue pour accéder aux poissons en eau profonde ou berges larges. Polyvalente toutes conditions.", price: 19, originalPrice: 29, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
     ]
   },
   {
@@ -465,7 +465,7 @@ const PRODUCTS = [
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Légère — kaki", price: 14, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" }
+      { label: "Légère — kaki", description: "Veste légère Alphaventure Bidinamarca kaki — coupe-vent fin pour les journées fraîches. Poids plume, tient dans la poche. Coloris militaire discret.", price: 14, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" }
     ]
   },
   {
@@ -716,7 +716,7 @@ const PRODUCTS = [
     supplierPrice: 7.88,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Regatta noire", price: 10, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" }
+      { label: "1L — Regatta noire", description: "Gourde Regatta 1L noire — grande contenance pour les longues sorties. Bouchon à vis étanche, graduation lisible, résistante aux chocs.", price: 10, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" }
     ]
   },
 
@@ -741,11 +741,11 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 3.20,
     variants: [
-      { label: "Noir", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Vert militaire", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Kaki", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Orange fluo", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Camouflage", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" }
+      { label: "Noir", description: "Bracelet paracord noir — discret et sobre, parfait pour un usage quotidien. 3m de corde paracord 550, firestarter, sifflet, boussole intégrés.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Vert militaire", description: "Bracelet paracord vert militaire — coloris tactique pour les amateurs de survie et bushcraft. Kit 7-en-1 complet.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Kaki", description: "Bracelet paracord kaki — ton neutre polyvalent. S'associe avec tout équipement outdoor. Kit survie 7 outils intégrés.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Orange fluo", description: "Bracelet paracord orange fluo — haute visibilité pour les sports extrêmes et secours en montagne. Repérage facilité.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
+      { label: "Camouflage", description: "Bracelet paracord camouflage — parfait pour la chasse et les activités discrètes en forêt. Kit 7-en-1 intégral.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" }
     ]
   },
   {
@@ -765,9 +765,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 2.80,
     variants: [
-      { label: "Standard 10cm", price: 5, originalPrice: 6, supplierPrice: 2.80, image: "img/prod_firestarter.jpg" },
-      { label: "Large 12cm — durée x3", price: 5, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
-      { label: "XL 15cm + cordage", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
+      { label: "Standard 10cm", description: "Firestarter 10 cm — version standard, idéal pour débuter. Produit jusqu'à 3 000°C d'étincelles. Compact et léger pour le sac à dos.", price: 5, originalPrice: 6, supplierPrice: 2.80, image: "img/prod_firestarter.jpg" },
+      { label: "Large 12cm — durée x3", description: "Firestarter 12 cm large — durée de vie 3× supérieure. Pour les sorties longues ou les kits 72h. Grattoir acier inclus.", price: 5, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
+      { label: "XL 15cm + cordage", description: "Firestarter XL 15 cm avec cordage paracord 1m intégré — le plus endurant. Idéal pour les expéditions et l'enseignement de la survie.", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
     ]
   },
   {
@@ -787,8 +787,8 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 1.80,
     variants: [
-      { label: "×1 — Individuelle", price: 3, originalPrice: 4, supplierPrice: 1.80, image: "img/prod_couverture.jpg" },
-      { label: "×4 — Pack famille", price: 8, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" }
+      { label: "×1 — Individuelle", description: "1 couverture de survie isotherme — à glisser dans chaque sac à dos, voiture ou kit 72h. Légère 55g, réfléchit 90% de la chaleur.", price: 3, originalPrice: 4, supplierPrice: 1.80, image: "img/prod_couverture.jpg" },
+      { label: "×4 — Pack famille", description: "Pack 4 couvertures de survie — équipez toute la famille ou le groupe. Pratique en voyage, randonnée ou pour les préparateurs.", price: 8, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" }
     ]
   },
   {
@@ -808,9 +808,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 1.50,
     variants: [
-      { label: "Orange — 120 dB", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
-      { label: "Noir — 120 dB", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
-      { label: "3-en-1 boussole+sifflet+thermomètre", price: 4, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_sifflet.jpg" }
+      { label: "Orange — 120 dB", description: "Sifflet 120 dB orange — haute visibilité et puissance maximale. Sans bille : fonctionne même mouillé. Clip de ceinture inclus.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
+      { label: "Noir — 120 dB", description: "Sifflet 120 dB noir — discret et compact. Puissance identique, parfait pour intégrer à un sac ou harnais d'escalade.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
+      { label: "3-en-1 boussole+sifflet+thermomètre", description: "Kit 3-en-1 : boussole, sifflet 120 dB et thermomètre — tout en un clip. L'essentiel de navigation et sécurité en format ultra-compact.", price: 4, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_sifflet.jpg" }
     ]
   },
   {
@@ -830,9 +830,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 7.50,
     variants: [
-      { label: "Lame 15cm — noir", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_couteau_survie.jpg" },
-      { label: "Lame 20cm + hachette", price: 20, originalPrice: 22, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg" },
-      { label: "Machette 35cm", price: 20, originalPrice: 30, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg" }
+      { label: "Lame 15cm — noir", description: "Couteau survie lame fixe 15 cm inox noire — format idéal pour le bushcraft, la cuisine en bivouac et les activités outdoor. Étui Cordura inclus.", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_couteau_survie.jpg" },
+      { label: "Lame 20cm + hachette", description: "Couteau 20 cm + mini-hachette intégrée — deux outils en un pour couper du bois, débiter de la viande et construire un abri en forêt.", price: 20, originalPrice: 22, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg" },
+      { label: "Machette 35cm", description: "Machette 35 cm — pour défricher, couper des branches épaisses et ouvrir un chemin en jungle ou sous-bois dense. Lame inox traitée.", price: 20, originalPrice: 30, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg" }
     ]
   },
   {
@@ -852,9 +852,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 11.50,
     variants: [
-      { label: "Kit individuel — 12 pièces", price: 30, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_kit72h.jpg" },
-      { label: "Kit famille 4 — 24 pièces", price: 30, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h.jpg" },
-      { label: "Kit pro — 32 pièces premium", price: 35, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h.jpg" }
+      { label: "Kit individuel — 12 pièces", description: "Kit survie 12 pièces individuel : couverture, firestarter, sifflet, paracord 5m, filtre eau, boussole, couteau pliant, rations, lampe, bâton lumineux, gants, trousse.", price: 30, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_kit72h.jpg" },
+      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 30, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h.jpg" },
+      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 35, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h.jpg" }
     ]
   },
   {
@@ -874,9 +874,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 7.20,
     variants: [
-      { label: "Filtre paille individuel", price: 20, originalPrice: 14, supplierPrice: 7.20, image: "img/prod_filtre_eau.jpg" },
-      { label: "Filtre bouteille 0.5L", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg" },
-      { label: "Kit complet paille+bouteille+pastilles", price: 20, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg" }
+      { label: "Filtre paille individuel", description: "Filtre paille individuel — buvez directement dans n'importe quelle source. Élimine 99,9999% bactéries, 0 produits chimiques. 57g, tient dans une poche.", price: 20, originalPrice: 14, supplierPrice: 7.20, image: "img/prod_filtre_eau.jpg" },
+      { label: "Filtre bouteille 0.5L", description: "Filtre bouteille 500 mL — filtration intégrée dans la bouteille. Buvez partout sans traitement chimique préalable. Capacité 100 000 litres.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg" },
+      { label: "Kit complet paille+bouteille+pastilles", description: "Kit complet survie eau : filtre paille + bouteille filtrante + 20 pastilles purification. Triple protection pour toutes les situations d'urgence.", price: 20, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg" }
     ]
   },
   {
@@ -896,9 +896,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 14.50,
     variants: [
-      { label: "Paire 5km — noir", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/prod_talkie.jpg" },
-      { label: "Paire 8km — orange", price: 40, originalPrice: 34, supplierPrice: 18.50, image: "img/prod_talkie.jpg" },
-      { label: "Pack ×4 — famille", price: 40, originalPrice: 50, supplierPrice: 27.00, image: "img/prod_talkie.jpg" }
+      { label: "Paire 5km — noir", description: "Paire talkies-walkies 5 km noirs — portée optimale en forêt ou montagne. 16 canaux, IPX4, VOX, lampe LED. Batteries incluses.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/prod_talkie.jpg" },
+      { label: "Paire 8km — orange", description: "Paire talkies-walkies 8 km orange — haute visibilité et portée maximale pour les grandes distances. Idéal ski, randonnée montagne, sauvetage.", price: 40, originalPrice: 34, supplierPrice: 18.50, image: "img/prod_talkie.jpg" },
+      { label: "Pack ×4 — famille", description: "Pack 4 talkies-walkies — communicez entre tous les membres de la famille ou du groupe. Parfait pour le camping, les randonnées et les situations d'urgence.", price: 40, originalPrice: 50, supplierPrice: 27.00, image: "img/prod_talkie.jpg" }
     ]
   },
   {
@@ -918,11 +918,11 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 2.90,
     variants: [
-      { label: "10m — Noir", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "10m — Vert militaire", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "10m — Camouflage", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "30m — Noir", price: 9, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg" },
-      { label: "50m — Noir", price: 14, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg" }
+      { label: "10m — Noir", description: "Corde paracord 10m noire — longueur idéale pour monter un abri, fixer une tarp ou créer des attaches. Résistance 249 kg.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
+      { label: "10m — Vert militaire", description: "Corde paracord 10m vert militaire — coloris discret pour la chasse et le bushcraft. Usage : ligature, piège, ceinture d'urgence.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
+      { label: "10m — Camouflage", description: "Corde paracord 10m camouflage — se fond dans l'environnement. Idéale pour les pièges, les cache-cache tactiques et l'outdoor discret.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
+      { label: "30m — Noir", description: "Corde paracord 30m noire — pour les grands abris, l'escalade légère, les tyroliennes. Assez de longueur pour toutes les situations de survie.", price: 9, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg" },
+      { label: "50m — Noir", description: "Corde paracord 50m noire — le grand format pour les préparateurs et enseignants survie. Peut remplacer une corde d'escalade en urgence.", price: 14, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg" }
     ]
   },
   {
@@ -942,9 +942,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 5.50,
     variants: [
-      { label: "Boussole simple", price: 15, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_boussole.jpg" },
-      { label: "Boussole + miroir de visée", price: 15, originalPrice: 16, supplierPrice: 8.50, image: "img/prod_boussole.jpg" },
-      { label: "Kit navigation : boussole+carte+sifflet", price: 15, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_boussole.jpg" }
+      { label: "Boussole simple", description: "Boussole militaire simple — lecture précise, boîtier métal, cadran phosphorescent. Parfaite pour la randonnée et l'orientation en forêt.", price: 15, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_boussole.jpg" },
+      { label: "Boussole + miroir de visée", description: "Boussole avec miroir de visée — prendre un relèvement précis sur un sommet lointain. Usage professionnel, armée et secours en montagne.", price: 15, originalPrice: 16, supplierPrice: 8.50, image: "img/prod_boussole.jpg" },
+      { label: "Kit navigation : boussole+carte+sifflet", description: "Kit navigation complet : boussole militaire + porte-carte étanche + sifflet 120 dB. Tout pour se repérer et alerter dans la nature.", price: 15, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_boussole.jpg" }
     ]
   },
   {
@@ -964,10 +964,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 6.50,
     variants: [
-      { label: "1000 lm — Noire", price: 20, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Noire", price: 20, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Camouflage", price: 20, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "5000 lm — Pro", price: 20, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche.jpg" }
+      { label: "1000 lm — Noire", description: "Lampe torche 1000 lm noire — puissante pour randonner de nuit. 5 modes, zoom, résistante IPX6. Parfaite pour le camping et la survie quotidienne.", price: 20, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_torche.jpg" },
+      { label: "2000 lm — Noire", description: "Lampe torche 2000 lm noire — pour les environnements difficiles et sombres. Portée jusqu'à 300m. Mode stroboscope SOS intégré.", price: 20, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
+      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 20, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
+      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 20, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche.jpg" }
     ]
   },
   {
@@ -987,10 +987,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 16.00,
     variants: [
-      { label: "40L — Noir", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "40L — Vert militaire", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "40L — Camouflage", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "60L — Noir expédition", price: 45, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
+      { label: "40L — Noir", description: "Bug Out Bag 40L noir — discret en milieu urbain, robuste en forêt. Structure MOLLE, résistant à l'eau, bretelles renforcées.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
+      { label: "40L — Vert militaire", description: "Bug Out Bag 40L vert militaire — se fond dans la nature. Multi-poches organisées, accès rapide aux essentiels. Idéal survivalistes.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
+      { label: "40L — Camouflage", description: "Bug Out Bag 40L camouflage — pour les amateurs de tactique et chasse. Tissu dense résistant, frame interne rigidifié.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
+      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 45, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
     ]
   },
 
@@ -1014,12 +1014,12 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 3.20,
     variants: [
-      { label: "S — Kaki", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "M — Kaki", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "L — Kaki", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "XL — Kaki", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "M — Rose", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "L — Rose", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" }
+      { label: "S — Kaki", description: "Gants jardinage S kaki — pour petites mains. Cuir de vachette palme, manchette longue anti-égratignures. Protège des rosiers et ronces.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "M — Kaki", description: "Gants jardinage M kaki — taille universelle. Résistants, confortables, prise précise pour les travaux de plantation et désherbage.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "L — Kaki", description: "Gants jardinage L kaki — pour grandes mains masculines. Robustes, bien ventilés, adaptés aux travaux intensifs de bêchage et taille.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "XL — Kaki", description: "Gants jardinage XL kaki — format maximal pour les mains larges. Manchette extra-longue pour protéger le poignet lors de tailles épineuses.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "M — Rose", description: "Gants jardinage M rose — version féminine élégante. Même protection cuir renforcé, coloris discret. Parfait cadeau pour jardinières.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
+      { label: "L — Rose", description: "Gants jardinage L rose — taille L pour mains plus grandes. Manchette longue, cuir vachette, joli coloris rose pour jardiner avec style.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" }
     ]
   },
   {
@@ -1039,10 +1039,10 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierPrice: 9.00,
     variants: [
-      { label: "5L — Vert", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" },
-      { label: "8L — Vert", price: 23, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
-      { label: "10L — Vert", price: 23, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
-      { label: "5L — Rouge", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" }
+      { label: "5L — Vert", description: "Arrosoir 5L vert — format compact pour balcon, terrasse ou serre. Idéal pour les semis et les plantes en pot. Léger et maniable.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" },
+      { label: "8L — Vert", description: "Arrosoir 8L vert — bon compromis entre capacité et maniabilité. Pour potager moyen et massifs de fleurs. Pomme fine amovible.", price: 23, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
+      { label: "10L — Vert", description: "Arrosoir 10L vert — grande contenance pour arroser tout un jardin en un trajet. Moins de déplacements, plus d'efficacité.", price: 23, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
+      { label: "5L — Rouge", description: "Arrosoir 5L rouge — même praticité que le vert, coloris vif pour le retrouver facilement. Bec long pour arroser sans éclabousser.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" }
     ]
   },
   {
@@ -1062,10 +1062,10 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierPrice: 16.00,
     variants: [
-      { label: "Petite — 100×50×80 cm", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
-      { label: "Moyenne — 180×60×90 cm", price: 45, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
-      { label: "Grande — 240×120×200 cm", price: 45, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre.jpg" },
-      { label: "XL — 300×150×200 cm", price: 53, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre.jpg" }
+      { label: "Petite — 100×50×80 cm", description: "Serre petite 100×50×80 cm — pour balcon ou terrasse. Protège 3-4 plants du gel et des insectes. Montage rapide, encombrement minimal.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
+      { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 45, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
+      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 45, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre.jpg" },
+      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 53, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre.jpg" }
     ]
   },
   {
@@ -1085,11 +1085,11 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierPrice: 3.50,
     variants: [
-      { label: "×10 bambou 90cm", price: 7, originalPrice: 7, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg" },
-      { label: "×20 bambou 90cm", price: 8, originalPrice: 11, supplierPrice: 6.00, image: "img/jard_tuteurs.jpg" },
-      { label: "×10 métal 120cm", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg" },
-      { label: "×20 métal 120cm", price: 11, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg" },
-      { label: "×5 spirale tomates 150cm", price: 9, originalPrice: 13, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg" }
+      { label: "×10 bambou 90cm", description: "10 tuteurs bambou 90 cm — pour tomates cerises, haricots grimpants et petits arbustes. Naturels, résistants, biodégradables en fin de vie.", price: 7, originalPrice: 7, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg" },
+      { label: "×20 bambou 90cm", description: "20 tuteurs bambou 90 cm — pour équiper un carré potager entier. Économique, écologique, livré en lot pour un jardin bien organisé.", price: 8, originalPrice: 11, supplierPrice: 6.00, image: "img/jard_tuteurs.jpg" },
+      { label: "×10 métal 120cm", description: "10 tuteurs métal 120 cm — plus solides que le bambou, indéformables. Parfaits pour les grosses tomates, poivrons et fleurs hautes.", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg" },
+      { label: "×20 métal 120cm", description: "20 tuteurs métal 120 cm — équiper un grand potager avec des supports durables saison après saison. Traitement anti-rouille.", price: 11, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg" },
+      { label: "×5 spirale tomates 150cm", description: "5 spirales à tomates 150 cm — le tuteur ultime pour les grosses tomates. Enroulement naturel de la tige, soutien en continu sans attache.", price: 9, originalPrice: 13, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg" }
     ]
   },
   {
@@ -1109,9 +1109,9 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierPrice: 5.00,
     variants: [
-      { label: "5L — semis et boutures", price: 10, originalPrice: 10, supplierPrice: 5.00, image: "img/jard_terreau.jpg" },
-      { label: "20L — potager", price: 10, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_terreau.jpg" },
-      { label: "50L — grand jardin", price: 19, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_terreau.jpg" }
+      { label: "5L — semis et boutures", description: "Terreau bio 5L pour semis et boutures — texture fine ultra-légère favorisant la germination. Sans tourbe, enrichi compost. Idéal en plateau de semis.", price: 10, originalPrice: 10, supplierPrice: 5.00, image: "img/jard_terreau.jpg" },
+      { label: "20L — potager", description: "Terreau bio 20L pour potager — pour remplir un carré 120×60 cm ou 4-5 grands pots. Riche en nutriments, favorise la production de légumes.", price: 10, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_terreau.jpg" },
+      { label: "50L — grand jardin", description: "Terreau bio 50L grand jardin — pour les grandes surfaces, plates-bandes et potagers familiaux. Économique, pH équilibré, longue tenue.", price: 19, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_terreau.jpg" }
     ]
   },
   {
@@ -1131,10 +1131,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 5.50,
     variants: [
-      { label: "Kit 10 légumes essentiels", price: 13, originalPrice: 8, supplierPrice: 4.00, image: "img/jard_semences.jpg" },
-      { label: "Kit 20 légumes complet", price: 13, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
-      { label: "Kit 30 légumes + herbes", price: 13, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
-      { label: "Kit 50 variétés premium", price: 16, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
+      { label: "Kit 10 légumes essentiels", description: "10 sachets de semences — les indispensables du potager débutant : tomates, courgettes, carottes, salades, radis. Non traitées, bio.", price: 13, originalPrice: 8, supplierPrice: 4.00, image: "img/jard_semences.jpg" },
+      { label: "Kit 20 légumes complet", description: "20 sachets de semences bio — pour un potager diversifié toute la saison. Printemps à automne, légumes fruits et feuilles inclus.", price: 13, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
+      { label: "Kit 30 légumes + herbes", description: "30 sachets semences + herbes aromatiques — basilic, persil, ciboulette, thym inclus. Le kit complet pour l'autosuffisance alimentaire.", price: 13, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
+      { label: "Kit 50 variétés premium", description: "50 variétés semences premium — dont variétés anciennes rares. Pour les passionnés voulant un potager exceptionnel et des saveurs oubliées.", price: 16, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
     ]
   },
   {
@@ -1154,9 +1154,9 @@ const PRODUCTS = [
     supplier: "BigBuy",
     supplierPrice: 14.50,
     variants: [
-      { label: "300L — Noir", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/jard_composteur.jpg" },
-      { label: "400L — Noir", price: 40, originalPrice: 34, supplierPrice: 18.50, image: "img/jard_composteur.jpg" },
-      { label: "600L — Noir", price: 40, originalPrice: 45, supplierPrice: 24.50, image: "img/jard_composteur.jpg" }
+      { label: "300L — Noir", description: "Composteur 300L noir — capacité idéale pour une famille de 4. Déchets cuisine + jardin transformés en engrais en 3 mois. Trappe récupération incluse.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/jard_composteur.jpg" },
+      { label: "400L — Noir", description: "Composteur 400L noir — pour les gros producteurs de déchets verts. Plus de capacité, même robustesse. Couvercle vissé anti-nuisibles.", price: 40, originalPrice: 34, supplierPrice: 18.50, image: "img/jard_composteur.jpg" },
+      { label: "600L — Noir", description: "Composteur 600L noir — le plus grand format, pour les grands jardins et familles nombreuses. Production de compost en continu toute l'année.", price: 40, originalPrice: 45, supplierPrice: 24.50, image: "img/jard_composteur.jpg" }
     ]
   },
   {
@@ -1176,10 +1176,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 7.50,
     variants: [
-      { label: "Kit 15 plantes", price: 20, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 30 plantes", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 50 plantes + timer", price: 20, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 100 plantes pro", price: 27, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
+      { label: "Kit 15 plantes", description: "Kit goutte-à-goutte 15 plantes — pour débuter et tester l'arrosage automatique. Idéal balcon ou petite terrasse. Économise 70% d'eau.", price: 20, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 30 plantes", description: "Kit goutte-à-goutte 30 plantes — pour un carré potager complet. Tuyaux PE flexibles, goutteurs réglables 0-8L/h, connexions étanches.", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 50 plantes + timer", description: "Kit goutte-à-goutte 50 plantes + programmateur — arrosage 100% autonome. Programmez et oubliez, même pendant les vacances.", price: 20, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
+      { label: "Kit 100 plantes pro", description: "Kit goutte-à-goutte 100 plantes pro — pour les grands potagers, serres et terrasses. Débit maîtrisé, tuyaux renforcés, raccords universels.", price: 27, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
     ]
   },
   {
@@ -1199,12 +1199,12 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 4.50,
     variants: [
-      { label: "×5 — 10L Noir", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 20L Noir", price: 11, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 30L Noir", price: 11, originalPrice: 15, supplierPrice: 7.80, image: "img/jard_pots.jpg" },
-      { label: "×5 — 10L Vert", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 20L Vert", price: 11, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
-      { label: "×10 — 10L Noir — lot", price: 11, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_pots.jpg" }
+      { label: "×5 — 10L Noir", description: "5 pots géotextiles 10L noirs — idéal fraises, herbes aromatiques, petites tomates. Air-pruning naturel, drainage parfait. Pliables hors saison.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 20L Noir", description: "5 pots géotextiles 20L noirs — pour tomates, poivrons, aubergines. Grande contenance, racines saines, rendements supérieurs à la terre.", price: 11, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 30L Noir", description: "5 pots géotextiles 30L noirs — pour arbustes fruitiers, grands légumes et cultures intensives. Résistants UV, réutilisables 5+ saisons.", price: 11, originalPrice: 15, supplierPrice: 7.80, image: "img/jard_pots.jpg" },
+      { label: "×5 — 10L Vert", description: "5 pots géotextiles 10L verts — même performance que le noir, coloris naturel discret pour balcon ou terrasse visible.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
+      { label: "×5 — 20L Vert", description: "5 pots géotextiles 20L verts — capacité idéale tomates, beau coloris pour intégrer au jardin. Texture respirante anti-pourriture.", price: 11, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
+      { label: "×10 — 10L Noir — lot", description: "Lot de 10 pots géotextiles 10L noirs — format économique pour équiper tout un potager. Parfait pour les semis en extérieur et fraisiers.", price: 11, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_pots.jpg" }
     ]
   },
   {
@@ -1224,9 +1224,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 8.50,
     variants: [
-      { label: "Timer simple — 1 zone", price: 22, originalPrice: 32.9, supplierPrice: 8.50, image: "img/jard_timer.jpg" },
-      { label: "Timer double — 2 zones", price: 35, originalPrice: 51.9, supplierPrice: 13.50, image: "img/jard_timer.jpg" },
-      { label: "Timer WiFi — app smartphone", price: 49, originalPrice: 72.9, supplierPrice: 19.00, image: "img/jard_timer.jpg" }
+      { label: "Timer simple — 1 zone", description: "Programmateur 1 zone — pour arroser un seul tuyau ou kit goutte-à-goutte. Simple à programmer, robuste IPX5, raccord universel 3/4\".", price: 22, originalPrice: 32.9, supplierPrice: 8.50, image: "img/jard_timer.jpg" },
+      { label: "Timer double — 2 zones", description: "Programmateur 2 zones — pour gérer deux systèmes d'arrosage indépendants (potager + pelouse). 6 programmes/jour chacun.", price: 35, originalPrice: 51.9, supplierPrice: 13.50, image: "img/jard_timer.jpg" },
+      { label: "Timer WiFi — app smartphone", description: "Programmateur WiFi avec app smartphone — contrôlez et programmez depuis n'importe où. Météo intégrée, arrosage intelligent selon la pluie.", price: 49, originalPrice: 72.9, supplierPrice: 19.00, image: "img/jard_timer.jpg" }
     ]
   }
 ];

@@ -715,6 +715,12 @@
     infoBox.style.display = 'block';
     priceEl.textContent = v.price.toFixed(2).replace('.', ',') + ' €';
 
+    // Mise à jour de la description selon la variante sélectionnée
+    const descEl = document.getElementById('product-desc');
+    if (descEl) {
+      descEl.textContent = v.description || product.description;
+    }
+
     const origPrice = v.originalPrice || product.originalPrice;
     if (origPrice && origPrice > v.price) {
       origEl.textContent = origPrice.toFixed(2).replace('.', ',') + ' €';
