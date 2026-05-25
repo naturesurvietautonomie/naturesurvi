@@ -853,8 +853,8 @@ const PRODUCTS = [
     supplierPrice: 11.50,
     variants: [
       { label: "Kit individuel — 12 pièces", description: "Kit survie 12 pièces individuel : couverture, firestarter, sifflet, paracord 5m, filtre eau, boussole, couteau pliant, rations, lampe, bâton lumineux, gants, trousse.", price: 30, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_kit72h.jpg" },
-      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 35, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h.jpg" },
-      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 40, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h.jpg" }
+      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 35, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h_famille.jpg" },
+      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 40, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h_pro.jpg" }
     ]
   },
   {
@@ -966,8 +966,8 @@ const PRODUCTS = [
     variants: [
       { label: "1000 lm — Noire", description: "Lampe torche 1000 lm noire — puissante pour randonner de nuit. 5 modes, zoom, résistante IPX6. Parfaite pour le camping et la survie quotidienne.", price: 20, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_torche.jpg" },
       { label: "2000 lm — Noire", description: "Lampe torche 2000 lm noire — pour les environnements difficiles et sombres. Portée jusqu'à 300m. Mode stroboscope SOS intégré.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 27, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche.jpg" }
+      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche_camo.jpg" },
+      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 27, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche_5000lm.jpg" }
     ]
   },
   {
@@ -988,9 +988,9 @@ const PRODUCTS = [
     supplierPrice: 16.00,
     variants: [
       { label: "40L — Noir", description: "Bug Out Bag 40L noir — discret en milieu urbain, robuste en forêt. Structure MOLLE, résistant à l'eau, bretelles renforcées.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "40L — Vert militaire", description: "Bug Out Bag 40L vert militaire — se fond dans la nature. Multi-poches organisées, accès rapide aux essentiels. Idéal survivalistes.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "40L — Camouflage", description: "Bug Out Bag 40L camouflage — pour les amateurs de tactique et chasse. Tissu dense résistant, frame interne rigidifié.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 55, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout.jpg" }
+      { label: "40L — Vert militaire", description: "Bug Out Bag 40L vert militaire — se fond dans la nature. Multi-poches organisées, accès rapide aux essentiels. Idéal survivalistes.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout_vert.jpg" },
+      { label: "40L — Camouflage", description: "Bug Out Bag 40L camouflage — pour les amateurs de tactique et chasse. Tissu dense résistant, frame interne rigidifié.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout_camo.jpg" },
+      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 55, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout_60l.jpg" }
     ]
   },
 
@@ -1018,8 +1018,8 @@ const PRODUCTS = [
       { label: "M — Kaki", description: "Gants jardinage M kaki — taille universelle. Résistants, confortables, prise précise pour les travaux de plantation et désherbage.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
       { label: "L — Kaki", description: "Gants jardinage L kaki — pour grandes mains masculines. Robustes, bien ventilés, adaptés aux travaux intensifs de bêchage et taille.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
       { label: "XL — Kaki", description: "Gants jardinage XL kaki — format maximal pour les mains larges. Manchette extra-longue pour protéger le poignet lors de tailles épineuses.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "M — Rose", description: "Gants jardinage M rose — version féminine élégante. Même protection cuir renforcé, coloris discret. Parfait cadeau pour jardinières.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "L — Rose", description: "Gants jardinage L rose — taille L pour mains plus grandes. Manchette longue, cuir vachette, joli coloris rose pour jardiner avec style.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" }
+      { label: "M — Rose", description: "Gants jardinage M rose — version féminine élégante. Même protection cuir renforcé, coloris discret. Parfait cadeau pour jardinières.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants_rose.jpg" },
+      { label: "L — Rose", description: "Gants jardinage L rose — taille L pour mains plus grandes. Manchette longue, cuir vachette, joli coloris rose pour jardiner avec style.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants_rose.jpg" }
     ]
   },
   {
@@ -1042,7 +1042,7 @@ const PRODUCTS = [
       { label: "5L — Vert", description: "Arrosoir 5L vert — format compact pour balcon, terrasse ou serre. Idéal pour les semis et les plantes en pot. Léger et maniable.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" },
       { label: "8L — Vert", description: "Arrosoir 8L vert — bon compromis entre capacité et maniabilité. Pour potager moyen et massifs de fleurs. Pomme fine amovible.", price: 25, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
       { label: "10L — Vert", description: "Arrosoir 10L vert — grande contenance pour arroser tout un jardin en un trajet. Moins de déplacements, plus d'efficacité.", price: 27, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
-      { label: "5L — Rouge", description: "Arrosoir 5L rouge — même praticité que le vert, coloris vif pour le retrouver facilement. Bec long pour arroser sans éclabousser.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" }
+      { label: "5L — Rouge", description: "Arrosoir 5L rouge — même praticité que le vert, coloris vif pour le retrouver facilement. Bec long pour arroser sans éclabousser.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir_rouge.jpg" }
     ]
   },
   {
@@ -1064,8 +1064,8 @@ const PRODUCTS = [
     variants: [
       { label: "Petite — 100×50×80 cm", description: "Serre petite 100×50×80 cm — pour balcon ou terrasse. Protège 3-4 plants du gel et des insectes. Montage rapide, encombrement minimal.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
       { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 48, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
-      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 55, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre.jpg" },
-      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 53, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre.jpg" }
+      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 55, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre_grande.jpg" },
+      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 53, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre_grande.jpg" }
     ]
   },
   {
