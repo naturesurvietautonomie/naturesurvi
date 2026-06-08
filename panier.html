@@ -176,7 +176,6 @@
       const subtotal = Cart.getSubtotal();
       const shipping = Cart.getShippingCost();
       const total = Cart.getTotal();
-      const savings = Cart.getSavings();
       const freeShippingRemaining = subtotal < 50 ? 50 - subtotal : 0;
 
       subtitle.textContent = `${Cart.getCount()} article${Cart.getCount() > 1 ? 's' : ''} dans votre panier`;
@@ -221,11 +220,7 @@
               <span>Sous-total</span>
               <span>${formatPrice(subtotal)}</span>
             </div>
-            ${savings > 0 ? `
-            <div class="summary-row savings">
-              <span>🎉 Économies</span>
-              <span>-${formatPrice(savings)}</span>
-            </div>` : ''}
+
             <div class="summary-row">
               <span>Livraison</span>
               <span>${shipping === 0 ? '✅ Gratuite' : formatPrice(shipping)}</span>
