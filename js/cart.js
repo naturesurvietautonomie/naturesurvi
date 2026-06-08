@@ -61,13 +61,6 @@ const Cart = {
     }, 0);
   },
 
-  getOriginalTotal() {
-    return this.getItems().reduce((sum, item) => {
-      const product = getProductById(item.id);
-      return product ? sum + product.originalPrice * item.quantity : sum;
-    }, 0);
-  },
-
   getShippingCost() {
     const subtotal = this.getSubtotal();
     return subtotal >= 50 ? 0 : 5.90;
@@ -75,10 +68,6 @@ const Cart = {
 
   getTotal() {
     return this.getSubtotal() + this.getShippingCost();
-  },
-
-  getSavings() {
-    return this.getOriginalTotal() - this.getSubtotal();
   },
 
   // Met à jour tous les indicateurs panier sur la page
@@ -251,48 +240,8 @@ const Wishlist = {
   }
 };
 
-// ---- COUNTDOWN TIMER ----
-function initCountdown() {
-  const timerEl = document.getElementById('countdown-timer');
-  if (!timerEl) return;
-
-  // On génère une fin qui est toujours "aujourd'hui + quelques heures"
-  let endKey = 'naturesurvi_countdown_end';
-  let endTime = localStorage.getItem(endKey);
-
-  if (!endTime || parseInt(endTime) < Date.now()) {
-    // Nouvelle fin : entre 2h et 6h à partir de maintenant
-    const hours = 2 + Math.random() * 4;
-    endTime = Date.now() + hours * 3600 * 1000;
-    localStorage.setItem(endKey, endTime.toString());
-  } else {
-    endTime = parseInt(endTime);
-  }
-
-  function tick() {
-    const diff = endTime - Date.now();
-    if (diff <= 0) {
-      // Reset le timer
-      localStorage.removeItem(endKey);
-      initCountdown();
-      return;
-    }
-    const h = Math.floor(diff / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    timerEl.textContent =
-      String(h).padStart(2, '0') + ':' +
-      String(m).padStart(2, '0') + ':' +
-      String(s).padStart(2, '0');
-  }
-
-  tick();
-  setInterval(tick, 1000);
-}
-
 // ---- PRODUCT CARD RENDERER ----
 function renderProductCard(product) {
-  const discount = getDiscountPercent(product.price, product.originalPrice);
   const isWished = Wishlist.isInWishlist(product.id);
   const hasVariants = product.variants && product.variants.length > 0;
   const variantBadge = hasVariants ? `<span style="font-size:0.75rem;color:#4a7c2d;font-weight:700;margin-top:2px;display:block;">🎨 ${product.variants.length} variante${product.variants.length > 1 ? 's' : ''} disponible${product.variants.length > 1 ? 's' : ''}</span>` : '';
@@ -303,7 +252,6 @@ function renderProductCard(product) {
       style="cursor:pointer;">
       <div class="product-card-image">
         <img src="${product.image}" alt="${product.name}" loading="lazy" width="400" height="300">
-        <span class="discount-badge">-${discount}%</span>
         <button class="wishlist-btn ${isWished ? 'active' : ''}" data-product-id="${product.id}" 
           onclick="event.stopPropagation(); toggleWishlist(${product.id})" 
           aria-label="${isWished ? 'Retirer des favoris' : 'Ajouter aux favoris'}">
@@ -322,7 +270,6 @@ function renderProductCard(product) {
         ${variantBadge}
         <div class="product-pricing">
           <span class="product-price">${formatPrice(product.price)}</span>
-          <span class="product-original-price">${formatPrice(product.originalPrice)}</span>
         </div>
         <div class="product-shipping">📦 ${product.shipping}</div>
         <div class="product-actions">
@@ -367,7 +314,6 @@ function openProductModal(productId) {
   const product = getProductById(productId);
   if (!product) return;
 
-  const discount = getDiscountPercent(product.price, product.originalPrice);
   const modal = document.getElementById('product-modal');
   if (!modal) return;
 
@@ -380,7 +326,6 @@ function openProductModal(productId) {
       <div class="modal-body">
         <div class="modal-image">
           <img src="${product.image}" alt="${product.name}" width="400" height="300">
-          <span class="discount-badge">-${discount}%</span>
         </div>
         <div class="modal-info">
           <div class="product-badges">${renderBadges(product.badges)}</div>
@@ -393,8 +338,6 @@ function openProductModal(productId) {
           <p class="modal-description">${product.description}</p>
           <div class="product-pricing">
             <span class="product-price">${formatPrice(product.price)}</span>
-            <span class="product-original-price">${formatPrice(product.originalPrice)}</span>
-            <span class="discount-label">Économisez ${formatPrice(product.originalPrice - product.price)}</span>
           </div>
           ${product.variants && product.variants.length > 0 ? `
           <div class="modal-variants" style="margin:12px 0;">
@@ -458,7 +401,7 @@ function handleNewsletter(e) {
     <div class="newsletter-success">
       <span class="success-icon">🎉</span>
       <h3>Bienvenue dans la communauté !</h3>
-      <p>Votre code <strong>NATURE10</strong> (-10%) a été envoyé à <strong>${email}</strong></p>
+      <p>Merci pour votre inscription. Vous recevrez bientôt nos conseils et actualités à <strong>${email}</strong></p>
     </div>
   `;
 }
@@ -491,7 +434,6 @@ function initBackToTop() {
 document.addEventListener('DOMContentLoaded', () => {
   Cart.updateUI();
   Wishlist.updateUI();
-  initCountdown();
   initBackToTop();
 
   // Smooth scroll for anchor links
