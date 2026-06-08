@@ -1,68 +1,11 @@
-// Netlify Function — Stripe Webhook + BigBuy Auto-Order + TikTok Events API
-// Reçoit les paiements Stripe, vérifie la signature, passe la commande BigBuy, envoie un email, track TikTok
+// Netlify Function — Stripe Webhook + BigBuy + CJDropshipping + TikTok
+// Paiement Stripe → commande auto BigBuy (survie) ou CJ (jardinage) → email → TikTok tracking
 
 const https = require('https');
 const crypto = require('crypto');
 
-// ─── TikTok Events API (server-side) ─────────────────────────────────────────
-async function sendTikTokPurchaseEvent({ email, amount, currency, orderId, ip, userAgent }) {
-  const PIXEL_ID = 'D88TMA3C77UFPET8DG4G';
-  const ACCESS_TOKEN = process.env.TIKTOK_ACCESS_TOKEN || 'afebe1d85ac0cf79ceb8e9cd97a7236b7b8c284d';
-
-  // Hasher l'email en SHA256 (requis par TikTok)
-  const emailHash = crypto.createHash('sha256').update((email || '').trim().toLowerCase()).digest('hex');
-
-  const payload = {
-    pixel_code: PIXEL_ID,
-    event: 'CompletePayment',
-    event_time: Math.floor(Date.now() / 1000),
-    user: {
-      email: [emailHash],
-      ip:   ip || '',
-      user_agent: userAgent || ''
-    },
-    properties: {
-      value:    parseFloat(amount) || 0,
-      currency: (currency || 'EUR').toUpperCase()
-    },
-    page: {
-      url: 'https://naturesurvie.net/merci.html'
-    },
-    event_id: orderId || `ns-${Date.now()}`
-  };
-
-  return new Promise((resolve, reject) => {
-    const body = JSON.stringify({ data: [payload] });
-    const options = {
-      hostname: 'business-api.tiktok.com',
-      path:     `/open_api/v1.3/pixel/track/`,
-      method:   'POST',
-      headers: {
-        'Access-Token':  ACCESS_TOKEN,
-        'Content-Type':  'application/json',
-        'Content-Length': Buffer.byteLength(body)
-      }
-    };
-    let data = '';
-    const req = https.request(options, res => {
-      res.on('data', d => data += d);
-      res.on('end', () => {
-        console.log('TikTok Events API response:', data);
-        resolve(data);
-      });
-    });
-    req.on('error', e => {
-      console.error('TikTok Events API error:', e.message);
-      resolve(null); // non-bloquant
-    });
-    req.write(body);
-    req.end();
-  });
-}
-
-// ─── Mapping SKU BigBuy par produit NatureSurvi ───────────────────────────────
-// Clé = id produit (ou "id_varianteIdx"), valeur = SKU BigBuy
-const SKU_MAP = {
+// ─── Mapping BigBuy — produits Survie (IDs 1-99) ─────────────────────────────
+const BIGBUY_SKU_MAP = {
   1:      "velamp-5w-350lm",
   "1_1":  "velamp-6w-400lm",
   3:      "mil-tec-olive-led",
@@ -117,6 +60,80 @@ const SKU_MAP = {
   "51_1": "picture-campei-blanc",
   52:     "picture-campei-blanc"
 };
+
+// ─── Mapping CJDropshipping — produits Jardinage (IDs 101-136) ────────────────
+// Clé = ID produit NatureSurvi, valeur = { vid: "CJ Variant ID", pid: "CJ Product ID" }
+// ⚠️  À REMPLIR avec les vrais IDs CJ depuis ton compte CJDropshipping
+// Pour trouver les IDs : CJDropshipping → My Products → produit → URL contient le pid
+// Le vid (variant ID) est visible dans l'API ou la page produit CJ
+const CJ_MAP = {
+  101: { pid: "CJXXXXXXX101", vid: "CJVXXXXXXX101" }, // Serre de jardin - À remplacer
+  102: { pid: "CJXXXXXXX102", vid: "CJVXXXXXXX102" }, // Pot de fleurs - À remplacer
+  103: { pid: "CJXXXXXXX103", vid: "CJVXXXXXXX103" }, // Arrosoir - À remplacer
+  104: { pid: "CJXXXXXXX104", vid: "CJVXXXXXXX104" },
+  105: { pid: "CJXXXXXXX105", vid: "CJVXXXXXXX105" },
+  106: { pid: "CJXXXXXXX106", vid: "CJVXXXXXXX106" },
+  107: { pid: "CJXXXXXXX107", vid: "CJVXXXXXXX107" },
+  108: { pid: "CJXXXXXXX108", vid: "CJVXXXXXXX108" },
+  109: { pid: "CJXXXXXXX109", vid: "CJVXXXXXXX109" },
+  110: { pid: "CJXXXXXXX110", vid: "CJVXXXXXXX110" },
+  111: { pid: "CJXXXXXXX111", vid: "CJVXXXXXXX111" },
+  112: { pid: "CJXXXXXXX112", vid: "CJVXXXXXXX112" },
+  113: { pid: "CJXXXXXXX113", vid: "CJVXXXXXXX113" },
+  114: { pid: "CJXXXXXXX114", vid: "CJVXXXXXXX114" },
+  115: { pid: "CJXXXXXXX115", vid: "CJVXXXXXXX115" },
+  116: { pid: "CJXXXXXXX116", vid: "CJVXXXXXXX116" },
+  117: { pid: "CJXXXXXXX117", vid: "CJVXXXXXXX117" },
+  118: { pid: "CJXXXXXXX118", vid: "CJVXXXXXXX118" },
+  119: { pid: "CJXXXXXXX119", vid: "CJVXXXXXXX119" },
+  120: { pid: "CJXXXXXXX120", vid: "CJVXXXXXXX120" },
+  121: { pid: "CJXXXXXXX121", vid: "CJVXXXXXXX121" },
+  122: { pid: "CJXXXXXXX122", vid: "CJVXXXXXXX122" },
+  123: { pid: "CJXXXXXXX123", vid: "CJVXXXXXXX123" },
+  124: { pid: "CJXXXXXXX124", vid: "CJVXXXXXXX124" },
+  125: { pid: "CJXXXXXXX125", vid: "CJVXXXXXXX125" },
+  126: { pid: "CJXXXXXXX126", vid: "CJVXXXXXXX126" },
+  127: { pid: "CJXXXXXXX127", vid: "CJVXXXXXXX127" },
+  128: { pid: "CJXXXXXXX128", vid: "CJVXXXXXXX128" },
+  129: { pid: "CJXXXXXXX129", vid: "CJVXXXXXXX129" },
+  130: { pid: "CJXXXXXXX130", vid: "CJVXXXXXXX130" },
+  131: { pid: "CJXXXXXXX131", vid: "CJVXXXXXXX131" },
+  132: { pid: "CJXXXXXXX132", vid: "CJVXXXXXXX132" },
+  133: { pid: "CJXXXXXXX133", vid: "CJVXXXXXXX133" },
+  134: { pid: "CJXXXXXXX134", vid: "CJVXXXXXXX134" },
+  135: { pid: "CJXXXXXXX135", vid: "CJVXXXXXXX135" },
+  136: { pid: "CJXXXXXXX136", vid: "CJVXXXXXXX136" },
+};
+
+// ─── TikTok Events API ────────────────────────────────────────────────────────
+async function sendTikTokPurchaseEvent({ email, amount, currency, orderId, ip, userAgent }) {
+  const PIXEL_ID = 'D88TMA3C77UFPET8DG4G';
+  const ACCESS_TOKEN = process.env.TIKTOK_ACCESS_TOKEN || 'afebe1d85ac0cf79ceb8e9cd97a7236b7b8c284d';
+  const emailHash = crypto.createHash('sha256').update((email || '').trim().toLowerCase()).digest('hex');
+  const payload = {
+    pixel_code: PIXEL_ID,
+    event: 'CompletePayment',
+    event_time: Math.floor(Date.now() / 1000),
+    user: { email: [emailHash], ip: ip || '', user_agent: userAgent || '' },
+    properties: { value: parseFloat(amount) || 0, currency: (currency || 'EUR').toUpperCase() },
+    page: { url: 'https://naturesurvie.net/merci.html' },
+    event_id: orderId || `ns-${Date.now()}`
+  };
+  return new Promise((resolve) => {
+    const body = JSON.stringify({ data: [payload] });
+    const options = {
+      hostname: 'business-api.tiktok.com',
+      path: '/open_api/v1.3/pixel/track/',
+      method: 'POST',
+      headers: { 'Access-Token': ACCESS_TOKEN, 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+    };
+    let data = '';
+    const req = https.request(options, res => { res.on('data', d => data += d); res.on('end', () => resolve(data)); });
+    req.on('error', () => resolve(null));
+    req.write(body);
+    req.end();
+  });
+}
 
 // ─── Vérification signature Stripe ───────────────────────────────────────────
 function verifyStripeSignature(payload, sigHeader, secret) {
@@ -179,144 +196,185 @@ exports.handler = async (event) => {
   if (shipping?.address) {
     const a = shipping.address;
     address = {
-      firstName: (shipping.name || customerName).split(' ')[0] || 'Client',
-      lastName:  (shipping.name || customerName).split(' ').slice(1).join(' ') || 'NatureSurvi',
-      phone:     session.customer_details?.phone || '0600000000',
-      email:     customerEmail,
-      address:   a.line1 || '',
+      firstName:   (shipping.name || customerName).split(' ')[0] || 'Client',
+      lastName:    (shipping.name || customerName).split(' ').slice(1).join(' ') || 'NatureSurvi',
+      phone:       session.customer_details?.phone || '0600000000',
+      email:       customerEmail,
+      address:     a.line1 || '',
       addressMore: a.line2 || '',
-      postcode:  a.postal_code || '',
-      city:      a.city || '',
-      country:   a.country || 'FR'
+      postcode:    a.postal_code || '',
+      city:        a.city || '',
+      country:     a.country || 'FR'
     };
   }
 
-  // ── Récupérer les line items Stripe (avec expansion produit pour les métadonnées) ──
+  // ── Récupérer les line items Stripe avec métadonnées produit ──
   let lineItems = [];
   try {
     const liData = await stripeApiGet(
-      `/v1/checkout/sessions/${paymentId}/line_items?limit=10&expand[]=data.price.product`
+      `/v1/checkout/sessions/${paymentId}/line_items?limit=20&expand[]=data.price.product`
     );
     lineItems = liData.data || [];
   } catch (e) {
     console.error('Erreur récupération line items:', e.message);
   }
 
-  // ── Texte email ──
+  // ── Séparer les produits selon leur fournisseur ──
+  const bigbuyItems = [];
+  const cjItems     = [];
+  const unknownItems = [];
+
+  for (const item of lineItems) {
+    const nsId = getNsProductId(item);
+    const qty  = item.quantity || 1;
+    const name = item.description || `Produit #${nsId}`;
+
+    if (!nsId) {
+      unknownItems.push({ name, qty });
+      continue;
+    }
+
+    const numId = parseInt(nsId);
+
+    // IDs 101-199 → CJDropshipping (jardinage)
+    if (numId >= 101 && numId <= 199) {
+      const cjRef = CJ_MAP[numId];
+      if (cjRef) {
+        cjItems.push({ nsId: numId, pid: cjRef.pid, vid: cjRef.vid, qty, name });
+      } else {
+        unknownItems.push({ name, qty, nsId: numId, reason: 'CJ_MAP manquant' });
+      }
+    }
+    // IDs 1-99 → BigBuy (survie)
+    else {
+      const sku = BIGBUY_SKU_MAP[numId] || BIGBUY_SKU_MAP[nsId] || null;
+      if (sku) {
+        bigbuyItems.push({ sku, qty, name });
+      } else {
+        unknownItems.push({ name, qty, nsId: numId, reason: 'BIGBUY_SKU_MAP manquant' });
+      }
+    }
+  }
+
+  // ── Passer commande BigBuy (produits survie) ──
+  let bigbuyOrderId = null;
+  if (address && bigbuyItems.length > 0 && process.env.BIGBUY_API_KEY) {
+    try {
+      bigbuyOrderId = await createBigBuyOrder({ address, items: bigbuyItems, paymentId });
+      console.log('✅ Commande BigBuy créée:', bigbuyOrderId);
+    } catch (e) {
+      console.error('❌ Erreur BigBuy:', e.message);
+    }
+  }
+
+  // ── Passer commande CJDropshipping (produits jardinage) ──
+  let cjOrderId = null;
+  if (address && cjItems.length > 0 && process.env.CJ_API_EMAIL && process.env.CJ_API_PASSWORD) {
+    try {
+      cjOrderId = await createCJOrder({ address, items: cjItems, paymentId });
+      console.log('✅ Commande CJ créée:', cjOrderId);
+    } catch (e) {
+      console.error('❌ Erreur CJ:', e.message);
+    }
+  } else if (cjItems.length > 0) {
+    console.log('⚠️ CJ skip — CJ_API_EMAIL ou CJ_API_PASSWORD manquant');
+  }
+
+  // ── Envoyer email récap ──
   const addrText = address
     ? `${address.firstName} ${address.lastName}\n${address.address}\n${address.postcode} ${address.city}\n${address.country}`
     : 'Non fournie';
 
-  const emailBody = `
-🛒 NOUVELLE COMMANDE NATURESURVIE.NET
+  const emailLines = [
+    `🛒 NOUVELLE COMMANDE NATURESURVIE.NET`,
+    ``,
+    `Client  : ${customerName}`,
+    `Email   : ${customerEmail}`,
+    `Montant : ${amount} ${currency}`,
+    ``,
+    `Adresse de livraison :`,
+    addrText,
+    ``,
+    `ID Paiement Stripe : ${paymentId}`,
+    `Dashboard : https://dashboard.stripe.com/payments/${paymentId}`,
+    ``,
+    `─── Fournisseurs ───`,
+  ];
 
-Client  : ${customerName}
-Email   : ${customerEmail}
-Montant : ${amount} ${currency}
-
-Adresse de livraison :
-${addrText}
-
-ID Paiement Stripe : ${paymentId}
-Dashboard : https://dashboard.stripe.com/payments/${paymentId}
-`;
-
-  console.log(emailBody);
-
-  // ── Passer commande BigBuy ──
-  let bigbuyOrderId = null;
-  if (address && lineItems.length > 0 && process.env.BIGBUY_API_KEY) {
-    try {
-      bigbuyOrderId = await createBigBuyOrder({ address, lineItems, paymentId });
-      console.log('Commande BigBuy créée:', bigbuyOrderId);
-    } catch (e) {
-      console.error('Erreur BigBuy:', e.message);
-    }
-  } else {
-    console.log('BigBuy skip — adresse manquante ou pas de line items');
+  if (bigbuyItems.length > 0) {
+    emailLines.push(`BigBuy (${bigbuyItems.length} réf.) : ${bigbuyOrderId ? '✅ #' + bigbuyOrderId : '❌ Échec — passer manuellement'}`);
+    bigbuyItems.forEach(i => emailLines.push(`  • ${i.name} x${i.qty} [${i.sku}]`));
+  }
+  if (cjItems.length > 0) {
+    emailLines.push(`CJDropshipping (${cjItems.length} réf.) : ${cjOrderId ? '✅ #' + cjOrderId : '❌ Échec — passer manuellement'}`);
+    cjItems.forEach(i => emailLines.push(`  • ${i.name} x${i.qty} [pid:${i.pid}]`));
+  }
+  if (unknownItems.length > 0) {
+    emailLines.push(`⚠️ Produits sans fournisseur mappé (à commander manuellement) :`);
+    unknownItems.forEach(i => emailLines.push(`  • ${i.name} x${i.qty}${i.reason ? ' — ' + i.reason : ''}`));
   }
 
-  // ── Envoyer email notification ──
-  const finalEmail = emailBody + (bigbuyOrderId ? `\nCommande BigBuy : #${bigbuyOrderId}` : '\n⚠️ Commande BigBuy à passer manuellement');
+  const emailBody = emailLines.join('\n');
+  console.log(emailBody);
+
+  const allAuto   = (bigbuyItems.length === 0 || bigbuyOrderId) && (cjItems.length === 0 || cjOrderId);
+  const hasManual = unknownItems.length > 0 || (bigbuyItems.length > 0 && !bigbuyOrderId) || (cjItems.length > 0 && !cjOrderId);
+  const statusTag = allAuto && !hasManual ? '✅ Auto' : hasManual ? '⚠️ Partiel' : '✅ Auto';
 
   if (process.env.RESEND_API_KEY) {
     try {
       await sendResendEmail({
-        subject: `🛒 Commande ${amount}€ — NatureSurvi${bigbuyOrderId ? ' ✅ Auto-commandé' : ' ⚠️ Manuel'}`,
-        body: finalEmail
+        subject: `🛒 Commande ${amount}€ — NatureSurvi ${statusTag}`,
+        body: emailBody
       });
     } catch (e) {
       console.error('Erreur Resend:', e.message);
     }
   }
 
-  // ── TikTok Events API — tracking conversion côté serveur ──
+  // ── TikTok tracking ──
   try {
     const clientIp = event.headers['x-forwarded-for'] || event.headers['client-ip'] || '';
     const clientUA = event.headers['user-agent'] || '';
     await sendTikTokPurchaseEvent({
-      email:     customerEmail,
-      amount,
-      currency:  session.currency || 'eur',
-      orderId:   paymentId,
-      ip:        clientIp.split(',')[0].trim(),
+      email: customerEmail, amount,
+      currency: session.currency || 'eur',
+      orderId: paymentId,
+      ip: clientIp.split(',')[0].trim(),
       userAgent: clientUA
     });
-    console.log('TikTok CompletePayment envoyé — montant:', amount);
   } catch (e) {
-    console.error('Erreur TikTok Events API:', e.message);
+    console.error('Erreur TikTok:', e.message);
   }
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ received: true, amount, bigbuyOrderId })
+    body: JSON.stringify({ received: true, amount, bigbuyOrderId, cjOrderId })
   };
 };
 
+// ─── Extraire ns_product_id depuis un line item Stripe ───────────────────────
+function getNsProductId(item) {
+  // Via métadonnées du produit (expandé)
+  if (item.price?.product?.metadata?.ns_product_id) {
+    return item.price.product.metadata.ns_product_id;
+  }
+  // Via métadonnées du prix
+  if (item.price?.metadata?.ns_product_id) {
+    return item.price.metadata.ns_product_id;
+  }
+  // Via SKU explicite (anciens liens Stripe fixes)
+  if (item.price?.metadata?.sku) {
+    return null; // SKU direct BigBuy — géré séparément
+  }
+  return null;
+}
+
 // ─── Créer commande BigBuy ────────────────────────────────────────────────────
-async function createBigBuyOrder({ address, lineItems, paymentId }) {
-  const BB_KEY = process.env.BIGBUY_API_KEY;
-
-  // Construire les produits à commander
-  // On récupère l'ID produit NatureSurvi depuis les métadonnées (ns_product_id)
-  // puis on fait le mapping vers le SKU BigBuy via SKU_MAP
-  const products = [];
-  for (const item of lineItems) {
-    const productName = item.description || '';
-    let sku = null;
-
-    // Priorité 1 : SKU explicite dans les métadonnées du prix
-    if (item.price?.metadata?.sku) {
-      sku = item.price.metadata.sku;
-    }
-    // Priorité 2 : ID produit NatureSurvi dans les métadonnées du produit
-    else if (item.price?.product_data?.metadata?.ns_product_id || item.price?.metadata?.ns_product_id) {
-      const nsId = item.price?.product_data?.metadata?.ns_product_id || item.price?.metadata?.ns_product_id;
-      sku = SKU_MAP[parseInt(nsId)] || SKU_MAP[nsId] || null;
-    }
-    // Priorité 3 : chercher via le produit Stripe (si product est un objet expandé)
-    else if (item.price?.product?.metadata?.ns_product_id) {
-      const nsId = item.price.product.metadata.ns_product_id;
-      sku = SKU_MAP[parseInt(nsId)] || SKU_MAP[nsId] || null;
-    }
-
-    if (!sku) {
-      console.log(`SKU non trouvé pour: ${productName} — commande manuelle nécessaire`);
-      continue;
-    }
-    products.push({
-      reference: sku,
-      quantity: item.quantity || 1
-    });
-  }
-
-  if (products.length === 0) {
-    throw new Error('Aucun produit avec SKU trouvé — commande manuelle');
-  }
-
+async function createBigBuyOrder({ address, items, paymentId }) {
   const orderPayload = {
     order: {
-      internalReference: `NS-${paymentId.substring(0, 12)}`,
+      internalReference: `NS-BB-${paymentId.substring(0, 10)}`,
       language: 'fr',
       paymentMethod: 'moneybox',
       carriers: [{ name: 'correos' }],
@@ -332,16 +390,85 @@ async function createBigBuyOrder({ address, lineItems, paymentId }) {
         email:       address.email,
         vatNumber:   ''
       },
-      products
+      products: items.map(i => ({ reference: i.sku, quantity: i.qty }))
     }
   };
 
-  const result = await httpPostJsonBigBuy('/rest/order/create.json', orderPayload, BB_KEY);
-  const parsed = JSON.parse(result);
+  const result = await httpPostJson({
+    hostname: 'api.bigbuy.eu',
+    path: '/rest/order/create.json',
+    headers: { 'Authorization': `Bearer ${process.env.BIGBUY_API_KEY}` }
+  }, orderPayload);
 
-  if (parsed.id) return parsed.id;
-  if (parsed.errors) throw new Error(JSON.stringify(parsed.errors));
-  throw new Error('Réponse BigBuy inattendue: ' + result);
+  if (result.id) return result.id;
+  if (result.errors) throw new Error(JSON.stringify(result.errors));
+  throw new Error('Réponse BigBuy inattendue: ' + JSON.stringify(result));
+}
+
+// ─── CJDropshipping — Auth ────────────────────────────────────────────────────
+async function getCJAccessToken() {
+  const body = JSON.stringify({
+    email:    process.env.CJ_API_EMAIL,
+    password: process.env.CJ_API_PASSWORD
+  });
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'developers.cjdropshipping.com',
+      path:     '/api2.0/v1/authentication/getAccessToken',
+      method:   'POST',
+      headers:  { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+    };
+    let data = '';
+    const req = https.request(options, res => {
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.result && parsed.data?.accessToken) {
+            resolve(parsed.data.accessToken);
+          } else {
+            reject(new Error('CJ auth failed: ' + data));
+          }
+        } catch { reject(new Error('CJ auth JSON invalide: ' + data)); }
+      });
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+// ─── CJDropshipping — Créer commande ─────────────────────────────────────────
+async function createCJOrder({ address, items, paymentId }) {
+  const token = await getCJAccessToken();
+
+  const orderPayload = {
+    orderNumber:      `NS-CJ-${paymentId.substring(0, 10)}`,
+    shippingZip:      address.postcode,
+    shippingCountry:  address.country,     // code ISO 2 lettres ex: "FR"
+    shippingCity:     address.city,
+    shippingAddress:  address.address,
+    shippingAddress2: address.addressMore || '',
+    shippingCustomerName: `${address.firstName} ${address.lastName}`.trim(),
+    shippingPhone:    address.phone,
+    // Logistique : CJ choisit automatiquement le meilleur transporteur
+    // Pour forcer: logisticName: "CJPacket"
+    products: items.map(i => ({
+      vid:      i.vid,   // CJ Variant ID (obligatoire)
+      quantity: i.qty
+    }))
+  };
+
+  const result = await httpPostJsonCJ(
+    '/api2.0/v1/shopping/order/createOrderV2',
+    token,
+    orderPayload
+  );
+
+  if (result.result && result.data?.orderId) {
+    return result.data.orderId;
+  }
+  throw new Error('CJ order failed: ' + JSON.stringify(result));
 }
 
 // ─── Helpers HTTP ─────────────────────────────────────────────────────────────
@@ -351,9 +478,7 @@ function stripeApiGet(path) {
       hostname: 'api.stripe.com',
       path,
       method: 'GET',
-      headers: {
-        'Authorization': `Bearer ${process.env.STRIPE_SECRET_KEY}`
-      }
+      headers: { 'Authorization': `Bearer ${process.env.STRIPE_SECRET_KEY}` }
     };
     let data = '';
     const req = https.request(options, res => {
@@ -368,23 +493,20 @@ function stripeApiGet(path) {
   });
 }
 
-function httpPostJsonBigBuy(path, payload, apiKey) {
+function httpPostJson({ hostname, path, headers }, payload) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify(payload);
     const options = {
-      hostname: 'api.bigbuy.eu',
-      path,
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(body)
-      }
+      hostname, path, method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body), ...headers }
     };
     let data = '';
     const req = https.request(options, res => {
       res.on('data', d => data += d);
-      res.on('end', () => resolve(data));
+      res.on('end', () => {
+        try { resolve(JSON.parse(data)); }
+        catch { reject(new Error('JSON invalide: ' + data)); }
+      });
     });
     req.on('error', reject);
     req.write(body);
@@ -392,21 +514,29 @@ function httpPostJsonBigBuy(path, payload, apiKey) {
   });
 }
 
+function httpPostJsonCJ(path, token, payload) {
+  return httpPostJson({
+    hostname: 'developers.cjdropshipping.com',
+    path,
+    headers: { 'CJ-Access-Token': token }
+  }, payload);
+}
+
 function sendResendEmail({ subject, body }) {
   return new Promise((resolve, reject) => {
     const data = JSON.stringify({
-      from: 'NatureSurvi <onboarding@resend.dev>',
-      to: ['naturesurvi@gmail.com'],
+      from:    'NatureSurvi <onboarding@resend.dev>',
+      to:      ['naturesurvi@gmail.com'],
       subject,
-      text: body
+      text:    body
     });
     const options = {
       hostname: 'api.resend.com',
-      path: '/emails',
-      method: 'POST',
+      path:     '/emails',
+      method:   'POST',
       headers: {
-        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
-        'Content-Type': 'application/json',
+        'Authorization':  `Bearer ${process.env.RESEND_API_KEY}`,
+        'Content-Type':   'application/json',
         'Content-Length': Buffer.byteLength(data)
       }
     };
