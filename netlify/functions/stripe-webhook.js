@@ -1,8 +1,9 @@
 // Netlify Function — Stripe Webhook + BigBuy + CJDropshipping + TikTok
 // Paiement Stripe → commande auto BigBuy (survie) ou CJ (jardinage) → email → TikTok tracking
 
-const https = require('https');
+const https  = require('https');
 const crypto = require('crypto');
+const CJ_MAP = require('./cj-map');
 
 // ─── Mapping BigBuy — produits Survie (IDs 1-99) ─────────────────────────────
 const BIGBUY_SKU_MAP = {
@@ -61,49 +62,7 @@ const BIGBUY_SKU_MAP = {
   52:     "picture-campei-blanc"
 };
 
-// ─── Mapping CJDropshipping — produits Jardinage (IDs 101-136) ────────────────
-// Clé = ID produit NatureSurvi, valeur = { vid: "CJ Variant ID", pid: "CJ Product ID" }
-// ⚠️  À REMPLIR avec les vrais IDs CJ depuis ton compte CJDropshipping
-// Pour trouver les IDs : CJDropshipping → My Products → produit → URL contient le pid
-// Le vid (variant ID) est visible dans l'API ou la page produit CJ
-const CJ_MAP = {
-  101: { pid: "CJXXXXXXX101", vid: "CJVXXXXXXX101" }, // Serre de jardin - À remplacer
-  102: { pid: "CJXXXXXXX102", vid: "CJVXXXXXXX102" }, // Pot de fleurs - À remplacer
-  103: { pid: "CJXXXXXXX103", vid: "CJVXXXXXXX103" }, // Arrosoir - À remplacer
-  104: { pid: "CJXXXXXXX104", vid: "CJVXXXXXXX104" },
-  105: { pid: "CJXXXXXXX105", vid: "CJVXXXXXXX105" },
-  106: { pid: "CJXXXXXXX106", vid: "CJVXXXXXXX106" },
-  107: { pid: "CJXXXXXXX107", vid: "CJVXXXXXXX107" },
-  108: { pid: "CJXXXXXXX108", vid: "CJVXXXXXXX108" },
-  109: { pid: "CJXXXXXXX109", vid: "CJVXXXXXXX109" },
-  110: { pid: "CJXXXXXXX110", vid: "CJVXXXXXXX110" },
-  111: { pid: "CJXXXXXXX111", vid: "CJVXXXXXXX111" },
-  112: { pid: "CJXXXXXXX112", vid: "CJVXXXXXXX112" },
-  113: { pid: "CJXXXXXXX113", vid: "CJVXXXXXXX113" },
-  114: { pid: "CJXXXXXXX114", vid: "CJVXXXXXXX114" },
-  115: { pid: "CJXXXXXXX115", vid: "CJVXXXXXXX115" },
-  116: { pid: "CJXXXXXXX116", vid: "CJVXXXXXXX116" },
-  117: { pid: "CJXXXXXXX117", vid: "CJVXXXXXXX117" },
-  118: { pid: "CJXXXXXXX118", vid: "CJVXXXXXXX118" },
-  119: { pid: "CJXXXXXXX119", vid: "CJVXXXXXXX119" },
-  120: { pid: "CJXXXXXXX120", vid: "CJVXXXXXXX120" },
-  121: { pid: "CJXXXXXXX121", vid: "CJVXXXXXXX121" },
-  122: { pid: "CJXXXXXXX122", vid: "CJVXXXXXXX122" },
-  123: { pid: "CJXXXXXXX123", vid: "CJVXXXXXXX123" },
-  124: { pid: "CJXXXXXXX124", vid: "CJVXXXXXXX124" },
-  125: { pid: "CJXXXXXXX125", vid: "CJVXXXXXXX125" },
-  126: { pid: "CJXXXXXXX126", vid: "CJVXXXXXXX126" },
-  127: { pid: "CJXXXXXXX127", vid: "CJVXXXXXXX127" },
-  128: { pid: "CJXXXXXXX128", vid: "CJVXXXXXXX128" },
-  129: { pid: "CJXXXXXXX129", vid: "CJVXXXXXXX129" },
-  130: { pid: "CJXXXXXXX130", vid: "CJVXXXXXXX130" },
-  131: { pid: "CJXXXXXXX131", vid: "CJVXXXXXXX131" },
-  132: { pid: "CJXXXXXXX132", vid: "CJVXXXXXXX132" },
-  133: { pid: "CJXXXXXXX133", vid: "CJVXXXXXXX133" },
-  134: { pid: "CJXXXXXXX134", vid: "CJVXXXXXXX134" },
-  135: { pid: "CJXXXXXXX135", vid: "CJVXXXXXXX135" },
-  136: { pid: "CJXXXXXXX136", vid: "CJVXXXXXXX136" },
-};
+// CJ_MAP importé depuis ./cj-map.js — édite ce fichier pour ajouter les IDs CJ
 
 // ─── TikTok Events API ────────────────────────────────────────────────────────
 async function sendTikTokPurchaseEvent({ email, amount, currency, orderId, ip, userAgent }) {
@@ -219,39 +178,47 @@ exports.handler = async (event) => {
     console.error('Erreur récupération line items:', e.message);
   }
 
-  // ── Séparer les produits selon leur fournisseur ──
-  const bigbuyItems = [];
-  const cjItems     = [];
+  // ── Trier les produits par fournisseur ──────────────────────────────────────
+  // Règles :
+  //   IDs 1-99  → BigBuy en priorité. Si pas dans BIGBUY_SKU_MAP → essai CJ_MAP → sinon manuel
+  //   IDs 100+  → CJ en priorité. Si pas dans CJ_MAP (ou vid vide) → sinon manuel
+  const bigbuyItems  = [];
+  const cjItems      = [];
   const unknownItems = [];
 
   for (const item of lineItems) {
     const nsId = getNsProductId(item);
     const qty  = item.quantity || 1;
-    const name = item.description || `Produit #${nsId}`;
+    const name = item.description || (nsId ? `Produit #${nsId}` : 'Produit inconnu');
 
     if (!nsId) {
-      unknownItems.push({ name, qty });
+      unknownItems.push({ name, qty, reason: 'ns_product_id manquant dans Stripe' });
       continue;
     }
 
     const numId = parseInt(nsId);
 
-    // IDs 101-199 → CJDropshipping (jardinage)
-    if (numId >= 101 && numId <= 199) {
+    if (numId >= 100) {
+      // Jardinage → CJDropshipping
       const cjRef = CJ_MAP[numId];
-      if (cjRef) {
+      if (cjRef && cjRef.vid) {
         cjItems.push({ nsId: numId, pid: cjRef.pid, vid: cjRef.vid, qty, name });
       } else {
-        unknownItems.push({ name, qty, nsId: numId, reason: 'CJ_MAP manquant' });
+        unknownItems.push({ name, qty, nsId: numId, reason: 'CJ_MAP vide — ajouter pid/vid dans cj-map.js' });
       }
-    }
-    // IDs 1-99 → BigBuy (survie)
-    else {
-      const sku = BIGBUY_SKU_MAP[numId] || BIGBUY_SKU_MAP[nsId] || null;
+    } else {
+      // Survie → BigBuy en priorité
+      const sku = BIGBUY_SKU_MAP[numId] || BIGBUY_SKU_MAP[String(nsId)] || null;
       if (sku) {
         bigbuyItems.push({ sku, qty, name });
       } else {
-        unknownItems.push({ name, qty, nsId: numId, reason: 'BIGBUY_SKU_MAP manquant' });
+        // Fallback : essayer CJ_MAP pour les produits survie aussi sourcés sur CJ
+        const cjRef = CJ_MAP[numId];
+        if (cjRef && cjRef.vid) {
+          cjItems.push({ nsId: numId, pid: cjRef.pid, vid: cjRef.vid, qty, name });
+        } else {
+          unknownItems.push({ name, qty, nsId: numId, reason: 'Ni BIGBUY_SKU_MAP ni CJ_MAP — à commander manuellement' });
+        }
       }
     }
   }
