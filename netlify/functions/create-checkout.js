@@ -73,10 +73,12 @@ exports.handler = async (event) => {
   try {
     // Construire les line_items pour Stripe Checkout
     // On utilise price_data (prix dynamique) pour tous les produits
+    // On passe l'ID produit NatureSurvi dans les métadonnées pour que le webhook BigBuy puisse le retrouver
     const lineItems = cartItems.map((item, i) => {
       const base = [
         [`line_items[${i}][price_data][currency]`, 'eur'],
         [`line_items[${i}][price_data][product_data][name]`, item.name],
+        [`line_items[${i}][price_data][product_data][metadata][ns_product_id]`, String(item.id)],
         [`line_items[${i}][price_data][unit_amount]`, Math.round(item.price * 100)],
         [`line_items[${i}][quantity]`, item.quantity],
       ];

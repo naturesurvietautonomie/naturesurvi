@@ -191,10 +191,12 @@ exports.handler = async (event) => {
     };
   }
 
-  // ── Récupérer les line items Stripe ──
+  // ── Récupérer les line items Stripe (avec expansion produit pour les métadonnées) ──
   let lineItems = [];
   try {
-    const liData = await stripeApiGet(`/v1/checkout/sessions/${paymentId}/line_items?limit=10`);
+    const liData = await stripeApiGet(
+      `/v1/checkout/sessions/${paymentId}/line_items?limit=10&expand[]=data.price.product`
+    );
     lineItems = liData.data || [];
   } catch (e) {
     console.error('Erreur récupération line items:', e.message);
@@ -276,19 +278,28 @@ async function createBigBuyOrder({ address, lineItems, paymentId }) {
   const BB_KEY = process.env.BIGBUY_API_KEY;
 
   // Construire les produits à commander
-  // On cherche le SKU BigBuy depuis les métadonnées ou le nom du produit Stripe
+  // On récupère l'ID produit NatureSurvi depuis les métadonnées (ns_product_id)
+  // puis on fait le mapping vers le SKU BigBuy via SKU_MAP
   const products = [];
   for (const item of lineItems) {
     const productName = item.description || '';
-    // Chercher le SKU dans notre map par correspondance de nom
     let sku = null;
-    for (const [key, skuVal] of Object.entries(SKU_MAP)) {
-      // On fait confiance aux métadonnées si disponibles
-      if (item.price?.metadata?.sku) {
-        sku = item.price.metadata.sku;
-        break;
-      }
+
+    // Priorité 1 : SKU explicite dans les métadonnées du prix
+    if (item.price?.metadata?.sku) {
+      sku = item.price.metadata.sku;
     }
+    // Priorité 2 : ID produit NatureSurvi dans les métadonnées du produit
+    else if (item.price?.product_data?.metadata?.ns_product_id || item.price?.metadata?.ns_product_id) {
+      const nsId = item.price?.product_data?.metadata?.ns_product_id || item.price?.metadata?.ns_product_id;
+      sku = SKU_MAP[parseInt(nsId)] || SKU_MAP[nsId] || null;
+    }
+    // Priorité 3 : chercher via le produit Stripe (si product est un objet expandé)
+    else if (item.price?.product?.metadata?.ns_product_id) {
+      const nsId = item.price.product.metadata.ns_product_id;
+      sku = SKU_MAP[parseInt(nsId)] || SKU_MAP[nsId] || null;
+    }
+
     if (!sku) {
       console.log(`SKU non trouvé pour: ${productName} — commande manuelle nécessaire`);
       continue;
