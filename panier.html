@@ -152,118 +152,149 @@
   <!-- Back to top -->
   <button id="back-to-top" aria-label="Retour en haut">↑</button>
 
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
-  <script>
-    function renderCartPage() {
-      const container = document.getElementById('cart-page-content');
-      const subtitle = document.getElementById('cart-page-subtitle');
-      const items = Cart.getItems();
+  <style>
+  .cart-layout { display:grid; grid-template-columns:1fr 360px; gap:32px; max-width:1100px; margin:0 auto; padding:0 5% 60px; align-items:start; }
+  @media(max-width:860px){.cart-layout{grid-template-columns:1fr;}}
+  .cart-items-list{display:flex;flex-direction:column;gap:14px;}
+  .cart-item{display:grid;grid-template-columns:110px 1fr auto auto;gap:16px;align-items:center;background:white;border-radius:16px;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:box-shadow .2s;}
+  .cart-item:hover{box-shadow:0 4px 20px rgba(0,0,0,.12);}
+  @media(max-width:580px){.cart-item{grid-template-columns:80px 1fr;gap:12px;}.cart-item-total{grid-column:2;text-align:left;}.cart-item-remove{grid-column:2;}}
+  .cart-item-img{width:110px;height:110px;object-fit:cover;border-radius:12px;background:#f5f0e8;}
+  @media(max-width:580px){.cart-item-img{width:80px;height:80px;}}
+  .cart-item-info{display:flex;flex-direction:column;gap:5px;}
+  .cart-item-info .product-category{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#4a7c2d;}
+  .cart-item-info h3{font-size:.95rem;font-weight:700;color:#2d5016;margin:0;line-height:1.3;}
+  .cart-item-info .item-price{font-size:1.05rem;font-weight:800;color:#2d5016;}
+  .cart-item-qty{display:flex;align-items:center;gap:4px;margin-top:4px;}
+  .cart-item-qty .qty-btn{width:30px;height:30px;border:2px solid #ddd;border-radius:8px;background:#f5f0e8;font-size:1rem;font-weight:700;cursor:pointer;color:#2d5016;display:flex;align-items:center;justify-content:center;padding:0;transition:background .15s;}
+  .cart-item-qty .qty-btn:hover{background:#e0d9c8;}
+  .cart-item-qty input{width:44px;height:30px;text-align:center;border:2px solid #ddd;border-radius:8px;font-size:.9rem;font-weight:700;color:#333;}
+  .cart-item-info .item-shipping{font-size:.75rem;color:#aaa;margin-top:2px;}
+  .cart-item-total{font-size:1.05rem;font-weight:800;color:#2d5016;white-space:nowrap;text-align:right;min-width:64px;}
+  .cart-item-remove{background:none;border:none;cursor:pointer;font-size:1.2rem;color:#ccc;padding:6px;border-radius:8px;transition:color .2s,background .2s;}
+  .cart-item-remove:hover{color:#e53e3e;background:#fff5f5;}
+  .cart-clear-btn{background:none;border:2px solid #e5e7eb;color:#9ca3af;padding:9px 18px;border-radius:10px;font-size:.82rem;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+  .cart-clear-btn:hover{border-color:#e53e3e;color:#e53e3e;}
+  .cart-summary{background:white;border-radius:20px;padding:26px;box-shadow:0 4px 24px rgba(0,0,0,.09);position:sticky;top:90px;}
+  .cart-summary h2{font-size:1.05rem;font-weight:800;color:#2d5016;margin:0 0 18px;padding-bottom:14px;border-bottom:2px solid #f0ece0;}
+  .summary-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;font-size:.9rem;color:#555;}
+  .summary-row span:last-child{font-weight:600;color:#333;}
+  .summary-divider{border:none;border-top:2px solid #f0ece0;margin:12px 0;}
+  .summary-total{display:flex;justify-content:space-between;align-items:center;font-size:1.05rem;font-weight:800;color:#2d5016;margin-bottom:18px;}
+  .summary-total span:last-child{font-size:1.25rem;}
+  .free-shipping-bar{background:#f0faf0;border:1.5px solid #a8d672;border-radius:10px;padding:9px 13px;font-size:.8rem;color:#2d5016;margin:10px 0;font-weight:600;line-height:1.4;}
+  .btn-commander{display:block;width:100%;background:linear-gradient(135deg,#e8622a,#c94e1e);color:white;border:none;padding:15px;border-radius:14px;font-size:1rem;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 16px rgba(232,98,42,.3);text-align:center;margin-bottom:10px;}
+  .btn-commander:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 6px 24px rgba(232,98,42,.4);}
+  .btn-commander:disabled{background:#ccc;cursor:not-allowed;box-shadow:none;}
+  .btn-continue{display:block;width:100%;text-align:center;background:#f5f0e8;color:#2d5016;border:2px solid #d4c9a8;padding:11px;border-radius:12px;font-size:.88rem;font-weight:700;text-decoration:none;transition:background .15s;}
+  .btn-continue:hover{background:#e8dfc8;}
+  .cart-secure{margin-top:15px;padding-top:14px;border-top:1px solid #f0ece0;font-size:.76rem;color:#aaa;line-height:1.9;}
+  .cart-empty{text-align:center;padding:80px 20px;}
+  .cart-empty .empty-icon{font-size:4rem;display:block;margin-bottom:16px;}
+  .cart-empty h2{color:#2d5016;margin-bottom:10px;}
+  .cart-empty p{color:#888;max-width:460px;margin:0 auto 26px;}
+</style>
 
-      if (items.length === 0) {
-        subtitle.textContent = '';
-        container.innerHTML = `
-          <div class="cart-empty">
-            <span class="empty-icon">🛒</span>
-            <h2>Votre panier est vide</h2>
-            <p>Vous n'avez pas encore ajouté d'articles à votre panier. Parcourez notre catalogue pour trouver l'équipement parfait pour votre autonomie.</p>
-            <a href="catalogue.html" class="btn btn-primary btn-lg">🏕️ Découvrir nos produits</a>
-          </div>
-        `;
-        return;
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script>
+  async function checkout() {
+    const items = Cart.getItems();
+    if (!items.length) return;
+    const btn = document.getElementById('btn-commander');
+    btn.disabled = true;
+    btn.textContent = 'Redirection en cours...';
+    const cartData = items.map(item => {
+      const p = getProductById(item.id);
+      if (!p) return null;
+      return { id: p.id, name: p.name, price: p.price, image: (p.image && p.image.startsWith('http')) ? p.image : '', quantity: item.quantity };
+    }).filter(Boolean);
+    try {
+      const resp = await fetch('/.netlify/functions/create-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(cartData)
+      });
+      const data = await resp.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error(data.error || 'Erreur inconnue');
       }
-
-      const subtotal = Cart.getSubtotal();
-      const shipping = Cart.getShippingCost();
-      const total = Cart.getTotal();
-      const freeShippingRemaining = subtotal < 50 ? 50 - subtotal : 0;
-
-      subtitle.textContent = `${Cart.getCount()} article${Cart.getCount() > 1 ? 's' : ''} dans votre panier`;
-
-      container.innerHTML = `
-        <div class="cart-layout">
-          <div class="cart-items-list">
-            ${items.map(item => {
-              const product = getProductById(item.id);
-              if (!product) return '';
-              const lineTotal = product.price * item.quantity;
-              return `
-                <div class="cart-item" data-id="${product.id}">
-                  <img src="${product.image}" alt="${product.name}" class="cart-item-img" loading="lazy" width="100" height="100">
-                  <div class="cart-item-info">
-                    <span class="product-category">${product.category}</span>
-                    <h3>${product.name}</h3>
-                    <div class="cart-item-pricing">
-                      <span class="product-price">${formatPrice(product.price)}</span>
-                    </div>
-                    <div class="cart-item-qty">
-                      <button class="qty-btn" onclick="Cart.updateQuantity(${product.id}, ${item.quantity - 1})" aria-label="Diminuer">−</button>
-                      <input type="number" value="${item.quantity}" min="1" max="99" 
-                        onchange="Cart.updateQuantity(${product.id}, parseInt(this.value))" 
-                        aria-label="Quantité de ${product.name}">
-                      <button class="qty-btn" onclick="Cart.updateQuantity(${product.id}, ${item.quantity + 1})" aria-label="Augmenter">+</button>
-                    </div>
-                    <div class="product-shipping">📦 ${product.shipping}</div>
-                  </div>
-                  <div class="cart-item-total">${formatPrice(lineTotal)}</div>
-                  <button class="cart-item-remove" onclick="Cart.removeItem(${product.id})" aria-label="Supprimer ${product.name}">🗑️</button>
-                </div>
-              `;
-            }).join('')}
-            <div style="text-align: center; margin-top: 1rem;">
-              <button class="btn btn-outline" onclick="if(confirm('Vider tout le panier ?')) Cart.clear()">🗑️ Vider le panier</button>
-            </div>
-          </div>
-          <div class="cart-summary">
-            <h2>📋 Récapitulatif</h2>
-            <div class="summary-row">
-              <span>Sous-total</span>
-              <span>${formatPrice(subtotal)}</span>
-            </div>
-
-            <div class="summary-row">
-              <span>Livraison</span>
-              <span>${shipping === 0 ? '✅ Gratuite' : formatPrice(shipping)}</span>
-            </div>
-            ${freeShippingRemaining > 0 ? `
-            <div class="free-shipping-notice">
-              🚚 Plus que ${formatPrice(freeShippingRemaining)} pour la livraison gratuite !
-            </div>` : `
-            <div class="free-shipping-notice">
-              ✅ Vous bénéficiez de la livraison gratuite !
-            </div>`}
-            <hr class="summary-divider">
-            <div class="summary-total">
-              <span>Total</span>
-              <span>${formatPrice(total)}</span>
-            </div>
-            <button class="btn btn-primary btn-lg" onclick="alert('🎉 Merci pour votre commande ! (Démo — pas de paiement réel)')">
-              💳 Commander — ${formatPrice(total)}
-            </button>
-            <a href="catalogue.html" class="btn btn-outline" style="width:100%; margin-top: 0.5rem;">
-              ← Continuer mes achats
-            </a>
-            <div class="cart-secure">
-              🔒 Paiement sécurisé SSL 256 bits<br>
-              🔄 Satisfait ou remboursé 30 jours
-            </div>
-          </div>
-        </div>
-      `;
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = 'Erreur — Réessayer';
+      setTimeout(() => { btn.disabled = false; btn.textContent = '💳 Commander'; }, 3000);
+      console.error(err);
     }
+  }
 
-    // Initial render
-    renderCartPage();
+  function renderCartPage() {
+    const container = document.getElementById('cart-page-content');
+    const subtitle = document.getElementById('cart-page-subtitle');
+    const items = Cart.getItems();
+    if (items.length === 0) {
+      subtitle.textContent = '';
+      container.innerHTML = '<div class="cart-empty"><span class="empty-icon">🛒</span><h2>Votre panier est vide</h2><p>Parcourez notre catalogue pour trouver l\'équipement parfait.</p><a href="catalogue.html" class="btn btn-primary btn-lg">🏕️ Découvrir nos produits</a></div>';
+      return;
+    }
+    const subtotal = Cart.getSubtotal();
+    const shipping = Cart.getShippingCost();
+    const total = Cart.getTotal();
+    const freeLeft = subtotal < 50 ? 50 - subtotal : 0;
+    const count = Cart.getCount();
+    subtitle.textContent = count + ' article' + (count > 1 ? 's' : '') + ' dans votre panier';
+    let itemsHtml = '';
+    items.forEach(function(item) {
+      const p = getProductById(item.id);
+      if (!p) return;
+      const lineTotal = p.price * item.quantity;
+      itemsHtml += '<div class="cart-item">' +
+        '<img src="' + p.image + '" alt="' + p.name + '" class="cart-item-img" loading="lazy">' +
+        '<div class="cart-item-info">' +
+          '<span class="product-category">' + p.category + '</span>' +
+          '<h3>' + p.name + '</h3>' +
+          '<span class="item-price">' + formatPrice(p.price) + '</span>' +
+          '<div class="cart-item-qty">' +
+            '<button class="qty-btn" onclick="Cart.updateQuantity(' + p.id + ',' + (item.quantity-1) + ')">−</button>' +
+            '<input type="number" value="' + item.quantity + '" min="1" max="99" onchange="Cart.updateQuantity(' + p.id + ',parseInt(this.value))">' +
+            '<button class="qty-btn" onclick="Cart.updateQuantity(' + p.id + ',' + (item.quantity+1) + ')">+</button>' +
+          '</div>' +
+          '<span class="item-shipping">📦 ' + p.shipping + '</span>' +
+        '</div>' +
+        '<div class="cart-item-total">' + formatPrice(lineTotal) + '</div>' +
+        '<button class="cart-item-remove" onclick="Cart.removeItem(' + p.id + ')" title="Supprimer">🗑️</button>' +
+      '</div>';
+    });
+    const freeShippingMsg = freeLeft > 0
+      ? '🚚 Plus que <strong>' + formatPrice(freeLeft) + '</strong> pour la livraison gratuite !'
+      : '✅ Livraison gratuite débloquée !';
+    const shippingDisplay = shipping === 0 ? '<span style="color:#2d5016">✅ Gratuite</span>' : formatPrice(shipping);
+    container.innerHTML =
+      '<div class="cart-layout">' +
+        '<div class="cart-items-list">' +
+          itemsHtml +
+          '<div style="text-align:right;margin-top:6px;"><button class="cart-clear-btn" onclick="if(confirm(\'Vider le panier ?\'))Cart.clear()">🗑️ Vider le panier</button></div>' +
+        '</div>' +
+        '<div class="cart-summary">' +
+          '<h2>📋 Récapitulatif</h2>' +
+          '<div class="summary-row"><span>Sous-total (' + count + ' art.)</span><span>' + formatPrice(subtotal) + '</span></div>' +
+          '<div class="summary-row"><span>Livraison</span><span>' + shippingDisplay + '</span></div>' +
+          '<div class="free-shipping-bar">' + freeShippingMsg + '</div>' +
+          '<hr class="summary-divider">' +
+          '<div class="summary-total"><span>Total TTC</span><span>' + formatPrice(total) + '</span></div>' +
+          '<button id="btn-commander" class="btn-commander" onclick="checkout()">💳 Commander — ' + formatPrice(total) + '</button>' +
+          '<a href="catalogue.html" class="btn-continue">← Continuer mes achats</a>' +
+          '<div class="cart-secure">🔒 Paiement sécurisé par Stripe<br>🔄 Satisfait ou remboursé 30 jours<br>🚚 Livraison suivie</div>' +
+        '</div>' +
+      '</div>';
+  }
 
-    // Navbar scroll
-    window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
-  </script>
+  renderCartPage();
+  window.addEventListener('scroll', function() {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+</script>
   <script src="js/analytics.js"></script>
 </body>
 </html>
-
-
-
-
