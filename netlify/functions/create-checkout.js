@@ -74,13 +74,17 @@ exports.handler = async (event) => {
     // Construire les line_items pour Stripe Checkout
     // On utilise price_data (prix dynamique) pour tous les produits
     const lineItems = cartItems.map((item, i) => {
-      return [
+      const base = [
         [`line_items[${i}][price_data][currency]`, 'eur'],
         [`line_items[${i}][price_data][product_data][name]`, item.name],
-        [`line_items[${i}][price_data][product_data][images][0]`, item.image || ''],
         [`line_items[${i}][price_data][unit_amount]`, Math.round(item.price * 100)],
         [`line_items[${i}][quantity]`, item.quantity],
       ];
+      // N'ajouter l'image que si elle est une URL absolue valide
+      if (item.image && item.image.startsWith('https://')) {
+        base.push([`line_items[${i}][price_data][product_data][images][0]`, item.image]);
+      }
+      return base;
     }).flat();
 
     const params = Object.fromEntries([
