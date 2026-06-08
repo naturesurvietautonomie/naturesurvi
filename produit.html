@@ -565,7 +565,7 @@
   function loadProduct() {
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get('id'));
-    const product = PRODUCTS.find(p => p.id === id);
+    const product = ALL_PRODUCTS.find(p => p.id === id);
 
     if (!product) {
       document.querySelector('.product-page').innerHTML = '<p style="text-align:center;padding:60px">Produit introuvable. <a href="catalogue.html">Retour au catalogue</a></p>';
@@ -778,13 +778,13 @@
   }
 
   function loadRelated(product) {
-    const related = PRODUCTS
+    const related = ALL_PRODUCTS
       .filter(p => p.id !== product.id && p.category === product.category)
       .slice(0, 4);
 
     // Si pas assez dans la même catégorie, compléter avec d'autres
     if (related.length < 4) {
-      const others = PRODUCTS
+      const others = ALL_PRODUCTS
         .filter(p => p.id !== product.id && p.category !== product.category)
         .slice(0, 4 - related.length);
       related.push(...others);
@@ -810,9 +810,7 @@
   function addToCartFromPage() {
     if (!currentProduct) return;
     const qty = parseInt(document.getElementById('qty').value);
-    for (let i = 0; i < qty; i++) {
-      Cart.add(currentProduct.id);
-    }
+    Cart.addItem(currentProduct.id, qty);
     Cart.toggleDrawer();
   }
 
@@ -963,12 +961,9 @@
     if (link) {
       window.location.href = link;
     } else {
-      document.getElementById('stripe-modal').classList.add('open');
-      const price = window.selectedVariant ? window.selectedVariant.price : currentProduct.price;
-      const total = (price * qty).toFixed(2).replace('.', ',');
-      document.getElementById('order-summary').innerHTML =
-        '<strong>' + currentProduct.name + '</strong><br>' +
-        'Quantit\u00e9 : ' + qty + ' \u00d7 ' + price.toFixed(2).replace('.', ',') + ' \u20ac = <strong>' + total + ' \u20ac</strong>';
+      // Pas de lien Stripe pour ce produit : ajouter au panier et rediriger
+      Cart.addItem(currentProduct.id, qty);
+      window.location.href = 'panier.html';
     }
   }
 
