@@ -289,13 +289,135 @@ exports.handler = async (event) => {
   const statusTag = allAuto && !hasManual ? '✅ Auto' : hasManual ? '⚠️ Partiel' : '✅ Auto';
 
   if (process.env.RESEND_API_KEY) {
+    // Email interne récap (toi)
     try {
       await sendResendEmail({
+        to:      ['naturesurvi@gmail.com'],
         subject: `🛒 Commande ${amount}€ — NatureSurvi ${statusTag}`,
-        body: emailBody
+        text:    emailBody
       });
     } catch (e) {
-      console.error('Erreur Resend:', e.message);
+      console.error('Erreur Resend récap:', e.message);
+    }
+
+    // Email confirmation client
+    if (customerEmail) {
+      try {
+        const itemsRows = lineItems.map(item => {
+          const unitPrice = item.amount_total ? (item.amount_total / item.quantity / 100).toFixed(2) : '0.00';
+          const totalItem = item.amount_total ? (item.amount_total / 100).toFixed(2) : '0.00';
+          return `
+            <tr>
+              <td style="padding:10px 8px;border-bottom:1px solid #f0f0f0;color:#333;">${item.description || 'Produit'}</td>
+              <td style="padding:10px 8px;border-bottom:1px solid #f0f0f0;text-align:center;color:#555;">${item.quantity}</td>
+              <td style="padding:10px 8px;border-bottom:1px solid #f0f0f0;text-align:right;color:#333;">${unitPrice}€</td>
+              <td style="padding:10px 8px;border-bottom:1px solid #f0f0f0;text-align:right;font-weight:600;color:#2d6a4f;">${totalItem}€</td>
+            </tr>`;
+        }).join('');
+
+        const shippingCost = session.total_details?.amount_shipping
+          ? (session.total_details.amount_shipping / 100).toFixed(2)
+          : '0.00';
+        const subtotalAmount = session.amount_subtotal
+          ? (session.amount_subtotal / 100).toFixed(2)
+          : amount;
+
+        const addrHtml = address
+          ? `${address.firstName} ${address.lastName}<br>${address.address}${address.addressMore ? '<br>' + address.addressMore : ''}<br>${address.postcode} ${address.city}<br>${address.country}`
+          : 'Non fournie';
+
+        const htmlConfirmation = `<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#f5f5f5;font-family:Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:30px 0;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+        
+        <!-- Header -->
+        <tr><td style="background:linear-gradient(135deg,#2d6a4f,#40916c);padding:35px 40px;text-align:center;">
+          <h1 style="margin:0;color:#fff;font-size:26px;letter-spacing:1px;">🌿 NatureSurvi</h1>
+          <p style="margin:8px 0 0;color:#b7e4c7;font-size:14px;">naturesurvie.net</p>
+        </td></tr>
+
+        <!-- Titre -->
+        <tr><td style="padding:35px 40px 20px;text-align:center;">
+          <div style="font-size:48px;margin-bottom:12px;">✅</div>
+          <h2 style="margin:0;color:#2d6a4f;font-size:22px;">Commande confirmée !</h2>
+          <p style="margin:10px 0 0;color:#666;font-size:15px;">Merci ${customerName ? customerName.split(' ')[0] : ''} pour votre achat.</p>
+          <p style="margin:6px 0 0;color:#999;font-size:13px;">Référence : <strong style="color:#333;">${paymentId.substring(0, 20)}...</strong></p>
+        </td></tr>
+
+        <!-- Produits -->
+        <tr><td style="padding:0 40px 25px;">
+          <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8e8e8;border-radius:8px;overflow:hidden;">
+            <thead>
+              <tr style="background:#f8f8f8;">
+                <th style="padding:10px 8px;text-align:left;font-size:12px;color:#888;font-weight:600;text-transform:uppercase;">Produit</th>
+                <th style="padding:10px 8px;text-align:center;font-size:12px;color:#888;font-weight:600;text-transform:uppercase;">Qté</th>
+                <th style="padding:10px 8px;text-align:right;font-size:12px;color:#888;font-weight:600;text-transform:uppercase;">Prix</th>
+                <th style="padding:10px 8px;text-align:right;font-size:12px;color:#888;font-weight:600;text-transform:uppercase;">Total</th>
+              </tr>
+            </thead>
+            <tbody>${itemsRows}</tbody>
+          </table>
+        </td></tr>
+
+        <!-- Totaux -->
+        <tr><td style="padding:0 40px 25px;">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding:5px 0;color:#666;font-size:14px;">Sous-total</td>
+              <td style="padding:5px 0;text-align:right;color:#333;font-size:14px;">${subtotalAmount}€</td>
+            </tr>
+            <tr>
+              <td style="padding:5px 0;color:#666;font-size:14px;">Livraison</td>
+              <td style="padding:5px 0;text-align:right;color:#333;font-size:14px;">${parseFloat(shippingCost) === 0 ? '🎉 Gratuite' : shippingCost + '€'}</td>
+            </tr>
+            <tr>
+              <td style="padding:12px 0 5px;color:#2d6a4f;font-size:16px;font-weight:700;border-top:2px solid #e8e8e8;">Total payé</td>
+              <td style="padding:12px 0 5px;text-align:right;color:#2d6a4f;font-size:18px;font-weight:700;border-top:2px solid #e8e8e8;">${amount}€</td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Adresse -->
+        <tr><td style="padding:0 40px 30px;">
+          <div style="background:#f8fffe;border:1px solid #b7e4c7;border-radius:8px;padding:18px;">
+            <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#2d6a4f;text-transform:uppercase;letter-spacing:0.5px;">📦 Adresse de livraison</p>
+            <p style="margin:0;color:#444;font-size:14px;line-height:1.6;">${addrHtml}</p>
+          </div>
+        </td></tr>
+
+        <!-- Délai -->
+        <tr><td style="padding:0 40px 30px;text-align:center;">
+          <div style="background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:16px;">
+            <p style="margin:0;color:#795548;font-size:14px;">🚚 <strong>Délai de livraison estimé : 5 à 10 jours ouvrés</strong></p>
+            <p style="margin:6px 0 0;color:#999;font-size:12px;">Vous recevrez un email avec votre numéro de suivi dès l'expédition.</p>
+          </div>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td style="background:#f8f8f8;padding:20px 40px;text-align:center;border-top:1px solid #eee;">
+          <p style="margin:0;color:#999;font-size:12px;">Une question ? Contactez-nous à <a href="mailto:naturesurvi@gmail.com" style="color:#2d6a4f;">naturesurvi@gmail.com</a></p>
+          <p style="margin:8px 0 0;color:#ccc;font-size:11px;">© 2026 NatureSurvi — naturesurvie.net</p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
+
+        await sendResendEmailHtml({
+          to:      [customerEmail],
+          subject: `✅ Confirmation de commande — NatureSurvi`,
+          html:    htmlConfirmation
+        });
+        console.log('✅ Email confirmation envoyé à', customerEmail);
+      } catch (e) {
+        console.error('Erreur email client:', e.message);
+      }
     }
   }
 
@@ -490,14 +612,27 @@ function httpPostJsonCJ(path, token, payload) {
   }, payload);
 }
 
-function sendResendEmail({ subject, body }) {
+function sendResendEmail({ to, subject, text }) {
+  return sendResendRaw({
+    from:    'NatureSurvi <onboarding@resend.dev>',
+    to:      to || ['naturesurvi@gmail.com'],
+    subject,
+    text
+  });
+}
+
+function sendResendEmailHtml({ to, subject, html }) {
+  return sendResendRaw({
+    from:    'NatureSurvi <onboarding@resend.dev>',
+    to,
+    subject,
+    html
+  });
+}
+
+function sendResendRaw(payload) {
   return new Promise((resolve, reject) => {
-    const data = JSON.stringify({
-      from:    'NatureSurvi <onboarding@resend.dev>',
-      to:      ['naturesurvi@gmail.com'],
-      subject,
-      text:    body
-    });
+    const data = JSON.stringify(payload);
     const options = {
       hostname: 'api.resend.com',
       path:     '/emails',
