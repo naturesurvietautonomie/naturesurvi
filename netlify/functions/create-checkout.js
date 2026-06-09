@@ -71,9 +71,12 @@ exports.handler = async (event) => {
   }
 
   try {
+    // Calculer le sous-total pour déterminer les frais de port
+    const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const FREE_SHIPPING_THRESHOLD = 50; // gratuit au-dessus de 50€
+    const SHIPPING_COST = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : 499; // 4,99€ en centimes
+
     // Construire les line_items pour Stripe Checkout
-    // On utilise price_data (prix dynamique) pour tous les produits
-    // On passe l'ID produit NatureSurvi dans les métadonnées pour que le webhook BigBuy puisse le retrouver
     const lineItems = cartItems.map((item, i) => {
       const base = [
         [`line_items[${i}][price_data][currency]`, 'eur'],
@@ -82,12 +85,15 @@ exports.handler = async (event) => {
         [`line_items[${i}][price_data][unit_amount]`, Math.round(item.price * 100)],
         [`line_items[${i}][quantity]`, item.quantity],
       ];
-      // N'ajouter l'image que si elle est une URL absolue valide
       if (item.image && item.image.startsWith('https://')) {
         base.push([`line_items[${i}][price_data][product_data][images][0]`, item.image]);
       }
       return base;
     }).flat();
+
+    const shippingLabel = SHIPPING_COST === 0
+      ? '🚚 Livraison gratuite (5-7 jours)'
+      : `🚚 Livraison standard (5-7 jours) — 4,99€`;
 
     const params = Object.fromEntries([
       ['mode', 'payment'],
@@ -99,9 +105,9 @@ exports.handler = async (event) => {
       ['shipping_address_collection[allowed_countries][3]', 'LU'],
       ['shipping_address_collection[allowed_countries][4]', 'MC'],
       ['shipping_options[0][shipping_rate_data][type]', 'fixed_amount'],
-      ['shipping_options[0][shipping_rate_data][fixed_amount][amount]', '0'],
+      ['shipping_options[0][shipping_rate_data][fixed_amount][amount]', String(SHIPPING_COST)],
       ['shipping_options[0][shipping_rate_data][fixed_amount][currency]', 'eur'],
-      ['shipping_options[0][shipping_rate_data][display_name]', 'Livraison standard (5-7 jours)'],
+      ['shipping_options[0][shipping_rate_data][display_name]', shippingLabel],
       ['locale', 'fr'],
       ...lineItems
     ]);
