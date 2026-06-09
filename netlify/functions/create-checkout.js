@@ -74,7 +74,7 @@ exports.handler = async (event) => {
     // Calculer le sous-total pour déterminer les frais de port
     const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     const FREE_SHIPPING_THRESHOLD = 50; // gratuit au-dessus de 50€
-    const SHIPPING_COST = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : 499; // 4,99€ en centimes
+    const SHIPPING_COST = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : 590; // 5,90€ en centimes
 
     // Construire les line_items pour Stripe Checkout
     const lineItems = cartItems.map((item, i) => {
@@ -93,7 +93,7 @@ exports.handler = async (event) => {
 
     const shippingLabel = SHIPPING_COST === 0
       ? '🚚 Livraison gratuite (5-7 jours)'
-      : `🚚 Livraison standard (5-7 jours) — 4,99€`;
+      : '🚚 Livraison standard (5-7 jours) — 5,90€';
 
     const params = Object.fromEntries([
       ['mode', 'payment'],
