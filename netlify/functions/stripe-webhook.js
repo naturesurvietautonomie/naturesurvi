@@ -244,7 +244,7 @@ exports.handler = async (event) => {
       console.error('❌ Erreur CJ:', e.message);
     }
   } else if (cjItems.length > 0) {
-    console.log('⚠️ CJ skip — CJ_API_EMAIL ou CJ_API_PASSWORD manquant');
+    console.log('⚠️ CJ skip — CJ_API_EMAIL ou CJ_API_KEY manquant dans les variables Netlify');
   }
 
   // ── Envoyer email récap ──
@@ -373,11 +373,12 @@ async function createBigBuyOrder({ address, items, paymentId }) {
 }
 
 // ─── CJDropshipping — Auth ────────────────────────────────────────────────────
+// Authentification via email + clé API (format: email@api@apikey)
+// Variables Netlify requises : CJ_API_EMAIL + CJ_API_KEY
 async function getCJAccessToken() {
-  const body = JSON.stringify({
-    email:    process.env.CJ_API_EMAIL,
-    password: process.env.CJ_API_PASSWORD
-  });
+  const email  = process.env.CJ_API_EMAIL;
+  const apiKey = process.env.CJ_API_KEY; // ex: CJ5496793@api@91c3671885c94af3b7cd8a4b022d0454
+  const body = JSON.stringify({ email, password: apiKey });
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'developers.cjdropshipping.com',
