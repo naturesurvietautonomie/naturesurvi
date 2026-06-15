@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -272,7 +272,7 @@
     // Rendu initial
     function renderGrid() {
       // Inclure survie (1-79) + énergie solaire (90-96) — exclure jardinage (101+)
-      let products = PRODUCTS.filter(p => p.id < 100 || (p.id >= 200 && p.id <= 299));
+      let products = PRODUCTS.filter(p => (p.id < 80) || (p.id >= 90 && p.id < 100) || (p.id >= 200 && p.id <= 299));
 
       // Filtre catégorie
       if (currentCat !== 'all') {
@@ -371,4 +371,5 @@
   <script src="js/analytics.js"></script>
 </body>
 </html>
+
 
