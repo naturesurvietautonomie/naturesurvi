@@ -995,6 +995,150 @@ const PRODUCTS = [
   },
 
   // ============================================================
+  // ÉNERGIE SOLAIRE — id 90-96 (nouveau)
+  // ============================================================
+  {
+    id: 90,
+    name: "Station d'énergie portable 300Wh",
+    price: 189,
+    category: "Énergie solaire",
+    description: "Station d'énergie portable 296Wh / 300W. Batterie LiFePO4 longue durée, sortie AC 220V, USB-C 60W, USB-A, DC 12V. Recharge solaire, voiture ou secteur. Silencieuse, idéale camping et coupures de courant.",
+    badges: ["Essentiel", "Nouveau"],
+    rating: 4.7,
+    reviews: 312,
+    image: "img/station_300wh.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "3.5 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 145.00,
+    variants: [
+      { label: "300Wh — Solo camping", description: "Station 300Wh — recharge téléphones ×20, ordinateur ×2, lampe ×60h. Prise AC 220V, USB-C PD60W, DC 12V. Recharge complète en 6h solaire.", price: 189, supplierPrice: 145.00, image: "img/station_300wh.jpg" },
+      { label: "500Wh — Famille / autonomie longue", description: "Station 500Wh — alimente mini-frigo, CPAP, TV LED. Sortie 500W continu, pointe 1000W. Idéale week-end prolongé ou secours.", price: 289, supplierPrice: 220.00, image: "img/station_300wh.jpg" }
+    ]
+  },
+  {
+    id: 91,
+    name: "Panneau solaire pliable 100W monocristallin",
+    price: 79,
+    category: "Énergie solaire",
+    description: "Panneau solaire portable pliable 100W monocristallin ETFE. Efficacité 23%, connecteurs MC4 + USB-A + USB-C PD. Imperméable IPX4, poids 2.5 kg. Compatible toutes stations portables.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.6,
+    reviews: 198,
+    image: "img/panneau_100w.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "2.5 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 60.00,
+    variants: [
+      { label: "100W — 2 panneaux pliables", description: "Panneau 100W — 2 feuilles pliables avec poignée intégrée. Sortie USB-A/USB-C/DC. Charge station 300Wh en ~4h par beau temps.", price: 79, supplierPrice: 60.00, image: "img/panneau_100w.jpg" },
+      { label: "200W — 4 panneaux pliables", description: "Panneau 200W — 4 feuilles, charge rapide en ~3h. Idéal pour les stations 500Wh et plus. Câble DC5521 inclus, adaptateurs universels.", price: 139, supplierPrice: 105.00, image: "img/panneau_100w.jpg" }
+    ]
+  },
+  {
+    id: 92,
+    name: "Kit solaire tout-en-un 200W + station 300Wh",
+    price: 249,
+    category: "Énergie solaire",
+    description: "Kit complet autonomie énergétique : panneau solaire 200W + station 300Wh. Tout inclus, prêt à l'emploi. Recharge complète en 2-3h de soleil. Pour camping-car, chalet, survie ou secours.",
+    badges: ["Bestseller", "Essentiel"],
+    rating: 4.8,
+    reviews: 167,
+    image: "img/kit_solaire_200w.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "6 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 190.00,
+    variants: [
+      { label: "200W + 300Wh — Débutant", description: "Kit débutant : panneau 200W + station 300Wh. Parfait pour téléphones, lampes, ventilateurs. Câbles inclus, installation 0 technique.", price: 249, supplierPrice: 190.00, image: "img/kit_solaire_200w.jpg" },
+      { label: "200W + 500Wh — Autonomie totale", description: "Kit autonomie : panneau 200W + station 500Wh. Alimente réfrigérateur 50L pendant 8h, TV LED 10h, lumière 3 jours. Solution complète.", price: 359, supplierPrice: 275.00, image: "img/kit_solaire_200w.jpg" }
+    ]
+  },
+  {
+    id: 93,
+    name: "Chargeur solaire USB pliable 21W",
+    price: 32,
+    category: "Énergie solaire",
+    description: "Chargeur solaire pliable 21W 3 panneaux monocristallins. Dual USB-A + USB-C, charge 2 appareils simultanément. Imperméable, crochet mousqueton, poids 380g. Randonnée et bivouac.",
+    badges: ["Bestseller"],
+    rating: 4.5,
+    reviews: 445,
+    image: "img/chargeur_solaire_21w.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "380 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 24.00,
+    variants: [
+      { label: "21W — Dual USB", description: "Chargeur solaire 21W dual USB-A + USB-C. Plie en format livre, s'accroche au sac à dos. Charge smartphone en 2h de soleil direct.", price: 32, supplierPrice: 24.00, image: "img/chargeur_solaire_21w.jpg" },
+      { label: "40W — USB-C PD + USB-A QC3.0", description: "Chargeur solaire 40W — charge rapide PD45W. Compatible tablette, laptop 13\". Tissu ETFE haute durabilité, résistant à la pluie.", price: 52, supplierPrice: 39.00, image: "img/chargeur_solaire_21w.jpg" }
+    ]
+  },
+  {
+    id: 94,
+    name: "Batterie solaire de secours 20000mAh",
+    price: 28,
+    category: "Énergie solaire",
+    description: "Batterie externe solaire 20000mAh avec panneau intégré. Charge 5-6 smartphones, LED SOS, imperméable IP66. Recharge solaire ou USB-C. Indispensable pour les situations d'urgence.",
+    badges: ["Essentiel"],
+    rating: 4.6,
+    reviews: 523,
+    image: "img/batterie_solaire_20000.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "420 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 21.00,
+    variants: [
+      { label: "20000mAh — Compact", description: "Batterie solaire 20000mAh — charge ×5 smartphones, lampe SOS 3 modes, boussole intégrée. Recharge solaire d'appoint ou USB-C.", price: 28, supplierPrice: 21.00, image: "img/batterie_solaire_20000.jpg" },
+      { label: "40000mAh — Grand volume", description: "Batterie solaire 40000mAh — pour les expéditions longues. Recharge tablette ×4, éclair LED, câbles micro-USB/Lightning/USB-C inclus.", price: 42, supplierPrice: 32.00, image: "img/batterie_solaire_20000.jpg" }
+    ]
+  },
+  {
+    id: 95,
+    name: "Lampe solaire outdoor rechargeable 2000 lm",
+    price: 22,
+    category: "Énergie solaire",
+    description: "Lampe solaire rechargeable USB-C ou énergie solaire. 2000 lumens, 5 modes, pivot 360°, imperméable IP65. Autonomie 10h en mode moyen. Idéale pour terrasse, jardin et camping.",
+    badges: ["Nouveau"],
+    rating: 4.5,
+    reviews: 267,
+    image: "img/lampe_solaire_2000.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "280 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 16.00,
+    variants: [
+      { label: "2000 lm — Jardin / camping", description: "Lampe solaire 2000 lm pivot 360° — éclaire tente ou camping 6×6m. Détecteur de mouvement optionnel, accrochage tente inclus.", price: 22, supplierPrice: 16.00, image: "img/lampe_solaire_2000.jpg" },
+      { label: "4000 lm — Chantier / grande zone", description: "Lampe solaire 4000 lm — pour grandes surfaces. Batterie intégrée 10000mAh, 12h autonomie pleine puissance. Trépied réglable inclus.", price: 38, supplierPrice: 28.00, image: "img/lampe_solaire_2000.jpg" }
+    ]
+  },
+  {
+    id: 96,
+    name: "Contrôleur de charge solaire MPPT 30A",
+    price: 25,
+    category: "Énergie solaire",
+    description: "Régulateur de charge solaire MPPT 30A 12V/24V. Efficacité 98%, protection surcharge, afficheur LCD. Connecte panneau solaire à batterie 12V. Pour installations fixes camping-car, chalet.",
+    badges: ["Nouveau"],
+    rating: 4.4,
+    reviews: 134,
+    image: "img/controleur_mppt.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "350 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 19.00,
+    variants: [
+      { label: "30A — 12V/24V standard", description: "Contrôleur MPPT 30A — pour installations jusqu'à 360W (12V) ou 720W (24V). LCD intégré, 8 types de batteries, entrée USB 5V/2A.", price: 25, supplierPrice: 19.00, image: "img/controleur_mppt.jpg" },
+      { label: "60A — Grande installation", description: "Contrôleur MPPT 60A — pour installations camping-car ou chalet 750W à 1440W. Bluetooth intégré, app mobile, historique 30 jours.", price: 45, supplierPrice: 34.00, image: "img/controleur_mppt.jpg" }
+    ]
+  },
+
+  // ============================================================
   // NOUVEAUX PRODUITS SURVIE — id 72-79 (manquants)
   // ============================================================
   {
@@ -1451,26 +1595,314 @@ const PRODUCTS_JARDINAGE = [
   { id: 133, name: "Composteur de jardin 300L (grande gamme)", price: 35.00, category: "Jardinage", description: "Plastique recyclé, trappe récupération, couvercle anti-pluie. 300L / 400L / 600L.", badges: ["Bio"], rating: 4.5, reviews: 134, image: "img/jard_composteur.jpg", shipping: "Livraison 5-7 jours", weight: "4 kg", inStock: true },
   { id: 134, name: "Kit irrigation goutte à goutte 30 plantes", price: 12.00, category: "Jardinage", description: "Goutteurs réglables, économise 70% d'eau. 15 à 100 plantes.", badges: ["Essentiel"], rating: 4.6, reviews: 189, image: "img/jard_irrigation.jpg", shipping: "Livraison 2-3 jours", weight: "600 g", inStock: true },
   { id: 135, name: "Pots géotextiles pour potager", price: 12.00, category: "Jardinage", description: "Air-pruning, drainage parfait, UV-résistants. ×5 : 10L / 20L / 30L, noir ou vert.", badges: [], rating: 4.4, reviews: 98, image: "img/jard_pots.jpg", shipping: "Livraison 2-3 jours", weight: "400 g", inStock: true },
-  { id: 136, name: "Programmateur d'arrosage automatique", price: 22.00, category: "Jardinage", description: "6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.", badges: ["Nouveau"], rating: 4.5, reviews: 67, image: "img/jard_timer.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true }
+  { id: 136, name: "Programmateur d'arrosage automatique", price: 22.00, category: "Jardinage", description: "6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.", badges: ["Nouveau"], rating: 4.5, reviews: 67, image: "img/jard_timer.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true },
+
+  // === CULTURE D'INTÉRIEUR & ENGRAIS — id 137-143 ===
+  {
+    id: 137,
+    name: "Tente de culture indoor 80×80×160 cm",
+    price: 45,
+    category: "Culture indoor",
+    description: "Tente de culture indoor 80×80×160 cm — revêtement Mylar haute réflexion 97%. Barre de suspension incluse, fermeture éclair anti-lumière, ouvertures ventilation et câbles. Structure acier renforcé.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.6,
+    reviews: 312,
+    image: "img/tente_culture.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "4.5 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 34.00,
+    variants: [
+      { label: "80×80×160 cm — Solo", description: "Tente culture 80×80×160 cm — pour 2-4 pieds. Mylar 97% réflexion, 2 ouvertures ventilation, treillis de bambou inclus.", price: 45, supplierPrice: 34.00, image: "img/tente_culture.jpg" },
+      { label: "120×120×200 cm — Semi-pro", description: "Tente culture 120×120×200 cm — jusqu'à 9 pieds. Idéale pour production légumes toute l'année. Double fermeture, accès latéral.", price: 75, supplierPrice: 57.00, image: "img/tente_culture.jpg" }
+    ]
+  },
+  {
+    id: 138,
+    name: "Kit culture indoor complet LED 600W",
+    price: 89,
+    category: "Culture indoor",
+    description: "Kit culture indoor complet : tente 80×80×160 cm + lampe LED 600W spectre complet + ventilateur 150mm + filtre à charbon. Tout-en-un pour débutants et confirmés.",
+    badges: ["Bestseller", "Nouveau"],
+    rating: 4.7,
+    reviews: 189,
+    image: "img/kit_culture_indoor.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "7 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 68.00,
+    variants: [
+      { label: "600W — Tente 80×80 — Kit débutant", description: "Kit complet 600W : tente Mylar + lampe LED spectre complet + ventilo 150mm + filtre charbon + minuterie. Prêt à pousser en 30 min.", price: 89, supplierPrice: 68.00, image: "img/kit_culture_indoor.jpg" },
+      { label: "1200W — Tente 120×120 — Kit avancé", description: "Kit avancé 1200W — double lampe LED 600W, tente 120×120, ventilation renforcée, contrôleur dimmer. Production optimale toute l'année.", price: 149, supplierPrice: 114.00, image: "img/kit_culture_indoor.jpg" }
+    ]
+  },
+  {
+    id: 139,
+    name: "Lampe horticole LED spectre complet 300W",
+    price: 39,
+    category: "Culture indoor",
+    description: "Lampe de croissance LED spectre complet 300W — 588 LEDs blanc chaud + blanc froid + rouge + UV + IR. Dimmable 0-100%, minuterie intégrée. Couvre jusqu'à 90×90 cm. Rendement optimal.",
+    badges: ["Bestseller"],
+    rating: 4.6,
+    reviews: 567,
+    image: "img/lampe_led_300w.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "1.2 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 29.00,
+    variants: [
+      { label: "300W — 60×60 cm de couverture", description: "Lampe LED 300W — 588 diodes spectre complet. Dimmable 10 niveaux, minuterie 4/8/12/16h, refroidissement passif silencieux.", price: 39, supplierPrice: 29.00, image: "img/lampe_led_300w.jpg" },
+      { label: "600W — 120×60 cm de couverture", description: "Lampe LED 600W — couvre 1.2m×0.6m. Idéale pour 6-9 pieds, floraison intensive. Réflecteur aluminium, driver Samsung intégré.", price: 65, supplierPrice: 49.00, image: "img/lampe_led_300w.jpg" }
+    ]
+  },
+  {
+    id: 140,
+    name: "Extracteur d'air Ø150mm avec variateur",
+    price: 28,
+    category: "Culture indoor",
+    description: "Ventilateur extracteur d'air 150mm avec variateur de vitesse. 280m³/h, silencieux 35dB, moteur EC brushless. Élimine odeurs et régule la température en tente de culture.",
+    badges: ["Essentiel"],
+    rating: 4.5,
+    reviews: 234,
+    image: "img/extracteur_150.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "1.8 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 21.00,
+    variants: [
+      { label: "Ø150 mm — 280m³/h", description: "Extracteur 150mm — 280m³/h, bruit 35dB. Câble de variateur intégré. Idéal pour tentes jusqu'à 120×120 cm.", price: 28, supplierPrice: 21.00, image: "img/extracteur_150.jpg" },
+      { label: "Ø200 mm — 550m³/h", description: "Extracteur 200mm — 550m³/h pour grandes tentes. Moteur EC silencieux, raccord 5 cm flexible inclus, filtre pré-montage optionnel.", price: 42, supplierPrice: 32.00, image: "img/extracteur_150.jpg" }
+    ]
+  },
+  {
+    id: 141,
+    name: "Engrais bio de croissance liquide 1L",
+    price: 16,
+    category: "Engrais & Nutriments",
+    description: "Engrais liquide de croissance biologique NPK 5-3-3. Extrait de vers de terre, algues marines et guano. Compatible sol, coco et hydroponie. Stimule racines et feuillage. 1L concentré = 200L solution.",
+    badges: ["Bio", "Essentiel"],
+    rating: 4.7,
+    reviews: 445,
+    image: "img/engrais_croissance.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "1.1 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 12.00,
+    variants: [
+      { label: "1L — Croissance (NPK 5-3-3)", description: "Engrais croissance bio 1L — pour phase végétative. Riche en azote, stimule feuillage vert. 200L de solution. Certifié bio.", price: 16, supplierPrice: 12.00, image: "img/engrais_croissance.jpg" },
+      { label: "1L — Floraison (NPK 2-5-7)", description: "Engrais floraison bio 1L — pour phase de floraison. Riche en phosphore/potassium. Améliore arômes, poids et taille des fruits.", price: 16, supplierPrice: 12.00, image: "img/engrais_croissance.jpg" }
+    ]
+  },
+  {
+    id: 142,
+    name: "Engrais granulé fumier de vers 5L",
+    price: 14,
+    category: "Engrais & Nutriments",
+    description: "Fumier de vers de terre pur, séché, granulé. Amendement naturel universel pour tous sols. Améliore la structure et la rétention d'eau. NPK équilibré 1.5-0.5-1. 100% naturel, sans odeur.",
+    badges: ["Bio"],
+    rating: 4.8,
+    reviews: 312,
+    image: "img/vers_de_terre.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "5 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 10.00,
+    variants: [
+      { label: "5L — Jardinage général", description: "Fumier de vers 5L — amende sol, stimule vie microbienne. 1 poignée par pot tous les 3 mois. Résultats visibles en 2 semaines.", price: 14, supplierPrice: 10.00, image: "img/vers_de_terre.jpg" },
+      { label: "10L — Grande production", description: "Fumier de vers 10L — économique pour potagers et grandes tentes. Incorporer 20% du volume total de substrat. Excellent pour semis.", price: 22, supplierPrice: 17.00, image: "img/vers_de_terre.jpg" }
+    ]
+  },
+  {
+    id: 143,
+    name: "Kit mycorhizes + stimulateur racinaire",
+    price: 18,
+    category: "Engrais & Nutriments",
+    description: "Kit mycorhizes arbusculaires + stimulateur racinaire bio. Colonise les racines, augmente l'absorption d'eau et de nutriments de 40%. Compatible tous substrats. Poudre soluble, dosage simple.",
+    badges: ["Bio", "Nouveau"],
+    rating: 4.6,
+    reviews: 178,
+    image: "img/mycorhizes.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "200 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 13.00,
+    variants: [
+      { label: "Kit 100g — Petit volume", description: "Kit mycorhizes 100g + stimulateur 50ml. Pour jusqu'à 20 plants. Tremper racines ou saupoudrer substrat au repiquage.", price: 18, supplierPrice: 13.00, image: "img/mycorhizes.jpg" },
+      { label: "Kit 500g — Production intensive", description: "Kit mycorhizes 500g + stimulateur 250ml. Pour jusqu'à 100 plants. Économique et efficace sur toute la saison.", price: 42, supplierPrice: 32.00, image: "img/mycorhizes.jpg" }
+    ]
+  },
+
+  // === OUTILS JARDINAGE SUPPLÉMENTAIRES — id 144-150 ===
+  {
+    id: 144,
+    name: "Grelinette bio à 3 dents",
+    price: 38,
+    category: "Jardinage",
+    description: "Grelinette à 3 dents acier forgé — ameublit le sol sans le retourner, préserve les vers et la vie du sol. Manche bois hêtre 120 cm, largeur 35 cm. L'outil phare du jardinage naturel.",
+    badges: ["Essentiel", "Bio"],
+    rating: 4.7,
+    reviews: 234,
+    image: "img/grelinette.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "2.8 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 29.00,
+    variants: [
+      { label: "3 dents — Standard 35 cm", description: "Grelinette 3 dents forgées, manche hêtre 120 cm. Pénétration facile même en sol compact. Idéale potager, verger, permaculture.", price: 38, supplierPrice: 29.00, image: "img/grelinette.jpg" },
+      { label: "5 dents — Professionnelle 45 cm", description: "Grelinette 5 dents pro, largeur 45 cm. Pour grandes parcelles. Dents plus espacées, efficacité maximale. Certifiée acier inox.", price: 55, supplierPrice: 42.00, image: "img/grelinette.jpg" }
+    ]
+  },
+  {
+    id: 145,
+    name: "Couteau désherbeur en acier inox",
+    price: 12,
+    category: "Jardinage",
+    description: "Couteau désherbeur manuel lame inox recourbée. Coupe à la racine entre les rangs, entre les dalles et dans les pots. Manche ergonomique antidérapant. L'outil de précision du désherbage naturel.",
+    badges: ["Bio"],
+    rating: 4.5,
+    reviews: 178,
+    image: "img/couteau_desherbage.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "180 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 9.00,
+    variants: [
+      { label: "Lame recourbée — Standard", description: "Couteau désherbeur lame 15 cm inox — coupe au ras du sol entre les cultures. Polyvalent sol dur ou meuble. Anti-rouille garanti.", price: 12, supplierPrice: 9.00, image: "img/couteau_desherbage.jpg" },
+      { label: "Set 3 outils désherbeurs", description: "Set 3 outils : couteau désherbeur + tire-racines + griffette. Pour un désherbage complet sans chimie. Stockage mural inclus.", price: 22, supplierPrice: 17.00, image: "img/couteau_desherbage.jpg" }
+    ]
+  },
+  {
+    id: 146,
+    name: "Système hydroponique 12 sites DWC",
+    price: 35,
+    category: "Culture indoor",
+    description: "Kit hydroponique DWC (Deep Water Culture) 12 emplacements. Pompe à air silencieuse, air stones, tuyaux, filet de culture et substrat céramique inclus. Prêt à planter, croissance 3× plus rapide qu'en terre.",
+    badges: ["Nouveau"],
+    rating: 4.6,
+    reviews: 156,
+    image: "img/hydro_dwc.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "2.2 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 27.00,
+    variants: [
+      { label: "12 sites — Culture herbes/légumes", description: "Hydroponie DWC 12 sites — pour laitues, herbes, basilic, épinards. Pompe 2W silencieuse, minuterie incluse. Montage 20 min.", price: 35, supplierPrice: 27.00, image: "img/hydro_dwc.jpg" },
+      { label: "24 sites — Production intensive", description: "DWC 24 sites — double bac, idéal production continue tomates cerises et poivrons. Débit réglable, pH-mètre numérique offert.", price: 59, supplierPrice: 45.00, image: "img/hydro_dwc.jpg" }
+    ]
+  },
+  {
+    id: 147,
+    name: "Thermohygromètre digital pour serre",
+    price: 14,
+    category: "Culture indoor",
+    description: "Thermohygromètre digital avec sonde externe. Affiche température + humidité en temps réel. Mémorisation min/max, alarme configurable. Indispensable pour tente de culture et serre.",
+    badges: ["Essentiel"],
+    rating: 4.7,
+    reviews: 389,
+    image: "img/thermohygrometre.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "80 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 10.00,
+    variants: [
+      { label: "Digital — Sonde filaire 1.5m", description: "Thermohygromètre digital sonde 1.5m — lit T° et HR% en simultané. Alarme haute/basse, histogramme 24h. Pile AAA incluse.", price: 14, supplierPrice: 10.00, image: "img/thermohygrometre.jpg" },
+      { label: "Bluetooth — App smartphone", description: "Thermohygromètre Bluetooth — se connecte à votre téléphone. Graphiques historiques, alertes push, export CSV. Portée 30m.", price: 22, supplierPrice: 17.00, image: "img/thermohygrometre.jpg" }
+    ]
+  },
+  {
+    id: 148,
+    name: "Engrais biostimulant orties fermentées 1L",
+    price: 12,
+    category: "Engrais & Nutriments",
+    description: "Purin d'orties fermenté concentré 1L — stimulant naturel foliaire et racinaire. Riche en azote, silice et oligo-éléments. 1L = 20L de solution. Compatible agriculture bio. Repousse aussi certains insectes.",
+    badges: ["Bio"],
+    rating: 4.6,
+    reviews: 267,
+    image: "img/purin_orties.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "1.1 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 9.00,
+    variants: [
+      { label: "1L — Stimulant orties", description: "Purin d'orties 1L concentré — arrosage au pied dilué à 5% ou pulvérisation foliaire à 1%. Stimule croissance et immunité.", price: 12, supplierPrice: 9.00, image: "img/purin_orties.jpg" },
+      { label: "Pack trio bio 3×1L", description: "Pack : purin d'orties + purin de consoude + décoction prêle. Traitement complet naturel : croissance, floraison, résistance maladies.", price: 28, supplierPrice: 21.00, image: "img/purin_orties.jpg" }
+    ]
+  },
+  {
+    id: 149,
+    name: "Minuterie électrique 7 jours programmable",
+    price: 9,
+    category: "Culture indoor",
+    description: "Minuterie programmable 7 jours 16A — pour lampes de culture, pompes, ventilateurs. 20 plages horaires, précision à la minute. Prise FR/EU, charge max 3680W. Indispensable en culture automatisée.",
+    badges: ["Essentiel"],
+    rating: 4.5,
+    reviews: 512,
+    image: "img/minuterie_16a.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "90 g",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 6.50,
+    variants: [
+      { label: "16A — Mécanique 7 jours", description: "Minuterie mécanique 16A — 20 plages programmables, quarts d'heure. Robuste, fiable, aucun réglage électronique complexe.", price: 9, supplierPrice: 6.50, image: "img/minuterie_16a.jpg" },
+      { label: "16A — Digitale Wi-Fi (Tuya/Smart Life)", description: "Minuterie Wi-Fi 16A — contrôlable via smartphone. Scènes automations, déclenchement lever/coucher du soleil, compatibilité Google Home.", price: 18, supplierPrice: 13.00, image: "img/minuterie_16a.jpg" }
+    ]
+  },
+  {
+    id: 150,
+    name: "Substrat de culture coco/coir premium 50L",
+    price: 18,
+    category: "Engrais & Nutriments",
+    description: "Substrat en fibre de coco lavée et tamponnée 50L. pH neutre 5.8-6.2, très bonne aération racinaire, rétention d'eau optimale. Compatible hydroponie, coco pur ou mélange terre. Certifié OMRI bio.",
+    badges: ["Bio", "Essentiel"],
+    rating: 4.7,
+    reviews: 334,
+    image: "img/substrat_coco.jpg",
+    shipping: "Livraison 5-7 jours",
+    weight: "5.5 kg",
+    inStock: true,
+    supplier: "CJDropshipping",
+    supplierPrice: 13.00,
+    variants: [
+      { label: "50L — Coco pur lavé tamponnée", description: "Coco 50L — tamponné Ca/Mg, prêt à utiliser. Arrosage plus fréquent mais croissance rapide. Idéal tomates, poivrons, cannabis légal.", price: 18, supplierPrice: 13.00, image: "img/substrat_coco.jpg" },
+      { label: "50L — Mix coco 60% + perlite 40%", description: "Mix coco/perlite 50L — drainage optimal, aucun risque de sur-arrosage. La référence pour débutants en culture indoor.", price: 22, supplierPrice: 17.00, image: "img/substrat_coco.jpg" }
+    ]
+  }
 ];
 
 // Fusionner tous les produits
 const ALL_PRODUCTS = [...PRODUCTS, ...PRODUCTS_JARDINAGE];
 // Catégories disponibles
 const CATEGORIES = [
-  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 48 },
-  { id: "Survie", name: "Survie", emoji: "🏕️", count: 9 },
-  { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 6 },
-  { id: "Alimentation outdoor", name: "Alimentation outdoor", emoji: "🥾", count: 6 },
-  { id: "Montres outdoor", name: "Montres outdoor", emoji: "⌚", count: 2 },
-  { id: "Sacs à dos", name: "Sacs à dos", emoji: "🎒", count: 4 },
-  { id: "Pêche", name: "Pêche", emoji: "🎣", count: 2 },
-  { id: "Énergie", name: "Énergie", emoji: "⚡", count: 3 },
-  { id: "Électronique outdoor", name: "Électronique outdoor", emoji: "📡", count: 4 },
-  { id: "Escalade", name: "Escalade", emoji: "🧗", count: 3 },
-  { id: "Cyclisme & Trail", name: "Cyclisme & Trail", emoji: "🚵", count: 3 },
-  { id: "Vêtements outdoor", name: "Vêtements outdoor", emoji: "🧥", count: 1 },
-  { id: "Outils", name: "Outils", emoji: "🔪", count: 8 }
+  { id: "all", name: "Tous les produits", emoji: "🏷️", count: 0 },
+  { id: "Survie", name: "Survie", emoji: "🏕️", count: 0 },
+  { id: "Éclairage", name: "Éclairage", emoji: "🔦", count: 0 },
+  { id: "Alimentation outdoor", name: "Alimentation outdoor", emoji: "🥾", count: 0 },
+  { id: "Montres outdoor", name: "Montres outdoor", emoji: "⌚", count: 0 },
+  { id: "Sacs à dos", name: "Sacs à dos", emoji: "🎒", count: 0 },
+  { id: "Pêche", name: "Pêche", emoji: "🎣", count: 0 },
+  { id: "Énergie", name: "Énergie", emoji: "⚡", count: 0 },
+  { id: "Énergie solaire", name: "Énergie solaire", emoji: "☀️", count: 0 },
+  { id: "Électronique outdoor", name: "Électronique outdoor", emoji: "📡", count: 0 },
+  { id: "Escalade", name: "Escalade", emoji: "🧗", count: 0 },
+  { id: "Cyclisme & Trail", name: "Cyclisme & Trail", emoji: "🚵", count: 0 },
+  { id: "Vêtements outdoor", name: "Vêtements outdoor", emoji: "🧥", count: 0 },
+  { id: "Outils", name: "Outils", emoji: "🔪", count: 0 },
+  { id: "Jardinage", name: "Jardinage", emoji: "🌱", count: 0 },
+  { id: "Culture indoor", name: "Culture indoor", emoji: "🌿", count: 0 },
+  { id: "Engrais & Nutriments", name: "Engrais & Nutriments", emoji: "🧪", count: 0 }
 ];
 
 // Couleurs des badges
