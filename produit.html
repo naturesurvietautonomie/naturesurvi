@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -457,7 +457,7 @@
       <div class="product-price-row">
         <span class="price-current" id="product-price"></span>
         <span class="price-original" id="product-original"></span>
-        <span class="price-discount" id="product-discount"></span>
+        
       </div>
 
       <!-- Sélecteur de variantes -->
@@ -608,11 +608,7 @@
 
     // Prix
     document.getElementById('product-price').textContent = product.price.toFixed(2).replace('.', ',') + ' €';
-    if (product.originalPrice) {
-      document.getElementById('product-original').textContent = product.originalPrice.toFixed(2).replace('.', ',') + ' €';
-      const discount = Math.round((1 - product.price / product.originalPrice) * 100);
-      document.getElementById('product-discount').textContent = '-' + discount + '%';
-    }
+    
 
     // Description
     document.getElementById('product-desc').textContent = product.description;
@@ -1070,6 +1066,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
