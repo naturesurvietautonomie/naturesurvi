@@ -236,7 +236,7 @@ exports.handler = async (event) => {
 
   // ── Passer commande CJDropshipping (produits jardinage) ──
   let cjOrderId = null;
-  if (address && cjItems.length > 0 && process.env.CJ_API_EMAIL && process.env.CJ_API_PASSWORD) {
+  if (address && cjItems.length > 0 && process.env.CJ_API_EMAIL && process.env.CJ_API_KEY) {
     try {
       cjOrderId = await createCJOrder({ address, items: cjItems, paymentId });
       console.log('✅ Commande CJ créée:', cjOrderId);
