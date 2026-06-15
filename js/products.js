@@ -1273,15 +1273,16 @@ const PRODUCTS_JARDINAGE = [
   { id: 136, name: "Programmateur d'arrosage automatique", price: 22.00, category: "Jardinage", description: "6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.", badges: ["Nouveau"], rating: 4.5, reviews: 67, image: "img/jard_timer.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true },
 
   // ── Nouveaux produits Jardinage (juin 2026) ──────────────────────────────
+  // ── Nouveaux produits Jardinage (IDs 137-143) ──
   {
     id: 137,
-    name: "Cuve de récupération d'eau de pluie 300L",
+    name: "Cuve récupération eau de pluie 300L",
     price: 59.00,
-    originalPrice: 79.00,
+    originalPrice: 85.00,
     category: "Jardinage",
-    description: "Cuve collecte eau de pluie 300L en plastique recyclé. Robinet de puisage en laiton, couvercle anti-moustiques, débordement intégré. Raccordement gouttière universel. Idéal pour l'autonomie en arrosage.",
+    description: "Cuve de récupération d'eau de pluie 300 litres en polyéthylène recyclé. Raccord gouttière universel, robinet de soutirage 3/4\", couvercle anti-moustiques. Idéale pour arroser un potager en autonomie. Économisez jusqu'à 50% sur votre consommation d'eau.",
     badges: ["Nouveau", "Essentiel"],
-    rating: 4.7,
+    rating: 4.6,
     reviews: 0,
     image: "img/jard_cuve_pluie.jpg",
     shipping: "Livraison 5-7 jours",
@@ -1290,36 +1291,46 @@ const PRODUCTS_JARDINAGE = [
     supplier: "BigBuy",
     supplierSku: "cuve-pluie-300l",
     supplierPrice: 44.00,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "300L — Verte", description: "Cuve 300L verte — coloris naturel discret, s'intègre au jardin. Raccord gouttière universel, robinet 3/4\", couvercle anti-moustiques. Poids vide : 8kg.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-verte", image: "img/jard_cuve_pluie.jpg" },
+      { label: "300L — Noire", description: "Cuve 300L noire — absorbe la chaleur, réduit les algues. Même équipement que le modèle vert. Idéale pour les emplacements ensoleillés.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-noire", image: "img/jard_cuve_pluie.jpg" },
+      { label: "500L — Verte", description: "Cuve 500L verte — pour les grands potagers et vergers. Couvercle renforcé, double robinet. Autonomie arrosage 2-3 semaines selon consommation.", price: 89, originalPrice: 129, supplierPrice: 67.00, supplierSku: "cuve-pluie-500l-verte", image: "img/jard_cuve_pluie.jpg" }
+    ]
   },
   {
     id: 138,
-    name: "Lampe horticole LED croissance — spectre complet",
+    name: "Lampe horticole LED spectre complet",
     price: 34.00,
     originalPrice: 49.00,
     category: "Jardinage",
-    description: "Panneau LED 45W spectre complet (rouge+bleu+blanc). Favorise la germination, croissance et floraison. Minuterie intégrée, intensité réglable. Couvre 0,5 m². Idéal pour semis d'hiver en intérieur.",
+    description: "Lampe de croissance LED 45W spectre complet (380-780nm). Couvre 60×60cm. Efficacité 2,7 µmol/J. Ideal semis, bouturage, culture indoor toute l'année. Durée de vie 50 000h. Consomme 5× moins qu'une lampe sodium.",
     badges: ["Nouveau"],
-    rating: 4.6,
+    rating: 4.7,
     reviews: 0,
     image: "img/jard_lampe_horticole.jpg",
     shipping: "Livraison 5-7 jours",
-    weight: "900 g",
+    weight: "1.2 kg",
     inStock: true,
     supplier: "CJdropshipping",
     supplierSku: "cj-led-grow-45w",
     supplierPrice: 25.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "45W — 60×60cm", description: "LED 45W spectre complet — parfaite pour une surface de 60×60cm. Intensité réglable 0-100%. Idéale semis, herbes aromatiques, jeunes plants.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-led-grow-45w", image: "img/jard_lampe_horticole.jpg" },
+      { label: "100W — 90×90cm", description: "LED 100W spectre complet — couvre 90×90cm. Assez puissante pour tomates, poivrons, fraises en phase de floraison et fructification.", price: 59, originalPrice: 85, supplierPrice: 43.00, supplierSku: "cj-led-grow-100w", image: "img/jard_lampe_horticole.jpg" },
+      { label: "200W — 120×120cm", description: "LED 200W pro — couvre 120×120cm. Pour la production intensive indoor. Rendement lumino équivalent à 600W HPS. Timer intégré 16/8h.", price: 99, originalPrice: 149, supplierPrice: 74.00, supplierSku: "cj-led-grow-200w", image: "img/jard_lampe_horticole.jpg" }
+    ]
   },
   {
     id: 139,
-    name: "Engrais bio concentré — guano de chauve-souris 1L",
+    name: "Engrais bio guano de chauve-souris 1L",
     price: 14.00,
     originalPrice: 19.00,
     category: "Jardinage",
-    description: "Engrais liquide 100% naturel à base de guano de chauve-souris. Riche en azote et phosphore. Stimule la croissance et renforce les défenses naturelles. 1L pour 100L d'arrosage. Compatible agriculture biologique.",
-    badges: ["Bio", "Nouveau"],
-    rating: 4.8,
+    description: "Engrais biologique liquide à base de guano de chauve-souris. Riche en NPK naturel (7-3-1). Stimule la croissance, améliore la résistance aux maladies. 1L concentré = 100L de solution. Compatible agriculture biologique — certification AB.",
+    badges: ["Nouveau", "Bio"],
+    rating: 4.5,
     reviews: 0,
     image: "img/jard_engrais_guano.jpg",
     shipping: "Livraison 2-3 jours",
@@ -1328,26 +1339,35 @@ const PRODUCTS_JARDINAGE = [
     supplier: "BigBuy",
     supplierSku: "engrais-guano-1l",
     supplierPrice: 10.50,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "1L — Croissance (N fort)", description: "Formule croissance NPK 7-3-1 — riche en azote pour maximiser la végétation. Pour légumes feuilles, herbes, jeunes plants. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-croissance", image: "img/jard_engrais_guano.jpg" },
+      { label: "1L — Floraison (P fort)", description: "Formule floraison NPK 3-7-4 — riche en phosphore pour booster fleurs et fruits. Tomates, poivrons, fraises, concombres. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-floraison", image: "img/jard_engrais_guano.jpg" },
+      { label: "5L — Croissance (économique)", description: "Bidon 5L formule croissance — format économique pour grands potagers. 5L = 500L de solution d'arrosage. 5 mois d'utilisation pour 20m².", price: 49, originalPrice: 72, supplierPrice: 37.00, supplierSku: "engrais-guano-5l-croissance", image: "img/jard_engrais_guano.jpg" }
+    ]
   },
   {
     id: 140,
-    name: "Testeur pH et nutriments sol numérique",
+    name: "Testeur pH et humidité sol numérique",
     price: 19.00,
     originalPrice: 27.00,
     category: "Jardinage",
-    description: "Testeur numérique 3-en-1 : pH, humidité et luminosité du sol. Sans pile, capteur planté directement en terre. Lectures instantanées. Indispensable avant semis ou fertilisation pour optimiser les récoltes.",
-    badges: ["Nouveau", "Essentiel"],
+    description: "Testeur de sol numérique 3-en-1 : pH (3,5-9), humidité (10-80%), luminosité (0-2000 lux). Sans batterie pour pH/humidité. Sonde acier inox 20cm. Résultats en 60 secondes. Indispensable pour optimiser les cultures et éviter carences.",
+    badges: ["Nouveau"],
     rating: 4.5,
     reviews: 0,
     image: "img/jard_testeur_ph.jpg",
     shipping: "Livraison 2-3 jours",
-    weight: "120 g",
+    weight: "80 g",
     inStock: true,
     supplier: "CJdropshipping",
     supplierSku: "cj-ph-meter-3in1",
     supplierPrice: 14.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "3-en-1 — pH + Humidité + Lumière", description: "Testeur 3-en-1 sans pile (pH + humidité). Module lumière sur batterie. Sonde 20cm inox. Idéal jardinage courant et potager.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-ph-meter-3in1", image: "img/jard_testeur_ph.jpg" },
+      { label: "Digital LCD — pH seul haute précision", description: "pH-mètre numérique haute précision ±0,05 pH. Écran LCD rétroéclairé. Calibration automatique. Idéal pour hydroponique et aquaponie.", price: 24, originalPrice: 35, supplierPrice: 18.00, supplierSku: "cj-ph-meter-digital", image: "img/jard_testeur_ph.jpg" }
+    ]
   },
   {
     id: 141,
@@ -1355,28 +1375,32 @@ const PRODUCTS_JARDINAGE = [
     price: 39.00,
     originalPrice: 55.00,
     category: "Jardinage",
-    description: "Désherbeur à flamme directe 2000W. Élimine les mauvaises herbes sans herbicides chimiques. Allumage piézo, buse concentrée acier inox, manche télescopique 120cm. Recharge cartouche butane/propane standard.",
+    description: "Désherbeur thermique à gaz butane/propane 2000W. Lance-flamme orientable 360°, allumage piézo-électrique. Manche télescopique 85-105cm. Sans herbicide, écologique. Détruit les mauvaises herbes en 2-3 secondes. Compatible cartouches 220g standard.",
     badges: ["Nouveau"],
     rating: 4.4,
     reviews: 0,
     image: "img/jard_desherbeur_gaz.jpg",
     shipping: "Livraison 3-5 jours",
-    weight: "900 g",
+    weight: "850 g",
     inStock: true,
     supplier: "BigBuy",
     supplierSku: "desherbeur-gaz-2000w",
     supplierPrice: 29.00,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "2000W — manche télescopique seul", description: "Désherbeur 2000W avec manche télescopique 85-105cm. Allumage piézo. Sans cartouche incluse (cartouche butane 220g standard en commerce).", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "desherbeur-gaz-2000w", image: "img/jard_desherbeur_gaz.jpg" },
+      { label: "2000W — kit complet + 3 cartouches", description: "Désherbeur 2000W avec 3 cartouches butane 220g incluses — prêt à l'emploi. Environ 3h de désherbeur total. Housse de transport incluse.", price: 52, originalPrice: 75, supplierPrice: 39.00, supplierSku: "desherbeur-gaz-2000w-kit", image: "img/jard_desherbeur_gaz.jpg" }
+    ]
   },
   {
     id: 142,
-    name: "Couvercles de conservation sous vide — lot de 8",
+    name: "Couvercles conservation sous vide — lot de 8",
     price: 12.00,
     originalPrice: 17.00,
     category: "Jardinage",
-    description: "Couvercles silicone sous vide compatibles bocaux Mason/Le Parfait, ø 70 à 86 mm. Conserve légumes et fruits jusqu'à 3× plus longtemps. Réutilisables, lavables au lave-vaisselle. Lot de 8 tailles assorties.",
+    description: "Set de 8 couvercles de conservation sous vide pour bocaux à large ouverture (86mm). Compatibles bocaux Le Parfait, Mason Jar, Ball. Extension jusqu'à 5× la durée de conservation. Pompe manuelle incluse. Sans BPA, réutilisables.",
     badges: ["Nouveau"],
-    rating: 4.6,
+    rating: 4.5,
     reviews: 0,
     image: "img/jard_couvercles_vide.jpg",
     shipping: "Livraison 2-3 jours",
@@ -1385,15 +1409,20 @@ const PRODUCTS_JARDINAGE = [
     supplier: "CJdropshipping",
     supplierSku: "cj-vacuum-lids-8",
     supplierPrice: 8.50,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "×8 — 86mm (large) + pompe", description: "8 couvercles 86mm + pompe manuelle. Compatible bocaux large ouverture : Le Parfait, Mason Jar, Ball. Jusqu'à 5× la durée de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-86mm", image: "img/jard_couvercles_vide.jpg" },
+      { label: "×8 — 70mm (standard) + pompe", description: "8 couvercles 70mm + pompe manuelle. Pour bocaux à ouverture standard (70mm) les plus courants. Même performance de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-70mm", image: "img/jard_couvercles_vide.jpg" },
+      { label: "×16 — mix 70mm + 86mm + pompe électrique", description: "16 couvercles (8×70mm + 8×86mm) + pompe électrique USB. Conservez toutes vos conserves d'un geste. Batterie intégrée 400 cycles.", price: 29, originalPrice: 42, supplierPrice: 22.00, supplierSku: "cj-vacuum-lids-16-elec", image: "img/jard_couvercles_vide.jpg" }
+    ]
   },
   {
     id: 143,
-    name: "Agenouilloir de jardin pliable avec poignées",
+    name: "Agenouilloir pliable 2-en-1 jardinier",
     price: 22.00,
     originalPrice: 32.00,
     category: "Jardinage",
-    description: "Agenouilloir 2-en-1 : retourné devient tabouret. Mousse épaisse EVA anti-fatigue, poignées acier tubulaire, charge max 120 kg. Pliable pour rangement. Indispensable pour jardiner confortablement.",
+    description: "Agenouilloir/tabouret 2-en-1 : retourné devient assise. Mousse EPE 5cm anti-fatigue, structure acier tubulaire Ø25mm, charge max 120 kg. Poids : 1,1 kg. Pliable en 5 secondes. Poignées latérales facilitent les relevés. Idéal arthrose et jardinage prolongé.",
     badges: ["Nouveau"],
     rating: 4.5,
     reviews: 0,
@@ -1404,19 +1433,23 @@ const PRODUCTS_JARDINAGE = [
     supplier: "BigBuy",
     supplierSku: "agenouilloir-2en1",
     supplierPrice: 16.50,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "Standard — mousse verte", description: "Agenouilloir 2-en-1 mousse verte 5cm. Charge max 120kg. Poignées acier pour se relever. Pliable. Livré avec sacoche de rangement.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "agenouilloir-2en1-vert", image: "img/jard_agenouilloir.jpg" },
+      { label: "Large — mousse grise + poches outils", description: "Version large (+10cm) avec 2 poches latérales pour ranger sécateur, gants et outils. Mousse grise 6cm extra-confort. Idéal jardinage intensif.", price: 29, originalPrice: 42, supplierPrice: 22.00, supplierSku: "agenouilloir-2en1-large", image: "img/jard_agenouilloir.jpg" }
+    ]
   }
 ];
 
-// ── Nouveaux produits Survie (juin 2026) ──────────────────────────────────
+// ── Nouveaux produits Survie (IDs 200-207) ─────────────────────────────────
 const PRODUCTS_SURVIE_NEW = [
   {
     id: 200,
-    name: "Filtre à eau portable LifeStraw — 1000L",
+    name: "Filtre à eau portable LifeStraw 1000L",
     price: 19.00,
     originalPrice: 27.00,
     category: "Survie",
-    description: "Filtre à eau LifeStraw certifié. Élimine 99,9999% des bactéries et 99,9% des parasites. Capacité 1000 litres — zéro produit chimique. Léger (56g), boire directement dans rivières et mares. Indispensable en survie.",
+    description: "Filtre à eau LifeStraw certifié. Élimine 99,9999% des bactéries (E.coli, Salmonella) et 99,9% des parasites (Giardia, Cryptosporidium). Capacité 1000 litres — zéro produit chimique, zéro pile. Poids 56g. Boire directement dans rivières et sources. Le filtre de survie le plus vendu au monde.",
     badges: ["Nouveau", "Essentiel"],
     rating: 4.9,
     reviews: 0,
@@ -1427,15 +1460,20 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "CJdropshipping",
     supplierSku: "cj-lifestraw-1000l",
     supplierPrice: 14.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "Filtre paille 1000L — bleu", description: "Filtre paille individuel 1000L — bleu. Boire directement depuis une source. Élimine 99,9999% bactéries. Poids 56g. Incontournable du kit 72h.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-lifestraw-1000l-bleu", image: "img/surv_lifestraw.jpg" },
+      { label: "Filtre paille 1000L — vert", description: "Filtre paille individuel 1000L — vert. Même performance que le bleu. Coloris discret pour usage outdoor et randonnée.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-lifestraw-1000l-vert", image: "img/surv_lifestraw.jpg" },
+      { label: "Bouteille filtrante 650mL + filtre 4000L", description: "Bouteille filtrante 650mL avec filtre 4000L intégré. Boire en déplaçant la pression. Idéale randonnée et voyage. Inclus adaptateur pour poche à eau.", price: 29, originalPrice: 42, supplierPrice: 21.00, supplierSku: "cj-filter-bottle-650ml", image: "img/surv_lifestraw.jpg" }
+    ]
   },
   {
     id: 201,
-    name: "Batterie solaire portable 20000mAh — panneau 5W",
+    name: "Batterie solaire 20000mAh panneau 5W",
     price: 34.00,
     originalPrice: 49.00,
     category: "Énergie",
-    description: "Power bank solaire 20000mAh avec panneau 5W intégré. 2 sorties USB-A + 1 USB-C. Rechargeable soleil ou secteur. Écran LED charge, imperméable IPX5. Charge smartphone × 5. Parfait camping, randonnée, urgence.",
+    description: "Power bank solaire 20000mAh avec panneau 5W intégré. 2 sorties USB-A (5V/2.1A) + 1 USB-C (5V/3A). Rechargeable par soleil en 15-20h ou secteur en 8h. Indicateur LED, imperméable IPX5. Charge smartphone jusqu'à 5× ou tablette 2×. Parfait camping, randonnée, panne de courant.",
     badges: ["Nouveau", "Essentiel"],
     rating: 4.7,
     reviews: 0,
@@ -1446,15 +1484,20 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "CJdropshipping",
     supplierSku: "cj-solar-bank-20000",
     supplierPrice: 25.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "20000mAh — noir", description: "Power bank solaire 20000mAh noir. Panneau 5W, USB-A×2 + USB-C, IPX5. Charge 5× smartphone ou recharge lampe/radio de survie en coupure.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-solar-bank-20000-noir", image: "img/surv_batterie_solaire.jpg" },
+      { label: "20000mAh — vert kaki", description: "Power bank solaire 20000mAh vert kaki — coloris discret outdoor. Mêmes performances. Idéal randonnée et usage discret en milieu naturel.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-solar-bank-20000-kaki", image: "img/surv_batterie_solaire.jpg" },
+      { label: "40000mAh — double panneau 10W", description: "Power bank solaire 40000mAh + double panneau 10W. Recharge solaire 2× plus rapide. Pour les longues expéditions ou pour alimenter un groupe.", price: 59, originalPrice: 85, supplierPrice: 43.00, supplierSku: "cj-solar-bank-40000", image: "img/surv_batterie_solaire.jpg" }
+    ]
   },
   {
     id: 202,
-    name: "Trousse de premiers secours 42 pièces",
+    name: "Trousse premiers secours 42 pièces",
     price: 18.00,
     originalPrice: 25.00,
     category: "Survie",
-    description: "Kit premiers secours complet 42 pièces en pochette imperméable. Pansements, compresses, bandes élastiques, ciseaux, épingles de sûreté, masque RCP, garrot. Conforme EN 13157. Idéal randonnée, voiture, bivouac.",
+    description: "Kit premiers secours complet 42 pièces en pochette imperméable nylon. Inclus : pansements (18 tailles), compresses stériles, bandes élastiques, ciseaux, épingles de sûreté, gants nitrile, masque RCP, garrot, couverture survie. Conforme EN 13157. Idéal randonnée, voiture, bivouac.",
     badges: ["Nouveau", "Essentiel"],
     rating: 4.7,
     reviews: 0,
@@ -1465,15 +1508,20 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "BigBuy",
     supplierSku: "kit-secours-42pcs",
     supplierPrice: 13.50,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "42 pièces — pochette nylon", description: "Trousse 42 pièces en pochette nylon imperméable compacte (21×15cm). Conforme EN 13157. Poids 280g. Idéal sac à dos, voiture, bivouac.", price: 18, originalPrice: 25, supplierPrice: 13.50, supplierSku: "kit-secours-42pcs", image: "img/surv_trousse_secours.jpg" },
+      { label: "72 pièces — mallette rigide", description: "Trousse 72 pièces en mallette rigide ABS avec compartiments. Inclut défibrillateur bidon de diagnostic, attelle, couverture mylar. Pour famille ou groupe.", price: 29, originalPrice: 42, supplierPrice: 22.00, supplierSku: "kit-secours-72pcs-mallette", image: "img/surv_trousse_secours.jpg" },
+      { label: "Kit auto — norme DIN13164", description: "Kit automobile obligatoire norme DIN 13164 + supplément survie (couverture mylar, garrot, masque). Valable contrôle technique. Poids 320g.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "kit-secours-auto-din13164", image: "img/surv_trousse_secours.jpg" }
+    ]
   },
   {
     id: 203,
-    name: "Kit allume-feu survie — briquet tempête + amadou",
+    name: "Kit allume-feu survie 3-en-1",
     price: 14.00,
     originalPrice: 19.00,
     category: "Survie",
-    description: "Kit allume-feu 3-en-1 : briquet tempête rechargeable USB résistant vent jusqu'à 80 km/h, pierre à feu ferrocerium 10cm + bâtonnet d'amadou. Fonctionne sous la pluie. Indispensable en bivouac et situation de survie.",
+    description: "Kit allume-feu de survie 3-en-1 : briquet tempête rechargeable USB résistant vent jusqu'à 80 km/h + pierre à feu ferrocerium 12cm (12 000 frappes) + bâtonnet d'amadou. Étui imperméable inclus. Fonctionne sous la pluie, à -20°C, à toute altitude. Le trio indispensable du kit 72h.",
     badges: ["Nouveau"],
     rating: 4.6,
     reviews: 0,
@@ -1484,15 +1532,20 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "CJdropshipping",
     supplierSku: "cj-fire-kit-3in1",
     supplierPrice: 10.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "Kit 3-en-1 — étui noir", description: "Briquet tempête USB + pierre à feu 12cm + amadou + étui imperméable noir. Tout-en-un pour allumer feu sous pluie et vent. 12 000 frappes garanties.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-fire-kit-3in1-noir", image: "img/surv_kit_feu.jpg" },
+      { label: "Kit 3-en-1 — étui kaki", description: "Même kit en étui kaki militaire — plus discret en outdoor. Identique en performance. Clip ceinture inclus pour attache rapide au sac.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-fire-kit-3in1-kaki", image: "img/surv_kit_feu.jpg" },
+      { label: "Kit étendu — + allume-feu magnésium + sifflet", description: "Kit 5-en-1 : briquet tempête + ferrocerium + amadou + barreau magnésium + sifflet 120dB. Le kit allume-feu le plus complet pour survivaliste.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-fire-kit-5in1", image: "img/surv_kit_feu.jpg" }
+    ]
   },
   {
     id: 204,
-    name: "Couverture de survie mylar — lot de 4",
+    name: "Couvertures survie mylar — lot de 4",
     price: 9.00,
     originalPrice: 13.00,
     category: "Survie",
-    description: "Couvertures de survie en film aluminium mylar. Réfléchissent 90% de la chaleur corporelle. Imperméables, légères (50g chacune), se plient en format poche. Certifiées CE. Lot de 4 — valide hypothermie, bivouac urgence.",
+    description: "Couvertures de survie mylar 160×210cm. Réfléchissent 90% de la chaleur corporelle. Film aluminium double face (or/argent). Imperméables, légères (50g chacune), format poche. Certifiées CE. Protègent aussi contre le soleil et le vent. Lot de 4 — pour toute la famille.",
     badges: ["Nouveau", "Essentiel"],
     rating: 4.6,
     reviews: 0,
@@ -1503,7 +1556,12 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "BigBuy",
     supplierSku: "couverture-mylar-x4",
     supplierPrice: 6.50,
-    supplierUrl: "https://www.bigbuy.eu/fr"
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "×4 — 160×210cm or/argent", description: "Lot de 4 couvertures mylar 160×210cm double face or/argent. 50g chacune, format poche. Certifiées CE. Utilisables aussi comme bâche réfléchissante.", price: 9, originalPrice: 13, supplierPrice: 6.50, supplierSku: "couverture-mylar-x4", image: "img/surv_couverture_mylar.jpg" },
+      { label: "×10 — format lot économique", description: "Lot de 10 couvertures mylar 160×210cm — format associatif ou longue préparation. Idéal pour équiper un groupe ou constituer un stock multi-années.", price: 19, originalPrice: 28, supplierPrice: 14.00, supplierSku: "couverture-mylar-x10", image: "img/surv_couverture_mylar.jpg" },
+      { label: "Sac de couchage mylar réutilisable", description: "Sac de couchage mylar format momie — plus robuste que les couvertures jetables. 4 saisons, réfléchit 90% chaleur. Lavable et réutilisable.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "couverture-mylar-sac", image: "img/surv_couverture_mylar.jpg" }
+    ]
   },
   {
     id: 205,
@@ -1511,7 +1569,7 @@ const PRODUCTS_SURVIE_NEW = [
     price: 39.00,
     originalPrice: 55.00,
     category: "Électronique outdoor",
-    description: "Radio d'urgence DAB+/FM avec 4 modes d'alimentation : manivelle, panneau solaire, batterie intégrée 2000mAh, secteur USB. Lampe torche LED. Alerte météo NOAA. Résistante aux chocs. Fonctionne sans électricité.",
+    description: "Radio d'urgence multi-énergie DAB+/FM/AM/SW. 4 modes d'alimentation : manivelle dynamo (1 min → 20 min autonomie), panneau solaire, batterie intégrée 2000mAh, micro-USB. Lampe LED 3W. Alerte météo NOAA. Imperméable IPX3. Fonctionne sans électricité ni réseau.",
     badges: ["Nouveau"],
     rating: 4.5,
     reviews: 0,
@@ -1522,15 +1580,20 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "CJdropshipping",
     supplierSku: "cj-radio-solar-dab",
     supplierPrice: 29.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "DAB+/FM/AM — vert kaki", description: "Radio urgence DAB+/FM/AM + manivelle + solaire + batterie 2000mAh. Lampe LED 3W. Coloris kaki discret outdoor. Alerte météo NOAA.", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "cj-radio-solar-dab-kaki", image: "img/surv_radio_manivelle.jpg" },
+      { label: "DAB+/FM/AM — orange", description: "Même radio en orange haute visibilité — plus facile à localiser en situation d'urgence. Idéal kit de survie voiture et trousse 72h.", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "cj-radio-solar-dab-orange", image: "img/surv_radio_manivelle.jpg" },
+      { label: "Version Pro — batterie 5000mAh + BT", description: "Radio Pro : mêmes ondes + batterie 5000mAh + Bluetooth + chargeur sans fil Qi. Peut recharger smartphone. Autonomie 3× supérieure.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cj-radio-solar-pro-5000", image: "img/surv_radio_manivelle.jpg" }
+    ]
   },
   {
     id: 206,
-    name: "Sac de couchage compact — confort 0°C / limite -5°C",
+    name: "Sac de couchage compact 0°C / -5°C",
     price: 44.00,
     originalPrice: 62.00,
     category: "Survie",
-    description: "Sac de couchage 3 saisons. Garnissage fibre creuse 250g/m², coupe momie, fermeture éclair anti-accrochage. Compression 3,8L, poids 900g. Température confort 0°C / limite -5°C. Idéal randonnée, bivouac, camping.",
+    description: "Sac de couchage 3 saisons coupe momie. Garnissage fibre creuse thermique 250g/m². Fermeture éclair YKK double sens anti-accrochage. Compression 3,8L, poids 900g. Température confort 0°C / limite -5°C. Doublure polyester doux. Idéal bivouac, camping, kit d'urgence.",
     badges: ["Nouveau"],
     rating: 4.5,
     reviews: 0,
@@ -1541,15 +1604,20 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "CJdropshipping",
     supplierSku: "cj-sleeping-bag-0c",
     supplierPrice: 32.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "Confort 0°C — bleu — 900g", description: "Sac momie confort 0°C / limite -5°C. Bleu, 900g, compression 3,8L. YKK double sens. Pour 3 saisons printemps/été/automne.", price: 44, originalPrice: 62, supplierPrice: 32.00, supplierSku: "cj-sleeping-bag-0c-bleu", image: "img/surv_sac_couchage.jpg" },
+      { label: "Confort 0°C — vert kaki — 900g", description: "Identique, coloris kaki discret pour bivouac. Même performance thermique. Filet de transport inclus.", price: 44, originalPrice: 62, supplierPrice: 32.00, supplierSku: "cj-sleeping-bag-0c-kaki", image: "img/surv_sac_couchage.jpg" },
+      { label: "Confort -10°C — hiver — 1100g", description: "Sac d'hiver confort -10°C / limite -15°C. Garnissage 400g/m² + col thermique réglable. Pour bivouac hivernal et randonnée hivernale. 1100g.", price: 64, originalPrice: 92, supplierPrice: 48.00, supplierSku: "cj-sleeping-bag-minus10", image: "img/surv_sac_couchage.jpg" }
+    ]
   },
   {
     id: 207,
-    name: "Corde paracorde 550 — 30m avec kit de survie",
+    name: "Corde paracorde 550 — 30m + kit survie",
     price: 14.00,
     originalPrice: 19.00,
     category: "Survie",
-    description: "Corde paracorde militaire 550 lbs (250kg) — 30 mètres. Nylon 7 brins intérieurs réutilisables (fil, suture urgence). Avec kit survie inclus : briquet, sifflet, boussole, grattoir. Couleur olive/noir.",
+    description: "Corde paracorde militaire MIL-C-5040H type III — résistance 250kg (550 lbs). 30 mètres. Gaine nylon 32 fuseaux, 7 brins intérieurs réutilisables (ligature, suture urgence, fabrication filet). Kit survie inclus : briquet, sifflet 120dB, boussole, grattoir ferro. Coloris olive/noir/camo.",
     badges: ["Nouveau"],
     rating: 4.6,
     reviews: 0,
@@ -1560,10 +1628,15 @@ const PRODUCTS_SURVIE_NEW = [
     supplier: "CJdropshipping",
     supplierSku: "cj-paracord-30m-kit",
     supplierPrice: 10.00,
-    supplierUrl: "https://www.cjdropshipping.com"
+    supplierUrl: "https://www.cjdropshipping.com",
+    variants: [
+      { label: "30m — Olive + kit survie 4-en-1", description: "30m paracorde olive + kit survie : briquet USB, sifflet 120dB, boussole, grattoir ferrocerium. Livré sur bobine. Résistance 250kg.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-olive", image: "img/surv_paracorde.jpg" },
+      { label: "30m — Noir + kit survie 4-en-1", description: "Même corde en noir — plus discret. Identique performance. Kit survie inclus. Idéal randonnée, camping, kit d'urgence voiture.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-noir", image: "img/surv_paracorde.jpg" },
+      { label: "30m — Camo + kit survie 4-en-1", description: "Corde camouflage 30m + kit survie. Coloris militaire discret pour bushcraft et survival en milieu naturel.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-camo", image: "img/surv_paracorde.jpg" },
+      { label: "100m — bobine pro olive", description: "Bobine pro 100m paracorde olive — pour équiper un groupe ou stocker. Sans kit survie. Prix au mètre imbattable. Résistance 250kg.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-paracord-100m-olive", image: "img/surv_paracorde.jpg" }
+    ]
   }
 ];
-
 // Fusionner tous les produits
 const ALL_PRODUCTS = [...PRODUCTS, ...PRODUCTS_JARDINAGE, ...PRODUCTS_SURVIE_NEW];
 // Catégories disponibles
