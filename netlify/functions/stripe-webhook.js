@@ -421,6 +421,53 @@ exports.handler = async (event) => {
     }
   }
 
+  // ── Airtable — Enregistrer commande ──
+  let airtableRecordId = null;
+  try {
+    const supplier = bigbuyItems.length > 0 && cjItems.length > 0 ? 'Mixte'
+      : bigbuyItems.length > 0 ? 'BigBuy'
+      : cjItems.length > 0    ? 'CJDropshipping'
+      : 'Manuel';
+
+    const produitsList = [
+      ...bigbuyItems.map(i => `${i.name} ×${i.qty}`),
+      ...cjItems.map(i => `${i.name} ×${i.qty}`),
+      ...unknownItems.map(i => `${i.name} ×${i.qty} (manuel)`)
+    ].join('\n');
+
+    const addrFormatted = address
+      ? `${address.firstName} ${address.lastName}\n${address.address}\n${address.postcode} ${address.city}\n${address.country}`
+      : '';
+
+    const fournisseurOrderId = bigbuyOrderId || cjOrderId || '';
+
+    airtableRecordId = await saveToAirtable({
+      stripeRef:     paymentId,
+      date:          new Date().toISOString(),
+      client:        customerName,
+      emailClient:   customerEmail,
+      montant:       parseFloat(amount) || 0,
+      adresse:       addrFormatted,
+      produits:      produitsList,
+      fournisseur:   supplier,
+      statut:        fournisseurOrderId ? 'Commandé' : 'En attente',
+      idFournisseur: fournisseurOrderId,
+    });
+    console.log('✅ Airtable record créé:', airtableRecordId);
+  } catch (e) {
+    console.error('❌ Erreur Airtable:', e.message);
+  }
+
+  // ── Systeme.io — Ajouter client à la liste email ──
+  if (customerEmail) {
+    try {
+      await addToSystemeIo({ email: customerEmail, name: customerName, amount });
+      console.log('✅ Systeme.io — contact ajouté:', customerEmail);
+    } catch (e) {
+      console.error('❌ Erreur Systeme.io:', e.message);
+    }
+  }
+
   // ── TikTok tracking ──
   try {
     const clientIp = event.headers['x-forwarded-for'] || event.headers['client-ip'] || '';
@@ -438,7 +485,7 @@ exports.handler = async (event) => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ received: true, amount, bigbuyOrderId, cjOrderId })
+    body: JSON.stringify({ received: true, amount, bigbuyOrderId, cjOrderId, airtableRecordId })
   };
 };
 
@@ -610,6 +657,149 @@ function httpPostJsonCJ(path, token, payload) {
     path,
     headers: { 'CJ-Access-Token': token }
   }, payload);
+}
+
+// ─── Airtable — Sauvegarder commande ─────────────────────────────────────────
+// Variables Netlify requises : AIRTABLE_TOKEN, AIRTABLE_BASE_ID, AIRTABLE_TABLE_ID
+async function saveToAirtable({ stripeRef, date, client, emailClient, montant, adresse, produits, fournisseur, statut, idFournisseur }) {
+  const token   = process.env.AIRTABLE_TOKEN;
+  const baseId  = process.env.AIRTABLE_BASE_ID  || 'app7O3sIqJe5Nrb4g';
+  const tableId = process.env.AIRTABLE_TABLE_ID || 'tblRId6CsJPzLXUnh';
+
+  if (!token) {
+    console.log('⚠️ AIRTABLE_TOKEN manquant — skip Airtable');
+    return null;
+  }
+
+  const payload = {
+    fields: {
+      'Référence Stripe':     stripeRef    || '',
+      'Date':                 date         || new Date().toISOString(),
+      'Client':               client       || '',
+      'Email client':         emailClient  || '',
+      'Montant (€)':          montant      || 0,
+      'Adresse livraison':    adresse      || '',
+      'Produits':             produits     || '',
+      'Fournisseur':          fournisseur  || 'Manuel',
+      'Statut':               statut       || 'En attente',
+      'ID Commande Fournisseur': idFournisseur || '',
+      'Numéro de tracking':   '',
+      'Transporteur':         '',
+      'Email suivi envoyé':   false,
+      'Email livraison envoyé': false,
+      'Notes':                ''
+    }
+  };
+
+  return new Promise((resolve, reject) => {
+    const body = JSON.stringify(payload);
+    const options = {
+      hostname: 'api.airtable.com',
+      path:     `/v0/${baseId}/${tableId}`,
+      method:   'POST',
+      headers: {
+        'Authorization':  `Bearer ${token}`,
+        'Content-Type':   'application/json',
+        'Content-Length': Buffer.byteLength(body)
+      }
+    };
+    let data = '';
+    const req = https.request(options, res => {
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.id) {
+            resolve(parsed.id);
+          } else {
+            reject(new Error('Airtable erreur: ' + data));
+          }
+        } catch { reject(new Error('Airtable JSON invalide: ' + data)); }
+      });
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+// ─── Systeme.io — Ajouter contact après achat ────────────────────────────────
+// Variables Netlify requises : SYSTEME_IO_API_KEY, SYSTEME_IO_LIST_ID
+async function addToSystemeIo({ email, name, amount }) {
+  const apiKey = process.env.SYSTEME_IO_API_KEY;
+  const listId = parseInt(process.env.SYSTEME_IO_LIST_ID || '0', 10);
+
+  if (!apiKey) {
+    console.log('⚠️ SYSTEME_IO_API_KEY manquant — skip');
+    return null;
+  }
+
+  // Étape 1 : Créer ou récupérer le contact
+  const contactPayload = {
+    email,
+    fields: [
+      { slug: 'first_name', value: (name || '').split(' ')[0] || '' },
+      { slug: 'last_name',  value: (name || '').split(' ').slice(1).join(' ') || '' }
+    ],
+    tags: ['acheteur', 'naturesurvie']
+  };
+
+  const contactResult = await new Promise((resolve, reject) => {
+    const body = JSON.stringify(contactPayload);
+    const options = {
+      hostname: 'api.systeme.io',
+      path:     '/api/contacts',
+      method:   'POST',
+      headers: {
+        'X-API-Key':      apiKey,
+        'Content-Type':   'application/json',
+        'Content-Length': Buffer.byteLength(body)
+      }
+    };
+    let data = '';
+    const req = https.request(options, res => {
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        try { resolve(JSON.parse(data)); }
+        catch { reject(new Error('Systeme.io contact JSON invalide: ' + data)); }
+      });
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+
+  const contactId = contactResult.id || contactResult.contact?.id;
+  if (!contactId) {
+    throw new Error('Systeme.io — contactId introuvable: ' + JSON.stringify(contactResult));
+  }
+
+  // Étape 2 : Ajouter à la liste email (si SYSTEME_IO_LIST_ID défini)
+  if (listId > 0) {
+    await new Promise((resolve, reject) => {
+      const body = JSON.stringify({ contactId });
+      const options = {
+        hostname: 'api.systeme.io',
+        path:     `/api/emailCampaigns/${listId}/subscribers`,
+        method:   'POST',
+        headers: {
+          'X-API-Key':      apiKey,
+          'Content-Type':   'application/json',
+          'Content-Length': Buffer.byteLength(body)
+        }
+      };
+      let data = '';
+      const req = https.request(options, res => {
+        res.on('data', d => data += d);
+        res.on('end', () => resolve(data));
+      });
+      req.on('error', reject);
+      req.write(body);
+      req.end();
+    });
+  }
+
+  return contactId;
 }
 
 function sendResendEmail({ to, subject, text }) {
