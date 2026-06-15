@@ -724,28 +724,30 @@ async function saveToAirtable({ stripeRef, date, client, emailClient, montant, a
 }
 
 // ─── Systeme.io — Ajouter contact après achat ────────────────────────────────
-// Variables Netlify requises : SYSTEME_IO_API_KEY, SYSTEME_IO_LIST_ID
+// Variable Netlify requise : SYSTEME_IO_API_KEY
+// Tag "acheteur-naturesurvie" (id 2054377) créé le 2026-06-15
+const SYSTEME_IO_TAG_ID = 2054377;
+
 async function addToSystemeIo({ email, name, amount }) {
   const apiKey = process.env.SYSTEME_IO_API_KEY;
-  const listId = parseInt(process.env.SYSTEME_IO_LIST_ID || '0', 10);
-
   if (!apiKey) {
     console.log('⚠️ SYSTEME_IO_API_KEY manquant — skip');
     return null;
   }
 
-  // Étape 1 : Créer ou récupérer le contact
-  const contactPayload = {
+  const firstName = (name || '').split(' ')[0] || '';
+  const lastName  = (name || '').split(' ').slice(1).join(' ') || '';
+
+  // Étape 1 : Créer ou mettre à jour le contact
+  const contactPayload = JSON.stringify({
     email,
     fields: [
-      { slug: 'first_name', value: (name || '').split(' ')[0] || '' },
-      { slug: 'last_name',  value: (name || '').split(' ').slice(1).join(' ') || '' }
-    ],
-    tags: ['acheteur', 'naturesurvie']
-  };
+      { slug: 'first_name', value: firstName },
+      { slug: 'last_name',  value: lastName  }
+    ]
+  });
 
   const contactResult = await new Promise((resolve, reject) => {
-    const body = JSON.stringify(contactPayload);
     const options = {
       hostname: 'api.systeme.io',
       path:     '/api/contacts',
@@ -753,7 +755,7 @@ async function addToSystemeIo({ email, name, amount }) {
       headers: {
         'X-API-Key':      apiKey,
         'Content-Type':   'application/json',
-        'Content-Length': Buffer.byteLength(body)
+        'Content-Length': Buffer.byteLength(contactPayload)
       }
     };
     let data = '';
@@ -765,39 +767,37 @@ async function addToSystemeIo({ email, name, amount }) {
       });
     });
     req.on('error', reject);
-    req.write(body);
+    req.write(contactPayload);
     req.end();
   });
 
-  const contactId = contactResult.id || contactResult.contact?.id;
+  const contactId = contactResult.id;
   if (!contactId) {
     throw new Error('Systeme.io — contactId introuvable: ' + JSON.stringify(contactResult));
   }
 
-  // Étape 2 : Ajouter à la liste email (si SYSTEME_IO_LIST_ID défini)
-  if (listId > 0) {
-    await new Promise((resolve, reject) => {
-      const body = JSON.stringify({ contactId });
-      const options = {
-        hostname: 'api.systeme.io',
-        path:     `/api/emailCampaigns/${listId}/subscribers`,
-        method:   'POST',
-        headers: {
-          'X-API-Key':      apiKey,
-          'Content-Type':   'application/json',
-          'Content-Length': Buffer.byteLength(body)
-        }
-      };
-      let data = '';
-      const req = https.request(options, res => {
-        res.on('data', d => data += d);
-        res.on('end', () => resolve(data));
-      });
-      req.on('error', reject);
-      req.write(body);
-      req.end();
+  // Étape 2 : Assigner le tag "acheteur-naturesurvie"
+  const tagPayload = JSON.stringify({ tagId: SYSTEME_IO_TAG_ID });
+  await new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'api.systeme.io',
+      path:     `/api/contacts/${contactId}/tags`,
+      method:   'POST',
+      headers: {
+        'X-API-Key':      apiKey,
+        'Content-Type':   'application/json',
+        'Content-Length': Buffer.byteLength(tagPayload)
+      }
+    };
+    let data = '';
+    const req = https.request(options, res => {
+      res.on('data', d => data += d);
+      res.on('end', () => resolve(data));
     });
-  }
+    req.on('error', reject);
+    req.write(tagPayload);
+    req.end();
+  });
 
   return contactId;
 }
