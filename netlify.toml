@@ -9,3 +9,4 @@
 # Sequence email post-achat - toutes les heures
 [functions."email-sequence"]
   schedule = "0 * * * *"
+# Build triggered after lighthouse plugin removal
