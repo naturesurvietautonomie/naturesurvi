@@ -22,14 +22,14 @@ const PRODUCTS = [
     supplierPrice: 12.29,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "350 lm — 5W", description: "Version compacte 5W/350 lm. Idéale pour la randonnée légère et les sorties nocturnes courtes. Légère, autonomie standard.", price: 15, originalPrice: 23, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
-      { label: "400 lm — 6W", description: "Version puissante 6W/400 lm. Pour les longues nuits en bivouac ou les sentiers techniques. Faisceau plus large et plus lumineux.", price: 19, originalPrice: 29, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
+      { label: "350 lm — 5W", description: "Version compacte 5W/350 lm. Idéale pour la randonnée légère et les sorties nocturnes courtes. Légère, autonomie standard.", price: 20, originalPrice: 23, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
+      { label: "400 lm — 6W", description: "Version puissante 6W/400 lm. Pour les longues nuits en bivouac ou les sentiers techniques. Faisceau plus large et plus lumineux.", price: 24, originalPrice: 29, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
     ]
   },
   {
     id: 3,
     name: "Lanterne frontale MIL-TEC tactique olive",
-    price: 13,
+    price: 20,
     originalPrice: 20,
     category: "Éclairage",
     description: "Lanterne LED frontale MIL-TEC, coloris olive militaire. Robuste et fiable pour le camping, la chasse et les activités outdoor. Légère et pratique.",
@@ -48,7 +48,7 @@ const PRODUCTS = [
   {
     id: 4,
     name: "Lanterne frontale Nebo Einstein 250lm",
-    price: 15,
+    price: 20,
     originalPrice: 22,
     category: "Éclairage",
     description: "Lanterne LED frontale Nebo Einstein 250 lumens. Compacte et puissante pour la randonnée et le camping. Plusieurs modes d'éclairage.",
@@ -83,9 +83,9 @@ const PRODUCTS = [
     supplierPrice: 8.74,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "N°8 — 8,5 cm inox", description: "Le classique Opinel N°8, lame inox 8,5 cm — la taille la plus polyvalente pour la cuisine en bivouac et les usages quotidiens. Made in France.", price: 11, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
-      { label: "N°9 — 9 cm carbone", description: "Opinel N°9 lame carbone 9 cm — tranchant supérieur pour les pratiquants du bushcraft. Prend un fil rasoir, s'affûte facilement sur pierre.", price: 13, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
-      { label: "N°10 — 10 cm inox", description: "Opinel N°10 lame inox 10 cm — pour les travaux plus lourds : taille, découpe de bois, préparation culinaire en forêt.", price: 15, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" }
+      { label: "N°8 — 8,5 cm inox", description: "Le classique Opinel N°8, lame inox 8,5 cm — la taille la plus polyvalente pour la cuisine en bivouac et les usages quotidiens. Made in France.", price: 14, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
+      { label: "N°9 — 9 cm carbone", description: "Opinel N°9 lame carbone 9 cm — tranchant supérieur pour les pratiquants du bushcraft. Prend un fil rasoir, s'affûte facilement sur pierre.", price: 20, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
+      { label: "N°10 — 10 cm inox", description: "Opinel N°10 lame inox 10 cm — pour les travaux plus lourds : taille, découpe de bois, préparation culinaire en forêt.", price: 20, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" }
     ]
   },
   {
@@ -107,8 +107,8 @@ const PRODUCTS = [
     supplierPrice: 11.33,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Pelle noire métal", description: "Pelle pliable métal noire — robuste et compacte. Idéale pour creuser un abri, un trou de feu ou déblayer un sentier. Poignée antidérapante.", price: 14, originalPrice: 21, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
-      { label: "Cellfast Ideal Pro", description: "Pelle Cellfast Ideal Pro — version haut de gamme avec lame renforcée et manche ergonomique caoutchouté. Meilleure prise en main pour les sols durs.", price: 14, originalPrice: 21, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
+      { label: "Pelle noire métal", description: "Pelle pliable métal noire — robuste et compacte. Idéale pour creuser un abri, un trou de feu ou déblayer un sentier. Poignée antidérapante.", price: 20, originalPrice: 21, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
+      { label: "Cellfast Ideal Pro", description: "Pelle Cellfast Ideal Pro — version haut de gamme avec lame renforcée et manche ergonomique caoutchouté. Meilleure prise en main pour les sols durs.", price: 20, originalPrice: 21, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
     ]
   },
   {
@@ -130,14 +130,14 @@ const PRODUCTS = [
     supplierPrice: 22.04,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "2 personnes — 205×145 cm", description: "Tente 2 places 205×145 cm — légère et rapide à monter. Parfaite pour un couple ou solo avec du matériel. Double toit imperméable.", price: 26, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" }
+      { label: "2 personnes — 205×145 cm", description: "Tente 2 places 205×145 cm — légère et rapide à monter. Parfaite pour un couple ou solo avec du matériel. Double toit imperméable.", price: 30, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" }
     ]
   },
 
   {
     id: 14,
     name: "Réchaud à gaz Open Norte camping",
-    price: 29,
+    price: 40,
     originalPrice: 44,
     category: "Survie",
     description: "Réchaud à gaz Open Norte compact et puissant. Idéal pour le camping et la randonnée. Allumage piézo intégré, régulateur de flamme précis. Robuste et fiable.",
@@ -156,7 +156,7 @@ const PRODUCTS = [
   {
     id: 15,
     name: "Lampe frontale Black Diamond Spot 400",
-    price: 32,
+    price: 40,
     originalPrice: 49,
     category: "Éclairage",
     description: "Lampe frontale Black Diamond Spot 400 lumens, rechargeable. Étanche IPX8, autonomie jusqu'à 200h. La référence des alpinistes et randonneurs exigeants.",
@@ -175,7 +175,7 @@ const PRODUCTS = [
   {
     id: 16,
     name: "Lanterne LED Brennenstuhl frontale 200lm",
-    price: 26,
+    price: 30,
     originalPrice: 40,
     category: "Éclairage",
     description: "Lanterne frontale LED Brennenstuhl 1178780, 200 lumens. Marque allemande reconnue pour sa fiabilité. Légère, réglable, idéale pour le bricolage et l'outdoor.",
@@ -195,7 +195,7 @@ const PRODUCTS = [
   {
     id: 18,
     name: "Glacière isotherme Marbueno 28x20cm",
-    price: 11,
+    price: 14,
     originalPrice: 17,
     category: "Survie",
     description: "Glacière isotherme Marbueno SUMMER, 28x20x10 cm, polyester. Maintient le froid plusieurs heures. Légère et pliable, idéale pour pique-nique et randonnée.",
@@ -214,7 +214,7 @@ const PRODUCTS = [
   {
     id: 19,
     name: "Lampe frontale Stak LED 10W 1200lm",
-    price: 40,
+    price: 50,
     originalPrice: 62,
     category: "Éclairage",
     description: "Lampe frontale Stak 10W ultra-puissante 1200 lumens. Rechargeable USB-C, autonomie longue durée. Pour les sorties nocturnes exigeantes et la spéléologie.",
@@ -249,13 +249,13 @@ const PRODUCTS = [
     supplierPrice: 66.68,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "40 L — randonnée", description: "Mammut Cargon 40L — le compagnon idéal pour les randonnées de 2-4 jours. Dos ventilé, ceinture ergonomique, tissu Cordura résistant.", price: 80, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" }
+      { label: "40 L — randonnée", description: "Mammut Cargon 40L — le compagnon idéal pour les randonnées de 2-4 jours. Dos ventilé, ceinture ergonomique, tissu Cordura résistant.", price: 100, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" }
     ]
   },
   {
     id: 22,
     name: "Sac à dos Mammut Alto 24L",
-    price: 71,
+    price: 90,
     originalPrice: 109,
     category: "Sacs à dos",
     description: "Sac à dos Mammut Alto 24L, parfait pour les randonnées à la journée. Format compact mais bien équipé. Marque suisse de référence pour l'outdoor.",
@@ -274,7 +274,7 @@ const PRODUCTS = [
   {
     id: 23,
     name: "Sac à dos Reebok Noah polyvalent",
-    price: 23,
+    price: 30,
     originalPrice: 35,
     category: "Sacs à dos",
     description: "Sac à dos casual Reebok Noah. Polyvalent pour le sport, l'école ou les sorties en plein air. Compartiments multiples, robuste et confortable.",
@@ -293,7 +293,7 @@ const PRODUCTS = [
   {
     id: 24,
     name: "Chargeur universel Varta piles rechargeables",
-    price: 24,
+    price: 30,
     originalPrice: 37,
     category: "Énergie",
     description: "Chargeur de batterie Varta universel. Compatible AA, AAA, C, D et 9V. Indispensable pour économiser et être autonome en piles. Marque allemande de référence.",
@@ -312,7 +312,7 @@ const PRODUCTS = [
   {
     id: 25,
     name: "Pack piles rechargeables Varta AA + AAA",
-    price: 6,
+    price: 10,
     originalPrice: 10,
     category: "Énergie",
     description: "Pack piles rechargeables Varta 1,2V AA et AAA. Économiques et écologiques, rechargeables jusqu'à 1000 fois. Idéal pour lampes torches, télécommandes et appareils outdoor.",
@@ -331,7 +331,7 @@ const PRODUCTS = [
   {
     id: 26,
     name: "Piles Duracell Plus Power Boost AAA (12 unités)",
-    price: 9,
+    price: 10,
     originalPrice: 14,
     category: "Énergie",
     description: "Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.",
@@ -366,14 +366,14 @@ const PRODUCTS = [
     supplierPrice: 15.41,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "240 cm — légère", description: "Canne télescopique 240 cm — légère et maniable pour la pêche en rivière étroite, lac calme ou mare. Idéale pour débuter.", price: 14, originalPrice: 22, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
-      { label: "300 cm — polyvalente", description: "Canne télescopique 300 cm — portée plus longue pour accéder aux poissons en eau profonde ou berges larges. Polyvalente toutes conditions.", price: 19, originalPrice: 29, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+      { label: "240 cm — légère", description: "Canne télescopique 240 cm — légère et maniable pour la pêche en rivière étroite, lac calme ou mare. Idéale pour débuter.", price: 20, originalPrice: 22, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
+      { label: "300 cm — polyvalente", description: "Canne télescopique 300 cm — portée plus longue pour accéder aux poissons en eau profonde ou berges larges. Polyvalente toutes conditions.", price: 23, originalPrice: 29, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
     ]
   },
   {
     id: 31,
     name: "Boîte de rangement pêche Kali Kunnan",
-    price: 10,
+    price: 12,
     originalPrice: 15,
     category: "Pêche",
     description: "Boîte de rangement pour accessoires de pêche Kali Kunnan. Compartiments modulables pour hameçons, leurres et plombs. Pratique et résistante pour emporter partout.",
@@ -392,7 +392,7 @@ const PRODUCTS = [
   {
     id: 32,
     name: "Caméra de sport 4K Sunstech Adventure",
-    price: 38,
+    price: 50,
     originalPrice: 59,
     category: "Électronique outdoor",
     description: "Caméra de sport 4K Sunstech Adventure. Filmez vos aventures en haute définition. Résistante aux chocs, idéale pour le vélo, la randonnée, le kayak. Légère et compacte.",
@@ -411,7 +411,7 @@ const PRODUCTS = [
   {
     id: 33,
     name: "Caméra de sport SK8 Elite outdoor",
-    price: 53,
+    price: 70,
     originalPrice: 82,
     category: "Électronique outdoor",
     description: "Caméra de sport SK8 Elite pour l'outdoor extrême. Résistante à l'eau et aux chocs. Parfaite pour VTT, ski, escalade et plongée. Accessoires de fixation inclus.",
@@ -430,7 +430,7 @@ const PRODUCTS = [
   {
     id: 34,
     name: "Bracelet connecté Xiaomi Band outdoor",
-    price: 59,
+    price: 70,
     originalPrice: 91,
     category: "Électronique outdoor",
     description: "Bracelet d'activités Xiaomi 1,56\" pour le suivi sportif outdoor. GPS, cardiofréquencemètre, compteur de pas, altimètre. Étanche, autonomie 14 jours. Parfait pour la randonnée.",
@@ -465,13 +465,13 @@ const PRODUCTS = [
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Légère — kaki", description: "Veste légère Alphaventure Bidinamarca kaki — coupe-vent fin pour les journées fraîches. Poids plume, tient dans la poche. Coloris militaire discret.", price: 14, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" }
+      { label: "Légère — kaki", description: "Veste légère Alphaventure Bidinamarca kaki — coupe-vent fin pour les journées fraîches. Poids plume, tient dans la poche. Coloris militaire discret.", price: 20, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" }
     ]
   },
   {
     id: 37,
     name: "Casque d'escalade Black Diamond",
-    price: 44,
+    price: 50,
     originalPrice: 67,
     category: "Escalade",
     description: "Casque d'escalade Black Diamond léger et résistant. Protection optimale pour l'escalade en falaise et en salle. Ventilation efficace, réglage rapide. Norme CE EN12492.",
@@ -490,7 +490,7 @@ const PRODUCTS = [
   {
     id: 38,
     name: "Harnais d'escalade Kong Sierra Duo",
-    price: 21,
+    price: 30,
     originalPrice: 32,
     category: "Escalade",
     description: "Harnais d'escalade Kong Sierra Duo pour débutants. Confortable et sécurisé, adapté à la salle et à la falaise. Réglages rapides, ceinture ventrale renforcée.",
@@ -509,7 +509,7 @@ const PRODUCTS = [
   {
     id: 39,
     name: "Slackline Schildkröt 15m jaune",
-    price: 72,
+    price: 90,
     originalPrice: 112,
     category: "Escalade",
     description: "Slackline Schildkröt 15 mètres, couleur jaune vif. Kit complet avec sangle, tendeur et protège-arbre. Idéal pour la pratique en forêt, parc ou jardin. Pour tous niveaux.",
@@ -528,7 +528,7 @@ const PRODUCTS = [
   {
     id: 40,
     name: "Pain croustillant randonnée Trek'n Eat",
-    price: 8,
+    price: 10,
     originalPrice: 13,
     category: "Alimentation outdoor",
     description: "Pain croustillant déshydraté Trek'n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.",
@@ -566,7 +566,7 @@ const PRODUCTS = [
   {
     id: 42,
     name: "Barre énergétique Naak Ultra Energy caramel",
-    price: 4,
+    price: 5,
     originalPrice: 6,
     category: "Alimentation outdoor",
     description: "Barre énergétique Naak Ultra Energy 50g, saveur caramel café. Riche en protéines et glucides complexes. Idéale avant et pendant l'effort outdoor : randonnée, course, cyclisme.",
@@ -585,7 +585,7 @@ const PRODUCTS = [
   {
     id: 43,
     name: "Sac d'hydratation Joluvi 2,5L",
-    price: 9,
+    price: 10,
     originalPrice: 13,
     category: "Cyclisme & Trail",
     description: "Sac d'hydratation Joluvi 2,5L léger et ergonomique. Poche à eau intégrée, tube buveur, sangles réglables. Idéal pour le trail, le VTT et la randonnée rapide.",
@@ -604,7 +604,7 @@ const PRODUCTS = [
   {
     id: 44,
     name: "Sacoche de vélo PRO Performance 5,5L",
-    price: 30,
+    price: 40,
     originalPrice: 46,
     category: "Cyclisme & Trail",
     description: "Sacoche de vélo PRO Performance 5,5L. Fixation rapide sur guidon ou selle. Imperméable, idéale pour les sorties longue distance. Compatible avec tous types de vélos.",
@@ -624,7 +624,7 @@ const PRODUCTS = [
   {
     id: 46,
     name: "Montre Casio Diver 100M",
-    price: 48,
+    price: 60,
     originalPrice: 74,
     category: "Montres outdoor",
     description: "Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu'à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.",
@@ -643,7 +643,7 @@ const PRODUCTS = [
   {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
-    price: 11,
+    price: 14,
     originalPrice: 16,
     category: "Alimentation outdoor",
     description: "Plat lyophilisé Trek'n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l'eau chaude. Goût savoureux, haute valeur nutritive.",
@@ -662,7 +662,7 @@ const PRODUCTS = [
   {
     id: 49,
     name: "Dessert lyophilisé Trek'n Eat chocolat",
-    price: 8,
+    price: 10,
     originalPrice: 12,
     category: "Alimentation outdoor",
     description: "Dessert lyophilisé Trek'n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l'eau chaude.",
@@ -681,7 +681,7 @@ const PRODUCTS = [
   {
     id: 50,
     name: "Légumes lyophilisés Trek'n Eat",
-    price: 10,
+    price: 12,
     originalPrice: 15,
     category: "Alimentation outdoor",
     description: "Légumes lyophilisés Trek'n Eat. Garniture légère et nutritive pour le camp. À ajouter à vos repas en bivouac. Conservation 5 ans, poids minimal.",
@@ -716,7 +716,7 @@ const PRODUCTS = [
     supplierPrice: 7.88,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Regatta noire", description: "Gourde Regatta 1L noire — grande contenance pour les longues sorties. Bouchon à vis étanche, graduation lisible, résistante aux chocs.", price: 10, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" }
+      { label: "1L — Regatta noire", description: "Gourde Regatta 1L noire — grande contenance pour les longues sorties. Bouchon à vis étanche, graduation lisible, résistante aux chocs.", price: 12, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" }
     ]
   },
 
@@ -767,7 +767,7 @@ const PRODUCTS = [
     variants: [
       { label: "Standard 10cm", description: "Firestarter 10 cm — version standard, idéal pour débuter. Produit jusqu'à 3 000°C d'étincelles. Compact et léger pour le sac à dos.", price: 5, originalPrice: 6, supplierPrice: 2.80, image: "img/prod_firestarter.jpg" },
       { label: "Large 12cm — durée x3", description: "Firestarter 12 cm large — durée de vie 3× supérieure. Pour les sorties longues ou les kits 72h. Grattoir acier inclus.", price: 7, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
-      { label: "XL 15cm + cordage", description: "Firestarter XL 15 cm avec cordage paracord 1m intégré — le plus endurant. Idéal pour les expéditions et l'enseignement de la survie.", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
+      { label: "XL 15cm + cordage", description: "Firestarter XL 15 cm avec cordage paracord 1m intégré — le plus endurant. Idéal pour les expéditions et l'enseignement de la survie.", price: 10, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
     ]
   },
   {
@@ -788,7 +788,7 @@ const PRODUCTS = [
     supplierPrice: 1.80,
     variants: [
       { label: "×1 — Individuelle", description: "1 couverture de survie isotherme — à glisser dans chaque sac à dos, voiture ou kit 72h. Légère 55g, réfléchit 90% de la chaleur.", price: 3, originalPrice: 4, supplierPrice: 1.80, image: "img/prod_couverture.jpg" },
-      { label: "×4 — Pack famille", description: "Pack 4 couvertures de survie — équipez toute la famille ou le groupe. Pratique en voyage, randonnée ou pour les préparateurs.", price: 8, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" }
+      { label: "×4 — Pack famille", description: "Pack 4 couvertures de survie — équipez toute la famille ou le groupe. Pratique en voyage, randonnée ou pour les préparateurs.", price: 10, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" }
     ]
   },
   {
@@ -810,7 +810,7 @@ const PRODUCTS = [
     variants: [
       { label: "Orange — 120 dB", description: "Sifflet 120 dB orange — haute visibilité et puissance maximale. Sans bille : fonctionne même mouillé. Clip de ceinture inclus.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
       { label: "Noir — 120 dB", description: "Sifflet 120 dB noir — discret et compact. Puissance identique, parfait pour intégrer à un sac ou harnais d'escalade.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
-      { label: "3-en-1 boussole+sifflet+thermomètre", description: "Kit 3-en-1 : boussole, sifflet 120 dB et thermomètre — tout en un clip. L'essentiel de navigation et sécurité en format ultra-compact.", price: 4, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_sifflet.jpg" }
+      { label: "3-en-1 boussole+sifflet+thermomètre", description: "Kit 3-en-1 : boussole, sifflet 120 dB et thermomètre — tout en un clip. L'essentiel de navigation et sécurité en format ultra-compact.", price: 5, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_sifflet.jpg" }
     ]
   },
   {
@@ -921,8 +921,8 @@ const PRODUCTS = [
       { label: "10m — Noir", description: "Corde paracord 10m noire — longueur idéale pour monter un abri, fixer une tarp ou créer des attaches. Résistance 249 kg.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
       { label: "10m — Vert militaire", description: "Corde paracord 10m vert militaire — coloris discret pour la chasse et le bushcraft. Usage : ligature, piège, ceinture d'urgence.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
       { label: "10m — Camouflage", description: "Corde paracord 10m camouflage — se fond dans l'environnement. Idéale pour les pièges, les cache-cache tactiques et l'outdoor discret.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "30m — Noir", description: "Corde paracord 30m noire — pour les grands abris, l'escalade légère, les tyroliennes. Assez de longueur pour toutes les situations de survie.", price: 9, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg" },
-      { label: "50m — Noir", description: "Corde paracord 50m noire — le grand format pour les préparateurs et enseignants survie. Peut remplacer une corde d'escalade en urgence.", price: 14, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg" }
+      { label: "30m — Noir", description: "Corde paracord 30m noire — pour les grands abris, l'escalade légère, les tyroliennes. Assez de longueur pour toutes les situations de survie.", price: 10, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg" },
+      { label: "50m — Noir", description: "Corde paracord 50m noire — le grand format pour les préparateurs et enseignants survie. Peut remplacer une corde d'escalade en urgence.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg" }
     ]
   },
   {
@@ -1065,7 +1065,7 @@ const PRODUCTS = [
       { label: "Petite — 100×50×80 cm", description: "Serre petite 100×50×80 cm — pour balcon ou terrasse. Protège 3-4 plants du gel et des insectes. Montage rapide, encombrement minimal.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
       { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 48, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
       { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 55, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre_grande.jpg" },
-      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 53, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre_grande.jpg" }
+      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 70, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre_grande.jpg" }
     ]
   },
   {
@@ -1087,9 +1087,9 @@ const PRODUCTS = [
     variants: [
       { label: "×10 bambou 90cm", description: "10 tuteurs bambou 90 cm — pour tomates cerises, haricots grimpants et petits arbustes. Naturels, résistants, biodégradables en fin de vie.", price: 7, originalPrice: 7, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg" },
       { label: "×20 bambou 90cm", description: "20 tuteurs bambou 90 cm — pour équiper un carré potager entier. Économique, écologique, livré en lot pour un jardin bien organisé.", price: 8, originalPrice: 11, supplierPrice: 6.00, image: "img/jard_tuteurs.jpg" },
-      { label: "×10 métal 120cm", description: "10 tuteurs métal 120 cm — plus solides que le bambou, indéformables. Parfaits pour les grosses tomates, poivrons et fleurs hautes.", price: 7, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg" },
-      { label: "×20 métal 120cm", description: "20 tuteurs métal 120 cm — équiper un grand potager avec des supports durables saison après saison. Traitement anti-rouille.", price: 11, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg" },
-      { label: "×5 spirale tomates 150cm", description: "5 spirales à tomates 150 cm — le tuteur ultime pour les grosses tomates. Enroulement naturel de la tige, soutien en continu sans attache.", price: 9, originalPrice: 13, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg" }
+      { label: "×10 métal 120cm", description: "10 tuteurs métal 120 cm — plus solides que le bambou, indéformables. Parfaits pour les grosses tomates, poivrons et fleurs hautes.", price: 10, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg" },
+      { label: "×20 métal 120cm", description: "20 tuteurs métal 120 cm — équiper un grand potager avec des supports durables saison après saison. Traitement anti-rouille.", price: 14, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg" },
+      { label: "×5 spirale tomates 150cm", description: "5 spirales à tomates 150 cm — le tuteur ultime pour les grosses tomates. Enroulement naturel de la tige, soutien en continu sans attache.", price: 10, originalPrice: 13, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg" }
     ]
   },
   {
@@ -1110,8 +1110,8 @@ const PRODUCTS = [
     supplierPrice: 5.00,
     variants: [
       { label: "5L — semis et boutures", description: "Terreau bio 5L pour semis et boutures — texture fine ultra-légère favorisant la germination. Sans tourbe, enrichi compost. Idéal en plateau de semis.", price: 10, originalPrice: 10, supplierPrice: 5.00, image: "img/jard_terreau.jpg" },
-      { label: "20L — potager", description: "Terreau bio 20L pour potager — pour remplir un carré 120×60 cm ou 4-5 grands pots. Riche en nutriments, favorise la production de légumes.", price: 10, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_terreau.jpg" },
-      { label: "50L — grand jardin", description: "Terreau bio 50L grand jardin — pour les grandes surfaces, plates-bandes et potagers familiaux. Économique, pH équilibré, longue tenue.", price: 19, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_terreau.jpg" }
+      { label: "20L — potager", description: "Terreau bio 20L pour potager — pour remplir un carré 120×60 cm ou 4-5 grands pots. Riche en nutriments, favorise la production de légumes.", price: 12, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_terreau.jpg" },
+      { label: "50L — grand jardin", description: "Terreau bio 50L grand jardin — pour les grandes surfaces, plates-bandes et potagers familiaux. Économique, pH équilibré, longue tenue.", price: 24, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_terreau.jpg" }
     ]
   },
   {
@@ -1134,7 +1134,7 @@ const PRODUCTS = [
       { label: "Kit 10 légumes essentiels", description: "10 sachets de semences — les indispensables du potager débutant : tomates, courgettes, carottes, salades, radis. Non traitées, bio.", price: 13, originalPrice: 8, supplierPrice: 4.00, image: "img/jard_semences.jpg" },
       { label: "Kit 20 légumes complet", description: "20 sachets de semences bio — pour un potager diversifié toute la saison. Printemps à automne, légumes fruits et feuilles inclus.", price: 14, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
       { label: "Kit 30 légumes + herbes", description: "30 sachets semences + herbes aromatiques — basilic, persil, ciboulette, thym inclus. Le kit complet pour l'autosuffisance alimentaire.", price: 16, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
-      { label: "Kit 50 variétés premium", description: "50 variétés semences premium — dont variétés anciennes rares. Pour les passionnés voulant un potager exceptionnel et des saveurs oubliées.", price: 16, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
+      { label: "Kit 50 variétés premium", description: "50 variétés semences premium — dont variétés anciennes rares. Pour les passionnés voulant un potager exceptionnel et des saveurs oubliées.", price: 20, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
     ]
   },
   {
@@ -1179,7 +1179,7 @@ const PRODUCTS = [
       { label: "Kit 15 plantes", description: "Kit goutte-à-goutte 15 plantes — pour débuter et tester l'arrosage automatique. Idéal balcon ou petite terrasse. Économise 70% d'eau.", price: 20, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg" },
       { label: "Kit 30 plantes", description: "Kit goutte-à-goutte 30 plantes — pour un carré potager complet. Tuyaux PE flexibles, goutteurs réglables 0-8L/h, connexions étanches.", price: 22, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
       { label: "Kit 50 plantes + timer", description: "Kit goutte-à-goutte 50 plantes + programmateur — arrosage 100% autonome. Programmez et oubliez, même pendant les vacances.", price: 25, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 100 plantes pro", description: "Kit goutte-à-goutte 100 plantes pro — pour les grands potagers, serres et terrasses. Débit maîtrisé, tuyaux renforcés, raccords universels.", price: 27, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
+      { label: "Kit 100 plantes pro", description: "Kit goutte-à-goutte 100 plantes pro — pour les grands potagers, serres et terrasses. Débit maîtrisé, tuyaux renforcés, raccords universels.", price: 30, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
     ]
   },
   {
@@ -1299,7 +1299,7 @@ const PRODUCTS_JARDINAGE = [
     variants: [
       { label: "300L — Verte", description: "Cuve 300L verte — coloris naturel discret, s'intègre au jardin. Raccord gouttière universel, robinet 3/4\", couvercle anti-moustiques. Poids vide : 8kg.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-verte", image: "img/jard_cuve_pluie.jpg" },
       { label: "300L — Noire", description: "Cuve 300L noire — absorbe la chaleur, réduit les algues. Même équipement que le modèle vert. Idéale pour les emplacements ensoleillés.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-noire", image: "img/jard_cuve_pluie.jpg" },
-      { label: "500L — Verte", description: "Cuve 500L verte — pour les grands potagers et vergers. Couvercle renforcé, double robinet. Autonomie arrosage 2-3 semaines selon consommation.", price: 89, originalPrice: 129, supplierPrice: 67.00, supplierSku: "cuve-pluie-500l-verte", image: "img/jard_cuve_pluie.jpg" }
+      { label: "500L — Verte", description: "Cuve 500L verte — pour les grands potagers et vergers. Couvercle renforcé, double robinet. Autonomie arrosage 2-3 semaines selon consommation.", price: 100, originalPrice: 129, supplierPrice: 67.00, supplierSku: "cuve-pluie-500l-verte", image: "img/jard_cuve_pluie.jpg" }
     ]
   },
   {
@@ -1347,7 +1347,7 @@ const PRODUCTS_JARDINAGE = [
     variants: [
       { label: "1L — Croissance (N fort)", description: "Formule croissance NPK 7-3-1 — riche en azote pour maximiser la végétation. Pour légumes feuilles, herbes, jeunes plants. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-croissance", image: "img/jard_engrais_guano.jpg" },
       { label: "1L — Floraison (P fort)", description: "Formule floraison NPK 3-7-4 — riche en phosphore pour booster fleurs et fruits. Tomates, poivrons, fraises, concombres. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-floraison", image: "img/jard_engrais_guano.jpg" },
-      { label: "5L — Croissance (économique)", description: "Bidon 5L formule croissance — format économique pour grands potagers. 5L = 500L de solution d'arrosage. 5 mois d'utilisation pour 20m².", price: 49, originalPrice: 72, supplierPrice: 37.00, supplierSku: "engrais-guano-5l-croissance", image: "img/jard_engrais_guano.jpg" }
+      { label: "5L — Croissance (économique)", description: "Bidon 5L formule croissance — format économique pour grands potagers. 5L = 500L de solution d'arrosage. 5 mois d'utilisation pour 20m².", price: 55, originalPrice: 72, supplierPrice: 37.00, supplierSku: "engrais-guano-5l-croissance", image: "img/jard_engrais_guano.jpg" }
     ]
   },
   {
@@ -1417,7 +1417,7 @@ const PRODUCTS_JARDINAGE = [
     variants: [
       { label: "×8 — 86mm (large) + pompe", description: "8 couvercles 86mm + pompe manuelle. Compatible bocaux large ouverture : Le Parfait, Mason Jar, Ball. Jusqu'à 5× la durée de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-86mm", image: "img/jard_couvercles_vide.jpg" },
       { label: "×8 — 70mm (standard) + pompe", description: "8 couvercles 70mm + pompe manuelle. Pour bocaux à ouverture standard (70mm) les plus courants. Même performance de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-70mm", image: "img/jard_couvercles_vide.jpg" },
-      { label: "×16 — mix 70mm + 86mm + pompe électrique", description: "16 couvercles (8×70mm + 8×86mm) + pompe électrique USB. Conservez toutes vos conserves d'un geste. Batterie intégrée 400 cycles.", price: 29, originalPrice: 42, supplierPrice: 22.00, supplierSku: "cj-vacuum-lids-16-elec", image: "img/jard_couvercles_vide.jpg" }
+      { label: "×16 — mix 70mm + 86mm + pompe électrique", description: "16 couvercles (8×70mm + 8×86mm) + pompe électrique USB. Conservez toutes vos conserves d'un geste. Batterie intégrée 400 cycles.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "cj-vacuum-lids-16-elec", image: "img/jard_couvercles_vide.jpg" }
     ]
   },
   {
@@ -1440,7 +1440,7 @@ const PRODUCTS_JARDINAGE = [
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
       { label: "Standard — mousse verte", description: "Agenouilloir 2-en-1 mousse verte 5cm. Charge max 120kg. Poignées acier pour se relever. Pliable. Livré avec sacoche de rangement.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "agenouilloir-2en1-vert", image: "img/jard_agenouilloir.jpg" },
-      { label: "Large — mousse grise + poches outils", description: "Version large (+10cm) avec 2 poches latérales pour ranger sécateur, gants et outils. Mousse grise 6cm extra-confort. Idéal jardinage intensif.", price: 29, originalPrice: 42, supplierPrice: 22.00, supplierSku: "agenouilloir-2en1-large", image: "img/jard_agenouilloir.jpg" }
+      { label: "Large — mousse grise + poches outils", description: "Version large (+10cm) avec 2 poches latérales pour ranger sécateur, gants et outils. Mousse grise 6cm extra-confort. Idéal jardinage intensif.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "agenouilloir-2en1-large", image: "img/jard_agenouilloir.jpg" }
     ]
   }
 ,
@@ -1519,7 +1519,7 @@ const PRODUCTS_SURVIE_NEW = [
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
       { label: "42 pièces — pochette nylon", description: "Trousse 42 pièces en pochette nylon imperméable compacte (21×15cm). Conforme EN 13157. Poids 280g. Idéal sac à dos, voiture, bivouac.", price: 18, originalPrice: 25, supplierPrice: 13.50, supplierSku: "kit-secours-42pcs", image: "img/surv_trousse_secours.jpg" },
-      { label: "72 pièces — mallette rigide", description: "Trousse 72 pièces en mallette rigide ABS avec compartiments. Inclut défibrillateur bidon de diagnostic, attelle, couverture mylar. Pour famille ou groupe.", price: 29, originalPrice: 42, supplierPrice: 22.00, supplierSku: "kit-secours-72pcs-mallette", image: "img/surv_trousse_secours.jpg" },
+      { label: "72 pièces — mallette rigide", description: "Trousse 72 pièces en mallette rigide ABS avec compartiments. Inclut défibrillateur bidon de diagnostic, attelle, couverture mylar. Pour famille ou groupe.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "kit-secours-72pcs-mallette", image: "img/surv_trousse_secours.jpg" },
       { label: "Kit auto — norme DIN13164", description: "Kit automobile obligatoire norme DIN 13164 + supplément survie (couverture mylar, garrot, masque). Valable contrôle technique. Poids 320g.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "kit-secours-auto-din13164", image: "img/surv_trousse_secours.jpg" }
     ]
   },
