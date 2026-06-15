@@ -272,7 +272,7 @@
     // Rendu initial
     function renderGrid() {
       // Inclure survie (1-79) + énergie solaire (90-96) — exclure jardinage (101+)
-      let products = PRODUCTS.filter(p => p.id < 100);
+      let products = PRODUCTS.filter(p => p.id < 100 || (p.id >= 200 && p.id <= 299));
 
       // Filtre catégorie
       if (currentCat !== 'all') {
