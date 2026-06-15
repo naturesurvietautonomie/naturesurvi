@@ -995,7 +995,188 @@ const PRODUCTS = [
   },
 
   // ============================================================
-  // PRODUITS JARDINAGE — id 80-89 (ajoutés 2026-05-24)
+  // NOUVEAUX PRODUITS SURVIE — id 72-79 (manquants)
+  // ============================================================
+  {
+    id: 72,
+    name: "Sac de couchage 3 saisons -5°C",
+    price: 35,
+    category: "Survie",
+    description: "Sac de couchage confort jusqu'à -5°C. Rembourrage en polyester creux siliconé, doublure polaire. Fermeture éclair anti-coincement, sac de compression inclus. Léger 1,2 kg.",
+    badges: ["Essentiel"],
+    rating: 4.6,
+    reviews: 234,
+    image: "img/prod_sac_couchage.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "1.2 kg",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "sac-couchage-3saisons",
+    supplierPrice: 28.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "Confort -5°C — Vert", description: "Sac de couchage vert -5°C — idéal randonnée 3 saisons. Fermeture éclair bidirectionnelle, capuche ajustable, sac de compression.", price: 35, supplierPrice: 28.00, supplierSku: "sac-couchage-vert-5c", image: "img/prod_sac_couchage.jpg" },
+      { label: "Grand froid -15°C — Gris", description: "Sac de couchage grand froid -15°C — pour les nuits hivernales en montagne. Double rembourrage, col thermique, protection anti-vent.", price: 55, supplierPrice: 44.00, supplierSku: "sac-couchage-gris-15c", image: "img/prod_sac_couchage.jpg" }
+    ]
+  },
+  {
+    id: 73,
+    name: "Matelas de sol isolant de randonnée",
+    price: 18,
+    category: "Survie",
+    description: "Matelas de sol isolant mousse EVA haute densité. Pliable en accordéon, R-Value 2.5. Léger 400g, protège du froid et de l'humidité. Compatible tout sac à dos.",
+    badges: ["Essentiel"],
+    rating: 4.5,
+    reviews: 178,
+    image: "img/prod_matelas.jpg",
+    shipping: "Livraison 3-5 jours",
+    weight: "400 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "matelas-eva-randonnee",
+    supplierPrice: 14.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "Mousse EVA — Bleu", description: "Matelas EVA bleu pliable accordéon — isolation sol R-Value 2.5. Ultra-léger 400g, idéal pour le bivouac et la randonnée légère.", price: 18, supplierPrice: 14.00, supplierSku: "matelas-eva-bleu", image: "img/prod_matelas.jpg" },
+      { label: "Gonflable autogonflant — Vert", description: "Matelas autogonflant 3cm d'épaisseur — confort supérieur, isolation R-Value 3.5. Valve double sens, sac de transport inclus.", price: 35, supplierPrice: 28.00, supplierSku: "matelas-gonflable-vert", image: "img/prod_matelas.jpg" }
+    ]
+  },
+  {
+    id: 74,
+    name: "Poncho de pluie imperméable",
+    price: 8,
+    category: "Vêtements outdoor",
+    description: "Poncho de pluie imperméable polyester 210T. Capuche intégrée, coupe ample couvrant le sac à dos. Léger 180g, pliable dans sa pochette. Essentiel pour la randonnée.",
+    badges: ["Essentiel"],
+    rating: 4.4,
+    reviews: 312,
+    image: "img/prod_poncho.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "180 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "poncho-pluie-imperméable",
+    supplierPrice: 6.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "Vert militaire — taille unique", description: "Poncho vert militaire — coupe ample couvrant le sac à dos. Imperméable 210T, coutures thermosoudées, capuche réglable.", price: 8, supplierPrice: 6.00, supplierSku: "poncho-vert-mil", image: "img/prod_poncho.jpg" },
+      { label: "Kaki — taille unique", description: "Poncho kaki — discret en forêt, idéal chasse et bivouac. Légèreté 180g, se range dans une poche de pantalon.", price: 8, supplierPrice: 6.00, supplierSku: "poncho-kaki", image: "img/prod_poncho.jpg" },
+      { label: "Orange fluo — taille unique", description: "Poncho orange fluo — haute visibilité pour la sécurité en montagne. Imperméable, couvre sac à dos, capuche intégrée.", price: 8, supplierPrice: 6.00, supplierSku: "poncho-orange", image: "img/prod_poncho.jpg" }
+    ]
+  },
+  {
+    id: 75,
+    name: "Trousse de secours 35 pièces",
+    price: 15,
+    category: "Survie",
+    description: "Trousse de premiers secours 35 pièces. Pansements, bandes, compresses stériles, couverture de survie, ciseaux, gants latex, guide de premiers secours. Conforme aux normes européennes.",
+    badges: ["Essentiel", "Bestseller"],
+    rating: 4.7,
+    reviews: 445,
+    image: "img/prod_trousse_secours.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "320 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "trousse-secours-35p",
+    supplierPrice: 11.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "35 pièces — Individuelle", description: "Trousse secours 35 pièces — sac rouge imperméable compact. Pansements, compresses, couverture survie, ciseaux. Norme CE.", price: 15, supplierPrice: 11.00, supplierSku: "trousse-secours-35p", image: "img/prod_trousse_secours.jpg" },
+      { label: "85 pièces — Famille", description: "Trousse secours 85 pièces famille — pour voiture, maison ou camp de base. Attelles, bandes élastiques, antiseptique, guide complet.", price: 25, supplierPrice: 18.00, supplierSku: "trousse-secours-85p", image: "img/prod_trousse_secours.jpg" }
+    ]
+  },
+  {
+    id: 76,
+    name: "Couteau suisse multifonction 12 outils",
+    price: 22,
+    category: "Outils",
+    description: "Couteau multifonction 12 outils inox : lame, scie, tournevis, ouvre-boîte, poinçon, ciseaux, lime, loupe. Manche ergonomique. L'essentiel en randonnée et camping.",
+    badges: ["Bestseller"],
+    rating: 4.6,
+    reviews: 389,
+    image: "img/prod_suisse.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "120 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "couteau-multi-12outils",
+    supplierPrice: 17.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "12 outils — Rouge", description: "Couteau multifonction 12 outils rouge — lame, scie, tournevis, ouvre-boîte, ciseaux, lime. Compact 91mm, inox qualité.", price: 22, supplierPrice: 17.00, supplierSku: "couteau-multi-12-rouge", image: "img/prod_suisse.jpg" },
+      { label: "21 outils — Rouge premium", description: "Couteau multifonction 21 outils premium — le plus complet pour les randonneurs exigeants. Inclus loupe, scie, hameçon, aiguille.", price: 32, supplierPrice: 25.00, supplierSku: "couteau-multi-21-rouge", image: "img/prod_suisse.jpg" }
+    ]
+  },
+  {
+    id: 77,
+    name: "Lampe de camping LED rechargeable",
+    price: 16,
+    category: "Éclairage",
+    description: "Lanterne de camping LED 360° rechargeable USB-C. 3 modes d'éclairage, autonomie 12h, imperméable IPX4. Crochet de suspension, pliable ultra-compact. Idéale tente et bivouac.",
+    badges: ["Nouveau", "Essentiel"],
+    rating: 4.6,
+    reviews: 267,
+    image: "img/prod_lanterne.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "150 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "lanterne-camping-led",
+    supplierPrice: 12.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "300 lm — Blanche", description: "Lanterne camping 300 lm blanche — éclairage 360° pour toute la tente. USB-C, autonomie 12h, crochet suspension, pliable.", price: 16, supplierPrice: 12.00, supplierSku: "lanterne-300lm-blanche", image: "img/prod_lanterne.jpg" },
+      { label: "500 lm — Noir + solaire", description: "Lanterne 500 lm avec panneau solaire intégré — recharge en journée, éclaire la nuit. Idéale pour les camps de plusieurs jours.", price: 24, supplierPrice: 18.00, supplierSku: "lanterne-500lm-solaire", image: "img/prod_lanterne.jpg" }
+    ]
+  },
+  {
+    id: 78,
+    name: "Tapis de sol imperméable pour tente",
+    price: 12,
+    category: "Survie",
+    description: "Tapis de sol imperméable PE 210g/m² pour tente. Protection contre l'humidité et la condensation. Bords renforcés, oeillets de fixation. Plusieurs tailles disponibles.",
+    badges: ["Essentiel"],
+    rating: 4.4,
+    reviews: 145,
+    image: "img/prod_tapis_sol.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "600 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "tapis-sol-tente-pe",
+    supplierPrice: 9.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "200×150 cm — 2 personnes", description: "Tapis sol 200×150 cm — pour tente 2 places. PE 210g/m², imperméable, protège du froid et cailloux. Léger 600g.", price: 12, supplierPrice: 9.00, supplierSku: "tapis-sol-200x150", image: "img/prod_tapis_sol.jpg" },
+      { label: "250×200 cm — 4 personnes", description: "Tapis sol 250×200 cm — pour les grandes tentes famille. Bords renforcés, oeillets de fixation au sol, stockage compact.", price: 18, supplierPrice: 14.00, supplierSku: "tapis-sol-250x200", image: "img/prod_tapis_sol.jpg" }
+    ]
+  },
+  {
+    id: 79,
+    name: "Gourde filtrante 0.65L Lifestraw",
+    price: 28,
+    category: "Survie",
+    description: "Gourde filtrante 0.65L avec filtre intégré éliminant 99.9999% des bactéries. Buvez directement depuis n'importe quelle source. Filtre jusqu'à 4000L. Légère 147g.",
+    badges: ["Essentiel", "Nouveau"],
+    rating: 4.7,
+    reviews: 312,
+    image: "img/prod_gourde_filtrante.jpg",
+    shipping: "Livraison 2-3 jours",
+    weight: "147 g",
+    inStock: true,
+    supplier: "BigBuy",
+    supplierSku: "gourde-filtrante-lifestraw",
+    supplierPrice: 22.00,
+    supplierUrl: "https://www.bigbuy.eu/fr",
+    variants: [
+      { label: "0.65L — Bleu", description: "Gourde filtrante 0.65L bleue — filtre intégré 2 étapes. Élimine bactéries, parasites et microplastiques. Capacité 4000L.", price: 28, supplierPrice: 22.00, supplierSku: "gourde-filtrante-bleu", image: "img/prod_gourde_filtrante.jpg" },
+      { label: "1L — Vert", description: "Gourde filtrante 1L verte — grande contenance pour les longues randonnées. Filtre charbon actif intégré, goût neutre garanti.", price: 32, supplierPrice: 25.00, supplierSku: "gourde-filtrante-vert", image: "img/prod_gourde_filtrante.jpg" }
+    ]
+  },
+
+  // ============================================================
+  // PRODUITS JARDINAGE — id 80-89 supprimés (doublons avec 101-136)
   // ============================================================
   {
     id: 80,
