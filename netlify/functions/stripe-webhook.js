@@ -631,6 +631,8 @@ function sendResendEmailHtml({ to, subject, html }) {
 }
 
 function sendResendRaw(payload) {
+  // Forcer l'expéditeur sur le domaine vérifié
+  payload.from = 'NatureSurvi <commandes@naturesurvie.net>';
   return new Promise((resolve, reject) => {
     const data = JSON.stringify(payload);
     const options = {
