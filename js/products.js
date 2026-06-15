@@ -392,7 +392,7 @@ const PRODUCTS = [
   {
     id: 32,
     name: "Caméra de sport 4K Sunstech Adventure",
-    price: 50,
+    price: 44,
     originalPrice: 59,
     category: "Électronique outdoor",
     description: "Caméra de sport 4K Sunstech Adventure. Filmez vos aventures en haute définition. Résistante aux chocs, idéale pour le vélo, la randonnée, le kayak. Légère et compacte.",
@@ -411,7 +411,7 @@ const PRODUCTS = [
   {
     id: 33,
     name: "Caméra de sport SK8 Elite outdoor",
-    price: 70,
+    price: 65,
     originalPrice: 82,
     category: "Électronique outdoor",
     description: "Caméra de sport SK8 Elite pour l'outdoor extrême. Résistante à l'eau et aux chocs. Parfaite pour VTT, ski, escalade et plongée. Accessoires de fixation inclus.",
@@ -509,7 +509,7 @@ const PRODUCTS = [
   {
     id: 39,
     name: "Slackline Schildkröt 15m jaune",
-    price: 90,
+    price: 88,
     originalPrice: 112,
     category: "Escalade",
     description: "Slackline Schildkröt 15 mètres, couleur jaune vif. Kit complet avec sangle, tendeur et protège-arbre. Idéal pour la pratique en forêt, parc ou jardin. Pour tous niveaux.",
@@ -624,7 +624,7 @@ const PRODUCTS = [
   {
     id: 46,
     name: "Montre Casio Diver 100M",
-    price: 60,
+    price: 58,
     originalPrice: 74,
     category: "Montres outdoor",
     description: "Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu'à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.",
@@ -643,7 +643,7 @@ const PRODUCTS = [
   {
     id: 48,
     name: "Plat lyophilisé Trek'n Eat hamburger",
-    price: 14,
+    price: 11,
     originalPrice: 16,
     category: "Alimentation outdoor",
     description: "Plat lyophilisé Trek'n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l'eau chaude. Goût savoureux, haute valeur nutritive.",
@@ -662,7 +662,7 @@ const PRODUCTS = [
   {
     id: 49,
     name: "Dessert lyophilisé Trek'n Eat chocolat",
-    price: 10,
+    price: 9,
     originalPrice: 12,
     category: "Alimentation outdoor",
     description: "Dessert lyophilisé Trek'n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l'eau chaude.",
@@ -681,7 +681,7 @@ const PRODUCTS = [
   {
     id: 50,
     name: "Légumes lyophilisés Trek'n Eat",
-    price: 12,
+    price: 11,
     originalPrice: 15,
     category: "Alimentation outdoor",
     description: "Légumes lyophilisés Trek'n Eat. Garniture légère et nutritive pour le camp. À ajouter à vos repas en bivouac. Conservation 5 ans, poids minimal.",
