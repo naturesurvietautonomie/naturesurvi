@@ -685,9 +685,13 @@ async function saveToAirtable({ stripeRef, date, client, emailClient, montant, a
       'ID Commande Fournisseur': idFournisseur || '',
       'Numéro de tracking':   '',
       'Transporteur':         '',
-      'Email suivi envoyé':   false,
+      'Email suivi envoyé':     false,
       'Email livraison envoyé': false,
-      'Notes':                ''
+      'Email J0 envoyé':        false,
+      'Email J3 envoyé':        false,
+      'Email J7 envoyé':        false,
+      'Email J14 envoyé':       false,
+      'Notes':                  ''
     }
   };
 

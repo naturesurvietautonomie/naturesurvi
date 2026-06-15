@@ -5,3 +5,7 @@
 
 [functions]
   node_bundler = "esbuild"
+
+# Séquence email post-achat — toutes les heures
+[functions."email-sequence"]
+  schedule = "0 * * * *"
