@@ -2,578 +2,268 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez l'histoire de Nature Survie & Autonomie — notre mission, nos valeurs et notre engagement pour l'autonomie.">
-  <meta property="og:title" content="À propos — Nature Survie & Autonomie">
-  <meta property="og:description" content="Notre mission : rendre l'autonomie accessible à tous.">
+  <title>À propos — Nature Survie &amp; Autonomie</title>
+  <meta name="description" content="Découvrez l'histoire de Nature Survie &amp; Autonomie — notre mission, nos valeurs et notre engagement pour l'autonomie. Exploité par Ebrange Creation Digital SAS.">
+  <meta property="og:title" content="À propos — Nature Survie &amp; Autonomie">
+  <meta property="og:description" content="Notre mission : rendre l'autonomie accessible à tous. Ebrange Creation Digital SAS.">
+  <meta property="og:image" content="https://naturesurvie.net/images/og-about.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://naturesurvie.net/about.html">
-  <meta property="og:image" content="https://placehold.co/1200x630/2d5016/a8d672?text=Nature+Survie+%26+Autonomie">
-  <!-- Facebook Pixel -->
-  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
-  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
-  <title>À propos — Nature Survie & Autonomie</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:url" content="https://naturesurvie.net/about">
+  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259">
+  
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f8faf5; color: #1a1a2e; line-height: 1.7; }
+
+  /* ── TOP BANNER ── */
+  .top-banner {
+    background: #2d5016; color: #a8d672;
+    display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+    font-size: 0.8rem; padding: 7px 16px; letter-spacing: 0.02em;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: #fff; border-bottom: 2px solid #e8f4e8;
+    padding: 0 24px; display: flex; align-items: center;
+    justify-content: space-between; position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .nav-logo { font-size: 1.1rem; font-weight: 700; color: #2d5016; text-decoration: none; padding: 14px 0; }
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a { text-decoration: none; color: #444; font-size: 0.9rem; padding: 8px 12px; border-radius: 6px; transition: background 0.2s; }
+  .nav-links a:hover, .nav-links a.active { background: #e8f4e8; color: #2d5016; font-weight: 600; }
+  .nav-cart { font-size: 0.88rem; color: #2d5016; font-weight: 600; text-decoration: none; padding: 8px 12px; background: #e8f4e8; border-radius: 8px; }
+  .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: #2d5016; }
+
+  /* ── FOOTER ── */
+  footer { background: #1a1a2e; color: #ccc; padding: 48px 24px 24px; margin-top: 0; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 32px; border-bottom: 1px solid #333; }
+  .footer-brand { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+  .footer-desc { font-size: 0.82rem; line-height: 1.7; color: #aaa; }
+  .footer-col h4 { font-size: 0.82rem; font-weight: 700; color: #fff; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .footer-col a { display: block; color: #aaa; text-decoration: none; font-size: 0.82rem; margin-bottom: 7px; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { max-width: 1100px; margin: 20px auto 0; text-align: center; font-size: 0.75rem; color: #555; }
+  .social-links { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+  .social-links a { color: #888; font-size: 0.8rem; text-decoration: none; padding: 4px 8px; border: 1px solid #333; border-radius: 4px; }
+  .social-links a:hover { color: #fff; border-color: #555; }
+
+  @media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .top-banner { gap: 12px; font-size: 0.72rem; }
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 8px 16px 16px; border-bottom: 2px solid #e8f4e8; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .nav-links.open { display: flex; }
+  }
+  @media (max-width: 480px) {
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+</style>
+
   <style>
-    /* ===== PAGE À PROPOS ===== */
-    .about-hero {
-      background: linear-gradient(135deg, #1a3a0a 0%, #2d5016 50%, #4a7c2f 100%);
-      padding: 80px 24px;
-      text-align: center;
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-    }
-    .about-hero::before {
-      content: '🌿';
-      position: absolute;
-      font-size: 18rem;
-      opacity: 0.05;
-      right: -40px;
-      top: -40px;
-      pointer-events: none;
-    }
-    .about-hero .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      color: #c8e6a0;
-      padding: 8px 18px;
-      border-radius: 24px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .about-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: #fff;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
-    .about-hero h1 em { color: #d4a55a; font-style: normal; }
-    .about-hero p {
-      font-size: 1.1rem;
-      color: rgba(255,255,255,0.82);
-      max-width: 620px;
-      margin: 0 auto;
-      line-height: 1.7;
-    }
-
-    .about-story-section {
-      background: #fff;
-      padding: 80px 24px;
-    }
-    .about-story-inner {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .about-story-inner .section-eyebrow {
-      display: inline-block;
-      background: #f0f5e8;
-      color: #4a7c2f;
-      padding: 6px 16px;
-      border-radius: 24px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-    .about-story-inner h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      color: #2d5016;
-      margin-bottom: 32px;
-    }
-    .about-story-inner p {
-      font-size: 1.05rem;
-      color: #555;
-      line-height: 1.8;
-      margin-bottom: 20px;
-      text-align: left;
-    }
-    .about-story-inner p strong { color: #2d5016; }
-
-    .about-values-section {
-      background: #f0f5e8;
-      padding: 80px 24px;
-    }
-    .about-values-grid {
-      max-width: 1100px;
-      margin: 40px auto 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-    .about-value-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 32px 24px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(45,80,22,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-top: 4px solid #4a7c2f;
-    }
-    .about-value-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 32px rgba(45,80,22,0.18);
-    }
-    .about-value-icon { font-size: 2.8rem; margin-bottom: 16px; display: block; }
-    .about-value-title {
-      font-family: 'Playfair Display', serif;
-      color: #2d5016;
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-    }
-    .about-value-desc { font-size: 0.88rem; color: #666; line-height: 1.6; }
-
-    .about-stats-section {
-      background: #2d5016;
-      padding: 60px 24px;
-    }
-    .about-stats-grid {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      text-align: center;
-    }
-    .about-stat { color: #fff; }
-    .about-stat-number {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #d4a55a;
-      display: block;
-      margin-bottom: 6px;
-    }
-    .about-stat-label { font-size: 0.88rem; color: rgba(255,255,255,0.75); }
-
-    .about-why-section {
-      background: #fff;
-      padding: 80px 24px;
-    }
-    .about-why-grid {
-      max-width: 1100px;
-      margin: 40px auto 0;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-    .about-why-card {
-      background: #f0f5e8;
-      border-radius: 12px;
-      padding: 28px;
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      transition: transform 0.3s ease;
-    }
-    .about-why-card:hover { transform: translateY(-4px); }
-    .about-why-icon {
-      font-size: 2rem;
-      flex-shrink: 0;
-      width: 52px;
-      height: 52px;
-      background: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 12px rgba(45,80,22,0.12);
-    }
-    .about-why-content h3 {
-      font-family: 'Playfair Display', serif;
-      color: #2d5016;
-      font-size: 1.05rem;
-      margin-bottom: 8px;
-    }
-    .about-why-content p { font-size: 0.9rem; color: #555; line-height: 1.6; }
-
-    .about-team-section {
-      background: #f0f5e8;
-      padding: 80px 24px;
-      text-align: center;
-    }
-    .about-team-card {
-      max-width: 520px;
-      margin: 40px auto 0;
-      background: #fff;
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 4px 24px rgba(45,80,22,0.1);
-    }
-    .about-team-avatar {
-      width: 80px;
-      height: 80px;
-      background: linear-gradient(135deg, #2d5016, #4a7c2f);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      color: #fff;
-      margin: 0 auto 20px;
-    }
-    .about-team-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      color: #2d5016;
-      margin-bottom: 6px;
-    }
-    .about-team-role { color: #4a7c2f; font-weight: 700; font-size: 0.9rem; margin-bottom: 16px; }
-    .about-team-bio { color: #555; font-size: 0.95rem; line-height: 1.7; }
-
-    .about-contact-section {
-      background: linear-gradient(135deg, #2d5016, #4a7c2f);
-      padding: 80px 24px;
-      text-align: center;
-      color: #fff;
-    }
-    .about-contact-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      margin-bottom: 16px;
-    }
-    .about-contact-section p { color: rgba(255,255,255,0.82); margin-bottom: 32px; font-size: 1.05rem; }
-    .about-contact-cards {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-    }
-    .contact-card {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 12px;
-      padding: 24px 32px;
-      min-width: 200px;
-    }
-    .contact-card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
-    .contact-card-label { color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
-    .contact-card-value { color: #fff; font-weight: 700; font-size: 0.95rem; }
-    .about-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-
-    @media (max-width: 768px) {
-      .about-hero h1 { font-size: 2.2rem; }
-      .about-values-grid { grid-template-columns: repeat(2, 1fr); }
-      .about-stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .about-why-grid { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 480px) {
-      .about-values-grid { grid-template-columns: 1fr; }
-      .about-stats-grid { grid-template-columns: 1fr 1fr; }
-    }
+    .hero { background: linear-gradient(135deg, #2d5016, #1a3c2e); color: #fff; padding: 64px 24px; text-align: center; }
+    .hero .hero-badge { display: inline-block; background: rgba(168,214,114,0.2); border: 1px solid rgba(168,214,114,0.4); border-radius: 20px; padding: 4px 16px; font-size: 0.8rem; color: #a8d672; margin-bottom: 16px; }
+    .hero h1 { font-size: 2.4rem; font-weight: 900; margin-bottom: 12px; }
+    .hero h1 em { color: #a8d672; font-style: italic; }
+    .hero p { font-size: 1rem; opacity: 0.85; max-width: 600px; margin: 0 auto; }
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 64px 24px 80px; }
+    .section { margin-bottom: 64px; }
+    .section-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #2d5016; margin-bottom: 8px; }
+    .section-title { font-size: 1.8rem; font-weight: 800; color: #1a1a2e; margin-bottom: 24px; }
+    .story-text { font-size: 0.95rem; color: #444; line-height: 1.8; }
+    .story-text p { margin-bottom: 16px; }
+    .story-text strong { color: #1a1a2e; }
+    .valeurs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 16px; }
+    .valeur-card { background: #f8faf5; border-radius: 14px; padding: 24px; border: 1px solid #e0ece0; text-align: center; }
+    .valeur-card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .valeur-card h3 { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+    .valeur-card p { font-size: 0.82rem; color: #666; }
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; background: linear-gradient(90deg, #2d5016, #1a3c6e); border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+    .stat strong { display: block; font-size: 1.8rem; font-weight: 900; color: #a8d672; }
+    .stat span { font-size: 0.82rem; color: rgba(255,255,255,0.75); }
+    .distingue-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .distingue-card { background: #fff; border-radius: 14px; padding: 24px; border: 1px solid #e0e0e0; }
+    .distingue-card .icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .distingue-card h3 { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+    .distingue-card p { font-size: 0.85rem; color: #555; }
+    .distingue-card a { color: #2d5016; }
+    .team-card { background: linear-gradient(135deg, #f8faf5, #e8f4e8); border-radius: 16px; padding: 32px; border: 1px solid #c8e8c8; display: flex; gap: 20px; align-items: flex-start; }
+    .team-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #2d5016, #1a3c6e); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0; }
+    .team-info h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; }
+    .team-info .role { font-size: 0.82rem; color: #2d5016; font-weight: 600; margin-bottom: 10px; }
+    .team-info p { font-size: 0.88rem; color: #555; line-height: 1.7; }
+    .legal-badge { display: inline-block; background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; border-radius: 8px; padding: 4px 12px; font-size: 0.78rem; font-weight: 700; margin-top: 8px; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 16px; }
+    .contact-card { background: #fff; border-radius: 14px; padding: 24px; border: 1px solid #e0e0e0; text-align: center; }
+    .contact-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .contact-card h3 { font-size: 0.88rem; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+    .contact-card p, .contact-card a { font-size: 0.85rem; color: #555; text-decoration: none; }
+    .contact-card a { color: #2d5016; font-weight: 600; }
+    .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
+    .btn-green { background: #2d5016; color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+    .btn-outline { background: #fff; color: #2d5016; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 0.95rem; border: 2px solid #2d5016; }
+    @media(max-width:600px) { .stats-row { grid-template-columns: 1fr 1fr; } .team-card { flex-direction: column; } }
   </style>
-
-  <!-- TikTok Pixel Code Start -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-    ttq.load('D88TMA3C77UFPET8DG4G');
-    ttq.page();
-  }(window, document, 'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-  <!-- Urgency Bar -->
-  <div class="urgency-bar">
-    🌿 Livraison offerte dès 69€ | Expédition <span>48h</span> | Retours <span>30 jours</span>
+<div class="top-banner" id="top-banner">
+  <span>🚚 Livraison offerte dès 50€</span>
+  <span>🔄 Satisfait ou remboursé 30 jours</span>
+  <span>🔒 Paiement 100% sécurisé</span>
+  <span>📞 Service client réactif</span>
+</div>
+
+<nav>
+  <a href="/" class="nav-logo">🌿 Nature Survie &amp; Autonomie</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/catalogue">Survie</a></li>
+    <li><a href="/jardinage">🌱 Jardinage</a></li>
+    <li><a href="/about">À propos</a></li>
+    <li><a href="/cgv">CGV</a></li>
+  </ul>
+  <a href="/panier" class="nav-cart">🛒 <span id="cartTotal">0,00 €</span> <span id="cartCount">0</span></a>
+</nav>
+
+<main id="main-content">
+  <div class="hero">
+    <div class="hero-badge">🌿 Notre histoire depuis 2025</div>
+    <h1>L'autonomie, <em>c'est notre passion.</em></h1>
+    <p>Née à Bègles, Nature Survie & Autonomie propose une sélection rigoureuse d'équipements pour ceux qui préfèrent être prêts plutôt que surpris.</p>
   </div>
 
-  <!-- Navbar -->
-  <header class="navbar" role="banner">
-    <div class="navbar-inner">
-      <a href="index.html" class="logo" aria-label="Nature Survie & Autonomie — Accueil">
-        <span class="logo-emoji">🌿</span>
-        <span>Nature Survie &amp; Autonomie</span>
-      </a>
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="catalogue.html">Survie</a>
-        <a href="jardinage.html">Jardinage</a>
-        <a href="about.html" class="active">À propos</a>
-        <a href="panier.html">Panier</a>
-      </nav>
-      <div class="nav-right">
-        <button class="cart-btn" onclick="Cart.toggleDrawer()" aria-label="Ouvrir le panier">
-          🛒 <span class="cart-total-nav">0,00 €</span>
-          <span class="cart-count" aria-live="polite">0</span>
-        </button>
-        <button class="burger-menu" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+  <div class="page-wrap">
 
-  <main id="main-content">
-
-    <!-- Hero -->
-    <section class="about-hero">
-      <div class="hero-badge">🌿 Notre histoire depuis 2025</div>
-      <h1>L'autonomie,<br><em>c'est notre passion.</em></h1>
-      <p>Née à Bègles, Nature Survie & Autonomie propose une sélection rigoureuse d'équipements pour ceux qui préfèrent être prêts plutôt que surpris.</p>
-    </section>
-
-    <!-- Notre histoire -->
-    <section class="about-story-section">
-      <div class="about-story-inner">
-        <span class="section-eyebrow">Notre histoire</span>
-        <h2>Comment tout a commencé</h2>
+    <div class="section">
+      <div class="section-label">Notre histoire</div>
+      <div class="section-title">Comment tout a commencé</div>
+      <div class="story-text">
         <p>Tout part d'une conviction simple : en France, de plus en plus de personnes veulent reprendre le contrôle — préparer l'imprévu, partir en pleine nature avec le bon matériel, vivre avec moins de dépendances. Et pourtant, trouver des équipements fiables à prix juste reste un parcours du combattant.</p>
         <p>En 2025, depuis Bègles, on a décidé de construire la boutique qu'on aurait voulu trouver : une sélection resserrée, des produits testés et validés, des prix transparents. Pas de catalogue de 10 000 références où tout se noie — <strong>juste ce qui vaut vraiment le coup.</strong></p>
+        <p>En juin 2026, la structure s'est officialisée avec la création d'<strong>Ebrange Creation Digital</strong>, SAS immatriculée au RCS de Paris (SIREN 105 870 315), pour accompagner le développement de la boutique et de nos services de création de contenu pour les entreprises.</p>
         <p>Depuis le lancement, la communauté grandit. Des randonneurs, des survivalistes, des familles qui veulent être prêtes, des aventuriers du week-end — tous ont en commun cette envie d'autonomie. C'est ça qui nous motive chaque jour.</p>
         <p><strong>Notre promesse :</strong> du matériel sérieux, un service humain, et une boutique qui évolue avec vous.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- Valeurs -->
-    <section class="about-values-section">
-      <div style="max-width:1100px;margin:0 auto;text-align:center;">
-        <span class="section-eyebrow">Nos valeurs</span>
-        <h2 class="section-title">Ce qui nous guide</h2>
-        <p class="section-subtitle">Quatre principes fondamentaux qui définissent notre approche</p>
-      </div>
-      <div class="about-values-grid">
-        <div class="about-value-card">
-          <span class="about-value-icon">🌱</span>
-          <h3 class="about-value-title">Respect de la nature</h3>
-          <p class="about-value-desc">Nous privilégions les produits durables et respectueux de l'environnement. Chaque article est sélectionné pour minimiser son impact tout en maximisant votre autonomie.</p>
-        </div>
-        <div class="about-value-card">
-          <span class="about-value-icon">🔧</span>
-          <h3 class="about-value-title">Qualité testée</h3>
-          <p class="about-value-desc">Chaque produit est évalué avant d'être proposé. Pas de gadgets inutiles : que du matériel fiable, robuste et éprouvé sur le terrain.</p>
-        </div>
-        <div class="about-value-card">
-          <span class="about-value-icon">🤝</span>
-          <h3 class="about-value-title">Communauté</h3>
-          <p class="about-value-desc">Plus qu'une boutique, c'est une communauté de passionnés d'autonomie. Nous partageons guides, tutoriels et conseils pour progresser ensemble.</p>
-        </div>
-        <div class="about-value-card">
-          <span class="about-value-icon">📚</span>
-          <h3 class="about-value-title">Transmission</h3>
-          <p class="about-value-desc">Nous croyons que les savoirs d'autonomie doivent être accessibles à tous. Chaque produit vient avec des conseils d'utilisation concrets.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="about-stats-section">
-      <div class="about-stats-grid">
-        <div class="about-stat">
-          <span class="about-stat-number">63</span>
-          <span class="about-stat-label">Produits sélectionnés</span>
-        </div>
-        <div class="about-stat">
-          <span class="about-stat-number">⭐ 4,8</span>
-          <span class="about-stat-label">Note moyenne clients</span>
-        </div>
-        <div class="about-stat">
-          <span class="about-stat-number">48h</span>
-          <span class="about-stat-label">Délai d'expédition</span>
-        </div>
-        <div class="about-stat">
-          <span class="about-stat-number">2025</span>
-          <span class="about-stat-label">Année de création</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pourquoi nous -->
-    <section class="about-why-section">
-      <div style="max-width:1100px;margin:0 auto;text-align:center;">
-        <span class="section-eyebrow">Pourquoi nous</span>
-        <h2 class="section-title">Ce qui nous distingue</h2>
-        <p class="section-subtitle">Des engagements concrets, pas des promesses vides</p>
-      </div>
-      <div class="about-why-grid">
-        <div class="about-why-card">
-          <div class="about-why-icon">✅</div>
-          <div class="about-why-content">
-            <h3>Sélection rigoureuse</h3>
-            <p>Sur 100 produits évalués, seuls une poignée passent nos critères de qualité, durabilité et utilité réelle. Pas de catalogue gonflé artificiellement.</p>
-          </div>
-        </div>
-        <div class="about-why-card">
-          <div class="about-why-icon">🚚</div>
-          <div class="about-why-content">
-            <h3>Livraison rapide</h3>
-            <p>Expédition sous 48h. Livraison gratuite dès 69€ d'achat. Numéro de suivi inclus sur chaque commande.</p>
-          </div>
-        </div>
-        <div class="about-why-card">
-          <div class="about-why-icon">🔄</div>
-          <div class="about-why-content">
-            <h3>Retours 30 jours</h3>
-            <p>30 jours pour changer d'avis, sans justification. Si le produit ne vous convient pas, on s'en occupe simplement.</p>
-          </div>
-        </div>
-        <div class="about-why-card">
-          <div class="about-why-icon">💬</div>
-          <div class="about-why-content">
-            <h3>Support humain</h3>
-            <p>Une vraie personne répond à vos questions par email. Pas de chatbot — juste un échange direct à <strong>naturesurvi@gmail.com</strong>.</p>
-          </div>
-        </div>
-        <div class="about-why-card">
-          <div class="about-why-icon">🔒</div>
-          <div class="about-why-content">
-            <h3>Paiement sécurisé</h3>
-            <p>Transactions chiffrées et sécurisées via Stripe. Vos données bancaires ne transitent jamais par nos serveurs.</p>
-          </div>
-        </div>
-        <div class="about-why-card">
-          <div class="about-why-icon">📍</div>
-          <div class="about-why-content">
-            <h3>Ancré en France</h3>
-            <p>Basés à Bègles (Gironde), nous comprenons les besoins des passionnés de nature et d'autonomie en France.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- L'équipe -->
-    <section class="about-team-section">
-      <span class="section-eyebrow">L'équipe</span>
-      <h2 class="section-title">Derrière la boutique</h2>
-      <p class="section-subtitle">Une personne passionnée, une vision claire</p>
-      <div class="about-team-card">
-        <div class="about-team-avatar">🌿</div>
-        <div class="about-team-name">Nature Survie & Autonomie</div>
-        <div class="about-team-role">Fondateur · Bègles, France</div>
-        <p class="about-team-bio">Passionné d'outdoor, de randonnée et d'autonomie depuis toujours. J'ai créé cette boutique pour rassembler en un seul endroit tout ce dont on a besoin pour vivre plus librement — que ce soit pour un week-end en forêt ou pour un projet d'autonomie alimentaire à la maison.</p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="about-contact-section">
-      <h2>Contactez-nous</h2>
-      <p>Une question sur un produit, une commande ou simplement envie d'échanger ? On répond sous 24h.</p>
-      <div class="about-contact-cards">
-        <div class="contact-card">
-          <span class="contact-card-icon">📧</span>
-          <div class="contact-card-label">Email</div>
-          <div class="contact-card-value">naturesurvi@gmail.com</div>
-        </div>
-        <div class="contact-card">
-          <span class="contact-card-icon">📍</span>
-          <div class="contact-card-label">Localisation</div>
-          <div class="contact-card-value">Bègles, France</div>
-        </div>
-        <div class="contact-card">
-          <span class="contact-card-icon">⏱️</span>
-          <div class="contact-card-label">Réponse</div>
-          <div class="contact-card-value">Sous 24h ouvrées</div>
-        </div>
-      </div>
-      <div class="about-cta-btns">
-        <a href="catalogue.html" class="btn btn-primary btn-lg">🎒 Boutique Survie</a>
-        <a href="jardinage.html" class="btn btn-outline btn-lg">🌱 Boutique Jardinage</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>🌿 Nature Survie &amp; Autonomie</h4>
-        <p>Votre partenaire d'autosuffisance depuis 2025. Équipements testés et approuvés pour l'autonomie au quotidien.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Boutique</h4>
-        <a href="catalogue.html">Survie & Préparation</a>
-        <a href="jardinage.html">Jardinage & Potager</a>
-        <a href="catalogue.html?cat=Énergie">Énergie solaire</a>
-        <a href="catalogue.html?cat=Conservation">Conservation</a>
-      </div>
-      <div class="footer-col">
-        <h4>Informations</h4>
-        <a href="about.html">À propos</a>
-        <a href="cgv.html">CGV & Mentions légales</a>
-        <a href="about.html#contact">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>📧 naturesurvi@gmail.com</p>
-        <p>📍 Bègles, France</p>
-        <p>⏱️ Réponse sous 24h</p>
+    <div class="section">
+      <div class="section-label">Nos valeurs</div>
+      <div class="section-title">Ce qui nous guide</div>
+      <div class="valeurs-grid">
+        <div class="valeur-card"><div class="icon">🌱</div><h3>Respect de la nature</h3><p>Nous privilégions les produits durables et respectueux de l'environnement.</p></div>
+        <div class="valeur-card"><div class="icon">🔧</div><h3>Qualité testée</h3><p>Chaque produit est évalué avant d'être proposé. Que du matériel fiable et éprouvé.</p></div>
+        <div class="valeur-card"><div class="icon">🤝</div><h3>Communauté</h3><p>Plus qu'une boutique, une communauté de passionnés d'autonomie.</p></div>
+        <div class="valeur-card"><div class="icon">📚</div><h3>Transmission</h3><p>Les savoirs d'autonomie doivent être accessibles à tous.</p></div>
       </div>
     </div>
-    <div class="footer-social">
-      <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-      </a>
-      <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener" aria-label="Pinterest">
-        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Nature Survie &amp; Autonomie — Tous droits réservés | Bègles, France</p>
-    </div>
-  </footer>
 
-  <!-- Cart Drawer -->
-  <div id="drawer-overlay" class="drawer-overlay" onclick="Cart.toggleDrawer()"></div>
-  <aside id="cart-drawer" class="cart-drawer" role="complementary" aria-label="Panier">
-    <div class="drawer-header">
-      <h3>🛒 Votre panier</h3>
-      <button class="drawer-close" onclick="Cart.toggleDrawer()" aria-label="Fermer le panier">&times;</button>
+    <div class="stats-row">
+      <div class="stat"><strong>63</strong><span>Produits sélectionnés</span></div>
+      <div class="stat"><strong>⭐ 4,8</strong><span>Note moyenne clients</span></div>
+      <div class="stat"><strong>48h</strong><span>Délai d'expédition</span></div>
+      <div class="stat"><strong>2025</strong><span>Année de création</span></div>
     </div>
-    <div class="drawer-items" id="drawer-items"></div>
-    <div id="drawer-empty" class="drawer-empty" style="display:none;">
-      <span class="empty-icon">🛒</span>
-      <p>Votre panier est vide</p>
-      <a href="catalogue.html" class="btn btn-primary" style="margin-top:1rem;">Découvrir nos produits</a>
-    </div>
-    <div id="drawer-footer" class="drawer-footer" style="display:none;">
-      <div class="drawer-subtotal">
-        <span>Sous-total</span>
-        <span id="drawer-subtotal">0,00 €</span>
+
+    <div class="section">
+      <div class="section-label">Pourquoi nous</div>
+      <div class="section-title">Ce qui nous distingue</div>
+      <div class="distingue-grid">
+        <div class="distingue-card"><div class="icon">✅</div><h3>Sélection rigoureuse</h3><p>Sur 100 produits évalués, seuls une poignée passent nos critères de qualité, durabilité et utilité réelle.</p></div>
+        <div class="distingue-card"><div class="icon">🚚</div><h3>Livraison rapide</h3><p>Expédition sous 48h. Livraison gratuite dès <strong>50€</strong> d'achat. Numéro de suivi inclus.</p></div>
+        <div class="distingue-card"><div class="icon">🔄</div><h3>Retours 30 jours</h3><p>30 jours pour changer d'avis, sans justification. On s'en occupe simplement.</p></div>
+        <div class="distingue-card"><div class="icon">💬</div><h3>Support humain</h3><p>Une vraie personne répond à vos questions. Pas de chatbot — juste un échange direct à <a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a></p></div>
+        <div class="distingue-card"><div class="icon">🔒</div><h3>Paiement sécurisé</h3><p>Transactions chiffrées via Stripe. Vos données bancaires ne transitent jamais par nos serveurs.</p></div>
+        <div class="distingue-card"><div class="icon">📍</div><h3>Ancré en France</h3><p>Basés à Paris (siège) et Bègles (expéditions), nous comprenons les besoins des passionnés de nature.</p></div>
       </div>
-      <a href="panier.html" class="btn btn-primary">Voir le panier complet</a>
     </div>
-  </aside>
 
-  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <div class="section">
+      <div class="section-label">L'équipe</div>
+      <div class="section-title">Derrière la boutique</div>
+      <div class="team-card">
+        <div class="team-avatar">🌿</div>
+        <div class="team-info">
+          <h3>Angelique Louis-Kristy Steeve</h3>
+          <div class="role">Fondatrice &amp; Présidente · Ebrange Creation Digital SAS</div>
+          <p>Passionnée d'outdoor, de randonnée et d'autonomie depuis toujours. J'ai créé cette boutique pour rassembler en un seul endroit tout ce dont on a besoin pour vivre plus librement — que ce soit pour un week-end en forêt ou pour un projet d'autonomie alimentaire à la maison.</p>
+          <div class="legal-badge">✅ SAS immatriculée · RCS Paris 105 870 315 · depuis juin 2026</div>
+        </div>
+      </div>
+    </div>
 
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
-  <script>
-    const scrollTopBtn = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
-      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
+    <div class="section" id="contact">
+      <div class="section-label">Contact</div>
+      <div class="section-title">Contactez-nous</div>
+      <p style="color:#555;margin-bottom:8px;">Une question sur un produit, une commande ou simplement envie d'échanger ? On répond sous 24h.</p>
+      <div class="contact-grid">
+        <div class="contact-card"><div class="icon">📧</div><h3>Email</h3><a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a></div>
+        <div class="contact-card"><div class="icon">📍</div><h3>Siège social</h3><p>47 rue Vivienne<br>75002 Paris, France</p></div>
+        <div class="contact-card"><div class="icon">📦</div><h3>Expéditions</h3><p>Bègles<br>33130, France</p></div>
+        <div class="contact-card"><div class="icon">⏱️</div><h3>Réponse</h3><p>Sous 24h ouvrées</p></div>
+      </div>
+    </div>
 
-    function toggleMobileMenu() {
-      document.getElementById('main-nav').classList.toggle('open');
-    }
-  </script>
+    <div class="cta-row">
+      <a href="/catalogue" class="btn-green">🎒 Boutique Survie</a>
+      <a href="/jardinage" class="btn-outline">🌱 Boutique Jardinage</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand-col">
+      <div class="footer-brand">🌿 Nature Survie &amp; Autonomie</div>
+      <p class="footer-desc">Votre partenaire d'autosuffisance depuis 2025.<br>
+      Exploité par <strong>Ebrange Creation Digital</strong> — SAS au capital de 100 €<br>
+      RCS Paris 105 870 315<br>
+      47 rue Vivienne, 75002 Paris</p>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Boutique</h4>
+      <a href="/catalogue">Catalogue complet</a>
+      <a href="/catalogue?cat=Survie">Survie</a>
+      <a href="/jardinage">Jardinage</a>
+      <a href="/catalogue?cat=Énergie">Énergie</a>
+      <a href="/catalogue?cat=Conservation">Conservation</a>
+    </div>
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <a href="/about">À propos</a>
+      <a href="/cgv#livraison">Livraison &amp; retours</a>
+      <a href="/cgv">CGV &amp; Mentions légales</a>
+      <a href="/cgv#donnees">Données personnelles</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:contact@naturesurvie.net">📧 contact@naturesurvie.net</a>
+      <a href="/about#contact">Formulaire de contact</a>
+      <p style="color:#888;font-size:0.78rem;margin-top:8px;">📍 Paris, France (siège)<br>Bègles, France (expédition)</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Nature Survie &amp; Autonomie — Ebrange Creation Digital SAS — RCS Paris 105 870 315 — Tous droits réservés | Fait avec 🌿 en France
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === '/about') a.classList.add('active');
+  });
+</script>
 </body>
 </html>
