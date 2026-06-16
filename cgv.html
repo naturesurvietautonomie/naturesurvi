@@ -1,173 +1,299 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Facebook Pixel Code -->
-  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
-  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code --><title>CGV & Mentions Légales — Nature Survie & Autonomie</title>
-  <meta name="description" content="Conditions Générales de Vente et Mentions Légales de Nature Survie & Autonomie.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGV & Mentions Légales — Nature Survie & Autonomie</title>
+  <meta name="description" content="Conditions Générales de Vente et Mentions Légales de Nature Survie & Autonomie — Ebrange Creation Digital, SAS immatriculée au RCS de Paris.">
+  <meta property="og:title" content="CGV & Mentions Légales — Nature Survie & Autonomie">
+  <meta property="og:description" content="Conditions Générales de Vente — Ebrange Creation Digital SAS, RCS Paris 105 870 315.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naturesurvie.net/cgv">
+  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259">
   <style>
-    .legal-hero {
-      background: var(--gradient-hero);
-      padding: 60px 5%;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8faf5;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    .top-banner {
+      background: #2d5016;
+      color: #a8d672;
+      text-align: center;
+      font-size: 0.82rem;
+      padding: 6px 16px;
+      letter-spacing: 0.03em;
+    }
+    nav {
+      background: #fff;
+      border-bottom: 2px solid #e8f4e8;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2d5016;
+      text-decoration: none;
+      padding: 14px 0;
+    }
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.9rem;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .nav-links a:hover { background: #e8f4e8; color: #2d5016; }
+    .nav-cart {
+      font-size: 0.88rem;
+      color: #2d5016;
+      font-weight: 600;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #1a3c6e 0%, #2d5016 100%);
+      color: #fff;
+      padding: 48px 24px 36px;
       text-align: center;
     }
-    .legal-hero h1 { color: var(--blanc); font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 10px; }
-    .legal-hero p { color: rgba(255,255,255,0.75); font-size: 1rem; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 0.8rem;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+    .hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+    .hero p { font-size: 1rem; opacity: 0.85; }
+    .hero .update-badge {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.78rem;
+    }
 
-    .legal-container {
+    /* ── LAYOUT ── */
+    .page-wrap {
       max-width: 900px;
       margin: 0 auto;
-      padding: 60px 5%;
+      padding: 48px 24px 80px;
     }
 
-    .legal-section {
-      margin-bottom: 50px;
+    /* ── ALERT BOXES ── */
+    .alert {
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      font-weight: 500;
     }
+    .alert-warning { background: #fff3e0; color: #b45309; border-left: 4px solid #f59e0b; }
+    .alert-success { background: #e8f5e9; color: #1b5e20; border-left: 4px solid #4caf50; }
+    .alert-info    { background: #e8f4fd; color: #1a3c6e; border-left: 4px solid #00aeef; }
 
-    .legal-section h2 {
+    /* ── SOMMAIRE ── */
+    .sommaire {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    .sommaire h3 { color: #1a3c6e; font-size: 1rem; margin-bottom: 14px; }
+    .sommaire ol { padding-left: 20px; }
+    .sommaire li { margin-bottom: 6px; }
+    .sommaire a { color: #2d5016; text-decoration: none; font-size: 0.9rem; }
+    .sommaire a:hover { text-decoration: underline; }
+
+    /* ── SECTIONS ── */
+    .section {
+      margin: 48px 0 0;
+      scroll-margin-top: 80px;
+    }
+    .section-title {
       font-size: 1.4rem;
-      color: var(--vert-fonce);
-      border-left: 5px solid var(--vert-clair);
-      padding-left: 15px;
+      font-weight: 800;
+      color: #1a3c6e;
+      border-bottom: 3px solid #00aeef;
+      padding-bottom: 10px;
       margin-bottom: 20px;
     }
-
-    .legal-section h3 {
+    .subsection-title {
       font-size: 1.05rem;
-      color: var(--brun);
-      margin: 20px 0 10px;
-    }
-
-    .legal-section p, .legal-section li {
-      color: var(--texte-clair);
-      font-size: 0.95rem;
-      line-height: 1.8;
-      margin-bottom: 10px;
-    }
-
-    .legal-section ul {
-      padding-left: 20px;
-    }
-
-    .legal-section ul li {
-      margin-bottom: 6px;
-    }
-
-    .legal-box {
-      background: var(--creme-fonce);
-      border-radius: var(--radius);
-      padding: 20px 25px;
-      margin: 20px 0;
-      border-left: 4px solid var(--vert-moyen);
-    }
-
-    .legal-box p {
-      margin: 0;
-      font-size: 0.92rem;
-      color: var(--texte);
-    }
-
-    .legal-toc {
-      background: var(--blanc);
-      border: 2px solid var(--creme-fonce);
-      border-radius: var(--radius-lg);
-      padding: 25px 30px;
-      margin-bottom: 50px;
-    }
-
-    .legal-toc h3 {
-      color: var(--vert-fonce);
-      margin-bottom: 15px;
-      font-size: 1rem;
-    }
-
-    .legal-toc ol {
-      padding-left: 20px;
-    }
-
-    .legal-toc li {
-      margin-bottom: 8px;
-    }
-
-    .legal-toc a {
-      color: var(--vert-moyen);
-      font-size: 0.9rem;
       font-weight: 700;
-      text-decoration: none;
-      transition: var(--transition);
+      color: #1a3c6e;
+      margin: 24px 0 10px;
+    }
+    p { margin-bottom: 12px; font-size: 0.95rem; }
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+
+    /* ── INFO TABLE ── */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .info-table tr:nth-child(odd) td:first-child { background: #e8f4fd; }
+    .info-table tr:nth-child(even) td:first-child { background: #ddeefb; }
+    .info-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 0.9rem;
+    }
+    .info-table td:first-child {
+      font-weight: 700;
+      color: #1a3c6e;
+      width: 38%;
+      white-space: nowrap;
+    }
+    .info-table td:last-child { background: #fff; }
+
+    /* ── CATÉGORIES TABLE ── */
+    .cat-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .cat-table th {
+      background: #1a3c6e;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .cat-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e8e8e8;
+      font-size: 0.88rem;
+    }
+    .cat-table tr:nth-child(even) td { background: #f5f5f5; }
+    .cat-table tr:nth-child(odd) td { background: #fff; }
+    .badge-coming { color: #b45309; font-weight: 700; }
+    .badge-available { color: #1b5e20; font-weight: 700; }
+
+    /* ── LEGAL CARD ── */
+    .legal-card {
+      background: #fff;
+      border: 2px solid #1a3c6e;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 20px 0;
+    }
+    .legal-card .legal-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a3c6e;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .legal-toc a:hover {
-      color: var(--vert-fonce);
-      text-decoration: underline;
+    /* ── FOOTER ── */
+    footer {
+      background: #1a1a2e;
+      color: #ccc;
+      padding: 48px 24px 24px;
+      margin-top: 0;
     }
-
-    .update-date {
-      text-align: right;
-      font-size: 0.82rem;
-      color: var(--texte-clair);
-      margin-bottom: 40px;
-      font-style: italic;
+    .footer-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #333;
     }
+    .footer-brand { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+    .footer-desc { font-size: 0.82rem; line-height: 1.6; }
+    .footer-col h4 { font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .footer-col a { display: block; color: #aaa; text-decoration: none; font-size: 0.82rem; margin-bottom: 6px; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      max-width: 900px;
+      margin: 20px auto 0;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #666;
+    }
+    .social-links { display: flex; gap: 12px; margin-top: 12px; }
+    .social-links a { color: #888; font-size: 0.8rem; text-decoration: none; }
+    .social-links a:hover { color: #fff; }
 
-    @media (max-width: 768px) {
-      .legal-container { padding: 40px 4%; }
+    @media (max-width: 700px) {
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: 1.5rem; }
+      .nav-links { display: none; }
     }
   </style>
-
-  <!-- TikTok Pixel Code Start -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-    ttq.load('D88TMA3C77UFPET8DG4G');
-    ttq.page();
-  }(window, document, 'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <a href="index.html" class="navbar-logo">
-    <span class="logo-icon">🌿</span>
-    <span>
-      <span class="logo-text">Nature Survie & Autonomie</span>
-      <span class="logo-sub">Autosuffisance · Survie · Jardinage</span>
-    </span>
-  </a>
+<!-- TOP BANNER -->
+<div class="top-banner">🌿 Livraison offerte dès 50€ | Expédition 48h | Retours 30 jours</div>
+
+<!-- NAV -->
+<nav>
+  <a href="https://naturesurvie.net/" class="nav-logo">🌿 Nature Survie & Autonomie</a>
   <ul class="nav-links">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="catalogue.html">Survie</a></li>
-    <li><a href="jardinage.html">🌱 Jardinage</a></li><li><a href="about.html">Notre Mission</a></li>
-    <li><a href="cgv.html" class="active">CGV</a></li>
+    <li><a href="https://naturesurvie.net/">Accueil</a></li>
+    <li><a href="https://naturesurvie.net/catalogue">Survie</a></li>
+    <li><a href="https://naturesurvie.net/jardinage">🌱 Jardinage</a></li>
+    <li><a href="https://naturesurvie.net/about">À propos</a></li>
+    <li><a href="https://naturesurvie.net/cgv" style="color:#2d5016;font-weight:700;">CGV</a></li>
   </ul>
-  <div class="navbar-actions">
-    <button class="cart-btn" onclick="openCart()">
-      🛒 Panier <span class="cart-count" style="display:none">0</span>
-    </button>
-  </div>
+  <span class="nav-cart">🛒 0,00 € 0</span>
 </nav>
 
-<!-- Hero -->
-<div class="legal-hero">
-  <h1>📄 CGV & Mentions Légales</h1>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">📄 Document officiel</div>
+  <h1>CGV & Mentions Légales</h1>
   <p>Conditions Générales de Vente — Nature Survie & Autonomie</p>
+  <div class="update-badge">✅ Mis à jour en juin 2026 — Conforme Kbis Ebrange Creation Digital</div>
 </div>
 
-<div class="legal-container">
+<!-- CONTENU PRINCIPAL -->
+<div class="page-wrap">
 
-  <p class="update-date">Dernière mise à jour : mai 2026</p>
+  <div class="alert alert-success">
+    ✅ <strong>Société immatriculée</strong> — Ces mentions légales sont conformes au Kbis délivré le 04/06/2026 par le Greffe du Tribunal des Activités Économiques de Paris. Ce site est exploité par <strong>Ebrange Creation Digital</strong>, SAS immatriculée au RCS de Paris sous le numéro <strong>105 870 315</strong>.
+  </div>
 
-  <!-- Table des matières -->
-  <div class="legal-toc">
+  <!-- SOMMAIRE -->
+  <div class="sommaire">
     <h3>📋 Sommaire</h3>
     <ol>
       <li><a href="#mentions">Mentions légales</a></li>
@@ -180,33 +306,72 @@
       <li><a href="#retours">Droit de rétractation & retours</a></li>
       <li><a href="#garanties">Garanties légales</a></li>
       <li><a href="#donnees">Données personnelles</a></li>
+      <li><a href="#categories">Nouvelles catégories à venir</a></li>
       <li><a href="#litiges">Litiges</a></li>
     </ol>
   </div>
 
-  <!-- MENTIONS LÉGALES -->
-  <div class="legal-section" id="mentions">
-    <h2>1. Mentions Légales</h2>
-    <div class="legal-box">
-      <p><strong>Responsable de la publication :</strong> Nature Survie & Autonomie</p>
-      <p><strong>Statut :</strong> Particulier</p>
-      <p><strong>Adresse :</strong> Bègles, 33130, France</p>
-      <p><strong>Email :</strong> <a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a></p>
-      <p><strong>Site web :</strong> Nature Survie & Autonomie</p>
-    </div>
-    <p>Ce site est exploité par un particulier dans le cadre d'une activité de vente en ligne de produits d'autosuffisance, survie et jardinage.</p>
+  <!-- 1. MENTIONS LÉGALES -->
+  <div class="section" id="mentions">
+    <div class="section-title">1. Mentions Légales</div>
+
+    <div class="subsection-title">1.1 Identification de la société</div>
+    <table class="info-table">
+      <tr><td>Raison sociale</td><td>Ebrange Creation Digital</td></tr>
+      <tr><td>Sigle</td><td>ECD</td></tr>
+      <tr><td>Forme juridique</td><td>Société par Actions Simplifiée (SAS) à associé unique</td></tr>
+      <tr><td>Capital social</td><td>100,00 euros</td></tr>
+      <tr><td>Numéro SIREN</td><td>105 870 315</td></tr>
+      <tr><td>RCS</td><td>105 870 315 R.C.S. Paris</td></tr>
+      <tr><td>N° de gestion</td><td>2026B28272</td></tr>
+      <tr><td>EUID</td><td>EUIDFR7501.105870315</td></tr>
+      <tr><td>Date d'immatriculation</td><td>04 juin 2026</td></tr>
+      <tr><td>Date de début d'activité</td><td>03 juin 2026</td></tr>
+    </table>
+
+    <div class="subsection-title">1.2 Siège social & établissement</div>
+    <table class="info-table">
+      <tr><td>Adresse du siège</td><td>47 rue Vivienne, 75002 Paris, France</td></tr>
+      <tr><td>Domiciliataire</td><td>Vivienne Domiciliation (RCS 994 567 121)</td></tr>
+      <tr><td>Lieu d'expédition</td><td>Bègles, 33130, France</td></tr>
+    </table>
+    <div class="alert alert-info">ℹ️ Le siège social est domicilié au 47 rue Vivienne, 75002 Paris. Les opérations d'expédition sont assurées depuis Bègles (33130, France).</div>
+
+    <div class="subsection-title">1.3 Direction</div>
+    <table class="info-table">
+      <tr><td>Présidente</td><td>Angelique Louis-Kristy Steeve</td></tr>
+      <tr><td>Date de naissance</td><td>17 janvier 1991, Paris 14ème (75)</td></tr>
+      <tr><td>Nationalité</td><td>Française</td></tr>
+    </table>
+
+    <div class="subsection-title">1.4 Contact & hébergement</div>
+    <table class="info-table">
+      <tr><td>Site web</td><td>https://naturesurvie.net</td></tr>
+      <tr><td>Email de contact</td><td><a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a></td></tr>
+      <tr><td>Hébergeur</td><td>Netlify, Inc. — 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA</td></tr>
+      <tr><td>Clôture exercice social</td><td>31 décembre (1er exercice : 31/12/2026)</td></tr>
+    </table>
+
+    <div class="subsection-title">1.4 Activités déclarées au RCS</div>
+    <p>Conformément à l'extrait Kbis, les activités exercées par Ebrange Creation Digital sont :</p>
+    <ul>
+      <li>La vente et le commerce en ligne d'outils de bricolage et jardinage, quincaillerie, panneaux photovoltaïques, systèmes de chauffage et pompes à chaleur, exclusivement neufs</li>
+      <li>Création de contenus écrits optimisés pour les sites internet et les blogs</li>
+      <li>Production de vidéos et de contenu en ligne</li>
+      <li>Conception, développement et maintenance de sites internet, réseaux intranets et tout système informatique pour le compte de tiers</li>
+    </ul>
   </div>
 
-  <!-- OBJET -->
-  <div class="legal-section" id="objet">
-    <h2>2. Objet</h2>
-    <p>Les présentes Conditions Générales de Vente (CGV) régissent l'ensemble des transactions effectuées sur la boutique en ligne <strong>Nature Survie & Autonomie</strong>.</p>
+  <!-- 2. OBJET -->
+  <div class="section" id="objet">
+    <div class="section-title">2. Objet</div>
+    <p>Les présentes Conditions Générales de Vente (CGV) régissent l'ensemble des transactions effectuées sur la boutique en ligne <strong>Nature Survie & Autonomie</strong>, exploitée par la société <strong>Ebrange Creation Digital</strong>, SAS au capital de 100 euros, immatriculée au RCS de Paris sous le numéro <strong>105 870 315</strong>.</p>
     <p>Toute commande passée implique l'acceptation pleine et entière des présentes CGV. Le client déclare en avoir pris connaissance avant de valider sa commande.</p>
   </div>
 
-  <!-- PRODUITS -->
-  <div class="legal-section" id="produits">
-    <h2>3. Produits & Disponibilité</h2>
+  <!-- 3. PRODUITS -->
+  <div class="section" id="produits">
+    <div class="section-title">3. Produits & Disponibilité</div>
     <p>Les produits proposés à la vente sont ceux décrits sur la boutique au moment de la consultation par le client.</p>
     <p>Chaque produit est présenté avec :</p>
     <ul>
@@ -217,17 +382,17 @@
     <p>En cas d'indisponibilité d'un produit après validation de la commande, le client en sera informé par email dans les 48 heures et pourra choisir entre un produit de remplacement ou un remboursement intégral.</p>
   </div>
 
-  <!-- PRIX -->
-  <div class="legal-section" id="prix">
-    <h2>4. Prix</h2>
+  <!-- 4. PRIX -->
+  <div class="section" id="prix">
+    <div class="section-title">4. Prix</div>
     <p>Les prix indiqués sur la boutique sont en <strong>euros TTC</strong> (toutes taxes comprises).</p>
     <p>Les prix peuvent être modifiés à tout moment. Seul le prix affiché au moment de la validation de la commande est applicable.</p>
-    <p>Les frais de livraison sont indiqués séparément lors du passage de commande. La livraison est <strong>offerte à partir de 50€</strong> d'achat pour la France métropolitaine.</p>
+    <div class="alert alert-success">🚚 <strong>Livraison gratuite à partir de 50 € d'achat</strong> pour la France métropolitaine. Des frais de livraison variables s'appliquent en dessous de ce seuil selon le poids et la destination.</div>
   </div>
 
-  <!-- COMMANDE -->
-  <div class="legal-section" id="commande">
-    <h2>5. Commande</h2>
+  <!-- 5. COMMANDE -->
+  <div class="section" id="commande">
+    <div class="section-title">5. Commande</div>
     <p>Pour passer commande, le client :</p>
     <ul>
       <li>Sélectionne les produits souhaités et les ajoute au panier</li>
@@ -235,150 +400,171 @@
       <li>Choisit son mode de paiement et confirme la commande</li>
     </ul>
     <p>Un email de confirmation est envoyé dès réception du paiement. La vente est considérée comme définitive à réception de cet email.</p>
-    <p>Nature Survie & Autonomie se réserve le droit d'annuler toute commande suspecte ou frauduleuse.</p>
+    <p>Ebrange Creation Digital se réserve le droit d'annuler toute commande suspecte ou frauduleuse.</p>
   </div>
 
-  <!-- PAIEMENT -->
-  <div class="legal-section" id="paiement">
-    <h2>6. Paiement</h2>
+  <!-- 6. PAIEMENT -->
+  <div class="section" id="paiement">
+    <div class="section-title">6. Paiement</div>
     <p>Les modes de paiement acceptés sont :</p>
     <ul>
-      <li>💳 <strong>Carte bancaire</strong> (Visa, Mastercard, CB)</li>
+      <li>💳 <strong>Carte bancaire</strong> (Visa, Mastercard, CB) — via Stripe</li>
       <li>🅿️ <strong>PayPal</strong></li>
       <li>🏦 <strong>Virement bancaire</strong></li>
     </ul>
-    <p>Le paiement est sécurisé. Les coordonnées bancaires du client ne sont jamais stockées sur le site.</p>
+    <p>Le paiement est sécurisé via Stripe. Les coordonnées bancaires du client ne sont jamais stockées sur les serveurs d'Ebrange Creation Digital.</p>
     <p>La commande est traitée uniquement après confirmation du paiement.</p>
   </div>
 
-  <!-- LIVRAISON -->
-  <div class="legal-section" id="livraison">
-    <h2>7. Livraison</h2>
+  <!-- 7. LIVRAISON -->
+  <div class="section" id="livraison">
+    <div class="section-title">7. Livraison</div>
     <p>Les livraisons sont effectuées en <strong>France métropolitaine</strong> uniquement (sauf mention contraire).</p>
 
-    <h3>Délais</h3>
+    <div class="subsection-title">Délais</div>
     <ul>
       <li>Expédition sous <strong>24 à 48h</strong> ouvrées après confirmation du paiement</li>
       <li>Livraison estimée sous <strong>3 à 7 jours ouvrés</strong> selon le transporteur</li>
     </ul>
 
-    <h3>Frais de livraison</h3>
+    <div class="subsection-title">Frais de livraison</div>
     <ul>
-      <li>Offerts à partir de <strong>50€</strong> d'achat</li>
+      <li>Offerts à partir de <strong>50 €</strong> d'achat (France métropolitaine)</li>
       <li>Frais variables selon le poids et la destination en dessous de ce seuil</li>
     </ul>
 
-    <h3>Suivi</h3>
+    <div class="subsection-title">Suivi</div>
     <p>Un numéro de suivi est communiqué par email dès l'expédition du colis.</p>
-
-    <div class="legal-box">
-      <p>⚠️ En cas de retard de livraison imputable au transporteur, Nature Survie & Autonomie ne saurait être tenu responsable. Le client est invité à contacter directement le transporteur avec son numéro de suivi.</p>
-    </div>
+    <div class="alert alert-warning">⚠️ En cas de retard de livraison imputable au transporteur, Ebrange Creation Digital ne saurait être tenu responsable. Le client est invité à contacter directement le transporteur avec son numéro de suivi.</div>
   </div>
 
-  <!-- RETOURS -->
-  <div class="legal-section" id="retours">
-    <h2>8. Droit de Rétractation & Retours</h2>
+  <!-- 8. RETRACTATION -->
+  <div class="section" id="retours">
+    <div class="section-title">8. Droit de Rétractation & Retours</div>
     <p>Conformément à l'article L221-18 du Code de la consommation, le client dispose d'un délai de <strong>14 jours calendaires</strong> à compter de la réception de sa commande pour exercer son droit de rétractation, sans avoir à justifier de motif.</p>
 
-    <h3>Procédure de retour</h3>
+    <div class="subsection-title">Procédure de retour</div>
     <ul>
-      <li>Envoyer un email à <a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a> avec la référence de commande</li>
+      <li>Envoyer un email à <a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a> avec la référence de commande</li>
       <li>Renvoyer le produit dans son emballage d'origine, en parfait état</li>
       <li>Les frais de retour sont à la charge du client</li>
     </ul>
 
-    <h3>Remboursement</h3>
+    <div class="subsection-title">Remboursement</div>
     <p>Le remboursement sera effectué dans un délai de <strong>14 jours</strong> après réception du retour, via le même moyen de paiement utilisé lors de l'achat.</p>
-
-    <div class="legal-box">
-      <p>⚠️ Le droit de rétractation ne s'applique pas aux produits personnalisés, aux denrées périssables, ou aux produits descellés par le client pour des raisons d'hygiène.</p>
-    </div>
+    <div class="alert alert-warning">⚠️ Le droit de rétractation ne s'applique pas aux produits personnalisés, aux denrées périssables, ou aux produits descellés par le client pour des raisons d'hygiène.</div>
   </div>
 
-  <!-- GARANTIES -->
-  <div class="legal-section" id="garanties">
-    <h2>9. Garanties Légales</h2>
+  <!-- 9. GARANTIES -->
+  <div class="section" id="garanties">
+    <div class="section-title">9. Garanties Légales</div>
     <p>Tous les produits vendus bénéficient des garanties légales suivantes :</p>
     <ul>
       <li><strong>Garantie de conformité</strong> (article L217-4 du Code de la consommation) — 2 ans à compter de la livraison</li>
       <li><strong>Garantie contre les vices cachés</strong> (article 1641 du Code civil)</li>
     </ul>
-    <p>En cas de défaut constaté, contactez-nous à <a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a> avec photos à l'appui.</p>
+    <p>En cas de défaut constaté, contactez-nous à <a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a> avec photos à l'appui.</p>
   </div>
 
-  <!-- DONNÉES PERSONNELLES -->
-  <div class="legal-section" id="donnees">
-    <h2>10. Données Personnelles</h2>
+  <!-- 10. DONNÉES -->
+  <div class="section" id="donnees">
+    <div class="section-title">10. Données Personnelles</div>
     <p>Les données personnelles collectées (nom, adresse, email) sont utilisées uniquement pour le traitement des commandes et la communication relative à celles-ci.</p>
-    <p>Conformément au RGPD, le client dispose d'un droit d'accès, de rectification et de suppression de ses données. Pour exercer ce droit : <a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a></p>
+    <p>Conformément au RGPD, le client dispose d'un droit d'accès, de rectification et de suppression de ses données. Pour exercer ce droit : <a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a></p>
     <p>Aucune donnée personnelle n'est cédée à des tiers à des fins commerciales.</p>
+    <table class="info-table" style="margin-top:16px;">
+      <tr><td>Responsable du traitement</td><td>Ebrange Creation Digital</td></tr>
+      <tr><td>Représentant</td><td>Angelique Louis-Kristy Steeve, Présidente</td></tr>
+      <tr><td>Adresse</td><td>47 rue Vivienne, 75002 Paris</td></tr>
+      <tr><td>Email</td><td><a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a></td></tr>
+    </table>
   </div>
 
-  <!-- LITIGES -->
-  <div class="legal-section" id="litiges">
-    <h2>11. Litiges</h2>
-    <p>En cas de litige, le client est invité à contacter en priorité Nature Survie & Autonomie à l'adresse <a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a> afin de trouver une solution amiable.</p>
+  <!-- 11. NOUVELLES CATÉGORIES -->
+  <div class="section" id="categories">
+    <div class="section-title">11. Nouvelles Catégories à Venir</div>
+    <p>Conformément aux activités déclarées au RCS, Ebrange Creation Digital développe prochainement les catégories suivantes sur naturesurvie.net :</p>
+    <table class="cat-table">
+      <thead>
+        <tr>
+          <th>Catégorie</th>
+          <th>Description</th>
+          <th>Statut</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Panneaux photovoltaïques</strong></td>
+          <td>Panneaux solaires, kits autonomie énergétique, accessoires</td>
+          <td class="badge-coming">🔜 À venir</td>
+        </tr>
+        <tr>
+          <td><strong>Chauffage & pompes à chaleur</strong></td>
+          <td>Systèmes de chauffage, pompes à chaleur, équipements thermiques</td>
+          <td class="badge-coming">🔜 À venir</td>
+        </tr>
+        <tr>
+          <td><strong>Création de contenu B2B</strong></td>
+          <td>Rédaction SEO, production vidéo, contenus web pour entreprises</td>
+          <td class="badge-available">✅ Disponible via Ebrange</td>
+        </tr>
+        <tr>
+          <td><strong>Développement web</strong></td>
+          <td>Conception, développement et maintenance de sites internet</td>
+          <td class="badge-available">✅ Disponible via Ebrange</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 12. LITIGES -->
+  <div class="section" id="litiges">
+    <div class="section-title">12. Litiges</div>
+    <p>En cas de litige, le client est invité à contacter en priorité Ebrange Creation Digital à l'adresse <a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a> afin de trouver une solution amiable.</p>
     <p>À défaut d'accord amiable, le client peut recourir à une médiation de la consommation. En France, la plateforme européenne de règlement en ligne des litiges est accessible à l'adresse : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a></p>
-    <p>Les présentes CGV sont soumises au droit français. Tout litige relève de la compétence des tribunaux français.</p>
+    <p>Les présentes CGV sont soumises au droit français. Tout litige relève de la compétence des tribunaux compétents du ressort du siège social d'Ebrange Creation Digital (Paris).</p>
   </div>
 
-</div>
+</div><!-- /page-wrap -->
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo">🌿 Nature Survie & Autonomie</div>
-      <p>La boutique des personnes qui choisissent l'autonomie. Produits bio, survie, jardinage — expédiés depuis la France.</p>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🌿 Nature Survie & Autonomie</div>
+      <p class="footer-desc">Exploité par <strong style="color:#fff;">Ebrange Creation Digital</strong> — SAS au capital de 100 € — RCS Paris 105 870 315.<br>47 rue Vivienne, 75002 Paris.<br>Expéditions depuis Bègles, France.</p>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank">Facebook</a>
+        <a href="https://www.pinterest.fr/naturesurvi/" target="_blank">Pinterest</a>
+        <a href="https://www.instagram.com/naturesurvi/" target="_blank">Instagram</a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Boutique</h4>
-      <ul>
-        <li><a href="catalogue.html">Tous les produits</a></li>
-        <li><a href="index.html">Accueil</a></li>
-      </ul>
+      <a href="https://naturesurvie.net/catalogue">Survie & Préparation</a>
+      <a href="https://naturesurvie.net/jardinage">Jardinage & Potager</a>
+      <a href="https://naturesurvie.net/catalogue?cat=Énergie">Énergie solaire</a>
+      <a href="https://naturesurvie.net/catalogue?cat=Conservation">Conservation</a>
     </div>
     <div class="footer-col">
       <h4>Légal</h4>
-      <ul>
-        <li><a href="cgv.html">CGV & Mentions légales</a></li>
-        <li><a href="cgv.html#donnees">Données personnelles</a></li>
-        <li><a href="cgv.html#retours">Retours</a></li>
-      </ul>
+      <a href="/cgv">CGV & Mentions légales</a>
+      <a href="/cgv#donnees">Données personnelles</a>
+      <a href="/cgv#retours">Retours</a>
+      <a href="/cgv#livraison">Livraison</a>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:naturesurvi@gmail.com">📧 naturesurvi@gmail.com</a></li>
-        <li><a href="about.html#contact">Formulaire de contact</a></li>
-      </ul>
+      <a href="mailto:contact@naturesurvie.net">📧 contact@naturesurvie.net</a>
+      <a href="https://naturesurvie.net/about#contact">Formulaire de contact</a>
+      <a href="https://naturesurvie.net/about">À propos</a>
     </div>
   </div>
-  <div class="footer-social">
-    <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener" aria-label="TikTok">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>
-    <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener" aria-label="Pinterest">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-    </a>
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>
-  </div>
   <div class="footer-bottom">
-    <span>© 2026 Nature Survie & Autonomie — Tous droits réservés</span>
+    © 2026 Nature Survie & Autonomie — Ebrange Creation Digital SAS — Tous droits réservés | Fait avec 🌿 en France
   </div>
 </footer>
 
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 </body>
 </html>
-
-
-
