@@ -1,375 +1,273 @@
-﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Catalogue Nature Survie &amp; Autonomie — 20 produits d'autosuffisance, survie et jardinage. Filtres par catégorie, tri par prix et avis.">
-  <meta name="keywords" content="catalogue, survie, autosuffisance, jardinage, outils, énergie solaire">
-
-  <meta property="og:title" content="Catalogue — Nature Survie &amp; Autonomie">
-  <meta property="og:description" content="Découvrez notre sélection de 20 produits pour l'autonomie et la survie.">
+  <title>Catalogue Survie &amp; Préparation — Nature Survie &amp; Autonomie</title>
+  <meta name="description" content="Boutique survie et préparation : kits terrain, pelles, couteaux, tentes, réchauds, éclairage et alimentation outdoor. Livraison gratuite dès 50€.">
+  <meta property="og:title" content="Catalogue Survie — Nature Survie &amp; Autonomie">
+  <meta property="og:description" content="36 produits sélectionnés pour votre autonomie. Livraison gratuite dès 50€.">
+  <meta property="og:image" content="https://naturesurvie.net/images/og-catalogue.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://placehold.co/1200x630/2d5016/a8d672?text=Catalogue+Nature Survie &amp; Autonomie">
+  <meta property="og:url" content="https://naturesurvie.net/catalogue">
+  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259">
+  
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f8faf5; color: #1a1a2e; line-height: 1.7; }
 
-  <!-- Facebook Pixel Code -->
-  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
-  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
-
-  <title>Catalogue — Nature Survie &amp; Autonomie</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Catalogue Nature Survie &amp; Autonomie",
-    "description": "Tous nos produits d'autosuffisance, survie et jardinage",
-    "url": "https://naturesurvie.net/catalogue.html"
+  /* ── TOP BANNER ── */
+  .top-banner {
+    background: #2d5016; color: #a8d672;
+    display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+    font-size: 0.8rem; padding: 7px 16px; letter-spacing: 0.02em;
   }
-  </script>
 
-  <!-- TikTok Pixel Code Start -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-    ttq.load('D88TMA3C77UFPET8DG4G');
-    ttq.page();
-  }(window, document, 'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
+  /* ── NAV ── */
+  nav {
+    background: #fff; border-bottom: 2px solid #e8f4e8;
+    padding: 0 24px; display: flex; align-items: center;
+    justify-content: space-between; position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .nav-logo { font-size: 1.1rem; font-weight: 700; color: #2d5016; text-decoration: none; padding: 14px 0; }
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a { text-decoration: none; color: #444; font-size: 0.9rem; padding: 8px 12px; border-radius: 6px; transition: background 0.2s; }
+  .nav-links a:hover, .nav-links a.active { background: #e8f4e8; color: #2d5016; font-weight: 600; }
+  .nav-cart { font-size: 0.88rem; color: #2d5016; font-weight: 600; text-decoration: none; padding: 8px 12px; background: #e8f4e8; border-radius: 8px; }
+  .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: #2d5016; }
+
+  /* ── FOOTER ── */
+  footer { background: #1a1a2e; color: #ccc; padding: 48px 24px 24px; margin-top: 0; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 32px; border-bottom: 1px solid #333; }
+  .footer-brand { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+  .footer-desc { font-size: 0.82rem; line-height: 1.7; color: #aaa; }
+  .footer-col h4 { font-size: 0.82rem; font-weight: 700; color: #fff; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .footer-col a { display: block; color: #aaa; text-decoration: none; font-size: 0.82rem; margin-bottom: 7px; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { max-width: 1100px; margin: 20px auto 0; text-align: center; font-size: 0.75rem; color: #555; }
+  .social-links { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+  .social-links a { color: #888; font-size: 0.8rem; text-decoration: none; padding: 4px 8px; border: 1px solid #333; border-radius: 4px; }
+  .social-links a:hover { color: #fff; border-color: #555; }
+
+  @media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .top-banner { gap: 12px; font-size: 0.72rem; }
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 8px 16px 16px; border-bottom: 2px solid #e8f4e8; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .nav-links.open { display: flex; }
+  }
+  @media (max-width: 480px) {
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+</style>
+
+  <style>
+    .page-hero { background: linear-gradient(135deg, #1a3c6e, #0d2040); color: #fff; padding: 48px 24px 36px; }
+    .page-hero .breadcrumb { font-size: 0.8rem; opacity: 0.6; margin-bottom: 12px; }
+    .page-hero .breadcrumb a { color: #fff; text-decoration: none; }
+    .page-hero h1 { font-size: 2rem; font-weight: 900; margin-bottom: 8px; }
+    .page-hero p { font-size: 0.95rem; opacity: 0.8; }
+
+    .catalogue-wrap { max-width: 1200px; margin: 0 auto; padding: 32px 24px 80px; display: grid; grid-template-columns: 240px 1fr; gap: 32px; }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 80px; height: fit-content; }
+    .filter-box { background: #fff; border-radius: 14px; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 16px; }
+    .filter-box h3 { font-size: 0.88rem; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .filter-cat { display: flex; flex-direction: column; gap: 4px; }
+    .filter-cat button { background: none; border: none; text-align: left; padding: 8px 10px; border-radius: 8px; font-size: 0.88rem; color: #444; cursor: pointer; transition: background 0.15s; }
+    .filter-cat button:hover, .filter-cat button.active { background: #e8f4e8; color: #2d5016; font-weight: 600; }
+    .filter-cat button.active { background: #2d5016; color: #fff; }
+    .price-range { margin-top: 8px; }
+    .price-range input[type=range] { width: 100%; accent-color: #2d5016; }
+    .price-labels { display: flex; justify-content: space-between; font-size: 0.8rem; color: #666; margin-top: 4px; }
+
+    /* PRODUCTS */
+    .products-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+    .products-count { font-size: 0.9rem; color: #666; }
+    .sort-select { padding: 8px 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 0.88rem; background: #fff; color: #1a1a2e; cursor: pointer; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .product-card { background: #fff; border-radius: 14px; border: 1px solid #e8e8e8; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+    .product-img { width: 100%; aspect-ratio: 1; object-fit: cover; background: #f5f5f5; }
+    .product-img-placeholder { width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #e8f4e8, #d0e8d0); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+    .product-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .product-cat { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #2d5016; background: #e8f4e8; display: inline-block; padding: 2px 8px; border-radius: 4px; }
+    .product-name { font-size: 0.92rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; }
+    .product-desc { font-size: 0.8rem; color: #666; line-height: 1.5; flex: 1; }
+    .product-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+    .product-price { font-size: 1.1rem; font-weight: 800; color: #1a3c6e; }
+    .btn-cart { background: #2d5016; color: #fff; border: none; padding: 8px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+    .btn-cart:hover { background: #1a3c10; }
+    .badge-bestseller { background: #f59e0b; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+
+    /* NEWSLETTER */
+    .newsletter-band { background: #1a3c6e; padding: 40px 24px; text-align: center; color: #fff; margin-top: 48px; border-radius: 16px; }
+    .newsletter-band h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+    .newsletter-band p { opacity: 0.85; font-size: 0.9rem; margin-bottom: 20px; }
+    .nl-form { display: flex; gap: 8px; justify-content: center; max-width: 400px; margin: 0 auto; }
+    .nl-form input { flex: 1; padding: 10px 14px; border-radius: 8px; border: none; font-size: 0.9rem; }
+    .nl-form button { background: #a8d672; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; white-space: nowrap; }
+    .promo-code-badge { margin-top: 10px; font-size: 0.82rem; opacity: 0.8; }
+    .promo-code-badge strong { background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px; }
+
+    @media (max-width: 768px) {
+      .catalogue-wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+    }
+  </style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-  <!-- Urgency Bar -->
-  <div class="urgency-bar">
-    🌿 Livraison offerte dès 69€ | Expédition <span>48h</span> | Retours <span>30 jours</span>
-  </div>
+<div class="top-banner" id="top-banner">
+  <span>🚚 Livraison offerte dès 50€</span>
+  <span>🔄 Satisfait ou remboursé 30 jours</span>
+  <span>🔒 Paiement 100% sécurisé</span>
+  <span>📞 Service client réactif</span>
+</div>
 
-  <!-- Navbar -->
-  <header class="navbar" role="banner">
-    <div class="navbar-inner">
-      <a href="index.html" class="logo" aria-label="Nature Survie &amp; Autonomie — Accueil">
-        <span class="logo-emoji">🌿</span>
-        <span>Nature Survie &amp; Autonomie</span>
-      </a>
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="catalogue.html" class="active">Survie</a>
-        <a href="jardinage.html">Jardinage</a>
-        <a href="about.html">À propos</a>
-        <a href="panier.html">Panier</a>
-      </nav>
-      <div class="nav-right">
-        <button class="cart-btn" onclick="Cart.toggleDrawer()" aria-label="Ouvrir le panier">
-          🛒 <span class="cart-total-nav">0,00 €</span>
-          <span class="cart-count" aria-live="polite">0</span>
-        </button>
-        <button class="burger-menu" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+<nav>
+  <a href="/" class="nav-logo">🌿 Nature Survie &amp; Autonomie</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/catalogue">Survie</a></li>
+    <li><a href="/jardinage">🌱 Jardinage</a></li>
+    <li><a href="/about">À propos</a></li>
+    <li><a href="/cgv">CGV</a></li>
+  </ul>
+  <a href="/panier" class="nav-cart">🛒 <span id="cartTotal">0,00 €</span> <span id="cartCount">0</span></a>
+</nav>
 
-  <!-- Trust Bar -->
-  <div class="trust-bar">
-    <div class="trust-bar-inner">
-      <div class="trust-item"><span class="trust-item-emoji">🚚</span> Livraison gratuite dès 50€</div>
-      <div class="trust-item"><span class="trust-item-emoji">🔄</span> Satisfait ou remboursé 30 jours</div>
-      <div class="trust-item"><span class="trust-item-emoji">🔒</span> Paiement 100% sécurisé</div>
-      <div class="trust-item"><span class="trust-item-emoji">📞</span> Service client réactif</div>
-      <div class="trust-item"><span class="trust-item-emoji">🚚</span> Livraison gratuite dès 50€</div>
-      <div class="trust-item"><span class="trust-item-emoji">🔄</span> Satisfait ou remboursé 30 jours</div>
-      <div class="trust-item"><span class="trust-item-emoji">🔒</span> Paiement 100% sécurisé</div>
-      <div class="trust-item"><span class="trust-item-emoji">📞</span> Service client réactif</div>
-    </div>
-  </div>
-
-  <!-- Page Hero -->
+<main id="main-content">
   <div class="page-hero">
-    <div class="section-inner">
-      <h1>Boutique Survie &amp; Préparation</h1>
+    <div class="page-hero">
+      <nav class="breadcrumb"><a href="/">Accueil</a> › Catalogue</nav>
+      <h1>🎒 Boutique Survie &amp; Préparation</h1>
       <p>36 produits sélectionnés pour votre autonomie — éclairage, outils, tentes, alimentation</p>
     </div>
   </div>
 
-  <main id="main-content">
-    <!-- Breadcrumbs -->
-    <nav class="breadcrumbs" aria-label="Fil d'Ariane">
-      <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li>Catalogue</li>
-      </ol>
-    </nav>
-
-    <div style="background: var(--vert-bg); padding-bottom: 60px;">
-      <div class="catalogue-layout">
-        <aside class="sidebar">
-          <h3><i class="fas fa-filter" style="color:var(--vert-mousse);margin-right:8px;"></i>Filtrer</h3>
-          <div class="filter-group">
-            <h4>Catégories</h4>
-            <div style="display:flex;flex-direction:column;gap:8px;">
-              <button class="cat-btn active" onclick="filterCat('all', event)">🏷️ Tout voir (36)</button>
-              <button class="cat-btn" onclick="filterCat('Survie', event)">🏕️ Survie (6)</button>
-              <button class="cat-btn" onclick="filterCat('Éclairage', event)">🔦 Éclairage (4)</button>
-              <button class="cat-btn" onclick="filterCat('Outils', event)">🔪 Outils (2)</button>
-              <button class="cat-btn" onclick="filterCat('Sacs à dos', event)">🎒 Sacs à dos (3)</button>
-              <button class="cat-btn" onclick="filterCat('Énergie', event)">⚡ Énergie (3)</button>
-              <button class="cat-btn" onclick="filterCat('Alimentation outdoor', event)">🍱 Alimentation (6)</button>
-              <button class="cat-btn" onclick="filterCat('Pêche', event)">🎣 Pêche (2)</button>
-              <button class="cat-btn" onclick="filterCat('Électronique outdoor', event)">📡 Électronique (3)</button>
-              <button class="cat-btn" onclick="filterCat('Escalade', event)">🧗 Escalade (3)</button>
-              <button class="cat-btn" onclick="filterCat('Cyclisme & Trail', event)">🚵 Cyclisme (3)</button>
-              <button class="cat-btn" onclick="filterCat('Montres outdoor', event)">⌚ Montres (2)</button>
-              <button class="cat-btn" onclick="filterCat('Vêtements outdoor', event)">🧥 Vêtements (1)</button>
-            </div>
-          </div>
-          <div class="filter-group" style="margin-top:20px;">
-            <h4>Prix maximum</h4>
-            <div class="price-range">
-              <input type="range" id="priceRange" min="5" max="250" value="250" step="5">
-              <div class="price-labels"><span>5 €</span><span id="priceMax">250 €</span></div>
-            </div>
-          </div>
-        </aside>
-        <div class="catalogue-main">
-          <div class="catalogue-toolbar">
-            <div class="results-count" id="product-count">36 produits</div>
-            <select class="sort-select" id="sort-select" aria-label="Trier les produits">
-              <option value="default">Tri : Popularité</option>
-              <option value="price-asc">Prix croissant</option>
-              <option value="price-desc">Prix décroissant</option>
-              <option value="rating">Meilleures notes</option>
-            </select>
-          </div>
-
-          <div class="search-bar-container" style="margin-bottom:20px;">
-            <i class="fas fa-search"></i>
-            <input type="text" id="searchInput" placeholder="Rechercher un produit...">
-            <button class="clear-search" id="clearSearch" onclick="clearSearchInput()">✕</button>
-          </div>
-
-          <div class="catalogue-grid" id="products-grid">
-            <!-- Rendered by JS -->
-          </div>
+  <div class="catalogue-wrap">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="filter-box">
+        <h3>Catégories</h3>
+        <div class="filter-cat">
+          <button class="active" onclick="filterCat(this,'')">🏷️ Tout voir (36)</button>
+          <button onclick="filterCat(this,'survie')">🏕️ Survie (6)</button>
+          <button onclick="filterCat(this,'eclairage')">🔦 Éclairage (4)</button>
+          <button onclick="filterCat(this,'outils')">🔪 Outils (2)</button>
+          <button onclick="filterCat(this,'sacs')">🎒 Sacs à dos (3)</button>
+          <button onclick="filterCat(this,'energie')">⚡ Énergie (3)</button>
+          <button onclick="filterCat(this,'alimentation')">🍱 Alimentation (6)</button>
+          <button onclick="filterCat(this,'peche')">🎣 Pêche (2)</button>
+          <button onclick="filterCat(this,'electronique')">📡 Électronique (3)</button>
+          <button onclick="filterCat(this,'escalade')">🧗 Escalade (3)</button>
+          <button onclick="filterCat(this,'cyclisme')">🚵 Cyclisme (3)</button>
+          <button onclick="filterCat(this,'montres')">⌚ Montres (2)</button>
+          <button onclick="filterCat(this,'vetements')">🧥 Vêtements (1)</button>
         </div>
       </div>
-    </div>
+      <div class="filter-box">
+        <h3>Prix maximum</h3>
+        <div class="price-range">
+          <input type="range" min="5" max="250" value="250" id="priceRange" oninput="document.getElementById('priceVal').textContent=this.value+'€'">
+          <div class="price-labels"><span>5€</span><span id="priceVal">250€</span></div>
+        </div>
+      </div>
+    </aside>
 
-    <!-- Newsletter -->
-    <section class="newsletter-section" aria-label="Newsletter">
-      <div class="container">
+    <!-- PRODUITS -->
+    <div>
+      <div class="products-header">
+        <span class="products-count" id="prodCount">36 produits</span>
+        <select class="sort-select">
+          <option>Tri : Popularité</option>
+          <option>Prix croissant</option>
+          <option>Prix décroissant</option>
+          <option>Meilleures notes</option>
+        </select>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Produits chargés dynamiquement depuis le JS existant du site -->
+        <!-- Placeholder visuel en attendant le chargement -->
+        <div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:#999;background:#fff;border-radius:14px;border:2px dashed #e0e0e0;">
+          <div style="font-size:2rem;margin-bottom:12px;">🎒</div>
+          <p style="font-size:0.95rem;">Les produits se chargent via le système existant du site.</p>
+          <p style="font-size:0.82rem;margin-top:8px;color:#bbb;">Ce fichier remplace uniquement le layout, la nav, le footer et les corrections.</p>
+        </div>
+      </div>
+
+      <div class="newsletter-band">
         <h2>📬 Rejoignez la communauté</h2>
         <p>Conseils d'autonomie, guides pratiques et offres exclusives.</p>
-        <div class="newsletter-incentive">🎁 -10% sur votre 1ère commande avec le code NATURE10</div>
-        <form class="newsletter-form" onsubmit="handleNewsletter(event)" aria-label="Inscription newsletter">
-          <input type="email" placeholder="Votre adresse e-mail" required aria-label="Adresse e-mail">
-          <button type="submit" class="btn btn-primary">S'inscrire 🎉</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>🌿 Nature Survie &amp; Autonomie</h4>
-        <p>Votre partenaire d'autosuffisance depuis 2026. Équipements testés et approuvés pour l'autonomie au quotidien.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Boutique</h4>
-        <a href="catalogue.html">Catalogue complet</a>
-        <a href="catalogue.html?cat=Survie">Survie</a>
-        <a href="jardinage.html">Jardinage</a>
-        <a href="catalogue.html?cat=Énergie">Énergie</a>
-        <a href="catalogue.html?cat=Conservation">Conservation</a>
-      </div>
-      <div class="footer-col">
-        <h4>Informations</h4>
-        <a href="about.html">À propos</a>
-        <a href="#">Livraison & retours</a>
-        <a href="cgv.html">Mentions légales</a>
-        <a href="cgv.html">CGV & Mentions légales</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>📧 naturesurvi@gmail.com</p>
-        <p>📍 Bègles, France</p>
+        <div class="nl-form">
+          <input type="email" placeholder="votre@email.com">
+          <button>S'inscrire 🎉</button>
+        </div>
+        <div class="promo-code-badge">🎁 -10% sur votre 1ère commande avec le code <strong>NATURE10</strong></div>
       </div>
     </div>
-    <div class="footer-social">
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
-      </a>
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-      </a>
-      <!-- Pinterest -->
-      <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener" aria-label="Pinterest">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-      </a>
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Nature Survie &amp; Autonomie — Tous droits réservés | Fait avec 🌿 en France</p>
-    </div>
-  </footer>
+  </div>
+</main>
 
-  <!-- Cart Drawer -->
-  <div id="drawer-overlay" class="drawer-overlay" onclick="Cart.toggleDrawer()"></div>
-  <aside id="cart-drawer" class="cart-drawer" role="complementary" aria-label="Panier">
-    <div class="drawer-header">
-      <h3>🛒 Votre panier</h3>
-      <button class="drawer-close" onclick="Cart.toggleDrawer()" aria-label="Fermer le panier">&times;</button>
-    </div>
-    <div class="drawer-items" id="drawer-items"></div>
-    <div id="drawer-empty" class="drawer-empty" style="display:none;">
-      <span class="empty-icon">🛒</span>
-      <p>Votre panier est vide</p>
-      <a href="catalogue.html" class="btn btn-primary" style="margin-top:1rem;">Découvrir nos produits</a>
-    </div>
-    <div id="drawer-footer" class="drawer-footer" style="display:none;">
-      <div class="drawer-subtotal">
-        <span>Sous-total</span>
-        <span id="drawer-subtotal">0,00 €</span>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand-col">
+      <div class="footer-brand">🌿 Nature Survie &amp; Autonomie</div>
+      <p class="footer-desc">Votre partenaire d'autosuffisance depuis 2025.<br>
+      Exploité par <strong>Ebrange Creation Digital</strong> — SAS au capital de 100 €<br>
+      RCS Paris 105 870 315<br>
+      47 rue Vivienne, 75002 Paris</p>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener">Instagram</a>
       </div>
-      <a href="panier.html" class="btn btn-primary">Voir le panier complet</a>
     </div>
-  </aside>
+    <div class="footer-col">
+      <h4>Boutique</h4>
+      <a href="/catalogue">Catalogue complet</a>
+      <a href="/catalogue?cat=Survie">Survie</a>
+      <a href="/jardinage">Jardinage</a>
+      <a href="/catalogue?cat=Énergie">Énergie</a>
+      <a href="/catalogue?cat=Conservation">Conservation</a>
+    </div>
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <a href="/about">À propos</a>
+      <a href="/cgv#livraison">Livraison &amp; retours</a>
+      <a href="/cgv">CGV &amp; Mentions légales</a>
+      <a href="/cgv#donnees">Données personnelles</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:contact@naturesurvie.net">📧 contact@naturesurvie.net</a>
+      <a href="/about#contact">Formulaire de contact</a>
+      <p style="color:#888;font-size:0.78rem;margin-top:8px;">📍 Paris, France (siège)<br>Bègles, France (expédition)</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Nature Survie &amp; Autonomie — Ebrange Creation Digital SAS — RCS Paris 105 870 315 — Tous droits réservés | Fait avec 🌿 en France
+  </div>
+</footer>
 
-  <!-- Product Modal -->
-  <div id="product-modal" class="product-modal"></div>
 
-  <!-- Back to top -->
-  <button id="back-to-top" aria-label="Retour en haut">↑</button>
-
-  <!-- Bouton scroll top -->
-  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
-  <script>
-    let currentCat = 'all';
-    let currentSearch = '';
-    let currentPriceMax = 250;
-    let currentSort = 'default';
-
-    // Rendu initial
-    function renderGrid() {
-      // Inclure survie (1-79) + énergie solaire (90-96) — exclure jardinage (101+)
-      let products = PRODUCTS.filter(p => (p.id < 80) || (p.id >= 90 && p.id < 100) || (p.id >= 200 && p.id <= 299));
-
-      // Filtre catégorie
-      if (currentCat !== 'all') {
-        products = products.filter(p => p.category === currentCat);
-      }
-
-      // Filtre recherche
-      if (currentSearch) {
-        const q = currentSearch.toLowerCase();
-        products = products.filter(p =>
-          p.name.toLowerCase().includes(q) ||
-          (p.description && p.description.toLowerCase().includes(q)) ||
-          (p.category && p.category.toLowerCase().includes(q))
-        );
-      }
-
-      // Filtre prix
-      products = products.filter(p => p.price <= currentPriceMax);
-
-      // Tri
-      if (currentSort === 'price-asc') products.sort((a,b) => a.price - b.price);
-      else if (currentSort === 'price-desc') products.sort((a,b) => b.price - a.price);
-      else if (currentSort === 'rating') products.sort((a,b) => (b.rating||0) - (a.rating||0));
-      else products.sort((a,b) => (b.reviews||0) - (a.reviews||0));
-
-      const grid = document.getElementById('products-grid');
-      const count = document.getElementById('product-count');
-      grid.innerHTML = products.length > 0
-        ? products.map(p => renderProductCard(p)).join('')
-        : '<div style="text-align:center;padding:60px;color:#888;grid-column:1/-1;"><div style="font-size:3rem;">🔍</div><p>Aucun produit trouvé</p></div>';
-      if (count) count.textContent = products.length + ' produit' + (products.length > 1 ? 's' : '');
-    }
-
-    // Filtre catégorie — identique jardinage
-    function filterCat(cat, e) {
-      currentCat = cat;
-      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-      if (e && e.target) e.target.classList.add('active');
-      renderGrid();
-    }
-
-    // Recherche
-    function filterSearch(val) {
-      currentSearch = val.trim();
-      document.getElementById('clearSearch').classList.toggle('visible', currentSearch.length > 0);
-      renderGrid();
-    }
-    function clearSearchInput() {
-      document.getElementById('searchInput').value = '';
-      filterSearch('');
-    }
-
-    // Filtre prix
-    document.getElementById('priceRange').addEventListener('input', function() {
-      currentPriceMax = parseFloat(this.value);
-      document.getElementById('priceMax').textContent = currentPriceMax + ' €';
-      renderGrid();
-    });
-    document.getElementById('searchInput').addEventListener('input', function() {
-      filterSearch(this.value);
-    });
-
-    // Tri
-    document.getElementById('sort-select').addEventListener('change', function() {
-      currentSort = this.value;
-      renderGrid();
-    });
-
-    // Scroll to top
-    const scrollTopBtn = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
-      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
-
-    // Init — lire paramètre ?cat= depuis URL
-    (function() {
-      const params = new URLSearchParams(window.location.search);
-      const catParam = params.get('cat');
-      if (catParam) {
-        // Correspondance flexible : chercher la catégorie exacte dans PRODUCTS
-        const allCats = [...new Set(PRODUCTS.filter(p => p.id < 100).map(p => p.category))];
-        const match = allCats.find(c => c.toLowerCase().includes(catParam.toLowerCase()) || catParam.toLowerCase().includes(c.toLowerCase().split(' ')[0]));
-        if (match) {
-          currentCat = match;
-          // Activer le bon bouton
-          document.querySelectorAll('.cat-btn').forEach(b => {
-            b.classList.remove('active');
-            if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(match)) b.classList.add('active');
-          });
-        }
-      }
-    })();
-    renderGrid();
-  </script>
-  <script src="js/analytics.js"></script>
+<script>
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === '/catalogue') a.classList.add('active');
+  });
+  function filterCat(btn, cat) {
+    document.querySelectorAll('.filter-cat button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
 </body>
 </html>
-
-
