@@ -1,777 +1,323 @@
-﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jardinage & Autosuffisance — Outils, serres, composteurs et matériel de potager pour cultiver votre autonomie. Livraison France.">
-  <meta name="keywords" content="jardinage, potager, serre, composteur, outils jardin, autosuffisance, autonomie, graines">
-  <title>Jardinage & Autosuffisance — Nature Survie & Autonomie</title>
+  <title>Jardinage &amp; Autosuffisance — Nature Survie &amp; Autonomie</title>
+  <meta name="description" content="Boutique jardinage et potager : outils, serres, composteurs, arrosage, culture indoor et engrais bio. Livraison gratuite dès 50€.">
+  <meta property="og:title" content="Jardinage &amp; Autosuffisance — Nature Survie &amp; Autonomie">
+  <meta property="og:description" content="37+ produits sélectionnés pour votre jardin. Livraison gratuite dès 50€.">
+  <meta property="og:image" content="https://naturesurvie.net/images/og-jardinage.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naturesurvie.net/jardinage">
+  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259">
+  
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f8faf5; color: #1a1a2e; line-height: 1.7; }
 
-  <!-- Facebook Pixel Code -->
-  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1619731299084796'); fbq('track', 'PageView');</script>
-  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1619731299084796&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
+  /* ── TOP BANNER ── */
+  .top-banner {
+    background: #2d5016; color: #a8d672;
+    display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+    font-size: 0.8rem; padding: 7px 16px; letter-spacing: 0.02em;
+  }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  /* ── NAV ── */
+  nav {
+    background: #fff; border-bottom: 2px solid #e8f4e8;
+    padding: 0 24px; display: flex; align-items: center;
+    justify-content: space-between; position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .nav-logo { font-size: 1.1rem; font-weight: 700; color: #2d5016; text-decoration: none; padding: 14px 0; }
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a { text-decoration: none; color: #444; font-size: 0.9rem; padding: 8px 12px; border-radius: 6px; transition: background 0.2s; }
+  .nav-links a:hover, .nav-links a.active { background: #e8f4e8; color: #2d5016; font-weight: 600; }
+  .nav-cart { font-size: 0.88rem; color: #2d5016; font-weight: 600; text-decoration: none; padding: 8px 12px; background: #e8f4e8; border-radius: 8px; }
+  .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: #2d5016; }
 
-  <!-- TikTok Pixel Code Start -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-    ttq.load('D88TMA3C77UFPET8DG4G');
-    ttq.page();
-  }(window, document, 'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
+  /* ── FOOTER ── */
+  footer { background: #1a1a2e; color: #ccc; padding: 48px 24px 24px; margin-top: 0; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 32px; border-bottom: 1px solid #333; }
+  .footer-brand { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+  .footer-desc { font-size: 0.82rem; line-height: 1.7; color: #aaa; }
+  .footer-col h4 { font-size: 0.82rem; font-weight: 700; color: #fff; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .footer-col a { display: block; color: #aaa; text-decoration: none; font-size: 0.82rem; margin-bottom: 7px; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { max-width: 1100px; margin: 20px auto 0; text-align: center; font-size: 0.75rem; color: #555; }
+  .social-links { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+  .social-links a { color: #888; font-size: 0.8rem; text-decoration: none; padding: 4px 8px; border: 1px solid #333; border-radius: 4px; }
+  .social-links a:hover { color: #fff; border-color: #555; }
+
+  @media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .top-banner { gap: 12px; font-size: 0.72rem; }
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 8px 16px 16px; border-bottom: 2px solid #e8f4e8; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .nav-links.open { display: flex; }
+  }
+  @media (max-width: 480px) {
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+</style>
+
+  <style>
+    .page-hero { background: linear-gradient(135deg, #2d5016, #1a3c1a); color: #fff; padding: 48px 24px 36px; }
+    .page-hero .breadcrumb { font-size: 0.8rem; opacity: 0.6; margin-bottom: 12px; }
+    .page-hero .breadcrumb a { color: #fff; text-decoration: none; }
+    .page-hero h1 { font-size: 2rem; font-weight: 900; margin-bottom: 8px; }
+    .page-hero p { font-size: 0.95rem; opacity: 0.8; }
+
+    .catalogue-wrap { max-width: 1200px; margin: 0 auto; padding: 32px 24px 80px; display: grid; grid-template-columns: 240px 1fr; gap: 32px; }
+
+    .sidebar { position: sticky; top: 80px; height: fit-content; }
+    .filter-box { background: #fff; border-radius: 14px; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 16px; }
+    .filter-box h3 { font-size: 0.88rem; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .filter-cat { display: flex; flex-direction: column; gap: 4px; }
+    .filter-cat button { background: none; border: none; text-align: left; padding: 8px 10px; border-radius: 8px; font-size: 0.88rem; color: #444; cursor: pointer; transition: background 0.15s; }
+    .filter-cat button:hover { background: #e8f4e8; color: #2d5016; }
+    .filter-cat button.active { background: #2d5016; color: #fff; font-weight: 600; }
+
+    .products-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+    .products-count { font-size: 0.9rem; color: #666; }
+    .sort-select { padding: 8px 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 0.88rem; background: #fff; cursor: pointer; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .product-card { background: #fff; border-radius: 14px; border: 1px solid #e8e8e8; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+    .product-img { width: 100%; aspect-ratio: 1; object-fit: cover; background: #f5f5f5; }
+    .product-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .product-cat-badge { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #2d5016; background: #e8f4e8; display: inline-block; padding: 2px 8px; border-radius: 4px; }
+    .product-name { font-size: 0.9rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; }
+    .product-desc { font-size: 0.8rem; color: #666; line-height: 1.5; flex: 1; }
+    .bio-badge { font-size: 0.7rem; color: #1b5e20; background: #e8f5e9; padding: 2px 8px; border-radius: 4px; font-weight: 600; display: inline-block; margin-top: 2px; }
+    .bestseller-badge { font-size: 0.7rem; color: #fff; background: #f59e0b; padding: 2px 8px; border-radius: 4px; font-weight: 700; display: inline-block; }
+    .product-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+    .product-price { font-size: 1.1rem; font-weight: 800; color: #2d5016; }
+    .btn-cart { background: #2d5016; color: #fff; border: none; padding: 8px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: background 0.2s; text-decoration: none; display: inline-block; }
+    .btn-cart:hover { background: #1a3c10; }
+    .btn-voir { background: #f0f8f0; color: #2d5016; border: 1px solid #2d5016; padding: 8px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+
+    .section-divider { border: none; border-top: 2px solid #e8f0e8; margin: 40px 0; }
+    .category-title { font-size: 1.1rem; font-weight: 800; color: #2d5016; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #e8f0e8; }
+
+    .cta-bottom { background: linear-gradient(135deg, #2d5016, #1a3c6e); border-radius: 16px; padding: 36px; text-align: center; color: #fff; margin-top: 48px; }
+    .cta-bottom p { opacity: 0.85; font-size: 0.9rem; margin-bottom: 8px; }
+    .cta-bottom a { color: #a8d672; font-weight: 700; }
+
+    @media (max-width: 768px) {
+      .catalogue-wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Urgency Bar -->
-  <div class="urgency-bar">
-    🌿 Livraison offerte dès 69€ | Expédition <span>48h</span> | Retours <span>30 jours</span>
-  </div>
+<div class="top-banner" id="top-banner">
+  <span>🚚 Livraison offerte dès 50€</span>
+  <span>🔄 Satisfait ou remboursé 30 jours</span>
+  <span>🔒 Paiement 100% sécurisé</span>
+  <span>📞 Service client réactif</span>
+</div>
 
-  <!-- NAVBAR -->
-  <header class="navbar" role="banner">
-    <div class="navbar-inner">
-      <a href="index.html" class="logo" aria-label="Nature Survie & Autonomie — Accueil">
-        <span class="logo-emoji">🌿</span>
-        <span>Nature Survie &amp; Autonomie</span>
-      </a>
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="catalogue.html">Survie</a>
-        <a href="jardinage.html" class="active">🌱 Jardinage</a>
-        <a href="about.html">À propos</a>
-        <a href="panier.html">Panier</a>
-      </nav>
-      <div class="nav-right">
-        <button class="cart-btn" onclick="Cart.toggleDrawer()" aria-label="Ouvrir le panier">
-          🛒 <span class="cart-total-nav">0,00 €</span>
-          <span class="cart-count" aria-live="polite">0</span>
-        </button>
-        <button class="burger-menu" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+<nav>
+  <a href="/" class="nav-logo">🌿 Nature Survie &amp; Autonomie</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/catalogue">Survie</a></li>
+    <li><a href="/jardinage">🌱 Jardinage</a></li>
+    <li><a href="/about">À propos</a></li>
+    <li><a href="/cgv">CGV</a></li>
+  </ul>
+  <a href="/panier" class="nav-cart">🛒 <span id="cartTotal">0,00 €</span> <span id="cartCount">0</span></a>
+</nav>
 
-  <!-- Page Hero -->
+<main id="main-content">
   <div class="page-hero">
-    <div class="section-inner">
-      <h1>Boutique Jardinage &amp; Potager</h1>
-      <p>23 produits sélectionnés pour votre jardin — outils, serres, composteurs, arrosage</p>
-    </div>
+    <nav class="breadcrumb"><a href="/">Accueil</a> › Jardinage</nav>
+    <h1>🌱 Boutique Jardinage &amp; Potager</h1>
+    <p>37+ produits sélectionnés pour votre jardin — outils, serres, composteurs, arrosage, culture indoor, engrais bio</p>
   </div>
 
-  <!-- FILTRES CATÉGORIES -->
-  <div style="background: var(--vert-bg); padding-bottom: 60px;">
-    <div class="catalogue-layout">
-      <aside class="sidebar">
-        <h3><i class="fas fa-filter" style="color:var(--vert-mousse);margin-right:8px;"></i>Filtrer</h3>
-        <div class="filter-group">
-          <h4>Catégories</h4>
-          <div class="jardinage-categories" style="flex-direction:column;align-items:flex-start;padding:0;gap:8px;">
-            <button class="cat-btn active" onclick="filterCat('all', event)">Tout voir</button>
-            <button class="cat-btn" onclick="filterCat('outils', event)">🔨 Outils</button>
-            <button class="cat-btn" onclick="filterCat('serre', event)">🏠 Serres</button>
-            <button class="cat-btn" onclick="filterCat('compost', event)">♻️ Compost</button>
-            <button class="cat-btn" onclick="filterCat('arrosage', event)">💧 Arrosage</button>
-            <button class="cat-btn" onclick="filterCat('potager', event)">🌿 Potager urbain</button>
-            <button class="cat-btn" onclick="filterCat('protection', event)">🛡️ Protection</button>
-            <button class="cat-btn" onclick="filterCat('motorise', event)">⚡ Motorisés</button>
-          </div>
+  <div class="catalogue-wrap">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="filter-box">
+        <h3>Catégories</h3>
+        <div class="filter-cat">
+          <button class="active" onclick="setActive(this)">🌿 Tout voir</button>
+          <button onclick="setActive(this)">🔨 Outils</button>
+          <button onclick="setActive(this)">🏠 Serres</button>
+          <button onclick="setActive(this)">♻️ Compost</button>
+          <button onclick="setActive(this)">💧 Arrosage</button>
+          <button onclick="setActive(this)">🌿 Potager urbain</button>
+          <button onclick="setActive(this)">🛡️ Protection</button>
+          <button onclick="setActive(this)">⚡ Motorisés</button>
+          <button onclick="setActive(this)">🌱 Culture indoor</button>
+          <button onclick="setActive(this)">🧪 Engrais bio</button>
         </div>
-      </aside>
-
-      <div class="catalogue-main">
-        <div class="catalogue-toolbar">
-          <div class="results-count" id="jardinage-count">23 produits</div>
-        </div>
-
-        <div class="search-bar-container" style="margin-bottom:20px;">
-          <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Rechercher un produit..." oninput="filterSearch(this.value)">
-          <button class="clear-search" id="clearSearch" onclick="clearSearchInput()">✕</button>
-        </div>
-
-        <!-- GRILLE PRODUITS -->
-        <div class="catalogue-grid" id="jardinage-grid">
-
-          <!-- OUTILS -->
-          <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/outils_set.jpg" alt="Set outils jardinage" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Set d'outils de jardinage 3 pièces</h3>
-              <p class="jard-card-desc">Truelle, transplantoir et cultivateur. Manches ergonomiques antidérapants. Acier inoxydable.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">23€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(101)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/beche.jpg" alt="Bêche jardinage" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Bêche de jardin professionnelle</h3>
-              <p class="jard-card-desc">Lame acier trempé, manche en bois de frêne 120cm. Idéale pour retourner la terre et creuser.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">30€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(102)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/secateur.jpg" alt="Sécateur" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Sécateur professionnel à lame franche</h3>
-              <p class="jard-card-desc">Lame en acier SK5 trempé, poignée ergonomique. Coupe nette jusqu'à 25mm de diamètre.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">22€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(103)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- SERRES -->
-          <div class="jard-card" data-cat="serre">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/serre_balcon.jpg" alt="Serre balcon" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Serres</span>
-              <h3 class="jard-card-title">Serre de balcon 4 étagères</h3>
-              <p class="jard-card-desc">Structure acier + housse PE transparente. 143x73x61cm. Parfaite pour balcon ou terrasse.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">36€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(104)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="serre">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/serre_tunnel.jpg" alt="Serre tunnel" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Serres</span>
-              <h3 class="jard-card-title">Mini serre tunnel de jardin 6m²</h3>
-              <p class="jard-card-desc">Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">59€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(105)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- COMPOST -->
-          <div class="jard-card" data-cat="compost">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/composteur.jpg" alt="Composteur" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Compost</span>
-              <h3 class="jard-card-title">Composteur de jardin 300L</h3>
-              <p class="jard-card-desc">Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">47€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(106)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="compost">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/lombri.jpg" alt="Lombricomposteur" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Compost</span>
-              <h3 class="jard-card-title">Lombricomposteur 3 niveaux</h3>
-              <p class="jard-card-desc">Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">44€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(107)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- ARROSAGE -->
-          <div class="jard-card" data-cat="arrosage">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/arrosoir.jpg" alt="Arrosoir" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Arrosage</span>
-              <h3 class="jard-card-title">Arrosoir 10L bec long en zinc</h3>
-              <p class="jard-card-desc">Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">27€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(108)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="arrosage">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/goutte.jpg" alt="Kit goutte-à-goutte" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Arrosage</span>
-              <h3 class="jard-card-title">Kit goutte-à-goutte 50 plantes</h3>
-              <p class="jard-card-desc">Système d'irrigation automatique. 15m de tuyau, 50 goutteurs réglables. Économise 70% d'eau.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">32€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(109)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- POTAGER URBAIN -->
-          <div class="jard-card" data-cat="potager">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/carre_potager.jpg" alt="Carré potager" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Potager urbain</span>
-              <h3 class="jard-card-title">Carré potager surélevé en bois 120x60cm</h3>
-              <p class="jard-card-desc">Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">50€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(110)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="potager">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/tour_fraises.jpg" alt="Tour fraises" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Potager urbain</span>
-              <h3 class="jard-card-title">Tour à fraises & plantes aromatiques</h3>
-              <p class="jard-card-desc">5 poches de plantation empilables. Culture verticale, gain de place. Parfait pour balcon.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">22€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(111)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROTECTION -->
-          <div class="jard-card" data-cat="protection">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/filet.jpg" alt="Filet anti-insectes" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Protection</span>
-              <h3 class="jard-card-title">Filet anti-insectes 2x5m</h3>
-              <p class="jard-card-desc">Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">19€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(112)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="protection">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage/voile.jpg" alt="Voile hivernage" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Protection</span>
-              <h3 class="jard-card-title">Voile d'hivernage 30g/m² — 10x2m</h3>
-              <p class="jard-card-desc">Protège vos cultures jusqu'à -6°C. Perméable à l'eau et à la lumière. Réutilisable plusieurs saisons.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">17€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(113)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- OUTILS MOTORISÉS -->
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/debroussailleuse_filaire.jpg" alt="Débroussailleuse filaire 600W" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Débroussailleuse électrique filaire 600W</h3>
-              <p class="jard-card-desc">Tête de coupe rotative, fil nylon Ø1,6mm, poignée ergonomique. Légère (~2,5 kg), câble 10m inclus.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">52€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(114)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/debroussailleuse_batterie.jpg" alt="Débroussailleuse batterie 20V" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Débroussailleuse sans fil batterie 20V</h3>
-              <p class="jard-card-desc">Li-Ion 20V, tête à double fil, autonomie ~35 min, 2,8 kg. Démarrage instantané, rechargeable en 1h.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">79€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(115)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/taillehaie.jpg" alt="Taille-haie électrique 450W" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Taille-haie électrique 450W 45cm</h3>
-              <p class="jard-card-desc">Lame double action 45cm, espacement dents 16mm, poignée rotative 180°. Léger (2,2 kg).</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">47€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(116)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/souffleur.jpg" alt="Souffleur aspirateur feuilles" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Souffleur-aspirateur de feuilles 3-en-1 2800W</h3>
-              <p class="jard-card-desc">Souffle, aspire et broie. Sac collecteur 45L, vitesse d'air 290 km/h. Rapport broyage 10:1.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">42€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(117)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/tondeuse.jpg" alt="Tondeuse électrique 1400W" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Tondeuse à gazon électrique 1400W 32cm</h3>
-              <p class="jard-card-desc">Largeur de coupe 32cm, 5 hauteurs (25-70mm), bac 30L. Idéale jusqu'à 200 m². Légère (8 kg).</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">91€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(118)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/scarificateur.jpg" alt="Scarificateur 2-en-1" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Scarificateur aérateur 2-en-1 1300W 32cm</h3>
-              <p class="jard-card-desc">Largeur 32cm, profondeur réglable sur 5 niveaux, bac 30L. Régénère la pelouse, élimine le feutre.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">69€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(119)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="motorise">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/coupebordures.jpg" alt="Coupe-bordures 350W" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Motorisés</span>
-              <h3 class="jard-card-title">Coupe-bordures électrique 350W</h3>
-              <p class="jard-card-desc">Tête pivotante 180°, bobine automatique, manche télescopique. Ultra-léger (1,4 kg).</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">33€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(120)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="arrosage">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/pulverisateur.jpg" alt="Pulvérisateur 16L" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Arrosage</span>
-              <h3 class="jard-card-title">Pulvérisateur à pression 16L sur roues</h3>
-              <p class="jard-card-desc">Chariot à roues, lance télescopique 1,2m, jet continu/brumisation. Grande capacité 16L.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">39€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(121)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="protection">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/bache.jpg" alt="Bâche de jardin 4x6m" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Protection</span>
-              <h3 class="jard-card-title">Bâche de jardin imperméable 4×6m</h3>
-              <p class="jard-card-desc">90g/m², œillets tous les 50cm, résistante UV. Couvre bois, compost, potager, terrasse.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">30€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(122)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" loading="lazy" src="images/jardinage2/brouette.jpg" alt="Brouette pliante 100L" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Brouette pliante en acier galvanisé 100L</h3>
-              <p class="jard-card-desc">Roue pneumatique anti-crevaison, charge max 150 kg. Pliable pour stockage compact. Sans outil.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">59€</span>
-                <a href="#" class="jard-btn" onclick="Cart.addItem(123)">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- === 3 NOUVEAUX PRODUITS CJdropshipping === -->
-
-          <div class="jard-card" data-cat="outils">
-            <img class="jard-card-img" loading="lazy"
-              src="https://oss-cf.cjdropshipping.com/product/2026/05/11/06/6f6e968a-7d4d-42a6-a31f-ca0c7006a187_trans.jpeg"
-              alt="Sécateur tête rotative" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Sécateur Pro Tête Rotative — Poignée Ergonomique</h3>
-              <p class="jard-card-desc">Sécateur à tête rotative pour réduire la fatigue. Lame inox tranchante, ressort anti-retour. Taille précise branches jusqu'à 2 cm.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">7€</span>
-                <a href="https://buy.stripe.com/eVq28jaj14RX1R13fEcfK3s" class="jard-btn" target="_blank">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="decoration">
-            <img class="jard-card-img" loading="lazy"
-              src="https://cf.cjdropshipping.com/quick/product/f4c78289-239f-4259-846f-f2d022ba1255.jpg"
-              alt="Étagère plantes multi-niveaux" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Décoration</span>
-              <h3 class="jard-card-title">Étagère Plantes Multi-niveaux Style Nordique</h3>
-              <p class="jard-card-desc">Présentoir à plantes intérieur 4 niveaux, style scandinave. Idéal pour succulentes, plantes grasses et pothos. Disponible en noir, blanc ou doré.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">32€</span>
-                <a href="https://buy.stripe.com/9B63cnfDl3NT2V5cQecfK3t" class="jard-btn" target="_blank">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="éclairage">
-            <img class="jard-card-img" loading="lazy"
-              src="https://cf.cjdropshipping.com/quick/product/f354d75d-6fcc-4c87-8f37-9b6f24b921a3.jpg"
-              alt="Lampe solaire jardin 3 têtes" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Éclairage</span>
-              <h3 class="jard-card-title">Lampe Solaire Jardin 3 Têtes — Étanche IP65</h3>
-              <p class="jard-card-desc">Lampe de jardin solaire 3 têtes orientables. Charge automatique le jour, éclairage la nuit. Imperméable IP65, à planter dans le sol.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">32€</span>
-                <a href="https://buy.stripe.com/4gMdR1ezh4RX8fpeYmcfK3u" class="jard-btn" target="_blank">🛒 Ajouter au panier</a>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-          <!-- ===== CULTURE INDOOR (id 137-143, 146-149) ===== -->
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=137'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/tente_culture.jpg" alt="Tente de culture indoor" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Tente de culture indoor 80×80×160 cm</h3>
-              <p class="jard-card-desc">Mylar 97% réflexion, fermeture anti-lumière, barres suspension. Structure acier renforcé.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 45€</span>
-                <a href="produit.html?id=137" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=138'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/kit_culture_indoor.jpg" alt="Kit culture indoor complet" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Kit culture indoor complet LED 600W</h3>
-              <p class="jard-card-desc">Tente + LED 600W + ventilo + filtre charbon. Prêt à pousser en 30 min. Tout-en-un.</p>
-              <span style="font-size:0.78rem;color:#4a7c2d;font-weight:700;">⭐ Bestseller</span>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 89€</span>
-                <a href="produit.html?id=138" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=139'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/lampe_led_300w.jpg" alt="Lampe horticole LED 300W" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Lampe horticole LED spectre complet 300W</h3>
-              <p class="jard-card-desc">588 LED blanc + rouge + UV + IR. Dimmable, minuterie intégrée. Couvre 90×90 cm.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 39€</span>
-                <a href="produit.html?id=139" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=140'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/extracteur_150.jpg" alt="Extracteur d'air 150mm" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Extracteur d'air Ø150mm avec variateur</h3>
-              <p class="jard-card-desc">280m³/h, 35dB, moteur EC brushless. Régule T° et odeurs en tente de culture.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 28€</span>
-                <a href="produit.html?id=140" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=146'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/hydro_dwc.jpg" alt="Kit hydroponique DWC 12 sites" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Système hydroponique 12 sites DWC</h3>
-              <p class="jard-card-desc">Croissance 3× plus rapide. Pompe air, substrat, filets inclus. Prêt à planter en 20 min.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 35€</span>
-                <a href="produit.html?id=146" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=147'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/thermohygrometre.jpg" alt="Thermohygromètre digital" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Thermohygromètre digital pour serre</h3>
-              <p class="jard-card-desc">T° + humidité en temps réel, alarme, min/max. Sonde externe 1.5m. Indispensable.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 14€</span>
-                <a href="produit.html?id=147" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="indoor" onclick="window.location.href='produit.html?id=149'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/minuterie_16a.jpg" alt="Minuterie programmable 16A" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🌿 Culture indoor</span>
-              <h3 class="jard-card-title">Minuterie électrique 7 jours programmable</h3>
-              <p class="jard-card-desc">16A, 20 plages, prise FR/EU. Pour lampes, pompes, ventilateurs. Automatise tout.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 9€</span>
-                <a href="produit.html?id=149" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- ===== ENGRAIS & NUTRIMENTS (id 141-143, 148, 150) ===== -->
-          <div class="jard-card" data-cat="engrais" onclick="window.location.href='produit.html?id=141'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/engrais_croissance.jpg" alt="Engrais bio croissance" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🧪 Engrais bio</span>
-              <h3 class="jard-card-title">Engrais bio de croissance liquide 1L</h3>
-              <p class="jard-card-desc">NPK 5-3-3, orties + algues marines + guano. 1L = 200L solution. Sol, coco, hydroponie.</p>
-              <span style="font-size:0.78rem;color:#4a7c2d;font-weight:700;">🌿 Certifié bio</span>
-              <div class="jard-card-footer">
-                <span class="jard-price">16€</span>
-                <a href="produit.html?id=141" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="engrais" onclick="window.location.href='produit.html?id=142'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/vers_de_terre.jpg" alt="Fumier de vers" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🧪 Engrais bio</span>
-              <h3 class="jard-card-title">Engrais granulé fumier de vers 5L</h3>
-              <p class="jard-card-desc">100% naturel, sans odeur. Améliore structure du sol et rétention d'eau. NPK 1.5-0.5-1.</p>
-              <span style="font-size:0.78rem;color:#4a7c2d;font-weight:700;">🌿 Certifié bio</span>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 14€</span>
-                <a href="produit.html?id=142" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="engrais" onclick="window.location.href='produit.html?id=143'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/mycorhizes.jpg" alt="Kit mycorhizes" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🧪 Engrais bio</span>
-              <h3 class="jard-card-title">Kit mycorhizes + stimulateur racinaire</h3>
-              <p class="jard-card-desc">Colonise les racines, +40% absorption eau/nutriments. Poudre soluble, tous substrats.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 18€</span>
-                <a href="produit.html?id=143" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="engrais" onclick="window.location.href='produit.html?id=148'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/purin_orties.jpg" alt="Purin d'orties" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🧪 Engrais bio</span>
-              <h3 class="jard-card-title">Engrais biostimulant orties fermentées 1L</h3>
-              <p class="jard-card-desc">Purin d'orties concentré. 1L = 20L solution. Stimule croissance, repousse insectes.</p>
-              <span style="font-size:0.78rem;color:#4a7c2d;font-weight:700;">🌿 Agriculture bio</span>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 12€</span>
-                <a href="produit.html?id=148" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="engrais" onclick="window.location.href='produit.html?id=150'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/substrat_coco.jpg" alt="Substrat coco 50L" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">🧪 Engrais bio</span>
-              <h3 class="jard-card-title">Substrat de culture coco/coir premium 50L</h3>
-              <p class="jard-card-desc">Coco lavée et tamponnée, pH 5.8-6.2. Sol, coco pur ou hydroponie. Certifié OMRI bio.</p>
-              <span style="font-size:0.78rem;color:#4a7c2d;font-weight:700;">🌿 Certifié OMRI</span>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 18€</span>
-                <a href="produit.html?id=150" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- ===== OUTILS JARDINAGE SUPPLÉMENTAIRES (id 144-145) ===== -->
-          <div class="jard-card" data-cat="outils" onclick="window.location.href='produit.html?id=144'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/grelinette.jpg" alt="Grelinette bio" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Grelinette bio à 3 dents</h3>
-              <p class="jard-card-desc">Acier forgé, manche hêtre 120 cm. Ameublit sans retourner, préserve vers et vie du sol.</p>
-              <span style="font-size:0.78rem;color:#4a7c2d;font-weight:700;">🌿 Permaculture</span>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 38€</span>
-                <a href="produit.html?id=144" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="jard-card" data-cat="outils" onclick="window.location.href='produit.html?id=145'" style="cursor:pointer;">
-            <img class="jard-card-img" loading="lazy" src="img/couteau_desherbage.jpg" alt="Couteau désherbeur" style="object-fit:cover;height:200px;width:100%">
-            <div class="jard-card-body">
-              <span class="jard-cat-badge">Outils</span>
-              <h3 class="jard-card-title">Couteau désherbeur en acier inox</h3>
-              <p class="jard-card-desc">Lame recourbée inox, manche ergonomique. Désherbe à la racine entre les rangs et les pots.</p>
-              <div class="jard-card-footer">
-                <span class="jard-price">dès 12€</span>
-                <a href="produit.html?id=145" class="jard-btn" onclick="event.stopPropagation()">👁️ Voir</a>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- end catalogue-grid -->
-      </div><!-- end catalogue-main -->
-    </div><!-- end catalogue-layout -->
-  </div><!-- end vert-bg wrapper -->
-
-  <!-- BANNIÈRE AUTONOMIE -->
-  <div style="padding: 0 5% 60px; max-width:1200px; margin:0 auto;">
-    <div class="autonomie-banner">
-      <h2>🌿 Cultivez votre autonomie alimentaire</h2>
-      <p>
-        Avoir un potager, c'est réduire sa dépendance aux supermarchés et manger sain toute l'année.
-        Nos outils et équipements sont sélectionnés pour leur durabilité et leur rapport qualité/prix.
-        <br><br>
-        Des questions sur le jardinage en autonomie ? Écrivez-nous à <a href="mailto:naturesurvi@gmail.com" style="color:var(--vert-foret);font-weight:700">naturesurvi@gmail.com</a>
-      </p>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-social">
-        <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener" aria-label="Pinterest">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
       </div>
-      <p>© 2026 Nature Survie & Autonomie — Bègles, France</p>
-      <p><a href="mailto:naturesurvi@gmail.com">naturesurvi@gmail.com</a></p>
-    </div>
-  </footer>
+    </aside>
 
-  <!-- Bouton scroll top -->
-  <button id="scrollTop" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <!-- PRODUITS -->
+    <div>
+      <div class="products-header">
+        <span class="products-count">37 produits</span>
+        <select class="sort-select">
+          <option>Tri : Popularité</option>
+          <option>Prix croissant</option>
+          <option>Prix décroissant</option>
+        </select>
+      </div>
 
-  <script>
-  function filterSearch(val) {
-    const q = val.toLowerCase().trim();
-    document.getElementById('clearSearch').classList.toggle('visible', q.length > 0);
-    const cards = document.querySelectorAll('#jardinage-grid .jard-card');
-    let visible = 0;
-    cards.forEach(card => {
-      const text = card.textContent.toLowerCase();
-      const show = q === '' || text.includes(q);
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    const countEl = document.getElementById('jardinage-count');
-    if (countEl) countEl.textContent = visible + ' produit' + (visible > 1 ? 's' : '');
-  }
-  function clearSearchInput() {
-    document.getElementById('searchInput').value = '';
-    filterSearch('');
-  }
+      <!-- OUTILS -->
+      <div class="category-title">🔨 Outils</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/outils_set.jpg" alt="Set outils jardinage" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Set d'outils de jardinage 3 pièces</div><p class="product-desc">Truelle, transplantoir et cultivateur. Manches ergonomiques antidérapants. Acier inoxydable.</p><div class="product-footer"><span class="product-price">23€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/beche.jpg" alt="Bêche jardinage" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Bêche de jardin professionnelle</div><p class="product-desc">Lame acier trempé, manche en bois de frêne 120cm. Idéale pour retourner la terre et creuser.</p><div class="product-footer"><span class="product-price">30€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/secateur.jpg" alt="Sécateur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Sécateur professionnel à lame franche</div><p class="product-desc">Lame en acier SK5 trempé, poignée ergonomique. Coupe nette jusqu'à 25mm de diamètre.</p><div class="product-footer"><span class="product-price">22€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://oss-cf.cjdropshipping.com/product/2026/05/11/06/6f6e968a-7d4d-42a6-a31f-ca0c7006a187_trans.jpeg" alt="Sécateur tête rotative" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Sécateur Pro Tête Rotative</div><p class="product-desc">Tête rotative pour réduire la fatigue. Lame inox tranchante, ressort anti-retour. Branches jusqu'à 2cm.</p><div class="product-footer"><span class="product-price">7€</span><a href="https://buy.stripe.com/eVq28jaj14RX1R13fEcfK3s" class="btn-cart">🛒 Acheter</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/grelinette.jpg" alt="Grelinette bio" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Grelinette bio à 3 dents</div><p class="product-desc">Acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol.</p><span class="bio-badge">🌿 Permaculture</span><div class="product-footer"><span class="product-price">dès 38€</span><a href="/produit?id=144" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/couteau_desherbage.jpg" alt="Couteau désherbeur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Couteau désherbeur en acier inox</div><p class="product-desc">Lame recourbée inox, manche ergonomique. Désherbe à la racine entre les rangs et les pots.</p><div class="product-footer"><span class="product-price">dès 12€</span><a href="/produit?id=145" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/brouette.jpg" alt="Brouette pliante" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Outils</span><div class="product-name">Brouette pliante en acier galvanisé 100L</div><p class="product-desc">Roue pneumatique anti-crevaison, charge max 150kg. Pliable pour stockage compact. Sans outil.</p><div class="product-footer"><span class="product-price">59€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+      </div>
 
-  // Scroll to top
-  const scrollTopBtn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-  }, { passive: true });
+      <hr class="section-divider">
+      <div class="category-title">🏠 Serres</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/serre_balcon.jpg" alt="Serre balcon" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Serres</span><div class="product-name">Serre de balcon 4 étagères</div><p class="product-desc">Structure acier + housse PE transparente. 143x73x61cm. Parfaite pour balcon ou terrasse.</p><div class="product-footer"><span class="product-price">36€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/serre_tunnel.jpg" alt="Serre tunnel" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Serres</span><div class="product-name">Mini serre tunnel de jardin 6m²</div><p class="product-desc">Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.</p><div class="product-footer"><span class="product-price">59€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+      </div>
 
-  // Scroll reveal — après chargement
-  window.addEventListener('load', () => {
-    document.documentElement.classList.add('js-reveal-ready');
-    const revealEls = document.querySelectorAll('.jard-card, .boutique-card, .pillar-card, .guarantee-card, .testimonial-card, .cat-card');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => revealObserver.observe(el));
-  });
-  </script>
+      <hr class="section-divider">
+      <div class="category-title">♻️ Compost</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/composteur.jpg" alt="Composteur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Compost</span><div class="product-name">Composteur de jardin 300L</div><p class="product-desc">Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.</p><div class="product-footer"><span class="product-price">47€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/lombri.jpg" alt="Lombricomposteur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Compost</span><div class="product-name">Lombricomposteur 3 niveaux</div><p class="product-desc">Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.</p><div class="product-footer"><span class="product-price">44€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+      </div>
 
-  <script>
-    // Filtre par catégorie
-    function filterCat(cat, e) {
-      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-      if (e && e.target) e.target.classList.add('active');
-      document.querySelectorAll('.jard-card').forEach(card => {
-        if (cat === 'all' || card.dataset.cat === cat) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
+      <hr class="section-divider">
+      <div class="category-title">💧 Arrosage</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/arrosoir.jpg" alt="Arrosoir" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Arrosage</span><div class="product-name">Arrosoir 10L bec long en zinc</div><p class="product-desc">Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.</p><div class="product-footer"><span class="product-price">27€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/goutte.jpg" alt="Goutte à goutte" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Arrosage</span><div class="product-name">Kit goutte-à-goutte 50 plantes</div><p class="product-desc">Système d'irrigation automatique. 15m de tuyau, 50 goutteurs réglables. Économise 70% d'eau.</p><div class="product-footer"><span class="product-price">32€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/pulverisateur.jpg" alt="Pulvérisateur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Arrosage</span><div class="product-name">Pulvérisateur à pression 16L sur roues</div><p class="product-desc">Chariot à roues, lance télescopique 1,2m, jet continu/brumisation. Grande capacité 16L.</p><div class="product-footer"><span class="product-price">39€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+      </div>
 
-    }
-  </script>
+      <hr class="section-divider">
+      <div class="category-title">🌿 Potager urbain</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/carre_potager.jpg" alt="Carré potager" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Potager urbain</span><div class="product-name">Carré potager surélevé en bois 120x60cm</div><p class="product-desc">Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.</p><div class="product-footer"><span class="product-price">50€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/tour_fraises.jpg" alt="Tour fraises" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Potager urbain</span><div class="product-name">Tour à fraises &amp; plantes aromatiques</div><p class="product-desc">5 poches de plantation empilables. Culture verticale, gain de place. Parfait pour balcon.</p><div class="product-footer"><span class="product-price">22€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://cf.cjdropshipping.com/quick/product/f4c78289-239f-4259-846f-f2d022ba1255.jpg" alt="Étagère plantes" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Décoration</span><div class="product-name">Étagère Plantes Multi-niveaux Style Nordique</div><p class="product-desc">Présentoir 4 niveaux, style scandinave. Idéal succulentes et plantes grasses. Noir, blanc ou doré.</p><div class="product-footer"><span class="product-price">32€</span><a href="https://buy.stripe.com/9B63cnfDl3NT2V5cQecfK3t" class="btn-cart">🛒 Acheter</a></div></div></div>
+      </div>
 
+      <hr class="section-divider">
+      <div class="category-title">🛡️ Protection</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/filet.jpg" alt="Filet anti-insectes" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Protection</span><div class="product-name">Filet anti-insectes 2x5m</div><p class="product-desc">Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.</p><div class="product-footer"><span class="product-price">19€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage/voile.jpg" alt="Voile hivernage" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Protection</span><div class="product-name">Voile d'hivernage 30g/m² — 10x2m</div><p class="product-desc">Protège vos cultures jusqu'à -6°C. Perméable à l'eau et à la lumière. Réutilisable plusieurs saisons.</p><div class="product-footer"><span class="product-price">17€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/bache.jpg" alt="Bâche jardin" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Protection</span><div class="product-name">Bâche de jardin imperméable 4×6m</div><p class="product-desc">90g/m², œillets tous les 50cm, résistante UV. Couvre bois, compost, potager, terrasse.</p><div class="product-footer"><span class="product-price">30€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+      </div>
 
-  <!-- Drawer Panier (partagé avec catalogue) -->
-  <div id="cart-drawer" class="cart-drawer" aria-label="Panier" role="dialog">
-    <div class="drawer-header">
-      <h3>🛒 Mon panier</h3>
-      <button class="drawer-close" onclick="Cart.toggleDrawer()" aria-label="Fermer le panier">✕</button>
-    </div>
-    <div id="drawer-items" class="drawer-items"></div>
-    <div id="drawer-empty" class="drawer-empty" style="display:none">
-      <p>Votre panier est vide</p>
-      <a href="catalogue.html" class="btn btn-primary">Voir les produits</a>
-    </div>
-    <div id="drawer-footer" class="drawer-footer" style="display:none">
-      <div class="drawer-subtotal">Total : <span id="drawer-subtotal">0,00 €</span></div>
-      <a href="panier.html" class="btn btn-primary btn-block">Voir mon panier →</a>
+      <hr class="section-divider">
+      <div class="category-title">⚡ Motorisés</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/debroussailleuse_filaire.jpg" alt="Débroussailleuse filaire" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Débroussailleuse électrique filaire 600W</div><p class="product-desc">Tête de coupe rotative, fil nylon Ø1,6mm, poignée ergonomique. Légère (~2,5 kg), câble 10m inclus.</p><div class="product-footer"><span class="product-price">52€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/debroussailleuse_batterie.jpg" alt="Débroussailleuse batterie" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Débroussailleuse sans fil batterie 20V</div><p class="product-desc">Li-Ion 20V, tête à double fil, autonomie ~35 min, 2,8 kg. Démarrage instantané, rechargeable en 1h.</p><div class="product-footer"><span class="product-price">79€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/taillehaie.jpg" alt="Taille-haie" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Taille-haie électrique 450W 45cm</div><p class="product-desc">Lame double action 45cm, espacement dents 16mm, poignée rotative 180°. Léger (2,2 kg).</p><div class="product-footer"><span class="product-price">47€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/souffleur.jpg" alt="Souffleur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Souffleur-aspirateur de feuilles 3-en-1 2800W</div><p class="product-desc">Souffle, aspire et broie. Sac collecteur 45L, vitesse d'air 290 km/h. Rapport broyage 10:1.</p><div class="product-footer"><span class="product-price">42€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/tondeuse.jpg" alt="Tondeuse" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Tondeuse à gazon électrique 1400W 32cm</div><p class="product-desc">Largeur de coupe 32cm, 5 hauteurs (25-70mm), bac 30L. Idéale jusqu'à 200m². Légère (8 kg).</p><div class="product-footer"><span class="product-price">91€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/scarificateur.jpg" alt="Scarificateur" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Scarificateur aérateur 2-en-1 1300W 32cm</div><p class="product-desc">Largeur 32cm, profondeur réglable sur 5 niveaux, bac 30L. Régénère la pelouse, élimine le feutre.</p><div class="product-footer"><span class="product-price">69€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/images/jardinage2/coupebordures.jpg" alt="Coupe-bordures" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Motorisés</span><div class="product-name">Coupe-bordures électrique 350W</div><p class="product-desc">Tête pivotante 180°, bobine automatique, manche télescopique. Ultra-léger (1,4 kg).</p><div class="product-footer"><span class="product-price">33€</span><button class="btn-cart">🛒 Ajouter</button></div></div></div>
+      </div>
+
+      <hr class="section-divider">
+      <div class="category-title">🌱 Culture indoor</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/img/tente_culture.jpg" alt="Tente culture" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Tente de culture indoor 80×80×160cm</div><p class="product-desc">Mylar 97% réflexion, fermeture anti-lumière, barres suspension. Structure acier renforcé.</p><div class="product-footer"><span class="product-price">dès 45€</span><a href="/produit?id=137" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/kit_culture_indoor.jpg" alt="Kit culture indoor" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Kit culture indoor complet LED 600W</div><p class="product-desc">Tente + LED 600W + ventilo + filtre charbon. Prêt à pousser en 30 min. Tout-en-un.</p><span class="bestseller-badge">⭐ Bestseller</span><div class="product-footer"><span class="product-price">dès 89€</span><a href="/produit?id=138" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/lampe_led_300w.jpg" alt="Lampe LED" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Lampe horticole LED spectre complet 300W</div><p class="product-desc">588 LED blanc + rouge + UV + IR. Dimmable, minuterie intégrée. Couvre 90×90cm.</p><div class="product-footer"><span class="product-price">dès 39€</span><a href="/produit?id=139" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/extracteur_150.jpg" alt="Extracteur d'air" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Extracteur d'air Ø150mm avec variateur</div><p class="product-desc">280m³/h, 35dB, moteur EC brushless. Régule T° et odeurs en tente de culture.</p><div class="product-footer"><span class="product-price">dès 28€</span><a href="/produit?id=140" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/hydro_dwc.jpg" alt="Hydroponique" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Système hydroponique 12 sites DWC</div><p class="product-desc">Croissance 3× plus rapide. Pompe air, substrat, filets inclus. Prêt à planter en 20 min.</p><div class="product-footer"><span class="product-price">dès 35€</span><a href="/produit?id=146" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/thermohygrometre.jpg" alt="Thermohygromètre" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Thermohygromètre digital pour serre</div><p class="product-desc">T° + humidité en temps réel, alarme, min/max. Sonde externe 1.5m. Indispensable.</p><div class="product-footer"><span class="product-price">dès 14€</span><a href="/produit?id=147" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/minuterie_16a.jpg" alt="Minuterie" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Culture indoor</span><div class="product-name">Minuterie électrique 7 jours programmable</div><p class="product-desc">16A, 20 plages, prise FR/EU. Pour lampes, pompes, ventilateurs. Automatise tout.</p><div class="product-footer"><span class="product-price">dès 9€</span><a href="/produit?id=149" class="btn-voir">👁️ Voir</a></div></div></div>
+      </div>
+
+      <hr class="section-divider">
+      <div class="category-title">🧪 Engrais bio</div>
+      <div class="products-grid">
+        <div class="product-card"><img src="https://naturesurvie.net/img/engrais_croissance.jpg" alt="Engrais bio" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Engrais bio</span><div class="product-name">Engrais bio de croissance liquide 1L</div><p class="product-desc">NPK 5-3-3, orties + algues marines + guano. 1L = 200L solution. Sol, coco, hydroponie.</p><span class="bio-badge">🌿 Certifié bio</span><div class="product-footer"><span class="product-price">16€</span><a href="/produit?id=141" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/vers_de_terre.jpg" alt="Fumier de vers" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Engrais bio</span><div class="product-name">Engrais granulé fumier de vers 5L</div><p class="product-desc">100% naturel, sans odeur. Améliore structure du sol et rétention d'eau. NPK 1.5-0.5-1.</p><span class="bio-badge">🌿 Certifié bio</span><div class="product-footer"><span class="product-price">dès 14€</span><a href="/produit?id=142" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/mycorhizes.jpg" alt="Mycorhizes" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Engrais bio</span><div class="product-name">Kit mycorhizes + stimulateur racinaire</div><p class="product-desc">Colonise les racines, +40% absorption eau/nutriments. Poudre soluble, tous substrats.</p><div class="product-footer"><span class="product-price">dès 18€</span><a href="/produit?id=143" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/purin_orties.jpg" alt="Purin d'orties" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Engrais bio</span><div class="product-name">Engrais biostimulant orties fermentées 1L</div><p class="product-desc">Purin d'orties concentré. 1L = 20L solution. Stimule croissance, repousse insectes.</p><span class="bio-badge">🌿 Agriculture bio</span><div class="product-footer"><span class="product-price">dès 12€</span><a href="/produit?id=148" class="btn-voir">👁️ Voir</a></div></div></div>
+        <div class="product-card"><img src="https://naturesurvie.net/img/substrat_coco.jpg" alt="Substrat coco" class="product-img" onerror="this.style.display='none'"><div class="product-body"><span class="product-cat-badge">Engrais bio</span><div class="product-name">Substrat de culture coco/coir premium 50L</div><p class="product-desc">Coco lavée et tamponnée, pH 5.8-6.2. Sol, coco pur ou hydroponie. Certifié OMRI bio.</p><span class="bio-badge">🌿 Certifié OMRI</span><div class="product-footer"><span class="product-price">dès 18€</span><a href="/produit?id=150" class="btn-voir">👁️ Voir</a></div></div></div>
+      </div>
+
+      <div class="cta-bottom">
+        <p>🌿 Cultivez votre autonomie alimentaire</p>
+        <p>Des questions sur le jardinage en autonomie ? Écrivez-nous à <a href="mailto:contact@naturesurvie.net">contact@naturesurvie.net</a></p>
+      </div>
     </div>
   </div>
-  <div id="drawer-overlay" class="drawer-overlay" onclick="Cart.toggleDrawer()"></div>
+</main>
 
-  <!-- Modal produit -->
-  <div id="product-modal" class="product-modal"></div>
 
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand-col">
+      <div class="footer-brand">🌿 Nature Survie &amp; Autonomie</div>
+      <p class="footer-desc">Votre partenaire d'autosuffisance depuis 2025.<br>
+      Exploité par <strong>Ebrange Creation Digital</strong> — SAS au capital de 100 €<br>
+      RCS Paris 105 870 315<br>
+      47 rue Vivienne, 75002 Paris</p>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@nature_survie_fr" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61590042560546" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.pinterest.fr/naturesurvi/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.instagram.com/naturesurvi/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Boutique</h4>
+      <a href="/catalogue">Catalogue complet</a>
+      <a href="/catalogue?cat=Survie">Survie</a>
+      <a href="/jardinage">Jardinage</a>
+      <a href="/catalogue?cat=Énergie">Énergie</a>
+      <a href="/catalogue?cat=Conservation">Conservation</a>
+    </div>
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <a href="/about">À propos</a>
+      <a href="/cgv#livraison">Livraison &amp; retours</a>
+      <a href="/cgv">CGV &amp; Mentions légales</a>
+      <a href="/cgv#donnees">Données personnelles</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:contact@naturesurvie.net">📧 contact@naturesurvie.net</a>
+      <a href="/about#contact">Formulaire de contact</a>
+      <p style="color:#888;font-size:0.78rem;margin-top:8px;">📍 Paris, France (siège)<br>Bègles, France (expédition)</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Nature Survie &amp; Autonomie — Ebrange Creation Digital SAS — RCS Paris 105 870 315 — Tous droits réservés | Fait avec 🌿 en France
+  </div>
+</footer>
+
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === '/jardinage') a.classList.add('active');
+  });
+  function setActive(btn) {
+    document.querySelectorAll('.filter-cat button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
 </body>
 </html>
-
-
