@@ -267,6 +267,23 @@
   function filterCat(btn, cat) {
     document.querySelectorAll('.filter-cat button').forEach(b => b.classList.remove('active'));
                                                          </script>
+  <script>
+    let _cat='';
+    function renderProducts(cat,max){
+        _cat=(cat!==undefined)?cat:_cat;
+        const jardin=new Set([80,81,82,83,84,85,86,87,88,89]);
+        const list=PRODUCTS.filter(p=>{
+              if(jardin.has(p.id)||p.id>=100)return false;
+                    if(_cat&&p.category!==_cat)return false;
+                          return true;
+        });
+        const g=document.getElementById('productsGrid');
+        if(g)g.innerHTML=list.map(p=>renderProductCard(p)).join('');
+            const c=document.getElementById('prodCount');
+        if(c)c.textContent=list.length+' produit'+(list.length>1?'s':'');
+    }
+    document.addEventListener('DOMContentLoaded',()=>renderProducts(''));
+  </script>
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/analytics.js"></script>
