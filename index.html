@@ -387,5 +387,20 @@
     if (a.getAttribute('href') === '/' && location.pathname === '/') a.classList.add('active');
   });
 </script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/analytics.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      if(typeof PRODUCTS==='undefined')return;
+        var bs=PRODUCTS.filter(function(p){return p.badges&&p.badges.includes('Bestseller')&&p.id<80;}).slice(0,4);
+        var bj=PRODUCTS.filter(function(p){return p.badges&&p.badges.includes('Bestseller')&&p.id>=80;}).slice(0,4);
+      var gs=document.getElementById('bestsellersSurvie');
+      var gj=document.getElementById('bestsellersJardinage');
+      if(gs&&typeof renderProductCard!=='undefined')gs.innerHTML=bs.map(function(p){return renderProductCard(p);}).join('');
+      if(gj&&typeof renderProductCard!=='undefined')gj.innerHTML=bj.map(function(p){return renderProductCard(p);}).join('');
+    });
+        </script>
+  </script>
 </body>
 </html>
