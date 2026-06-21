@@ -266,7 +266,11 @@
   });
   function filterCat(btn, cat) {
     document.querySelectorAll('.filter-cat button').forEach(b => b.classList.remove('active'));
-                                                         </script>
+    if(btn) btn.classList.add('active');
+        var M={'':'','survie':'Survie','eclairage':'Éclairage','outils':'Outils','sacs':'Sacs à dos','energie':'Énergie','alimentation':'Alimentation outdoor','peche':'Pêche','electronique':'Électronique outdoor','escalade':'Escalade','cyclisme':'Cyclisme & Trail','montres':'Montres outdoor','vetements':'Vêtements outdoor'};
+      renderProducts(M.hasOwnProperty(cat)?M[cat]:cat);
+  }
+</script>
   <script>
     let _cat='';
     function renderProducts(cat,max){
