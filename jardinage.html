@@ -314,10 +314,7 @@
   document.querySelectorAll('.nav-links a').forEach(a => {
     if (a.getAttribute('href') === '/jardinage') a.classList.add('active');
   });
-  function setActive(btn) {
-    document.querySelectorAll('.filter-cat button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  }
+  function setActive(btn) { document.querySelectorAll('.filter-cat button').forEach(b => b.classList.remove('active')); btn.classList.add('active'); var sel = btn.textContent.replace(/\s+/g,' ').trim(); var showAll = /Tout voir/.test(sel); document.querySelectorAll('.category-title').forEach(function(title){ var match = showAll || title.textContent.replace(/\s+/g,' ').trim() === sel; var grid = title.nextElementSibling; var div = grid ? grid.nextElementSibling : null; title.style.display = match ? '' : 'none'; if (grid && grid.classList.contains('products-grid')) grid.style.display = match ? '' : 'none'; if (div && div.classList.contains('section-divider')) div.style.display = match ? '' : 'none'; }); }
 </script>
 </body>
 </html>
