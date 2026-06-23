@@ -812,6 +812,1105 @@
 
   // Stripe Payment Links par produit (MODE LIVE)
   const STRIPE_LINKS = {
+    1: "https://buy.stripe.com/4gMfZ94YHgAFanx4jIcfM2W",
+    3: "https://buy.stripe.com/28E6ozdvd3NTbrBeYmcfM2Y",
+    4: "https://buy.stripe.com/cNi8wH76PgAF7blaI6cfM2Z",
+    5: "https://buy.stripe.com/eVq00b3UDfwB3Z9bMacfM30",
+    8: "https://buy.stripe.com/aFa00b2Qz0BH3Z98zYcfM33",
+    9: "https://buy.stripe.com/00w6ozcr9fwB3Z92bAcfM35",
+    14: "https://buy.stripe.com/cNi4gr0Ir5W1gLVaI6cfM36",
+    15: "https://buy.stripe.com/8x2fZ9ezhbglanxeYmcfM37",
+    16: "https://buy.stripe.com/14A14ffDl70553dg2qcfM38",
+    18: "https://buy.stripe.com/14AdR176P5W1gLV17wcfM39",
+    19: "https://buy.stripe.com/3cI4gr3UDbgl53deYmcfM3a",
+    21: "https://buy.stripe.com/9B6cMX76P3NTfHReYmcfM3b",
+    22: "https://buy.stripe.com/9B63cn62L705fHR2bAcfM3c",
+    23: "https://buy.stripe.com/6oU00b1Mv7053Z9aI6cfM3d",
+    24: "https://buy.stripe.com/9B614fezh8498fp9E2cfM3e",
+    25: "https://buy.stripe.com/eVq00bfDldot53d7vUcfM3f",
+    26: "https://buy.stripe.com/14A4gr4YH705fHR3fEcfM3g",
+    29: "https://buy.stripe.com/dRm00b76P1FL7bl3fEcfM3h",
+    31: "https://buy.stripe.com/8x25kv0Irckpanx17wcfM3j",
+    32: "https://buy.stripe.com/9B6eV5cr9gAF0MXg2qcfM3k",
+    33: "https://buy.stripe.com/cNibITbn598d3Z93fEcfM3l",
+    34: "https://buy.stripe.com/eVq00bgHpdotdzJeYmcfM3m",
+    35: "https://buy.stripe.com/14AdR13UDachcvF2bAcfM3n",
+    37: "https://buy.stripe.com/6oUeV5gHp849cvF9E2cfM3o",
+    38: "https://buy.stripe.com/3cIfZ90Irbgl3Z93fEcfM3p",
+    39: "https://buy.stripe.com/4gM00bfDl4RX67hcQecfM3q",
+    40: "https://buy.stripe.com/4gM14f62L4RXcvFg2qcfM3r",
+    41: "https://buy.stripe.com/eVq8wHgHp2JPdzJbMacfM3s",
+    42: "https://buy.stripe.com/bJe9AL4YH5W12V55nMcfM3t",
+    43: "https://buy.stripe.com/fZu4gr2Qz7053Z96rQcfM3u",
+    44: "https://buy.stripe.com/cNiaEPezhach67hdUicfM3v",
+    46: "https://buy.stripe.com/cNi00b8aT0BHdzJdUicfM3w",
+    48: "https://buy.stripe.com/00w7sD0Ir849anx9E2cfM3x",
+    49: "https://buy.stripe.com/14A5kv8aT7059jtbMacfM3y",
+    50: "https://buy.stripe.com/3cI6ozfDlgAF7bl03scfM3z",
+    51: "https://buy.stripe.com/cNifZ9ezhach0MX03scfM3A",
+    60: "https://buy.stripe.com/3cI7sD9eX4RX53d7vUcfM3B",
+    61: "https://buy.stripe.com/aFadR176P2JPeDN03scfM3G",
+    62: "https://buy.stripe.com/00w5kvfDlgAF8fp03scfM3J",
+    63: "https://buy.stripe.com/8x27sD4YH3NT1R14jIcfM3L",
+    64: "https://buy.stripe.com/3cI7sD76PdotgLV3fEcfM3O",
+    65: "https://buy.stripe.com/eVq6oz4YHdot2V56rQcfM3R",
+    66: "https://buy.stripe.com/14A00bfDl705gLV17wcfM3U",
+    67: "https://buy.stripe.com/28EdR19eX4RX1R1g2qcfM3X",
+    68: "https://buy.stripe.com/6oUaEP8aTgAFbrB3fEcfM40",
+    69: "https://buy.stripe.com/fZu7sDezhesx1R1aI6cfM45",
+    70: "https://buy.stripe.com/fZudR1dvdgAFgLVbMacfN00",
+    71: "https://buy.stripe.com/4gM8wHfDl5W153d6rQcfN04",
+    80: "https://buy.stripe.com/6oUcMX0Iresx7bl6rQcfN08",
+    81: "https://buy.stripe.com/bJe14fcr93NTcvF03scfN0e",
+    82: "https://buy.stripe.com/3cI4grcr9bgl0MX2bAcfN0i",
+    83: "https://buy.stripe.com/eVqaEPfDl98d8fpg2qcfN0m",
+    84: "https://buy.stripe.com/7sY7sDbn5705anx17wcfN0r",
+    85: "https://buy.stripe.com/8x25kv3UD3NTdzJeYmcfN0u",
+    86: "https://buy.stripe.com/dRm28j0Irdot1R103scfN0y",
+    87: "https://buy.stripe.com/bJe7sD76Pbgl0MXaI6cfN0B",
+    88: "https://buy.stripe.com/eVqbITfDlgAF9jt7vUcfN0F",
+    89: "https://buy.stripe.com/5kQ5kvcr94RXbrBaI6cfN0L",
+    90: "https://buy.stripe.com/cNi28j76P1FL8fp8zYcfN0O",
+    91: "https://buy.stripe.com/dRmeV50Irbgl67h2bAcfN0Q",
+    92: "https://buy.stripe.com/6oUaEPbn5achbrBbMacfN0S",
+    93: "https://buy.stripe.com/dRm8wHbn53NTbrB8zYcfN0T",
+    94: "https://buy.stripe.com/5kQfZ9cr9ach53d7vUcfN0V",
+    95: "https://buy.stripe.com/7sY3cnaj15W17bl9E2cfN0W",
+    96: "https://buy.stripe.com/14A00b1Mv98deDN3fEcfN0X",
+    101: "https://buy.stripe.com/7sY14f3UDdot9jt4jIcfM2m",
+    102: "https://buy.stripe.com/7sY6ozbn5705brBg2qcfM2n",
+    103: "https://buy.stripe.com/7sY9AL9eX0BH2V54jIcfM2o",
+    104: "https://buy.stripe.com/cNi5kv4YHckpgLVg2qcfM2p",
+    105: "https://buy.stripe.com/aFafZ90Irdot8fpcQecfM2q",
+    106: "https://buy.stripe.com/8x2dR1aj1fwB3Z94jIcfM2r",
+    107: "https://buy.stripe.com/28E6ozaj11FL1R1aI6cfM2s",
+    108: "https://buy.stripe.com/4gMfZ92Qz0BH53daI6cfM2t",
+    109: "https://buy.stripe.com/cNifZ98aT705cvFbMacfM2u",
+    110: "https://buy.stripe.com/6oUdR162L705brBbMacfM2v",
+    111: "https://buy.stripe.com/14A5kvdvd8490MXg2qcfM2w",
+    112: "https://buy.stripe.com/4gM7sDaj1705eDN3fEcfM2x",
+    113: "https://buy.stripe.com/cNi9AL62L2JP53d8zYcfM2y",
+    114: "https://buy.stripe.com/14AaEPezhckpdzJ4jIcfM2z",
+    115: "https://buy.stripe.com/3cI00b62L0BH7bl8zYcfM2A",
+    116: "https://buy.stripe.com/8x23cn4YHesxfHR4jIcfM2B",
+    117: "https://buy.stripe.com/5kQ4grezh7050MX8zYcfM2C",
+    118: "https://buy.stripe.com/7sY8wH4YH2JPfHR6rQcfM2D",
+    119: "https://buy.stripe.com/aFa28j1Mv0BH3Z917wcfM2E",
+    120: "https://buy.stripe.com/4gM6oz76Pesx2V5cQecfM2F",
+    121: "https://buy.stripe.com/28E28jaj1achanx4jIcfM2G",
+    122: "https://buy.stripe.com/dRm6ozezh705brB3fEcfM2H",
+    123: "https://buy.stripe.com/3cI6ozcr92JP1R1aI6cfM2I",
+    124: "https://buy.stripe.com/fZueV50Ir7050MXcQecfM2J",
+    125: "https://buy.stripe.com/6oU3cn8aTesx53ddUicfM2K",
+    126: "https://buy.stripe.com/bJe4gr62L1FLanx5nMcfM2L",
+    127: "https://buy.stripe.com/3cI3cnfDl84953dg2qcfM2M",
+    128: "https://buy.stripe.com/6oUfZ976Pesx7blaI6cfM2N",
+    129: "https://buy.stripe.com/aFa5kv8aT8493Z96rQcfM2O",
+    130: "https://buy.stripe.com/9B6aEP9eX84967h03scfM2P",
+    131: "https://buy.stripe.com/8x29ALezhgAF67h03scfM2Q",
+    132: "https://buy.stripe.com/4gM28jgHpachfHR17wcfM2R",
+    133: "https://buy.stripe.com/4gM14fdvd1FL67h17wcfM2S",
+    134: "https://buy.stripe.com/bJe8wHezh1FL9jt2bAcfM2T",
+    135: "https://buy.stripe.com/8x200b3UDachgLVbMacfM2U",
+    136: "https://buy.stripe.com/9B67sDezh849eDN3fEcfM2V",
+    137: "https://buy.stripe.com/fZu14f8aT849gLVcQecfN0Z",
+    138: "https://buy.stripe.com/14A28jaj1fwBanx9E2cfN12",
+    139: "https://buy.stripe.com/7sYeV54YH4RXanx8zYcfN15",
+    140: "https://buy.stripe.com/fZudR1gHpbgl0MX4jIcfN18",
+    141: "https://buy.stripe.com/00w00b0Ir4RX2V5aI6cfN1a",
+    142: "https://buy.stripe.com/4gMbIT62L5W1dzJcQecfN1c",
+    143: "https://buy.stripe.com/dRm3cn8aTfwB67hbMacfN1f",
+    144: "https://buy.stripe.com/3cIdR1fDl0BH9jt17wcfN1h",
+    145: "https://buy.stripe.com/3cI7sD8aTdot0MX9E2cfN1j",
+    146: "https://buy.stripe.com/7sYaEP62L705gLV6rQcfN1k",
+    147: "https://buy.stripe.com/6oU4grdvd7059jt8zYcfN1m",
+    148: "https://buy.stripe.com/bJe8wH8aT98d67h5nMcfN1o",
+    149: "https://buy.stripe.com/9B6eV54YHckpgLV03scfN1q",
+    150: "https://buy.stripe.com/dRmeV5dvd5W1dzJ9E2cfN1r",
+    200: "https://buy.stripe.com/fZuaEPezh2JP1R1bMacfN1t",
+    201: "https://buy.stripe.com/3cIbITfDl3NT53d8zYcfN1w",
+    202: "https://buy.stripe.com/cNi4grfDlfwB0MXg2qcfN1z",
+    203: "https://buy.stripe.com/4gM4grgHp3NT2V517wcfN1C",
+    204: "https://buy.stripe.com/fZu5kv2Qz0BHanxg2qcfN1F",
+    205: "https://buy.stripe.com/fZubITcr998d67h7vUcfN1I",
+    206: "https://buy.stripe.com/7sYdR1cr9esx2V58zYcfN1L",
+    207: "https://buy.stripe.com/cNieV53UDckpanxaI6cfN1O",
+    "1_0": "https://buy.stripe.com/4gMfZ94YHgAFanx4jIcfM2W",
+    "1_1": "https://buy.stripe.com/28E9AL76PachfHR3fEcfM2X",
+    "5_0": "https://buy.stripe.com/eVq00b3UDfwB3Z9bMacfM30",
+    "5_1": "https://buy.stripe.com/5kQcMXezhbgleDN3fEcfM31",
+    "5_2": "https://buy.stripe.com/3cI8wH0Ir849dzJ5nMcfM32",
+    "8_0": "https://buy.stripe.com/aFa00b2Qz0BH3Z98zYcfM33",
+    "8_1": "https://buy.stripe.com/4gMeV59eXgAF3Z92bAcfM34",
+    "9_0": "https://buy.stripe.com/00w6ozcr9fwB3Z92bAcfM35",
+    "21_0": "https://buy.stripe.com/9B6cMX76P3NTfHReYmcfM3b",
+    "29_0": "https://buy.stripe.com/dRm00b76P1FL7bl3fEcfM3h",
+    "29_1": "https://buy.stripe.com/00w7sDgHp2JPgLV2bAcfM3i",
+    "35_0": "https://buy.stripe.com/14AdR13UDachcvF2bAcfM3n",
+    "51_0": "https://buy.stripe.com/cNifZ9ezhach0MX03scfM3A",
+    "60_0": "https://buy.stripe.com/3cI7sD9eX4RX53d7vUcfM3B",
+    "60_1": "https://buy.stripe.com/eVq28j8aTachfHRcQecfM3C",
+    "60_2": "https://buy.stripe.com/aFafZ90Irbgl2V56rQcfM3D",
+    "60_3": "https://buy.stripe.com/6oU4gr62L0BH67heYmcfM3E",
+    "60_4": "https://buy.stripe.com/cNicMXaj10BH9jtbMacfM3F",
+    "61_0": "https://buy.stripe.com/aFadR176P2JPeDN03scfM3G",
+    "61_1": "https://buy.stripe.com/eVq6oz76PbglcvFbMacfM3H",
+    "61_2": "https://buy.stripe.com/fZuaEP9eXckpdzJ3fEcfM3I",
+    "62_0": "https://buy.stripe.com/00w5kvfDlgAF8fp03scfM3J",
+    "62_1": "https://buy.stripe.com/8x25kv1MvdotdzJ5nMcfM3K",
+    "63_0": "https://buy.stripe.com/8x27sD4YH3NT1R14jIcfM3L",
+    "63_1": "https://buy.stripe.com/cNi6oz4YHgAF2V5cQecfM3M",
+    "63_2": "https://buy.stripe.com/cNi00b76Pach8fp6rQcfM3N",
+    "64_0": "https://buy.stripe.com/3cI7sD76PdotgLV3fEcfM3O",
+    "64_1": "https://buy.stripe.com/fZudR1bn5fwBanxcQecfM3P",
+    "64_2": "https://buy.stripe.com/cNi00bcr93NTeDNg2qcfM3Q",
+    "65_0": "https://buy.stripe.com/eVq6oz4YHdot2V56rQcfM3R",
+    "65_1": "https://buy.stripe.com/4gMcMXcr9849eDN8zYcfM3S",
+    "65_2": "https://buy.stripe.com/9B63cn1Mvesx9jtcQecfM3T",
+    "66_0": "https://buy.stripe.com/14A00bfDl705gLV17wcfM3U",
+    "66_1": "https://buy.stripe.com/28EeV58aT98d1R15nMcfM3V",
+    "66_2": "https://buy.stripe.com/5kQ5kvaj1gAF7bl8zYcfM3W",
+    "67_0": "https://buy.stripe.com/28EdR19eX4RX1R1g2qcfM3X",
+    "67_1": "https://buy.stripe.com/8x29ALgHp4RX0MXeYmcfM3Y",
+    "67_2": "https://buy.stripe.com/7sYfZ9gHpesx3Z93fEcfM3Z",
+    "68_0": "https://buy.stripe.com/6oUaEP8aTgAFbrB3fEcfM40",
+    "68_1": "https://buy.stripe.com/aFa14f2QzachfHReYmcfM41",
+    "68_2": "https://buy.stripe.com/3cIeV562LgAFgLV03scfM42",
+    "68_3": "https://buy.stripe.com/aFa7sD2Qz5W153d03scfM43",
+    "68_4": "https://buy.stripe.com/4gM6oz0Ir8492V56rQcfM44",
+    "69_0": "https://buy.stripe.com/fZu7sDezhesx1R1aI6cfM45",
+    "69_1": "https://buy.stripe.com/14AfZ9cr95W1cvF6rQcfM46",
+    "69_2": "https://buy.stripe.com/14AfZ9dvdgAFeDN03scfM47",
+    "70_0": "https://buy.stripe.com/fZudR1dvdgAFgLVbMacfN00",
+    "70_1": "https://buy.stripe.com/00w00bgHp3NTeDNdUicfN01",
+    "70_2": "https://buy.stripe.com/00waEPbn5esxbrBbMacfN02",
+    "70_3": "https://buy.stripe.com/00w8wHdvd1FL7bl3fEcfN03",
+    "71_0": "https://buy.stripe.com/4gM8wHfDl5W153d6rQcfN04",
+    "71_1": "https://buy.stripe.com/00w7sD9eXfwB7blcQecfN05",
+    "71_2": "https://buy.stripe.com/00w00bcr93NT8fp9E2cfN06",
+    "71_3": "https://buy.stripe.com/6oUfZ94YH4RX1R13fEcfN07",
+    "80_0": "https://buy.stripe.com/6oUcMX0Iresx7bl6rQcfN08",
+    "80_1": "https://buy.stripe.com/5kQ7sDdvd8491R13fEcfN09",
+    "80_2": "https://buy.stripe.com/28E9ALdvdbgl9jt8zYcfN0a",
+    "80_3": "https://buy.stripe.com/dRmbITgHp3NTcvFeYmcfN0b",
+    "80_4": "https://buy.stripe.com/5kQ4gr76PckpfHR3fEcfN0c",
+    "80_5": "https://buy.stripe.com/4gM3cnbn5dotanx5nMcfN0d",
+    "81_0": "https://buy.stripe.com/bJe14fcr93NTcvF03scfN0e",
+    "81_1": "https://buy.stripe.com/14AbITaj13NTbrBeYmcfN0f",
+    "81_2": "https://buy.stripe.com/5kQeV51Mv8499jt03scfN0g",
+    "81_3": "https://buy.stripe.com/eVq7sDezhbgl2V59E2cfN0h",
+    "82_0": "https://buy.stripe.com/3cI4grcr9bgl0MX2bAcfN0i",
+    "82_1": "https://buy.stripe.com/dRm3cn9eX849dzJ3fEcfN0j",
+    "82_2": "https://buy.stripe.com/6oU5kvgHpbglanxeYmcfN0k",
+    "82_3": "https://buy.stripe.com/3cI14fbn53NTdzJcQecfN0l",
+    "83_0": "https://buy.stripe.com/eVqaEPfDl98d8fpg2qcfN0m",
+    "83_1": "https://buy.stripe.com/7sY28j4YH0BH7blbMacfN0n",
+    "83_2": "https://buy.stripe.com/14A8wHgHp705anxg2qcfN0o",
+    "83_3": "https://buy.stripe.com/dRm9AL2Qz1FL67hbMacfN0p",
+    "83_4": "https://buy.stripe.com/dRm28jfDl98d7bl17wcfN0q",
+    "84_0": "https://buy.stripe.com/7sY7sDbn5705anx17wcfN0r",
+    "84_1": "https://buy.stripe.com/6oU5kvfDlfwB2V53fEcfN0s",
+    "84_2": "https://buy.stripe.com/8x24grgHpgAFgLV9E2cfN0t",
+    "85_0": "https://buy.stripe.com/8x25kv3UD3NTdzJeYmcfN0u",
+    "85_1": "https://buy.stripe.com/14A9AL62LbglcvF5nMcfN0v",
+    "85_2": "https://buy.stripe.com/bJebITaj15W1eDN2bAcfN0w",
+    "85_3": "https://buy.stripe.com/aFa28j62L1FL8fp3fEcfN0x",
+    "86_0": "https://buy.stripe.com/dRm28j0Irdot1R103scfN0y",
+    "86_1": "https://buy.stripe.com/00w5kv1Mvbgl2V59E2cfN0z",
+    "86_2": "https://buy.stripe.com/28EaEP4YH98dcvF6rQcfN0A",
+    "87_0": "https://buy.stripe.com/bJe7sD76Pbgl0MXaI6cfN0B",
+    "87_1": "https://buy.stripe.com/28E8wH8aT0BH1R1eYmcfN0C",
+    "87_2": "https://buy.stripe.com/3cI6ozfDl1FLfHR5nMcfN0D",
+    "87_3": "https://buy.stripe.com/fZu8wHfDl2JP9jteYmcfN0E",
+    "88_0": "https://buy.stripe.com/eVqbITfDlgAF9jt7vUcfN0F",
+    "88_1": "https://buy.stripe.com/fZubITgHp0BH3Z9aI6cfN0G",
+    "88_2": "https://buy.stripe.com/3cI4gr4YHdot7blaI6cfN0H",
+    "88_3": "https://buy.stripe.com/28E8wHfDlckp7bl2bAcfN0I",
+    "88_4": "https://buy.stripe.com/5kQ00b2QzgAF7blg2qcfN0J",
+    "88_5": "https://buy.stripe.com/bJe9AL0Ir84967hdUicfN0K",
+    "89_0": "https://buy.stripe.com/5kQ5kvcr94RXbrBaI6cfN0L",
+    "89_1": "https://buy.stripe.com/8x200b9eXdotbrB03scfN0M",
+    "89_2": "https://buy.stripe.com/eVq14f8aT7058fp5nMcfN0N",
+    "90_0": "https://buy.stripe.com/cNi28j76P1FL8fp8zYcfN0O",
+    "90_1": "https://buy.stripe.com/8x26oz76P0BHbrB03scfN0P",
+    "91_0": "https://buy.stripe.com/dRmeV50Irbgl67h2bAcfN0Q",
+    "91_1": "https://buy.stripe.com/8x25kvcr9bgl1R15nMcfN0R",
+    "92_0": "https://buy.stripe.com/6oUaEPbn5achbrBbMacfN0S",
+    "93_0": "https://buy.stripe.com/dRm8wHbn53NTbrB8zYcfN0T",
+    "93_1": "https://buy.stripe.com/14A5kv9eXach53dcQecfN0U",
+    "94_0": "https://buy.stripe.com/5kQfZ9cr9ach53d7vUcfN0V",
+    "95_0": "https://buy.stripe.com/7sY3cnaj15W17bl9E2cfN0W",
+    "96_0": "https://buy.stripe.com/14A00b1Mv98deDN3fEcfN0X",
+    "96_1": "https://buy.stripe.com/9B64gr9eXckpbrB8zYcfN0Y",
+    "137_0": "https://buy.stripe.com/fZu14f8aT849gLVcQecfN0Z",
+    "137_1": "https://buy.stripe.com/aFa5kv62L2JPeDN6rQcfN10",
+    "137_2": "https://buy.stripe.com/7sY5kv76PachcvFcQecfN11",
+    "138_0": "https://buy.stripe.com/14A28jaj1fwBanx9E2cfN12",
+    "138_1": "https://buy.stripe.com/14A7sDaj198d1R1bMacfN13",
+    "138_2": "https://buy.stripe.com/28E28jbn5gAF3Z93fEcfN14",
+    "139_0": "https://buy.stripe.com/7sYeV54YH4RXanx8zYcfN15",
+    "139_1": "https://buy.stripe.com/9B67sDaj1esx1R19E2cfN16",
+    "139_2": "https://buy.stripe.com/fZu7sD2Qz7058fpbMacfN17",
+    "140_0": "https://buy.stripe.com/fZudR1gHpbgl0MX4jIcfN18",
+    "140_1": "https://buy.stripe.com/00wdR11Mv1FL67heYmcfN19",
+    "141_0": "https://buy.stripe.com/00w00b0Ir4RX2V5aI6cfN1a",
+    "141_1": "https://buy.stripe.com/28E00b1Mv5W1dzJ6rQcfN1b",
+    "142_0": "https://buy.stripe.com/4gMbIT62L5W1dzJcQecfN1c",
+    "142_1": "https://buy.stripe.com/aFadR1bn5bgl8fp5nMcfN1d",
+    "142_2": "https://buy.stripe.com/fZu9AL0Ir3NTfHRg2qcfN1e",
+    "143_0": "https://buy.stripe.com/dRm3cn8aTfwB67hbMacfN1f",
+    "143_1": "https://buy.stripe.com/14A3cn1MvachdzJ4jIcfN1g",
+    "144_0": "https://buy.stripe.com/3cIdR1fDl0BH9jt17wcfN1h",
+    "144_1": "https://buy.stripe.com/dRm5kvaj15W1cvFcQecfN1i",
+    "145_0": "https://buy.stripe.com/3cI7sD8aTdot0MX9E2cfN1j",
+    "146_0": "https://buy.stripe.com/7sYaEP62L705gLV6rQcfN1k",
+    "146_1": "https://buy.stripe.com/8x2fZ94YH705gLVbMacfN1l",
+    "147_0": "https://buy.stripe.com/6oU4grdvd7059jt8zYcfN1m",
+    "147_1": "https://buy.stripe.com/eVq6ozezhachcvFcQecfN1n",
+    "148_0": "https://buy.stripe.com/bJe8wH8aT98d67h5nMcfN1o",
+    "148_1": "https://buy.stripe.com/eVq3cn1Mv1FL0MX7vUcfN1p",
+    "149_0": "https://buy.stripe.com/9B6eV54YHckpgLV03scfN1q",
+    "150_0": "https://buy.stripe.com/dRmeV5dvd5W1dzJ9E2cfN1r",
+    "150_1": "https://buy.stripe.com/00waEP2Qz0BHbrB3fEcfN1s",
+    "200_0": "https://buy.stripe.com/fZuaEPezh2JP1R1bMacfN1t",
+    "200_1": "https://buy.stripe.com/5kQ14f62LfwB67hdUicfN1u",
+    "200_2": "https://buy.stripe.com/eVqfZ90Ir5W167haI6cfN1v",
+    "201_0": "https://buy.stripe.com/3cIbITfDl3NT53d8zYcfN1w",
+    "201_1": "https://buy.stripe.com/cNi5kv62L4RX53daI6cfN1x",
+    "201_2": "https://buy.stripe.com/cNicMX4YHdot9jt5nMcfN1y",
+    "202_0": "https://buy.stripe.com/cNi4grfDlfwB0MXg2qcfN1z",
+    "202_1": "https://buy.stripe.com/cNi00baj1ach9jtbMacfN1A",
+    "202_2": "https://buy.stripe.com/dRm28jfDlfwBanxcQecfN1B",
+    "203_0": "https://buy.stripe.com/4gM4grgHp3NT2V517wcfN1C",
+    "203_1": "https://buy.stripe.com/00w28jcr91FL1R16rQcfN1D",
+    "203_2": "https://buy.stripe.com/28EfZ98aTfwBbrB17wcfN1E",
+    "204_0": "https://buy.stripe.com/fZu5kv2Qz0BHanxg2qcfN1F",
+    "204_1": "https://buy.stripe.com/8x2aEPdvdckp7bl9E2cfN1G",
+    "204_2": "https://buy.stripe.com/dRmeV562L2JP0MX03scfN1H",
+    "205_0": "https://buy.stripe.com/fZubITcr998d67h7vUcfN1I",
+    "205_1": "https://buy.stripe.com/cNi4graj1dot9jt2bAcfN1J",
+    "205_2": "https://buy.stripe.com/4gMcMX1Mv5W10MXg2qcfN1K",
+    "206_0": "https://buy.stripe.com/7sYdR1cr9esx2V58zYcfN1L",
+    "206_1": "https://buy.stripe.com/3cI00bcr9ach0MXcQecfN1M",
+    "206_2": "https://buy.stripe.com/4gM3cn3UDgAFcvFg2qcfN1N",
+    "207_0": "https://buy.stripe.com/cNieV53UDckpanxaI6cfN1O",
+    "207_1": "https://buy.stripe.com/fZudR176P7059jtdUicfN1P",
+    "207_2": "https://buy.stripe.com/3cI6oz8aT2JPdzJ6rQcfN1Q",
+    "207_3": "https://buy.stripe.com/5kQeV5aj11FLgLVcQecfN1R"
+  }﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="p:domain_verify" content="f501da8deca8d6b8e9e60171061b9259"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Produit — Nature Survie & Autonomie</title>
+  <meta name="description" id="page-desc" content="Découvrez nos produits d'autosuffisance, survie et jardinage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://js.stripe.com/v3/"></script>
+  <style>
+    /* ---- PAGE PRODUIT ---- */
+    .product-page {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 5%;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--texte-clair, #888);
+      margin-bottom: 30px;
+    }
+
+    .breadcrumb a {
+      color: var(--vert-moyen, #4a7c2d);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    .product-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .product-main { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    .product-image-wrap {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #f5f0e8;
+    }
+
+    .product-image-wrap img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-badges-top {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .product-info { display: flex; flex-direction: column; gap: 16px; }
+
+    .product-category {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--vert-moyen, #4a7c2d);
+    }
+
+    .product-title {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--vert-fonce, #2d5016);
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .product-rating-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+
+    .stars { color: #f59e0b; font-size: 1rem; }
+    .rating-count { color: #888; }
+
+    .product-price-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0;
+    }
+
+    .price-current {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--vert-fonce, #2d5016);
+    }
+
+    .price-original {
+      font-size: 1.1rem;
+      color: #aaa;
+      text-decoration: line-through;
+    }
+
+    .price-discount {
+      background: #e8622a;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .product-description {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .product-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px;
+      background: #f9f5ee;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      color: #555;
+    }
+
+    .product-meta-item { display: flex; gap: 8px; }
+    .product-meta-item strong { color: var(--vert-fonce, #2d5016); min-width: 80px; }
+
+    .qty-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0;
+    }
+
+    .qty-label { font-weight: 700; font-size: 0.9rem; color: #333; }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      background: #f5f0e8;
+      border: none;
+      padding: 8px 14px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--vert-fonce, #2d5016);
+      transition: background 0.2s;
+    }
+
+    .qty-btn:hover { background: #e8dfc8; }
+
+    .qty-input {
+      border: none;
+      width: 50px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 8px 0;
+      background: white;
+    }
+
+    .btn-buy {
+      background: #e8622a;
+      color: white;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s, transform 0.1s;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .btn-buy:hover { background: #c94e1e; transform: translateY(-1px); }
+    .btn-buy:active { transform: translateY(0); }
+
+    .btn-cart-add {
+      background: var(--vert-fonce, #2d5016);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .btn-cart-add:hover { background: #1e3a0e; }
+
+    .trust-mini {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    .trust-mini span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Stripe modal */
+    .stripe-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stripe-modal.open { display: flex; }
+
+    .stripe-modal-inner {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      width: 100%;
+      max-width: 480px;
+      position: relative;
+    }
+
+    .stripe-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #888;
+    }
+
+    .stripe-modal h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--vert-fonce, #2d5016);
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .stripe-modal .order-summary {
+      background: #f9f5ee;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .stripe-modal .order-summary strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--vert-fonce, #2d5016);
+      margin-bottom: 4px;
+    }
+
+    #card-element {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 16px;
+      background: white;
+    }
+
+    #card-errors {
+      color: #e8622a;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      min-height: 20px;
+    }
+
+    .btn-pay {
+      background: #e8622a;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Nunito', sans-serif;
+      transition: background 0.2s;
+    }
+
+    .btn-pay:hover { background: #c94e1e; }
+    .btn-pay:disabled { background: #aaa; cursor: not-allowed; }
+
+    .stripe-secure {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 12px;
+    }
+
+    /* Articles en relation */
+    .related-section {
+      margin: 60px 0 40px;
+    }
+
+    .related-section h2 {
+      font-family: 'Merriweather', serif;
+      color: var(--vert-fonce, #2d5016);
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .related-section p {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .related-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .related-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .related-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .related-card-body { padding: 14px; }
+
+    .related-card-body h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--vert-fonce, #2d5016);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .related-card-price {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #e8622a;
+    }
+  </style>
+
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D88TMA3C77UFPET8DG4G');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-emoji">🌿</span>
+      <span>Nature Survie & Autonomie</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Survie</a>
+      <a href="jardinage.html">Jardinage</a>
+      <a href="about.html">À propos</a>
+      <a href="panier.html">Panier</a>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" onclick="Cart.toggleDrawer()" type="button">
+        🛒 <span class="cart-total-nav">0,00 €</span>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Page produit -->
+<div class="product-page">
+
+  <!-- Fil d'Ariane -->
+  <div class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span>›</span>
+    <a href="catalogue.html">Survie</a>
+    <span>›</span>
+    <span id="breadcrumb-name">Produit</span>
+  </div>
+
+  <!-- Produit principal -->
+  <div class="product-main">
+    <!-- Image -->
+    <div class="product-image-wrap">
+      <img id="product-img" src="" alt="Produit">
+      <div class="product-badges-top" id="product-badges"></div>
+    </div>
+
+    <!-- Infos -->
+    <div class="product-info">
+      <div class="product-category" id="product-category"></div>
+      <h1 class="product-title" id="product-name"></h1>
+
+      <div class="product-rating-row">
+        <span class="stars" id="product-stars"></span>
+        <span id="product-rating"></span>
+        <span class="rating-count" id="product-reviews"></span>
+      </div>
+
+      <div class="product-price-row">
+        <span class="price-current" id="product-price"></span>
+        <span class="price-original" id="product-original"></span>
+        
+      </div>
+
+      <!-- Sélecteur de variantes -->
+      <div id="variant-selector" style="display:none; margin:20px 0; padding:20px; background:linear-gradient(135deg,#f9f6ef,#f0ece0); border-radius:14px; border:2px solid #d4c9a8;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+          <span style="font-size:1.1rem;">🎯</span>
+          <label style="font-weight:700; color:#2d5016; font-size:0.95rem; margin:0;" id="variant-label">Choisir une option :</label>
+          <span id="variant-selected-name" style="font-size:0.88rem;color:#6b4c2a;font-weight:600;margin-left:4px;"></span>
+        </div>
+        <div id="variant-buttons" style="display:flex; flex-wrap:wrap; gap:10px;"></div>
+        <div id="variant-price-info" style="margin-top:14px;padding:12px 16px;background:white;border-radius:10px;border:1px solid #e0d9c5;display:none;">
+          <span style="font-size:0.85rem;color:#888;">Variante sélectionnée :</span>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:4px;">
+            <span id="variant-price-display" style="font-size:1.4rem;font-weight:800;color:#2d5016;"></span>
+            <span id="variant-original-display" style="font-size:1rem;color:#aaa;text-decoration:line-through;"></span>
+            <span id="variant-discount-display" style="font-size:0.85rem;font-weight:700;background:#e8622a;color:white;padding:3px 8px;border-radius:20px;"></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="product-description" id="product-desc"></p>
+
+      <div class="product-meta" id="product-meta"></div>
+
+      <!-- Quantité -->
+      <div class="qty-row">
+        <span class="qty-label">Quantité :</span>
+        <div class="qty-controls">
+          <button class="qty-btn" onclick="changeQty(-1)" type="button">−</button>
+          <input class="qty-input" type="number" id="qty" value="1" min="1" max="99">
+          <button class="qty-btn" onclick="changeQty(1)" type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Boutons -->
+      <button class="btn-buy" onclick="openStripe()" type="button">
+        💳 Acheter maintenant
+      </button>
+      <button class="btn-cart-add" onclick="addToCartFromPage()" type="button">
+        🛒 Ajouter au panier
+      </button>
+
+      <!-- Garanties mini -->
+      <div class="trust-mini">
+        <span>🚚 Livraison gratuite dès 50€</span>
+        <span>🔄 Retour 14 jours</span>
+        <span>🔒 Paiement sécurisé</span>
+        <span>📧 naturesurvi@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles en relation -->
+  <div class="related-section">
+    <h2>🌿 Vous aimerez aussi</h2>
+    <p>Produits de la même catégorie</p>
+    <div class="related-grid" id="related-grid"></div>
+  </div>
+
+</div>
+
+<!-- Modal Stripe -->
+<div class="stripe-modal" id="stripe-modal">
+  <div class="stripe-modal-inner">
+    <button class="stripe-modal-close" onclick="closeStripe()" type="button">✕</button>
+    <h3>💳 Paiement sécurisé</h3>
+    <div class="order-summary" id="order-summary"></div>
+    <div id="card-element"></div>
+    <div id="card-errors"></div>
+    <button class="btn-pay" id="btn-pay" onclick="processPayment()" type="button">
+      Payer maintenant
+    </button>
+    <div class="stripe-secure">🔒 Paiement sécurisé par Stripe — Vos données sont protégées</div>
+  </div>
+</div>
+
+<!-- Cart Drawer -->
+<div id="drawer-overlay" class="drawer-overlay" onclick="Cart.toggleDrawer()"></div>
+<aside id="cart-drawer" class="cart-drawer">
+  <div class="drawer-header">
+    <h3>🛒 Votre panier</h3>
+    <button class="drawer-close" onclick="Cart.toggleDrawer()" type="button">&times;</button>
+  </div>
+  <div class="drawer-items" id="drawer-items"></div>
+  <div id="drawer-empty" class="drawer-empty" style="display:none;">
+    <span>🛒</span>
+    <p>Votre panier est vide</p>
+    <a href="catalogue.html" class="btn btn-primary">Découvrir nos produits</a>
+  </div>
+  <div id="drawer-footer" class="drawer-footer" style="display:none;">
+    <div class="drawer-subtotal">
+      <span>Sous-total</span>
+      <span id="drawer-subtotal">0,00 €</span>
+    </div>
+    <a href="panier.html" class="btn btn-primary">Voir le panier</a>
+  </div>
+</aside>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script>
+  let currentProduct = null;
+
+  // Charger le produit depuis l'URL
+  function loadProduct() {
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get('id'));
+    const product = ALL_PRODUCTS.find(p => p.id === id);
+
+    if (!product) {
+      document.querySelector('.product-page').innerHTML = '<p style="text-align:center;padding:60px">Produit introuvable. <a href="catalogue.html">Retour au catalogue</a></p>';
+      return;
+    }
+
+    currentProduct = product;
+
+    // Meta
+    document.getElementById('page-title').textContent = product.name + ' — Nature Survie & Autonomie';
+    document.getElementById('page-desc').content = product.description;
+    document.getElementById('breadcrumb-name').textContent = product.name;
+
+    // Image
+    document.getElementById('product-img').src = product.image;
+    document.getElementById('product-img').alt = product.name;
+
+    // Badges
+    const BADGE_COLORS = {
+      'Bestseller': { bg: '#e8622a', color: 'white', emoji: '🔥' },
+      'Bio': { bg: '#2d5016', color: 'white', emoji: '🌿' },
+      'Nouveau': { bg: '#4a7c2d', color: 'white', emoji: '✨' },
+      'Promo': { bg: '#f59e0b', color: 'white', emoji: '💥' },
+      'Essentiel': { bg: '#6b4c2a', color: 'white', emoji: '⭐' }
+    };
+    document.getElementById('product-badges').innerHTML = product.badges.map(b => {
+      const c = BADGE_COLORS[b] || { bg: '#888', color: 'white', emoji: '' };
+      return `<span class="badge" style="background:${c.bg};color:${c.color};padding:4px 10px;border-radius:20px;font-size:0.75rem;font-weight:700">${c.emoji} ${b}</span>`;
+    }).join('');
+
+    // Infos
+    document.getElementById('product-category').textContent = '📦 ' + product.category;
+    document.getElementById('product-name').textContent = product.name;
+
+    // Rating
+    const stars = '★'.repeat(Math.floor(product.rating)) + (product.rating % 1 >= 0.5 ? '½' : '');
+    document.getElementById('product-stars').textContent = stars;
+    document.getElementById('product-rating').textContent = product.rating + '/5';
+    document.getElementById('product-reviews').textContent = '(' + product.reviews + ' avis)';
+
+    // Prix
+    document.getElementById('product-price').textContent = product.price.toFixed(2).replace('.', ',') + ' €';
+    
+
+    // Description
+    document.getElementById('product-desc').textContent = product.description;
+
+    // Meta
+    const metaItems = [
+      { label: '⚖️ Poids', value: product.weight },
+      { label: '🚚 Livraison', value: product.shipping },
+      { label: '🏭 Fournisseur', value: product.supplier || 'Europe' },
+    ];
+    document.getElementById('product-meta').innerHTML = metaItems.map(m =>
+      `<div class="product-meta-item"><strong>${m.label}</strong><span>${m.value}</span></div>`
+    ).join('');
+
+    // Variantes (si disponibles)
+    renderVariants(product);
+
+    // Articles en relation
+    loadRelated(product);
+  }
+
+  // Détecte si une variante est une couleur (hex code présent)
+  function isColorVariant(variants) {
+    return variants.some(v => v.color);
+  }
+
+  // Détecte si c'est une taille (S/M/L/XL ou cm ou L ou numérique)
+  function isSizeVariant(variants) {
+    return variants.some(v => /\b(XS|S|M|L|XL|XXL|\d+cm|\d+L|\d+m\b|\d+ml)/i.test(v.label));
+  }
+
+  // Affichage du sélecteur de variantes
+  function renderVariants(product) {
+    if (!product.variants || product.variants.length === 0) return;
+
+    const selector = document.getElementById('variant-selector');
+    const btns = document.getElementById('variant-buttons');
+    selector.style.display = 'block';
+    btns.innerHTML = '';
+
+    const isColor = isColorVariant(product.variants);
+    const isSize = isSizeVariant(product.variants);
+
+    // Label dynamique
+    const lbl = document.getElementById('variant-label');
+    if (isColor && isSize) lbl.textContent = 'Couleur & taille :';
+    else if (isColor) lbl.textContent = 'Choisir la couleur :';
+    else if (isSize) lbl.textContent = 'Choisir la taille :';
+    else lbl.textContent = 'Choisir le modèle :';
+
+    product.variants.forEach((v, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'variant-btn';
+      btn.dataset.idx = i;
+
+      if (isColor && v.color) {
+        // Bouton rond couleur + label en dessous
+        btn.innerHTML = `
+          <span style="display:block;width:32px;height:32px;border-radius:50%;background:${v.color};border:3px solid ${i===0?'#2d5016':'#ccc'};margin:0 auto 4px;box-shadow:0 2px 6px rgba(0,0,0,0.2);"></span>
+          <span style="font-size:0.72rem;color:#555;display:block;text-align:center;max-width:60px;line-height:1.2;">${v.label.split('—')[0].trim()}</span>
+        `;
+        btn.style.cssText = `
+          padding:8px 6px; border:2px solid ${i===0?'#2d5016':'transparent'};
+          border-radius:10px; cursor:pointer; background:${i===0?'#f0ece0':'white'};
+          font-family:'Nunito',sans-serif; transition:all 0.2s; min-width:64px;
+        `;
+      } else {
+        // Bouton texte (taille ou modèle)
+        const pricePart = v.price !== product.price ? ` — ${v.price}€` : '';
+        btn.textContent = v.label + pricePart;
+        btn.style.cssText = `
+          padding:10px 16px; border:2px solid ${i===0?'#2d5016':'#c5b99a'};
+          border-radius:8px; cursor:pointer; font-size:0.85rem; font-weight:600;
+          font-family:'Nunito',sans-serif;
+          background:${i===0?'#2d5016':'white'};
+          color:${i===0?'white':'#2d5016'};
+          transition:all 0.2s;
+        `;
+      }
+
+      btn.onclick = () => selectVariant(product, i, isColor);
+      btns.appendChild(btn);
+    });
+
+    // Activer la première variante par défaut
+    window.selectedVariant = product.variants[0];
+    window.selectedVariantIdx = 0;
+    updateVariantPriceInfo(product.variants[0], product);
+  }
+
+  function updateVariantPriceInfo(v, product) {
+    const infoBox = document.getElementById('variant-price-info');
+    const nameEl = document.getElementById('variant-selected-name');
+    const priceEl = document.getElementById('variant-price-display');
+    const origEl = document.getElementById('variant-original-display');
+    const discEl = document.getElementById('variant-discount-display');
+
+    nameEl.textContent = '→ ' + v.label;
+    infoBox.style.display = 'block';
+    priceEl.textContent = v.price.toFixed(2).replace('.', ',') + ' €';
+
+    // Mise à jour de la description selon la variante sélectionnée
+    const descEl = document.getElementById('product-desc');
+    if (descEl) {
+      descEl.textContent = v.description || product.description;
+    }
+
+    const origPrice = v.originalPrice || product.originalPrice;
+    if (origPrice && origPrice > v.price) {
+      origEl.textContent = origPrice.toFixed(2).replace('.', ',') + ' €';
+      const disc = Math.round((1 - v.price / origPrice) * 100);
+      discEl.textContent = '-' + disc + '%';
+      discEl.style.display = '';
+    } else {
+      origEl.textContent = '';
+      discEl.style.display = 'none';
+    }
+  }
+
+  function selectVariant(product, idx, isColor) {
+    const v = product.variants[idx];
+    window.selectedVariant = v;
+    window.selectedVariantIdx = idx;
+
+    // Mise à jour du prix principal (en haut de la fiche)
+    document.getElementById('product-price').textContent = v.price.toFixed(2).replace('.', ',') + ' €';
+    const origPrice = v.originalPrice || product.originalPrice;
+    if (origPrice) {
+      document.getElementById('product-original').textContent = origPrice.toFixed(2).replace('.', ',') + ' €';
+      const discount = Math.round((1 - v.price / origPrice) * 100);
+      document.getElementById('product-discount').textContent = '-' + discount + '%';
+    }
+
+    // Mise à jour de l'image si la variante en a une différente
+    if (v.image && v.image !== product.image) {
+      document.getElementById('product-img').src = v.image;
+    }
+
+    // Mise à jour du bloc prix dans le sélecteur
+    updateVariantPriceInfo(v, product);
+
+    // Mise à jour visuelle des boutons
+    document.querySelectorAll('.variant-btn').forEach((b, i) => {
+      if (isColor && product.variants[i].color) {
+        const dot = b.querySelector('span:first-child');
+        if (dot) dot.style.border = i === idx ? '3px solid #2d5016' : '3px solid #ccc';
+        b.style.border = i === idx ? '2px solid #2d5016' : '2px solid transparent';
+        b.style.background = i === idx ? '#f0ece0' : 'white';
+      } else {
+        b.style.background = i === idx ? '#2d5016' : 'white';
+        b.style.color = i === idx ? 'white' : '#2d5016';
+        b.style.border = i === idx ? '2px solid #2d5016' : '2px solid #c5b99a';
+      }
+    });
+
+    // Mettre à jour le produit courant
+    currentProduct = { ...currentProduct, price: v.price, image: v.image || currentProduct.image };
+
+    // Mettre à jour le bouton d'achat
+    const buyBtn = document.querySelector('.btn-buy');
+    if (buyBtn) buyBtn.textContent = '💳 Acheter — ' + v.price.toFixed(2).replace('.', ',') + ' €';
+  }
+
+  function loadRelated(product) {
+    const related = ALL_PRODUCTS
+      .filter(p => p.id !== product.id && p.category === product.category)
+      .slice(0, 4);
+
+    // Si pas assez dans la même catégorie, compléter avec d'autres
+    if (related.length < 4) {
+      const others = ALL_PRODUCTS
+        .filter(p => p.id !== product.id && p.category !== product.category)
+        .slice(0, 4 - related.length);
+      related.push(...others);
+    }
+
+    document.getElementById('related-grid').innerHTML = related.map(p => `
+      <a class="related-card" href="produit.html?id=${p.id}">
+        <img src="${p.image}" alt="${p.name}" loading="lazy">
+        <div class="related-card-body">
+          <h4>${p.name}</h4>
+          <div class="related-card-price">${p.price.toFixed(2).replace('.', ',')} €</div>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  function changeQty(delta) {
+    const input = document.getElementById('qty');
+    const val = Math.max(1, Math.min(99, parseInt(input.value) + delta));
+    input.value = val;
+  }
+
+  function addToCartFromPage() {
+    if (!currentProduct) return;
+    const qty = parseInt(document.getElementById('qty').value);
+    Cart.addItem(currentProduct.id, qty);
+    Cart.toggleDrawer();
+  }
+
+  // Stripe Payment Links par produit (MODE LIVE)
+  const STRIPE_LINKS = {
     3: "https://buy.stripe.com/28E6ozdvd3NTbrBeYmcfM2Y",
     4: "https://buy.stripe.com/cNi8wH76PgAF7blaI6cfM2Z",
     14: "https://buy.stripe.com/cNi4gr0Ir5W1gLVaI6cfM36",
@@ -1048,12 +2147,14 @@
     let link = null;
     if (window.selectedVariant && currentProduct.variants && currentProduct.variants.length > 0) {
       const variantIdx = currentProduct.variants.indexOf(window.selectedVariant);
-      if (variantIdx > 0) {
+      if (variantIdx >= 0) {
         link = STRIPE_LINKS[currentProduct.id + '_' + variantIdx];
       }
     }
     // Fallback sur le lien produit principal
     if (!link) link = STRIPE_LINKS[currentProduct.id];
+    if (!link && window.selectedVariant) link = window.selectedVariant.stripeLink;
+    if (!link) link = currentProduct.stripeLink;
     if (!link) link = STRIPE_LINKS.default;
 
     if (link) {
