@@ -59,7 +59,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "140 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "nebo-einstein-250",
     supplierPrice: 12.09,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -186,7 +186,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "130 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "brennenstuhl-1178780",
     supplierPrice: 21.85,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -323,7 +323,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "200 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "varta-92400121810",
     supplierPrice: 5.01,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -342,7 +342,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "150 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "duracell-aaa-12",
     supplierPrice: 7.30,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -384,7 +384,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "320 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "kali-boite-rangement",
     supplierPrice: 8.01,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -422,7 +422,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "95 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "sk8-camav002",
     supplierPrice: 45.01,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -460,7 +460,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "380 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "alphaventure-bidinamarca-kaki",
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -539,7 +539,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "500 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "trek-n-eat-tk30101040n",
     supplierPrice: 6.61,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -558,7 +558,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "150 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "trek-n-eat-tk30101005n",
     supplierPrice: 6.00,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -577,7 +577,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "50 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "naak-ultra-energy-caramel",
     supplierPrice: 3.15,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -615,7 +615,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "320 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "pro-performance-55l",
     supplierPrice: 25.02,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -673,7 +673,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "100 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "trek-n-eat-chocolat",
     supplierPrice: 6.53,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -692,7 +692,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "150 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "trek-n-eat-legumes",
     supplierPrice: 7.95,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -1082,7 +1082,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "350 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierPrice: 3.50,
     variants: [
       { label: "×10 bambou 90cm", description: "10 tuteurs bambou 90 cm — pour tomates cerises, haricots grimpants et petits arbustes. Naturels, résistants, biodégradables en fin de vie.", price: 7, originalPrice: 7, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg" },
@@ -1106,7 +1106,7 @@ const PRODUCTS = [
     shipping: "Livraison 3-5 jours",
     weight: "5 kg",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierPrice: 5.00,
     variants: [
       { label: "5L — semis et boutures", description: "Terreau bio 5L pour semis et boutures — texture fine ultra-légère favorisant la germination. Sans tourbe, enrichi compost. Idéal en plateau de semis.", price: 10, originalPrice: 10, supplierPrice: 5.00, image: "img/jard_terreau.jpg" },
@@ -1243,38 +1243,38 @@ const PRODUCTS_JARDINAGE = [
   { id: 102, name: "Bêche de jardin professionnelle", price: 30.00, supplier: "CJdropshipping", supplierPrice: 20.4, stripeLink: "https://buy.stripe.com/7sY6ozbn5705brBg2qcfM2n", category: "Jardinage", description: "Lame acier trempé, manche en bois de frêne 120cm. Idéale pour retourner la terre et creuser.", badges: ["Essentiel"], rating: 4.6, reviews: 67, image: "images/jardinage/beche.jpg", shipping: "Livraison 3-5 jours", weight: "1.8 kg", inStock: true },
   { id: 103, name: "Sécateur professionnel à lame franche", price: 22.00, supplier: "CJdropshipping", supplierPrice: 14.96, stripeLink: "https://buy.stripe.com/7sY9AL9eX0BH2V54jIcfM2o", category: "Jardinage", description: "Lame en acier SK5 trempé, poignée ergonomique. Coupe nette jusqu'à 25mm de diamètre.", badges: ["Bio"], rating: 4.7, reviews: 145, image: "images/jardinage/secateur.jpg", shipping: "Livraison 2-3 jours", weight: "220 g", inStock: true },
   { id: 104, name: "Serre de balcon 4 étagères", price: 36.00, supplier: "CJdropshipping", supplierPrice: 24.48, stripeLink: "https://buy.stripe.com/cNi5kv4YHckpgLVg2qcfM2p", category: "Jardinage", description: "Structure acier + housse PE transparente. 143x73x61cm. Parfaite pour balcon ou terrasse.", badges: ["Nouveau"], rating: 4.4, reviews: 112, image: "images/jardinage/serre_balcon.jpg", shipping: "Livraison 3-5 jours", weight: "3.2 kg", inStock: true },
-  { id: 105, name: "Mini serre tunnel de jardin 6m²", price: 59.00, supplier: "BigBuy", supplierPrice: 40.12, stripeLink: "https://buy.stripe.com/aFafZ90Irdot8fpcQecfM2q", category: "Jardinage", description: "Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.", badges: [], rating: 4.3, reviews: 78, image: "images/jardinage/serre_tunnel.jpg", shipping: "Livraison 5-7 jours", weight: "8 kg", inStock: true },
-  { id: 106, name: "Composteur de jardin 300L", price: 47.00, supplier: "BigBuy", supplierPrice: 31.96, stripeLink: "https://buy.stripe.com/8x2dR1aj1fwB3Z94jIcfM2r", category: "Jardinage", description: "Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.", badges: ["Bio"], rating: 4.5, reviews: 134, image: "images/jardinage/composteur.jpg", shipping: "Livraison 5-7 jours", weight: "4.5 kg", inStock: true },
-  { id: 107, name: "Lombricomposteur 3 niveaux", price: 44.00, supplier: "BigBuy", supplierPrice: 29.92, stripeLink: "https://buy.stripe.com/28E6ozaj11FL1R1aI6cfM2s", category: "Jardinage", description: "Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.", badges: ["Bio", "Nouveau"], rating: 4.4, reviews: 56, image: "images/jardinage/lombri.jpg", shipping: "Livraison 3-5 jours", weight: "2.8 kg", inStock: true },
-  { id: 108, name: "Arrosoir 10L bec long en zinc", price: 27.00, supplier: "BigBuy", supplierPrice: 18.36, stripeLink: "https://buy.stripe.com/4gMfZ92Qz0BH53daI6cfM2t", category: "Jardinage", description: "Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.", badges: [], rating: 4.5, reviews: 98, image: "images/jardinage/arrosoir.jpg", shipping: "Livraison 3-5 jours", weight: "1.1 kg", inStock: true },
+  { id: 105, name: "Mini serre tunnel de jardin 6m²", price: 59.00, supplier: "CJdropshipping", supplierPrice: 40.12, stripeLink: "https://buy.stripe.com/aFafZ90Irdot8fpcQecfM2q", category: "Jardinage", description: "Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.", badges: [], rating: 4.3, reviews: 78, image: "images/jardinage/serre_tunnel.jpg", shipping: "Livraison 5-7 jours", weight: "8 kg", inStock: true },
+  { id: 106, name: "Composteur de jardin 300L", price: 47.00, supplier: "CJdropshipping", supplierPrice: 31.96, stripeLink: "https://buy.stripe.com/8x2dR1aj1fwB3Z94jIcfM2r", category: "Jardinage", description: "Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.", badges: ["Bio"], rating: 4.5, reviews: 134, image: "images/jardinage/composteur.jpg", shipping: "Livraison 5-7 jours", weight: "4.5 kg", inStock: true },
+  { id: 107, name: "Lombricomposteur 3 niveaux", price: 44.00, supplier: "CJdropshipping", supplierPrice: 29.92, stripeLink: "https://buy.stripe.com/28E6ozaj11FL1R1aI6cfM2s", category: "Jardinage", description: "Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.", badges: ["Bio", "Nouveau"], rating: 4.4, reviews: 56, image: "images/jardinage/lombri.jpg", shipping: "Livraison 3-5 jours", weight: "2.8 kg", inStock: true },
+  { id: 108, name: "Arrosoir 10L bec long en zinc", price: 27.00, supplier: "CJdropshipping", supplierPrice: 18.36, stripeLink: "https://buy.stripe.com/4gMfZ92Qz0BH53daI6cfM2t", category: "Jardinage", description: "Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.", badges: [], rating: 4.5, reviews: 98, image: "images/jardinage/arrosoir.jpg", shipping: "Livraison 3-5 jours", weight: "1.1 kg", inStock: true },
   { id: 109, name: "Kit goutte-à-goutte 50 plantes", price: 32.00, supplier: "CJdropshipping", supplierPrice: 21.76, stripeLink: "https://buy.stripe.com/cNifZ98aT705cvFbMacfM2u", category: "Jardinage", description: "Système d'irrigation automatique. 15m de tuyau, 50 goutteurs réglables. Économise 70% d'eau.", badges: ["Essentiel"], rating: 4.6, reviews: 203, image: "images/jardinage/goutte.jpg", shipping: "Livraison 2-3 jours", weight: "800 g", inStock: true },
-  { id: 110, name: "Carré potager surélevé en bois 120x60cm", price: 50.00, supplier: "BigBuy", supplierPrice: 34, stripeLink: "https://buy.stripe.com/6oUdR162L705brBbMacfM2v", category: "Jardinage", description: "Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.", badges: ["Essentiel"], rating: 4.5, reviews: 167, image: "images/jardinage/carre_potager.jpg", shipping: "Livraison 5-7 jours", weight: "6 kg", inStock: true },
+  { id: 110, name: "Carré potager surélevé en bois 120x60cm", price: 50.00, supplier: "CJdropshipping", supplierPrice: 34, stripeLink: "https://buy.stripe.com/6oUdR162L705brBbMacfM2v", category: "Jardinage", description: "Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.", badges: ["Essentiel"], rating: 4.5, reviews: 167, image: "images/jardinage/carre_potager.jpg", shipping: "Livraison 5-7 jours", weight: "6 kg", inStock: true },
   { id: 111, name: "Tour à fraises & plantes aromatiques", price: 22.00, supplier: "CJdropshipping", supplierPrice: 14.96, stripeLink: "https://buy.stripe.com/14A5kvdvd8490MXg2qcfM2w", category: "Jardinage", description: "5 poches de plantation empilables. Culture verticale, gain de place. Parfait pour balcon.", badges: ["Nouveau"], rating: 4.3, reviews: 44, image: "images/jardinage/tour_fraises.jpg", shipping: "Livraison 2-3 jours", weight: "400 g", inStock: true },
-  { id: 112, name: "Filet anti-insectes 2x5m", price: 19.00, supplier: "BigBuy", supplierPrice: 12.92, stripeLink: "https://buy.stripe.com/4gM7sDaj1705eDN3fEcfM2x", category: "Jardinage", description: "Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.", badges: ["Bio"], rating: 4.4, reviews: 88, image: "images/jardinage/filet.jpg", shipping: "Livraison 2-3 jours", weight: "300 g", inStock: true },
-  { id: 113, name: "Voile d'hivernage 30g/m² - 10x2m", price: 17.00, supplier: "BigBuy", supplierPrice: 11.56, stripeLink: "https://buy.stripe.com/cNi9AL62L2JP53d8zYcfM2y", category: "Jardinage", description: "Protège vos cultures jusqu'à -6°C. Perméable à l'eau et à la lumière. Réutilisable plusieurs saisons.", badges: ["Essentiel"], rating: 4.5, reviews: 121, image: "images/jardinage/voile.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true },
-  { id: 114, name: "Débroussailleuse électrique filaire 600W", price: 52.00, supplier: "BigBuy", supplierPrice: 35.36, stripeLink: "https://buy.stripe.com/14AaEPezhckpdzJ4jIcfM2z", category: "Jardinage", description: "Tête de coupe rotative, fil nylon ø1,6mm, poignée ergonomique. Légère (~2,5 kg), câble 10m inclus.", badges: [], rating: 4.3, reviews: 67, image: "images/jardinage2/debroussailleuse_filaire.jpg", shipping: "Livraison 3-5 jours", weight: "2.5 kg", inStock: true },
-  { id: 115, name: "Débroussailleuse sans fil batterie 20V", price: 79.00, supplier: "BigBuy", supplierPrice: 53.72, stripeLink: "https://buy.stripe.com/3cI00b62L0BH7bl8zYcfM2A", category: "Jardinage", description: "Li-Ion 20V, tête à double fil, autonomie ~35 min, 2,8 kg. Démarrage instantané, rechargeable en 1h.", badges: ["Nouveau"], rating: 4.4, reviews: 53, image: "images/jardinage2/debroussailleuse_batterie.jpg", shipping: "Livraison 3-5 jours", weight: "2.8 kg", inStock: true },
+  { id: 112, name: "Filet anti-insectes 2x5m", price: 19.00, supplier: "CJdropshipping", supplierPrice: 12.92, stripeLink: "https://buy.stripe.com/4gM7sDaj1705eDN3fEcfM2x", category: "Jardinage", description: "Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.", badges: ["Bio"], rating: 4.4, reviews: 88, image: "images/jardinage/filet.jpg", shipping: "Livraison 2-3 jours", weight: "300 g", inStock: true },
+  { id: 113, name: "Voile d'hivernage 30g/m² - 10x2m", price: 17.00, supplier: "CJdropshipping", supplierPrice: 11.56, stripeLink: "https://buy.stripe.com/cNi9AL62L2JP53d8zYcfM2y", category: "Jardinage", description: "Protège vos cultures jusqu'à -6°C. Perméable à l'eau et à la lumière. Réutilisable plusieurs saisons.", badges: ["Essentiel"], rating: 4.5, reviews: 121, image: "images/jardinage/voile.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true },
+  { id: 114, name: "Débroussailleuse électrique filaire 600W", price: 52.00, supplier: "CJdropshipping", supplierPrice: 35.36, stripeLink: "https://buy.stripe.com/14AaEPezhckpdzJ4jIcfM2z", category: "Jardinage", description: "Tête de coupe rotative, fil nylon ø1,6mm, poignée ergonomique. Légère (~2,5 kg), câble 10m inclus.", badges: [], rating: 4.3, reviews: 67, image: "images/jardinage2/debroussailleuse_filaire.jpg", shipping: "Livraison 3-5 jours", weight: "2.5 kg", inStock: true },
+  { id: 115, name: "Débroussailleuse sans fil batterie 20V", price: 79.00, supplier: "CJdropshipping", supplierPrice: 53.72, stripeLink: "https://buy.stripe.com/3cI00b62L0BH7bl8zYcfM2A", category: "Jardinage", description: "Li-Ion 20V, tête à double fil, autonomie ~35 min, 2,8 kg. Démarrage instantané, rechargeable en 1h.", badges: ["Nouveau"], rating: 4.4, reviews: 53, image: "images/jardinage2/debroussailleuse_batterie.jpg", shipping: "Livraison 3-5 jours", weight: "2.8 kg", inStock: true },
   { id: 116, name: "Taille-haie électrique 450W 45cm", price: 47.00, supplier: "CJdropshipping", supplierPrice: 31.96, stripeLink: "https://buy.stripe.com/8x23cn4YHesxfHR4jIcfM2B", category: "Jardinage", description: "Lame double action 45cm, espacement dents 16mm, poignée rotative 180°. Léger (2,2 kg).", badges: [], rating: 4.4, reviews: 78, image: "images/jardinage2/taillehaie.jpg", shipping: "Livraison 3-5 jours", weight: "2.2 kg", inStock: true },
-  { id: 117, name: "Souffleur-aspirateur de feuilles 3-en-1 2800W", price: 42.00, supplier: "BigBuy", supplierPrice: 28.56, stripeLink: "https://buy.stripe.com/5kQ4grezh7050MX8zYcfM2C", category: "Jardinage", description: "Souffle, aspire et broie. Sac collecteur 45L, vitesse d'air 290 km/h. Rapport broyage 10:1.", badges: [], rating: 4.3, reviews: 45, image: "images/jardinage2/souffleur.jpg", shipping: "Livraison 3-5 jours", weight: "3.1 kg", inStock: true },
+  { id: 117, name: "Souffleur-aspirateur de feuilles 3-en-1 2800W", price: 42.00, supplier: "CJdropshipping", supplierPrice: 28.56, stripeLink: "https://buy.stripe.com/5kQ4grezh7050MX8zYcfM2C", category: "Jardinage", description: "Souffle, aspire et broie. Sac collecteur 45L, vitesse d'air 290 km/h. Rapport broyage 10:1.", badges: [], rating: 4.3, reviews: 45, image: "images/jardinage2/souffleur.jpg", shipping: "Livraison 3-5 jours", weight: "3.1 kg", inStock: true },
   { id: 118, name: "Tondeuse à gazon électrique 1400W 32cm", price: 91.00, supplier: "CJdropshipping", supplierPrice: 61.88, stripeLink: "https://buy.stripe.com/7sY8wH4YH2JPfHR6rQcfM2D", category: "Jardinage", description: "Largeur de coupe 32cm, 5 hauteurs (25-70mm), bac 30L. Idéale jusqu'à 200 m². Légère (8 kg).", badges: ["Bestseller"], rating: 4.5, reviews: 134, image: "images/jardinage2/tondeuse.jpg", shipping: "Livraison 5-7 jours", weight: "8 kg", inStock: true },
-  { id: 119, name: "Scarificateur aérateur 2-en-1 1300W 32cm", price: 69.00, supplier: "BigBuy", supplierPrice: 46.92, stripeLink: "https://buy.stripe.com/aFa28j1Mv0BH3Z917wcfM2E", category: "Jardinage", description: "Largeur 32cm, profondeur réglable sur 5 niveaux, bac 30L. Régénère la pelouse, élimine le feutre.", badges: [], rating: 4.4, reviews: 56, image: "images/jardinage2/scarificateur.jpg", shipping: "Livraison 5-7 jours", weight: "5.5 kg", inStock: true },
-  { id: 120, name: "Coupe-bordures électrique 350W", price: 33.00, supplier: "BigBuy", supplierPrice: 22.44, stripeLink: "https://buy.stripe.com/4gM6oz76Pesx2V5cQecfM2F", category: "Jardinage", description: "Tête pivotante 180°, bobine automatique, manche télescopique. Ultra-léger (1,4 kg).", badges: [], rating: 4.3, reviews: 67, image: "images/jardinage2/coupebordures.jpg", shipping: "Livraison 3-5 jours", weight: "1.4 kg", inStock: true },
+  { id: 119, name: "Scarificateur aérateur 2-en-1 1300W 32cm", price: 69.00, supplier: "CJdropshipping", supplierPrice: 46.92, stripeLink: "https://buy.stripe.com/aFa28j1Mv0BH3Z917wcfM2E", category: "Jardinage", description: "Largeur 32cm, profondeur réglable sur 5 niveaux, bac 30L. Régénère la pelouse, élimine le feutre.", badges: [], rating: 4.4, reviews: 56, image: "images/jardinage2/scarificateur.jpg", shipping: "Livraison 5-7 jours", weight: "5.5 kg", inStock: true },
+  { id: 120, name: "Coupe-bordures électrique 350W", price: 33.00, supplier: "CJdropshipping", supplierPrice: 22.44, stripeLink: "https://buy.stripe.com/4gM6oz76Pesx2V5cQecfM2F", category: "Jardinage", description: "Tête pivotante 180°, bobine automatique, manche télescopique. Ultra-léger (1,4 kg).", badges: [], rating: 4.3, reviews: 67, image: "images/jardinage2/coupebordures.jpg", shipping: "Livraison 3-5 jours", weight: "1.4 kg", inStock: true },
   { id: 121, name: "Pulvérisateur à pression 16L sur roues", price: 39.00, supplier: "CJdropshipping", supplierPrice: 26.52, stripeLink: "https://buy.stripe.com/28E28jaj1achanx4jIcfM2G", category: "Jardinage", description: "Chariot à roues, lance télescopique 1,2m, jet continu/brumisation. Grande capacité 16L.", badges: [], rating: 4.4, reviews: 89, image: "images/jardinage2/pulverisateur.jpg", shipping: "Livraison 3-5 jours", weight: "2.8 kg", inStock: true },
   { id: 122, name: "Bâche de jardin imperméable 4x6m", price: 30.00, supplier: "CJdropshipping", supplierPrice: 20.4, stripeLink: "https://buy.stripe.com/dRm6ozezh705brB3fEcfM2H", category: "Jardinage", description: "90g/m², oeillets tous les 50cm, résistante UV. Couvre bois, compost, potager, terrasse.", badges: [], rating: 4.3, reviews: 56, image: "images/jardinage2/bache.jpg", shipping: "Livraison 3-5 jours", weight: "1.2 kg", inStock: true },
-  { id: 123, name: "Brouette pliante en acier galvanisé 100L", price: 59.00, supplier: "BigBuy", supplierPrice: 40.12, stripeLink: "https://buy.stripe.com/3cI6ozcr92JP1R1aI6cfM2I", category: "Jardinage", description: "Roue pneumatique anti-crevaison, charge max 150 kg. Pliable pour stockage compact. Sans outil.", badges: ["Essentiel"], rating: 4.5, reviews: 112, image: "images/jardinage2/brouette.jpg", shipping: "Livraison 5-7 jours", weight: "9 kg", inStock: true },
+  { id: 123, name: "Brouette pliante en acier galvanisé 100L", price: 59.00, supplier: "CJdropshipping", supplierPrice: 40.12, stripeLink: "https://buy.stripe.com/3cI6ozcr92JP1R1aI6cfM2I", category: "Jardinage", description: "Roue pneumatique anti-crevaison, charge max 150 kg. Pliable pour stockage compact. Sans outil.", badges: ["Essentiel"], rating: 4.5, reviews: 112, image: "images/jardinage2/brouette.jpg", shipping: "Livraison 5-7 jours", weight: "9 kg", inStock: true },
   { id: 124, name: "Sécateur Pro Tête Rotative", price: 7.00, supplier: "CJdropshipping", supplierPrice: 4.76, stripeLink: "https://buy.stripe.com/fZueV50Ir7050MXcQecfM2J", category: "Jardinage", description: "Sécateur à tête rotative pour réduire la fatigue. Lame inox tranchante, ressort anti-retour. Taille précise branches jusqu'à 2 cm.", badges: ["Nouveau"], rating: 4.5, reviews: 34, image: "https://oss-cf.cjdropshipping.com/product/2026/05/11/06/6f6e968a-7d4d-42a6-a31f-ca0c7006a187_trans.jpeg", shipping: "Livraison 5-7 jours", weight: "120 g", inStock: true },
   { id: 125, name: "Étagère Plantes Multi-niveaux Style Nordique", price: 32.00, supplier: "CJdropshipping", supplierPrice: 21.76, stripeLink: "https://buy.stripe.com/6oU3cn8aTesx53ddUicfM2K", category: "Jardinage", description: "Présentoir à plantes intérieur 4 niveaux, style scandinave. Idéal pour succulentes, plantes grasses et pothos.", badges: ["Nouveau"], rating: 4.4, reviews: 28, image: "https://cf.cjdropshipping.com/quick/product/f4c78289-239f-4259-846f-f2d022ba1255.jpg", shipping: "Livraison 5-7 jours", weight: "2 kg", inStock: true },
   { id: 126, name: "Lampe Solaire Jardin 3 Têtes - Étanche IP65", price: 32.00, supplier: "CJdropshipping", supplierPrice: 21.76, stripeLink: "https://buy.stripe.com/bJe4gr62L1FLanx5nMcfM2L", category: "Jardinage", description: "Lampe de jardin solaire 3 têtes orientables. Charge automatique le jour, éclairage la nuit. Imperméable IP65.", badges: ["Nouveau"], rating: 4.5, reviews: 42, image: "https://cf.cjdropshipping.com/quick/product/f354d75d-6fcc-4c87-8f37-9b6f24b921a3.jpg", shipping: "Livraison 5-7 jours", weight: "350 g", inStock: true },
-  { id: 127, name: "Gants de jardinage résistants aux épines", price: 9.00, supplier: "BigBuy", supplierPrice: 6.12, stripeLink: "https://buy.stripe.com/3cI3cnfDl84953dg2qcfM2M", category: "Jardinage", description: "Cuir de vachette paume, manchette longue. S / M / L / XL en kaki ou rose.", badges: [], rating: 4.4, reviews: 67, image: "img/jard_gants.jpg", shipping: "Livraison 2-3 jours", weight: "150 g", inStock: true },
-  { id: 128, name: "Arrosoir en acier galvanisé", price: 22.00, supplier: "BigBuy", supplierPrice: 14.96, stripeLink: "https://buy.stripe.com/6oUfZ976Pesx7blaI6cfM2N", category: "Jardinage", description: "Pomme amovible, résistant rouille. 5L vert/rouge, 8L, 10L.", badges: [], rating: 4.5, reviews: 89, image: "img/jard_arrosoir.jpg", shipping: "Livraison 3-5 jours", weight: "900 g", inStock: true },
-  { id: 129, name: "Serre de jardin tunnel modulable", price: 39.00, supplier: "BigBuy", supplierPrice: 26.52, stripeLink: "https://buy.stripe.com/aFa5kv8aT8493Z96rQcfM2O", category: "Jardinage", description: "Polyéthylène renforcé, armature acier galvanisé, ventilation zippée. 4 tailles disponibles.", badges: [], rating: 4.3, reviews: 56, image: "img/jard_serre.jpg", shipping: "Livraison 5-7 jours", weight: "5 kg", inStock: true },
+  { id: 127, name: "Gants de jardinage résistants aux épines", price: 9.00, supplier: "CJdropshipping", supplierPrice: 6.12, stripeLink: "https://buy.stripe.com/3cI3cnfDl84953dg2qcfM2M", category: "Jardinage", description: "Cuir de vachette paume, manchette longue. S / M / L / XL en kaki ou rose.", badges: [], rating: 4.4, reviews: 67, image: "img/jard_gants.jpg", shipping: "Livraison 2-3 jours", weight: "150 g", inStock: true },
+  { id: 128, name: "Arrosoir en acier galvanisé", price: 22.00, supplier: "CJdropshipping", supplierPrice: 14.96, stripeLink: "https://buy.stripe.com/6oUfZ976Pesx7blaI6cfM2N", category: "Jardinage", description: "Pomme amovible, résistant rouille. 5L vert/rouge, 8L, 10L.", badges: [], rating: 4.5, reviews: 89, image: "img/jard_arrosoir.jpg", shipping: "Livraison 3-5 jours", weight: "900 g", inStock: true },
+  { id: 129, name: "Serre de jardin tunnel modulable", price: 39.00, supplier: "CJdropshipping", supplierPrice: 26.52, stripeLink: "https://buy.stripe.com/aFa5kv8aT8493Z96rQcfM2O", category: "Jardinage", description: "Polyéthylène renforcé, armature acier galvanisé, ventilation zippée. 4 tailles disponibles.", badges: [], rating: 4.3, reviews: 56, image: "img/jard_serre.jpg", shipping: "Livraison 5-7 jours", weight: "5 kg", inStock: true },
   { id: 130, name: "Tuteurs pour plantes et tomates", price: 9.00, supplier: "CJdropshipping", supplierPrice: 6.12, stripeLink: "https://buy.stripe.com/9B6aEP9eX84967h03scfM2P", category: "Jardinage", description: "Bambou ou métal. ×10/×20 pièces, 90-150cm. Réutilisables.", badges: [], rating: 4.3, reviews: 45, image: "img/jard_tuteurs.jpg", shipping: "Livraison 2-3 jours", weight: "500 g", inStock: true },
-  { id: 131, name: "Terreau universel potager bio", price: 12.00, supplier: "BigBuy", supplierPrice: 8.16, stripeLink: "https://buy.stripe.com/8x29ALezhgAF67h03scfM2Q", category: "Jardinage", description: "Compost bio, sans tourbe, texture aérée. 5L / 20L / 50L.", badges: ["Bio"], rating: 4.6, reviews: 178, image: "img/jard_terreau.jpg", shipping: "Livraison 3-5 jours", weight: "5 kg", inStock: true },
+  { id: 131, name: "Terreau universel potager bio", price: 12.00, supplier: "CJdropshipping", supplierPrice: 8.16, stripeLink: "https://buy.stripe.com/8x29ALezhgAF67h03scfM2Q", category: "Jardinage", description: "Compost bio, sans tourbe, texture aérée. 5L / 20L / 50L.", badges: ["Bio"], rating: 4.6, reviews: 178, image: "img/jard_terreau.jpg", shipping: "Livraison 3-5 jours", weight: "5 kg", inStock: true },
   { id: 132, name: "Kit semences potager 20 légumes", price: 10.00, supplier: "CJdropshipping", supplierPrice: 6.8, stripeLink: "https://buy.stripe.com/4gM28jgHpachfHR17wcfM2R", category: "Jardinage", description: "Bio, non traitées, reproductibles. De 10 à 50 variétés de légumes.", badges: ["Bio", "Nouveau"], rating: 4.7, reviews: 234, image: "img/jard_semences.jpg", shipping: "Livraison 2-3 jours", weight: "200 g", inStock: true },
-  { id: 133, name: "Composteur de jardin 300L (grande gamme)", price: 35.00, supplier: "BigBuy", supplierPrice: 23.8, stripeLink: "https://buy.stripe.com/4gM14fdvd1FL67h17wcfM2S", category: "Jardinage", description: "Plastique recyclé, trappe récupération, couvercle anti-pluie. 300L / 400L / 600L.", badges: ["Bio"], rating: 4.5, reviews: 134, image: "img/jard_composteur.jpg", shipping: "Livraison 5-7 jours", weight: "4 kg", inStock: true },
+  { id: 133, name: "Composteur de jardin 300L (grande gamme)", price: 35.00, supplier: "CJdropshipping", supplierPrice: 23.8, stripeLink: "https://buy.stripe.com/4gM14fdvd1FL67h17wcfM2S", category: "Jardinage", description: "Plastique recyclé, trappe récupération, couvercle anti-pluie. 300L / 400L / 600L.", badges: ["Bio"], rating: 4.5, reviews: 134, image: "img/jard_composteur.jpg", shipping: "Livraison 5-7 jours", weight: "4 kg", inStock: true },
   { id: 134, name: "Kit irrigation goutte à goutte 30 plantes", price: 12.00, supplier: "CJdropshipping", supplierPrice: 8.16, stripeLink: "https://buy.stripe.com/bJe8wHezh1FL9jt2bAcfM2T", category: "Jardinage", description: "Goutteurs réglables, économise 70% d'eau. 15 à 100 plantes.", badges: ["Essentiel"], rating: 4.6, reviews: 189, image: "img/jard_irrigation.jpg", shipping: "Livraison 2-3 jours", weight: "600 g", inStock: true },
   { id: 135, name: "Pots géotextiles pour potager", price: 12.00, supplier: "CJdropshipping", supplierPrice: 8.16, stripeLink: "https://buy.stripe.com/8x200b3UDachgLVbMacfM2U", category: "Jardinage", description: "Air-pruning, drainage parfait, UV-résistants. ×5 : 10L / 20L / 30L, noir ou vert.", badges: [], rating: 4.4, reviews: 98, image: "img/jard_pots.jpg", shipping: "Livraison 2-3 jours", weight: "400 g", inStock: true },
-  { id: 136, name: "Programmateur d'arrosage automatique", price: 22.00, supplier: "BigBuy", supplierPrice: 14.96, stripeLink: "https://buy.stripe.com/9B67sDezh849eDN3fEcfM2V", category: "Jardinage", description: "6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.", badges: ["Nouveau"], rating: 4.5, reviews: 67, image: "img/jard_timer.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true },
+  { id: 136, name: "Programmateur d'arrosage automatique", price: 22.00, supplier: "CJdropshipping", supplierPrice: 14.96, stripeLink: "https://buy.stripe.com/9B67sDezh849eDN3fEcfM2V", category: "Jardinage", description: "6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.", badges: ["Nouveau"], rating: 4.5, reviews: 67, image: "img/jard_timer.jpg", shipping: "Livraison 2-3 jours", weight: "250 g", inStock: true },
 
   // ── Nouveaux produits Jardinage (juin 2026) ──────────────────────────────
   // ── Nouveaux produits Jardinage (IDs 137-143) ──
@@ -1292,7 +1292,7 @@ const PRODUCTS_JARDINAGE = [
     shipping: "Livraison 5-7 jours",
     weight: "8 kg",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "cuve-pluie-300l",
     supplierPrice: 44.00,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -1340,7 +1340,7 @@ const PRODUCTS_JARDINAGE = [
     shipping: "Livraison 2-3 jours",
     weight: "1.1 kg",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "engrais-guano-1l",
     supplierPrice: 10.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -1387,7 +1387,7 @@ const PRODUCTS_JARDINAGE = [
     shipping: "Livraison 3-5 jours",
     weight: "850 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "desherbeur-gaz-2000w",
     supplierPrice: 29.00,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -1434,7 +1434,7 @@ const PRODUCTS_JARDINAGE = [
     shipping: "Livraison 3-5 jours",
     weight: "1.1 kg",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "agenouilloir-2en1",
     supplierPrice: 16.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -1446,7 +1446,7 @@ const PRODUCTS_JARDINAGE = [
 ,
 
   // ── Produits jardinage supplémentaires (IDs 144-150) ──
-  {id:144,name:"Grelinette bio 3 dents",price:38,originalPrice:55,category:"Jardinage",description:"Grelinette bio 3 dents en acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol. L'outil bio par excellence.",badges:["Nouveau","Bio"],rating:4.8,reviews:0,image:"img/grelinette.jpg",shipping:"Livraison 5-7 jours",weight:"1.8 kg",inStock:true,supplier:"BigBuy",supplierSku:"grelinette-3dents",supplierPrice:27,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"3 dents — manche hêtre 120cm",description:"Grelinette 3 dents. Acier forgé + manche hêtre 120cm. Ameublit sans retourner, préserve la vie du sol.",price:38,originalPrice:55,supplierPrice:27,supplierSku:"grelinette-3dents",image:"img/grelinette.jpg"},{label:"5 dents — manche hêtre 130cm",description:"Grelinette 5 dents pour sols lourds et argileux. Manche hêtre 130cm. Travail profond sans effort.",price:52,originalPrice:75,supplierPrice:37,supplierSku:"grelinette-5dents",image:"img/grelinette.jpg"}]},{id:145,name:"Couteau désherbeur en acier inox",price:12,originalPrice:17,category:"Jardinage",description:"Couteau désherbeur lame acier inox 18cm. Tranche les racines au ras du sol sans les arracher. Poignée ergonomique. Idéal allées, bordures, potager.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/couteau_desherbage.jpg",shipping:"Livraison 2-3 jours",weight:"180 g",inStock:true,supplier:"BigBuy",supplierSku:"couteau-desherbage-inox",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"Couteau désherbeur 18cm",description:"Couteau désherbeur 18cm inox. Tranche racines et mauvaises herbes proprement. Poignée ergonomique.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"couteau-desherbage-inox",image:"img/couteau_desherbage.jpg"}]},{id:146,name:"Système hydroponique 12 sites DWC",price:35,originalPrice:52,category:"Jardinage",description:"Système hydroponique DWC 12 sites. Bac 30L, pompe à air, pierre diffusante, 12 godets + filets. Culture laitues, herbes, fraises. 3× plus rapide qu'en terre.",badges:["Nouveau"],rating:4.6,reviews:0,image:"img/hydro_dwc.jpg",shipping:"Livraison 5-7 jours",weight:"2.4 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-hydro-dwc-12",supplierPrice:25,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"12 sites — bac 30L",description:"DWC 12 sites, bac 30L. Pompe air, diffuseur, 12 godets filets. Pour laitues, herbes, fraises.",price:35,originalPrice:52,supplierPrice:25,supplierSku:"cj-hydro-dwc-12",image:"img/hydro_dwc.jpg"},{label:"24 sites — bac 60L",description:"DWC 24 sites, bac 60L. Double pompe. Idéal production intensive herbes et petits légumes.",price:59,originalPrice:85,supplierPrice:42,supplierSku:"cj-hydro-dwc-24",image:"img/hydro_dwc.jpg"}]},{id:147,name:"Thermohygromètre digital pour serre",price:14,originalPrice:20,category:"Jardinage",description:"Thermohygromètre digital pour serre et culture indoor. Plage -50°C à +70°C, humidité 10-99%. Mémoire min/max, icône confort. Écran LCD rétroéclairé.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/thermohygrometre.jpg",shipping:"Livraison 2-3 jours",weight:"60 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-thermo-hygro",supplierPrice:9.50,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Digital LCD — température + humidité",description:"Thermohygromètre LCD. Temp -50 à +70°C, HR 10-99%. Mémoire min/max. Idéal serre et chambre de culture.",price:14,originalPrice:20,supplierPrice:9.50,supplierSku:"cj-thermo-hygro",image:"img/thermohygrometre.jpg"},{label:"WiFi — app smartphone",description:"Thermohygromètre WiFi avec app smartphone. Historique 30 jours, alertes température. Idéal pour surveiller à distance.",price:22,originalPrice:32,supplierPrice:15,supplierSku:"cj-thermo-hygro-wifi",image:"img/thermohygrometre.jpg"}]},{id:148,name:"Engrais biostimulant orties fermentées 1L",price:12,originalPrice:17,category:"Jardinage",description:"Purin d'orties concentré fermenté. 1L = 20L de solution d'arrosage. Stimule croissance, renforce résistance aux maladies, repousse insectes. 100% bio certifié.",badges:["Nouveau","Bio"],rating:4.6,reviews:0,image:"img/purin_orties.jpg",shipping:"Livraison 2-3 jours",weight:"1.05 kg",inStock:true,supplier:"BigBuy",supplierSku:"purin-orties-1l",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"1L concentré — orties",description:"Purin d'orties 1L concentré. 1L = 20L solution. Stimule croissance + repousse pucerons.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"purin-orties-1l",image:"img/purin_orties.jpg"},{label:"5L — lot économique",description:"Purin d'orties 5L. 5× plus économique. 5L = 100L de solution. Pour grand potager.",price:48,originalPrice:70,supplierPrice:34,supplierSku:"purin-orties-5l",image:"img/purin_orties.jpg"}]},{id:149,name:"Minuterie électrique 7 jours programmable",price:9,originalPrice:13,category:"Jardinage",description:"Minuterie électrique programmable 7 jours 16A. Pour lampe horticole, pompe hydroponique, chauffage serre. 20 programmes par jour. LCD, charge max 3680W.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/minuterie_16a.jpg",shipping:"Livraison 2-3 jours",weight:"80 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-timer-16a",supplierPrice:6,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Minuterie 16A — 20 programmes",description:"Minuterie mécanique 16A 7 jours. 20 programmes/jour. Max 3680W. Pour lampe de culture, pompe, chauffage.",price:9,originalPrice:13,supplierPrice:6,supplierSku:"cj-timer-16a",image:"img/minuterie_16a.jpg"}]},{id:150,name:"Substrat coco/coir culture premium 50L",price:18,originalPrice:26,category:"Jardinage",description:"Substrat de culture coco/coir premium 50L. Lavé et tamponné pH 5,8-6,2. Utilisable seul, en mélange sol ou hydroponique. Certifié OMRI bio. Excellent drainage et rétention.",badges:["Nouveau","Bio"],rating:4.5,reviews:0,image:"img/substrat_coco.jpg",shipping:"Livraison 5-7 jours",weight:"5.5 kg",inStock:true,supplier:"BigBuy",supplierSku:"substrat-coco-50l",supplierPrice:13,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"50L — bloc compressé",description:"Substrat coco 50L bloc compressé. pH 5,8-6,2. Sol, mélange ou hydro. Certifié OMRI bio.",price:18,originalPrice:26,supplierPrice:13,supplierSku:"substrat-coco-50l",image:"img/substrat_coco.jpg"},{label:"100L — lot de 2",description:"Lot de 2 blocs 50L = 100L substrat coco. Pour équiper entièrement une chambre de culture ou un grand potager.",price:34,originalPrice:49,supplierPrice:24,supplierSku:"substrat-coco-100l",image:"img/substrat_coco.jpg"}]}
+  {id:144,name:"Grelinette bio 3 dents",price:38,originalPrice:55,category:"Jardinage",description:"Grelinette bio 3 dents en acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol. L'outil bio par excellence.",badges:["Nouveau","Bio"],rating:4.8,reviews:0,image:"img/grelinette.jpg",shipping:"Livraison 5-7 jours",weight:"1.8 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"grelinette-3dents",supplierPrice:27,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"3 dents — manche hêtre 120cm",description:"Grelinette 3 dents. Acier forgé + manche hêtre 120cm. Ameublit sans retourner, préserve la vie du sol.",price:38,originalPrice:55,supplierPrice:27,supplierSku:"grelinette-3dents",image:"img/grelinette.jpg"},{label:"5 dents — manche hêtre 130cm",description:"Grelinette 5 dents pour sols lourds et argileux. Manche hêtre 130cm. Travail profond sans effort.",price:52,originalPrice:75,supplierPrice:37,supplierSku:"grelinette-5dents",image:"img/grelinette.jpg"}]},{id:145,name:"Couteau désherbeur en acier inox",price:12,originalPrice:17,category:"Jardinage",description:"Couteau désherbeur lame acier inox 18cm. Tranche les racines au ras du sol sans les arracher. Poignée ergonomique. Idéal allées, bordures, potager.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/couteau_desherbage.jpg",shipping:"Livraison 2-3 jours",weight:"180 g",inStock:true,supplier: "CJdropshipping",supplierSku:"couteau-desherbage-inox",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"Couteau désherbeur 18cm",description:"Couteau désherbeur 18cm inox. Tranche racines et mauvaises herbes proprement. Poignée ergonomique.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"couteau-desherbage-inox",image:"img/couteau_desherbage.jpg"}]},{id:146,name:"Système hydroponique 12 sites DWC",price:35,originalPrice:52,category:"Jardinage",description:"Système hydroponique DWC 12 sites. Bac 30L, pompe à air, pierre diffusante, 12 godets + filets. Culture laitues, herbes, fraises. 3× plus rapide qu'en terre.",badges:["Nouveau"],rating:4.6,reviews:0,image:"img/hydro_dwc.jpg",shipping:"Livraison 5-7 jours",weight:"2.4 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-hydro-dwc-12",supplierPrice:25,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"12 sites — bac 30L",description:"DWC 12 sites, bac 30L. Pompe air, diffuseur, 12 godets filets. Pour laitues, herbes, fraises.",price:35,originalPrice:52,supplierPrice:25,supplierSku:"cj-hydro-dwc-12",image:"img/hydro_dwc.jpg"},{label:"24 sites — bac 60L",description:"DWC 24 sites, bac 60L. Double pompe. Idéal production intensive herbes et petits légumes.",price:59,originalPrice:85,supplierPrice:42,supplierSku:"cj-hydro-dwc-24",image:"img/hydro_dwc.jpg"}]},{id:147,name:"Thermohygromètre digital pour serre",price:14,originalPrice:20,category:"Jardinage",description:"Thermohygromètre digital pour serre et culture indoor. Plage -50°C à +70°C, humidité 10-99%. Mémoire min/max, icône confort. Écran LCD rétroéclairé.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/thermohygrometre.jpg",shipping:"Livraison 2-3 jours",weight:"60 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-thermo-hygro",supplierPrice:9.50,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Digital LCD — température + humidité",description:"Thermohygromètre LCD. Temp -50 à +70°C, HR 10-99%. Mémoire min/max. Idéal serre et chambre de culture.",price:14,originalPrice:20,supplierPrice:9.50,supplierSku:"cj-thermo-hygro",image:"img/thermohygrometre.jpg"},{label:"WiFi — app smartphone",description:"Thermohygromètre WiFi avec app smartphone. Historique 30 jours, alertes température. Idéal pour surveiller à distance.",price:22,originalPrice:32,supplierPrice:15,supplierSku:"cj-thermo-hygro-wifi",image:"img/thermohygrometre.jpg"}]},{id:148,name:"Engrais biostimulant orties fermentées 1L",price:12,originalPrice:17,category:"Jardinage",description:"Purin d'orties concentré fermenté. 1L = 20L de solution d'arrosage. Stimule croissance, renforce résistance aux maladies, repousse insectes. 100% bio certifié.",badges:["Nouveau","Bio"],rating:4.6,reviews:0,image:"img/purin_orties.jpg",shipping:"Livraison 2-3 jours",weight:"1.05 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"purin-orties-1l",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"1L concentré — orties",description:"Purin d'orties 1L concentré. 1L = 20L solution. Stimule croissance + repousse pucerons.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"purin-orties-1l",image:"img/purin_orties.jpg"},{label:"5L — lot économique",description:"Purin d'orties 5L. 5× plus économique. 5L = 100L de solution. Pour grand potager.",price:48,originalPrice:70,supplierPrice:34,supplierSku:"purin-orties-5l",image:"img/purin_orties.jpg"}]},{id:149,name:"Minuterie électrique 7 jours programmable",price:9,originalPrice:13,category:"Jardinage",description:"Minuterie électrique programmable 7 jours 16A. Pour lampe horticole, pompe hydroponique, chauffage serre. 20 programmes par jour. LCD, charge max 3680W.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/minuterie_16a.jpg",shipping:"Livraison 2-3 jours",weight:"80 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-timer-16a",supplierPrice:6,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Minuterie 16A — 20 programmes",description:"Minuterie mécanique 16A 7 jours. 20 programmes/jour. Max 3680W. Pour lampe de culture, pompe, chauffage.",price:9,originalPrice:13,supplierPrice:6,supplierSku:"cj-timer-16a",image:"img/minuterie_16a.jpg"}]},{id:150,name:"Substrat coco/coir culture premium 50L",price:18,originalPrice:26,category:"Jardinage",description:"Substrat de culture coco/coir premium 50L. Lavé et tamponné pH 5,8-6,2. Utilisable seul, en mélange sol ou hydroponique. Certifié OMRI bio. Excellent drainage et rétention.",badges:["Nouveau","Bio"],rating:4.5,reviews:0,image:"img/substrat_coco.jpg",shipping:"Livraison 5-7 jours",weight:"5.5 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"substrat-coco-50l",supplierPrice:13,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"50L — bloc compressé",description:"Substrat coco 50L bloc compressé. pH 5,8-6,2. Sol, mélange ou hydro. Certifié OMRI bio.",price:18,originalPrice:26,supplierPrice:13,supplierSku:"substrat-coco-50l",image:"img/substrat_coco.jpg"},{label:"100L — lot de 2",description:"Lot de 2 blocs 50L = 100L substrat coco. Pour équiper entièrement une chambre de culture ou un grand potager.",price:34,originalPrice:49,supplierPrice:24,supplierSku:"substrat-coco-100l",image:"img/substrat_coco.jpg"}]}
 ];
 
 // ── Nouveaux produits Survie (IDs 200-207) ─────────────────────────────────
@@ -1513,7 +1513,7 @@ const PRODUCTS_SURVIE_NEW = [
     shipping: "Livraison 2-3 jours",
     weight: "280 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "kit-secours-42pcs",
     supplierPrice: 13.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -1561,7 +1561,7 @@ const PRODUCTS_SURVIE_NEW = [
     shipping: "Livraison 2-3 jours",
     weight: "200 g",
     inStock: true,
-    supplier: "BigBuy",
+    supplier: "CJdropshipping",
     supplierSku: "couverture-mylar-x4",
     supplierPrice: 6.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
@@ -1777,4 +1777,5 @@ function renderProductCard(product) {
     </div>
   `;
 }
+
 
