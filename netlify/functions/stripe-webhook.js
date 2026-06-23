@@ -198,28 +198,12 @@ exports.handler = async (event) => {
 
     const numId = parseInt(nsId);
 
-    if (numId >= 100) {
-      // Jardinage → CJDropshipping
-      const cjRef = CJ_MAP[numId];
-      if (cjRef && cjRef.vid) {
-        cjItems.push({ nsId: numId, pid: cjRef.pid, vid: cjRef.vid, qty, name });
-      } else {
-        unknownItems.push({ name, qty, nsId: numId, reason: 'CJ_MAP vide — ajouter pid/vid dans cj-map.js' });
-      }
+    // TOUS les produits → CJDropshipping
+    const cjRef = CJ_MAP[numId];
+    if (cjRef && cjRef.vid) {
+      cjItems.push({ nsId: numId, pid: cjRef.pid, vid: cjRef.vid, qty, name });
     } else {
-      // Survie → BigBuy en priorité
-      const sku = BIGBUY_SKU_MAP[numId] || BIGBUY_SKU_MAP[String(nsId)] || null;
-      if (sku) {
-        bigbuyItems.push({ sku, qty, name });
-      } else {
-        // Fallback : essayer CJ_MAP pour les produits survie aussi sourcés sur CJ
-        const cjRef = CJ_MAP[numId];
-        if (cjRef && cjRef.vid) {
-          cjItems.push({ nsId: numId, pid: cjRef.pid, vid: cjRef.vid, qty, name });
-        } else {
-          unknownItems.push({ name, qty, nsId: numId, reason: 'Ni BIGBUY_SKU_MAP ni CJ_MAP — à commander manuellement' });
-        }
-      }
+      unknownItems.push({ name, qty, nsId: numId, reason: 'Produit absent de cj-map.js — à commander manuellement sur cjdropshipping.com' });
     }
   }
 
