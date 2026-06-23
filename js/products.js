@@ -22,8 +22,8 @@ const PRODUCTS = [
     supplierPrice: 12.29,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "350 lm — 5W", description: "Version compacte 5W/350 lm. Idéale pour la randonnée légère et les sorties nocturnes courtes. Légère, autonomie standard.", price: 20, originalPrice: 23, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg" },
-      { label: "400 lm — 6W", description: "Version puissante 6W/400 lm. Pour les longues nuits en bivouac ou les sentiers techniques. Faisceau plus large et plus lumineux.", price: 24, originalPrice: 29, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg" }
+      { label: "350 lm — 5W", description: "Version compacte 5W/350 lm. Idéale pour la randonnée légère et les sorties nocturnes courtes. Légère, autonomie standard.", price: 20, originalPrice: 23, supplierPrice: 12.29, supplierSku: "velamp-5w-350lm", image: "img/prod2.jpg", stripeLink: "https://buy.stripe.com/4gMfZ94YHgAFanx4jIcfM2W" },
+      { label: "400 lm — 6W", description: "Version puissante 6W/400 lm. Pour les longues nuits en bivouac ou les sentiers techniques. Faisceau plus large et plus lumineux.", price: 24, originalPrice: 29, supplierPrice: 15.82, supplierSku: "velamp-6w-400lm", image: "img/prod1.jpg", stripeLink: "https://buy.stripe.com/28E9AL76PachfHR3fEcfM2X" }
     ]
   },
   {
@@ -40,7 +40,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "120 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/28E6ozdvd3NTbrBeYmcfM2Y",
     supplierSku: "mil-tec-15170101",
     supplierPrice: 10.52,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -59,7 +59,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "140 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/cNi8wH76PgAF7blaI6cfM2Z",
     supplierSku: "nebo-einstein-250",
     supplierPrice: 12.09,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -83,9 +83,9 @@ const PRODUCTS = [
     supplierPrice: 8.74,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "N°8 — 8,5 cm inox", description: "Le classique Opinel N°8, lame inox 8,5 cm — la taille la plus polyvalente pour la cuisine en bivouac et les usages quotidiens. Made in France.", price: 14, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg" },
-      { label: "N°9 — 9 cm carbone", description: "Opinel N°9 lame carbone 9 cm — tranchant supérieur pour les pratiquants du bushcraft. Prend un fil rasoir, s'affûte facilement sur pierre.", price: 20, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg" },
-      { label: "N°10 — 10 cm inox", description: "Opinel N°10 lame inox 10 cm — pour les travaux plus lourds : taille, découpe de bois, préparation culinaire en forêt.", price: 20, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg" }
+      { label: "N°8 — 8,5 cm inox", description: "Le classique Opinel N°8, lame inox 8,5 cm — la taille la plus polyvalente pour la cuisine en bivouac et les usages quotidiens. Made in France.", price: 14, originalPrice: 16, supplierPrice: 8.74, supplierSku: "opinel-n8-inox", image: "img/prod5.jpg", stripeLink: "https://buy.stripe.com/eVq00b3UDfwB3Z9bMacfM30" },
+      { label: "N°9 — 9 cm carbone", description: "Opinel N°9 lame carbone 9 cm — tranchant supérieur pour les pratiquants du bushcraft. Prend un fil rasoir, s'affûte facilement sur pierre.", price: 20, originalPrice: 19, supplierPrice: 10.23, supplierSku: "opinel-n9-carbone", image: "img/prod17.jpg", stripeLink: "https://buy.stripe.com/5kQcMXezhbgleDN3fEcfM31" },
+      { label: "N°10 — 10 cm inox", description: "Opinel N°10 lame inox 10 cm — pour les travaux plus lourds : taille, découpe de bois, préparation culinaire en forêt.", price: 20, originalPrice: 23, supplierPrice: 12.15, supplierSku: "opinel-n10-inox", image: "img/prod6.jpg", stripeLink: "https://buy.stripe.com/3cI8wH0Ir849dzJ5nMcfM32" }
     ]
   },
   {
@@ -107,8 +107,8 @@ const PRODUCTS = [
     supplierPrice: 11.33,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Pelle noire métal", description: "Pelle pliable métal noire — robuste et compacte. Idéale pour creuser un abri, un trou de feu ou déblayer un sentier. Poignée antidérapante.", price: 20, originalPrice: 21, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg" },
-      { label: "Cellfast Ideal Pro", description: "Pelle Cellfast Ideal Pro — version haut de gamme avec lame renforcée et manche ergonomique caoutchouté. Meilleure prise en main pour les sols durs.", price: 20, originalPrice: 21, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg" }
+      { label: "Pelle noire métal", description: "Pelle pliable métal noire — robuste et compacte. Idéale pour creuser un abri, un trou de feu ou déblayer un sentier. Poignée antidérapante.", price: 20, originalPrice: 21, supplierPrice: 11.33, supplierSku: "pelle-pliable-noire", image: "img/prod8.jpg", stripeLink: "https://buy.stripe.com/aFa00b2Qz0BH3Z98zYcfM33" },
+      { label: "Cellfast Ideal Pro", description: "Pelle Cellfast Ideal Pro — version haut de gamme avec lame renforcée et manche ergonomique caoutchouté. Meilleure prise en main pour les sols durs.", price: 20, originalPrice: 21, supplierPrice: 11.08, supplierSku: "cellfast-ideal-pro", image: "img/prod20.jpg", stripeLink: "https://buy.stripe.com/4gMeV59eXgAF3Z92bAcfM34" }
     ]
   },
   {
@@ -130,7 +130,7 @@ const PRODUCTS = [
     supplierPrice: 22.04,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "2 personnes — 205×145 cm", description: "Tente 2 places 205×145 cm — légère et rapide à monter. Parfaite pour un couple ou solo avec du matériel. Double toit imperméable.", price: 30, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg" }
+      { label: "2 personnes — 205×145 cm", description: "Tente 2 places 205×145 cm — légère et rapide à monter. Parfaite pour un couple ou solo avec du matériel. Double toit imperméable.", price: 30, originalPrice: 41, supplierPrice: 22.04, supplierSku: "bestway-68084", image: "img/prod9.jpg", stripeLink: "https://buy.stripe.com/00w6ozcr9fwB3Z92bAcfM35" }
     ]
   },
 
@@ -148,7 +148,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "350 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/cNi4gr0Ir5W1gLVaI6cfM36",
     supplierSku: "open-norte-rechaud",
     supplierPrice: 23.91,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -167,7 +167,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "115 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/8x2fZ9ezhbglanxeYmcfM37",
     supplierSku: "black-diamond-spot-400",
     supplierPrice: 26.91,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -186,7 +186,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "130 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/14A14ffDl70553dg2qcfM38",
     supplierSku: "brennenstuhl-1178780",
     supplierPrice: 21.85,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -206,7 +206,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "380 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/14AdR176P5W1gLV17wcfM39",
     supplierSku: "marbueno-10179a",
     supplierPrice: 9.09,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -225,7 +225,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "200 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/3cI4gr3UDbgl53deYmcfM3a",
     supplierSku: "stak-10w-1200lm",
     supplierPrice: 33.84,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -249,7 +249,7 @@ const PRODUCTS = [
     supplierPrice: 66.68,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "40 L — randonnée", description: "Mammut Cargon 40L — le compagnon idéal pour les randonnées de 2-4 jours. Dos ventilé, ceinture ergonomique, tissu Cordura résistant.", price: 100, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg" }
+      { label: "40 L — randonnée", description: "Mammut Cargon 40L — le compagnon idéal pour les randonnées de 2-4 jours. Dos ventilé, ceinture ergonomique, tissu Cordura résistant.", price: 100, originalPrice: 122, supplierPrice: 66.68, supplierSku: "mammut-cargon-40l", image: "img/prod22.jpg", stripeLink: "https://buy.stripe.com/9B6cMX76P3NTfHReYmcfM3b" }
     ]
   },
   {
@@ -266,7 +266,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "780 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/9B63cn62L705fHR2bAcfM3c",
     supplierSku: "mammut-alto-24",
     supplierPrice: 59.75,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -285,7 +285,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "550 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/6oU00b1Mv7053Z9aI6cfM3d",
     supplierSku: "reebok-noah",
     supplierPrice: 18.96,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -304,7 +304,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "420 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/9B614fezh8498fp9E2cfM3e",
     supplierSku: "varta-57658",
     supplierPrice: 19.81,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -323,7 +323,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "200 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/eVq00bfDldot53d7vUcfM3f",
     supplierSku: "varta-92400121810",
     supplierPrice: 5.01,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -342,7 +342,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "150 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/14A4gr4YH705fHR3fEcfM3g",
     supplierSku: "duracell-aaa-12",
     supplierPrice: 7.30,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -366,8 +366,8 @@ const PRODUCTS = [
     supplierPrice: 15.41,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "240 cm — légère", description: "Canne télescopique 240 cm — légère et maniable pour la pêche en rivière étroite, lac calme ou mare. Idéale pour débuter.", price: 20, originalPrice: 22, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg" },
-      { label: "300 cm — polyvalente", description: "Canne télescopique 300 cm — portée plus longue pour accéder aux poissons en eau profonde ou berges larges. Polyvalente toutes conditions.", price: 23, originalPrice: 29, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg" }
+      { label: "240 cm — légère", description: "Canne télescopique 240 cm — légère et maniable pour la pêche en rivière étroite, lac calme ou mare. Idéale pour débuter.", price: 20, originalPrice: 22, supplierPrice: 11.84, supplierSku: "kali-blade-240", image: "img/prod30.jpg", stripeLink: "https://buy.stripe.com/dRm00b76P1FL7bl3fEcfM3h" },
+      { label: "300 cm — polyvalente", description: "Canne télescopique 300 cm — portée plus longue pour accéder aux poissons en eau profonde ou berges larges. Polyvalente toutes conditions.", price: 23, originalPrice: 29, supplierPrice: 15.41, supplierSku: "kali-moana-300", image: "img/prod29.jpg", stripeLink: "https://buy.stripe.com/00w7sDgHp2JPgLV2bAcfM3i" }
     ]
   },
   {
@@ -384,7 +384,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "320 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/8x25kv0Irckpanx17wcfM3j",
     supplierSku: "kali-boite-rangement",
     supplierPrice: 8.01,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -403,7 +403,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "82 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/9B6eV5cr9gAF0MXg2qcfM3k",
     supplierSku: "sunstech-adventure4k",
     supplierPrice: 32.13,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -422,7 +422,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "95 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/cNibITbn598d3Z93fEcfM3l",
     supplierSku: "sk8-camav002",
     supplierPrice: 45.01,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -441,7 +441,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "35 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/eVq00bgHpdotdzJeYmcfM3m",
     supplierSku: "xiaomi-xmsh15hm",
     supplierPrice: 49.84,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -465,7 +465,7 @@ const PRODUCTS = [
     supplierPrice: 11.49,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Légère — kaki", description: "Veste légère Alphaventure Bidinamarca kaki — coupe-vent fin pour les journées fraîches. Poids plume, tient dans la poche. Coloris militaire discret.", price: 20, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg" }
+      { label: "Légère — kaki", description: "Veste légère Alphaventure Bidinamarca kaki — coupe-vent fin pour les journées fraîches. Poids plume, tient dans la poche. Coloris militaire discret.", price: 20, originalPrice: 21, supplierPrice: 11.49, supplierSku: "alphaventure-bidinamarca-kaki", image: "img/prod35.jpg", stripeLink: "https://buy.stripe.com/14AdR13UDachcvF2bAcfM3n" }
     ]
   },
   {
@@ -482,7 +482,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "285 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/6oUeV5gHp849cvF9E2cfM3o",
     supplierSku: "bd620208",
     supplierPrice: 36.63,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -501,7 +501,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "420 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/3cIfZ90Irbgl3Z93fEcfM3p",
     supplierSku: "kong-sierra-duo",
     supplierPrice: 17.08,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -520,7 +520,7 @@ const PRODUCTS = [
     shipping: "Livraison 3-5 jours",
     weight: "1.2 kg",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/4gM00bfDl4RX67hcQecfM3q",
     supplierSku: "slackline-schildkroet-15m",
     supplierPrice: 61.20,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -539,7 +539,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "500 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/4gM14f62L4RXcvFg2qcfM3r",
     supplierSku: "trek-n-eat-tk30101040n",
     supplierPrice: 6.61,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -558,7 +558,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "150 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/eVq8wHgHp2JPdzJbMacfM3s",
     supplierSku: "trek-n-eat-tk30101005n",
     supplierPrice: 6.00,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -577,7 +577,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "50 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/bJe9AL4YH5W12V55nMcfM3t",
     supplierSku: "naak-ultra-energy-caramel",
     supplierPrice: 3.15,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -596,7 +596,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "280 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/fZu4gr2Qz7053Z96rQcfM3u",
     supplierSku: "joluvi-hydratation-25l",
     supplierPrice: 7.03,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -615,7 +615,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "320 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/cNiaEPezhach67hdUicfM3v",
     supplierSku: "pro-performance-55l",
     supplierPrice: 25.02,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -635,7 +635,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "68 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/cNi00b8aT0BHdzJdUicfM3w",
     supplierSku: "casio-diver-100m",
     supplierPrice: 40.69,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -654,7 +654,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "200 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/00w7sD0Ir849anx9E2cfM3x",
     supplierSku: "trek-n-eat-hamburgers",
     supplierPrice: 8.55,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -673,7 +673,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "100 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/14A5kv8aT7059jtbMacfM3y",
     supplierSku: "trek-n-eat-chocolat",
     supplierPrice: 6.53,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -692,7 +692,7 @@ const PRODUCTS = [
     shipping: "Livraison 2-3 jours",
     weight: "150 g",
     inStock: true,
-    supplier: "CJdropshipping",
+    supplier: "CJdropshipping", stripeLink: "https://buy.stripe.com/3cI6ozfDlgAF7bl03scfM3z",
     supplierSku: "trek-n-eat-legumes",
     supplierPrice: 7.95,
     supplierUrl: "https://www.bigbuy.eu/fr"
@@ -716,7 +716,7 @@ const PRODUCTS = [
     supplierPrice: 7.88,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Regatta noire", description: "Gourde Regatta 1L noire — grande contenance pour les longues sorties. Bouchon à vis étanche, graduation lisible, résistante aux chocs.", price: 12, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg" }
+      { label: "1L — Regatta noire", description: "Gourde Regatta 1L noire — grande contenance pour les longues sorties. Bouchon à vis étanche, graduation lisible, résistante aux chocs.", price: 12, originalPrice: 15, supplierPrice: 7.88, supplierSku: "regatta-rce557-800", image: "img/prod51.jpg", stripeLink: "https://buy.stripe.com/cNifZ9ezhach0MX03scfM3A" }
     ]
   },
 
@@ -741,11 +741,11 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 3.20,
     variants: [
-      { label: "Noir", description: "Bracelet paracord noir — discret et sobre, parfait pour un usage quotidien. 3m de corde paracord 550, firestarter, sifflet, boussole intégrés.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Vert militaire", description: "Bracelet paracord vert militaire — coloris tactique pour les amateurs de survie et bushcraft. Kit 7-en-1 complet.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Kaki", description: "Bracelet paracord kaki — ton neutre polyvalent. S'associe avec tout équipement outdoor. Kit survie 7 outils intégrés.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Orange fluo", description: "Bracelet paracord orange fluo — haute visibilité pour les sports extrêmes et secours en montagne. Repérage facilité.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" },
-      { label: "Camouflage", description: "Bracelet paracord camouflage — parfait pour la chasse et les activités discrètes en forêt. Kit 7-en-1 intégral.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg" }
+      { label: "Noir", description: "Bracelet paracord noir — discret et sobre, parfait pour un usage quotidien. 3m de corde paracord 550, firestarter, sifflet, boussole intégrés.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg", stripeLink: "https://buy.stripe.com/3cI7sD9eX4RX53d7vUcfM3B" },
+      { label: "Vert militaire", description: "Bracelet paracord vert militaire — coloris tactique pour les amateurs de survie et bushcraft. Kit 7-en-1 complet.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg", stripeLink: "https://buy.stripe.com/eVq28j8aTachfHRcQecfM3C" },
+      { label: "Kaki", description: "Bracelet paracord kaki — ton neutre polyvalent. S'associe avec tout équipement outdoor. Kit survie 7 outils intégrés.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg", stripeLink: "https://buy.stripe.com/aFafZ90Irbgl2V56rQcfM3D" },
+      { label: "Orange fluo", description: "Bracelet paracord orange fluo — haute visibilité pour les sports extrêmes et secours en montagne. Repérage facilité.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg", stripeLink: "https://buy.stripe.com/6oU4gr62L0BH67heYmcfM3E" },
+      { label: "Camouflage", description: "Bracelet paracord camouflage — parfait pour la chasse et les activités discrètes en forêt. Kit 7-en-1 intégral.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_paracord.jpg", stripeLink: "https://buy.stripe.com/cNicMXaj10BH9jtbMacfM3F" }
     ]
   },
   {
@@ -765,9 +765,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 2.80,
     variants: [
-      { label: "Standard 10cm", description: "Firestarter 10 cm — version standard, idéal pour débuter. Produit jusqu'à 3 000°C d'étincelles. Compact et léger pour le sac à dos.", price: 5, originalPrice: 6, supplierPrice: 2.80, image: "img/prod_firestarter.jpg" },
-      { label: "Large 12cm — durée x3", description: "Firestarter 12 cm large — durée de vie 3× supérieure. Pour les sorties longues ou les kits 72h. Grattoir acier inclus.", price: 7, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg" },
-      { label: "XL 15cm + cordage", description: "Firestarter XL 15 cm avec cordage paracord 1m intégré — le plus endurant. Idéal pour les expéditions et l'enseignement de la survie.", price: 10, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg" }
+      { label: "Standard 10cm", description: "Firestarter 10 cm — version standard, idéal pour débuter. Produit jusqu'à 3 000°C d'étincelles. Compact et léger pour le sac à dos.", price: 5, originalPrice: 6, supplierPrice: 2.80, image: "img/prod_firestarter.jpg", stripeLink: "https://buy.stripe.com/aFadR176P2JPeDN03scfM3G" },
+      { label: "Large 12cm — durée x3", description: "Firestarter 12 cm large — durée de vie 3× supérieure. Pour les sorties longues ou les kits 72h. Grattoir acier inclus.", price: 7, originalPrice: 8, supplierPrice: 4.10, image: "img/prod_firestarter.jpg", stripeLink: "https://buy.stripe.com/eVq6oz76PbglcvFbMacfM3H" },
+      { label: "XL 15cm + cordage", description: "Firestarter XL 15 cm avec cordage paracord 1m intégré — le plus endurant. Idéal pour les expéditions et l'enseignement de la survie.", price: 10, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_firestarter.jpg", stripeLink: "https://buy.stripe.com/fZuaEP9eXckpdzJ3fEcfM3I" }
     ]
   },
   {
@@ -787,8 +787,8 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 1.80,
     variants: [
-      { label: "×1 — Individuelle", description: "1 couverture de survie isotherme — à glisser dans chaque sac à dos, voiture ou kit 72h. Légère 55g, réfléchit 90% de la chaleur.", price: 3, originalPrice: 4, supplierPrice: 1.80, image: "img/prod_couverture.jpg" },
-      { label: "×4 — Pack famille", description: "Pack 4 couvertures de survie — équipez toute la famille ou le groupe. Pratique en voyage, randonnée ou pour les préparateurs.", price: 10, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg" }
+      { label: "×1 — Individuelle", description: "1 couverture de survie isotherme — à glisser dans chaque sac à dos, voiture ou kit 72h. Légère 55g, réfléchit 90% de la chaleur.", price: 3, originalPrice: 4, supplierPrice: 1.80, image: "img/prod_couverture.jpg", stripeLink: "https://buy.stripe.com/00w5kvfDlgAF8fp03scfM3J" },
+      { label: "×4 — Pack famille", description: "Pack 4 couvertures de survie — équipez toute la famille ou le groupe. Pratique en voyage, randonnée ou pour les préparateurs.", price: 10, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_couverture.jpg", stripeLink: "https://buy.stripe.com/8x25kv1MvdotdzJ5nMcfM3K" }
     ]
   },
   {
@@ -808,9 +808,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 1.50,
     variants: [
-      { label: "Orange — 120 dB", description: "Sifflet 120 dB orange — haute visibilité et puissance maximale. Sans bille : fonctionne même mouillé. Clip de ceinture inclus.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
-      { label: "Noir — 120 dB", description: "Sifflet 120 dB noir — discret et compact. Puissance identique, parfait pour intégrer à un sac ou harnais d'escalade.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg" },
-      { label: "3-en-1 boussole+sifflet+thermomètre", description: "Kit 3-en-1 : boussole, sifflet 120 dB et thermomètre — tout en un clip. L'essentiel de navigation et sécurité en format ultra-compact.", price: 5, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_sifflet.jpg" }
+      { label: "Orange — 120 dB", description: "Sifflet 120 dB orange — haute visibilité et puissance maximale. Sans bille : fonctionne même mouillé. Clip de ceinture inclus.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg", stripeLink: "https://buy.stripe.com/8x27sD4YH3NT1R14jIcfM3L" },
+      { label: "Noir — 120 dB", description: "Sifflet 120 dB noir — discret et compact. Puissance identique, parfait pour intégrer à un sac ou harnais d'escalade.", price: 2, originalPrice: 3, supplierPrice: 1.50, image: "img/prod_sifflet.jpg", stripeLink: "https://buy.stripe.com/cNi6oz4YHgAF2V5cQecfM3M" },
+      { label: "3-en-1 boussole+sifflet+thermomètre", description: "Kit 3-en-1 : boussole, sifflet 120 dB et thermomètre — tout en un clip. L'essentiel de navigation et sécurité en format ultra-compact.", price: 5, originalPrice: 6, supplierPrice: 3.20, image: "img/prod_sifflet.jpg", stripeLink: "https://buy.stripe.com/cNi00b76Pach8fp6rQcfM3N" }
     ]
   },
   {
@@ -830,9 +830,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 7.50,
     variants: [
-      { label: "Lame 15cm — noir", description: "Couteau survie lame fixe 15 cm inox noire — format idéal pour le bushcraft, la cuisine en bivouac et les activités outdoor. Étui Cordura inclus.", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_couteau_survie.jpg" },
-      { label: "Lame 20cm + hachette", description: "Couteau 20 cm + mini-hachette intégrée — deux outils en un pour couper du bois, débiter de la viande et construire un abri en forêt.", price: 22, originalPrice: 22, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg" },
-      { label: "Machette 35cm", description: "Machette 35 cm — pour défricher, couper des branches épaisses et ouvrir un chemin en jungle ou sous-bois dense. Lame inox traitée.", price: 25, originalPrice: 30, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg" }
+      { label: "Lame 15cm — noir", description: "Couteau survie lame fixe 15 cm inox noire — format idéal pour le bushcraft, la cuisine en bivouac et les activités outdoor. Étui Cordura inclus.", price: 20, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_couteau_survie.jpg", stripeLink: "https://buy.stripe.com/3cI7sD76PdotgLV3fEcfM3O" },
+      { label: "Lame 20cm + hachette", description: "Couteau 20 cm + mini-hachette intégrée — deux outils en un pour couper du bois, débiter de la viande et construire un abri en forêt.", price: 22, originalPrice: 22, supplierPrice: 12.00, image: "img/prod_couteau_survie.jpg", stripeLink: "https://buy.stripe.com/fZudR1bn5fwBanxcQecfM3P" },
+      { label: "Machette 35cm", description: "Machette 35 cm — pour défricher, couper des branches épaisses et ouvrir un chemin en jungle ou sous-bois dense. Lame inox traitée.", price: 25, originalPrice: 30, supplierPrice: 16.50, image: "img/prod_couteau_survie.jpg", stripeLink: "https://buy.stripe.com/cNi00bcr93NTeDNg2qcfM3Q" }
     ]
   },
   {
@@ -852,9 +852,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 11.50,
     variants: [
-      { label: "Kit individuel — 12 pièces", description: "Kit survie 12 pièces individuel : couverture, firestarter, sifflet, paracord 5m, filtre eau, boussole, couteau pliant, rations, lampe, bâton lumineux, gants, trousse.", price: 30, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_kit72h.jpg" },
-      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 35, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h_famille.jpg" },
-      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 40, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h_pro.jpg" }
+      { label: "Kit individuel — 12 pièces", description: "Kit survie 12 pièces individuel : couverture, firestarter, sifflet, paracord 5m, filtre eau, boussole, couteau pliant, rations, lampe, bâton lumineux, gants, trousse.", price: 30, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_kit72h.jpg", stripeLink: "https://buy.stripe.com/eVq6oz4YHdot2V56rQcfM3R" },
+      { label: "Kit famille 4 — 24 pièces", description: "Kit survie 24 pièces pour famille de 4 — tout le nécessaire pour 72h d'autonomie. Organisé dans un sac imperméable. Prêt à saisir en urgence.", price: 35, originalPrice: 37, supplierPrice: 20.00, image: "img/prod_kit72h_famille.jpg", stripeLink: "https://buy.stripe.com/4gMcMXcr9849eDN8zYcfM3S" },
+      { label: "Kit pro — 32 pièces premium", description: "Kit survie 32 pièces premium — matériel de qualité professionnelle. Inclus radio d'urgence, filtre eau multi-étapes, outils multi-fonctions, rations 2000 kcal.", price: 40, originalPrice: 53, supplierPrice: 29.00, image: "img/prod_kit72h_pro.jpg", stripeLink: "https://buy.stripe.com/9B63cn1Mvesx9jtcQecfM3T" }
     ]
   },
   {
@@ -874,9 +874,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 7.20,
     variants: [
-      { label: "Filtre paille individuel", description: "Filtre paille individuel — buvez directement dans n'importe quelle source. Élimine 99,9999% bactéries, 0 produits chimiques. 57g, tient dans une poche.", price: 20, originalPrice: 14, supplierPrice: 7.20, image: "img/prod_filtre_eau.jpg" },
-      { label: "Filtre bouteille 0.5L", description: "Filtre bouteille 500 mL — filtration intégrée dans la bouteille. Buvez partout sans traitement chimique préalable. Capacité 100 000 litres.", price: 22, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg" },
-      { label: "Kit complet paille+bouteille+pastilles", description: "Kit complet survie eau : filtre paille + bouteille filtrante + 20 pastilles purification. Triple protection pour toutes les situations d'urgence.", price: 25, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg" }
+      { label: "Filtre paille individuel", description: "Filtre paille individuel — buvez directement dans n'importe quelle source. Élimine 99,9999% bactéries, 0 produits chimiques. 57g, tient dans une poche.", price: 20, originalPrice: 14, supplierPrice: 7.20, image: "img/prod_filtre_eau.jpg", stripeLink: "https://buy.stripe.com/14A00bfDl705gLV17wcfM3U" },
+      { label: "Filtre bouteille 0.5L", description: "Filtre bouteille 500 mL — filtration intégrée dans la bouteille. Buvez partout sans traitement chimique préalable. Capacité 100 000 litres.", price: 22, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_filtre_eau.jpg", stripeLink: "https://buy.stripe.com/28EeV58aT98d1R15nMcfM3V" },
+      { label: "Kit complet paille+bouteille+pastilles", description: "Kit complet survie eau : filtre paille + bouteille filtrante + 20 pastilles purification. Triple protection pour toutes les situations d'urgence.", price: 25, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_filtre_eau.jpg", stripeLink: "https://buy.stripe.com/5kQ5kvaj1gAF7bl8zYcfM3W" }
     ]
   },
   {
@@ -896,9 +896,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 14.50,
     variants: [
-      { label: "Paire 5km — noir", description: "Paire talkies-walkies 5 km noirs — portée optimale en forêt ou montagne. 16 canaux, IPX4, VOX, lampe LED. Batteries incluses.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/prod_talkie.jpg" },
-      { label: "Paire 8km — orange", description: "Paire talkies-walkies 8 km orange — haute visibilité et portée maximale pour les grandes distances. Idéal ski, randonnée montagne, sauvetage.", price: 42, originalPrice: 34, supplierPrice: 18.50, image: "img/prod_talkie.jpg" },
-      { label: "Pack ×4 — famille", description: "Pack 4 talkies-walkies — communicez entre tous les membres de la famille ou du groupe. Parfait pour le camping, les randonnées et les situations d'urgence.", price: 48, originalPrice: 50, supplierPrice: 27.00, image: "img/prod_talkie.jpg" }
+      { label: "Paire 5km — noir", description: "Paire talkies-walkies 5 km noirs — portée optimale en forêt ou montagne. 16 canaux, IPX4, VOX, lampe LED. Batteries incluses.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/prod_talkie.jpg", stripeLink: "https://buy.stripe.com/28EdR19eX4RX1R1g2qcfM3X" },
+      { label: "Paire 8km — orange", description: "Paire talkies-walkies 8 km orange — haute visibilité et portée maximale pour les grandes distances. Idéal ski, randonnée montagne, sauvetage.", price: 42, originalPrice: 34, supplierPrice: 18.50, image: "img/prod_talkie.jpg", stripeLink: "https://buy.stripe.com/8x29ALgHp4RX0MXeYmcfM3Y" },
+      { label: "Pack ×4 — famille", description: "Pack 4 talkies-walkies — communicez entre tous les membres de la famille ou du groupe. Parfait pour le camping, les randonnées et les situations d'urgence.", price: 48, originalPrice: 50, supplierPrice: 27.00, image: "img/prod_talkie.jpg", stripeLink: "https://buy.stripe.com/7sYfZ9gHpesx3Z93fEcfM3Z" }
     ]
   },
   {
@@ -918,11 +918,11 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 2.90,
     variants: [
-      { label: "10m — Noir", description: "Corde paracord 10m noire — longueur idéale pour monter un abri, fixer une tarp ou créer des attaches. Résistance 249 kg.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "10m — Vert militaire", description: "Corde paracord 10m vert militaire — coloris discret pour la chasse et le bushcraft. Usage : ligature, piège, ceinture d'urgence.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "10m — Camouflage", description: "Corde paracord 10m camouflage — se fond dans l'environnement. Idéale pour les pièges, les cache-cache tactiques et l'outdoor discret.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg" },
-      { label: "30m — Noir", description: "Corde paracord 30m noire — pour les grands abris, l'escalade légère, les tyroliennes. Assez de longueur pour toutes les situations de survie.", price: 10, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg" },
-      { label: "50m — Noir", description: "Corde paracord 50m noire — le grand format pour les préparateurs et enseignants survie. Peut remplacer une corde d'escalade en urgence.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg" }
+      { label: "10m — Noir", description: "Corde paracord 10m noire — longueur idéale pour monter un abri, fixer une tarp ou créer des attaches. Résistance 249 kg.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg", stripeLink: "https://buy.stripe.com/6oUaEP8aTgAFbrB3fEcfM40" },
+      { label: "10m — Vert militaire", description: "Corde paracord 10m vert militaire — coloris discret pour la chasse et le bushcraft. Usage : ligature, piège, ceinture d'urgence.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg", stripeLink: "https://buy.stripe.com/aFa14f2QzachfHReYmcfM41" },
+      { label: "10m — Camouflage", description: "Corde paracord 10m camouflage — se fond dans l'environnement. Idéale pour les pièges, les cache-cache tactiques et l'outdoor discret.", price: 7, originalPrice: 6, supplierPrice: 2.90, image: "img/prod_paracord_corde.jpg", stripeLink: "https://buy.stripe.com/3cIeV562LgAFgLV03scfM42" },
+      { label: "30m — Noir", description: "Corde paracord 30m noire — pour les grands abris, l'escalade légère, les tyroliennes. Assez de longueur pour toutes les situations de survie.", price: 10, originalPrice: 14, supplierPrice: 7.50, image: "img/prod_paracord_corde.jpg", stripeLink: "https://buy.stripe.com/aFa7sD2Qz5W153d03scfM43" },
+      { label: "50m — Noir", description: "Corde paracord 50m noire — le grand format pour les préparateurs et enseignants survie. Peut remplacer une corde d'escalade en urgence.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_paracord_corde.jpg", stripeLink: "https://buy.stripe.com/4gM6oz0Ir8492V56rQcfM44" }
     ]
   },
   {
@@ -942,9 +942,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 5.50,
     variants: [
-      { label: "Boussole simple", description: "Boussole militaire simple — lecture précise, boîtier métal, cadran phosphorescent. Parfaite pour la randonnée et l'orientation en forêt.", price: 15, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_boussole.jpg" },
-      { label: "Boussole + miroir de visée", description: "Boussole avec miroir de visée — prendre un relèvement précis sur un sommet lointain. Usage professionnel, armée et secours en montagne.", price: 17, originalPrice: 16, supplierPrice: 8.50, image: "img/prod_boussole.jpg" },
-      { label: "Kit navigation : boussole+carte+sifflet", description: "Kit navigation complet : boussole militaire + porte-carte étanche + sifflet 120 dB. Tout pour se repérer et alerter dans la nature.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_boussole.jpg" }
+      { label: "Boussole simple", description: "Boussole militaire simple — lecture précise, boîtier métal, cadran phosphorescent. Parfaite pour la randonnée et l'orientation en forêt.", price: 15, originalPrice: 10, supplierPrice: 5.50, image: "img/prod_boussole.jpg", stripeLink: "https://buy.stripe.com/fZu7sDezhesx1R1aI6cfM45" },
+      { label: "Boussole + miroir de visée", description: "Boussole avec miroir de visée — prendre un relèvement précis sur un sommet lointain. Usage professionnel, armée et secours en montagne.", price: 17, originalPrice: 16, supplierPrice: 8.50, image: "img/prod_boussole.jpg", stripeLink: "https://buy.stripe.com/14AfZ9cr95W1cvF6rQcfM46" },
+      { label: "Kit navigation : boussole+carte+sifflet", description: "Kit navigation complet : boussole militaire + porte-carte étanche + sifflet 120 dB. Tout pour se repérer et alerter dans la nature.", price: 20, originalPrice: 21, supplierPrice: 11.50, image: "img/prod_boussole.jpg", stripeLink: "https://buy.stripe.com/14AfZ9dvdgAFeDN03scfM47" }
     ]
   },
   {
@@ -964,10 +964,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 6.50,
     variants: [
-      { label: "1000 lm — Noire", description: "Lampe torche 1000 lm noire — puissante pour randonner de nuit. 5 modes, zoom, résistante IPX6. Parfaite pour le camping et la survie quotidienne.", price: 20, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Noire", description: "Lampe torche 2000 lm noire — pour les environnements difficiles et sombres. Portée jusqu'à 300m. Mode stroboscope SOS intégré.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg" },
-      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche_camo.jpg" },
-      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 27, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche_5000lm.jpg" }
+      { label: "1000 lm — Noire", description: "Lampe torche 1000 lm noire — puissante pour randonner de nuit. 5 modes, zoom, résistante IPX6. Parfaite pour le camping et la survie quotidienne.", price: 20, originalPrice: 12, supplierPrice: 6.50, image: "img/prod_torche.jpg", stripeLink: "https://buy.stripe.com/fZudR1dvdgAFgLVbMacfN00" },
+      { label: "2000 lm — Noire", description: "Lampe torche 2000 lm noire — pour les environnements difficiles et sombres. Portée jusqu'à 300m. Mode stroboscope SOS intégré.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche.jpg", stripeLink: "https://buy.stripe.com/00w00bgHp3NTeDNdUicfN01" },
+      { label: "2000 lm — Camouflage", description: "Lampe torche 2000 lm camouflage — haute puissance et discrétion pour la chasse nocturne ou les opérations tactiques.", price: 23, originalPrice: 19, supplierPrice: 10.00, image: "img/prod_torche_camo.jpg", stripeLink: "https://buy.stripe.com/00waEPbn5esxbrBbMacfN02" },
+      { label: "5000 lm — Pro", description: "Lampe torche 5000 lm Pro — la plus puissante de la gamme. Portée 500m, mode strobe aveuglant, USB-C rechargeable. Pour les professionnels.", price: 27, originalPrice: 29, supplierPrice: 15.50, image: "img/prod_torche_5000lm.jpg", stripeLink: "https://buy.stripe.com/00w8wHdvd1FL7bl3fEcfN03" }
     ]
   },
   {
@@ -987,10 +987,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 16.00,
     variants: [
-      { label: "40L — Noir", description: "Bug Out Bag 40L noir — discret en milieu urbain, robuste en forêt. Structure MOLLE, résistant à l'eau, bretelles renforcées.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg" },
-      { label: "40L — Vert militaire", description: "Bug Out Bag 40L vert militaire — se fond dans la nature. Multi-poches organisées, accès rapide aux essentiels. Idéal survivalistes.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout_vert.jpg" },
-      { label: "40L — Camouflage", description: "Bug Out Bag 40L camouflage — pour les amateurs de tactique et chasse. Tissu dense résistant, frame interne rigidifié.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout_camo.jpg" },
-      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 55, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout_60l.jpg" }
+      { label: "40L — Noir", description: "Bug Out Bag 40L noir — discret en milieu urbain, robuste en forêt. Structure MOLLE, résistant à l'eau, bretelles renforcées.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout.jpg", stripeLink: "https://buy.stripe.com/4gM8wHfDl5W153d6rQcfN04" },
+      { label: "40L — Vert militaire", description: "Bug Out Bag 40L vert militaire — se fond dans la nature. Multi-poches organisées, accès rapide aux essentiels. Idéal survivalistes.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout_vert.jpg", stripeLink: "https://buy.stripe.com/00w7sD9eXfwB7blcQecfN05" },
+      { label: "40L — Camouflage", description: "Bug Out Bag 40L camouflage — pour les amateurs de tactique et chasse. Tissu dense résistant, frame interne rigidifié.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/prod_bugout_camo.jpg", stripeLink: "https://buy.stripe.com/00w00bcr93NT8fp9E2cfN06" },
+      { label: "60L — Noir expédition", description: "Bug Out Bag 60L noir expédition — pour les évacuations longues durée. Capacité maximale, système de répartition du poids, tissu 600D.", price: 55, originalPrice: 42, supplierPrice: 23.00, image: "img/prod_bugout_60l.jpg", stripeLink: "https://buy.stripe.com/6oUfZ94YH4RX1R13fEcfN07" }
     ]
   },
 
@@ -1014,12 +1014,12 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 3.20,
     variants: [
-      { label: "S — Kaki", description: "Gants jardinage S kaki — pour petites mains. Cuir de vachette palme, manchette longue anti-égratignures. Protège des rosiers et ronces.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "M — Kaki", description: "Gants jardinage M kaki — taille universelle. Résistants, confortables, prise précise pour les travaux de plantation et désherbage.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "L — Kaki", description: "Gants jardinage L kaki — pour grandes mains masculines. Robustes, bien ventilés, adaptés aux travaux intensifs de bêchage et taille.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "XL — Kaki", description: "Gants jardinage XL kaki — format maximal pour les mains larges. Manchette extra-longue pour protéger le poignet lors de tailles épineuses.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg" },
-      { label: "M — Rose", description: "Gants jardinage M rose — version féminine élégante. Même protection cuir renforcé, coloris discret. Parfait cadeau pour jardinières.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants_rose.jpg" },
-      { label: "L — Rose", description: "Gants jardinage L rose — taille L pour mains plus grandes. Manchette longue, cuir vachette, joli coloris rose pour jardiner avec style.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants_rose.jpg" }
+      { label: "S — Kaki", description: "Gants jardinage S kaki — pour petites mains. Cuir de vachette palme, manchette longue anti-égratignures. Protège des rosiers et ronces.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg", stripeLink: "https://buy.stripe.com/6oUcMX0Iresx7bl6rQcfN08" },
+      { label: "M — Kaki", description: "Gants jardinage M kaki — taille universelle. Résistants, confortables, prise précise pour les travaux de plantation et désherbage.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg", stripeLink: "https://buy.stripe.com/5kQ7sDdvd8491R13fEcfN09" },
+      { label: "L — Kaki", description: "Gants jardinage L kaki — pour grandes mains masculines. Robustes, bien ventilés, adaptés aux travaux intensifs de bêchage et taille.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg", stripeLink: "https://buy.stripe.com/28E9ALdvdbgl9jt8zYcfN0a" },
+      { label: "XL — Kaki", description: "Gants jardinage XL kaki — format maximal pour les mains larges. Manchette extra-longue pour protéger le poignet lors de tailles épineuses.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants.jpg", stripeLink: "https://buy.stripe.com/dRmbITgHp3NTcvFeYmcfN0b" },
+      { label: "M — Rose", description: "Gants jardinage M rose — version féminine élégante. Même protection cuir renforcé, coloris discret. Parfait cadeau pour jardinières.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants_rose.jpg", stripeLink: "https://buy.stripe.com/5kQ4gr76PckpfHR3fEcfN0c" },
+      { label: "L — Rose", description: "Gants jardinage L rose — taille L pour mains plus grandes. Manchette longue, cuir vachette, joli coloris rose pour jardiner avec style.", price: 7, originalPrice: 6, supplierPrice: 3.20, image: "img/jard_gants_rose.jpg", stripeLink: "https://buy.stripe.com/4gM3cnbn5dotanx5nMcfN0d" }
     ]
   },
   {
@@ -1039,10 +1039,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 9.00,
     variants: [
-      { label: "5L — Vert", description: "Arrosoir 5L vert — format compact pour balcon, terrasse ou serre. Idéal pour les semis et les plantes en pot. Léger et maniable.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg" },
-      { label: "8L — Vert", description: "Arrosoir 8L vert — bon compromis entre capacité et maniabilité. Pour potager moyen et massifs de fleurs. Pomme fine amovible.", price: 25, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg" },
-      { label: "10L — Vert", description: "Arrosoir 10L vert — grande contenance pour arroser tout un jardin en un trajet. Moins de déplacements, plus d'efficacité.", price: 27, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg" },
-      { label: "5L — Rouge", description: "Arrosoir 5L rouge — même praticité que le vert, coloris vif pour le retrouver facilement. Bec long pour arroser sans éclabousser.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir_rouge.jpg" }
+      { label: "5L — Vert", description: "Arrosoir 5L vert — format compact pour balcon, terrasse ou serre. Idéal pour les semis et les plantes en pot. Léger et maniable.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir.jpg", stripeLink: "https://buy.stripe.com/bJe14fcr93NTcvF03scfN0e" },
+      { label: "8L — Vert", description: "Arrosoir 8L vert — bon compromis entre capacité et maniabilité. Pour potager moyen et massifs de fleurs. Pomme fine amovible.", price: 25, originalPrice: 21, supplierPrice: 11.50, image: "img/jard_arrosoir.jpg", stripeLink: "https://buy.stripe.com/14AbITaj13NTbrBeYmcfN0f" },
+      { label: "10L — Vert", description: "Arrosoir 10L vert — grande contenance pour arroser tout un jardin en un trajet. Moins de déplacements, plus d'efficacité.", price: 27, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_arrosoir.jpg", stripeLink: "https://buy.stripe.com/5kQeV51Mv8499jt03scfN0g" },
+      { label: "5L — Rouge", description: "Arrosoir 5L rouge — même praticité que le vert, coloris vif pour le retrouver facilement. Bec long pour arroser sans éclabousser.", price: 23, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_arrosoir_rouge.jpg", stripeLink: "https://buy.stripe.com/eVq7sDezhbgl2V59E2cfN0h" }
     ]
   },
   {
@@ -1062,10 +1062,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 16.00,
     variants: [
-      { label: "Petite — 100×50×80 cm", description: "Serre petite 100×50×80 cm — pour balcon ou terrasse. Protège 3-4 plants du gel et des insectes. Montage rapide, encombrement minimal.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg" },
-      { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 48, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg" },
-      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 55, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre_grande.jpg" },
-      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 70, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre_grande.jpg" }
+      { label: "Petite — 100×50×80 cm", description: "Serre petite 100×50×80 cm — pour balcon ou terrasse. Protège 3-4 plants du gel et des insectes. Montage rapide, encombrement minimal.", price: 45, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_serre.jpg", stripeLink: "https://buy.stripe.com/3cI4grcr9bgl0MX2bAcfN0i" },
+      { label: "Moyenne — 180×60×90 cm", description: "Serre moyenne 180×60×90 cm — pour 6-8 plants. Idéale pour avancer les semis de 6 semaines. Ventilation zippée sur le côté.", price: 48, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_serre.jpg", stripeLink: "https://buy.stripe.com/dRm3cn9eX849dzJ3fEcfN0j" },
+      { label: "Grande — 240×120×200 cm", description: "Serre grande 240×120×200 cm — walk-in pour entrer et travailler debout. Protège tomates, poivrons et aubergines jusqu'aux gelées tardives.", price: 55, originalPrice: 59, supplierPrice: 32.00, image: "img/jard_serre_grande.jpg", stripeLink: "https://buy.stripe.com/6oU5kvgHpbglanxeYmcfN0k" },
+      { label: "XL — 300×150×200 cm", description: "Serre XL 300×150×200 cm — la plus spacieuse, pour les jardiniers productifs. Armature acier galvanisé renforcée, bâche PE 180g/m².", price: 70, originalPrice: 81, supplierPrice: 44.50, image: "img/jard_serre_grande.jpg", stripeLink: "https://buy.stripe.com/3cI14fbn53NTdzJcQecfN0l" }
     ]
   },
   {
@@ -1085,11 +1085,11 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 3.50,
     variants: [
-      { label: "×10 bambou 90cm", description: "10 tuteurs bambou 90 cm — pour tomates cerises, haricots grimpants et petits arbustes. Naturels, résistants, biodégradables en fin de vie.", price: 7, originalPrice: 7, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg" },
-      { label: "×20 bambou 90cm", description: "20 tuteurs bambou 90 cm — pour équiper un carré potager entier. Économique, écologique, livré en lot pour un jardin bien organisé.", price: 8, originalPrice: 11, supplierPrice: 6.00, image: "img/jard_tuteurs.jpg" },
-      { label: "×10 métal 120cm", description: "10 tuteurs métal 120 cm — plus solides que le bambou, indéformables. Parfaits pour les grosses tomates, poivrons et fleurs hautes.", price: 10, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg" },
-      { label: "×20 métal 120cm", description: "20 tuteurs métal 120 cm — équiper un grand potager avec des supports durables saison après saison. Traitement anti-rouille.", price: 14, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg" },
-      { label: "×5 spirale tomates 150cm", description: "5 spirales à tomates 150 cm — le tuteur ultime pour les grosses tomates. Enroulement naturel de la tige, soutien en continu sans attache.", price: 10, originalPrice: 13, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg" }
+      { label: "×10 bambou 90cm", description: "10 tuteurs bambou 90 cm — pour tomates cerises, haricots grimpants et petits arbustes. Naturels, résistants, biodégradables en fin de vie.", price: 7, originalPrice: 7, supplierPrice: 3.50, image: "img/jard_tuteurs.jpg", stripeLink: "https://buy.stripe.com/eVqaEPfDl98d8fpg2qcfN0m" },
+      { label: "×20 bambou 90cm", description: "20 tuteurs bambou 90 cm — pour équiper un carré potager entier. Économique, écologique, livré en lot pour un jardin bien organisé.", price: 8, originalPrice: 11, supplierPrice: 6.00, image: "img/jard_tuteurs.jpg", stripeLink: "https://buy.stripe.com/7sY28j4YH0BH7blbMacfN0n" },
+      { label: "×10 métal 120cm", description: "10 tuteurs métal 120 cm — plus solides que le bambou, indéformables. Parfaits pour les grosses tomates, poivrons et fleurs hautes.", price: 10, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_tuteurs.jpg", stripeLink: "https://buy.stripe.com/14A8wHgHp705anxg2qcfN0o" },
+      { label: "×20 métal 120cm", description: "20 tuteurs métal 120 cm — équiper un grand potager avec des supports durables saison après saison. Traitement anti-rouille.", price: 14, originalPrice: 17, supplierPrice: 9.00, image: "img/jard_tuteurs.jpg", stripeLink: "https://buy.stripe.com/dRm9AL2Qz1FL67hbMacfN0p" },
+      { label: "×5 spirale tomates 150cm", description: "5 spirales à tomates 150 cm — le tuteur ultime pour les grosses tomates. Enroulement naturel de la tige, soutien en continu sans attache.", price: 10, originalPrice: 13, supplierPrice: 7.00, image: "img/jard_tuteurs.jpg", stripeLink: "https://buy.stripe.com/dRm28jfDl98d7bl17wcfN0q" }
     ]
   },
   {
@@ -1109,9 +1109,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 5.00,
     variants: [
-      { label: "5L — semis et boutures", description: "Terreau bio 5L pour semis et boutures — texture fine ultra-légère favorisant la germination. Sans tourbe, enrichi compost. Idéal en plateau de semis.", price: 10, originalPrice: 10, supplierPrice: 5.00, image: "img/jard_terreau.jpg" },
-      { label: "20L — potager", description: "Terreau bio 20L pour potager — pour remplir un carré 120×60 cm ou 4-5 grands pots. Riche en nutriments, favorise la production de légumes.", price: 12, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_terreau.jpg" },
-      { label: "50L — grand jardin", description: "Terreau bio 50L grand jardin — pour les grandes surfaces, plates-bandes et potagers familiaux. Économique, pH équilibré, longue tenue.", price: 24, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_terreau.jpg" }
+      { label: "5L — semis et boutures", description: "Terreau bio 5L pour semis et boutures — texture fine ultra-légère favorisant la germination. Sans tourbe, enrichi compost. Idéal en plateau de semis.", price: 10, originalPrice: 10, supplierPrice: 5.00, image: "img/jard_terreau.jpg", stripeLink: "https://buy.stripe.com/7sY7sDbn5705anx17wcfN0r" },
+      { label: "20L — potager", description: "Terreau bio 20L pour potager — pour remplir un carré 120×60 cm ou 4-5 grands pots. Riche en nutriments, favorise la production de légumes.", price: 12, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_terreau.jpg", stripeLink: "https://buy.stripe.com/6oU5kvfDlfwB2V53fEcfN0s" },
+      { label: "50L — grand jardin", description: "Terreau bio 50L grand jardin — pour les grandes surfaces, plates-bandes et potagers familiaux. Économique, pH équilibré, longue tenue.", price: 24, originalPrice: 30, supplierPrice: 16.00, image: "img/jard_terreau.jpg", stripeLink: "https://buy.stripe.com/8x24grgHpgAFgLV9E2cfN0t" }
     ]
   },
   {
@@ -1131,10 +1131,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 5.50,
     variants: [
-      { label: "Kit 10 légumes essentiels", description: "10 sachets de semences — les indispensables du potager débutant : tomates, courgettes, carottes, salades, radis. Non traitées, bio.", price: 13, originalPrice: 8, supplierPrice: 4.00, image: "img/jard_semences.jpg" },
-      { label: "Kit 20 légumes complet", description: "20 sachets de semences bio — pour un potager diversifié toute la saison. Printemps à automne, légumes fruits et feuilles inclus.", price: 14, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg" },
-      { label: "Kit 30 légumes + herbes", description: "30 sachets semences + herbes aromatiques — basilic, persil, ciboulette, thym inclus. Le kit complet pour l'autosuffisance alimentaire.", price: 16, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg" },
-      { label: "Kit 50 variétés premium", description: "50 variétés semences premium — dont variétés anciennes rares. Pour les passionnés voulant un potager exceptionnel et des saveurs oubliées.", price: 20, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg" }
+      { label: "Kit 10 légumes essentiels", description: "10 sachets de semences — les indispensables du potager débutant : tomates, courgettes, carottes, salades, radis. Non traitées, bio.", price: 13, originalPrice: 8, supplierPrice: 4.00, image: "img/jard_semences.jpg", stripeLink: "https://buy.stripe.com/8x25kv3UD3NTdzJeYmcfN0u" },
+      { label: "Kit 20 légumes complet", description: "20 sachets de semences bio — pour un potager diversifié toute la saison. Printemps à automne, légumes fruits et feuilles inclus.", price: 14, originalPrice: 10, supplierPrice: 5.50, image: "img/jard_semences.jpg", stripeLink: "https://buy.stripe.com/14A9AL62LbglcvF5nMcfN0v" },
+      { label: "Kit 30 légumes + herbes", description: "30 sachets semences + herbes aromatiques — basilic, persil, ciboulette, thym inclus. Le kit complet pour l'autosuffisance alimentaire.", price: 16, originalPrice: 16, supplierPrice: 8.50, image: "img/jard_semences.jpg", stripeLink: "https://buy.stripe.com/bJebITaj15W1eDN2bAcfN0w" },
+      { label: "Kit 50 variétés premium", description: "50 variétés semences premium — dont variétés anciennes rares. Pour les passionnés voulant un potager exceptionnel et des saveurs oubliées.", price: 20, originalPrice: 25, supplierPrice: 13.50, image: "img/jard_semences.jpg", stripeLink: "https://buy.stripe.com/aFa28j62L1FL8fp3fEcfN0x" }
     ]
   },
   {
@@ -1154,9 +1154,9 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 14.50,
     variants: [
-      { label: "300L — Noir", description: "Composteur 300L noir — capacité idéale pour une famille de 4. Déchets cuisine + jardin transformés en engrais en 3 mois. Trappe récupération incluse.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/jard_composteur.jpg" },
-      { label: "400L — Noir", description: "Composteur 400L noir — pour les gros producteurs de déchets verts. Plus de capacité, même robustesse. Couvercle vissé anti-nuisibles.", price: 43, originalPrice: 34, supplierPrice: 18.50, image: "img/jard_composteur.jpg" },
-      { label: "600L — Noir", description: "Composteur 600L noir — le plus grand format, pour les grands jardins et familles nombreuses. Production de compost en continu toute l'année.", price: 50, originalPrice: 45, supplierPrice: 24.50, image: "img/jard_composteur.jpg" }
+      { label: "300L — Noir", description: "Composteur 300L noir — capacité idéale pour une famille de 4. Déchets cuisine + jardin transformés en engrais en 3 mois. Trappe récupération incluse.", price: 40, originalPrice: 27, supplierPrice: 14.50, image: "img/jard_composteur.jpg", stripeLink: "https://buy.stripe.com/dRm28j0Irdot1R103scfN0y" },
+      { label: "400L — Noir", description: "Composteur 400L noir — pour les gros producteurs de déchets verts. Plus de capacité, même robustesse. Couvercle vissé anti-nuisibles.", price: 43, originalPrice: 34, supplierPrice: 18.50, image: "img/jard_composteur.jpg", stripeLink: "https://buy.stripe.com/00w5kv1Mvbgl2V59E2cfN0z" },
+      { label: "600L — Noir", description: "Composteur 600L noir — le plus grand format, pour les grands jardins et familles nombreuses. Production de compost en continu toute l'année.", price: 50, originalPrice: 45, supplierPrice: 24.50, image: "img/jard_composteur.jpg", stripeLink: "https://buy.stripe.com/28EaEP4YH98dcvF6rQcfN0A" }
     ]
   },
   {
@@ -1176,10 +1176,10 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 7.50,
     variants: [
-      { label: "Kit 15 plantes", description: "Kit goutte-à-goutte 15 plantes — pour débuter et tester l'arrosage automatique. Idéal balcon ou petite terrasse. Économise 70% d'eau.", price: 20, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 30 plantes", description: "Kit goutte-à-goutte 30 plantes — pour un carré potager complet. Tuyaux PE flexibles, goutteurs réglables 0-8L/h, connexions étanches.", price: 22, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 50 plantes + timer", description: "Kit goutte-à-goutte 50 plantes + programmateur — arrosage 100% autonome. Programmez et oubliez, même pendant les vacances.", price: 25, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg" },
-      { label: "Kit 100 plantes pro", description: "Kit goutte-à-goutte 100 plantes pro — pour les grands potagers, serres et terrasses. Débit maîtrisé, tuyaux renforcés, raccords universels.", price: 30, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg" }
+      { label: "Kit 15 plantes", description: "Kit goutte-à-goutte 15 plantes — pour débuter et tester l'arrosage automatique. Idéal balcon ou petite terrasse. Économise 70% d'eau.", price: 20, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_irrigation.jpg", stripeLink: "https://buy.stripe.com/bJe7sD76Pbgl0MXaI6cfN0B" },
+      { label: "Kit 30 plantes", description: "Kit goutte-à-goutte 30 plantes — pour un carré potager complet. Tuyaux PE flexibles, goutteurs réglables 0-8L/h, connexions étanches.", price: 22, originalPrice: 14, supplierPrice: 7.50, image: "img/jard_irrigation.jpg", stripeLink: "https://buy.stripe.com/28E8wH8aT0BH1R1eYmcfN0C" },
+      { label: "Kit 50 plantes + timer", description: "Kit goutte-à-goutte 50 plantes + programmateur — arrosage 100% autonome. Programmez et oubliez, même pendant les vacances.", price: 25, originalPrice: 24, supplierPrice: 13.00, image: "img/jard_irrigation.jpg", stripeLink: "https://buy.stripe.com/3cI6ozfDl1FLfHR5nMcfN0D" },
+      { label: "Kit 100 plantes pro", description: "Kit goutte-à-goutte 100 plantes pro — pour les grands potagers, serres et terrasses. Débit maîtrisé, tuyaux renforcés, raccords universels.", price: 30, originalPrice: 41, supplierPrice: 22.50, image: "img/jard_irrigation.jpg", stripeLink: "https://buy.stripe.com/fZu8wHfDl2JP9jteYmcfN0E" }
     ]
   },
   {
@@ -1199,12 +1199,12 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 4.50,
     variants: [
-      { label: "×5 — 10L Noir", description: "5 pots géotextiles 10L noirs — idéal fraises, herbes aromatiques, petites tomates. Air-pruning naturel, drainage parfait. Pliables hors saison.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 20L Noir", description: "5 pots géotextiles 20L noirs — pour tomates, poivrons, aubergines. Grande contenance, racines saines, rendements supérieurs à la terre.", price: 13, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 30L Noir", description: "5 pots géotextiles 30L noirs — pour arbustes fruitiers, grands légumes et cultures intensives. Résistants UV, réutilisables 5+ saisons.", price: 14, originalPrice: 15, supplierPrice: 7.80, image: "img/jard_pots.jpg" },
-      { label: "×5 — 10L Vert", description: "5 pots géotextiles 10L verts — même performance que le noir, coloris naturel discret pour balcon ou terrasse visible.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg" },
-      { label: "×5 — 20L Vert", description: "5 pots géotextiles 20L verts — capacité idéale tomates, beau coloris pour intégrer au jardin. Texture respirante anti-pourriture.", price: 13, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg" },
-      { label: "×10 — 10L Noir — lot", description: "Lot de 10 pots géotextiles 10L noirs — format économique pour équiper tout un potager. Parfait pour les semis en extérieur et fraisiers.", price: 14, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_pots.jpg" }
+      { label: "×5 — 10L Noir", description: "5 pots géotextiles 10L noirs — idéal fraises, herbes aromatiques, petites tomates. Air-pruning naturel, drainage parfait. Pliables hors saison.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg", stripeLink: "https://buy.stripe.com/eVqbITfDlgAF9jt7vUcfN0F" },
+      { label: "×5 — 20L Noir", description: "5 pots géotextiles 20L noirs — pour tomates, poivrons, aubergines. Grande contenance, racines saines, rendements supérieurs à la terre.", price: 13, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg", stripeLink: "https://buy.stripe.com/fZubITgHp0BH3Z9aI6cfN0G" },
+      { label: "×5 — 30L Noir", description: "5 pots géotextiles 30L noirs — pour arbustes fruitiers, grands légumes et cultures intensives. Résistants UV, réutilisables 5+ saisons.", price: 14, originalPrice: 15, supplierPrice: 7.80, image: "img/jard_pots.jpg", stripeLink: "https://buy.stripe.com/3cI4gr4YHdot7blaI6cfN0H" },
+      { label: "×5 — 10L Vert", description: "5 pots géotextiles 10L verts — même performance que le noir, coloris naturel discret pour balcon ou terrasse visible.", price: 11, originalPrice: 9, supplierPrice: 4.50, image: "img/jard_pots.jpg", stripeLink: "https://buy.stripe.com/28E8wHfDlckp7bl2bAcfN0I" },
+      { label: "×5 — 20L Vert", description: "5 pots géotextiles 20L verts — capacité idéale tomates, beau coloris pour intégrer au jardin. Texture respirante anti-pourriture.", price: 13, originalPrice: 12, supplierPrice: 6.50, image: "img/jard_pots.jpg", stripeLink: "https://buy.stripe.com/5kQ00b2QzgAF7blg2qcfN0J" },
+      { label: "×10 — 10L Noir — lot", description: "Lot de 10 pots géotextiles 10L noirs — format économique pour équiper tout un potager. Parfait pour les semis en extérieur et fraisiers.", price: 14, originalPrice: 15, supplierPrice: 8.00, image: "img/jard_pots.jpg", stripeLink: "https://buy.stripe.com/bJe9AL0Ir84967hdUicfN0K" }
     ]
   },
   {
@@ -1224,15 +1224,15 @@ const PRODUCTS = [
     supplier: "CJdropshipping",
     supplierPrice: 8.50,
     variants: [
-      { label: "Timer simple — 1 zone", description: "Programmateur 1 zone — pour arroser un seul tuyau ou kit goutte-à-goutte. Simple à programmer, robuste IPX5, raccord universel 3/4\".", price: 22, originalPrice: 32.9, supplierPrice: 8.50, image: "img/jard_timer.jpg" },
-      { label: "Timer double — 2 zones", description: "Programmateur 2 zones — pour gérer deux systèmes d'arrosage indépendants (potager + pelouse). 6 programmes/jour chacun.", price: 35, originalPrice: 51.9, supplierPrice: 13.50, image: "img/jard_timer.jpg" },
-      { label: "Timer WiFi — app smartphone", description: "Programmateur WiFi avec app smartphone — contrôlez et programmez depuis n'importe où. Météo intégrée, arrosage intelligent selon la pluie.", price: 49, originalPrice: 72.9, supplierPrice: 19.00, image: "img/jard_timer.jpg" }
+      { label: "Timer simple — 1 zone", description: "Programmateur 1 zone — pour arroser un seul tuyau ou kit goutte-à-goutte. Simple à programmer, robuste IPX5, raccord universel 3/4\".", price: 22, originalPrice: 32.9, supplierPrice: 8.50, image: "img/jard_timer.jpg", stripeLink: "https://buy.stripe.com/5kQ5kvcr94RXbrBaI6cfN0L" },
+      { label: "Timer double — 2 zones", description: "Programmateur 2 zones — pour gérer deux systèmes d'arrosage indépendants (potager + pelouse). 6 programmes/jour chacun.", price: 35, originalPrice: 51.9, supplierPrice: 13.50, image: "img/jard_timer.jpg", stripeLink: "https://buy.stripe.com/8x200b9eXdotbrB03scfN0M" },
+      { label: "Timer WiFi — app smartphone", description: "Programmateur WiFi avec app smartphone — contrôlez et programmez depuis n'importe où. Météo intégrée, arrosage intelligent selon la pluie.", price: 49, originalPrice: 72.9, supplierPrice: 19.00, image: "img/jard_timer.jpg", stripeLink: "https://buy.stripe.com/eVq14f8aT7058fp5nMcfN0N" }
     ]
   }
 ,
 
   // ── Énergie solaire (IDs 90-96) ──
-  {id:90,name:"Station d'énergie portable 300Wh",price:189,originalPrice:269,category:"Énergie",description:"Station LiFePO4 300Wh. Sortie AC 220V + USB-C 60W + DC 12V. Recharge solaire, voiture ou secteur. Silencieuse. Idéale coupures, camping, van.",badges:["Nouveau","Essentiel"],rating:4.7,reviews:0,image:"img/station_300wh.jpg",shipping:"Livraison 5-7 jours",weight:"3.5 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-station-300wh",supplierPrice:130,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"300Wh — AC+USB-C+DC",description:"Station 300Wh LiFePO4. Sortie 220V+USB-C 60W+DC. 500+ cycles. Recharge solaire en 3-4h.",price:189,originalPrice:269,supplierPrice:130,supplierSku:"cj-station-300wh",image:"img/station_300wh.jpg"},{label:"500Wh — version pro",description:"Station 500Wh. Sortie 220V 500W+USB-C 100W+DC. Pour usage intensif.",price:299,originalPrice:429,supplierPrice:210,supplierSku:"cj-station-500wh",image:"img/station_300wh.jpg"}]},{id:91,name:"Panneau solaire pliable 100W monocristallin",price:79,originalPrice:115,category:"Énergie",description:"Panneau solaire pliable 100W monocristallin. Efficacité 23%, ETFE, USB-A+USB-C+MC4. IPX4. Compatible toutes stations portables.",badges:["Nouveau"],rating:4.6,reviews:0,image:"img/panneau_100w.jpg",shipping:"Livraison 5-7 jours",weight:"2.1 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-panel-100w",supplierPrice:56,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"100W — 2 panneaux",description:"Panneau 100W pliable. USB-A+C+MC4. IPX4. Efficacité 23%.",price:79,originalPrice:115,supplierPrice:56,supplierSku:"cj-panel-100w",image:"img/panneau_100w.jpg"},{label:"200W — 4 panneaux",description:"Panneau 200W pliable en 4. MC4+USB. Recharge station 300Wh en 1,5-2h.",price:139,originalPrice:199,supplierPrice:98,supplierSku:"cj-panel-200w",image:"img/panneau_100w.jpg"}]},{id:92,name:"Kit solaire 200W + station 300Wh",price:249,originalPrice:359,category:"Énergie",description:"Kit solaire complet : panneau 200W + station portative 300Wh LiFePO4. Recharge en 2-3h de soleil. Zéro installation.",badges:["Nouveau","Essentiel"],rating:4.8,reviews:0,image:"img/kit_solaire_200w.jpg",shipping:"Livraison 5-7 jours",weight:"5.6 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-kit-solar-200w",supplierPrice:175,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Kit 200W + 300Wh",description:"Panneau 200W + station 300Wh. Recharge en 2-3h. Prêt à l'emploi.",price:249,originalPrice:359,supplierPrice:175,supplierSku:"cj-kit-solar-200w",image:"img/kit_solaire_200w.jpg"}]},{id:93,name:"Chargeur solaire USB pliable 21W",price:32,originalPrice:45,category:"Énergie",description:"Chargeur solaire pliable 21W. 2× USB-A + USB-C. Efficacité 22%. 380g. Pour smartphones, GPS et lampes.",badges: [],rating:4.5,reviews:0,image:"img/chargeur_solaire_21w.jpg",shipping:"Livraison 3-5 jours",weight:"380 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-charger-solar-21w",supplierPrice:22,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"21W — 3 panneaux",description:"Chargeur 21W pliable. USB-A×2+USB-C. 380g. Charge smartphone en 1,5h.",price:32,originalPrice:45,supplierPrice:22,supplierSku:"cj-charger-solar-21w",image:"img/chargeur_solaire_21w.jpg"},{label:"40W — 4 panneaux",description:"Chargeur 40W. USB-A×2+USB-C 45W+DC 18V. Charge ordinateur portable au soleil.",price:52,originalPrice:75,supplierPrice:37,supplierSku:"cj-charger-solar-40w",image:"img/chargeur_solaire_21w.jpg"}]},{id:94,name:"Batterie solaire de secours 20000mAh",price:28,originalPrice:39,category:"Énergie",description:"Batterie solaire 20000mAh panneau 5W intégré, IP66, lampe SOS LED. Charge 5 smartphones. Idéale randonnée et urgence.",badges: [],rating:4.5,reviews:0,image:"img/batterie_solaire_20000.jpg",shipping:"Livraison 3-5 jours",weight:"410 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-solar-bank-sec",supplierPrice:20,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"20000mAh — noir IP66",description:"Batterie solaire 20000mAh IP66. Panneau 5W. USB-A×2+Micro-USB. Lampe SOS. 5 charges smartphone.",price:28,originalPrice:39,supplierPrice:20,supplierSku:"cj-solar-bank-sec",image:"img/batterie_solaire_20000.jpg"}]},{id:95,name:"Lampe solaire outdoor 2000 lm",price:22,originalPrice:32,category:"Énergie",description:"Lampe solaire outdoor 2000 lm. LFP 6000mAh. IP65. Autonomie 8-12h. Détecteur mouvement. Pour jardin, terrasse, camping.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/lampe_solaire_2000.jpg",shipping:"Livraison 3-5 jours",weight:"520 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-lamp-solar-2000",supplierPrice:16,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"2000 lm + détecteur mouvement",description:"Lampe solaire 2000lm + détecteur mouvement IP65. Batterie 6000mAh. Nuit : 8-12h automatique.",price:22,originalPrice:32,supplierPrice:16,supplierSku:"cj-lamp-solar-2000",image:"img/lampe_solaire_2000.jpg"}]},{id:96,name:"Contrôleur de charge solaire MPPT 30A",price:25,originalPrice:37,category:"Énergie",description:"Régulateur MPPT 30A. 12V/24V. LCD. Jusqu'à 400W de panneaux. Protection intégrée. Pour chalet, camping-car, bateau.",badges:["Nouveau"],rating:4.4,reviews:0,image:"img/controleur_mppt.jpg",shipping:"Livraison 3-5 jours",weight:"320 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-mppt-30a",supplierPrice:18,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"MPPT 30A — 12V/24V",description:"Contrôleur MPPT 30A. 12/24V auto. LCD. Jusqu'à 400W panneaux.",price:25,originalPrice:37,supplierPrice:18,supplierSku:"cj-mppt-30a",image:"img/controleur_mppt.jpg"},{label:"MPPT 60A — 12/24/48V + Bluetooth",description:"MPPT 60A tri-tension. Jusqu'à 800W. Bluetooth + app smartphone.",price:49,originalPrice:72,supplierPrice:35,supplierSku:"cj-mppt-60a",image:"img/controleur_mppt.jpg"}]}
+  {id:90,name:"Station d'énergie portable 300Wh",price:189,originalPrice:269,category:"Énergie",description:"Station LiFePO4 300Wh. Sortie AC 220V + USB-C 60W + DC 12V. Recharge solaire, voiture ou secteur. Silencieuse. Idéale coupures, camping, van.",badges:["Nouveau","Essentiel"],rating:4.7,reviews:0,image:"img/station_300wh.jpg",shipping:"Livraison 5-7 jours",weight:"3.5 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-station-300wh",supplierPrice:130,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"300Wh — AC+USB-C+DC",description:"Station 300Wh LiFePO4. Sortie 220V+USB-C 60W+DC. 500+ cycles. Recharge solaire en 3-4h.",price:189,originalPrice:269,supplierPrice:130,supplierSku:"cj-station-300wh",image:"img/station_300wh.jpg", stripeLink: "https://buy.stripe.com/cNi28j76P1FL8fp8zYcfN0O" },{label:"500Wh — version pro",description:"Station 500Wh. Sortie 220V 500W+USB-C 100W+DC. Pour usage intensif.",price:299,originalPrice:429,supplierPrice:210,supplierSku:"cj-station-500wh",image:"img/station_300wh.jpg", stripeLink: "https://buy.stripe.com/8x26oz76P0BHbrB03scfN0P" }]},{id:91,name:"Panneau solaire pliable 100W monocristallin",price:79,originalPrice:115,category:"Énergie",description:"Panneau solaire pliable 100W monocristallin. Efficacité 23%, ETFE, USB-A+USB-C+MC4. IPX4. Compatible toutes stations portables.",badges:["Nouveau"],rating:4.6,reviews:0,image:"img/panneau_100w.jpg",shipping:"Livraison 5-7 jours",weight:"2.1 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-panel-100w",supplierPrice:56,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"100W — 2 panneaux",description:"Panneau 100W pliable. USB-A+C+MC4. IPX4. Efficacité 23%.",price:79,originalPrice:115,supplierPrice:56,supplierSku:"cj-panel-100w",image:"img/panneau_100w.jpg", stripeLink: "https://buy.stripe.com/dRmeV50Irbgl67h2bAcfN0Q" },{label:"200W — 4 panneaux",description:"Panneau 200W pliable en 4. MC4+USB. Recharge station 300Wh en 1,5-2h.",price:139,originalPrice:199,supplierPrice:98,supplierSku:"cj-panel-200w",image:"img/panneau_100w.jpg", stripeLink: "https://buy.stripe.com/8x25kvcr9bgl1R15nMcfN0R" }]},{id:92,name:"Kit solaire 200W + station 300Wh",price:249,originalPrice:359,category:"Énergie",description:"Kit solaire complet : panneau 200W + station portative 300Wh LiFePO4. Recharge en 2-3h de soleil. Zéro installation.",badges:["Nouveau","Essentiel"],rating:4.8,reviews:0,image:"img/kit_solaire_200w.jpg",shipping:"Livraison 5-7 jours",weight:"5.6 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-kit-solar-200w",supplierPrice:175,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Kit 200W + 300Wh",description:"Panneau 200W + station 300Wh. Recharge en 2-3h. Prêt à l'emploi.",price:249,originalPrice:359,supplierPrice:175,supplierSku:"cj-kit-solar-200w",image:"img/kit_solaire_200w.jpg", stripeLink: "https://buy.stripe.com/6oUaEPbn5achbrBbMacfN0S" }]},{id:93,name:"Chargeur solaire USB pliable 21W",price:32,originalPrice:45,category:"Énergie",description:"Chargeur solaire pliable 21W. 2× USB-A + USB-C. Efficacité 22%. 380g. Pour smartphones, GPS et lampes.",badges: [],rating:4.5,reviews:0,image:"img/chargeur_solaire_21w.jpg",shipping:"Livraison 3-5 jours",weight:"380 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-charger-solar-21w",supplierPrice:22,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"21W — 3 panneaux",description:"Chargeur 21W pliable. USB-A×2+USB-C. 380g. Charge smartphone en 1,5h.",price:32,originalPrice:45,supplierPrice:22,supplierSku:"cj-charger-solar-21w",image:"img/chargeur_solaire_21w.jpg", stripeLink: "https://buy.stripe.com/dRm8wHbn53NTbrB8zYcfN0T" },{label:"40W — 4 panneaux",description:"Chargeur 40W. USB-A×2+USB-C 45W+DC 18V. Charge ordinateur portable au soleil.",price:52,originalPrice:75,supplierPrice:37,supplierSku:"cj-charger-solar-40w",image:"img/chargeur_solaire_21w.jpg", stripeLink: "https://buy.stripe.com/14A5kv9eXach53dcQecfN0U" }]},{id:94,name:"Batterie solaire de secours 20000mAh",price:28,originalPrice:39,category:"Énergie",description:"Batterie solaire 20000mAh panneau 5W intégré, IP66, lampe SOS LED. Charge 5 smartphones. Idéale randonnée et urgence.",badges: [],rating:4.5,reviews:0,image:"img/batterie_solaire_20000.jpg",shipping:"Livraison 3-5 jours",weight:"410 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-solar-bank-sec",supplierPrice:20,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"20000mAh — noir IP66",description:"Batterie solaire 20000mAh IP66. Panneau 5W. USB-A×2+Micro-USB. Lampe SOS. 5 charges smartphone.",price:28,originalPrice:39,supplierPrice:20,supplierSku:"cj-solar-bank-sec",image:"img/batterie_solaire_20000.jpg", stripeLink: "https://buy.stripe.com/5kQfZ9cr9ach53d7vUcfN0V" }]},{id:95,name:"Lampe solaire outdoor 2000 lm",price:22,originalPrice:32,category:"Énergie",description:"Lampe solaire outdoor 2000 lm. LFP 6000mAh. IP65. Autonomie 8-12h. Détecteur mouvement. Pour jardin, terrasse, camping.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/lampe_solaire_2000.jpg",shipping:"Livraison 3-5 jours",weight:"520 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-lamp-solar-2000",supplierPrice:16,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"2000 lm + détecteur mouvement",description:"Lampe solaire 2000lm + détecteur mouvement IP65. Batterie 6000mAh. Nuit : 8-12h automatique.",price:22,originalPrice:32,supplierPrice:16,supplierSku:"cj-lamp-solar-2000",image:"img/lampe_solaire_2000.jpg", stripeLink: "https://buy.stripe.com/7sY3cnaj15W17bl9E2cfN0W" }]},{id:96,name:"Contrôleur de charge solaire MPPT 30A",price:25,originalPrice:37,category:"Énergie",description:"Régulateur MPPT 30A. 12V/24V. LCD. Jusqu'à 400W de panneaux. Protection intégrée. Pour chalet, camping-car, bateau.",badges:["Nouveau"],rating:4.4,reviews:0,image:"img/controleur_mppt.jpg",shipping:"Livraison 3-5 jours",weight:"320 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-mppt-30a",supplierPrice:18,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"MPPT 30A — 12V/24V",description:"Contrôleur MPPT 30A. 12/24V auto. LCD. Jusqu'à 400W panneaux.",price:25,originalPrice:37,supplierPrice:18,supplierSku:"cj-mppt-30a",image:"img/controleur_mppt.jpg", stripeLink: "https://buy.stripe.com/14A00b1Mv98deDN3fEcfN0X" },{label:"MPPT 60A — 12/24/48V + Bluetooth",description:"MPPT 60A tri-tension. Jusqu'à 800W. Bluetooth + app smartphone.",price:49,originalPrice:72,supplierPrice:35,supplierSku:"cj-mppt-60a",image:"img/controleur_mppt.jpg", stripeLink: "https://buy.stripe.com/9B64gr9eXckpbrB8zYcfN0Y" }]}
 ];
 
 // ============================================
@@ -1297,9 +1297,9 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 44.00,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "300L — Verte", description: "Cuve 300L verte — coloris naturel discret, s'intègre au jardin. Raccord gouttière universel, robinet 3/4\", couvercle anti-moustiques. Poids vide : 8kg.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-verte", image: "img/jard_cuve_pluie.jpg" },
-      { label: "300L — Noire", description: "Cuve 300L noire — absorbe la chaleur, réduit les algues. Même équipement que le modèle vert. Idéale pour les emplacements ensoleillés.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-noire", image: "img/jard_cuve_pluie.jpg" },
-      { label: "500L — Verte", description: "Cuve 500L verte — pour les grands potagers et vergers. Couvercle renforcé, double robinet. Autonomie arrosage 2-3 semaines selon consommation.", price: 100, originalPrice: 129, supplierPrice: 67.00, supplierSku: "cuve-pluie-500l-verte", image: "img/jard_cuve_pluie.jpg" }
+      { label: "300L — Verte", description: "Cuve 300L verte — coloris naturel discret, s'intègre au jardin. Raccord gouttière universel, robinet 3/4\", couvercle anti-moustiques. Poids vide : 8kg.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-verte", image: "img/jard_cuve_pluie.jpg", stripeLink: "https://buy.stripe.com/fZu14f8aT849gLVcQecfN0Z" },
+      { label: "300L — Noire", description: "Cuve 300L noire — absorbe la chaleur, réduit les algues. Même équipement que le modèle vert. Idéale pour les emplacements ensoleillés.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cuve-pluie-300l-noire", image: "img/jard_cuve_pluie.jpg", stripeLink: "https://buy.stripe.com/aFa5kv62L2JPeDN6rQcfN10" },
+      { label: "500L — Verte", description: "Cuve 500L verte — pour les grands potagers et vergers. Couvercle renforcé, double robinet. Autonomie arrosage 2-3 semaines selon consommation.", price: 100, originalPrice: 129, supplierPrice: 67.00, supplierSku: "cuve-pluie-500l-verte", image: "img/jard_cuve_pluie.jpg", stripeLink: "https://buy.stripe.com/7sY5kv76PachcvFcQecfN11" }
     ]
   },
   {
@@ -1321,9 +1321,9 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 25.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "45W — 60×60cm", description: "LED 45W spectre complet — parfaite pour une surface de 60×60cm. Intensité réglable 0-100%. Idéale semis, herbes aromatiques, jeunes plants.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-led-grow-45w", image: "img/jard_lampe_horticole.jpg" },
-      { label: "100W — 90×90cm", description: "LED 100W spectre complet — couvre 90×90cm. Assez puissante pour tomates, poivrons, fraises en phase de floraison et fructification.", price: 59, originalPrice: 85, supplierPrice: 43.00, supplierSku: "cj-led-grow-100w", image: "img/jard_lampe_horticole.jpg" },
-      { label: "200W — 120×120cm", description: "LED 200W pro — couvre 120×120cm. Pour la production intensive indoor. Rendement lumino équivalent à 600W HPS. Timer intégré 16/8h.", price: 99, originalPrice: 149, supplierPrice: 74.00, supplierSku: "cj-led-grow-200w", image: "img/jard_lampe_horticole.jpg" }
+      { label: "45W — 60×60cm", description: "LED 45W spectre complet — parfaite pour une surface de 60×60cm. Intensité réglable 0-100%. Idéale semis, herbes aromatiques, jeunes plants.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-led-grow-45w", image: "img/jard_lampe_horticole.jpg", stripeLink: "https://buy.stripe.com/14A28jaj1fwBanx9E2cfN12" },
+      { label: "100W — 90×90cm", description: "LED 100W spectre complet — couvre 90×90cm. Assez puissante pour tomates, poivrons, fraises en phase de floraison et fructification.", price: 59, originalPrice: 85, supplierPrice: 43.00, supplierSku: "cj-led-grow-100w", image: "img/jard_lampe_horticole.jpg", stripeLink: "https://buy.stripe.com/14A7sDaj198d1R1bMacfN13" },
+      { label: "200W — 120×120cm", description: "LED 200W pro — couvre 120×120cm. Pour la production intensive indoor. Rendement lumino équivalent à 600W HPS. Timer intégré 16/8h.", price: 99, originalPrice: 149, supplierPrice: 74.00, supplierSku: "cj-led-grow-200w", image: "img/jard_lampe_horticole.jpg", stripeLink: "https://buy.stripe.com/28E28jbn5gAF3Z93fEcfN14" }
     ]
   },
   {
@@ -1345,9 +1345,9 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 10.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "1L — Croissance (N fort)", description: "Formule croissance NPK 7-3-1 — riche en azote pour maximiser la végétation. Pour légumes feuilles, herbes, jeunes plants. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-croissance", image: "img/jard_engrais_guano.jpg" },
-      { label: "1L — Floraison (P fort)", description: "Formule floraison NPK 3-7-4 — riche en phosphore pour booster fleurs et fruits. Tomates, poivrons, fraises, concombres. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-floraison", image: "img/jard_engrais_guano.jpg" },
-      { label: "5L — Croissance (économique)", description: "Bidon 5L formule croissance — format économique pour grands potagers. 5L = 500L de solution d'arrosage. 5 mois d'utilisation pour 20m².", price: 55, originalPrice: 72, supplierPrice: 37.00, supplierSku: "engrais-guano-5l-croissance", image: "img/jard_engrais_guano.jpg" }
+      { label: "1L — Croissance (N fort)", description: "Formule croissance NPK 7-3-1 — riche en azote pour maximiser la végétation. Pour légumes feuilles, herbes, jeunes plants. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-croissance", image: "img/jard_engrais_guano.jpg", stripeLink: "https://buy.stripe.com/7sYeV54YH4RXanx8zYcfN15" },
+      { label: "1L — Floraison (P fort)", description: "Formule floraison NPK 3-7-4 — riche en phosphore pour booster fleurs et fruits. Tomates, poivrons, fraises, concombres. 1L = 100L dilué.", price: 14, originalPrice: 19, supplierPrice: 10.50, supplierSku: "engrais-guano-1l-floraison", image: "img/jard_engrais_guano.jpg", stripeLink: "https://buy.stripe.com/9B67sDaj1esx1R19E2cfN16" },
+      { label: "5L — Croissance (économique)", description: "Bidon 5L formule croissance — format économique pour grands potagers. 5L = 500L de solution d'arrosage. 5 mois d'utilisation pour 20m².", price: 55, originalPrice: 72, supplierPrice: 37.00, supplierSku: "engrais-guano-5l-croissance", image: "img/jard_engrais_guano.jpg", stripeLink: "https://buy.stripe.com/fZu7sD2Qz7058fpbMacfN17" }
     ]
   },
   {
@@ -1369,8 +1369,8 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 14.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "3-en-1 — pH + Humidité + Lumière", description: "Testeur 3-en-1 sans pile (pH + humidité). Module lumière sur batterie. Sonde 20cm inox. Idéal jardinage courant et potager.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-ph-meter-3in1", image: "img/jard_testeur_ph.jpg" },
-      { label: "Digital LCD — pH seul haute précision", description: "pH-mètre numérique haute précision ±0,05 pH. Écran LCD rétroéclairé. Calibration automatique. Idéal pour hydroponique et aquaponie.", price: 24, originalPrice: 35, supplierPrice: 18.00, supplierSku: "cj-ph-meter-digital", image: "img/jard_testeur_ph.jpg" }
+      { label: "3-en-1 — pH + Humidité + Lumière", description: "Testeur 3-en-1 sans pile (pH + humidité). Module lumière sur batterie. Sonde 20cm inox. Idéal jardinage courant et potager.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-ph-meter-3in1", image: "img/jard_testeur_ph.jpg", stripeLink: "https://buy.stripe.com/fZudR1gHpbgl0MX4jIcfN18" },
+      { label: "Digital LCD — pH seul haute précision", description: "pH-mètre numérique haute précision ±0,05 pH. Écran LCD rétroéclairé. Calibration automatique. Idéal pour hydroponique et aquaponie.", price: 24, originalPrice: 35, supplierPrice: 18.00, supplierSku: "cj-ph-meter-digital", image: "img/jard_testeur_ph.jpg", stripeLink: "https://buy.stripe.com/00wdR11Mv1FL67heYmcfN19" }
     ]
   },
   {
@@ -1392,8 +1392,8 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 29.00,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "2000W — manche télescopique seul", description: "Désherbeur 2000W avec manche télescopique 85-105cm. Allumage piézo. Sans cartouche incluse (cartouche butane 220g standard en commerce).", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "desherbeur-gaz-2000w", image: "img/jard_desherbeur_gaz.jpg" },
-      { label: "2000W — kit complet + 3 cartouches", description: "Désherbeur 2000W avec 3 cartouches butane 220g incluses — prêt à l'emploi. Environ 3h de désherbeur total. Housse de transport incluse.", price: 52, originalPrice: 75, supplierPrice: 39.00, supplierSku: "desherbeur-gaz-2000w-kit", image: "img/jard_desherbeur_gaz.jpg" }
+      { label: "2000W — manche télescopique seul", description: "Désherbeur 2000W avec manche télescopique 85-105cm. Allumage piézo. Sans cartouche incluse (cartouche butane 220g standard en commerce).", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "desherbeur-gaz-2000w", image: "img/jard_desherbeur_gaz.jpg", stripeLink: "https://buy.stripe.com/00w00b0Ir4RX2V5aI6cfN1a" },
+      { label: "2000W — kit complet + 3 cartouches", description: "Désherbeur 2000W avec 3 cartouches butane 220g incluses — prêt à l'emploi. Environ 3h de désherbeur total. Housse de transport incluse.", price: 52, originalPrice: 75, supplierPrice: 39.00, supplierSku: "desherbeur-gaz-2000w-kit", image: "img/jard_desherbeur_gaz.jpg", stripeLink: "https://buy.stripe.com/28E00b1Mv5W1dzJ6rQcfN1b" }
     ]
   },
   {
@@ -1415,9 +1415,9 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 8.50,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "×8 — 86mm (large) + pompe", description: "8 couvercles 86mm + pompe manuelle. Compatible bocaux large ouverture : Le Parfait, Mason Jar, Ball. Jusqu'à 5× la durée de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-86mm", image: "img/jard_couvercles_vide.jpg" },
-      { label: "×8 — 70mm (standard) + pompe", description: "8 couvercles 70mm + pompe manuelle. Pour bocaux à ouverture standard (70mm) les plus courants. Même performance de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-70mm", image: "img/jard_couvercles_vide.jpg" },
-      { label: "×16 — mix 70mm + 86mm + pompe électrique", description: "16 couvercles (8×70mm + 8×86mm) + pompe électrique USB. Conservez toutes vos conserves d'un geste. Batterie intégrée 400 cycles.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "cj-vacuum-lids-16-elec", image: "img/jard_couvercles_vide.jpg" }
+      { label: "×8 — 86mm (large) + pompe", description: "8 couvercles 86mm + pompe manuelle. Compatible bocaux large ouverture : Le Parfait, Mason Jar, Ball. Jusqu'à 5× la durée de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-86mm", image: "img/jard_couvercles_vide.jpg", stripeLink: "https://buy.stripe.com/4gMbIT62L5W1dzJcQecfN1c" },
+      { label: "×8 — 70mm (standard) + pompe", description: "8 couvercles 70mm + pompe manuelle. Pour bocaux à ouverture standard (70mm) les plus courants. Même performance de conservation.", price: 12, originalPrice: 17, supplierPrice: 8.50, supplierSku: "cj-vacuum-lids-8-70mm", image: "img/jard_couvercles_vide.jpg", stripeLink: "https://buy.stripe.com/aFadR1bn5bgl8fp5nMcfN1d" },
+      { label: "×16 — mix 70mm + 86mm + pompe électrique", description: "16 couvercles (8×70mm + 8×86mm) + pompe électrique USB. Conservez toutes vos conserves d'un geste. Batterie intégrée 400 cycles.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "cj-vacuum-lids-16-elec", image: "img/jard_couvercles_vide.jpg", stripeLink: "https://buy.stripe.com/fZu9AL0Ir3NTfHRg2qcfN1e" }
     ]
   },
   {
@@ -1439,14 +1439,14 @@ const PRODUCTS_JARDINAGE = [
     supplierPrice: 16.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "Standard — mousse verte", description: "Agenouilloir 2-en-1 mousse verte 5cm. Charge max 120kg. Poignées acier pour se relever. Pliable. Livré avec sacoche de rangement.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "agenouilloir-2en1-vert", image: "img/jard_agenouilloir.jpg" },
-      { label: "Large — mousse grise + poches outils", description: "Version large (+10cm) avec 2 poches latérales pour ranger sécateur, gants et outils. Mousse grise 6cm extra-confort. Idéal jardinage intensif.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "agenouilloir-2en1-large", image: "img/jard_agenouilloir.jpg" }
+      { label: "Standard — mousse verte", description: "Agenouilloir 2-en-1 mousse verte 5cm. Charge max 120kg. Poignées acier pour se relever. Pliable. Livré avec sacoche de rangement.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "agenouilloir-2en1-vert", image: "img/jard_agenouilloir.jpg", stripeLink: "https://buy.stripe.com/dRm3cn8aTfwB67hbMacfN1f" },
+      { label: "Large — mousse grise + poches outils", description: "Version large (+10cm) avec 2 poches latérales pour ranger sécateur, gants et outils. Mousse grise 6cm extra-confort. Idéal jardinage intensif.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "agenouilloir-2en1-large", image: "img/jard_agenouilloir.jpg", stripeLink: "https://buy.stripe.com/14A3cn1MvachdzJ4jIcfN1g" }
     ]
   }
 ,
 
   // ── Produits jardinage supplémentaires (IDs 144-150) ──
-  {id:144,name:"Grelinette bio 3 dents",price:38,originalPrice:55,category:"Jardinage",description:"Grelinette bio 3 dents en acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol. L'outil bio par excellence.",badges:["Nouveau","Bio"],rating:4.8,reviews:0,image:"img/grelinette.jpg",shipping:"Livraison 5-7 jours",weight:"1.8 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"grelinette-3dents",supplierPrice:27,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"3 dents — manche hêtre 120cm",description:"Grelinette 3 dents. Acier forgé + manche hêtre 120cm. Ameublit sans retourner, préserve la vie du sol.",price:38,originalPrice:55,supplierPrice:27,supplierSku:"grelinette-3dents",image:"img/grelinette.jpg"},{label:"5 dents — manche hêtre 130cm",description:"Grelinette 5 dents pour sols lourds et argileux. Manche hêtre 130cm. Travail profond sans effort.",price:52,originalPrice:75,supplierPrice:37,supplierSku:"grelinette-5dents",image:"img/grelinette.jpg"}]},{id:145,name:"Couteau désherbeur en acier inox",price:12,originalPrice:17,category:"Jardinage",description:"Couteau désherbeur lame acier inox 18cm. Tranche les racines au ras du sol sans les arracher. Poignée ergonomique. Idéal allées, bordures, potager.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/couteau_desherbage.jpg",shipping:"Livraison 2-3 jours",weight:"180 g",inStock:true,supplier: "CJdropshipping",supplierSku:"couteau-desherbage-inox",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"Couteau désherbeur 18cm",description:"Couteau désherbeur 18cm inox. Tranche racines et mauvaises herbes proprement. Poignée ergonomique.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"couteau-desherbage-inox",image:"img/couteau_desherbage.jpg"}]},{id:146,name:"Système hydroponique 12 sites DWC",price:35,originalPrice:52,category:"Jardinage",description:"Système hydroponique DWC 12 sites. Bac 30L, pompe à air, pierre diffusante, 12 godets + filets. Culture laitues, herbes, fraises. 3× plus rapide qu'en terre.",badges:["Nouveau"],rating:4.6,reviews:0,image:"img/hydro_dwc.jpg",shipping:"Livraison 5-7 jours",weight:"2.4 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-hydro-dwc-12",supplierPrice:25,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"12 sites — bac 30L",description:"DWC 12 sites, bac 30L. Pompe air, diffuseur, 12 godets filets. Pour laitues, herbes, fraises.",price:35,originalPrice:52,supplierPrice:25,supplierSku:"cj-hydro-dwc-12",image:"img/hydro_dwc.jpg"},{label:"24 sites — bac 60L",description:"DWC 24 sites, bac 60L. Double pompe. Idéal production intensive herbes et petits légumes.",price:59,originalPrice:85,supplierPrice:42,supplierSku:"cj-hydro-dwc-24",image:"img/hydro_dwc.jpg"}]},{id:147,name:"Thermohygromètre digital pour serre",price:14,originalPrice:20,category:"Jardinage",description:"Thermohygromètre digital pour serre et culture indoor. Plage -50°C à +70°C, humidité 10-99%. Mémoire min/max, icône confort. Écran LCD rétroéclairé.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/thermohygrometre.jpg",shipping:"Livraison 2-3 jours",weight:"60 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-thermo-hygro",supplierPrice:9.50,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Digital LCD — température + humidité",description:"Thermohygromètre LCD. Temp -50 à +70°C, HR 10-99%. Mémoire min/max. Idéal serre et chambre de culture.",price:14,originalPrice:20,supplierPrice:9.50,supplierSku:"cj-thermo-hygro",image:"img/thermohygrometre.jpg"},{label:"WiFi — app smartphone",description:"Thermohygromètre WiFi avec app smartphone. Historique 30 jours, alertes température. Idéal pour surveiller à distance.",price:22,originalPrice:32,supplierPrice:15,supplierSku:"cj-thermo-hygro-wifi",image:"img/thermohygrometre.jpg"}]},{id:148,name:"Engrais biostimulant orties fermentées 1L",price:12,originalPrice:17,category:"Jardinage",description:"Purin d'orties concentré fermenté. 1L = 20L de solution d'arrosage. Stimule croissance, renforce résistance aux maladies, repousse insectes. 100% bio certifié.",badges:["Nouveau","Bio"],rating:4.6,reviews:0,image:"img/purin_orties.jpg",shipping:"Livraison 2-3 jours",weight:"1.05 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"purin-orties-1l",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"1L concentré — orties",description:"Purin d'orties 1L concentré. 1L = 20L solution. Stimule croissance + repousse pucerons.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"purin-orties-1l",image:"img/purin_orties.jpg"},{label:"5L — lot économique",description:"Purin d'orties 5L. 5× plus économique. 5L = 100L de solution. Pour grand potager.",price:48,originalPrice:70,supplierPrice:34,supplierSku:"purin-orties-5l",image:"img/purin_orties.jpg"}]},{id:149,name:"Minuterie électrique 7 jours programmable",price:9,originalPrice:13,category:"Jardinage",description:"Minuterie électrique programmable 7 jours 16A. Pour lampe horticole, pompe hydroponique, chauffage serre. 20 programmes par jour. LCD, charge max 3680W.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/minuterie_16a.jpg",shipping:"Livraison 2-3 jours",weight:"80 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-timer-16a",supplierPrice:6,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Minuterie 16A — 20 programmes",description:"Minuterie mécanique 16A 7 jours. 20 programmes/jour. Max 3680W. Pour lampe de culture, pompe, chauffage.",price:9,originalPrice:13,supplierPrice:6,supplierSku:"cj-timer-16a",image:"img/minuterie_16a.jpg"}]},{id:150,name:"Substrat coco/coir culture premium 50L",price:18,originalPrice:26,category:"Jardinage",description:"Substrat de culture coco/coir premium 50L. Lavé et tamponné pH 5,8-6,2. Utilisable seul, en mélange sol ou hydroponique. Certifié OMRI bio. Excellent drainage et rétention.",badges:["Nouveau","Bio"],rating:4.5,reviews:0,image:"img/substrat_coco.jpg",shipping:"Livraison 5-7 jours",weight:"5.5 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"substrat-coco-50l",supplierPrice:13,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"50L — bloc compressé",description:"Substrat coco 50L bloc compressé. pH 5,8-6,2. Sol, mélange ou hydro. Certifié OMRI bio.",price:18,originalPrice:26,supplierPrice:13,supplierSku:"substrat-coco-50l",image:"img/substrat_coco.jpg"},{label:"100L — lot de 2",description:"Lot de 2 blocs 50L = 100L substrat coco. Pour équiper entièrement une chambre de culture ou un grand potager.",price:34,originalPrice:49,supplierPrice:24,supplierSku:"substrat-coco-100l",image:"img/substrat_coco.jpg"}]}
+  {id:144,name:"Grelinette bio 3 dents",price:38,originalPrice:55,category:"Jardinage",description:"Grelinette bio 3 dents en acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol. L'outil bio par excellence.",badges:["Nouveau","Bio"],rating:4.8,reviews:0,image:"img/grelinette.jpg",shipping:"Livraison 5-7 jours",weight:"1.8 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"grelinette-3dents",supplierPrice:27,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"3 dents — manche hêtre 120cm",description:"Grelinette 3 dents. Acier forgé + manche hêtre 120cm. Ameublit sans retourner, préserve la vie du sol.",price:38,originalPrice:55,supplierPrice:27,supplierSku:"grelinette-3dents",image:"img/grelinette.jpg", stripeLink: "https://buy.stripe.com/3cIdR1fDl0BH9jt17wcfN1h" },{label:"5 dents — manche hêtre 130cm",description:"Grelinette 5 dents pour sols lourds et argileux. Manche hêtre 130cm. Travail profond sans effort.",price:52,originalPrice:75,supplierPrice:37,supplierSku:"grelinette-5dents",image:"img/grelinette.jpg", stripeLink: "https://buy.stripe.com/dRm5kvaj15W1cvFcQecfN1i" }]},{id:145,name:"Couteau désherbeur en acier inox",price:12,originalPrice:17,category:"Jardinage",description:"Couteau désherbeur lame acier inox 18cm. Tranche les racines au ras du sol sans les arracher. Poignée ergonomique. Idéal allées, bordures, potager.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/couteau_desherbage.jpg",shipping:"Livraison 2-3 jours",weight:"180 g",inStock:true,supplier: "CJdropshipping",supplierSku:"couteau-desherbage-inox",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"Couteau désherbeur 18cm",description:"Couteau désherbeur 18cm inox. Tranche racines et mauvaises herbes proprement. Poignée ergonomique.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"couteau-desherbage-inox",image:"img/couteau_desherbage.jpg", stripeLink: "https://buy.stripe.com/3cI7sD8aTdot0MX9E2cfN1j" }]},{id:146,name:"Système hydroponique 12 sites DWC",price:35,originalPrice:52,category:"Jardinage",description:"Système hydroponique DWC 12 sites. Bac 30L, pompe à air, pierre diffusante, 12 godets + filets. Culture laitues, herbes, fraises. 3× plus rapide qu'en terre.",badges:["Nouveau"],rating:4.6,reviews:0,image:"img/hydro_dwc.jpg",shipping:"Livraison 5-7 jours",weight:"2.4 kg",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-hydro-dwc-12",supplierPrice:25,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"12 sites — bac 30L",description:"DWC 12 sites, bac 30L. Pompe air, diffuseur, 12 godets filets. Pour laitues, herbes, fraises.",price:35,originalPrice:52,supplierPrice:25,supplierSku:"cj-hydro-dwc-12",image:"img/hydro_dwc.jpg", stripeLink: "https://buy.stripe.com/7sYaEP62L705gLV6rQcfN1k" },{label:"24 sites — bac 60L",description:"DWC 24 sites, bac 60L. Double pompe. Idéal production intensive herbes et petits légumes.",price:59,originalPrice:85,supplierPrice:42,supplierSku:"cj-hydro-dwc-24",image:"img/hydro_dwc.jpg", stripeLink: "https://buy.stripe.com/8x2fZ94YH705gLVbMacfN1l" }]},{id:147,name:"Thermohygromètre digital pour serre",price:14,originalPrice:20,category:"Jardinage",description:"Thermohygromètre digital pour serre et culture indoor. Plage -50°C à +70°C, humidité 10-99%. Mémoire min/max, icône confort. Écran LCD rétroéclairé.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/thermohygrometre.jpg",shipping:"Livraison 2-3 jours",weight:"60 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-thermo-hygro",supplierPrice:9.50,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Digital LCD — température + humidité",description:"Thermohygromètre LCD. Temp -50 à +70°C, HR 10-99%. Mémoire min/max. Idéal serre et chambre de culture.",price:14,originalPrice:20,supplierPrice:9.50,supplierSku:"cj-thermo-hygro",image:"img/thermohygrometre.jpg", stripeLink: "https://buy.stripe.com/6oU4grdvd7059jt8zYcfN1m" },{label:"WiFi — app smartphone",description:"Thermohygromètre WiFi avec app smartphone. Historique 30 jours, alertes température. Idéal pour surveiller à distance.",price:22,originalPrice:32,supplierPrice:15,supplierSku:"cj-thermo-hygro-wifi",image:"img/thermohygrometre.jpg", stripeLink: "https://buy.stripe.com/eVq6ozezhachcvFcQecfN1n" }]},{id:148,name:"Engrais biostimulant orties fermentées 1L",price:12,originalPrice:17,category:"Jardinage",description:"Purin d'orties concentré fermenté. 1L = 20L de solution d'arrosage. Stimule croissance, renforce résistance aux maladies, repousse insectes. 100% bio certifié.",badges:["Nouveau","Bio"],rating:4.6,reviews:0,image:"img/purin_orties.jpg",shipping:"Livraison 2-3 jours",weight:"1.05 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"purin-orties-1l",supplierPrice:8.50,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"1L concentré — orties",description:"Purin d'orties 1L concentré. 1L = 20L solution. Stimule croissance + repousse pucerons.",price:12,originalPrice:17,supplierPrice:8.50,supplierSku:"purin-orties-1l",image:"img/purin_orties.jpg", stripeLink: "https://buy.stripe.com/bJe8wH8aT98d67h5nMcfN1o" },{label:"5L — lot économique",description:"Purin d'orties 5L. 5× plus économique. 5L = 100L de solution. Pour grand potager.",price:48,originalPrice:70,supplierPrice:34,supplierSku:"purin-orties-5l",image:"img/purin_orties.jpg", stripeLink: "https://buy.stripe.com/eVq3cn1Mv1FL0MX7vUcfN1p" }]},{id:149,name:"Minuterie électrique 7 jours programmable",price:9,originalPrice:13,category:"Jardinage",description:"Minuterie électrique programmable 7 jours 16A. Pour lampe horticole, pompe hydroponique, chauffage serre. 20 programmes par jour. LCD, charge max 3680W.",badges:["Nouveau"],rating:4.5,reviews:0,image:"img/minuterie_16a.jpg",shipping:"Livraison 2-3 jours",weight:"80 g",inStock:true,supplier:"CJdropshipping",supplierSku:"cj-timer-16a",supplierPrice:6,supplierUrl:"https://www.cjdropshipping.com",variants:[{label:"Minuterie 16A — 20 programmes",description:"Minuterie mécanique 16A 7 jours. 20 programmes/jour. Max 3680W. Pour lampe de culture, pompe, chauffage.",price:9,originalPrice:13,supplierPrice:6,supplierSku:"cj-timer-16a",image:"img/minuterie_16a.jpg", stripeLink: "https://buy.stripe.com/9B6eV54YHckpgLV03scfN1q" }]},{id:150,name:"Substrat coco/coir culture premium 50L",price:18,originalPrice:26,category:"Jardinage",description:"Substrat de culture coco/coir premium 50L. Lavé et tamponné pH 5,8-6,2. Utilisable seul, en mélange sol ou hydroponique. Certifié OMRI bio. Excellent drainage et rétention.",badges:["Nouveau","Bio"],rating:4.5,reviews:0,image:"img/substrat_coco.jpg",shipping:"Livraison 5-7 jours",weight:"5.5 kg",inStock:true,supplier: "CJdropshipping",supplierSku:"substrat-coco-50l",supplierPrice:13,supplierUrl:"https://www.bigbuy.eu/fr",variants:[{label:"50L — bloc compressé",description:"Substrat coco 50L bloc compressé. pH 5,8-6,2. Sol, mélange ou hydro. Certifié OMRI bio.",price:18,originalPrice:26,supplierPrice:13,supplierSku:"substrat-coco-50l",image:"img/substrat_coco.jpg", stripeLink: "https://buy.stripe.com/dRmeV5dvd5W1dzJ9E2cfN1r" },{label:"100L — lot de 2",description:"Lot de 2 blocs 50L = 100L substrat coco. Pour équiper entièrement une chambre de culture ou un grand potager.",price:34,originalPrice:49,supplierPrice:24,supplierSku:"substrat-coco-100l",image:"img/substrat_coco.jpg", stripeLink: "https://buy.stripe.com/00waEP2Qz0BHbrB3fEcfN1s" }]}
 ];
 
 // ── Nouveaux produits Survie (IDs 200-207) ─────────────────────────────────
@@ -1470,9 +1470,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 14.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "Filtre paille 1000L — bleu", description: "Filtre paille individuel 1000L — bleu. Boire directement depuis une source. Élimine 99,9999% bactéries. Poids 56g. Incontournable du kit 72h.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-lifestraw-1000l-bleu", image: "img/surv_lifestraw.jpg" },
-      { label: "Filtre paille 1000L — vert", description: "Filtre paille individuel 1000L — vert. Même performance que le bleu. Coloris discret pour usage outdoor et randonnée.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-lifestraw-1000l-vert", image: "img/surv_lifestraw.jpg" },
-      { label: "Bouteille filtrante 650mL + filtre 4000L", description: "Bouteille filtrante 650mL avec filtre 4000L intégré. Boire en déplaçant la pression. Idéale randonnée et voyage. Inclus adaptateur pour poche à eau.", price: 29, originalPrice: 42, supplierPrice: 21.00, supplierSku: "cj-filter-bottle-650ml", image: "img/surv_lifestraw.jpg" }
+      { label: "Filtre paille 1000L — bleu", description: "Filtre paille individuel 1000L — bleu. Boire directement depuis une source. Élimine 99,9999% bactéries. Poids 56g. Incontournable du kit 72h.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-lifestraw-1000l-bleu", image: "img/surv_lifestraw.jpg", stripeLink: "https://buy.stripe.com/fZuaEPezh2JP1R1bMacfN1t" },
+      { label: "Filtre paille 1000L — vert", description: "Filtre paille individuel 1000L — vert. Même performance que le bleu. Coloris discret pour usage outdoor et randonnée.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-lifestraw-1000l-vert", image: "img/surv_lifestraw.jpg", stripeLink: "https://buy.stripe.com/5kQ14f62LfwB67hdUicfN1u" },
+      { label: "Bouteille filtrante 650mL + filtre 4000L", description: "Bouteille filtrante 650mL avec filtre 4000L intégré. Boire en déplaçant la pression. Idéale randonnée et voyage. Inclus adaptateur pour poche à eau.", price: 29, originalPrice: 42, supplierPrice: 21.00, supplierSku: "cj-filter-bottle-650ml", image: "img/surv_lifestraw.jpg", stripeLink: "https://buy.stripe.com/eVqfZ90Ir5W167haI6cfN1v" }
     ]
   },
   {
@@ -1494,9 +1494,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 25.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "20000mAh — noir", description: "Power bank solaire 20000mAh noir. Panneau 5W, USB-A×2 + USB-C, IPX5. Charge 5× smartphone ou recharge lampe/radio de survie en coupure.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-solar-bank-20000-noir", image: "img/surv_batterie_solaire.jpg" },
-      { label: "20000mAh — vert kaki", description: "Power bank solaire 20000mAh vert kaki — coloris discret outdoor. Mêmes performances. Idéal randonnée et usage discret en milieu naturel.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-solar-bank-20000-kaki", image: "img/surv_batterie_solaire.jpg" },
-      { label: "40000mAh — double panneau 10W", description: "Power bank solaire 40000mAh + double panneau 10W. Recharge solaire 2× plus rapide. Pour les longues expéditions ou pour alimenter un groupe.", price: 59, originalPrice: 85, supplierPrice: 43.00, supplierSku: "cj-solar-bank-40000", image: "img/surv_batterie_solaire.jpg" }
+      { label: "20000mAh — noir", description: "Power bank solaire 20000mAh noir. Panneau 5W, USB-A×2 + USB-C, IPX5. Charge 5× smartphone ou recharge lampe/radio de survie en coupure.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-solar-bank-20000-noir", image: "img/surv_batterie_solaire.jpg", stripeLink: "https://buy.stripe.com/3cIbITfDl3NT53d8zYcfN1w" },
+      { label: "20000mAh — vert kaki", description: "Power bank solaire 20000mAh vert kaki — coloris discret outdoor. Mêmes performances. Idéal randonnée et usage discret en milieu naturel.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-solar-bank-20000-kaki", image: "img/surv_batterie_solaire.jpg", stripeLink: "https://buy.stripe.com/cNi5kv62L4RX53daI6cfN1x" },
+      { label: "40000mAh — double panneau 10W", description: "Power bank solaire 40000mAh + double panneau 10W. Recharge solaire 2× plus rapide. Pour les longues expéditions ou pour alimenter un groupe.", price: 59, originalPrice: 85, supplierPrice: 43.00, supplierSku: "cj-solar-bank-40000", image: "img/surv_batterie_solaire.jpg", stripeLink: "https://buy.stripe.com/cNicMX4YHdot9jt5nMcfN1y" }
     ]
   },
   {
@@ -1518,9 +1518,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 13.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "42 pièces — pochette nylon", description: "Trousse 42 pièces en pochette nylon imperméable compacte (21×15cm). Conforme EN 13157. Poids 280g. Idéal sac à dos, voiture, bivouac.", price: 18, originalPrice: 25, supplierPrice: 13.50, supplierSku: "kit-secours-42pcs", image: "img/surv_trousse_secours.jpg" },
+      { label: "42 pièces — pochette nylon", description: "Trousse 42 pièces en pochette nylon imperméable compacte (21×15cm). Conforme EN 13157. Poids 280g. Idéal sac à dos, voiture, bivouac.", price: 18, originalPrice: 25, supplierPrice: 13.50, supplierSku: "kit-secours-42pcs", image: "img/surv_trousse_secours.jpg", stripeLink: "https://buy.stripe.com/cNi4grfDlfwB0MXg2qcfN1z" },
       { label: "72 pièces — mallette rigide", description: "Trousse 72 pièces en mallette rigide ABS avec compartiments. Inclut défibrillateur bidon de diagnostic, attelle, couverture mylar. Pour famille ou groupe.", price: 30, originalPrice: 42, supplierPrice: 22.00, supplierSku: "kit-secours-72pcs-mallette", image: "img/surv_trousse_secours.jpg" },
-      { label: "Kit auto — norme DIN13164", description: "Kit automobile obligatoire norme DIN 13164 + supplément survie (couverture mylar, garrot, masque). Valable contrôle technique. Poids 320g.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "kit-secours-auto-din13164", image: "img/surv_trousse_secours.jpg" }
+      { label: "Kit auto — norme DIN13164", description: "Kit automobile obligatoire norme DIN 13164 + supplément survie (couverture mylar, garrot, masque). Valable contrôle technique. Poids 320g.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "kit-secours-auto-din13164", image: "img/surv_trousse_secours.jpg", stripeLink: "https://buy.stripe.com/dRm28jfDlfwBanxcQecfN1B" }
     ]
   },
   {
@@ -1542,9 +1542,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 10.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "Kit 3-en-1 — étui noir", description: "Briquet tempête USB + pierre à feu 12cm + amadou + étui imperméable noir. Tout-en-un pour allumer feu sous pluie et vent. 12 000 frappes garanties.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-fire-kit-3in1-noir", image: "img/surv_kit_feu.jpg" },
-      { label: "Kit 3-en-1 — étui kaki", description: "Même kit en étui kaki militaire — plus discret en outdoor. Identique en performance. Clip ceinture inclus pour attache rapide au sac.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-fire-kit-3in1-kaki", image: "img/surv_kit_feu.jpg" },
-      { label: "Kit étendu — + allume-feu magnésium + sifflet", description: "Kit 5-en-1 : briquet tempête + ferrocerium + amadou + barreau magnésium + sifflet 120dB. Le kit allume-feu le plus complet pour survivaliste.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-fire-kit-5in1", image: "img/surv_kit_feu.jpg" }
+      { label: "Kit 3-en-1 — étui noir", description: "Briquet tempête USB + pierre à feu 12cm + amadou + étui imperméable noir. Tout-en-un pour allumer feu sous pluie et vent. 12 000 frappes garanties.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-fire-kit-3in1-noir", image: "img/surv_kit_feu.jpg", stripeLink: "https://buy.stripe.com/4gM4grgHp3NT2V517wcfN1C" },
+      { label: "Kit 3-en-1 — étui kaki", description: "Même kit en étui kaki militaire — plus discret en outdoor. Identique en performance. Clip ceinture inclus pour attache rapide au sac.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-fire-kit-3in1-kaki", image: "img/surv_kit_feu.jpg", stripeLink: "https://buy.stripe.com/00w28jcr91FL1R16rQcfN1D" },
+      { label: "Kit étendu — + allume-feu magnésium + sifflet", description: "Kit 5-en-1 : briquet tempête + ferrocerium + amadou + barreau magnésium + sifflet 120dB. Le kit allume-feu le plus complet pour survivaliste.", price: 19, originalPrice: 27, supplierPrice: 14.00, supplierSku: "cj-fire-kit-5in1", image: "img/surv_kit_feu.jpg", stripeLink: "https://buy.stripe.com/28EfZ98aTfwBbrB17wcfN1E" }
     ]
   },
   {
@@ -1566,9 +1566,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 6.50,
     supplierUrl: "https://www.bigbuy.eu/fr",
     variants: [
-      { label: "×4 — 160×210cm or/argent", description: "Lot de 4 couvertures mylar 160×210cm double face or/argent. 50g chacune, format poche. Certifiées CE. Utilisables aussi comme bâche réfléchissante.", price: 9, originalPrice: 13, supplierPrice: 6.50, supplierSku: "couverture-mylar-x4", image: "img/surv_couverture_mylar.jpg" },
-      { label: "×10 — format lot économique", description: "Lot de 10 couvertures mylar 160×210cm — format associatif ou longue préparation. Idéal pour équiper un groupe ou constituer un stock multi-années.", price: 19, originalPrice: 28, supplierPrice: 14.00, supplierSku: "couverture-mylar-x10", image: "img/surv_couverture_mylar.jpg" },
-      { label: "Sac de couchage mylar réutilisable", description: "Sac de couchage mylar format momie — plus robuste que les couvertures jetables. 4 saisons, réfléchit 90% chaleur. Lavable et réutilisable.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "couverture-mylar-sac", image: "img/surv_couverture_mylar.jpg" }
+      { label: "×4 — 160×210cm or/argent", description: "Lot de 4 couvertures mylar 160×210cm double face or/argent. 50g chacune, format poche. Certifiées CE. Utilisables aussi comme bâche réfléchissante.", price: 9, originalPrice: 13, supplierPrice: 6.50, supplierSku: "couverture-mylar-x4", image: "img/surv_couverture_mylar.jpg", stripeLink: "https://buy.stripe.com/fZu5kv2Qz0BHanxg2qcfN1F" },
+      { label: "×10 — format lot économique", description: "Lot de 10 couvertures mylar 160×210cm — format associatif ou longue préparation. Idéal pour équiper un groupe ou constituer un stock multi-années.", price: 19, originalPrice: 28, supplierPrice: 14.00, supplierSku: "couverture-mylar-x10", image: "img/surv_couverture_mylar.jpg", stripeLink: "https://buy.stripe.com/8x2aEPdvdckp7bl9E2cfN1G" },
+      { label: "Sac de couchage mylar réutilisable", description: "Sac de couchage mylar format momie — plus robuste que les couvertures jetables. 4 saisons, réfléchit 90% chaleur. Lavable et réutilisable.", price: 22, originalPrice: 32, supplierPrice: 16.50, supplierSku: "couverture-mylar-sac", image: "img/surv_couverture_mylar.jpg", stripeLink: "https://buy.stripe.com/dRmeV562L2JP0MX03scfN1H" }
     ]
   },
   {
@@ -1590,9 +1590,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 29.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "DAB+/FM/AM — vert kaki", description: "Radio urgence DAB+/FM/AM + manivelle + solaire + batterie 2000mAh. Lampe LED 3W. Coloris kaki discret outdoor. Alerte météo NOAA.", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "cj-radio-solar-dab-kaki", image: "img/surv_radio_manivelle.jpg" },
-      { label: "DAB+/FM/AM — orange", description: "Même radio en orange haute visibilité — plus facile à localiser en situation d'urgence. Idéal kit de survie voiture et trousse 72h.", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "cj-radio-solar-dab-orange", image: "img/surv_radio_manivelle.jpg" },
-      { label: "Version Pro — batterie 5000mAh + BT", description: "Radio Pro : mêmes ondes + batterie 5000mAh + Bluetooth + chargeur sans fil Qi. Peut recharger smartphone. Autonomie 3× supérieure.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cj-radio-solar-pro-5000", image: "img/surv_radio_manivelle.jpg" }
+      { label: "DAB+/FM/AM — vert kaki", description: "Radio urgence DAB+/FM/AM + manivelle + solaire + batterie 2000mAh. Lampe LED 3W. Coloris kaki discret outdoor. Alerte météo NOAA.", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "cj-radio-solar-dab-kaki", image: "img/surv_radio_manivelle.jpg", stripeLink: "https://buy.stripe.com/fZubITcr998d67h7vUcfN1I" },
+      { label: "DAB+/FM/AM — orange", description: "Même radio en orange haute visibilité — plus facile à localiser en situation d'urgence. Idéal kit de survie voiture et trousse 72h.", price: 39, originalPrice: 55, supplierPrice: 29.00, supplierSku: "cj-radio-solar-dab-orange", image: "img/surv_radio_manivelle.jpg", stripeLink: "https://buy.stripe.com/cNi4graj1dot9jt2bAcfN1J" },
+      { label: "Version Pro — batterie 5000mAh + BT", description: "Radio Pro : mêmes ondes + batterie 5000mAh + Bluetooth + chargeur sans fil Qi. Peut recharger smartphone. Autonomie 3× supérieure.", price: 59, originalPrice: 85, supplierPrice: 44.00, supplierSku: "cj-radio-solar-pro-5000", image: "img/surv_radio_manivelle.jpg", stripeLink: "https://buy.stripe.com/4gMcMX1Mv5W10MXg2qcfN1K" }
     ]
   },
   {
@@ -1614,9 +1614,9 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 32.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "Confort 0°C — bleu — 900g", description: "Sac momie confort 0°C / limite -5°C. Bleu, 900g, compression 3,8L. YKK double sens. Pour 3 saisons printemps/été/automne.", price: 44, originalPrice: 62, supplierPrice: 32.00, supplierSku: "cj-sleeping-bag-0c-bleu", image: "img/surv_sac_couchage.jpg" },
-      { label: "Confort 0°C — vert kaki — 900g", description: "Identique, coloris kaki discret pour bivouac. Même performance thermique. Filet de transport inclus.", price: 44, originalPrice: 62, supplierPrice: 32.00, supplierSku: "cj-sleeping-bag-0c-kaki", image: "img/surv_sac_couchage.jpg" },
-      { label: "Confort -10°C — hiver — 1100g", description: "Sac d'hiver confort -10°C / limite -15°C. Garnissage 400g/m² + col thermique réglable. Pour bivouac hivernal et randonnée hivernale. 1100g.", price: 64, originalPrice: 92, supplierPrice: 48.00, supplierSku: "cj-sleeping-bag-minus10", image: "img/surv_sac_couchage.jpg" }
+      { label: "Confort 0°C — bleu — 900g", description: "Sac momie confort 0°C / limite -5°C. Bleu, 900g, compression 3,8L. YKK double sens. Pour 3 saisons printemps/été/automne.", price: 44, originalPrice: 62, supplierPrice: 32.00, supplierSku: "cj-sleeping-bag-0c-bleu", image: "img/surv_sac_couchage.jpg", stripeLink: "https://buy.stripe.com/7sYdR1cr9esx2V58zYcfN1L" },
+      { label: "Confort 0°C — vert kaki — 900g", description: "Identique, coloris kaki discret pour bivouac. Même performance thermique. Filet de transport inclus.", price: 44, originalPrice: 62, supplierPrice: 32.00, supplierSku: "cj-sleeping-bag-0c-kaki", image: "img/surv_sac_couchage.jpg", stripeLink: "https://buy.stripe.com/3cI00bcr9ach0MXcQecfN1M" },
+      { label: "Confort -10°C — hiver — 1100g", description: "Sac d'hiver confort -10°C / limite -15°C. Garnissage 400g/m² + col thermique réglable. Pour bivouac hivernal et randonnée hivernale. 1100g.", price: 64, originalPrice: 92, supplierPrice: 48.00, supplierSku: "cj-sleeping-bag-minus10", image: "img/surv_sac_couchage.jpg", stripeLink: "https://buy.stripe.com/4gM3cn3UDgAFcvFg2qcfN1N" }
     ]
   },
   {
@@ -1638,10 +1638,10 @@ const PRODUCTS_SURVIE_NEW = [
     supplierPrice: 10.00,
     supplierUrl: "https://www.cjdropshipping.com",
     variants: [
-      { label: "30m — Olive + kit survie 4-en-1", description: "30m paracorde olive + kit survie : briquet USB, sifflet 120dB, boussole, grattoir ferrocerium. Livré sur bobine. Résistance 250kg.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-olive", image: "img/surv_paracorde.jpg" },
-      { label: "30m — Noir + kit survie 4-en-1", description: "Même corde en noir — plus discret. Identique performance. Kit survie inclus. Idéal randonnée, camping, kit d'urgence voiture.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-noir", image: "img/surv_paracorde.jpg" },
-      { label: "30m — Camo + kit survie 4-en-1", description: "Corde camouflage 30m + kit survie. Coloris militaire discret pour bushcraft et survival en milieu naturel.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-camo", image: "img/surv_paracorde.jpg" },
-      { label: "100m — bobine pro olive", description: "Bobine pro 100m paracorde olive — pour équiper un groupe ou stocker. Sans kit survie. Prix au mètre imbattable. Résistance 250kg.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-paracord-100m-olive", image: "img/surv_paracorde.jpg" }
+      { label: "30m — Olive + kit survie 4-en-1", description: "30m paracorde olive + kit survie : briquet USB, sifflet 120dB, boussole, grattoir ferrocerium. Livré sur bobine. Résistance 250kg.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-olive", image: "img/surv_paracorde.jpg", stripeLink: "https://buy.stripe.com/cNieV53UDckpanxaI6cfN1O" },
+      { label: "30m — Noir + kit survie 4-en-1", description: "Même corde en noir — plus discret. Identique performance. Kit survie inclus. Idéal randonnée, camping, kit d'urgence voiture.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-noir", image: "img/surv_paracorde.jpg", stripeLink: "https://buy.stripe.com/fZudR176P7059jtdUicfN1P" },
+      { label: "30m — Camo + kit survie 4-en-1", description: "Corde camouflage 30m + kit survie. Coloris militaire discret pour bushcraft et survival en milieu naturel.", price: 14, originalPrice: 19, supplierPrice: 10.00, supplierSku: "cj-paracord-30m-camo", image: "img/surv_paracorde.jpg", stripeLink: "https://buy.stripe.com/3cI6oz8aT2JPdzJ6rQcfN1Q" },
+      { label: "100m — bobine pro olive", description: "Bobine pro 100m paracorde olive — pour équiper un groupe ou stocker. Sans kit survie. Prix au mètre imbattable. Résistance 250kg.", price: 34, originalPrice: 49, supplierPrice: 25.00, supplierSku: "cj-paracord-100m-olive", image: "img/surv_paracorde.jpg", stripeLink: "https://buy.stripe.com/5kQeV5aj11FLgLVcQecfN1R" }
     ]
   }
 ];
