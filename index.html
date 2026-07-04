@@ -203,9 +203,9 @@
     <h1>Préparez votre autonomie <em>naturellement.</em></h1>
     <p>Des produits utiles, expédiés rapidement, pour mieux jardiner, mieux vous équiper et faire face aux imprévus avec sérénité.</p>
     <div class="hero-stats">
-      <div class="hero-stat"><strong>72</strong><span>Produits en stock</span></div>
-      <div class="hero-stat"><strong>⭐ 4.8</strong><span>Note clients</span></div>
-      <div class="hero-stat"><strong>48h</strong><span>Expédition</span></div>
+      <div class="hero-stat"><strong data-count="72">72</strong><span>Produits en stock</span></div>
+      <div class="hero-stat"><strong data-count="4.8" data-decimals="1" data-prefix="⭐ ">⭐ 4,8</strong><span>Note clients</span></div>
+      <div class="hero-stat"><strong data-count="48" data-suffix="h">48h</strong><span>Expédition</span></div>
     </div>
     <div class="hero-btns">
       <a href="/catalogue" class="btn-primary">🛒 Boutique Survie</a>
@@ -283,10 +283,10 @@
   <!-- STATS -->
   <div class="stats-bar">
     <div class="stats-inner">
-      <div class="stat"><strong>⭐ 4,8</strong><span>Note moyenne clients</span></div>
-      <div class="stat"><strong>1 247</strong><span>Clients satisfaits</span></div>
-      <div class="stat"><strong>72</strong><span>Produits sélectionnés</span></div>
-      <div class="stat"><strong>48h</strong><span>Expédition rapide</span></div>
+      <div class="stat"><strong data-count="4.8" data-decimals="1" data-prefix="⭐ ">⭐ 4,8</strong><span>Note moyenne clients</span></div>
+      <div class="stat"><strong data-count="1247">1 247</strong><span>Clients satisfaits</span></div>
+      <div class="stat"><strong data-count="72">72</strong><span>Produits sélectionnés</span></div>
+      <div class="stat"><strong data-count="48" data-suffix="h">48h</strong><span>Expédition rapide</span></div>
     </div>
   </div>
 
@@ -400,7 +400,7 @@
       if(gs&&typeof renderProductCard!=='undefined')gs.innerHTML=bs.map(function(p){return renderProductCard(p);}).join('');
       if(gj&&typeof renderProductCard!=='undefined')gj.innerHTML=bj.map(function(p){return renderProductCard(p);}).join('');
     });
-        </script>
   </script>
+  <script src="js/ui-dynamic.js" defer></script>
 </body>
 </html>
