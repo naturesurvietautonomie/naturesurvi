@@ -2098,15 +2098,15 @@ function getProductsByCategory(category) {
 }
 
 function getFeaturedProducts() {
-  return PRODUCTS.filter(p => p.badges.includes("Bestseller")).slice(0, 4);
+  return PRODUCTS.filter(p => Array.isArray(p.badges) && p.badges.includes("Bestseller")).slice(0, 4);
 }
 
 function getNewProducts() {
-  return PRODUCTS.filter(p => p.badges.includes("Nouveau"));
+  return PRODUCTS.filter(p => Array.isArray(p.badges) && p.badges.includes("Nouveau"));
 }
 
 function getPromoProducts() {
-  return PRODUCTS.filter(p => p.badges.includes());
+  return PRODUCTS.filter(p => Array.isArray(p.badges) && p.badges.includes("Promo"));
 }
 
 function searchProducts(query) {

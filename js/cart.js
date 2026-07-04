@@ -80,8 +80,8 @@ const Cart = {
       badge.style.display = count > 0 ? 'flex' : 'none';
     });
 
-    // Total navbar
-    const totalEls = document.querySelectorAll('.cart-total-nav');
+    // Total navbar (les pages utilisent id="cartTotal", certaines la classe .cart-total-nav)
+    const totalEls = document.querySelectorAll('.cart-total-nav, #cartTotal');
     totalEls.forEach(el => {
       el.textContent = formatPrice(this.getSubtotal());
     });
