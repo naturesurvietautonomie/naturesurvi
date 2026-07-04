@@ -2152,8 +2152,10 @@ function renderStars(rating) {
 }
 
 function renderBadges(badges) {
+  if (!Array.isArray(badges) || badges.length === 0) return '';
   return badges.map(badge => {
     const config = BADGE_COLORS[badge];
+    if (!config) return '';
     return `<span class="badge" style="background:${config.bg};color:${config.color}">${config.emoji} ${badge}</span>`;
   }).join('');
 }
