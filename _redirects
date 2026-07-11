@@ -1,0 +1,7 @@
+# _redirects — Netlify
+# Sécurité : le dossier /Comparatifs/ contient des documents INTERNES
+# (prix d'achat fournisseur + marges). Avec publish = "." il était servi
+# publiquement. La règle forcée ci-dessous (suffixe "!") prend le pas sur
+# le fichier statique et renvoie un 404 : accès web totalement coupé.
+# Les fichiers restent en local pour usage interne (non supprimés).
+/Comparatifs/*   /404.html   404!
