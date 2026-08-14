@@ -9,4 +9,7 @@
 # Même raison pour les notes de travail laissées à la racine : publish = "."
 # les servirait telles quelles. Elles sont versionnées pour ne pas vivre sur
 # un seul disque, mais elles n'ont rien à faire sur le site public.
-/*.md            /404.html   404!
+# ⚠️ Netlify ne gère pas de joker sur l'extension : une règle « /*.md » est
+# ignorée sans erreur (testé : le fichier répondait toujours 200). Il faut
+# écrire le chemin en entier, et donc ajouter une ligne par note publiée.
+/SEO-QUICK-WINS.md   /404.html   404!
