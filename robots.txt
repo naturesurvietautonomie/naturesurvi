@@ -8,7 +8,11 @@ Allow: /
 Disallow: /Comparatifs/
 Disallow: /netlify/
 Disallow: /emails-marketing/
-Disallow: /panier.html
-Disallow: /merci.html
+Disallow: /outils/
+
+# Panier et confirmation de commande : plus de Disallow ici. Une page bloquée
+# par robots.txt peut quand même apparaître dans Google (sans description),
+# car le robot n'a pas le droit de lire la balise qui l'en empêche. Ces deux
+# pages portent donc un <meta name="robots" content="noindex"> à la place.
 
 Sitemap: https://naturesurvie.net/sitemap.xml

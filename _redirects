@@ -21,7 +21,7 @@
 # Outillage interne (générateur de sitemap/rss). Rien à servir au public.
 /outils/*        /404.html   404!
 
-# ⚠️ URGENT — le code source des fonctions était servi tel quel.
+# URGENT — le code source des fonctions était servi tel quel.
 # https://naturesurvie.net/netlify/functions/stripe-webhook.js répondait 200
 # et laissait lire un jeton TikTok en dur (ligne 70) et une clé CJdropshipping
 # en commentaire (ligne 533). Ces deux jetons sont à révoquer : le blocage

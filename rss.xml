@@ -1,91 +1,2083 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<!-- Généré par outils/generer-seo.js — ne pas éditer à la main. -->
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Nature Survie &amp; Autonomie</title>
-    <link>https://naturesurvie.net</link>
-    <description>Équipements de survie, bushcraft et autonomie — naturesurvie.net</description>
-    <language>fr</language>
-    <copyright>© 2026 Nature Survie &amp; Autonomie</copyright>
-
+    <title>Nature Survie &amp; Autonomie — catalogue</title>
+    <link>https://naturesurvie.net/</link>
+    <description>Matériel de survie, énergie portable et jardinage. Livraison offerte dès 50 € en France métropolitaine.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Fri, 14 Aug 2026 02:32:42 GMT</lastBuildDate>
+    <image><url>https://naturesurvie.net/img/favicon-512.png</url><title>Nature Survie &amp; Autonomie</title><link>https://naturesurvie.net/</link></image>
     <item>
-      <title>Lampe frontale rechargeable LED — 27,99€</title>
+      <title>Lampe frontale LED rechargeable Velamp</title>
       <link>https://naturesurvie.net/produit.html?id=1</link>
-      <description>🔦 Lampe frontale rechargeable LED idéale pour la randonnée, le camping et la survie. Autonomie longue durée, bandeau ajustable. 27,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_lampe.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_lampe.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=1</guid>
+      <description>Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d&apos;urgence. Légère, robuste, bandeau réglable confortable.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod2.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-1</g:id>
+      <g:title>Lampe frontale LED rechargeable Velamp</g:title>
+      <g:description>Lampe frontale LED rechargeable et réglable Velamp. Idéale pour la randonnée, le camping et les situations d&apos;urgence. Légère, robuste, bandeau réglable confortable.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=1</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod2.jpg</g:image_link>
+      <g:price>15.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
     </item>
-
     <item>
-      <title>Couverture de survie isotherme — 11,99€</title>
+      <title>Lanterne frontale MIL-TEC tactique olive</title>
       <link>https://naturesurvie.net/produit.html?id=3</link>
-      <description>🆘 Couverture de survie isotherme — conserve 90% de la chaleur corporelle. Indispensable dans tout sac d'urgence 72h. 11,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_couverture.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_couverture.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=3</guid>
+      <description>Lanterne LED frontale MIL-TEC, coloris olive militaire. Robuste et fiable pour le camping, la chasse et les activités outdoor. Légère et pratique.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod3.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-3</g:id>
+      <g:title>Lanterne frontale MIL-TEC tactique olive</g:title>
+      <g:description>Lanterne LED frontale MIL-TEC, coloris olive militaire. Robuste et fiable pour le camping, la chasse et les activités outdoor. Légère et pratique.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=3</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod3.jpg</g:image_link>
+      <g:price>20.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
     </item>
-
     <item>
-      <title>Kit premiers secours complet — 18,99€</title>
+      <title>Lanterne frontale Nebo Einstein 250lm</title>
       <link>https://naturesurvie.net/produit.html?id=4</link>
-      <description>🩺 Kit premiers secours complet — pansements, bandes, ciseaux, gants. Compact et léger pour la randonnée. 18,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_secours.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_secours.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=4</guid>
+      <description>Lanterne LED frontale Nebo Einstein 250 lumens. Compacte et puissante pour la randonnée et le camping. Plusieurs modes d&apos;éclairage.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod4.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-4</g:id>
+      <g:title>Lanterne frontale Nebo Einstein 250lm</g:title>
+      <g:description>Lanterne LED frontale Nebo Einstein 250 lumens. Compacte et puissante pour la randonnée et le camping. Plusieurs modes d&apos;éclairage.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=4</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod4.jpg</g:image_link>
+      <g:price>20.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
     </item>
-
     <item>
-      <title>Couteau pliant robuste — 14,99€</title>
+      <title>Couteau Opinel acier inoxydable</title>
       <link>https://naturesurvie.net/produit.html?id=5</link>
-      <description>🔪 Couteau pliant robuste — lame inoxydable, manche en bois ergonomique. Essentiel pour le bushcraft. 14,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_couteau.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_couteau.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=5</guid>
+      <description>L&apos;iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod5.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-5</g:id>
+      <g:title>Couteau Opinel acier inoxydable</g:title>
+      <g:description>L&apos;iconique couteau Opinel, fabriqué en France. Lame acier inoxydable, manche en bois de hêtre, virole tournante de sécurité. Indispensable en randonnée et bushcraft. Disponible en plusieurs tailles.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=5</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod5.jpg</g:image_link>
+      <g:price>11.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
     </item>
-
     <item>
-      <title>Gourde filtrante purification eau — 24,99€</title>
+      <title>Pelle pliable de camping</title>
       <link>https://naturesurvie.net/produit.html?id=8</link>
-      <description>💧 Gourde filtrante — eau purifiée partout. Filtre 99,9% des bactéries. 24,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_gourde.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_gourde.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=8</guid>
+      <description>Pelle pliable compacte et robuste pour le camping, la survie et le jardinage. Se range facilement dans un sac à dos. Indispensable en bivouac. Disponible en 2 modèles.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod8.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-8</g:id>
+      <g:title>Pelle pliable de camping</g:title>
+      <g:description>Pelle pliable compacte et robuste pour le camping, la survie et le jardinage. Se range facilement dans un sac à dos. Indispensable en bivouac. Disponible en 2 modèles.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=8</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod8.jpg</g:image_link>
+      <g:price>14.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
     </item>
-
     <item>
-      <title>Sifflet de survie SOS — 4,99€</title>
+      <title>Tente de camping Bestway</title>
       <link>https://naturesurvie.net/produit.html?id=9</link>
-      <description>📣 Sifflet de survie SOS — portée jusqu'à 1km, fonctionne même mouillé. 4,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_sifflet.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_sifflet.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=9</guid>
+      <description>Tente de camping Bestway en polyester fibre de verre. Facile à monter, imperméable, résistante. Idéale pour le camping estival et les festivals. Disponible en 2, 3 ou 4 personnes.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/prod9.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-9</g:id>
+      <g:title>Tente de camping Bestway</g:title>
+      <g:description>Tente de camping Bestway en polyester fibre de verre. Facile à monter, imperméable, résistante. Idéale pour le camping estival et les festivals. Disponible en 2, 3 ou 4 personnes.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=9</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod9.jpg</g:image_link>
+      <g:price>26.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
     </item>
-
     <item>
-      <title>Briquet tempête coupe-vent — 8,99€</title>
-      <link>https://naturesurvie.net/produit.html?id=12</link>
-      <description>🔥 Briquet tempête coupe-vent — s'allume par -40°C, résiste à la pluie et au vent. 8,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_briquet.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_briquet.jpg"/>
-    </item>
-
-    <item>
-      <title>Boussole militaire de précision — 12,99€</title>
-      <link>https://naturesurvie.net/produit.html?id=13</link>
-      <description>🧭 Boussole militaire de précision — fonctionne sans batterie, navigation fiable en forêt. 12,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_boussole.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_boussole.jpg"/>
-    </item>
-
-    <item>
-      <title>Panneau solaire portable 21W — 39,99€</title>
+      <title>Réchaud à gaz Open Norte camping</title>
       <link>https://naturesurvie.net/produit.html?id=14</link>
-      <description>☀️ Panneau solaire portable 21W — rechargez vos appareils partout, même hors réseau. 39,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_solaire.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_solaire.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=14</guid>
+      <description>Réchaud à gaz Open Norte compact et puissant. Idéal pour le camping et la randonnée. Allumage piézo intégré, régulateur de flamme précis. Robuste et fiable.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/prod14.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-14</g:id>
+      <g:title>Réchaud à gaz Open Norte camping</g:title>
+      <g:description>Réchaud à gaz Open Norte compact et puissant. Idéal pour le camping et la randonnée. Allumage piézo intégré, régulateur de flamme précis. Robuste et fiable.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=14</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod14.jpg</g:image_link>
+      <g:price>40.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
     </item>
-
     <item>
-      <title>Sac à dos tactique 45L — 49,99€</title>
+      <title>Lampe frontale Black Diamond Spot 400</title>
       <link>https://naturesurvie.net/produit.html?id=15</link>
-      <description>🎒 Sac à dos tactique 45L — compartiments multiples, sangles renforcées. Kit survie 72h complet. 49,99€</description>
-      <media:content url="https://naturesurvie.net/images/pinterest/pin_sac.jpg" medium="image"/>
-      <media:thumbnail url="https://naturesurvie.net/images/pinterest/pin_sac.jpg"/>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=15</guid>
+      <description>Lampe frontale Black Diamond Spot 400 lumens, rechargeable. Étanche IPX8, autonomie jusqu&apos;à 200h. La référence des alpinistes et randonneurs exigeants.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod15.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-15</g:id>
+      <g:title>Lampe frontale Black Diamond Spot 400</g:title>
+      <g:description>Lampe frontale Black Diamond Spot 400 lumens, rechargeable. Étanche IPX8, autonomie jusqu&apos;à 200h. La référence des alpinistes et randonneurs exigeants.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=15</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod15.jpg</g:image_link>
+      <g:price>40.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
     </item>
-
+    <item>
+      <title>Lanterne LED Brennenstuhl frontale 200lm</title>
+      <link>https://naturesurvie.net/produit.html?id=16</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=16</guid>
+      <description>Lanterne frontale LED Brennenstuhl 1178780, 200 lumens. Marque allemande reconnue pour sa fiabilité. Légère, réglable, idéale pour le bricolage et l&apos;outdoor.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod16.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-16</g:id>
+      <g:title>Lanterne LED Brennenstuhl frontale 200lm</g:title>
+      <g:description>Lanterne frontale LED Brennenstuhl 1178780, 200 lumens. Marque allemande reconnue pour sa fiabilité. Légère, réglable, idéale pour le bricolage et l&apos;outdoor.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=16</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod16.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
+    </item>
+    <item>
+      <title>Lampe frontale Stak LED 10W 1200lm</title>
+      <link>https://naturesurvie.net/produit.html?id=19</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=19</guid>
+      <description>Lampe frontale Stak 10W ultra-puissante 1200 lumens. Rechargeable USB-C, autonomie longue durée. Pour les sorties nocturnes exigeantes et la spéléologie.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod19.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-19</g:id>
+      <g:title>Lampe frontale Stak LED 10W 1200lm</g:title>
+      <g:description>Lampe frontale Stak 10W ultra-puissante 1200 lumens. Rechargeable USB-C, autonomie longue durée. Pour les sorties nocturnes exigeantes et la spéléologie.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=19</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod19.jpg</g:image_link>
+      <g:price>50.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
+    </item>
+    <item>
+      <title>Sac à dos randonnée Mammut Cargon</title>
+      <link>https://naturesurvie.net/produit.html?id=21</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=21</guid>
+      <description>Sac à dos Mammut Cargon, qualité suisse premium. Grande capacité pour les longues randonnées et expéditions. Tissu robuste, dos ventilé, bretelles ergonomiques. Disponible en 2 tailles.</description>
+      <category>Sacs à dos</category>
+      <enclosure url="https://naturesurvie.net/img/prod22.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-21</g:id>
+      <g:title>Sac à dos randonnée Mammut Cargon</g:title>
+      <g:description>Sac à dos Mammut Cargon, qualité suisse premium. Grande capacité pour les longues randonnées et expéditions. Tissu robuste, dos ventilé, bretelles ergonomiques. Disponible en 2 tailles.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=21</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod22.jpg</g:image_link>
+      <g:price>80.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sacs à dos</g:product_type>
+    </item>
+    <item>
+      <title>Sac à dos Mammut Alto 24L</title>
+      <link>https://naturesurvie.net/produit.html?id=22</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=22</guid>
+      <description>Sac à dos Mammut Alto 24L, parfait pour les randonnées à la journée. Format compact mais bien équipé. Marque suisse de référence pour l&apos;outdoor.</description>
+      <category>Sacs à dos</category>
+      <enclosure url="https://naturesurvie.net/img/prod23.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-22</g:id>
+      <g:title>Sac à dos Mammut Alto 24L</g:title>
+      <g:description>Sac à dos Mammut Alto 24L, parfait pour les randonnées à la journée. Format compact mais bien équipé. Marque suisse de référence pour l&apos;outdoor.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=22</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod23.jpg</g:image_link>
+      <g:price>90.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sacs à dos</g:product_type>
+    </item>
+    <item>
+      <title>Sac à dos Reebok Noah polyvalent</title>
+      <link>https://naturesurvie.net/produit.html?id=23</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=23</guid>
+      <description>Sac à dos casual Reebok Noah. Polyvalent pour le sport, l&apos;école ou les sorties en plein air. Compartiments multiples, robuste et confortable.</description>
+      <category>Sacs à dos</category>
+      <enclosure url="https://naturesurvie.net/img/prod27.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-23</g:id>
+      <g:title>Sac à dos Reebok Noah polyvalent</g:title>
+      <g:description>Sac à dos casual Reebok Noah. Polyvalent pour le sport, l&apos;école ou les sorties en plein air. Compartiments multiples, robuste et confortable.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=23</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod27.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sacs à dos</g:product_type>
+    </item>
+    <item>
+      <title>Chargeur universel Varta piles rechargeables</title>
+      <link>https://naturesurvie.net/produit.html?id=24</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=24</guid>
+      <description>Chargeur de batterie Varta universel. Compatible AA, AAA, C, D et 9V. Indispensable pour économiser et être autonome en piles. Marque allemande de référence.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/prod24.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-24</g:id>
+      <g:title>Chargeur universel Varta piles rechargeables</g:title>
+      <g:description>Chargeur de batterie Varta universel. Compatible AA, AAA, C, D et 9V. Indispensable pour économiser et être autonome en piles. Marque allemande de référence.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=24</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod24.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Pack piles rechargeables Varta AA + AAA</title>
+      <link>https://naturesurvie.net/produit.html?id=25</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=25</guid>
+      <description>Pack piles rechargeables Varta 1,2V AA et AAA. Économiques et écologiques, rechargeables jusqu&apos;à 1000 fois. Idéal pour lampes torches, télécommandes et appareils outdoor.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/prod25.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-25</g:id>
+      <g:title>Pack piles rechargeables Varta AA + AAA</g:title>
+      <g:description>Pack piles rechargeables Varta 1,2V AA et AAA. Économiques et écologiques, rechargeables jusqu&apos;à 1000 fois. Idéal pour lampes torches, télécommandes et appareils outdoor.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=25</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod25.jpg</g:image_link>
+      <g:price>10.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Piles Duracell Plus Power Boost AAA (12 unités)</title>
+      <link>https://naturesurvie.net/produit.html?id=26</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=26</guid>
+      <description>Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/prod26.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-26</g:id>
+      <g:title>Piles Duracell Plus Power Boost AAA (12 unités)</g:title>
+      <g:description>Pack de 12 piles Duracell Plus Power Boost AAA 1,5V. Longue durée, performance supérieure. Pour vos appareils électroniques outdoor : lampes, GPS, talkies-walkies.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=26</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod26.jpg</g:image_link>
+      <g:price>10.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Canne à pêche Kali Kunnan</title>
+      <link>https://naturesurvie.net/produit.html?id=29</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=29</guid>
+      <description>Canne à pêche télescopique Kali Kunnan. Légère et robuste pour la pêche en rivière, lac ou mer. Se range facilement pour le transport. Disponible en 2 longueurs.</description>
+      <category>Pêche</category>
+      <enclosure url="https://naturesurvie.net/img/prod29.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-29</g:id>
+      <g:title>Canne à pêche Kali Kunnan</g:title>
+      <g:description>Canne à pêche télescopique Kali Kunnan. Légère et robuste pour la pêche en rivière, lac ou mer. Se range facilement pour le transport. Disponible en 2 longueurs.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=29</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod29.jpg</g:image_link>
+      <g:price>19.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Pêche</g:product_type>
+    </item>
+    <item>
+      <title>Boîte de rangement pêche Kali Kunnan</title>
+      <link>https://naturesurvie.net/produit.html?id=31</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=31</guid>
+      <description>Boîte de rangement pour accessoires de pêche Kali Kunnan. Compartiments modulables pour hameçons, leurres et plombs. Pratique et résistante pour emporter partout.</description>
+      <category>Pêche</category>
+      <enclosure url="https://naturesurvie.net/img/prod31.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-31</g:id>
+      <g:title>Boîte de rangement pêche Kali Kunnan</g:title>
+      <g:description>Boîte de rangement pour accessoires de pêche Kali Kunnan. Compartiments modulables pour hameçons, leurres et plombs. Pratique et résistante pour emporter partout.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=31</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod31.jpg</g:image_link>
+      <g:price>12.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Pêche</g:product_type>
+    </item>
+    <item>
+      <title>Caméra de sport 4K Sunstech Adventure</title>
+      <link>https://naturesurvie.net/produit.html?id=32</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=32</guid>
+      <description>Caméra de sport 4K Sunstech Adventure. Filmez vos aventures en haute définition. Résistante aux chocs, idéale pour le vélo, la randonnée, le kayak. Légère et compacte.</description>
+      <category>Électronique outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod32.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-32</g:id>
+      <g:title>Caméra de sport 4K Sunstech Adventure</g:title>
+      <g:description>Caméra de sport 4K Sunstech Adventure. Filmez vos aventures en haute définition. Résistante aux chocs, idéale pour le vélo, la randonnée, le kayak. Légère et compacte.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=32</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod32.jpg</g:image_link>
+      <g:price>44.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Électronique outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Caméra de sport SK8 Elite outdoor</title>
+      <link>https://naturesurvie.net/produit.html?id=33</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=33</guid>
+      <description>Caméra de sport SK8 Elite pour l&apos;outdoor extrême. Résistante à l&apos;eau et aux chocs. Parfaite pour VTT, ski, escalade et plongée. Accessoires de fixation inclus.</description>
+      <category>Électronique outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod33.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-33</g:id>
+      <g:title>Caméra de sport SK8 Elite outdoor</g:title>
+      <g:description>Caméra de sport SK8 Elite pour l&apos;outdoor extrême. Résistante à l&apos;eau et aux chocs. Parfaite pour VTT, ski, escalade et plongée. Accessoires de fixation inclus.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=33</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod33.jpg</g:image_link>
+      <g:price>65.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Électronique outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Bracelet connecté Xiaomi Band outdoor</title>
+      <link>https://naturesurvie.net/produit.html?id=34</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=34</guid>
+      <description>Bracelet d&apos;activités Xiaomi 1,56&quot; pour le suivi sportif outdoor. GPS, cardiofréquencemètre, compteur de pas, altimètre. Étanche, autonomie 14 jours. Parfait pour la randonnée.</description>
+      <category>Électronique outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod34.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-34</g:id>
+      <g:title>Bracelet connecté Xiaomi Band outdoor</g:title>
+      <g:description>Bracelet d&apos;activités Xiaomi 1,56&quot; pour le suivi sportif outdoor. GPS, cardiofréquencemètre, compteur de pas, altimètre. Étanche, autonomie 14 jours. Parfait pour la randonnée.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=34</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod34.jpg</g:image_link>
+      <g:price>70.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Électronique outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Veste outdoor Alphaventure homme</title>
+      <link>https://naturesurvie.net/produit.html?id=35</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=35</guid>
+      <description>Veste légère Alphaventure Bidinamarca pour homme, coloris kaki militaire. Coupe-vent, idéale pour la chasse, la randonnée et les activités outdoor. Poches zippées.</description>
+      <category>Vêtements outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod35.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-35</g:id>
+      <g:title>Veste outdoor Alphaventure homme</g:title>
+      <g:description>Veste légère Alphaventure Bidinamarca pour homme, coloris kaki militaire. Coupe-vent, idéale pour la chasse, la randonnée et les activités outdoor. Poches zippées.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=35</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod35.jpg</g:image_link>
+      <g:price>14.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Vêtements outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Casque d&apos;escalade Black Diamond</title>
+      <link>https://naturesurvie.net/produit.html?id=37</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=37</guid>
+      <description>Casque d&apos;escalade Black Diamond léger et résistant. Protection optimale pour l&apos;escalade en falaise et en salle. Ventilation efficace, réglage rapide. Norme CE EN12492.</description>
+      <category>Escalade</category>
+      <enclosure url="https://naturesurvie.net/img/prod37.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-37</g:id>
+      <g:title>Casque d&apos;escalade Black Diamond</g:title>
+      <g:description>Casque d&apos;escalade Black Diamond léger et résistant. Protection optimale pour l&apos;escalade en falaise et en salle. Ventilation efficace, réglage rapide. Norme CE EN12492.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=37</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod37.jpg</g:image_link>
+      <g:price>50.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Escalade</g:product_type>
+    </item>
+    <item>
+      <title>Harnais d&apos;escalade Kong Sierra Duo</title>
+      <link>https://naturesurvie.net/produit.html?id=38</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=38</guid>
+      <description>Harnais d&apos;escalade Kong Sierra Duo pour débutants. Confortable et sécurisé, adapté à la salle et à la falaise. Réglages rapides, ceinture ventrale renforcée.</description>
+      <category>Escalade</category>
+      <enclosure url="https://naturesurvie.net/img/prod38.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-38</g:id>
+      <g:title>Harnais d&apos;escalade Kong Sierra Duo</g:title>
+      <g:description>Harnais d&apos;escalade Kong Sierra Duo pour débutants. Confortable et sécurisé, adapté à la salle et à la falaise. Réglages rapides, ceinture ventrale renforcée.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=38</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod38.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Escalade</g:product_type>
+    </item>
+    <item>
+      <title>Slackline Schildkröt 15m jaune</title>
+      <link>https://naturesurvie.net/produit.html?id=39</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=39</guid>
+      <description>Slackline Schildkröt 15 mètres, couleur jaune vif. Kit complet avec sangle, tendeur et protège-arbre. Idéal pour la pratique en forêt, parc ou jardin. Pour tous niveaux.</description>
+      <category>Escalade</category>
+      <enclosure url="https://naturesurvie.net/img/prod39.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-39</g:id>
+      <g:title>Slackline Schildkröt 15m jaune</g:title>
+      <g:description>Slackline Schildkröt 15 mètres, couleur jaune vif. Kit complet avec sangle, tendeur et protège-arbre. Idéal pour la pratique en forêt, parc ou jardin. Pour tous niveaux.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=39</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod39.jpg</g:image_link>
+      <g:price>88.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Escalade</g:product_type>
+    </item>
+    <item>
+      <title>Pain croustillant randonnée Trek&apos;n Eat</title>
+      <link>https://naturesurvie.net/produit.html?id=40</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=40</guid>
+      <description>Pain croustillant déshydraté Trek&apos;n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.</description>
+      <category>Alimentation outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod40.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-40</g:id>
+      <g:title>Pain croustillant randonnée Trek&apos;n Eat</g:title>
+      <g:description>Pain croustillant déshydraté Trek&apos;n Eat 500g. Léger, longue conservation, parfait pour le bivouac et les randonnées multi-jours. Rapide à réhydrater, goût naturel.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=40</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod40.jpg</g:image_link>
+      <g:price>10.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Alimentation outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Barre énergétique Naak Ultra Energy caramel</title>
+      <link>https://naturesurvie.net/produit.html?id=42</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=42</guid>
+      <description>Barre énergétique Naak Ultra Energy 50g, saveur caramel café. Riche en protéines et glucides complexes. Idéale avant et pendant l&apos;effort outdoor : randonnée, course, cyclisme.</description>
+      <category>Alimentation outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod42.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-42</g:id>
+      <g:title>Barre énergétique Naak Ultra Energy caramel</g:title>
+      <g:description>Barre énergétique Naak Ultra Energy 50g, saveur caramel café. Riche en protéines et glucides complexes. Idéale avant et pendant l&apos;effort outdoor : randonnée, course, cyclisme.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=42</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod42.jpg</g:image_link>
+      <g:price>5.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Alimentation outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Sac d&apos;hydratation Joluvi 2,5L</title>
+      <link>https://naturesurvie.net/produit.html?id=43</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=43</guid>
+      <description>Sac d&apos;hydratation Joluvi 2,5L léger et ergonomique. Poche à eau intégrée, tube buveur, sangles réglables. Idéal pour le trail, le VTT et la randonnée rapide.</description>
+      <category>Cyclisme &amp; Trail</category>
+      <enclosure url="https://naturesurvie.net/img/prod43.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-43</g:id>
+      <g:title>Sac d&apos;hydratation Joluvi 2,5L</g:title>
+      <g:description>Sac d&apos;hydratation Joluvi 2,5L léger et ergonomique. Poche à eau intégrée, tube buveur, sangles réglables. Idéal pour le trail, le VTT et la randonnée rapide.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=43</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod43.jpg</g:image_link>
+      <g:price>10.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Cyclisme &amp; Trail</g:product_type>
+    </item>
+    <item>
+      <title>Sacoche de vélo PRO Performance 5,5L</title>
+      <link>https://naturesurvie.net/produit.html?id=44</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=44</guid>
+      <description>Sacoche de vélo PRO Performance 5,5L. Fixation rapide sur guidon ou selle. Imperméable, idéale pour les sorties longue distance. Compatible avec tous types de vélos.</description>
+      <category>Cyclisme &amp; Trail</category>
+      <enclosure url="https://naturesurvie.net/img/prod44.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-44</g:id>
+      <g:title>Sacoche de vélo PRO Performance 5,5L</g:title>
+      <g:description>Sacoche de vélo PRO Performance 5,5L. Fixation rapide sur guidon ou selle. Imperméable, idéale pour les sorties longue distance. Compatible avec tous types de vélos.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=44</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod44.jpg</g:image_link>
+      <g:price>40.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Cyclisme &amp; Trail</g:product_type>
+    </item>
+    <item>
+      <title>Montre Casio Diver 100M</title>
+      <link>https://naturesurvie.net/produit.html?id=46</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=46</guid>
+      <description>Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu&apos;à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.</description>
+      <category>Montres outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod46.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-46</g:id>
+      <g:title>Montre Casio Diver 100M</g:title>
+      <g:description>Montre Casio Diver 100M, boîtier 44,5mm. Étanche jusqu&apos;à 100 mètres. Idéale pour la plongée, la natation et les activités aquatiques. Robuste et fiable.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=46</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod46.jpg</g:image_link>
+      <g:price>58.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Montres outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Plat lyophilisé Trek&apos;n Eat hamburger</title>
+      <link>https://naturesurvie.net/produit.html?id=48</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=48</guid>
+      <description>Plat lyophilisé Trek&apos;n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l&apos;eau chaude. Goût savoureux, haute valeur nutritive.</description>
+      <category>Alimentation outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod48.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-48</g:id>
+      <g:title>Plat lyophilisé Trek&apos;n Eat hamburger</g:title>
+      <g:description>Plat lyophilisé Trek&apos;n Eat hamburgers. Repas complet pour le bivouac et la randonnée. Facile à préparer : ajoutez juste de l&apos;eau chaude. Goût savoureux, haute valeur nutritive.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=48</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod48.jpg</g:image_link>
+      <g:price>11.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Alimentation outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Dessert lyophilisé Trek&apos;n Eat chocolat</title>
+      <link>https://naturesurvie.net/produit.html?id=49</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=49</guid>
+      <description>Dessert lyophilisé Trek&apos;n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l&apos;eau chaude.</description>
+      <category>Alimentation outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod49.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-49</g:id>
+      <g:title>Dessert lyophilisé Trek&apos;n Eat chocolat</g:title>
+      <g:description>Dessert lyophilisé Trek&apos;n Eat au chocolat 100g. Le petit plaisir sucré du bivouac. Léger, longue conservation, préparation ultra-rapide à l&apos;eau chaude.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=49</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod49.jpg</g:image_link>
+      <g:price>9.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Alimentation outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Gourde randonnée outdoor</title>
+      <link>https://naturesurvie.net/produit.html?id=51</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=51</guid>
+      <description>Gourde Regatta 1L légère et résistante. Bouchon à vis étanche, graduation intérieure. Indispensable pour la randonnée, le camping et le sport en plein air.</description>
+      <category>Cyclisme &amp; Trail</category>
+      <enclosure url="https://naturesurvie.net/img/prod51.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-51</g:id>
+      <g:title>Gourde randonnée outdoor</g:title>
+      <g:description>Gourde Regatta 1L légère et résistante. Bouchon à vis étanche, graduation intérieure. Indispensable pour la randonnée, le camping et le sport en plein air.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=51</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod51.jpg</g:image_link>
+      <g:price>10.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Cyclisme &amp; Trail</g:product_type>
+    </item>
+    <item>
+      <title>Bracelet paracord survie 7 en 1</title>
+      <link>https://naturesurvie.net/produit.html?id=60</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=60</guid>
+      <description>Bracelet de survie paracord 7 en 1 : corde 3m, firestarter, sifflet, boussole, couteau, grattoir, lampe LED. Indispensable en randonnée et survie. Réglable.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod_paracord.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-60</g:id>
+      <g:title>Bracelet paracord survie 7 en 1</g:title>
+      <g:description>Bracelet de survie paracord 7 en 1 : corde 3m, firestarter, sifflet, boussole, couteau, grattoir, lampe LED. Indispensable en randonnée et survie. Réglable.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=60</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_paracord.jpg</g:image_link>
+      <g:price>7.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
+    </item>
+    <item>
+      <title>Briquet de survie ferrocérium</title>
+      <link>https://naturesurvie.net/produit.html?id=61</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=61</guid>
+      <description>Allume-feu en ferrocérium avec grattoir en acier inoxydable. Produit jusqu&apos;à 3000°C d&apos;étincelles. Fonctionne par tous les temps, même mouillé. Indispensable pour survivre en forêt.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod_firestarter.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-61</g:id>
+      <g:title>Briquet de survie ferrocérium</g:title>
+      <g:description>Allume-feu en ferrocérium avec grattoir en acier inoxydable. Produit jusqu&apos;à 3000°C d&apos;étincelles. Fonctionne par tous les temps, même mouillé. Indispensable pour survivre en forêt.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=61</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_firestarter.jpg</g:image_link>
+      <g:price>5.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
+    </item>
+    <item>
+      <title>Couverture de survie isotherme</title>
+      <link>https://naturesurvie.net/produit.html?id=62</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=62</guid>
+      <description>Couverture de survie isotherme dorée/argentée. Réfléchit 90% de la chaleur corporelle. Légère (55g), compacte, imperméable. Essentielle en kit 72h et premiers secours.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/prod_couverture.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-62</g:id>
+      <g:title>Couverture de survie isotherme</g:title>
+      <g:description>Couverture de survie isotherme dorée/argentée. Réfléchit 90% de la chaleur corporelle. Légère (55g), compacte, imperméable. Essentielle en kit 72h et premiers secours.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=62</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_couverture.jpg</g:image_link>
+      <g:price>3.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Sifflet de survie 120 dB</title>
+      <link>https://naturesurvie.net/produit.html?id=63</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=63</guid>
+      <description>Sifflet de survie ultra-puissant 120 dB, audible à 1 km. Sans bille (fonctionne mouillé), clip de ceinture inclus. Indispensable en randonnée, escalade et urgences.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod_sifflet.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-63</g:id>
+      <g:title>Sifflet de survie 120 dB</g:title>
+      <g:description>Sifflet de survie ultra-puissant 120 dB, audible à 1 km. Sans bille (fonctionne mouillé), clip de ceinture inclus. Indispensable en randonnée, escalade et urgences.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=63</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_sifflet.jpg</g:image_link>
+      <g:price>2.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
+    </item>
+    <item>
+      <title>Couteau de survie multifonction</title>
+      <link>https://naturesurvie.net/produit.html?id=64</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=64</guid>
+      <description>Couteau de survie lame fixe en acier inox 440, manche ergonomique. Inclus : pierre à affûter, allume-feu, sifflet, étui cordura. Polyvalent pour la chasse, le bushcraft et l&apos;outdoor.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod_couteau_survie.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-64</g:id>
+      <g:title>Couteau de survie multifonction</g:title>
+      <g:description>Couteau de survie lame fixe en acier inox 440, manche ergonomique. Inclus : pierre à affûter, allume-feu, sifflet, étui cordura. Polyvalent pour la chasse, le bushcraft et l&apos;outdoor.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=64</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_couteau_survie.jpg</g:image_link>
+      <g:price>20.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
+    </item>
+    <item>
+      <title>Kit de survie 72h complet</title>
+      <link>https://naturesurvie.net/produit.html?id=65</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=65</guid>
+      <description>Kit de survie 72h tout-en-un : couverture isotherme, allume-feu, sifflet, corde paracord 5m, filtre eau, boussole, couteau pliant, rations énergie. Idéal famille ou individuel.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/prod_kit72h.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-65</g:id>
+      <g:title>Kit de survie 72h complet</g:title>
+      <g:description>Kit de survie 72h tout-en-un : couverture isotherme, allume-feu, sifflet, corde paracord 5m, filtre eau, boussole, couteau pliant, rations énergie. Idéal famille ou individuel.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=65</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_kit72h.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Filtre à eau portable survie</title>
+      <link>https://naturesurvie.net/produit.html?id=66</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=66</guid>
+      <description>Filtre à eau portable de survie — élimine 99,9999% des bactéries et parasites. Débit 1L/min, filtre jusqu&apos;à 100 000 litres. Léger 57g, compatible toutes gourdes. Certifié survie.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/prod_filtre_eau.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-66</g:id>
+      <g:title>Filtre à eau portable survie</g:title>
+      <g:description>Filtre à eau portable de survie — élimine 99,9999% des bactéries et parasites. Débit 1L/min, filtre jusqu&apos;à 100 000 litres. Léger 57g, compatible toutes gourdes. Certifié survie.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=66</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_filtre_eau.jpg</g:image_link>
+      <g:price>20.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Talkies-walkies longue portée</title>
+      <link>https://naturesurvie.net/produit.html?id=67</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=67</guid>
+      <description>Talkies-walkies longue portée 5 km (terrain dégagé). 16 canaux, résistant à l&apos;eau IPX4, VOX, lampe LED intégrée. Idéal camping, randonnée et situations d&apos;urgence. Vendu par paire.</description>
+      <category>Électronique outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/prod_talkie.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-67</g:id>
+      <g:title>Talkies-walkies longue portée</g:title>
+      <g:description>Talkies-walkies longue portée 5 km (terrain dégagé). 16 canaux, résistant à l&apos;eau IPX4, VOX, lampe LED intégrée. Idéal camping, randonnée et situations d&apos;urgence. Vendu par paire.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=67</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_talkie.jpg</g:image_link>
+      <g:price>40.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Électronique outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Corde paracord 550 militaire</title>
+      <link>https://naturesurvie.net/produit.html?id=68</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=68</guid>
+      <description>Corde paracord 550 de type III militaire. 7 fils intérieurs, résistance 249 kg. Polyvalente : abri, filet, attaches, bracelet, lasso. Indispensable en survival et bushcraft.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod_paracord_corde.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-68</g:id>
+      <g:title>Corde paracord 550 militaire</g:title>
+      <g:description>Corde paracord 550 de type III militaire. 7 fils intérieurs, résistance 249 kg. Polyvalente : abri, filet, attaches, bracelet, lasso. Indispensable en survival et bushcraft.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=68</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_paracord_corde.jpg</g:image_link>
+      <g:price>7.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
+    </item>
+    <item>
+      <title>Boussole militaire de précision</title>
+      <link>https://naturesurvie.net/produit.html?id=69</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=69</guid>
+      <description>Boussole militaire de précision lensatique avec miroir de visée. Degrés et mils, phosphorescent, boîtier métal résistant. Idéale pour la randonnée, la chasse et la navigation en forêt.</description>
+      <category>Outils</category>
+      <enclosure url="https://naturesurvie.net/img/prod_boussole.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-69</g:id>
+      <g:title>Boussole militaire de précision</g:title>
+      <g:description>Boussole militaire de précision lensatique avec miroir de visée. Degrés et mils, phosphorescent, boîtier métal résistant. Idéale pour la randonnée, la chasse et la navigation en forêt.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=69</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_boussole.jpg</g:image_link>
+      <g:price>15.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Outils</g:product_type>
+    </item>
+    <item>
+      <title>Lampe torche tactique LED</title>
+      <link>https://naturesurvie.net/produit.html?id=70</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=70</guid>
+      <description>Lampe torche tactique LED ultra-puissante rechargeable USB-C. 5 modes : max/mi/bas/stroboscope/SOS. Résistante IPX6, zoom ajustable, aluminium militaire. Parfaite pour la survie.</description>
+      <category>Éclairage</category>
+      <enclosure url="https://naturesurvie.net/img/prod_torche.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-70</g:id>
+      <g:title>Lampe torche tactique LED</g:title>
+      <g:description>Lampe torche tactique LED ultra-puissante rechargeable USB-C. 5 modes : max/mi/bas/stroboscope/SOS. Résistante IPX6, zoom ajustable, aluminium militaire. Parfaite pour la survie.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=70</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_torche.jpg</g:image_link>
+      <g:price>20.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Éclairage</g:product_type>
+    </item>
+    <item>
+      <title>Sac de survie Bug Out Bag</title>
+      <link>https://naturesurvie.net/produit.html?id=71</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=71</guid>
+      <description>Sac de survie Bug Out Bag 40L militaire. Structure MOLLE, résistant à l&apos;eau, multi-compartiments. Idéal pour un kit 72h complet. Disponible en 3 coloris tactiques.</description>
+      <category>Sacs à dos</category>
+      <enclosure url="https://naturesurvie.net/img/prod_bugout.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-71</g:id>
+      <g:title>Sac de survie Bug Out Bag</g:title>
+      <g:description>Sac de survie Bug Out Bag 40L militaire. Structure MOLLE, résistant à l&apos;eau, multi-compartiments. Idéal pour un kit 72h complet. Disponible en 3 coloris tactiques.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=71</g:link>
+      <g:image_link>https://naturesurvie.net/img/prod_bugout.jpg</g:image_link>
+      <g:price>45.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sacs à dos</g:product_type>
+    </item>
+    <item>
+      <title>Station d&apos;énergie portable 300Wh</title>
+      <link>https://naturesurvie.net/produit.html?id=90</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=90</guid>
+      <description>Station LiFePO4 300Wh. Sortie AC 220V + USB-C 60W + DC 12V. Recharge solaire, voiture ou secteur. Silencieuse. Idéale coupures, camping, van.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/station_300wh.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-90</g:id>
+      <g:title>Station d&apos;énergie portable 300Wh</g:title>
+      <g:description>Station LiFePO4 300Wh. Sortie AC 220V + USB-C 60W + DC 12V. Recharge solaire, voiture ou secteur. Silencieuse. Idéale coupures, camping, van.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=90</g:link>
+      <g:image_link>https://naturesurvie.net/img/station_300wh.jpg</g:image_link>
+      <g:price>189.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Panneau solaire pliable 100W monocristallin</title>
+      <link>https://naturesurvie.net/produit.html?id=91</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=91</guid>
+      <description>Panneau solaire pliable 100W monocristallin. Efficacité 23%, ETFE, USB-A+USB-C+MC4. IPX4. Compatible toutes stations portables.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/panneau_100w.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-91</g:id>
+      <g:title>Panneau solaire pliable 100W monocristallin</g:title>
+      <g:description>Panneau solaire pliable 100W monocristallin. Efficacité 23%, ETFE, USB-A+USB-C+MC4. IPX4. Compatible toutes stations portables.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=91</g:link>
+      <g:image_link>https://naturesurvie.net/img/panneau_100w.jpg</g:image_link>
+      <g:price>79.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Kit solaire 200W + station 300Wh</title>
+      <link>https://naturesurvie.net/produit.html?id=92</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=92</guid>
+      <description>Kit solaire complet : panneau 200W + station portative 300Wh LiFePO4. Recharge en 2-3h de soleil. Zéro installation.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/kit_solaire_200w.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-92</g:id>
+      <g:title>Kit solaire 200W + station 300Wh</g:title>
+      <g:description>Kit solaire complet : panneau 200W + station portative 300Wh LiFePO4. Recharge en 2-3h de soleil. Zéro installation.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=92</g:link>
+      <g:image_link>https://naturesurvie.net/img/kit_solaire_200w.jpg</g:image_link>
+      <g:price>249.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Chargeur solaire USB pliable 21W</title>
+      <link>https://naturesurvie.net/produit.html?id=93</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=93</guid>
+      <description>Chargeur solaire pliable 21W. 2× USB-A + USB-C. Efficacité 22%. 380g. Pour smartphones, GPS et lampes.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/chargeur_solaire_21w.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-93</g:id>
+      <g:title>Chargeur solaire USB pliable 21W</g:title>
+      <g:description>Chargeur solaire pliable 21W. 2× USB-A + USB-C. Efficacité 22%. 380g. Pour smartphones, GPS et lampes.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=93</g:link>
+      <g:image_link>https://naturesurvie.net/img/chargeur_solaire_21w.jpg</g:image_link>
+      <g:price>32.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Batterie solaire de secours 20000mAh</title>
+      <link>https://naturesurvie.net/produit.html?id=94</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=94</guid>
+      <description>Batterie solaire 20000mAh panneau 5W intégré, IP66, lampe SOS LED. Charge 5 smartphones. Idéale randonnée et urgence.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/batterie_solaire_20000.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-94</g:id>
+      <g:title>Batterie solaire de secours 20000mAh</g:title>
+      <g:description>Batterie solaire 20000mAh panneau 5W intégré, IP66, lampe SOS LED. Charge 5 smartphones. Idéale randonnée et urgence.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=94</g:link>
+      <g:image_link>https://naturesurvie.net/img/batterie_solaire_20000.jpg</g:image_link>
+      <g:price>28.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Lampe solaire outdoor 2000 lm</title>
+      <link>https://naturesurvie.net/produit.html?id=95</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=95</guid>
+      <description>Lampe solaire outdoor 2000 lm. LFP 6000mAh. IP65. Autonomie 8-12h. Détecteur mouvement. Pour jardin, terrasse, camping.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/lampe_solaire_2000.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-95</g:id>
+      <g:title>Lampe solaire outdoor 2000 lm</g:title>
+      <g:description>Lampe solaire outdoor 2000 lm. LFP 6000mAh. IP65. Autonomie 8-12h. Détecteur mouvement. Pour jardin, terrasse, camping.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=95</g:link>
+      <g:image_link>https://naturesurvie.net/img/lampe_solaire_2000.jpg</g:image_link>
+      <g:price>22.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Contrôleur de charge solaire MPPT 30A</title>
+      <link>https://naturesurvie.net/produit.html?id=96</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=96</guid>
+      <description>Régulateur MPPT 30A. 12V/24V. LCD. Jusqu&apos;à 400W de panneaux. Protection intégrée. Pour chalet, camping-car, bateau.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/controleur_mppt.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-96</g:id>
+      <g:title>Contrôleur de charge solaire MPPT 30A</g:title>
+      <g:description>Régulateur MPPT 30A. 12V/24V. LCD. Jusqu&apos;à 400W de panneaux. Protection intégrée. Pour chalet, camping-car, bateau.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=96</g:link>
+      <g:image_link>https://naturesurvie.net/img/controleur_mppt.jpg</g:image_link>
+      <g:price>25.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Set d&apos;outils de jardinage 3 pièces</title>
+      <link>https://naturesurvie.net/produit.html?id=101</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=101</guid>
+      <description>Truelle, transplantoir et cultivateur. Manches ergonomiques antidérapants. Acier inoxydable.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/outils_set.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-101</g:id>
+      <g:title>Set d&apos;outils de jardinage 3 pièces</g:title>
+      <g:description>Truelle, transplantoir et cultivateur. Manches ergonomiques antidérapants. Acier inoxydable.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=101</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/outils_set.jpg</g:image_link>
+      <g:price>23.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Bêche de jardin professionnelle</title>
+      <link>https://naturesurvie.net/produit.html?id=102</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=102</guid>
+      <description>Lame acier trempé, manche en bois de frêne 120cm. Idéale pour retourner la terre et creuser.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/beche.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-102</g:id>
+      <g:title>Bêche de jardin professionnelle</g:title>
+      <g:description>Lame acier trempé, manche en bois de frêne 120cm. Idéale pour retourner la terre et creuser.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=102</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/beche.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Sécateur professionnel à lame franche</title>
+      <link>https://naturesurvie.net/produit.html?id=103</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=103</guid>
+      <description>Lame en acier SK5 trempé, poignée ergonomique. Coupe nette jusqu&apos;à 25mm de diamètre.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/secateur.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-103</g:id>
+      <g:title>Sécateur professionnel à lame franche</g:title>
+      <g:description>Lame en acier SK5 trempé, poignée ergonomique. Coupe nette jusqu&apos;à 25mm de diamètre.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=103</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/secateur.jpg</g:image_link>
+      <g:price>22.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Serre de balcon 4 étagères</title>
+      <link>https://naturesurvie.net/produit.html?id=104</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=104</guid>
+      <description>Structure acier + housse PE transparente. 143x73x61cm. Parfaite pour balcon ou terrasse.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/serre_balcon.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-104</g:id>
+      <g:title>Serre de balcon 4 étagères</g:title>
+      <g:description>Structure acier + housse PE transparente. 143x73x61cm. Parfaite pour balcon ou terrasse.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=104</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/serre_balcon.jpg</g:image_link>
+      <g:price>36.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Mini serre tunnel de jardin 6m²</title>
+      <link>https://naturesurvie.net/produit.html?id=105</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=105</guid>
+      <description>Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/serre_tunnel.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-105</g:id>
+      <g:title>Mini serre tunnel de jardin 6m²</g:title>
+      <g:description>Armature galvanisée, bâche 180 microns UV. 300x200x200cm. Protège contre le gel et les insectes.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=105</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/serre_tunnel.jpg</g:image_link>
+      <g:price>59.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Composteur de jardin 300L</title>
+      <link>https://naturesurvie.net/produit.html?id=106</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=106</guid>
+      <description>Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/composteur.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-106</g:id>
+      <g:title>Composteur de jardin 300L</g:title>
+      <g:description>Plastique recyclé 100%, trappe de récupération en bas. Transforme vos déchets en engrais naturel.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=106</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/composteur.jpg</g:image_link>
+      <g:price>47.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Lombricomposteur 3 niveaux</title>
+      <link>https://naturesurvie.net/produit.html?id=107</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=107</guid>
+      <description>Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/lombri.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-107</g:id>
+      <g:title>Lombricomposteur 3 niveaux</g:title>
+      <g:description>Compostage aux vers de terre. Produit un engrais liquide ultra-concentré. Idéal appartement.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=107</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/lombri.jpg</g:image_link>
+      <g:price>44.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Arrosoir 10L bec long en zinc</title>
+      <link>https://naturesurvie.net/produit.html?id=108</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=108</guid>
+      <description>Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/arrosoir.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-108</g:id>
+      <g:title>Arrosoir 10L bec long en zinc</g:title>
+      <g:description>Zinc galvanisé anticorrosion, bec long pour atteindre le pied des plantes. Contenance 10 litres.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=108</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/arrosoir.jpg</g:image_link>
+      <g:price>27.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Kit goutte-à-goutte 50 plantes</title>
+      <link>https://naturesurvie.net/produit.html?id=109</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=109</guid>
+      <description>Système d&apos;irrigation automatique. 15m de tuyau, 50 goutteurs réglables. Économise 70% d&apos;eau.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/goutte.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-109</g:id>
+      <g:title>Kit goutte-à-goutte 50 plantes</g:title>
+      <g:description>Système d&apos;irrigation automatique. 15m de tuyau, 50 goutteurs réglables. Économise 70% d&apos;eau.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=109</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/goutte.jpg</g:image_link>
+      <g:price>32.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Carré potager surélevé en bois 120x60cm</title>
+      <link>https://naturesurvie.net/produit.html?id=110</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=110</guid>
+      <description>Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/carre_potager.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-110</g:id>
+      <g:title>Carré potager surélevé en bois 120x60cm</g:title>
+      <g:description>Bois de pin traité autoclave. Hauteur 30cm. Idéal terrasse, balcon ou jardin. Montage facile.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=110</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/carre_potager.jpg</g:image_link>
+      <g:price>50.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Tour à fraises &amp; plantes aromatiques</title>
+      <link>https://naturesurvie.net/produit.html?id=111</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=111</guid>
+      <description>5 poches de plantation empilables. Culture verticale, gain de place. Parfait pour balcon.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/tour_fraises.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-111</g:id>
+      <g:title>Tour à fraises &amp; plantes aromatiques</g:title>
+      <g:description>5 poches de plantation empilables. Culture verticale, gain de place. Parfait pour balcon.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=111</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/tour_fraises.jpg</g:image_link>
+      <g:price>22.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Filet anti-insectes 2x5m</title>
+      <link>https://naturesurvie.net/produit.html?id=112</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=112</guid>
+      <description>Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/filet.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-112</g:id>
+      <g:title>Filet anti-insectes 2x5m</g:title>
+      <g:description>Maille fine 0,8mm, protège légumes et fruits des insectes et oiseaux. Laisse passer lumière et pluie.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=112</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/filet.jpg</g:image_link>
+      <g:price>19.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Voile d&apos;hivernage 30g/m² - 10x2m</title>
+      <link>https://naturesurvie.net/produit.html?id=113</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=113</guid>
+      <description>Protège vos cultures jusqu&apos;à -6°C. Perméable à l&apos;eau et à la lumière. Réutilisable plusieurs saisons.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage/voile.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-113</g:id>
+      <g:title>Voile d&apos;hivernage 30g/m² - 10x2m</g:title>
+      <g:description>Protège vos cultures jusqu&apos;à -6°C. Perméable à l&apos;eau et à la lumière. Réutilisable plusieurs saisons.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=113</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage/voile.jpg</g:image_link>
+      <g:price>17.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Débroussailleuse électrique filaire 600W</title>
+      <link>https://naturesurvie.net/produit.html?id=114</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=114</guid>
+      <description>Tête de coupe rotative, fil nylon ø1,6mm, poignée ergonomique. Légère (~2,5 kg), câble 10m inclus.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/debroussailleuse_filaire.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-114</g:id>
+      <g:title>Débroussailleuse électrique filaire 600W</g:title>
+      <g:description>Tête de coupe rotative, fil nylon ø1,6mm, poignée ergonomique. Légère (~2,5 kg), câble 10m inclus.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=114</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/debroussailleuse_filaire.jpg</g:image_link>
+      <g:price>52.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Débroussailleuse sans fil batterie 20V</title>
+      <link>https://naturesurvie.net/produit.html?id=115</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=115</guid>
+      <description>Li-Ion 20V, tête à double fil, autonomie ~35 min, 2,8 kg. Démarrage instantané, rechargeable en 1h.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/debroussailleuse_batterie.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-115</g:id>
+      <g:title>Débroussailleuse sans fil batterie 20V</g:title>
+      <g:description>Li-Ion 20V, tête à double fil, autonomie ~35 min, 2,8 kg. Démarrage instantané, rechargeable en 1h.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=115</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/debroussailleuse_batterie.jpg</g:image_link>
+      <g:price>79.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Taille-haie électrique 450W 45cm</title>
+      <link>https://naturesurvie.net/produit.html?id=116</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=116</guid>
+      <description>Lame double action 45cm, espacement dents 16mm, poignée rotative 180°. Léger (2,2 kg).</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/taillehaie.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-116</g:id>
+      <g:title>Taille-haie électrique 450W 45cm</g:title>
+      <g:description>Lame double action 45cm, espacement dents 16mm, poignée rotative 180°. Léger (2,2 kg).</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=116</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/taillehaie.jpg</g:image_link>
+      <g:price>47.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Souffleur-aspirateur de feuilles 3-en-1 2800W</title>
+      <link>https://naturesurvie.net/produit.html?id=117</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=117</guid>
+      <description>Souffle, aspire et broie. Sac collecteur 45L, vitesse d&apos;air 290 km/h. Rapport broyage 10:1.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/souffleur.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-117</g:id>
+      <g:title>Souffleur-aspirateur de feuilles 3-en-1 2800W</g:title>
+      <g:description>Souffle, aspire et broie. Sac collecteur 45L, vitesse d&apos;air 290 km/h. Rapport broyage 10:1.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=117</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/souffleur.jpg</g:image_link>
+      <g:price>42.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Tondeuse à gazon électrique 1400W 32cm</title>
+      <link>https://naturesurvie.net/produit.html?id=118</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=118</guid>
+      <description>Largeur de coupe 32cm, 5 hauteurs (25-70mm), bac 30L. Idéale jusqu&apos;à 200 m². Légère (8 kg).</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/tondeuse.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-118</g:id>
+      <g:title>Tondeuse à gazon électrique 1400W 32cm</g:title>
+      <g:description>Largeur de coupe 32cm, 5 hauteurs (25-70mm), bac 30L. Idéale jusqu&apos;à 200 m². Légère (8 kg).</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=118</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/tondeuse.jpg</g:image_link>
+      <g:price>91.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Scarificateur aérateur 2-en-1 1300W 32cm</title>
+      <link>https://naturesurvie.net/produit.html?id=119</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=119</guid>
+      <description>Largeur 32cm, profondeur réglable sur 5 niveaux, bac 30L. Régénère la pelouse, élimine le feutre.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/scarificateur.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-119</g:id>
+      <g:title>Scarificateur aérateur 2-en-1 1300W 32cm</g:title>
+      <g:description>Largeur 32cm, profondeur réglable sur 5 niveaux, bac 30L. Régénère la pelouse, élimine le feutre.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=119</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/scarificateur.jpg</g:image_link>
+      <g:price>69.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Coupe-bordures électrique 350W</title>
+      <link>https://naturesurvie.net/produit.html?id=120</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=120</guid>
+      <description>Tête pivotante 180°, bobine automatique, manche télescopique. Ultra-léger (1,4 kg).</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/coupebordures.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-120</g:id>
+      <g:title>Coupe-bordures électrique 350W</g:title>
+      <g:description>Tête pivotante 180°, bobine automatique, manche télescopique. Ultra-léger (1,4 kg).</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=120</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/coupebordures.jpg</g:image_link>
+      <g:price>33.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Pulvérisateur à pression 16L sur roues</title>
+      <link>https://naturesurvie.net/produit.html?id=121</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=121</guid>
+      <description>Chariot à roues, lance télescopique 1,2m, jet continu/brumisation. Grande capacité 16L.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/pulverisateur.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-121</g:id>
+      <g:title>Pulvérisateur à pression 16L sur roues</g:title>
+      <g:description>Chariot à roues, lance télescopique 1,2m, jet continu/brumisation. Grande capacité 16L.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=121</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/pulverisateur.jpg</g:image_link>
+      <g:price>39.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Bâche de jardin imperméable 4x6m</title>
+      <link>https://naturesurvie.net/produit.html?id=122</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=122</guid>
+      <description>90g/m², oeillets tous les 50cm, résistante UV. Couvre bois, compost, potager, terrasse.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/bache.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-122</g:id>
+      <g:title>Bâche de jardin imperméable 4x6m</g:title>
+      <g:description>90g/m², oeillets tous les 50cm, résistante UV. Couvre bois, compost, potager, terrasse.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=122</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/bache.jpg</g:image_link>
+      <g:price>30.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Brouette pliante en acier galvanisé 100L</title>
+      <link>https://naturesurvie.net/produit.html?id=123</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=123</guid>
+      <description>Roue pneumatique anti-crevaison, charge max 150 kg. Pliable pour stockage compact. Sans outil.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/images/jardinage2/brouette.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-123</g:id>
+      <g:title>Brouette pliante en acier galvanisé 100L</g:title>
+      <g:description>Roue pneumatique anti-crevaison, charge max 150 kg. Pliable pour stockage compact. Sans outil.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=123</g:link>
+      <g:image_link>https://naturesurvie.net/images/jardinage2/brouette.jpg</g:image_link>
+      <g:price>59.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Sécateur Pro Tête Rotative</title>
+      <link>https://naturesurvie.net/produit.html?id=124</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=124</guid>
+      <description>Sécateur à tête rotative pour réduire la fatigue. Lame inox tranchante, ressort anti-retour. Taille précise branches jusqu&apos;à 2 cm.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://oss-cf.cjdropshipping.com/product/2026/05/11/06/6f6e968a-7d4d-42a6-a31f-ca0c7006a187_trans.jpeg" type="image/jpeg" length="0"/>
+      <g:id>NS-124</g:id>
+      <g:title>Sécateur Pro Tête Rotative</g:title>
+      <g:description>Sécateur à tête rotative pour réduire la fatigue. Lame inox tranchante, ressort anti-retour. Taille précise branches jusqu&apos;à 2 cm.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=124</g:link>
+      <g:image_link>https://oss-cf.cjdropshipping.com/product/2026/05/11/06/6f6e968a-7d4d-42a6-a31f-ca0c7006a187_trans.jpeg</g:image_link>
+      <g:price>7.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Étagère Plantes Multi-niveaux Style Nordique</title>
+      <link>https://naturesurvie.net/produit.html?id=125</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=125</guid>
+      <description>Présentoir à plantes intérieur 4 niveaux, style scandinave. Idéal pour succulentes, plantes grasses et pothos.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://cf.cjdropshipping.com/quick/product/f4c78289-239f-4259-846f-f2d022ba1255.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-125</g:id>
+      <g:title>Étagère Plantes Multi-niveaux Style Nordique</g:title>
+      <g:description>Présentoir à plantes intérieur 4 niveaux, style scandinave. Idéal pour succulentes, plantes grasses et pothos.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=125</g:link>
+      <g:image_link>https://cf.cjdropshipping.com/quick/product/f4c78289-239f-4259-846f-f2d022ba1255.jpg</g:image_link>
+      <g:price>32.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Lampe Solaire Jardin 3 Têtes - Étanche IP65</title>
+      <link>https://naturesurvie.net/produit.html?id=126</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=126</guid>
+      <description>Lampe de jardin solaire 3 têtes orientables. Charge automatique le jour, éclairage la nuit. Imperméable IP65.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://cf.cjdropshipping.com/quick/product/f354d75d-6fcc-4c87-8f37-9b6f24b921a3.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-126</g:id>
+      <g:title>Lampe Solaire Jardin 3 Têtes - Étanche IP65</g:title>
+      <g:description>Lampe de jardin solaire 3 têtes orientables. Charge automatique le jour, éclairage la nuit. Imperméable IP65.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=126</g:link>
+      <g:image_link>https://cf.cjdropshipping.com/quick/product/f354d75d-6fcc-4c87-8f37-9b6f24b921a3.jpg</g:image_link>
+      <g:price>32.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Gants de jardinage résistants aux épines</title>
+      <link>https://naturesurvie.net/produit.html?id=127</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=127</guid>
+      <description>Cuir de vachette paume, manchette longue. S / M / L / XL en kaki ou rose.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_gants.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-127</g:id>
+      <g:title>Gants de jardinage résistants aux épines</g:title>
+      <g:description>Cuir de vachette paume, manchette longue. S / M / L / XL en kaki ou rose.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=127</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_gants.jpg</g:image_link>
+      <g:price>9.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Arrosoir en acier galvanisé</title>
+      <link>https://naturesurvie.net/produit.html?id=128</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=128</guid>
+      <description>Pomme amovible, résistant rouille. 5L vert/rouge, 8L, 10L.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_arrosoir.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-128</g:id>
+      <g:title>Arrosoir en acier galvanisé</g:title>
+      <g:description>Pomme amovible, résistant rouille. 5L vert/rouge, 8L, 10L.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=128</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_arrosoir.jpg</g:image_link>
+      <g:price>22.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Serre de jardin tunnel modulable</title>
+      <link>https://naturesurvie.net/produit.html?id=129</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=129</guid>
+      <description>Polyéthylène renforcé, armature acier galvanisé, ventilation zippée. 4 tailles disponibles.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_serre.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-129</g:id>
+      <g:title>Serre de jardin tunnel modulable</g:title>
+      <g:description>Polyéthylène renforcé, armature acier galvanisé, ventilation zippée. 4 tailles disponibles.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=129</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_serre.jpg</g:image_link>
+      <g:price>39.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Tuteurs pour plantes et tomates</title>
+      <link>https://naturesurvie.net/produit.html?id=130</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=130</guid>
+      <description>Bambou ou métal. ×10/×20 pièces, 90-150cm. Réutilisables.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_tuteurs.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-130</g:id>
+      <g:title>Tuteurs pour plantes et tomates</g:title>
+      <g:description>Bambou ou métal. ×10/×20 pièces, 90-150cm. Réutilisables.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=130</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_tuteurs.jpg</g:image_link>
+      <g:price>9.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Terreau universel potager bio</title>
+      <link>https://naturesurvie.net/produit.html?id=131</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=131</guid>
+      <description>Compost bio, sans tourbe, texture aérée. 5L / 20L / 50L.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_terreau.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-131</g:id>
+      <g:title>Terreau universel potager bio</g:title>
+      <g:description>Compost bio, sans tourbe, texture aérée. 5L / 20L / 50L.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=131</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_terreau.jpg</g:image_link>
+      <g:price>12.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Kit semences potager 20 légumes</title>
+      <link>https://naturesurvie.net/produit.html?id=132</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=132</guid>
+      <description>Bio, non traitées, reproductibles. De 10 à 50 variétés de légumes.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_semences.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-132</g:id>
+      <g:title>Kit semences potager 20 légumes</g:title>
+      <g:description>Bio, non traitées, reproductibles. De 10 à 50 variétés de légumes.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=132</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_semences.jpg</g:image_link>
+      <g:price>10.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Composteur de jardin 300L (grande gamme)</title>
+      <link>https://naturesurvie.net/produit.html?id=133</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=133</guid>
+      <description>Plastique recyclé, trappe récupération, couvercle anti-pluie. 300L / 400L / 600L.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_composteur.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-133</g:id>
+      <g:title>Composteur de jardin 300L (grande gamme)</g:title>
+      <g:description>Plastique recyclé, trappe récupération, couvercle anti-pluie. 300L / 400L / 600L.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=133</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_composteur.jpg</g:image_link>
+      <g:price>35.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Kit irrigation goutte à goutte 30 plantes</title>
+      <link>https://naturesurvie.net/produit.html?id=134</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=134</guid>
+      <description>Goutteurs réglables, économise 70% d&apos;eau. 15 à 100 plantes.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_irrigation.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-134</g:id>
+      <g:title>Kit irrigation goutte à goutte 30 plantes</g:title>
+      <g:description>Goutteurs réglables, économise 70% d&apos;eau. 15 à 100 plantes.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=134</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_irrigation.jpg</g:image_link>
+      <g:price>12.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Pots géotextiles pour potager</title>
+      <link>https://naturesurvie.net/produit.html?id=135</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=135</guid>
+      <description>Air-pruning, drainage parfait, UV-résistants. ×5 : 10L / 20L / 30L, noir ou vert.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_pots.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-135</g:id>
+      <g:title>Pots géotextiles pour potager</g:title>
+      <g:description>Air-pruning, drainage parfait, UV-résistants. ×5 : 10L / 20L / 30L, noir ou vert.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=135</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_pots.jpg</g:image_link>
+      <g:price>12.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Programmateur d&apos;arrosage automatique</title>
+      <link>https://naturesurvie.net/produit.html?id=136</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=136</guid>
+      <description>6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_timer.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-136</g:id>
+      <g:title>Programmateur d&apos;arrosage automatique</g:title>
+      <g:description>6 programmes/jour, IPX5, raccord universel. Version WiFi disponible.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=136</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_timer.jpg</g:image_link>
+      <g:price>22.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Cuve récupération eau de pluie 300L</title>
+      <link>https://naturesurvie.net/produit.html?id=137</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=137</guid>
+      <description>Cuve de récupération d&apos;eau de pluie 300 litres en polyéthylène recyclé. Raccord gouttière universel, robinet de soutirage 3/4&quot;, couvercle anti-moustiques. Idéale pour arroser un potager en autonomie. Économisez jusqu&apos;à 50% sur votre consommation d&apos;eau.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_cuve_pluie.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-137</g:id>
+      <g:title>Cuve récupération eau de pluie 300L</g:title>
+      <g:description>Cuve de récupération d&apos;eau de pluie 300 litres en polyéthylène recyclé. Raccord gouttière universel, robinet de soutirage 3/4&quot;, couvercle anti-moustiques. Idéale pour arroser un potager en autonomie. Économisez jusqu&apos;à 50% sur votre consommation d&apos;eau.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=137</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_cuve_pluie.jpg</g:image_link>
+      <g:price>59.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Lampe horticole LED spectre complet</title>
+      <link>https://naturesurvie.net/produit.html?id=138</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=138</guid>
+      <description>Lampe de croissance LED 45W spectre complet (380-780nm). Couvre 60×60cm. Efficacité 2,7 µmol/J. Ideal semis, bouturage, culture indoor toute l&apos;année. Durée de vie 50 000h. Consomme 5× moins qu&apos;une lampe sodium.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_lampe_horticole.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-138</g:id>
+      <g:title>Lampe horticole LED spectre complet</g:title>
+      <g:description>Lampe de croissance LED 45W spectre complet (380-780nm). Couvre 60×60cm. Efficacité 2,7 µmol/J. Ideal semis, bouturage, culture indoor toute l&apos;année. Durée de vie 50 000h. Consomme 5× moins qu&apos;une lampe sodium.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=138</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_lampe_horticole.jpg</g:image_link>
+      <g:price>34.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Engrais bio guano de chauve-souris 1L</title>
+      <link>https://naturesurvie.net/produit.html?id=139</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=139</guid>
+      <description>Engrais biologique liquide à base de guano de chauve-souris. Riche en NPK naturel (7-3-1). Stimule la croissance, améliore la résistance aux maladies. 1L concentré = 100L de solution. Compatible agriculture biologique — certification AB.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_engrais_guano.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-139</g:id>
+      <g:title>Engrais bio guano de chauve-souris 1L</g:title>
+      <g:description>Engrais biologique liquide à base de guano de chauve-souris. Riche en NPK naturel (7-3-1). Stimule la croissance, améliore la résistance aux maladies. 1L concentré = 100L de solution. Compatible agriculture biologique — certification AB.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=139</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_engrais_guano.jpg</g:image_link>
+      <g:price>14.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Testeur pH et humidité sol numérique</title>
+      <link>https://naturesurvie.net/produit.html?id=140</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=140</guid>
+      <description>Testeur de sol numérique 3-en-1 : pH (3,5-9), humidité (10-80%), luminosité (0-2000 lux). Sans batterie pour pH/humidité. Sonde acier inox 20cm. Résultats en 60 secondes. Indispensable pour optimiser les cultures et éviter carences.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_testeur_ph.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-140</g:id>
+      <g:title>Testeur pH et humidité sol numérique</g:title>
+      <g:description>Testeur de sol numérique 3-en-1 : pH (3,5-9), humidité (10-80%), luminosité (0-2000 lux). Sans batterie pour pH/humidité. Sonde acier inox 20cm. Résultats en 60 secondes. Indispensable pour optimiser les cultures et éviter carences.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=140</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_testeur_ph.jpg</g:image_link>
+      <g:price>19.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Désherbeur thermique à gaz 2000W</title>
+      <link>https://naturesurvie.net/produit.html?id=141</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=141</guid>
+      <description>Désherbeur thermique à gaz butane/propane 2000W. Lance-flamme orientable 360°, allumage piézo-électrique. Manche télescopique 85-105cm. Sans herbicide, écologique. Détruit les mauvaises herbes en 2-3 secondes. Compatible cartouches 220g standard.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_desherbeur_gaz.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-141</g:id>
+      <g:title>Désherbeur thermique à gaz 2000W</g:title>
+      <g:description>Désherbeur thermique à gaz butane/propane 2000W. Lance-flamme orientable 360°, allumage piézo-électrique. Manche télescopique 85-105cm. Sans herbicide, écologique. Détruit les mauvaises herbes en 2-3 secondes. Compatible cartouches 220g standard.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=141</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_desherbeur_gaz.jpg</g:image_link>
+      <g:price>39.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Couvercles conservation sous vide — lot de 8</title>
+      <link>https://naturesurvie.net/produit.html?id=142</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=142</guid>
+      <description>Set de 8 couvercles de conservation sous vide pour bocaux à large ouverture (86mm). Compatibles bocaux Le Parfait, Mason Jar, Ball. Extension jusqu&apos;à 5× la durée de conservation. Pompe manuelle incluse. Sans BPA, réutilisables.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_couvercles_vide.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-142</g:id>
+      <g:title>Couvercles conservation sous vide — lot de 8</g:title>
+      <g:description>Set de 8 couvercles de conservation sous vide pour bocaux à large ouverture (86mm). Compatibles bocaux Le Parfait, Mason Jar, Ball. Extension jusqu&apos;à 5× la durée de conservation. Pompe manuelle incluse. Sans BPA, réutilisables.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=142</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_couvercles_vide.jpg</g:image_link>
+      <g:price>12.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Agenouilloir pliable 2-en-1 jardinier</title>
+      <link>https://naturesurvie.net/produit.html?id=143</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=143</guid>
+      <description>Agenouilloir/tabouret 2-en-1 : retourné devient assise. Mousse EPE 5cm anti-fatigue, structure acier tubulaire Ø25mm, charge max 120 kg. Poids : 1,1 kg. Pliable en 5 secondes. Poignées latérales facilitent les relevés. Idéal arthrose et jardinage prolongé.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/jard_agenouilloir.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-143</g:id>
+      <g:title>Agenouilloir pliable 2-en-1 jardinier</g:title>
+      <g:description>Agenouilloir/tabouret 2-en-1 : retourné devient assise. Mousse EPE 5cm anti-fatigue, structure acier tubulaire Ø25mm, charge max 120 kg. Poids : 1,1 kg. Pliable en 5 secondes. Poignées latérales facilitent les relevés. Idéal arthrose et jardinage prolongé.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=143</g:link>
+      <g:image_link>https://naturesurvie.net/img/jard_agenouilloir.jpg</g:image_link>
+      <g:price>22.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Grelinette bio 3 dents</title>
+      <link>https://naturesurvie.net/produit.html?id=144</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=144</guid>
+      <description>Grelinette bio 3 dents en acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol. L&apos;outil bio par excellence.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/grelinette.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-144</g:id>
+      <g:title>Grelinette bio 3 dents</g:title>
+      <g:description>Grelinette bio 3 dents en acier forgé, manche hêtre 120cm. Ameublit sans retourner, préserve vers et vie du sol. L&apos;outil bio par excellence.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=144</g:link>
+      <g:image_link>https://naturesurvie.net/img/grelinette.jpg</g:image_link>
+      <g:price>38.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Couteau désherbeur en acier inox</title>
+      <link>https://naturesurvie.net/produit.html?id=145</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=145</guid>
+      <description>Couteau désherbeur lame acier inox 18cm. Tranche les racines au ras du sol sans les arracher. Poignée ergonomique. Idéal allées, bordures, potager.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/couteau_desherbage.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-145</g:id>
+      <g:title>Couteau désherbeur en acier inox</g:title>
+      <g:description>Couteau désherbeur lame acier inox 18cm. Tranche les racines au ras du sol sans les arracher. Poignée ergonomique. Idéal allées, bordures, potager.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=145</g:link>
+      <g:image_link>https://naturesurvie.net/img/couteau_desherbage.jpg</g:image_link>
+      <g:price>12.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Système hydroponique 12 sites DWC</title>
+      <link>https://naturesurvie.net/produit.html?id=146</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=146</guid>
+      <description>Système hydroponique DWC 12 sites. Bac 30L, pompe à air, pierre diffusante, 12 godets + filets. Culture laitues, herbes, fraises. 3× plus rapide qu&apos;en terre.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/hydro_dwc.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-146</g:id>
+      <g:title>Système hydroponique 12 sites DWC</g:title>
+      <g:description>Système hydroponique DWC 12 sites. Bac 30L, pompe à air, pierre diffusante, 12 godets + filets. Culture laitues, herbes, fraises. 3× plus rapide qu&apos;en terre.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=146</g:link>
+      <g:image_link>https://naturesurvie.net/img/hydro_dwc.jpg</g:image_link>
+      <g:price>35.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Thermohygromètre digital pour serre</title>
+      <link>https://naturesurvie.net/produit.html?id=147</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=147</guid>
+      <description>Thermohygromètre digital pour serre et culture indoor. Plage -50°C à +70°C, humidité 10-99%. Mémoire min/max, icône confort. Écran LCD rétroéclairé.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/thermohygrometre.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-147</g:id>
+      <g:title>Thermohygromètre digital pour serre</g:title>
+      <g:description>Thermohygromètre digital pour serre et culture indoor. Plage -50°C à +70°C, humidité 10-99%. Mémoire min/max, icône confort. Écran LCD rétroéclairé.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=147</g:link>
+      <g:image_link>https://naturesurvie.net/img/thermohygrometre.jpg</g:image_link>
+      <g:price>14.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Minuterie électrique 7 jours programmable</title>
+      <link>https://naturesurvie.net/produit.html?id=149</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=149</guid>
+      <description>Minuterie électrique programmable 7 jours 16A. Pour lampe horticole, pompe hydroponique, chauffage serre. 20 programmes par jour. LCD, charge max 3680W.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/minuterie_16a.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-149</g:id>
+      <g:title>Minuterie électrique 7 jours programmable</g:title>
+      <g:description>Minuterie électrique programmable 7 jours 16A. Pour lampe horticole, pompe hydroponique, chauffage serre. 20 programmes par jour. LCD, charge max 3680W.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=149</g:link>
+      <g:image_link>https://naturesurvie.net/img/minuterie_16a.jpg</g:image_link>
+      <g:price>9.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Substrat coco/coir culture premium 50L</title>
+      <link>https://naturesurvie.net/produit.html?id=150</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=150</guid>
+      <description>Substrat de culture coco/coir premium 50L. Lavé et tamponné pH 5,8-6,2. Utilisable seul, en mélange sol ou hydroponique. Certifié OMRI bio. Excellent drainage et rétention.</description>
+      <category>Jardinage</category>
+      <enclosure url="https://naturesurvie.net/img/substrat_coco.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-150</g:id>
+      <g:title>Substrat coco/coir culture premium 50L</g:title>
+      <g:description>Substrat de culture coco/coir premium 50L. Lavé et tamponné pH 5,8-6,2. Utilisable seul, en mélange sol ou hydroponique. Certifié OMRI bio. Excellent drainage et rétention.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=150</g:link>
+      <g:image_link>https://naturesurvie.net/img/substrat_coco.jpg</g:image_link>
+      <g:price>18.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Jardinage</g:product_type>
+    </item>
+    <item>
+      <title>Filtre à eau portable LifeStraw 1000L</title>
+      <link>https://naturesurvie.net/produit.html?id=200</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=200</guid>
+      <description>Filtre à eau LifeStraw certifié. Élimine 99,9999% des bactéries (E.coli, Salmonella) et 99,9% des parasites (Giardia, Cryptosporidium). Capacité 1000 litres — zéro produit chimique, zéro pile. Poids 56g. Boire directement dans rivières et sources. Le filtre de survie le plus vendu au monde.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_lifestraw.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-200</g:id>
+      <g:title>Filtre à eau portable LifeStraw 1000L</g:title>
+      <g:description>Filtre à eau LifeStraw certifié. Élimine 99,9999% des bactéries (E.coli, Salmonella) et 99,9% des parasites (Giardia, Cryptosporidium). Capacité 1000 litres — zéro produit chimique, zéro pile. Poids 56g. Boire directement dans rivières et sources. Le filtre de survie le plus vendu au monde.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=200</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_lifestraw.jpg</g:image_link>
+      <g:price>19.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Batterie solaire 20000mAh panneau 5W</title>
+      <link>https://naturesurvie.net/produit.html?id=201</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=201</guid>
+      <description>Power bank solaire 20000mAh avec panneau 5W intégré. 2 sorties USB-A (5V/2.1A) + 1 USB-C (5V/3A). Rechargeable par soleil en 15-20h ou secteur en 8h. Indicateur LED, imperméable IPX5. Charge smartphone jusqu&apos;à 5× ou tablette 2×. Parfait camping, randonnée, panne de courant.</description>
+      <category>Énergie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_batterie_solaire.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-201</g:id>
+      <g:title>Batterie solaire 20000mAh panneau 5W</g:title>
+      <g:description>Power bank solaire 20000mAh avec panneau 5W intégré. 2 sorties USB-A (5V/2.1A) + 1 USB-C (5V/3A). Rechargeable par soleil en 15-20h ou secteur en 8h. Indicateur LED, imperméable IPX5. Charge smartphone jusqu&apos;à 5× ou tablette 2×. Parfait camping, randonnée, panne de courant.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=201</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_batterie_solaire.jpg</g:image_link>
+      <g:price>34.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Énergie</g:product_type>
+    </item>
+    <item>
+      <title>Trousse premiers secours 42 pièces</title>
+      <link>https://naturesurvie.net/produit.html?id=202</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=202</guid>
+      <description>Kit premiers secours complet 42 pièces en pochette imperméable nylon. Inclus : pansements (18 tailles), compresses stériles, bandes élastiques, ciseaux, épingles de sûreté, gants nitrile, masque RCP, garrot, couverture survie. Conforme EN 13157. Idéal randonnée, voiture, bivouac.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_trousse_secours.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-202</g:id>
+      <g:title>Trousse premiers secours 42 pièces</g:title>
+      <g:description>Kit premiers secours complet 42 pièces en pochette imperméable nylon. Inclus : pansements (18 tailles), compresses stériles, bandes élastiques, ciseaux, épingles de sûreté, gants nitrile, masque RCP, garrot, couverture survie. Conforme EN 13157. Idéal randonnée, voiture, bivouac.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=202</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_trousse_secours.jpg</g:image_link>
+      <g:price>18.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Kit allume-feu survie 3-en-1</title>
+      <link>https://naturesurvie.net/produit.html?id=203</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=203</guid>
+      <description>Kit allume-feu de survie 3-en-1 : briquet tempête rechargeable USB résistant vent jusqu&apos;à 80 km/h + pierre à feu ferrocerium 12cm (12 000 frappes) + bâtonnet d&apos;amadou. Étui imperméable inclus. Fonctionne sous la pluie, à -20°C, à toute altitude. Le trio indispensable du kit 72h.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_kit_feu.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-203</g:id>
+      <g:title>Kit allume-feu survie 3-en-1</g:title>
+      <g:description>Kit allume-feu de survie 3-en-1 : briquet tempête rechargeable USB résistant vent jusqu&apos;à 80 km/h + pierre à feu ferrocerium 12cm (12 000 frappes) + bâtonnet d&apos;amadou. Étui imperméable inclus. Fonctionne sous la pluie, à -20°C, à toute altitude. Le trio indispensable du kit 72h.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=203</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_kit_feu.jpg</g:image_link>
+      <g:price>14.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Couvertures survie mylar — lot de 4</title>
+      <link>https://naturesurvie.net/produit.html?id=204</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=204</guid>
+      <description>Couvertures de survie mylar 160×210cm. Réfléchissent 90% de la chaleur corporelle. Film aluminium double face (or/argent). Imperméables, légères (50g chacune), format poche. Certifiées CE. Protègent aussi contre le soleil et le vent. Lot de 4 — pour toute la famille.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_couverture_mylar.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-204</g:id>
+      <g:title>Couvertures survie mylar — lot de 4</g:title>
+      <g:description>Couvertures de survie mylar 160×210cm. Réfléchissent 90% de la chaleur corporelle. Film aluminium double face (or/argent). Imperméables, légères (50g chacune), format poche. Certifiées CE. Protègent aussi contre le soleil et le vent. Lot de 4 — pour toute la famille.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=204</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_couverture_mylar.jpg</g:image_link>
+      <g:price>9.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Radio météo manivelle solaire DAB+/FM</title>
+      <link>https://naturesurvie.net/produit.html?id=205</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=205</guid>
+      <description>Radio d&apos;urgence multi-énergie DAB+/FM/AM/SW. 4 modes d&apos;alimentation : manivelle dynamo (1 min → 20 min autonomie), panneau solaire, batterie intégrée 2000mAh, micro-USB. Lampe LED 3W. Alerte météo NOAA. Imperméable IPX3. Fonctionne sans électricité ni réseau.</description>
+      <category>Électronique outdoor</category>
+      <enclosure url="https://naturesurvie.net/img/surv_radio_manivelle.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-205</g:id>
+      <g:title>Radio météo manivelle solaire DAB+/FM</g:title>
+      <g:description>Radio d&apos;urgence multi-énergie DAB+/FM/AM/SW. 4 modes d&apos;alimentation : manivelle dynamo (1 min → 20 min autonomie), panneau solaire, batterie intégrée 2000mAh, micro-USB. Lampe LED 3W. Alerte météo NOAA. Imperméable IPX3. Fonctionne sans électricité ni réseau.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=205</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_radio_manivelle.jpg</g:image_link>
+      <g:price>39.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Électronique outdoor</g:product_type>
+    </item>
+    <item>
+      <title>Sac de couchage compact 0°C / -5°C</title>
+      <link>https://naturesurvie.net/produit.html?id=206</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=206</guid>
+      <description>Sac de couchage 3 saisons coupe momie. Garnissage fibre creuse thermique 250g/m². Fermeture éclair YKK double sens anti-accrochage. Compression 3,8L, poids 900g. Température confort 0°C / limite -5°C. Doublure polyester doux. Idéal bivouac, camping, kit d&apos;urgence.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_sac_couchage.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-206</g:id>
+      <g:title>Sac de couchage compact 0°C / -5°C</g:title>
+      <g:description>Sac de couchage 3 saisons coupe momie. Garnissage fibre creuse thermique 250g/m². Fermeture éclair YKK double sens anti-accrochage. Compression 3,8L, poids 900g. Température confort 0°C / limite -5°C. Doublure polyester doux. Idéal bivouac, camping, kit d&apos;urgence.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=206</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_sac_couchage.jpg</g:image_link>
+      <g:price>44.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
+    <item>
+      <title>Corde paracorde 550 — 30m + kit survie</title>
+      <link>https://naturesurvie.net/produit.html?id=207</link>
+      <guid isPermaLink="true">https://naturesurvie.net/produit.html?id=207</guid>
+      <description>Corde paracorde militaire MIL-C-5040H type III — résistance 250kg (550 lbs). 30 mètres. Gaine nylon 32 fuseaux, 7 brins intérieurs réutilisables (ligature, suture urgence, fabrication filet). Kit survie inclus : briquet, sifflet 120dB, boussole, grattoir ferro. Coloris olive/noir/camo.</description>
+      <category>Survie</category>
+      <enclosure url="https://naturesurvie.net/img/surv_paracorde.jpg" type="image/jpeg" length="0"/>
+      <g:id>NS-207</g:id>
+      <g:title>Corde paracorde 550 — 30m + kit survie</g:title>
+      <g:description>Corde paracorde militaire MIL-C-5040H type III — résistance 250kg (550 lbs). 30 mètres. Gaine nylon 32 fuseaux, 7 brins intérieurs réutilisables (ligature, suture urgence, fabrication filet). Kit survie inclus : briquet, sifflet 120dB, boussole, grattoir ferro. Coloris olive/noir/camo.</g:description>
+      <g:link>https://naturesurvie.net/produit.html?id=207</g:link>
+      <g:image_link>https://naturesurvie.net/img/surv_paracorde.jpg</g:image_link>
+      <g:price>14.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Nature Survie</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Survie</g:product_type>
+    </item>
   </channel>
 </rss>

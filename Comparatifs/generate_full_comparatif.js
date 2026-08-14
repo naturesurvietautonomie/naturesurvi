@@ -1,20 +1,38 @@
 const fs = require('fs');
-const src = fs.readFileSync('C:/Users/angel/AppData/Roaming/Genspark Claw/users/c40027ff-9144-4033-b2b2-53ee43dadfb0/workspace/naturesurvi/js/products.js', 'utf8');
+const path = require('path');
+
+// Le chemin d'origine pointait vers un espace de travail Genspark qui n'existe
+// plus : ce script ne tournait donc plus du tout. Il lit maintenant le catalogue
+// du dépôt, à côté de lui.
+const racine = path.join(__dirname, '..');
+const src = fs.readFileSync(path.join(racine, 'js/products.js'), 'utf8');
 eval(src.split('const CATEGORIES')[0].replace('const PRODUCTS', 'var PRODUCTS'));
+
+// Les prix d'achat ont été SORTIS de js/products.js le 14/08/2026 : ce fichier
+// est servi publiquement, et 119 prix fournisseur y étaient lisibles par
+// n'importe quel visiteur — la marge de chaque produit se calculait en deux
+// lignes. C'était le même secret que /Comparatifs/ protège depuis le 11/07,
+// qui sortait par la porte de service.
+// Ils vivent désormais ici, dans un dossier déjà coupé du web par _redirects.
+const PRIX_ACHAT = JSON.parse(fs.readFileSync(path.join(__dirname, 'prix-achat.json'), 'utf8'));
+const achatDe = (id) => {
+  const v = PRIX_ACHAT[String(id)];
+  return Array.isArray(v) ? v[0] : (v || 0);
+};
 
 const survie = PRODUCTS.filter(p => p.id < 80);
 const jardinage = PRODUCTS.filter(p => p.id >= 80);
 
 function getVariants(p) {
   if (p.variants && p.variants.length > 0) return p.variants;
-  return [{ label: 'Standard', price: p.price, supplierPrice: p.supplierPrice }];
+  return [{ label: 'Standard', price: p.price, supplierPrice: achatDe(p.id) }];
 }
 
 function analyse(prods) {
   let rows = [], ca = 0, profit = 0, hm = [];
   prods.forEach(p => {
     getVariants(p).forEach(v => {
-      const achat = v.supplierPrice || p.supplierPrice || 0;
+      const achat = v.supplierPrice || achatDe(p.id) || 0;
       const prix = v.price || p.price;
       const marge = achat > 0 ? Math.round((prix - achat) / prix * 100) : 0;
       if (marge < 15) { hm.push({ id: p.id, name: p.name, label: v.label, prix, achat, marge }); return; }

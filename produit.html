@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page-title">Produit — Nature Survie & Autonomie</title>
   <meta name="description" id="page-desc" content="Découvrez nos produits d'autosuffisance, survie et jardinage.">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192.png">
+  <link rel="apple-touch-icon" href="/img/favicon-192.png">
+  <meta property="og:site_name" content="Nature Survie &amp; Autonomie">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="product">
+  <meta property="og:title" id="og-title" content="Nature Survie &amp; Autonomie">
+  <meta property="og:description" id="og-desc" content="Matériel de survie, d'énergie portable et de jardinage. Livraison offerte dès 50 €.">
+  <meta property="og:image" id="og-image" content="https://naturesurvie.net/images/og-cover.jpg">
+  <meta property="og:url" id="og-url" content="https://naturesurvie.net/produit.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="tw-title" content="Nature Survie &amp; Autonomie">
+  <meta name="twitter:image" id="tw-image" content="https://naturesurvie.net/images/og-cover.jpg">
+  <!--
+    SEO — URL canonique de la fiche.
+    La page est rendue côté client : une seule page HTML sert les 119 fiches
+    via ?id=N. Ce script pose la canonique le plus tôt possible, avant même
+    products.js, pour que ?id=12&fbclid=... et ?id=12 soient une seule URL.
+    ALIAS = doublons du catalogue (même produit saisi deux fois dans
+    products.js, à deux prix) : la fiche en double pointe vers celle qui est
+    réellement liée depuis la boutique. À supprimer quand les doublons
+    auront été nettoyés dans js/products.js.
+  -->
+  <script>
+  (function () {
+    var ALIAS = { 80:127, 81:128, 82:129, 83:130, 84:131, 85:132, 86:106, 87:134, 88:135, 89:136 };
+    var id = parseInt(new URLSearchParams(location.search).get('id'), 10);
+    if (ALIAS[id]) id = ALIAS[id];
+    var url = 'https://naturesurvie.net/produit.html' + (id ? '?id=' + id : '');
+    var l = document.createElement('link');
+    l.rel = 'canonical';
+    l.href = url;
+    document.head.appendChild(l);
+    var og = document.getElementById('og-url');
+    if (og) og.setAttribute('content', url);
+  })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -1819,6 +1855,152 @@
     <p>© 2026 Nature Survie &amp; Autonomie — Tous droits réservés | Fait avec 🌿 en France</p>
   </div>
 </footer>
+
+<!--
+  ============================================================
+  SEO — données structurées de la fiche produit (schema.org)
+  ============================================================
+  Additif : ce bloc ne lit que ALL_PRODUCTS et n'écrit que dans <head>.
+  Il ne touche ni au panier, ni aux liens Stripe, ni au checkout.
+
+  Choix assumés :
+  - Pas d'AggregateRating. Les notes de products.js ne viennent d'aucun
+    avis client réel (28 produits affichent une note sur 5 avec 0 avis).
+    Baliser ces étoiles expose à une action manuelle Google.
+  - Pas de "brand" : le catalogue mélange des marques tierces (Opinel,
+    MIL-TEC, LifeStraw) et des produits sans marque. Rien à déclarer de sûr.
+  - Produits à variantes : AggregateOffer lowPrice/highPrice, qui couvre
+    le prix affiché en gros et ceux du sélecteur de variantes.
+  - Retours : non balisés tant que le bandeau (« Retours 30 jours ») et les
+    CGV (14 jours) ne disent pas la même chose.
+-->
+<script>
+(function () {
+  if (typeof ALL_PRODUCTS === 'undefined') return;
+
+  var ALIAS = { 80:127, 81:128, 82:129, 83:130, 84:131, 85:132, 86:106, 87:134, 88:135, 89:136 };
+  var id = parseInt(new URLSearchParams(location.search).get('id'), 10);
+  var p = ALL_PRODUCTS.filter(function (x) { return x.id === id; })[0];
+  if (!p) return;
+
+  // Fiche en double : elle affiche son propre prix, différent de celui de la
+  // fiche retenue. Décrire ici le produit canonique donnerait un balisage qui
+  // contredit la page — motif de sanction. On laisse la canonique faire son
+  // travail et on ne balise que le fil d'Ariane.
+  var estDoublon = !!ALIAS[id];
+
+  var BASE = 'https://naturesurvie.net/';
+  var urlFiche = BASE + 'produit.html?id=' + p.id;
+  var urlImage = BASE + p.image;
+
+  // Prix valable un an glissant : évite l'avertissement « priceValidUntil expiré ».
+  var fin = new Date();
+  fin.setFullYear(fin.getFullYear() + 1);
+  var valableJusquau = fin.toISOString().slice(0, 10);
+
+  var livraison = {
+    "@type": "OfferShippingDetails",
+    "shippingRate": {
+      "@type": "MonetaryAmount",
+      "value": 0,
+      "currency": "EUR"
+    },
+    "shippingDestination": {
+      "@type": "DefinedRegion",
+      "addressCountry": "FR"
+    },
+    "eligibleTransactionVolume": {
+      "@type": "PriceSpecification",
+      "minPrice": 50,
+      "priceCurrency": "EUR"
+    }
+  };
+
+  var vendeur = {
+    "@type": "Organization",
+    "name": "Nature Survie & Autonomie",
+    "url": BASE
+  };
+
+  var offre;
+  if (p.variants && p.variants.length) {
+    var prix = p.variants.map(function (v) { return v.price; }).concat([p.price]);
+    offre = {
+      "@type": "AggregateOffer",
+      "url": urlFiche,
+      "priceCurrency": "EUR",
+      "lowPrice": Math.min.apply(null, prix),
+      "highPrice": Math.max.apply(null, prix),
+      "offerCount": p.variants.length,
+      "availability": "https://schema.org/InStock",
+      "seller": vendeur,
+      "shippingDetails": livraison
+    };
+  } else {
+    offre = {
+      "@type": "Offer",
+      "url": urlFiche,
+      "priceCurrency": "EUR",
+      "price": p.price,
+      "priceValidUntil": valableJusquau,
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": vendeur,
+      "shippingDetails": livraison
+    };
+  }
+
+  var estJardin = /jardin|serre|terre|semence|compost|irrigation|bacs|pots/i.test(p.category);
+  var rubrique = estJardin
+    ? { nom: 'Jardinage & potager', url: BASE + 'jardinage.html' }
+    : { nom: 'Survie & préparation', url: BASE + 'catalogue.html' };
+
+  var blocs = [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": BASE },
+        { "@type": "ListItem", "position": 2, "name": rubrique.nom, "item": rubrique.url },
+        { "@type": "ListItem", "position": 3, "name": p.name, "item": urlFiche }
+      ]
+    }
+  ];
+
+  if (!estDoublon) {
+    blocs.unshift({
+      "@type": "Product",
+      "@id": urlFiche + '#produit',
+      "name": p.name,
+      "description": p.description,
+      "image": [urlImage],
+      "sku": "NS-" + p.id,
+      "category": p.category,
+      "url": urlFiche,
+      "offers": offre
+    });
+  }
+
+  var donnees = { "@context": "https://schema.org", "@graph": blocs };
+
+  var s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(donnees);
+  document.head.appendChild(s);
+
+  // Aperçus sociaux : sans ça, tout partage de fiche affiche le visuel générique.
+  var partage = {
+    'og-title': p.name + ' — Nature Survie & Autonomie',
+    'og-desc': p.description,
+    'og-image': urlImage,
+    'tw-title': p.name + ' — Nature Survie & Autonomie',
+    'tw-image': urlImage
+  };
+  Object.keys(partage).forEach(function (cle) {
+    var el = document.getElementById(cle);
+    if (el) el.setAttribute('content', partage[cle]);
+  });
+})();
+</script>
 </body>
 </html>
 
