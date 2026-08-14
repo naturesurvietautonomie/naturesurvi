@@ -1,0 +1,14 @@
+# robots.txt — naturesurvie.net
+# Autorise l'exploration du site public, protège les dossiers internes.
+
+User-agent: *
+Allow: /
+
+# Documents internes / techniques : ne pas indexer
+Disallow: /Comparatifs/
+Disallow: /netlify/
+Disallow: /emails-marketing/
+Disallow: /panier.html
+Disallow: /merci.html
+
+Sitemap: https://naturesurvie.net/sitemap.xml

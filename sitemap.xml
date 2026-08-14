@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://naturesurvie.net/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://naturesurvie.net/catalogue.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://naturesurvie.net/jardinage.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://naturesurvie.net/about.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://naturesurvie.net/cgv.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <!--
+    NOTE : les fiches produit (produit.html?id=N) sont rendues côté client.
+    Idéalement, générer dynamiquement une entrée <url> par produit de js/products.js
+    (voir SEO-QUICK-WINS.md, quick win nº6). Exemple de format :
+    <url><loc>https://naturesurvie.net/produit.html?id=1</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  -->
+</urlset>

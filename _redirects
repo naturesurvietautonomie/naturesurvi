@@ -5,3 +5,8 @@
 # le fichier statique et renvoie un 404 : accès web totalement coupé.
 # Les fichiers restent en local pour usage interne (non supprimés).
 /Comparatifs/*   /404.html   404!
+
+# Même raison pour les notes de travail laissées à la racine : publish = "."
+# les servirait telles quelles. Elles sont versionnées pour ne pas vivre sur
+# un seul disque, mais elles n'ont rien à faire sur le site public.
+/*.md            /404.html   404!

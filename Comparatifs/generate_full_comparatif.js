@@ -57,6 +57,7 @@ function tableRows(rows) {
 
 const html = `<!DOCTYPE html>
 <html lang="fr"><head><meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
 <title>NatureSurvi — Comparatif Prix Complet</title>
 <style>
   body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; margin: 0; padding: 20px; }
