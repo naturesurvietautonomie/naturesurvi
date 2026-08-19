@@ -227,6 +227,7 @@
       .stats-inner { grid-template-columns: 2fr 2fr; }
     }
   </style>
+  <link rel="stylesheet" href="css/bg3d-naturesurvi.css">
 </head>
 <body>
 
@@ -248,7 +249,7 @@
     <li><a href="/about">À propos</a></li>
     <li><a href="/cgv">CGV</a></li>
   </ul>
-  <a href="/panier" class="nav-cart">🛒 <span id="cartTotal">0,00 €</span> <span id="cartCount">0</span></a>
+  <a href="/panier" class="nav-cart">🛒 <span id="cartTotal">0,00 €</span> <span id="cartCount" class="cart-count" style="background:#e53e3e;color:#fff;font-size:0.72rem;font-weight:700;padding:2px 7px;border-radius:12px;min-width:18px;text-align:center;display:none;">0</span></a>
 </nav>
 
 
@@ -260,8 +261,6 @@
     <h1>Préparez votre autonomie <em>naturellement.</em></h1>
     <p>Des produits utiles, expédiés rapidement, pour mieux jardiner, mieux vous équiper et faire face aux imprévus avec sérénité.</p>
     <div class="hero-stats">
-      <div class="hero-stat"><strong data-count="72">72</strong><span>Produits en stock</span></div>
-      <div class="hero-stat"><strong data-count="4.8" data-decimals="1" data-prefix="⭐ ">⭐ 4,8</strong><span>Note clients</span></div>
       <div class="hero-stat"><strong data-count="48" data-suffix="h">48h</strong><span>Expédition</span></div>
     </div>
     <div class="hero-btns">
@@ -340,9 +339,6 @@
   <!-- STATS -->
   <div class="stats-bar">
     <div class="stats-inner">
-      <div class="stat"><strong data-count="4.8" data-decimals="1" data-prefix="⭐ ">⭐ 4,8</strong><span>Note moyenne clients</span></div>
-      <div class="stat"><strong data-count="1247">1 247</strong><span>Clients satisfaits</span></div>
-      <div class="stat"><strong data-count="72">72</strong><span>Produits sélectionnés</span></div>
       <div class="stat"><strong data-count="48" data-suffix="h">48h</strong><span>Expédition rapide</span></div>
     </div>
   </div>
@@ -361,21 +357,6 @@
     </div>
   </section>
 
-  <!-- AVIS -->
-  <section class="section" style="background:#fff;">
-    <div class="section-inner">
-      <div class="section-label">💬 Ce que disent nos clients</div>
-      <div class="section-title">Des avis authentiques de notre communauté</div>
-      <div class="avis-grid">
-        <div class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">"Reçu en 3 jours, l'Opinel N°8 est exactement ce que j'attendais. Lame bien affûtée, le bois du manche est propre, la virole tourne nickel. Je l'ai emmené en rando dans les Pyrénées le week-end suivant, aucun souci. Prix honnête pour la qualité."</p><div class="avis-author"><div class="avis-avatar">J</div><div><div class="avis-name">Julien M.</div><div class="avis-product">✅ Achat vérifié · Couteau Opinel N°8</div></div></div></div>
-        <div class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">"La lampe Velamp tient vraiment ses promesses. Je l'utilise pour mes sorties VTT en forêt le soir, le faisceau est puissant et la charge USB dure environ 4h en mode normal. Le bandeau est confortable même avec un casque. Je recommande sans hésiter."</p><div class="avis-author"><div class="avis-avatar">A</div><div><div class="avis-name">Aurore F.</div><div class="avis-product">✅ Achat vérifié · Lampe frontale Velamp 350lm</div></div></div></div>
-        <div class="avis-card"><div class="avis-stars">★★★★☆</div><p class="avis-text">"La tente Bestway 2 personnes est montée en moins de 10 minutes, c'est vraiment pratique. On a essuyé une nuit de pluie légère en Bretagne, intérieur sec. Légère critique : la ventilation pourrait être meilleure par forte chaleur. Mais pour le prix, c'est très bien."</p><div class="avis-author"><div class="avis-avatar">R</div><div><div class="avis-name">Romain T.</div><div class="avis-product">✅ Achat vérifié · Tente camping 2 personnes</div></div></div></div>
-        <div class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">"Le composteur 300L est solide, les parois ne bougent pas. Installation faite en 20 min avec la notice. Ça fait 6 semaines que j'y mets mes épluchures et les feuilles du jardin, ça décompose bien. Livraison rapide et carton bien protégé. Très satisfaite."</p><div class="avis-author"><div class="avis-avatar">N</div><div><div class="avis-name">Nathalie B.</div><div class="avis-product">✅ Achat vérifié · Composteur de jardin 300L</div></div></div></div>
-        <div class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">"J'ai commandé la serre de balcon pour mes plants de tomates. Elle est bien plus rigide que ce à quoi je m'attendais pour ce prix. Les étagères supportent bien le poids des pots. Deuxième achat sur ce site, toujours livré dans les temps. Je reviendrai."</p><div class="avis-author"><div class="avis-avatar">C</div><div><div class="avis-name">Christine V.</div><div class="avis-product">✅ Achat vérifié · Serre de balcon 4 étagères</div></div></div></div>
-        <div class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">"La pelle pliable de camping est bien plus robuste que celles qu'on trouve en grande surface. Le métal est épais, le mécanisme de verrouillage ne bouge pas. Je l'ai utilisée pour creuser un foyer en bivouac, elle a tenu sans problème."</p><div class="avis-author"><div class="avis-avatar">K</div><div><div class="avis-name">Kevin L.</div><div class="avis-product">✅ Achat vérifié · Pelle pliable de camping</div></div></div></div>
-      </div>
-    </div>
-  </section>
 
   <!-- PROMO -->
   <div class="promo-banner">
@@ -459,5 +440,6 @@
     });
   </script>
   <script src="js/ui-dynamic.js" defer></script>
+  <script src="js/bg3d-naturesurvi.js" defer></script>
 </body>
 </html>

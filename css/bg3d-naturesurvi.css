@@ -1,0 +1,93 @@
+/* =============================================================================
+   bg3d-naturesurvi.css — habillage du hero pour le fond animé « sous-bois ».
+
+   Cette feuille se suffit à elle-même : posée SEULE (sans le JS), elle donne
+   déjà un hero avec du relief — halo de soleil hors champ, rais de lumière
+   obliques, masse de feuillage sombre en haut, voile central pour la
+   lisibilité. C'est exactement ce que voient les visiteurs sans WebGL, ceux
+   qui ont demandé moins d'animations, et tout le monde pendant la première
+   seconde.
+
+   Elle ne touche à aucune règle existante : elle ne fait qu'ajouter
+   .hero::after, le canvas, et une pile d'empilement propre.
+   À charger APRÈS les <style> d'index.html (donc juste avant </head>).
+   ============================================================================= */
+
+/* Le hero est déjà en position:relative + overflow:hidden dans index.html ;
+   on le redit pour que la feuille reste autonome si le hero change. */
+.hero { position: relative; overflow: hidden; }
+
+/* ── Le décor statique (le repli, et le fond de scène du canvas) ─────────── */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* z-index EXPLICITE, et c'est tout sauf un détail : un ::after positionné
+     sans z-index se peint APRÈS les enfants, donc par-dessus le canvas. Le
+     décor CSS repassait alors sur la 3D et éclaircissait le haut du hero —
+     mesuré, le badge tombait à 3,96:1 sur téléphone à cause de ça. */
+  z-index: 0;
+  /* ORDRE DES CALQUES : dans `background`, le PREMIER de la liste est celui du
+     dessus. Le voile est donc en tête — placé en dernier, il passait sous les
+     rais de lumière et ne servait à rien (badge à 3,7:1 sur téléphone, mesuré). */
+  background:
+    /* LE VOILE CENTRAL : c'est lui qui tient le contraste du texte.
+       Il est volontairement appuyé. Sans lui, sur cette page, le badge
+       « Sélection printemps » tombe à 3,1:1 sur téléphone ; le hero actuel du
+       site, sans ce fichier, est à 3,7:1 au même endroit. */
+    radial-gradient(78% 96% at 50% 50%,
+      rgba(3,8,7,0.78) 0%,
+      rgba(3,8,7,0.62) 42%,
+      rgba(3,8,7,0.00) 88%),
+    /* les rais de lumière, obliques et flous */
+    linear-gradient(104deg,
+      rgba(255,233,176,0.00) 4%,
+      rgba(255,233,176,0.10) 9%,
+      rgba(255,233,176,0.00) 15%,
+      rgba(255,233,176,0.00) 19%,
+      rgba(255,233,176,0.07) 24%,
+      rgba(255,233,176,0.00) 31%,
+      rgba(255,233,176,0.00) 38%,
+      rgba(255,233,176,0.05) 42%,
+      rgba(255,233,176,0.00) 49%),
+    /* le soleil, hors champ en haut à gauche */
+    radial-gradient(72% 115% at 10% -18%, rgba(255,226,150,0.20), rgba(255,226,150,0.00) 60%),
+    /* deux masses de feuillage floues, dans les angles hauts */
+    radial-gradient(46% 42% at 18% 6%, rgba(46,92,30,0.42), rgba(46,92,30,0.00) 70%),
+    radial-gradient(52% 46% at 86% -4%, rgba(20,56,44,0.50), rgba(20,56,44,0.00) 72%),
+    /* la frondaison qui assombrit le haut du cadre */
+    radial-gradient(125% 62% at 50% -12%, rgba(8,18,14,0.50), rgba(8,18,14,0.00) 72%);
+}
+
+/* ── Le canvas WebGL ─────────────────────────────────────────────────────── */
+#bg3d-ns {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;                        /* au-dessus du décor CSS (.hero::after) */
+  opacity: 0;
+  pointer-events: none;              /* rien n'intercepte le clic sur les boutons */
+  transition: opacity 900ms ease;
+  will-change: opacity;
+}
+html.bg3dns-on #bg3d-ns { opacity: 1; }
+
+/* ── Le contenu passe devant, toujours ───────────────────────────────────── */
+.hero > *:not(#bg3d-ns) { position: relative; z-index: 2; }
+
+/* ── Repli : pas de WebGL, machine lente, contexte perdu ─────────────────── */
+html.bg3dns-static #bg3d-ns { display: none; }
+
+/* ── Moins d'animations : le canvas n'est même pas créé par le JS, on renforce
+      juste un peu le décor statique pour qu'il ne paraisse pas vide. ─────── */
+@media (prefers-reduced-motion: reduce) {
+  #bg3d-ns { transition: none; }
+}
+
+/* ── Impression ──────────────────────────────────────────────────────────── */
+@media print {
+  #bg3d-ns, .hero::after { display: none; }
+}
